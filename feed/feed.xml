@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
 	<title>CSS Tip: Learn CSS the easy one</title>
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
-	<link href="https://css-tip.com/css-tip/feed/feed.xml" rel="self"/>
-	<link href="https://css-tip.com/css-tip/"/>
+	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
+	<link href="https://css-tip.com/"/>
 	<updated>2023-04-03T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
@@ -13,21 +13,21 @@
 	
 	<entry>
 		<title>A color wheel with gradient</title>
-		<link href="https://css-tip.com/css-tip/color-wheel-gradient/"/>
+		<link href="https://css-tip.com/color-wheel-gradient/"/>
 		<updated>2023-04-03T00:00:00Z</updated>
-		<id>https://css-tip.com/css-tip/color-wheel-gradient/</id>
+		<id>https://css-tip.com/color-wheel-gradient/</id>
 		<content type="html">&lt;p&gt;Use &lt;code&gt;conic-gradient()&lt;/code&gt; and the new color interpolation to create a nice color wheel 🤩&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;conic-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in hsl longer hue&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;red 0 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;✅ Tell the browser to take the longer route between red and red&lt;/p&gt;
 &lt;p&gt;❌ No complex color combination&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/css-tip/img/58NlxWHnqQ-593.avif 593w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/css-tip/img/58NlxWHnqQ-593.webp 593w&quot;&gt;&lt;img alt=&quot;A color wheel made conic-gradient&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/css-tip/img/58NlxWHnqQ-593.png&quot; width=&quot;593&quot; height=&quot;385&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/58NlxWHnqQ-593.avif 593w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/58NlxWHnqQ-593.webp 593w&quot;&gt;&lt;img alt=&quot;A color wheel made conic-gradient&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/58NlxWHnqQ-593.png&quot; width=&quot;593&quot; height=&quot;385&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p class=&quot;codepen&quot; data-height=&quot;400&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;XWPvgZo&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
   &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/XWPvgZo&quot;&gt;
   Color wheel&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/css-tip/color-wheel-gradient/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/color-wheel-gradient/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-4/#hue-interpolation&quot;&gt;https://www.w3.org/TR/css-color-4/#hue-interpolation&lt;/a&gt;&lt;/li&gt;
@@ -37,9 +37,9 @@
 	
 	<entry>
 		<title>Hue manipulation using color-mix()</title>
-		<link href="https://css-tip.com/css-tip/hue-manipulation-color-mix/"/>
+		<link href="https://css-tip.com/hue-manipulation-color-mix/"/>
 		<updated>2023-03-29T00:00:00Z</updated>
-		<id>https://css-tip.com/css-tip/hue-manipulation-color-mix/</id>
+		<id>https://css-tip.com/hue-manipulation-color-mix/</id>
 		<content type="html">&lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; to manipulate the Hue of a color in the HSL color space&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; red&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--h&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* angle (from 0 to 360 without unit) */&lt;/span&gt;&lt;br&gt;  &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--new-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;color-mix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in hsl longer hue&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;br&gt;      &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--h&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;*1%/3.6&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The same can be done using relative colors but the support is still low:&lt;/p&gt;
@@ -50,7 +50,7 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/css-tip/hue-manipulation-color-mix/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/hue-manipulation-color-mix/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-5/#color-mix&quot;&gt;https://www.w3.org/TR/css-color-5/#color-mix&lt;/a&gt;&lt;/li&gt;
@@ -60,20 +60,20 @@
 	
 	<entry>
 		<title>Color shades using color-mix()</title>
-		<link href="https://css-tip.com/css-tip/color-shades-color-mix/"/>
+		<link href="https://css-tip.com/color-shades-color-mix/"/>
 		<updated>2023-03-28T00:00:00Z</updated>
-		<id>https://css-tip.com/css-tip/color-shades-color-mix/</id>
+		<id>https://css-tip.com/color-shades-color-mix/</id>
 		<content type="html">&lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; to create different shades from one color.&lt;/p&gt;
 &lt;p&gt;Mix with ⚫️ black for a darker color and ⚪️ white for a lighter color&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #8A9B0F&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* the main color */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color-light&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;color-mix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in srgb&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#fff 25%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color-dark&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;token function&quot;&gt;color-mix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in srgb&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#000 25%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/css-tip/img/bQn4Q-ryeF-715.avif 715w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/css-tip/img/bQn4Q-ryeF-715.webp 715w&quot;&gt;&lt;img alt=&quot;3 color shades from one color&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/css-tip/img/bQn4Q-ryeF-715.png&quot; width=&quot;715&quot; height=&quot;371&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/bQn4Q-ryeF-715.avif 715w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/bQn4Q-ryeF-715.webp 715w&quot;&gt;&lt;img alt=&quot;3 color shades from one color&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/bQn4Q-ryeF-715.png&quot; width=&quot;715&quot; height=&quot;371&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;ExeMOPV&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
   &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/ExeMOPV&quot;&gt;
   Color shades using  color-mix()&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/css-tip/color-shades-color-mix/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/color-shades-color-mix/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-5/#color-mix&quot;&gt;https://www.w3.org/TR/css-color-5/#color-mix&lt;/a&gt;&lt;/li&gt;
@@ -83,9 +83,9 @@
 	
 	<entry>
 		<title>Color switch using color-mix()</title>
-		<link href="https://css-tip.com/css-tip/color-switch-color-mix/"/>
+		<link href="https://css-tip.com/color-switch-color-mix/"/>
 		<updated>2023-03-27T00:00:00Z</updated>
-		<id>https://css-tip.com/css-tip/color-switch-color-mix/</id>
+		<id>https://css-tip.com/color-switch-color-mix/</id>
 		<content type="html">&lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; function to create a color switch with a compact code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No color duplication&lt;/li&gt;
@@ -100,7 +100,7 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/css-tip/color-switch-color-mix/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/color-switch-color-mix/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-5/#color-mix&quot;&gt;https://www.w3.org/TR/css-color-5/#color-mix&lt;/a&gt;&lt;/li&gt;
@@ -110,15 +110,15 @@
 	
 	<entry>
 		<title>CSS shapes: Polygon &amp; Starburst</title>
-		<link href="https://css-tip.com/css-tip/polygon-starburst-shapes/"/>
+		<link href="https://css-tip.com/polygon-starburst-shapes/"/>
 		<updated>2023-03-08T00:00:00Z</updated>
-		<id>https://css-tip.com/css-tip/polygon-starburst-shapes/</id>
+		<id>https://css-tip.com/polygon-starburst-shapes/</id>
 		<content type="html">&lt;p&gt;Use online generators to create CSS shapes using clip-path in not time!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Polygon Shapes: &lt;a href=&quot;https://css-generators.com/polygon-shape&quot;&gt;https://css-generators.com/polygon-shape&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Starburst Shapes:  &lt;a href=&quot;https://css-generators.com/starburst-shape&quot;&gt;https://css-generators.com/starburst-shape&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/css-tip/img/0vzRz_JzPZ-896.avif 896w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/css-tip/img/0vzRz_JzPZ-896.webp 896w&quot;&gt;&lt;img alt=&quot;Starburst &amp;amp; polygon shapes&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/css-tip/img/0vzRz_JzPZ-896.png&quot; width=&quot;896&quot; height=&quot;557&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/0vzRz_JzPZ-896.avif 896w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/0vzRz_JzPZ-896.webp 896w&quot;&gt;&lt;img alt=&quot;Starburst &amp;amp; polygon shapes&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/0vzRz_JzPZ-896.png&quot; width=&quot;896&quot; height=&quot;557&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p class=&quot;codepen&quot; data-height=&quot;350&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;KKxXRWB&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
   &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/KKxXRWB&quot;&gt;
   CSS Shapes using clip-path&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
