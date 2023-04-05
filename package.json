@@ -8,7 +8,9 @@
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+		"build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
+		"build:prod": "npm run build:eleventy:prod"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
