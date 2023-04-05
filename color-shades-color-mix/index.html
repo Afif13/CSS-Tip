@@ -50,6 +50,9 @@
 
 <time datetime="2023-03-28">March 28, 2023</time>
 
+<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+<div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text"></div>
+
 <p>Use the new <code>color-mix()</code> to create different shades from one color.</p>
 <p>Mix with ⚫️ black for a darker color and ⚪️ white for a lighter color</p>
 <pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">--color</span><span class="token punctuation">:</span> #8A9B0F<span class="token punctuation">;</span> <span class="token comment">/* the main color */</span><br>  <span class="token property">--color-light</span><span class="token punctuation">:</span> <span class="token function">color-mix</span><span class="token punctuation">(</span>in srgb<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span><span class="token punctuation">,</span>#fff 25%<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--color-dark</span><span class="token punctuation">:</span>  <span class="token function">color-mix</span><span class="token punctuation">(</span>in srgb<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span><span class="token punctuation">,</span>#000 25%<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
