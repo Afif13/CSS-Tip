@@ -123,6 +123,8 @@ main {
 main img {
 	max-width: 100%;
 	height: auto;
+	margin: 1.5rem 0;
+  display: block;
 }
 
 header {
@@ -173,8 +175,7 @@ code {
 	word-break: break-all;
 }
 pre[class*=language-] {
-    padding: 1em 1.5em;
-    margin: 0.5em -1.5em;
+    margin: 1.5em 0;
 }
 
 /* Header */
@@ -217,6 +218,7 @@ header {
 .postlist-item {
 	display: flex;
 	flex-direction: column;
+	align-items: start;
 	margin-bottom: 1em;
 	position: relative;
 }
@@ -239,7 +241,6 @@ header {
 .postlist-link {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
-	flex-basis: calc(100% - 1.5rem);
 	padding-right: .5em;
 	text-underline-position: from-font;
 }
