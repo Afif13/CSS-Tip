@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Hue manipulation using color-mix()</title>
+		<title>Fade content inside border using mask</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use the new color-mix() to manipulate the Hue of a color in the HSL color space">
+		<meta name="description" content="Use CSS mask to fade your content inside border">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/hue-manipulation-color-mix/" >
+		<link rel=canonical href="https://css-tip.com/fade-content-border-mask/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Hue manipulation using color-mix()">
+		<meta property="og:title" content="Fade content inside border using mask">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/hue-manipulation-color-mix/">
-		<meta property="og:description" content="Use the new color-mix() to manipulate the Hue of a color in the HSL color space">
+		<meta property="og:url" content="https://css-tip.com/fade-content-border-mask/">
+		<meta property="og:description" content="Use CSS mask to fade your content inside border">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -46,30 +46,27 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Hue manipulation using color-mix()</h1>
+			<h1>Fade content inside border using mask</h1>
 
-<time datetime="2023-03-29">March 29, 2023</time>
+<time datetime="2023-03-30">March 30, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="height: 100px;"></div>
 
-<p>Use the new <code>color-mix()</code> to manipulate the Hue of a color in the HSL color space</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <br>  <span class="token property">--h</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token comment">/* angle (from 0 to 360 without unit) */</span><br>  <br>  <span class="token property">--new-color</span><span class="token punctuation">:</span> <br>    <span class="token function">color-mix</span><span class="token punctuation">(</span>in hsl longer hue<span class="token punctuation">,</span> <br>      <span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span>*1%/3.6<span class="token punctuation">)</span><br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>The same can be done using relative colors but the support is still low:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <br>  <span class="token property">--h</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token comment">/* angle (from 0 to 360 without unit) */</span><br>  <br>  <span class="token property">--new-color</span><span class="token punctuation">:</span> <span class="token function">hsl</span><span class="token punctuation">(</span>from <span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>h + <span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span>*1deg<span class="token punctuation">)</span> s l<span class="token punctuation">)</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="VwGNQEv" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/VwGNQEv" target="_blank" rel="noopener">
-  hue manipulation using color-mix()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Create a fading content while keeping the border visible using CSS mask. It works with <code>border-radius</code> and no need to know the value of border.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 4px solid orange<span class="token punctuation">;</span> <span class="token comment">/* we don't need to know the border-width */</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span><span class="token punctuation">,</span> <br>    <span class="token comment">/* fade only the padding area <br>       (in the opposite direction) */</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#0000<span class="token punctuation">,</span>#000 90%<span class="token punctuation">)</span> padding-box<span class="token punctuation">;</span><br>  <span class="token property">mask-composite</span><span class="token punctuation">:</span> exclude<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p><picture><source type="image/avif" srcset="/img/vGWO9Bu1K4-754.avif 754w"><source type="image/webp" srcset="/img/vGWO9Bu1K4-754.webp 754w"><img alt="A fading content" loading="lazy" decoding="async" src="/img/vGWO9Bu1K4-754.png" width="754" height="475"></picture></p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="qBMGZQz" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/qBMGZQz" target="_blank" rel="noopener">
+  Fading content inside border II</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<h2 id="related-links" tabindex="-1">Related Links <a class="header-anchor" href="#related-links">#</a></h2>
-<ul>
-<li><a href="https://developer.chrome.com/articles/high-definition-css-color-guide/" target="_blank" rel="noopener">https://developer.chrome.com/articles/high-definition-css-color-guide/</a></li>
-<li><a href="https://www.w3.org/TR/css-color-5/#color-mix" target="_blank" rel="noopener">https://www.w3.org/TR/css-color-5/#color-mix</a></li>
-</ul>
+<p>A different idea without <code>mask-composite</code> but it won't work with <code>border-radius</code> and you need to know the <code>border-width</code>.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span> <span class="token comment">/* border thickness */</span><br>  <br>  <span class="token property">border</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> solid orange<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token comment">/* keep the border visible */</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 90deg at <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 25%<span class="token punctuation">,</span>#000 0<span class="token punctuation">)</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <br>    <span class="token comment">/* fade the content */</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#000<span class="token punctuation">,</span>#0000 90%<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Online demo: <a href="https://codepen.io/t_afif/pen/YzObqzg" target="_blank" rel="noopener">https://codepen.io/t_afif/pen/YzObqzg</a></p>
 
-<ul class="links-nextprev"><li><a href="/color-shades-color-mix/" title="Color shades using color-mix()">Previous CSS Tip</a></li><li><a href="/fade-content-border-mask/" title="Fade content inside border using mask">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li><a href="/hue-manipulation-color-mix/" title="Hue manipulation using color-mix()">Previous CSS Tip</a></li><li><a href="/color-wheel-gradient/" title="A color wheel with gradient">Next CSS Tip</a></li>
 </ul>
 
 		</main>
