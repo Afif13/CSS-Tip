@@ -7,4 +7,8 @@ eleventyNavigation:
 <h1>Archive</h1>
 
 {% set postslist = collections.posts %}
+{% set postsCount = collections.posts | length %}
+
+<p>Find below {{ postsCount }} CSS Tips. Don't know what to read? <a href="https://random.css-tip.com">Get a random CSS Tip!</a></p>
+
 {% include "postslist.njk" %}
