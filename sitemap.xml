@@ -2,6 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://css-tip.com/horizontal-line-title/</loc>
+		<lastmod>2022-06-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/image-heart-shape/</loc>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/heart-shape-animation/</loc>
+		<lastmod>2022-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-dashed-lines/</loc>
+		<lastmod>2022-07-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/sliding-navigation-menu/</loc>
+		<lastmod>2022-07-22</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/back-to-top/</loc>
 		<lastmod>2022-07-27</lastmod>
 	</url>

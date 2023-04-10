@@ -15,7 +15,7 @@
 		<link href="https://css-tip.com/color-wheel-gradient/"/>
 		<updated>2023-04-03T00:00:00Z</updated>
 		<id>https://css-tip.com/color-wheel-gradient/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Use &lt;code&gt;conic-gradient()&lt;/code&gt; and the new color interpolation to create a nice color wheel 🤩&lt;/p&gt;
+		<content type="html">&lt;p&gt;Use &lt;code&gt;conic-gradient()&lt;/code&gt; and the new color interpolation to create a nice color wheel 🤩&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/58NlxWHnqQ-593.avif 593w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/58NlxWHnqQ-593.webp 593w&quot;&gt;&lt;img alt=&quot;A color wheel made conic-gradient&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/58NlxWHnqQ-593.png&quot; width=&quot;593&quot; height=&quot;385&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;conic-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in hsl longer hue&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;red 0 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;✅ Tell the browser to take the longer route between red and red&lt;/p&gt;
@@ -31,7 +31,7 @@
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-4/#hue-interpolation&quot;&gt;https://www.w3.org/TR/css-color-4/#hue-interpolation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -39,7 +39,7 @@
 		<link href="https://css-tip.com/fade-content-border-mask/"/>
 		<updated>2023-03-30T00:00:00Z</updated>
 		<id>https://css-tip.com/fade-content-border-mask/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Create a fading content while keeping the border visible using CSS mask. It works with &lt;code&gt;border-radius&lt;/code&gt; and no need to know the value of border.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Create a fading content while keeping the border visible using CSS mask. It works with &lt;code&gt;border-radius&lt;/code&gt; and no need to know the value of border.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/vGWO9Bu1K4-754.avif 754w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/vGWO9Bu1K4-754.webp 754w&quot;&gt;&lt;img alt=&quot;A fading content&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/vGWO9Bu1K4-754.png&quot; width=&quot;754&quot; height=&quot;475&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 4px solid orange&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* we don&#39;t need to know the border-width */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;mask&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#000 0 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token comment&quot;&gt;/* fade only the padding area &lt;br&gt;       (in the opposite direction) */&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#0000&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#000 90%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; padding-box&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;mask-composite&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; exclude&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p class=&quot;codepen&quot; data-height=&quot;400&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;qBMGZQz&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
@@ -51,7 +51,7 @@
 &lt;p&gt;A different idea without &lt;code&gt;mask-composite&lt;/code&gt; but it won&#39;t work with &lt;code&gt;border-radius&lt;/code&gt; and you need to know the &lt;code&gt;border-width&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 4px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* border thickness */&lt;/span&gt;&lt;br&gt;  &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; solid orange&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;mask&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token comment&quot;&gt;/* keep the border visible */&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;conic-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;from 90deg at &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;2*&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;2*&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#0000 25%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#000 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-1*&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-1*&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token comment&quot;&gt;/* fade the content */&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#000&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#0000 90%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Online demo: &lt;a href=&quot;https://codepen.io/t_afif/pen/YzObqzg&quot;&gt;codepen.io/t_afif/pen/YzObqzg&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -59,7 +59,7 @@
 		<link href="https://css-tip.com/hue-manipulation-color-mix/"/>
 		<updated>2023-03-29T00:00:00Z</updated>
 		<id>https://css-tip.com/hue-manipulation-color-mix/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; to manipulate the Hue of a color in the HSL color space&lt;/p&gt;
+		<content type="html">&lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; to manipulate the Hue of a color in the HSL color space&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; red&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--h&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* angle (from 0 to 360 without unit) */&lt;/span&gt;&lt;br&gt;  &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--new-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;color-mix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in hsl longer hue&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;br&gt;      &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--h&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;*1%/3.6&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The same can be done using relative colors but the support is still low:&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; red&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--h&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* angle (from 0 to 360 without unit) */&lt;/span&gt;&lt;br&gt;  &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--new-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;from &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;h + &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--h&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;*1deg&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; s l&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -74,7 +74,7 @@
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-5/#color-mix&quot;&gt;https://www.w3.org/TR/css-color-5/#color-mix&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -82,7 +82,7 @@
 		<link href="https://css-tip.com/color-shades-color-mix/"/>
 		<updated>2023-03-28T00:00:00Z</updated>
 		<id>https://css-tip.com/color-shades-color-mix/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; to create different shades from one color.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; to create different shades from one color.&lt;/p&gt;
 &lt;p&gt;Mix with ⚫️ black for a darker color and ⚪️ white for a lighter color&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/bQn4Q-ryeF-715.avif 715w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/bQn4Q-ryeF-715.webp 715w&quot;&gt;&lt;img alt=&quot;3 color shades from one color&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/bQn4Q-ryeF-715.png&quot; width=&quot;715&quot; height=&quot;371&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #8A9B0F&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* the main color */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color-light&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;color-mix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in srgb&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#fff 25%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--color-dark&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;token function&quot;&gt;color-mix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in srgb&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#000 25%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -97,7 +97,7 @@
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-5/#color-mix&quot;&gt;https://www.w3.org/TR/css-color-5/#color-mix&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -105,7 +105,7 @@
 		<link href="https://css-tip.com/color-switch-color-mix/"/>
 		<updated>2023-03-27T00:00:00Z</updated>
 		<id>https://css-tip.com/color-switch-color-mix/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; function to create a color switch with a compact code&lt;/p&gt;
+		<content type="html">&lt;p&gt;Use the new &lt;code&gt;color-mix()&lt;/code&gt; function to create a color switch with a compact code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No color duplication&lt;/li&gt;
 &lt;li&gt;Define your colors using one variable&lt;/li&gt;
@@ -124,7 +124,7 @@
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-5/#color-mix&quot;&gt;https://www.w3.org/TR/css-color-5/#color-mix&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -132,7 +132,7 @@
 		<link href="https://css-tip.com/polygon-starburst-shapes/"/>
 		<updated>2023-03-08T00:00:00Z</updated>
 		<id>https://css-tip.com/polygon-starburst-shapes/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Use online generators to create CSS shapes using clip-path in not time!&lt;/p&gt;
+		<content type="html">&lt;p&gt;Use online generators to create CSS shapes using clip-path in not time!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Polygon Shapes: &lt;a href=&quot;https://css-generators.com/polygon-shape&quot;&gt;css-generators.com/polygon-shape&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Starburst Shapes:  &lt;a href=&quot;https://css-generators.com/starburst-shape&quot;&gt;css-generators.com/starburst-shape&lt;/a&gt;&lt;/li&gt;
@@ -144,7 +144,7 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -152,7 +152,7 @@
 		<link href="https://css-tip.com/border-only-tooltip-mask/"/>
 		<updated>2023-02-08T00:00:00Z</updated>
 		<id>https://css-tip.com/border-only-tooltip-mask/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Create a border-only Tooltip with a few lines of code&lt;/p&gt;
+		<content type="html">&lt;p&gt;Create a border-only Tooltip with a few lines of code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One element&lt;/li&gt;
 &lt;li&gt;Less than 20 CSS declarations&lt;/li&gt;
@@ -168,7 +168,7 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -176,7 +176,7 @@
 		<link href="https://css-tip.com/rainbow-gradient-animation/"/>
 		<updated>2023-01-31T00:00:00Z</updated>
 		<id>https://css-tip.com/rainbow-gradient-animation/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Use the new color interpolation to easily create an infinite rainbow animation using CSS gradients 🌈&lt;/p&gt;
+		<content type="html">&lt;p&gt;Use the new color interpolation to easily create an infinite rainbow animation using CSS gradients 🌈&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One color declaration&lt;/li&gt;
 &lt;li&gt;A simple animation&lt;/li&gt;
@@ -187,7 +187,7 @@
   rainbow gradient animation &lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt; ]]></content>
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -195,7 +195,7 @@
 		<link href="https://css-tip.com/rounded-frame-image/"/>
 		<updated>2022-11-01T00:00:00Z</updated>
 		<id>https://css-tip.com/rounded-frame-image/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Add a nice frame around your image using a few lines of code&lt;/p&gt;
+		<content type="html">&lt;p&gt;Add a nice frame around your image using a few lines of code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One element (The &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag)&lt;/li&gt;
 &lt;li&gt;No pseudo-element&lt;/li&gt;
@@ -211,7 +211,7 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/&quot;&gt;css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -219,7 +219,7 @@
 		<link href="https://css-tip.com/number-elements-has-selector/"/>
 		<updated>2022-10-10T00:00:00Z</updated>
 		<id>https://css-tip.com/number-elements-has-selector/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Use the &lt;code&gt;:has()&lt;/code&gt; selector and style your container based on its number of elements (direct children)&lt;/p&gt;
+		<content type="html">&lt;p&gt;Use the &lt;code&gt;:has()&lt;/code&gt; selector and style your container based on its number of elements (direct children)&lt;/p&gt;
 &lt;p&gt;⚠️ It doesn&#39;t count text nodes. Only tags!&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.container:not(:has(*))&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* 0 elements */&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;.container:has(&gt; :last-child:nth-child(1))&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* 1 element  */&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;.container:has(&gt; :last-child:nth-child(2))&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* 2 elements */&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;.container:has(&gt; :last-child:nth-child(3))&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* 3 elements */&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token comment&quot;&gt;/*.container:has(&gt; :last-child:nth-child(N)) { /* N elements */&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;*/&lt;/code&gt;&lt;/pre&gt;
 &lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;ZEomRYP&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
@@ -228,7 +228,7 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -236,7 +236,7 @@
 		<link href="https://css-tip.com/css-wavy-shape/"/>
 		<updated>2022-09-29T00:00:00Z</updated>
 		<id>https://css-tip.com/css-wavy-shape/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;How much code is needed to create a Wavy Shape?&lt;/p&gt;
+		<content type="html">&lt;p&gt;How much code is needed to create a Wavy Shape?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;1 Property&lt;/li&gt;
 &lt;li&gt;2 Gradients&lt;/li&gt;
@@ -251,7 +251,7 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/&quot;&gt;css-tricks.com/how-to-create-wavy-shapes-patterns-in-css&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -259,7 +259,7 @@
 		<link href="https://css-tip.com/infinite-image-slider/"/>
 		<updated>2022-09-16T00:00:00Z</updated>
 		<id>https://css-tip.com/infinite-image-slider/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Create an infinite image carousel using a few lines of code:&lt;/p&gt;
+		<content type="html">&lt;p&gt;Create an infinite image carousel using a few lines of code:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Minimal HTML (&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;s inside a container)&lt;/li&gt;
 &lt;li&gt;No duplicated images&lt;/li&gt;
@@ -275,7 +275,7 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://verpex.com/blog/website-tips/how-to-create-an-infinite-image-slider-using-css&quot;&gt;verpex.com/blog/website-tips/how-to-create-an-infinite-image-slider-using-css&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -283,7 +283,7 @@
 		<link href="https://css-tip.com/css-cut-corners/"/>
 		<updated>2022-09-08T00:00:00Z</updated>
 		<id>https://css-tip.com/css-cut-corners/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;How much code is needed to cut the four corners of an element? Also known as inverted &lt;code&gt;border-radius&lt;/code&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;How much code is needed to cut the four corners of an element? Also known as inverted &lt;code&gt;border-radius&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One Property&lt;/li&gt;
 &lt;li&gt;One Gradient&lt;/li&gt;
@@ -298,7 +298,7 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://css-tricks.com/cut-corners-using-css-mask-and-clip-path-properties/&quot;&gt;css-tricks.com/cut-corners-using-css-mask-and-clip-path-properties&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -306,7 +306,7 @@
 		<link href="https://css-tip.com/css-zig-zag-edge/"/>
 		<updated>2022-09-02T00:00:00Z</updated>
 		<id>https://css-tip.com/css-zig-zag-edge/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;How much code is needed to create a Zig-Zag edge?&lt;/p&gt;
+		<content type="html">&lt;p&gt;How much code is needed to create a Zig-Zag edge?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One Property&lt;/li&gt;
 &lt;li&gt;One Gradient&lt;/li&gt;
@@ -321,7 +321,7 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://css-tricks.com/css-borders-using-masks/&quot;&gt;css-tricks.com/css-borders-using-masks&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -329,7 +329,7 @@
 		<link href="https://css-tip.com/fancy-title-divider-2/"/>
 		<updated>2022-08-26T00:00:00Z</updated>
 		<id>https://css-tip.com/fancy-title-divider-2/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;After &lt;a href=&quot;https://css-tip.com/fancy-title-divider/&quot;&gt;the previous one&lt;/a&gt;, here is another fancy design for your title&lt;/p&gt;
+		<content type="html">&lt;p&gt;After &lt;a href=&quot;https://css-tip.com/fancy-title-divider/&quot;&gt;the previous one&lt;/a&gt;, here is another fancy design for your title&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No extra element&lt;/li&gt;
 &lt;li&gt;No pseudo element&lt;/li&gt;
@@ -345,7 +345,7 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -353,7 +353,7 @@
 		<link href="https://css-tip.com/fancy-title-divider/"/>
 		<updated>2022-08-25T00:00:00Z</updated>
 		<id>https://css-tip.com/fancy-title-divider/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Turn your titles into a fancy divider using few lines of code&lt;/p&gt;
+		<content type="html">&lt;p&gt;Turn your titles into a fancy divider using few lines of code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No extra element&lt;/li&gt;
 &lt;li&gt;No pseudo element&lt;/li&gt;
@@ -368,7 +368,7 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -376,7 +376,7 @@
 		<link href="https://css-tip.com/outline-hover-effect/"/>
 		<updated>2022-08-24T00:00:00Z</updated>
 		<id>https://css-tip.com/outline-hover-effect/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Add a cool hover effect to your images using a few lines of code&lt;/p&gt;
+		<content type="html">&lt;p&gt;Add a cool hover effect to your images using a few lines of code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No extra element (only the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag)&lt;/li&gt;
 &lt;li&gt;No pseudo element&lt;/li&gt;
@@ -391,7 +391,7 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -399,7 +399,7 @@
 		<link href="https://css-tip.com/css-zig-zag-panel/"/>
 		<updated>2022-08-22T00:00:00Z</updated>
 		<id>https://css-tip.com/css-zig-zag-panel/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Build an expanding image panels with Zig-Zag edges&lt;/p&gt;
+		<content type="html">&lt;p&gt;Build an expanding image panels with Zig-Zag edges&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Minimal HTML&lt;/li&gt;
 &lt;li&gt;Works with any number of images&lt;/li&gt;
@@ -420,7 +420,7 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://css-tricks.com/css-grid-and-custom-shapes-part-2/&quot;&gt;css-tricks.com/css-grid-and-custom-shapes-part-2&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -428,7 +428,7 @@
 		<link href="https://css-tip.com/diagonal-reveal-effect/"/>
 		<updated>2022-08-19T00:00:00Z</updated>
 		<id>https://css-tip.com/diagonal-reveal-effect/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Reveal your images with a cool hover effect using a few lines of code&lt;/p&gt;
+		<content type="html">&lt;p&gt;Reveal your images with a cool hover effect using a few lines of code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Minimal HTML (2 &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; inside a container)&lt;/li&gt;
 &lt;li&gt;Less than 15 CSS declaration&lt;/li&gt;
@@ -443,7 +443,7 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://css-tricks.com/css-grid-and-custom-shapes-part-3/#aa-the-split-image-reveal&quot;&gt;css-tricks.com/css-grid-and-custom-shapes-part-3&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -451,7 +451,7 @@
 		<link href="https://css-tip.com/css-speech-bubble/"/>
 		<updated>2022-08-18T00:00:00Z</updated>
 		<id>https://css-tip.com/css-speech-bubble/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Create a Speech Bubble using a few lines of code&lt;/p&gt;
+		<content type="html">&lt;p&gt;Create a Speech Bubble using a few lines of code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One element&lt;/li&gt;
 &lt;li&gt;No pseudo-element&lt;/li&gt;
@@ -467,7 +467,7 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://verpex.com/blog/website-tips/how-to-create-a-tooltip-speech-bubble-using-css&quot;&gt;verpex.com/blog/website-tips/how-to-create-a-tooltip-speech-bubble-using-css&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
 	</entry>
 	
 	<entry>
@@ -475,7 +475,7 @@
 		<link href="https://css-tip.com/css-dashed-border/"/>
 		<updated>2022-08-10T00:00:00Z</updated>
 		<id>https://css-tip.com/css-dashed-border/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Create a custom dashed border using a few lines of code.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Create a custom dashed border using a few lines of code.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No extra element&lt;/li&gt;
 &lt;li&gt;Less than 8 CSS properties&lt;/li&gt;
@@ -488,7 +488,7 @@
   Custom dashed border&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt; ]]></content>
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -496,7 +496,7 @@
 		<link href="https://css-tip.com/number-inside-box/"/>
 		<updated>2022-08-02T00:00:00Z</updated>
 		<id>https://css-tip.com/number-inside-box/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Make your numbers look fancy by placing each digit inside its own box.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Make your numbers look fancy by placing each digit inside its own box.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Only one element&lt;/li&gt;
 &lt;li&gt;Easy to control using CSS variables&lt;/li&gt;
@@ -510,7 +510,7 @@
   Numbers in boxes (CSS only)&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt; ]]></content>
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
 	</entry>
 	
 	<entry>
@@ -518,7 +518,7 @@
 		<link href="https://css-tip.com/back-to-top/"/>
 		<updated>2022-07-27T00:00:00Z</updated>
 		<id>https://css-tip.com/back-to-top/</id>
-		<content type="html"><![CDATA[ &lt;p&gt;Create a CSS-only &amp;quot;Back To Top&amp;quot; button with a simple code&lt;/p&gt;
+		<content type="html">&lt;p&gt;Create a CSS-only &amp;quot;Back To Top&amp;quot; button with a simple code&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No JavaScript&lt;/li&gt;
 &lt;li&gt;Control when the button appears&lt;/li&gt;
@@ -532,6 +532,117 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;More detail: &lt;a href=&quot;https://www.freecodecamp.org/news/css-only-back-to-top-button/&quot;&gt;www.freecodecamp.org/news/css-only-back-to-top-button&lt;/a&gt;&lt;/p&gt;
- ]]></content>
+</content>
+	</entry>
+	
+	<entry>
+		<title>Navigation menu with sliding items</title>
+		<link href="https://css-tip.com/sliding-navigation-menu/"/>
+		<updated>2022-07-22T00:00:00Z</updated>
+		<id>https://css-tip.com/sliding-navigation-menu/</id>
+		<content type="html">&lt;p&gt;Create a simple navigation menu with a sliding effect&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimal HTML code&lt;/li&gt;
+&lt;li&gt;No duplicated text&lt;/li&gt;
+&lt;li&gt;Less than 20 CSS declarations&lt;/li&gt;
+&lt;li&gt;Optimized with CSS variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;nav&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;menu&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Home&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/about&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;About&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;active&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/shop&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Shop&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/contact&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Contact&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;nav&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;nav&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--c&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #E5DDCB&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #524656&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; flex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0 0 0 auto&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; flex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;list-style&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; none&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;ul li a&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0 .8em&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; block&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #0000&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 50%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;br&gt;    0% &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--_i&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;100%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;/100% 200%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;text-shadow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;    0 &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;2em - &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--_i&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;2em&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    0 &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--_i&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;-2em&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;text-decoration&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; none&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; bold 30px/2em sans-serif&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; hidden&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;outline-offset&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; -5px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; .5s&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;ul li a:hover,&lt;br&gt;ul li.active a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--_i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;ul li a:focus-visible&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;outline&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 2px dashed &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;ul li.active a:focus-visible&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;outline-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;qBojNeJ&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/qBojNeJ&quot;&gt;
+  CSS only menu with sliding effect&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;More detail: &lt;a href=&quot;https://css-tricks.com/cool-hover-effects-that-use-css-text-shadow/&quot;&gt;css-tricks.com/cool-hover-effects-that-use-css-text-shadow&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Dashed lines using CSS gradient</title>
+		<link href="https://css-tip.com/css-dashed-lines/"/>
+		<updated>2022-07-13T00:00:00Z</updated>
+		<id>https://css-tip.com/css-dashed-lines/</id>
+		<content type="html">&lt;p&gt;Create dashed lines using only one gradient&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/0tFDcIlduB-739.avif 739w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/0tFDcIlduB-739.webp 739w&quot;&gt;&lt;img alt=&quot;A background with dashed lines&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/0tFDcIlduB-739.png&quot; width=&quot;739&quot; height=&quot;367&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--c&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #333&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* color */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--t&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 2px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;/* thickness of the lines */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 50px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* gap between lines */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--s&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 12px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* size of the dashes*/&lt;/span&gt;&lt;br&gt;  &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;conic-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;at &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--t&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 50%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#0000 75%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--g&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;/&lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--g&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; + &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--t&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--s&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;XWEjYgZ&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/XWEjYgZ&quot;&gt;
+  CSS Only dashed lines&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Heart shape animation using outline</title>
+		<link href="https://css-tip.com/heart-shape-animation/"/>
+		<updated>2022-07-04T00:00:00Z</updated>
+		<id>https://css-tip.com/heart-shape-animation/</id>
+		<content type="html">&lt;p&gt;Add a beautiful animation to a &lt;a href=&quot;https://css-tip.com/image-heart-shape/&quot;&gt;Heart shape&lt;/a&gt; and reveal your best images 🥰 😍&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No extra element (only the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag)&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;Less than 10 declarations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/3leNleYhaO-780.avif 780w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/3leNleYhaO-780.webp 780w&quot;&gt;&lt;img alt=&quot;An image with a heart shape&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/3leNleYhaO-780.png&quot; width=&quot;780&quot; height=&quot;374&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 250px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;aspect-ratio&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;object-fit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; cover&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;mask-border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#000 69%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#0000 70%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 84.5% fill/100%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;clip-path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;polygon&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-41% 0&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;50% 91%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 141% 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;outline&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100vmax solid #ff3e60&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;outline-offset&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; -100vmax&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; .7s&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;img:hover&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;outline-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #0000&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;WNzQQzQ&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/WNzQQzQ&quot;&gt;
+  CSS only heart hover effect&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Turn your image into a heart</title>
+		<link href="https://css-tip.com/image-heart-shape/"/>
+		<updated>2022-07-01T00:00:00Z</updated>
+		<id>https://css-tip.com/image-heart-shape/</id>
+		<content type="html">&lt;p&gt;Turn your favorite image into a Heart 💖 using a few lines of code&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No extra element (only the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag)&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;Only two CSS declarations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/VXwd44Un44-698.avif 698w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/VXwd44Un44-698.webp 698w&quot;&gt;&lt;img alt=&quot;An image with a heart shape&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/VXwd44Un44-698.png&quot; width=&quot;698&quot; height=&quot;340&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;mask-border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#000 69%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#0000 70%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 84.5% fill/100%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;clip-path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;polygon&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-41% 0&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;50% 91%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 141% 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For better support we can rely on &lt;code&gt;mask&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;mask&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;   &lt;span class=&quot;token function&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;circle at 60% 63%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#000 64%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#0000 65%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; top left /50% 50% no-repeat&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;   &lt;span class=&quot;token function&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;circle at 40% 63%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#000 64%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#0000 65%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; top right/50% 50% no-repeat&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;   &lt;span class=&quot;token function&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#000 0 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; bottom/100% 50% no-repeat&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;PoRwjPM&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/PoRwjPM&quot;&gt;
+  CSS only heart images&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Horizontal lines around your title</title>
+		<link href="https://css-tip.com/horizontal-line-title/"/>
+		<updated>2022-06-24T00:00:00Z</updated>
+		<id>https://css-tip.com/horizontal-line-title/</id>
+		<content type="html">&lt;p&gt;Add horizontal lines around your title using &lt;code&gt;border-image&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No extra element&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;No overflow issue&lt;/li&gt;
+&lt;li&gt;Only two CSS properties&lt;/li&gt;
+&lt;li&gt;Optimized with CSS variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/YZVy8KXhip-855.avif 855w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/YZVy8KXhip-855.webp 855w&quot;&gt;&lt;img alt=&quot;Titles with horizontal lines on the sides&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/YZVy8KXhip-855.png&quot; width=&quot;855&quot; height=&quot;251&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--s&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 3px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;   &lt;span class=&quot;token comment&quot;&gt;/* the thickness */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--c&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; red&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;   &lt;span class=&quot;token comment&quot;&gt;/* the color */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--w&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* the width */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 10px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;/* the gap */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px solid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;border-image&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;     #0000      &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;50% - &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--s&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;/2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;     &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 0 &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;50% + &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--s&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;/2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;     #0000    0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;br&gt;   0 1/0 &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--w&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;/0 &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--w&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; + &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--g&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;BaYXdmM&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/BaYXdmM&quot;&gt;
+  Horizontal lines around your title&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
 	</entry>
 </feed>
