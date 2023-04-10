@@ -513,4 +513,26 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
 	</entry>
+	
+	<entry>
+		<title>CSS-only back to top button</title>
+		<link href="https://css-tip.com/back-to-top/"/>
+		<updated>2022-07-27T00:00:00Z</updated>
+		<id>https://css-tip.com/back-to-top/</id>
+		<content type="html">&lt;p&gt;Create a CSS-only &amp;quot;Back To Top&amp;quot; button with a simple code&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No JavaScript&lt;/li&gt;
+&lt;li&gt;Control when the button appears&lt;/li&gt;
+&lt;li&gt;Smooth scroll on click&lt;/li&gt;
+&lt;li&gt;Powered by CSS grid and sticky position&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;poLWLJG&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/poLWLJG&quot;&gt;
+  CSS only back to top button&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;More detail: &lt;a href=&quot;https://www.freecodecamp.org/news/css-only-back-to-top-button/&quot;&gt;www.freecodecamp.org/news/css-only-back-to-top-button&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
 </feed>

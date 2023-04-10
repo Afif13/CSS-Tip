@@ -50,8 +50,7 @@
 
 <time datetime="2023-03-29">March 29, 2023</time>
 
-<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
-<div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
+
 
 <p>Use the new <code>color-mix()</code> to manipulate the Hue of a color in the HSL color space</p>
 <pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <br>  <span class="token property">--h</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token comment">/* angle (from 0 to 360 without unit) */</span><br>  <br>  <span class="token property">--new-color</span><span class="token punctuation">:</span> <br>    <span class="token function">color-mix</span><span class="token punctuation">(</span>in hsl longer hue<span class="token punctuation">,</span> <br>      <span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span>*1%/3.6<span class="token punctuation">)</span><br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
