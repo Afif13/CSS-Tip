@@ -2,6 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://css-tip.com/fancy-title-divider/</loc>
+		<lastmod>2022-08-25</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/fancy-title-divider-2/</loc>
+		<lastmod>2022-08-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-zig-zag-edge/</loc>
+		<lastmod>2022-09-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-cut-corners/</loc>
+		<lastmod>2022-09-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/infinite-image-slider/</loc>
+		<lastmod>2022-09-16</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/css-wavy-shape/</loc>
 		<lastmod>2022-09-29</lastmod>
 	</url>

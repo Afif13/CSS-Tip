@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Fancy Rounded frame around your image</title>
+		<title>Cut the corners of your element</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Combine gradients and CSS mask to create a fancy frame around an image">
+		<meta name="description" content="Use CSS mask to cut the four corners of an element with a circular shapes">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/rounded-frame-image/" >
+		<link rel=canonical href="https://css-tip.com/css-cut-corners/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Fancy Rounded frame around your image">
+		<meta property="og:title" content="Cut the corners of your element">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/rounded-frame-image/">
-		<meta property="og:description" content="Combine gradients and CSS mask to create a fancy frame around an image">
+		<meta property="og:url" content="https://css-tip.com/css-cut-corners/">
+		<meta property="og:description" content="Use CSS mask to cut the four corners of an element with a circular shapes">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -46,31 +46,30 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Fancy Rounded frame around your image</h1>
+			<h1>Cut the corners of your element</h1>
 
-<time datetime="2022-11-01">November 01, 2022</time>
+<time datetime="2022-09-08">September 08, 2022</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Add a nice frame around your image using a few lines of code</p>
+<p>How much code is needed to cut the four corners of an element? Also known as inverted <code>border-radius</code></p>
 <ul>
-<li>One element (The <code>&lt;img&gt;</code> tag)</li>
-<li>No pseudo-element</li>
-<li>Only 3 CSS properties</li>
-<li>Optimized with CSS variables</li>
+<li>One Property</li>
+<li>One Gradient</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/pLV0Nqd5QD-529.avif 529w"><source type="image/webp" srcset="/img/pLV0Nqd5QD-529.webp 529w"><img alt="An image with a fancy rounded frame" loading="lazy" decoding="async" src="/img/pLV0Nqd5QD-529.png" width="529" height="384"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>    <span class="token comment">/* size of the frame */</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>    <span class="token comment">/* the gap */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> #FA6900<span class="token punctuation">;</span> <br>  <br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span>farthest-side<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span> 97%<span class="token punctuation">,</span>#0000<span class="token punctuation">)</span><br>    0 0/<span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> round<span class="token punctuation">;</span><br>  <span class="token property">--_m</span><span class="token punctuation">:</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 90deg at <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 25%<span class="token punctuation">,</span>#000 0<span class="token punctuation">)</span><br>     <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span> content-box<span class="token punctuation">;</span><br>  <span class="token property">-webkit-mask</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">;</span><br>          <span class="token property">mask</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="GROJrNw" data-preview="true" data-user="t_afif" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GROJrNw" target="_blank" rel="noopener">
-  Cool frame image</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Use an online generator to easily get the code: <a href="https://css-generators.com/custom-corners/" target="_blank" rel="noopener">css-generators.com/custom-corners</a></p>
+<p><picture><source type="image/avif" srcset="/img/-7jrrE-sC--1000.avif 1000w"><source type="image/webp" srcset="/img/-7jrrE-sC--1000.webp 1000w"><img alt="An element with 4 cut corners" loading="lazy" decoding="async" src="/img/-7jrrE-sC--1000.png" width="1000" height="426"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.corner</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span> <span class="token comment">/* control the radius of the cut */</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> at <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 98%<span class="token punctuation">,</span>#000<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="xxjZJGW" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/xxjZJGW" target="_blank" rel="noopener">
+  CSS Only cut corners</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More detail: <a href="https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/" target="_blank" rel="noopener">css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects</a></p>
+<p>More detail: <a href="https://css-tricks.com/cut-corners-using-css-mask-and-clip-path-properties/" target="_blank" rel="noopener">css-tricks.com/cut-corners-using-css-mask-and-clip-path-properties</a></p>
 
-<ul class="links-nextprev"><li><a href="/number-elements-has-selector/" title="How many elements your container has?">Previous CSS Tip</a></li><li><a href="/rainbow-gradient-animation/" title="A rainbow gradient animation">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li><a href="/css-zig-zag-edge/" title="A CSS-only Zig-Zag edge">Previous CSS Tip</a></li><li><a href="/infinite-image-slider/" title="An infinite image slider">Next CSS Tip</a></li>
 </ul>
 
 		</main>
