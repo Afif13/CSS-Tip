@@ -13,7 +13,7 @@
 	--background-color: #fff;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
+	--text-color-link: #054676;
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
 
@@ -140,8 +140,8 @@ footer {
 	padding: 0;
 	margin: 4em 0 1em;
 }
-.links-nextprev :first-child{
-  margin-right: auto;
+.links-nextprev :last-child{
+  margin-left: auto;
 }
 
 table {
@@ -192,6 +192,7 @@ header {
 	font-weight: 700;
 	margin-right: 2em;
 	text-decoration: none;
+	color:var(--text-color)!important
 }
 
 /* Nav */

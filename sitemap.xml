@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://css-tip.com/number-inside-box/</loc>
+		<lastmod>2022-08-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-dashed-border/</loc>
+		<lastmod>2022-08-10</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-speech-bubble/</loc>
+		<lastmod>2022-08-18</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/diagonal-reveal-effect/</loc>
+		<lastmod>2022-08-19</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-zig-zag-panel/</loc>
+		<lastmod>2022-08-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/outline-hover-effect/</loc>
+		<lastmod>2022-08-24</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/fancy-title-divider/</loc>
 		<lastmod>2022-08-25</lastmod>
 	</url>
