@@ -12,7 +12,7 @@ How much code is needed to create a Wavy Shape?
 
 Use an online generator to easily get the code: [css-generators.com/wavy-shapes](https://css-generators.com/wavy-shapes/)
 
-{% image "./wavy-shape.png", "A wavt shape" %}
+{% image "./wavy-shape.png", "A wavy shape" %}
 
 ```css
 .wave {
@@ -38,4 +38,4 @@ Use an online generator to easily get the code: [css-generators.com/wavy-shapes]
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
-More detail: [https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/](https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/)
+More detail: [css-tricks.com/how-to-create-wavy-shapes-patterns-in-css](https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/)

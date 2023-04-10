@@ -42,4 +42,4 @@ img {
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
-More detail: [https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/](https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/)
+More detail: [css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects](https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/)

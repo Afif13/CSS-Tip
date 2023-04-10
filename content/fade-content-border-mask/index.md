@@ -48,5 +48,5 @@ A different idea without `mask-composite` but it won't work with `border-radius`
 }
 ```
 
-Online demo: [https://codepen.io/t_afif/pen/YzObqzg](https://codepen.io/t_afif/pen/YzObqzg)
+Online demo: [codepen.io/t_afif/pen/YzObqzg](https://codepen.io/t_afif/pen/YzObqzg)
 

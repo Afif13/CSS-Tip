@@ -8,8 +8,8 @@ tags: posts
 
 Use online generators to create CSS shapes using clip-path in not time! 
 
-* Polygon Shapes: [https://css-generators.com/polygon-shape](https://css-generators.com/polygon-shape)
-* Starburst Shapes:  [https://css-generators.com/starburst-shape](https://css-generators.com/starburst-shape)
+* Polygon Shapes: [css-generators.com/polygon-shape](https://css-generators.com/polygon-shape)
+* Starburst Shapes:  [css-generators.com/starburst-shape](https://css-generators.com/starburst-shape)
 
 
 {% image "./css-shapes.png", "Starburst & polygon shapes" %}
