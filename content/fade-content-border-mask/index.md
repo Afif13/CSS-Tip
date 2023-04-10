@@ -9,6 +9,9 @@ tags: posts
 Create a fading content while keeping the border visible using CSS mask. It works with `border-radius` and no need to know the value of border.
 
 
+{% image "./fade-content-inside-border.png", "A fading content" %}
+
+
 ```css
 .box {
   border: 4px solid orange; /* we don't need to know the border-width */
@@ -21,7 +24,6 @@ Create a fading content while keeping the border visible using CSS mask. It work
 }
 ```
 
-{% image "./fade-content-inside-border.png", "A fading content" %}
 
 <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="qBMGZQz" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/qBMGZQz">

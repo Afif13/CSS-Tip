@@ -10,6 +10,8 @@ Use the new `color-mix()` to create different shades from one color.
 
 Mix with ⚫️ black for a darker color and ⚪️ white for a lighter color
 
+{% image "./color-shades.png", "3 color shades from one color" %}
+
 ```css
 html {
   --color: #8A9B0F; /* the main color */
@@ -18,7 +20,6 @@ html {
 }
 ```
 
-{% image "./color-shades.png", "3 color shades from one color" %}
 
 <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="ExeMOPV" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/ExeMOPV">

@@ -7,6 +7,7 @@ tags: posts
 ---
 Use `conic-gradient()` and the new color interpolation to create a nice color wheel 🤩
 
+{% image "./color-wheel.png", "A color wheel made conic-gradient" %}
 
 ```css
 .box {
@@ -18,7 +19,6 @@ Use `conic-gradient()` and the new color interpolation to create a nice color wh
 
 ❌ No complex color combination
 
-{% image "./color-wheel.png", "A color wheel made conic-gradient" %}
 
 <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="XWPvgZo" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/XWPvgZo">
