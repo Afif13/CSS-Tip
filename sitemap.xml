@@ -2,6 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://css-tip.com/css-ribbon/</loc>
+		<lastmod>2022-02-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/3d-image-effect/</loc>
+		<lastmod>2022-02-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-zoom-effect/</loc>
+		<lastmod>2022-02-28</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/grid-dashed-lines/</loc>
+		<lastmod>2022-02-28</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/section-divider/</loc>
+		<lastmod>2022-03-07</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/image-color-overlay/</loc>
 		<lastmod>2022-04-07</lastmod>
 	</url>
