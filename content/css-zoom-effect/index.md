@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: CSS-only Zoom effect on images
 description: clip-path and transform to create a zoom effect
-date: 2022-02-28
+date: 2022-02-17
 tags: posts
 ---
 
