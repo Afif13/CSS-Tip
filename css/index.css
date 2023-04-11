@@ -171,9 +171,6 @@ pre:not([class*="language-"]) {
 	word-spacing: normal;
 	word-break: normal;
 }
-code {
-	word-break: break-all;
-}
 pre[class*=language-] {
     margin: 1.5em 0;
 }

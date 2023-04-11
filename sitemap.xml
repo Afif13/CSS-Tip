@@ -2,8 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://css-tip.com/corner-only-border/</loc>
+		<lastmod>2021-11-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-plus-symbol/</loc>
+		<lastmod>2021-11-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/equal-height-column/</loc>
+		<lastmod>2021-11-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/progress-bar-dynamic-color/</loc>
+		<lastmod>2021-11-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-scrolling-shadow/</loc>
+		<lastmod>2021-11-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/dashed-rounded-border/</loc>
+		<lastmod>2021-11-25</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/multi-line-text-decoration/</loc>
+		<lastmod>2021-11-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-menu-icon/</loc>
+		<lastmod>2021-12-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/center-max-width/</loc>
+		<lastmod>2021-12-10</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/full-screen-height/</loc>
+		<lastmod>2021-12-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/image-thumbnail/</loc>
+		<lastmod>2021-12-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/matrix-image/</loc>
+		<lastmod>2022-01-02</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/matrix-cube/</loc>
-		<lastmod>2022-01-13</lastmod>
+		<lastmod>2022-01-03</lastmod>
 	</url>
 	
 	<url>

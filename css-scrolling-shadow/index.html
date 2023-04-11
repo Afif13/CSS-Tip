@@ -1,0 +1,81 @@
+<!DOCTYPE html><!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS-only scrolling shadow</title>
+		<link rel="icon" href="/img/fav.png" sizes="any">
+		<meta name="description" content="Create a scrolling shadow effect using only CSS gradients">
+		<meta name="author" content="Temani Afif">
+		<meta name="robots" content="index, follow">
+		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+		<link rel=canonical href="https://css-tip.com/css-scrolling-shadow/" >
+		<meta property="og:locale" content="en_US" >
+		<meta property="og:title" content="CSS-only scrolling shadow">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://css-tip.com/css-scrolling-shadow/">
+		<meta property="og:description" content="Create a scrolling shadow effect using only CSS gradients">
+		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
+		<meta property="og:image:width" content="1600" >
+		<meta property="og:image:height" content="800" >
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy one">
+		<meta name="generator" content="Eleventy v2.0.1">
+		
+		<style>code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:0 0;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8292a2}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}pre[class*=language-diff-]{--eleventy-code-padding:1.25em;padding-left:var(--eleventy-code-padding);padding-right:var(--eleventy-code-padding)}.token.deleted{background-color:#8e2e2e;color:inherit}.token.inserted{background-color:#44824a;color:inherit}.token.prefix.deleted,.token.prefix.inserted,.token.prefix.unchanged{-webkit-user-select:none;user-select:none;display:inline-flex;align-items:center;justify-content:center;padding-top:2px;padding-bottom:2px}.token.prefix.deleted,.token.prefix.inserted{width:var(--eleventy-code-padding);background-color:rgba(0,0,0,.2)}.token.deleted:not(.prefix),.token.inserted:not(.prefix){display:block;margin-left:calc(-1 * var(--eleventy-code-padding));margin-right:calc(-1 * var(--eleventy-code-padding));text-decoration:none;color:inherit}:root{--font-family:-apple-system,system-ui,sans-serif;--font-family-monospace:Consolas,Menlo,Monaco,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Courier New,Courier,monospace}:root{--color-gray-20:#e0e0e0;--color-gray-50:#C0C0C0;--color-gray-90:#333;--background-color:#fff;--text-color:var(--color-gray-90);--text-color-link:#054676;--text-color-link-active:#5f2b48;--text-color-link-visited:#17050F;--syntax-tab-size:2}@media (prefers-color-scheme:dark){:root{--color-gray-20:#e0e0e0;--color-gray-50:#C0C0C0;--color-gray-90:#dad8d8;--text-color-link:#1493fb;--text-color-link-active:#6969f7;--text-color-link-visited:#a6a6f8;--background-color:#15202b}}*{box-sizing:border-box}body,html{padding:0;margin:0 auto;font-family:var(--font-family);color:var(--text-color)}html{--s:50px;--c:#fff;--_s:calc(2*var(--s)) calc(2*var(--s));--_g:35.36% 35.36% at;--_c:#0000 66%,#f3f3f3 68% 70%,#0000 72%;background:radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s),radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s),repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);background-attachment:fixed;overflow-y:scroll;overflow-x:hidden}@media (prefers-color-scheme:dark){html{--c:#15202b;--_c:#0000 66%,#25272e 68% 70%,#0000 72%}}body{max-width:40em;min-height:100vh;display:flex;flex-direction:column}footer{margin-top:auto;text-align:center}h1{text-align:center;margin:.25em 0 1em;font-size:2.5rem;text-wrap:balance}.visually-hidden{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}p{line-height:1.5}li{line-height:1.5}a[href]{color:var(--text-color-link)}a[href]:visited{color:var(--text-color-link-visited)}a[href]:active,a[href]:hover{color:var(--text-color-link-active)}main{padding:1rem}main img{max-width:100%;height:auto;margin:1.5rem auto;display:block}header{border-image:linear-gradient(to top,var(--color-gray-20) 1px,#0000 0) fill 0//0 100vw}footer{border-image:linear-gradient(to bottom,var(--color-gray-20) 1px,#0000 0) fill 0//0 100vw}.links-nextprev{display:flex;list-style:none;padding:0;margin:4em 0 1em}.links-nextprev :last-child{margin-left:auto}table{margin:1em 0}table td,table th{padding-right:1em}code,pre{font-family:var(--font-family-monospace)}pre:not([class*=language-]){margin:.5em 0;line-height:1.375;-moz-tab-size:var(--syntax-tab-size);-o-tab-size:var(--syntax-tab-size);tab-size:var(--syntax-tab-size);-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal}pre[class*=language-]{margin:1.5em 0}header{display:flex;gap:1em .5em;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:1em}.home-link{font-size:2em;font-weight:700;margin-right:2em;text-decoration:none;color:var(--text-color)!important}.nav{display:flex;padding:0;margin:0;list-style:none;gap:1.5em}.nav-item a[href]:not(:hover){text-decoration:none}.nav a[href][aria-current=page]{text-decoration:underline}.postlist{list-style:none;padding:0;padding-left:1.5rem}.postlist-item{display:flex;flex-direction:column;align-items:start;margin-bottom:1em;position:relative}.postlist-item:before{pointer-events:none;content:"❋";line-height:100%;position:absolute;right:calc(100% + .5em);top:.7em}.postlist-date,.postlist-item:before{font-size:.8125em;color:var(--color-gray-90)}.postlist-date{word-spacing:-0.5px}.postlist-link{font-size:1.1875em;font-weight:700;padding-right:.5em;text-underline-position:from-font}.postlist-item-active .postlist-link{font-weight:700}h1+time{display:block;text-align:center;margin:-1.5em 0 2em}.header-anchor{text-decoration:none;font-style:normal;font-size:1em;margin-left:.1em}a[href].header-anchor,a[href].header-anchor:visited{color:transparent}a[href].header-anchor:focus,a[href].header-anchor:hover{text-decoration:underline}:hover>a[href].header-anchor,a[href].header-anchor:focus{color:#aaa}h2+.header-anchor{font-size:1.5em}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KSNXZ63602"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KSNXZ63602');
+</script>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+		<header>
+			<a href="/" class="home-link">CSS Tip</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="skip">
+			<h1>CSS-only scrolling shadow</h1>
+
+<time datetime="2021-11-24">November 24, 2021</time>
+
+<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+<div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
+
+<p>Create a CSS-only Scrolling Shadow effect with a few lines of code.</p>
+<ul>
+<li>No JavaScript</li>
+<li>No extra element</li>
+<li>No pseudo element</li>
+<li>Only background properties.</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Nv_iDIXq3J-470.avif 470w"><source type="image/webp" srcset="/img/Nv_iDIXq3J-470.webp 470w"><img alt="CSS-only scrolling shadow" loading="lazy" decoding="async" src="/img/Nv_iDIXq3J-470.png" width="470" height="241"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.scrollbox</span> <span class="token punctuation">{</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br>  <br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span>55% 20px<span class="token punctuation">,</span> #0009<span class="token punctuation">,</span> #0000<span class="token punctuation">)</span><span class="token punctuation">;</span>  <br>  <span class="token property">background</span><span class="token punctuation">:</span> <br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#fff 10px<span class="token punctuation">,</span> #0000 40px <span class="token function">calc</span><span class="token punctuation">(</span>100% - 40px<span class="token punctuation">)</span><span class="token punctuation">,</span>#fff <span class="token function">calc</span><span class="token punctuation">(</span>100% - 10px<span class="token punctuation">)</span><span class="token punctuation">)</span> local<span class="token punctuation">,</span> <br>    <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span> top   /100% 200%<span class="token punctuation">,</span>    <br>    <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span> bottom/100% 200%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="bGrPBLJ" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/bGrPBLJ" target="_blank" rel="noopener">
+  CSS only Scrolling shadow</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<p>More detail: <a href="https://stackoverflow.com/a/59431975/8620333" target="_blank" rel="noopener">How does this scrolling shadows CSS-magic work?</a></p>
+
+<ul class="links-nextprev"><li><a href="/progress-bar-dynamic-color/" title="Progress bar with dynamic coloration">Previous CSS Tip</a></li><li><a href="/dashed-rounded-border/" title="Circular dashed border">Next CSS Tip</a></li>
+</ul>
+
+		</main>
+		<footer>
+			<p>Created by <a href="https://github.com/Afif13/" target="_blank" rel="noopener">Temani Afif</a> | <a href="/feed/feed.xml" target="_blank">RSS Feed</a></p>
+		</footer>
+	</body>
+</html>
