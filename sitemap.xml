@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://css-tip.com/image-color-overlay/</loc>
+		<lastmod>2022-04-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/wavy-text-animation/</loc>
+		<lastmod>2022-04-19</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/wavy-text-animation-2/</loc>
+		<lastmod>2022-04-20</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/responsive-hexagon-grid/</loc>
 		<lastmod>2022-06-03</lastmod>
 	</url>
