@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A color overlay above your image</title>
+		<title>A simple CSS loader</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use outline to add an overlay to your image">
+		<meta name="description" content="A mask trick to create a simple loader">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/image-color-overlay/" >
+		<link rel=canonical href="https://css-tip.com/simple-css-loader/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A color overlay above your image">
+		<meta property="og:title" content="A simple CSS loader">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/image-color-overlay/">
-		<meta property="og:description" content="Use outline to add an overlay to your image">
+		<meta property="og:url" content="https://css-tip.com/simple-css-loader/">
+		<meta property="og:description" content="A mask trick to create a simple loader">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -46,30 +46,27 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>A color overlay above your image</h1>
+			<h1>A simple CSS loader</h1>
 
-<time datetime="2022-04-07">April 07, 2022</time>
+<time datetime="2022-02-02">February 02, 2022</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Add a color overlay above your image using only 3 declarations</p>
+<p>Create a CSS-only loader with a simple code.</p>
 <ul>
-<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
-<li>No pseudo element</li>
-<li>Works with rounded image</li>
+<li>One <code>&lt;div&gt;</code></li>
+<li>Less than 10 CSS declarations</li>
 </ul>
-<p>You can also have a cool transition on hover</p>
-<p><picture><source type="image/avif" srcset="/img/MkQIDXOEy6-895.avif 895w"><source type="image/webp" srcset="/img/MkQIDXOEy6-895.webp 895w"><img alt="A color overlay above an image" loading="lazy" decoding="async" src="/img/MkQIDXOEy6-895.png" width="895" height="301"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">outline</span><span class="token punctuation">:</span> 100vmax solid <span class="token function">rgb</span><span class="token punctuation">(</span>0 0 0/<span class="token function">var</span><span class="token punctuation">(</span>--_o<span class="token punctuation">,</span>50%<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">outline-offset</span><span class="token punctuation">:</span> -100vmax<span class="token punctuation">;</span><br>  <span class="token comment">/* keep only the image area visible */</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span><span class="token punctuation">;</span> <br>  <br>  <span class="token property">transition</span><span class="token punctuation">:</span> outline-color .4s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--_o</span><span class="token punctuation">:</span> 0%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="popLNXV" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/popLNXV" target="_blank" rel="noopener">
-  Overlay image (no extra element)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/_mk16Cda-f-433.avif 433w"><source type="image/webp" srcset="/img/_mk16Cda-f-433.webp 433w"><img alt="A CSS only loader" loading="lazy" decoding="async" src="/img/_mk16Cda-f-433.png" width="433" height="222"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.loader</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 120px<span class="token punctuation">;</span>        <span class="token comment">/* the size */</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>       <span class="token comment">/* the border thickness */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #07e8d6<span class="token punctuation">;</span> <span class="token comment">/* the color */</span><br>  <br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#0000<span class="token punctuation">,</span>#000<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span> content-box<span class="token punctuation">;</span><br>  <span class="token property">mask-composite</span><span class="token punctuation">:</span> subtract<span class="token punctuation">;</span><br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> load 1s linear infinite<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token atrule"><span class="token rule">@keyframes</span> load</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span><span class="token punctuation">{</span><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>1turn<span class="token punctuation">)</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="zYPqMgq" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zYPqMgq" target="_blank" rel="noopener">
+  Spinner loader</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-<ul class="links-nextprev"><li><a href="/tooltip-mask/" title="Tooltip using mask">Previous CSS Tip</a></li><li><a href="/wavy-text-animation/" title="Wavy text animation">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li><a href="/rounded-dashed-underline/" title="A rounded &amp; dashed underline">Previous CSS Tip</a></li><li><a href="/css-ribbon/" title="CSS-only folded ribbon">Next CSS Tip</a></li>
 </ul>
 
 		</main>

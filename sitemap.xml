@@ -2,6 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://css-tip.com/matrix-cube/</loc>
+		<lastmod>2022-01-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/stick-element-grid/</loc>
+		<lastmod>2022-01-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/equal-width-button/</loc>
+		<lastmod>2022-01-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/rounded-dashed-underline/</loc>
+		<lastmod>2022-02-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/simple-css-loader/</loc>
+		<lastmod>2022-02-02</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/css-ribbon/</loc>
 		<lastmod>2022-02-07</lastmod>
 	</url>
@@ -13,7 +38,7 @@
 	
 	<url>
 		<loc>https://css-tip.com/css-zoom-effect/</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-02-17</lastmod>
 	</url>
 	
 	<url>
@@ -24,6 +49,11 @@
 	<url>
 		<loc>https://css-tip.com/section-divider/</loc>
 		<lastmod>2022-03-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/tooltip-mask/</loc>
+		<lastmod>2022-04-04</lastmod>
 	</url>
 	
 	<url>
