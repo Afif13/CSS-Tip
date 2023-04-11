@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Horizontal lines around your title</title>
+		<title>A CSS-only custom cursor</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use border-image to create Horizontal lines around a title">
+		<meta name="description" content="Combine CSS and SVG to create any kind of fancy cursor">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/horizontal-line-title/" >
+		<link rel=canonical href="https://css-tip.com/css-custom-cursor/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Horizontal lines around your title">
+		<meta property="og:title" content="A CSS-only custom cursor">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/horizontal-line-title/">
-		<meta property="og:description" content="Use border-image to create Horizontal lines around a title">
+		<meta property="og:url" content="https://css-tip.com/css-custom-cursor/">
+		<meta property="og:description" content="Combine CSS and SVG to create any kind of fancy cursor">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -46,31 +46,25 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Horizontal lines around your title</h1>
+			<h1>A CSS-only custom cursor</h1>
 
-<time datetime="2022-06-24">June 24, 2022</time>
+<time datetime="2022-06-14">June 14, 2022</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Add horizontal lines around your title using <code>border-image</code></p>
-<ul>
-<li>No extra element</li>
-<li>No pseudo-element</li>
-<li>No overflow issue</li>
-<li>Only two CSS properties</li>
-<li>Optimized with CSS variables</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/YZVy8KXhip-855.avif 855w"><source type="image/webp" srcset="/img/YZVy8KXhip-855.webp 855w"><img alt="Titles with horizontal lines on the sides" loading="lazy" decoding="async" src="/img/YZVy8KXhip-855.png" width="855" height="251"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">h2</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>   <span class="token comment">/* the thickness */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>   <span class="token comment">/* the color */</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span> <span class="token comment">/* the width */</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>  <span class="token comment">/* the gap */</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid<span class="token punctuation">;</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><br>     #0000      <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">,</span><br>     <span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span> 0 <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">,</span><br>     #0000    0<span class="token punctuation">)</span> <br>   0 1/0 <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/0 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="BaYXdmM" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/BaYXdmM" target="_blank" rel="noopener">
-  Horizontal lines around your title</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Create a custom cursor using CSS without external resources. Style your cursor like you do with a simple <code>&lt;div&gt;</code>!</p>
+<p>Powered by CSS-in-SVG-in-CSS</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br><span class="token comment">/*<br>  - adjust the width,height and viewbox to control the size <br>  - minify your CSS <br>  - change all the # to %23<br>*/</span><br>  <span class="token property">cursor</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'data:image/svg+xml;utf8,&lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">&lt;foreignObject width="100%" height="100%">&lt;div xmlns="http://www.w3.org/1999/xhtml" class="c">&lt;/div>%3Cstyle%3E.c{ ADD YOUR CSS HERE }%3C/style%3E&lt;/foreignObject>&lt;/svg>'</span><span class="token punctuation">)</span></span>  <br>  24 24 <span class="token comment">/* control the offset */</span> <span class="token punctuation">,</span> <br>  auto<span class="token punctuation">;</span> <span class="token comment">/* the fallback cursor */</span><br><span class="token punctuation">}</span><br></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="rNJPaJP" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/rNJPaJP" target="_blank" rel="noopener">
+  CSS only Custom cursor</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<p>More detail: <a href="https://verpex.com/blog/website-tips/creating-a-custom-cursor-using-css" target="_blank" rel="noopener">verpex.com/blog/website-tips/creating-a-custom-cursor-using-css</a></p>
 
-<ul class="links-nextprev"><li><a href="/float-bottom-corner/" title="Float an element to the bottom corner">Previous CSS Tip</a></li><li><a href="/image-heart-shape/" title="Turn your image into a heart">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li><a href="/overflowing-background/" title="Extend the background to the edge of the screen">Previous CSS Tip</a></li><li><a href="/overflowing-underline/" title="Extend your underline to the edge of the screen">Next CSS Tip</a></li>
 </ul>
 
 		</main>

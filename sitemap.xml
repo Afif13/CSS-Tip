@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://css-tip.com/responsive-hexagon-grid/</loc>
+		<lastmod>2022-06-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-graph-paper/</loc>
+		<lastmod>2022-06-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/overflowing-background/</loc>
+		<lastmod>2022-06-09</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/css-custom-cursor/</loc>
+		<lastmod>2022-06-14</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/overflowing-underline/</loc>
+		<lastmod>2022-06-16</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/overflowing-underline-2/</loc>
+		<lastmod>2022-06-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/float-bottom-corner/</loc>
+		<lastmod>2022-06-22</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/horizontal-line-title/</loc>
 		<lastmod>2022-06-24</lastmod>
 	</url>
@@ -143,16 +178,16 @@
 	
 	<url>
 		<loc>https://css-tip.com/about/</loc>
-		<lastmod>2023-04-10</lastmod>
+		<lastmod>2023-04-11</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://css-tip.com/archive/</loc>
-		<lastmod>2023-04-10</lastmod>
+		<lastmod>2023-04-11</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://css-tip.com/</loc>
-		<lastmod>2023-04-10</lastmod>
+		<lastmod>2023-04-11</lastmod>
 	</url>
 </urlset>
