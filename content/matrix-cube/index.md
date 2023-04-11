@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: A matrix of cubes using one element
 description: Create a matrix of cubes using only one element
-date: 2022-01-13
+date: 2022-01-03
 tags: posts
 ---
 
