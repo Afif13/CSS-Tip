@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Color shades using color-mix()</title>
+		<title>CSS-only gradient shadows</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Mix your color with black or white to create color shades">
+		<meta name="description" content="Use an online tool to generate your gradient shadow">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/color-shades-color-mix/" >
+		<link rel=canonical href="https://css-tip.com/css-gradient-shadows/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Color shades using color-mix()">
+		<meta property="og:title" content="CSS-only gradient shadows">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/color-shades-color-mix/">
-		<meta property="og:description" content="Mix your color with black or white to create color shades">
+		<meta property="og:url" content="https://css-tip.com/css-gradient-shadows/">
+		<meta property="og:description" content="Use an online tool to generate your gradient shadow">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -46,30 +46,29 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Color shades using color-mix()</h1>
+			<h1>CSS-only gradient shadows</h1>
 
-<time datetime="2023-03-28">March 28, 2023</time>
+<time datetime="2023-02-10">February 10, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Use the new <code>color-mix()</code> to create different shades from one color.</p>
-<p>Mix with ⚫️ black for a darker color and ⚪️ white for a lighter color</p>
-<p><picture><source type="image/avif" srcset="/img/bQn4Q-ryeF-715.avif 715w"><source type="image/webp" srcset="/img/bQn4Q-ryeF-715.webp 715w"><img alt="3 color shades from one color" loading="lazy" decoding="async" src="/img/bQn4Q-ryeF-715.png" width="715" height="371"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">--color</span><span class="token punctuation">:</span> #8A9B0F<span class="token punctuation">;</span> <span class="token comment">/* the main color */</span><br>  <span class="token property">--color-light</span><span class="token punctuation">:</span> <span class="token function">color-mix</span><span class="token punctuation">(</span>in srgb<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span><span class="token punctuation">,</span>#fff 25%<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--color-dark</span><span class="token punctuation">:</span>  <span class="token function">color-mix</span><span class="token punctuation">(</span>in srgb<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span><span class="token punctuation">,</span>#000 25%<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="ExeMOPV" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ExeMOPV" target="_blank" rel="noopener">
-  Color shades using  color-mix()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>An online tool to create fancy CSS shadows with gradients coloration. Get the code in One click 🌟</p>
+<ul>
+<li>Works with transparency</li>
+<li>Works with <code>border-radius</code></li>
+</ul>
+<p><a href="https://css-generators.com/gradient-shadows/" target="_blank" rel="noopener">css-generators.com/gradient-shadows</a></p>
+<p><picture><source type="image/avif" srcset="/img/XgBVTDjc_k-627.avif 627w"><source type="image/webp" srcset="/img/XgBVTDjc_k-627.webp 627w"><img alt="CSS-only gradient shadows" loading="lazy" decoding="async" src="/img/XgBVTDjc_k-627.png" width="627" height="452"></picture></p>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="NWBYVRK" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/NWBYVRK" target="_blank" rel="noopener">
+  Updating inset instead of 3D transform</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<h2 id="related-links" tabindex="-1">Related Links <a class="header-anchor" href="#related-links">#</a></h2>
-<ul>
-<li><a href="https://developer.chrome.com/articles/high-definition-css-color-guide/" target="_blank" rel="noopener">https://developer.chrome.com/articles/high-definition-css-color-guide/</a></li>
-<li><a href="https://www.w3.org/TR/css-color-5/#color-mix" target="_blank" rel="noopener">https://www.w3.org/TR/css-color-5/#color-mix</a></li>
-</ul>
+<p>More detail: <a href="https://css-tricks.com/different-ways-to-get-css-gradient-shadows/" target="_blank" rel="noopener">css-tricks.com/different-ways-to-get-css-gradient-shadows</a></p>
 
-<ul class="links-nextprev"><li><a href="/card-reveal-animation/" title="Card reveal animation">Previous CSS Tip</a></li><li><a href="/hue-manipulation-color-mix/" title="Hue manipulation using color-mix()">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li><a href="/border-only-tooltip-mask/" title="A border-only Tooltip using mask">Previous CSS Tip</a></li><li><a href="/polygon-starburst-shapes/" title="CSS shapes: Polygon &amp; Starburst">Next CSS Tip</a></li>
 </ul>
 
 		</main>
