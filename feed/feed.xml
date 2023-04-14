@@ -122,27 +122,6 @@
 	</entry>
 	
 	<entry>
-		<title>Card reveal animation</title>
-		<link href="https://css-tip.com/card-reveal-animation/"/>
-		<updated>2023-03-28T00:00:00Z</updated>
-		<id>https://css-tip.com/card-reveal-animation/</id>
-		<content type="html">&lt;p&gt;Add a cool text reveal animation to your image card&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Minimal HTML&lt;/li&gt;
-&lt;li&gt;No pseudo-element&lt;/li&gt;
-&lt;li&gt;Powered by CSS Mask (with fallback for old browsers)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/FP23B-Ut5L-744.avif 744w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/FP23B-Ut5L-744.webp 744w&quot;&gt;&lt;img alt=&quot;Card reveal animation&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/FP23B-Ut5L-744.png&quot; width=&quot;744&quot; height=&quot;371&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;PoBQRmj&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
-  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/PoBQRmj&quot;&gt;
-  Card hover effect&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
-  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>Color switch using color-mix()</title>
 		<link href="https://css-tip.com/color-switch-color-mix/"/>
 		<updated>2023-03-27T00:00:00Z</updated>
@@ -252,6 +231,27 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Card reveal animation</title>
+		<link href="https://css-tip.com/card-reveal-animation/"/>
+		<updated>2023-01-23T00:00:00Z</updated>
+		<id>https://css-tip.com/card-reveal-animation/</id>
+		<content type="html">&lt;p&gt;Add a cool text reveal animation to your image card&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimal HTML&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;Powered by CSS Mask (with fallback for old browsers)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/FP23B-Ut5L-744.avif 744w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/FP23B-Ut5L-744.webp 744w&quot;&gt;&lt;img alt=&quot;Card reveal animation&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/FP23B-Ut5L-744.png&quot; width=&quot;744&quot; height=&quot;371&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;PoBQRmj&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/PoBQRmj&quot;&gt;
+  Card hover effect&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
 	</entry>
 	
 	<entry>

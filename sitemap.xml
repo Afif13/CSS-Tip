@@ -267,6 +267,11 @@
 	</url>
 	
 	<url>
+		<loc>https://css-tip.com/card-reveal-animation/</loc>
+		<lastmod>2023-01-23</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/rainbow-gradient-animation/</loc>
 		<lastmod>2023-01-31</lastmod>
 	</url>
@@ -289,11 +294,6 @@
 	<url>
 		<loc>https://css-tip.com/color-switch-color-mix/</loc>
 		<lastmod>2023-03-27</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://css-tip.com/card-reveal-animation/</loc>
-		<lastmod>2023-03-28</lastmod>
 	</url>
 	
 	<url>
@@ -323,16 +323,16 @@
 	
 	<url>
 		<loc>https://css-tip.com/about/</loc>
-		<lastmod>2023-04-12</lastmod>
+		<lastmod>2023-04-14</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://css-tip.com/archive/</loc>
-		<lastmod>2023-04-12</lastmod>
+		<lastmod>2023-04-14</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://css-tip.com/</loc>
-		<lastmod>2023-04-12</lastmod>
+		<lastmod>2023-04-14</lastmod>
 	</url>
 </urlset>
