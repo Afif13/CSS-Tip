@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Card reveal animation
 description: A few mask trick to create a fancy reveal animation on hover
-date: 2023-03-28
+date: 2023-01-23
 tags: posts
 ---
 
