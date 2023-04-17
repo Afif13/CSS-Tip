@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/custom-numbered-list/",
+			"url": "https://css-tip.com/custom-numbered-list/",
+			"title": "Customize your numbered list",
+			"content_html": "<p>Use <code>@counter-style</code> to customize your <code>&lt;ol&gt;</code> list with a simple code</p>\n<ul>\n<li>No extra markup</li>\n<li>No pseudo-element</li>\n<li>No need for <code>counter()</code></li>\n<li>Keep the default browser algorithm</li>\n</ul>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/RXLpZ1338s-205.avif 205w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/RXLpZ1338s-205.webp 205w\"><img alt=\"A numbered list\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/RXLpZ1338s-205.png\" width=\"205\" height=\"268\"></picture></p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token atrule\"><span class=\"token rule\">@counter-style</span> new-style</span> <span class=\"token punctuation\">{</span><br>  <span class=\"token property\">system</span><span class=\"token punctuation\">:</span> extends decimal<span class=\"token punctuation\">;</span><br>  <span class=\"token property\">suffix</span><span class=\"token punctuation\">:</span> <span class=\"token string\">\") \"</span><span class=\"token punctuation\">;</span><br>  <span class=\"token property\">prefix</span><span class=\"token punctuation\">:</span> <span class=\"token string\">\"(\"</span><span class=\"token punctuation\">;</span><br><span class=\"token punctuation\">}</span><br><span class=\"token selector\">ol</span> <span class=\"token punctuation\">{</span><br>  <span class=\"token property\">list-style-type</span><span class=\"token punctuation\">:</span> new-style<span class=\"token punctuation\">;</span><br><span class=\"token punctuation\">}</span></code></pre>\n<p class=\"codepen\" data-height=\"300\" data-default-tab=\"result\" data-slug-hash=\"GRYZeqr\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/GRYZeqr\">\n  Custom numbered list</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>\n",
+			"date_published": "2023-04-17T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/custom-range-slider/",
 			"url": "https://css-tip.com/custom-range-slider/",
 			"title": "CSS-only custom range slider",

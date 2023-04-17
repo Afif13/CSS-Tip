@@ -4,11 +4,34 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2023-04-10T00:00:00Z</updated>
+	<updated>2023-04-17T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Customize your numbered list</title>
+		<link href="https://css-tip.com/custom-numbered-list/"/>
+		<updated>2023-04-17T00:00:00Z</updated>
+		<id>https://css-tip.com/custom-numbered-list/</id>
+		<content type="html">&lt;p&gt;Use &lt;code&gt;@counter-style&lt;/code&gt; to customize your &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; list with a simple code&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No extra markup&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;No need for &lt;code&gt;counter()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Keep the default browser algorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/RXLpZ1338s-205.avif 205w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/RXLpZ1338s-205.webp 205w&quot;&gt;&lt;img alt=&quot;A numbered list&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/RXLpZ1338s-205.png&quot; width=&quot;205&quot; height=&quot;268&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@counter-style&lt;/span&gt; new-style&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; extends decimal&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;suffix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;) &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;(&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;ol&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;list-style-type&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; new-style&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;GRYZeqr&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/GRYZeqr&quot;&gt;
+  Custom numbered list&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>CSS-only custom range slider</title>
