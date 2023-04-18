@@ -4,11 +4,27 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2023-04-17T00:00:00Z</updated>
+	<updated>2023-04-18T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Select the first &amp; last element with a class</title>
+		<link href="https://css-tip.com/first-last-element-with-class/"/>
+		<updated>2023-04-18T00:00:00Z</updated>
+		<id>https://css-tip.com/first-last-element-with-class/</id>
+		<content type="html">&lt;p&gt;Do you want to select the first and last element with a specific class? It&#39;s possible and you can do it using 2 different methods!&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* First element with class &quot;cat&quot; */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;.cat:not(.cat ~ *)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token comment&quot;&gt;/* OR */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;:nth-child(1 of .cat)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token comment&quot;&gt;/* Last element with class &quot;bird&quot; */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;.bird:not(:has(~ .bird))&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token comment&quot;&gt;/* OR */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;:nth-last-child(1 of .bird)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;ExdgYXo&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/ExdgYXo&quot;&gt;
+  Untitled&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Customize your numbered list</title>

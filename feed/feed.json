@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/first-last-element-with-class/",
+			"url": "https://css-tip.com/first-last-element-with-class/",
+			"title": "Select the first &amp; last element with a class",
+			"content_html": "<p>Do you want to select the first and last element with a specific class? It's possible and you can do it using 2 different methods!</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token comment\">/* First element with class \"cat\" */</span><br><span class=\"token selector\">.cat:not(.cat ~ *)</span> <span class=\"token punctuation\">{</span><span class=\"token punctuation\">}</span><br><span class=\"token comment\">/* OR */</span><br><span class=\"token selector\">:nth-child(1 of .cat)</span> <span class=\"token punctuation\">{</span><span class=\"token punctuation\">}</span><br><br><br><span class=\"token comment\">/* Last element with class \"bird\" */</span><br><span class=\"token selector\">.bird:not(:has(~ .bird))</span> <span class=\"token punctuation\">{</span><span class=\"token punctuation\">}</span><br><span class=\"token comment\">/* OR */</span><br><span class=\"token selector\">:nth-last-child(1 of .bird)</span> <span class=\"token punctuation\">{</span><span class=\"token punctuation\">}</span></code></pre>\n<p class=\"codepen\" data-height=\"300\" data-default-tab=\"result\" data-slug-hash=\"ExdgYXo\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/ExdgYXo\">\n  Untitled</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>\n",
+			"date_published": "2023-04-18T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/custom-numbered-list/",
 			"url": "https://css-tip.com/custom-numbered-list/",
 			"title": "Customize your numbered list",
