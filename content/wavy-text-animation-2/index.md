@@ -6,7 +6,7 @@ date: 2022-04-20
 tags: posts
 ---
 
-Improving [the previous CSS-only Wavy animation](wavy-text-animation/)
+Improving [the previous CSS-only Wavy animation](/wavy-text-animation)
 * Adding another wave
 * Support multi-line of text
 
