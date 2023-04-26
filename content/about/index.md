@@ -7,11 +7,8 @@ eleventyNavigation:
 
 <h1>About</h1>
 
-My name is **Temani Afif** and I made this website to share with you a few CSS Tips. No complex tutorial, No lengthy video, No boring streaming. 
+My name is **Temani Afif** and I made this website to share with you a few CSS Tips. No complex tutorial, No lengthy video, No boring streaming. Read a tip per day and become a CSS expert.
 
-Read a tip per day and become a CSS expert.
-
-----
 
 Want more CSS fun? Check my other websites:
 * [CSS Challenges](https://css-challenges.com/)
@@ -21,6 +18,11 @@ Want more CSS fun? Check my other websites:
 * [CSS Arts](https://css-only.art/)
 * [CSS Games](https://css-games.com/)
 
-----
-
 Did you like this website? [You can thank me with a small coffee](https://support.temani-afif.com/)
+
+
+Find me on:
+* [Twitter](https://twitter.com/ChallengesCss)
+* [Mastodon](https://front-end.social/@css)
+* [Github](https://github.com/Afif13/)
+* [Stack Overflow](https://stackoverflow.com/users/8620333/temani-afif)

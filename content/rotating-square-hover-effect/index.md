@@ -53,4 +53,4 @@ img:hover {
 
 ## Related links:
 * [css-tricks.com/advanced-css-animation-using-cubic-bezier](https://css-tricks.com/advanced-css-animation-using-cubic-bezier/)
-* [https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects](https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/)
+* [css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects](https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/)
