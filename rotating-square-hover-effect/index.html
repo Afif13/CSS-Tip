@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy one</title>
+		<title>A fancy hover effect with rotating squares</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta name="description" content="Transform your image into little rotating squares with a fancy hover effect.">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/rotating-square-hover-effect/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy one">
+		<meta property="og:title" content="A fancy hover effect with rotating squares">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta property="og:url" content="https://css-tip.com/rotating-square-hover-effect/">
+		<meta property="og:description" content="Transform your image into little rotating squares with a fancy hover effect.">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -39,88 +39,43 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="skip">
-			
+			<h1>A fancy hover effect with rotating squares</h1>
 
-<h1>Learn CSS the easy way</h1>
-<p>Welcome to CSS Tip. A small website where you can learn a new CSS trick every day. All the CSS secrets are here (Flexbox, CSS Grid, Gradients, Colors, Animation, Masking, Selectors, etc). It takes one minute to read a tip.</p>
+<time datetime="2023-04-26">April 26, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<br>
-
-
-<ul class="postlist" >
-
-	<li class="postlist-item">
-		<a href="/rotating-square-hover-effect/" class="postlist-link">A fancy hover effect with rotating squares</a>
-		<time class="postlist-date" datetime="2023-04-26">April 26, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/css-ribbon-2/" class="postlist-link">A CSS-only Ribbon</a>
-		<time class="postlist-date" datetime="2023-04-24">April 24, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/3d-zig-zag-edge/" class="postlist-link">A CSS-only 3D Zig-Zag edge</a>
-		<time class="postlist-date" datetime="2023-04-19">April 19, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/first-last-element-with-class/" class="postlist-link">Select the first &amp; last element with a class</a>
-		<time class="postlist-date" datetime="2023-04-18">April 18, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/custom-numbered-list/" class="postlist-link">Customize your numbered list</a>
-		<time class="postlist-date" datetime="2023-04-17">April 17, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/custom-range-slider/" class="postlist-link">CSS-only custom range slider</a>
-		<time class="postlist-date" datetime="2023-04-10">April 10, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/color-wheel-gradient/" class="postlist-link">A color wheel with gradient</a>
-		<time class="postlist-date" datetime="2023-04-03">April 03, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/fade-content-border-mask/" class="postlist-link">Fade content inside border using mask</a>
-		<time class="postlist-date" datetime="2023-03-30">March 30, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/hue-manipulation-color-mix/" class="postlist-link">Hue manipulation using color-mix()</a>
-		<time class="postlist-date" datetime="2023-03-29">March 29, 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/color-shades-color-mix/" class="postlist-link">Color shades using color-mix()</a>
-		<time class="postlist-date" datetime="2023-03-28">March 28, 2023</time>
-	</li>
-
+<p>Add a fancy hover effect to your image with a small code. Transform your image into little rotating squares!</p>
+<ul>
+<li>One element (the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Powered by CSS mask and @property</li>
+</ul>
+<p>Pay attention to the support of <a href="https://caniuse.com/mdn-css_at-rules_property" target="_blank" rel="noopener">the @property</a>.</p>
+<p><picture><source type="image/avif" srcset="/img/_ywdQGjexe-607.avif 607w"><source type="image/webp" srcset="/img/_ywdQGjexe-607.webp 607w"><img alt="Image with rotating squares" loading="lazy" decoding="async" src="/img/_ywdQGjexe-607.png" width="607" height="353"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> 5<span class="token punctuation">;</span> <span class="token comment">/* number of squares */</span><br><br>  <span class="token property">--_g</span><span class="token punctuation">:</span> #0000 <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">,</span>0%<span class="token punctuation">)</span><span class="token punctuation">,</span>#000 0<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span>  0deg + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span> 90deg + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span>-90deg + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span>180deg + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask-size</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100%/<span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100%/<span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask-composite</span><span class="token punctuation">:</span> intesect<span class="token punctuation">;</span><br>  <span class="token property">outline</span><span class="token punctuation">:</span> 100vmax solid #0009<span class="token punctuation">;</span><br>  <span class="token property">outline-offset</span><span class="token punctuation">:</span> -100vmax<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> outline-color .5s<span class="token punctuation">;</span><br>  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 0.1%<span class="token punctuation">;</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 90deg<span class="token punctuation">;</span> <br>  <span class="token property">outline-color</span><span class="token punctuation">:</span> #0000<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> outline-color .3s .2s<span class="token punctuation">,</span> --d .5s <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>450<span class="token punctuation">,</span>1<span class="token punctuation">,</span>450<span class="token punctuation">)</span><span class="token punctuation">,</span>--r .5s linear<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="abRWELR" data-preview="true" data-user="t_afif" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/abRWELR" target="_blank" rel="noopener">
+  A fancy CSS-only hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<h2 id="related-links" tabindex="-1">Related links: <a class="header-anchor" href="#related-links">#</a></h2>
+<ul>
+<li><a href="https://css-tricks.com/advanced-css-animation-using-cubic-bezier/" target="_blank" rel="noopener">css-tricks.com/advanced-css-animation-using-cubic-bezier</a></li>
+<li><a href="https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/" target="_blank" rel="noopener">https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects</a></li>
 </ul>
 
-
-
-
-<p>59 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
+<ul class="links-nextprev"><li><a href="/css-ribbon-2/" title="A CSS-only Ribbon">Previous CSS Tip</a></li>
+</ul>
 
 		</main>
 		<footer>
