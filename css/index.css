@@ -2,10 +2,6 @@
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-}
-
-/* Theme colors */
-:root {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
@@ -35,8 +31,6 @@
 	}
 }
 
-
-/* Global stylesheet */
 * {
 	box-sizing: border-box;
 }
@@ -213,14 +207,14 @@ header {
 	padding: 0;
 	padding-left: 1.5rem;
 }
-.postlist-item {
+.postlist > * {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	margin-bottom: 1em;
 	position: relative;
 }
-.postlist-item:before {
+.postlist > *:before {
     pointer-events: none;
     content: "❋";
     line-height: 100%;
@@ -228,23 +222,21 @@ header {
     right: calc(100% + .5em);
     top: .7em;
 }
-.postlist-date,
-.postlist-item:before {
+.postlist time,
+.postlist > *:before {
 	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-90);
 }
-.postlist-date {
+.postlist time{
 	word-spacing: -0.5px;
 }
-.postlist-link {
+.postlist a {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	padding-right: .5em;
 	text-underline-position: from-font;
 }
-.postlist-item-active .postlist-link {
-	font-weight: bold;
-}
+
 
 /* Tags list */
 h1 + time {
