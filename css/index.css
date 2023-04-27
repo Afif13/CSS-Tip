@@ -268,3 +268,17 @@ a[href].header-anchor:focus,
 h2 + .header-anchor {
 	font-size: 1.5em;
 }
+
+input[type=search] {
+	display: block;
+  width: calc(100% - 24px);
+  margin: 0 auto 2em;
+  padding: .8em;
+  border-radius: 5px;
+  border: 1px solid #0005;
+  font-size: 1em;
+}
+
+.hide {
+	display: none!important;
+}
