@@ -14,5 +14,20 @@ eleventyNavigation:
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
+<input type="search" placeholder="Type something to filter the archive" aria-label="Filtering the archive content">
 
 {% include "postslist.njk" %}
+
+<script>
+let all = document.querySelectorAll('.postlist li a');
+document.querySelector("input[type=search]").addEventListener("input",function(e) {
+  let s = e.target.value.toUpperCase();
+  for(let i = 0;i<all.length;i++) {
+    if(all[i].innerText.toUpperCase().includes(s)) {
+      all[i].parentNode.classList.remove('hide');
+    } else {
+      all[i].parentNode.classList.add('hide');
+    }
+  }
+})
+</script>
