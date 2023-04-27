@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A fancy hover effect with rotating squares</title>
+		<title>A reveal hover effect with a single element</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Transform your image into little rotating squares with a fancy hover effect.">
+		<meta name="description" content="Add a reveal animation to your image with a minimal code">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/rotating-square-hover-effect/" >
+		<link rel=canonical href="https://css-tip.com/reveal-hover-effect/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A fancy hover effect with rotating squares">
+		<meta property="og:title" content="A reveal hover effect with a single element">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/rotating-square-hover-effect/">
-		<meta property="og:description" content="Transform your image into little rotating squares with a fancy hover effect.">
+		<meta property="og:url" content="https://css-tip.com/reveal-hover-effect/">
+		<meta property="og:description" content="Add a reveal animation to your image with a minimal code">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -46,35 +46,30 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>A fancy hover effect with rotating squares</h1>
+			<h1>A reveal hover effect with a single element</h1>
 
-<time datetime="2023-04-26">April 26, 2023</time>
+<time datetime="2023-04-27">April 27, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Add a fancy hover effect to your image with a small code. Transform your image into little rotating squares!</p>
+<p>Add a simple reveal animation to your images using a few lines of code</p>
 <ul>
-<li>One element (the <code>&lt;img&gt;</code> tag)</li>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
 <li>No pseudo-element</li>
-<li>Powered by CSS mask and @property</li>
+<li>Less than 10 CSS declarations</li>
+<li>Powered by <code>object-fit</code> and <code>object-position</code></li>
+<li>Easily control the reveal direction</li>
 </ul>
-<p>Pay attention to the support of <a href="https://caniuse.com/mdn-css_at-rules_property" target="_blank" rel="noopener">the @property</a>.</p>
-<p><picture><source type="image/avif" srcset="/img/_ywdQGjexe-607.avif 607w"><source type="image/webp" srcset="/img/_ywdQGjexe-607.webp 607w"><img alt="Image with rotating squares" loading="lazy" decoding="async" src="/img/_ywdQGjexe-607.png" width="607" height="353"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> 5<span class="token punctuation">;</span> <span class="token comment">/* number of squares */</span><br><br>  <span class="token property">--_g</span><span class="token punctuation">:</span> #0000 <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">,</span>0%<span class="token punctuation">)</span><span class="token punctuation">,</span>#000 0<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span>  0deg + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span> 90deg + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span>-90deg + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span>180deg + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask-size</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100%/<span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100%/<span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask-composite</span><span class="token punctuation">:</span> intesect<span class="token punctuation">;</span><br>  <span class="token property">outline</span><span class="token punctuation">:</span> 100vmax solid #0009<span class="token punctuation">;</span><br>  <span class="token property">outline-offset</span><span class="token punctuation">:</span> -100vmax<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> outline-color .5s<span class="token punctuation">;</span><br>  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 0.1%<span class="token punctuation">;</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 90deg<span class="token punctuation">;</span> <br>  <span class="token property">outline-color</span><span class="token punctuation">:</span> #0000<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> outline-color .3s .2s<span class="token punctuation">,</span> --d .5s <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>450<span class="token punctuation">,</span>1<span class="token punctuation">,</span>450<span class="token punctuation">)</span><span class="token punctuation">,</span>--r .5s linear<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="abRWELR" data-preview="true" data-user="t_afif" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/abRWELR" target="_blank" rel="noopener">
-  A fancy CSS-only hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span> <span class="token comment">/* the image size */</span><br>  <br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span> <br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span><br>  <span class="token property">object-fit</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span><br>  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .5s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img.left</span> <span class="token punctuation">{</span><br>  <span class="token property">object-position</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span><br>  <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #542437<span class="token punctuation">;</span> <span class="token comment">/* the overlay color */</span><br><span class="token punctuation">}</span><br><span class="token comment">/* similar code for the other directions */</span><br><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="GRYEZrr" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GRYEZrr" target="_blank" rel="noopener">
+  A reveal hover effect with one element</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<h2 id="related-links" tabindex="-1">Related links: <a class="header-anchor" href="#related-links">#</a></h2>
-<ul>
-<li><a href="https://css-tricks.com/advanced-css-animation-using-cubic-bezier/" target="_blank" rel="noopener">css-tricks.com/advanced-css-animation-using-cubic-bezier</a></li>
-<li><a href="https://css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects/" target="_blank" rel="noopener">css-tricks.com/fancy-image-decorations-masks-and-advanced-hover-effects</a></li>
-</ul>
 
-<ul class="links-nextprev"><li><a href="/css-ribbon-2/" title="A CSS-only Ribbon">Previous CSS Tip</a></li><li><a href="/reveal-hover-effect/" title="A reveal hover effect with a single element">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li><a href="/rotating-square-hover-effect/" title="A fancy hover effect with rotating squares">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
