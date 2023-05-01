@@ -4,11 +4,33 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2023-04-27T00:00:00Z</updated>
+	<updated>2023-05-01T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A reveal hover effect with a single element II</title>
+		<link href="https://css-tip.com/reveal-hover-effect-2/"/>
+		<updated>2023-05-01T00:00:00Z</updated>
+		<id>https://css-tip.com/reveal-hover-effect-2/</id>
+		<content type="html">&lt;p&gt;Adding more variations to &lt;a href=&quot;https://css-tip.com/reveal-hover-effect/&quot;&gt;the previous reveal animation&lt;/a&gt; using the same tricks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No extra element (only the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag)&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;Powered by object-fit &amp;amp; object-position&lt;/li&gt;
+&lt;li&gt;A lot of possible combination&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/mB5WrHlAcP-494.avif 494w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/mB5WrHlAcP-494.webp 494w&quot;&gt;&lt;img alt=&quot;CSS reveal animation using padding and object-fit&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/mB5WrHlAcP-494.png&quot; width=&quot;494&quot; height=&quot;481&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;550&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;RweZBRg&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/RweZBRg&quot;&gt;
+  A reveal hover effect with one element II&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>A reveal hover effect with a single element</title>
