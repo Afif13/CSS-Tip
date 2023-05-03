@@ -19,7 +19,7 @@ img {
   width: 250px;
   aspect-ratio: 1;
   object-fit: cover;
-  mask-border: radial-gradient(#000 69%,#0000 70%) 84.5% fill/100%;
+  mask-border: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
   clip-path: polygon(-41% 0,50% 91%, 141% 0);
   outline: 100vmax solid #ff3e60;
   outline-offset: -100vmax;

@@ -16,7 +16,7 @@ Turn your favorite image into a Heart 💖 using a few lines of code
 
 ```css
 img {
-  mask-border: radial-gradient(#000 69%,#0000 70%) 84.5% fill/100%;
+  mask-border: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
   clip-path: polygon(-41% 0,50% 91%, 141% 0);
 }
 ```
@@ -26,8 +26,8 @@ For better support we can rely on `mask`
 ```css
 img {
   mask:
-   radial-gradient(circle at 60% 63%,#000 64%,#0000 65%) top left /50% 50% no-repeat,
-   radial-gradient(circle at 40% 63%,#000 64%,#0000 65%) top right/50% 50% no-repeat,
+   radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
+   radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
 }
 ```
