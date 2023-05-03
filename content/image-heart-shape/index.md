@@ -26,9 +26,10 @@ For better support we can rely on `mask`
 ```css
 img {
   mask:
-   radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
-   radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
+   radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+   radial-gradient(at 30% 31%,#000 29%,#0000 30%),
    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
 }
 ```
 
