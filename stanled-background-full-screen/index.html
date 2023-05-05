@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>An inner border-radius with one property</title>
+		<title>Full screen slanted background</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use a magic border-image trick to create an inner border-radius">
+		<meta name="description" content="Only 2 properties to create a slanted background that extends to the edge of the screen">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/inner-border-radius/" >
+		<link rel=canonical href="https://css-tip.com/stanled-background-full-screen/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="An inner border-radius with one property">
+		<meta property="og:title" content="Full screen slanted background">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/inner-border-radius/">
-		<meta property="og:description" content="Use a magic border-image trick to create an inner border-radius">
+		<meta property="og:url" content="https://css-tip.com/stanled-background-full-screen/">
+		<meta property="og:description" content="Only 2 properties to create a slanted background that extends to the edge of the screen">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -46,26 +46,30 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>An inner border-radius with one property</h1>
+			<h1>Full screen slanted background</h1>
 
-<time datetime="2023-05-03">May 03, 2023</time>
+<time datetime="2023-05-05">May 05, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Do you want to have a radius inside the element but not outside? You can do it using only one property 🤩</p>
-<p><picture><source type="image/avif" srcset="/img/CD8MU3o29n-497.avif 497w"><source type="image/webp" srcset="/img/CD8MU3o29n-497.webp 497w"><img alt="A box with an inner border-radius" loading="lazy" decoding="async" src="/img/CD8MU3o29n-497.png" width="497" height="419"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span> <span class="token comment">/* control the inner radius */</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 15%<span class="token punctuation">;</span>   <span class="token comment">/* control the border thickness*/</span><br><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><br>          #0000 <span class="token function">calc</span><span class="token punctuation">(</span>71% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>       <span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>72% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span><br>     <span class="token punctuation">)</span> 49.9%/<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>I may have an article to explain the logic behind the different values.</p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="XWxexjZ" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/XWxexjZ" target="_blank" rel="noopener">
-  Inner border-radius</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Add a slanted background to your container that extend to the edge of the screen.</p>
+<ul>
+<li>Only 2 CSS properties 🤯</li>
+<li>No pseudo-element</li>
+<li>No scrollbar issue</li>
+<li>One variable to control the angle</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/byDI9znpYf-944.avif 944w"><source type="image/webp" srcset="/img/byDI9znpYf-944.webp 944w"><img alt="A full screen slanted background" loading="lazy" decoding="async" src="/img/byDI9znpYf-944.jpeg" width="944" height="682"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.slant</span> <span class="token punctuation">{</span><br>  <span class="token property">--a</span><span class="token punctuation">:</span> 3deg<span class="token punctuation">;</span> <span class="token comment">/* control the angle (yes it should be small) */</span><br>  <br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <span class="token function">conic-gradient</span><span class="token punctuation">(</span>pink 0 0<span class="token punctuation">)</span> fill 0//9999px<span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <br>    <span class="token function">polygon</span><span class="token punctuation">(</span><br>      -9999px <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span>*9999px<span class="token punctuation">)</span><span class="token punctuation">,</span><br>      9999px <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span>*-9999px<span class="token punctuation">)</span><span class="token punctuation">,</span><br>      <span class="token function">calc</span><span class="token punctuation">(</span>100% + 9999px<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span>*9999px<span class="token punctuation">)</span><span class="token punctuation">,</span><br>      <span class="token function">calc</span><span class="token punctuation">(</span>100% - 9999px<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% + <span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span>*9999px<span class="token punctuation">)</span><br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>I know the code is scary but I will soon have an article to detail such techniques</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="zYmpdeK" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zYmpdeK" target="_blank" rel="noopener">
+  CSS-only full screen slanted background</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>There are easier way to achieve the same result with more properties and accurate values but I wanted to share this magic one-property trick.</p>
-
-<ul class="links-nextprev"><li><a href="/select-elements-between-two-class/" title="Select all elemens between two class names">Previous CSS Tip</a></li><li><a href="/stanled-background-full-screen/" title="Full screen slanted background">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li><a href="/inner-border-radius/" title="An inner border-radius with one property">Previous CSS Tip</a></li>
 </ul>
 
 		</main>

@@ -4,11 +4,34 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2023-05-03T00:00:00Z</updated>
+	<updated>2023-05-05T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Full screen slanted background</title>
+		<link href="https://css-tip.com/stanled-background-full-screen/"/>
+		<updated>2023-05-05T00:00:00Z</updated>
+		<id>https://css-tip.com/stanled-background-full-screen/</id>
+		<content type="html">&lt;p&gt;Add a slanted background to your container that extend to the edge of the screen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only 2 CSS properties 🤯&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;No scrollbar issue&lt;/li&gt;
+&lt;li&gt;One variable to control the angle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/byDI9znpYf-944.avif 944w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/byDI9znpYf-944.webp 944w&quot;&gt;&lt;img alt=&quot;A full screen slanted background&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/byDI9znpYf-944.jpeg&quot; width=&quot;944&quot; height=&quot;682&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.slant&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 3deg&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* control the angle (yes it should be small) */&lt;/span&gt;&lt;br&gt;  &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;border-image&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;conic-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pink 0 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; fill 0//9999px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;clip-path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token function&quot;&gt;polygon&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;      -9999px &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;tan&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;*9999px&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;      9999px &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;tan&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;*-9999px&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;      &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;100% + 9999px&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;100% - &lt;span class=&quot;token function&quot;&gt;tan&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;*9999px&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;      &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;100% - 9999px&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;100% + &lt;span class=&quot;token function&quot;&gt;tan&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;*9999px&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I know the code is scary but I will soon have an article to detail such techniques&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;500&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;zYmpdeK&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/zYmpdeK&quot;&gt;
+  CSS-only full screen slanted background&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>An inner border-radius with one property</title>
