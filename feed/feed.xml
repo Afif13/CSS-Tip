@@ -4,11 +4,33 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2023-05-05T00:00:00Z</updated>
+	<updated>2023-05-08T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A Ribbon title to the edge of the screen</title>
+		<link href="https://css-tip.com/ribbon-style-title/"/>
+		<updated>2023-05-08T00:00:00Z</updated>
+		<id>https://css-tip.com/ribbon-style-title/</id>
+		<content type="html">&lt;p&gt;Add a ribbon style to your title that extend to the edge of the screen.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only one CSS property 🤩&lt;/li&gt;
+&lt;li&gt;No extra element&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;No scrollbar issue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/uyhB6bdIpg-895.avif 895w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/uyhB6bdIpg-895.webp 895w&quot;&gt;&lt;img alt=&quot;Titles having a ribbon style that extend to the left edge of the screen&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/uyhB6bdIpg-895.png&quot; width=&quot;895&quot; height=&quot;638&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.ribbon&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;border-image&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;br&gt;     &lt;span class=&quot;token function&quot;&gt;conic-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;       from 45deg at &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;100% - 1lh&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;       #0000 25%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;#C7F464 0&lt;br&gt;     &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; fill 0//0 0 0 100vw&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;rNqJYrZ&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/rNqJYrZ&quot;&gt;
+  Full screen Ribbon title&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>Full screen slanted background</title>

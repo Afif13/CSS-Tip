@@ -77,9 +77,10 @@ footer {
 }
 h1 {
 	text-align: center;
-    margin: 0.25em 0 1em;
-    font-size: 2.5rem;
-    text-wrap: balance;
+  margin: 0.25em 0 1em;
+  font-size: 2.5rem;
+  text-wrap: balance;
+  text-transform: capitalize;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -235,6 +236,7 @@ header {
 	font-weight: 700;
 	padding-right: .5em;
 	text-underline-position: from-font;
+	text-transform: capitalize;
 }
 
 

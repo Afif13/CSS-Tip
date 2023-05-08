@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Customize your numbered list</title>
+		<title>A Ribbon title to the edge of the screen</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A simple CSS trick to customize your ol list">
+		<meta name="description" content="A magic border-image trick to add a ribbon shape to your title that extends to the endge of the screen">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/custom-numbered-list/" >
+		<link rel=canonical href="https://css-tip.com/ribbon-style-title/" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Customize your numbered list">
+		<meta property="og:title" content="A Ribbon title to the edge of the screen">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/custom-numbered-list/">
-		<meta property="og:description" content="A simple CSS trick to customize your ol list">
+		<meta property="og:url" content="https://css-tip.com/ribbon-style-title/">
+		<meta property="og:description" content="A magic border-image trick to add a ribbon shape to your title that extends to the endge of the screen">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -46,30 +46,29 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Customize your numbered list</h1>
+			<h1>A Ribbon title to the edge of the screen</h1>
 
-<time datetime="2023-04-17">April 17, 2023</time>
+<time datetime="2023-05-08">May 08, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Use <code>@counter-style</code> to customize your <code>&lt;ol&gt;</code> list with a simple code</p>
+<p>Add a ribbon style to your title that extend to the edge of the screen.</p>
 <ul>
-<li>No extra markup</li>
+<li>Only one CSS property 🤩</li>
+<li>No extra element</li>
 <li>No pseudo-element</li>
-<li>No need for <code>counter()</code></li>
-<li>Keep the default browser algorithm</li>
+<li>No scrollbar issue</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/RXLpZ1338s-205.avif 205w"><source type="image/webp" srcset="/img/RXLpZ1338s-205.webp 205w"><img alt="A numbered list" loading="lazy" decoding="async" src="/img/RXLpZ1338s-205.png" width="205" height="268"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@counter-style</span> new-style</span> <span class="token punctuation">{</span><br>  <span class="token property">system</span><span class="token punctuation">:</span> extends decimal<span class="token punctuation">;</span><br>  <span class="token property">suffix</span><span class="token punctuation">:</span> <span class="token string">") "</span><span class="token punctuation">;</span><br>  <span class="token property">prefix</span><span class="token punctuation">:</span> <span class="token string">"("</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ol</span> <span class="token punctuation">{</span><br>  <span class="token property">list-style-type</span><span class="token punctuation">:</span> new-style<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="GRYZeqr" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GRYZeqr" target="_blank" rel="noopener">
-  Custom numbered list</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/uyhB6bdIpg-895.avif 895w"><source type="image/webp" srcset="/img/uyhB6bdIpg-895.webp 895w"><img alt="Titles having a ribbon style that extend to the left edge of the screen" loading="lazy" decoding="async" src="/img/uyhB6bdIpg-895.png" width="895" height="638"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.ribbon</span> <span class="token punctuation">{</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <br>     <span class="token function">conic-gradient</span><span class="token punctuation">(</span><br>       from 45deg at <span class="token function">calc</span><span class="token punctuation">(</span>100% - 1lh<span class="token punctuation">)</span><span class="token punctuation">,</span><br>       #0000 25%<span class="token punctuation">,</span>#C7F464 0<br>     <span class="token punctuation">)</span> fill 0//0 0 0 100vw<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="rNqJYrZ" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/rNqJYrZ" target="_blank" rel="noopener">
+  Full screen Ribbon title</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-<ul class="links-nextprev"><li><a href="/custom-range-slider/" title="CSS-only custom range slider">Previous CSS Tip</a></li><li><a href="/first-last-element-with-class/" title="Select the first &amp; last element with a class">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li><a href="/stanled-background-full-screen/" title="Full screen slanted background">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
