@@ -38,3 +38,5 @@ img {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More detail: [css-tricks.com/fancy-image-decorations-single-element-magic](https://css-tricks.com/fancy-image-decorations-single-element-magic/)
