@@ -40,3 +40,7 @@ Create a cool CSS Ribbon with a little code
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+### More Ribbons
+
+* [A Folded Ribbon To The Corner](/folded-ribbon/)
+* [CSS-Only Folded Ribbon](/css-ribbon/)

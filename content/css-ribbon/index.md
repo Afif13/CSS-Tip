@@ -22,13 +22,14 @@ Create a cool Ribbon using one element and a few lines of code.
   
   position: absolute;
   inset: var(--t) calc(-1*var(--f)) auto auto;
-  padding: 0 10px var(--f) calc(10px + var(--r));
+  padding: 0 10px 0 calc(10px + var(--r));
   clip-path: 
     polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
       calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)),
       var(--r) calc(50% - var(--f)/2));
-  background: #BD1550;
-  box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+  background: #BD1550; /* the main color */
+  border-bottom: var(--f) solid #0005;
+}
 ```
 
 <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="gOXLdMR" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -39,3 +40,8 @@ Create a cool Ribbon using one element and a few lines of code.
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 More detail: [www.freecodecamp.org/news/make-a-css-only-ribbon](https://www.freecodecamp.org/news/make-a-css-only-ribbon/)
+
+### More Ribbons
+
+* [A Folded Ribbon To The Corner](/folded-ribbon/)
+* [A CSS-only Ribbon](/css-ribbon-2/)
