@@ -75,6 +75,10 @@ body {
 footer {
 	margin-top: auto;
 	text-align: center;
+	padding: 0 1rem;
+}
+footer a {
+	display: inline-block;
 }
 h1 {
 	text-align: center;
@@ -297,9 +301,9 @@ html {
 	  animation: x .6s ease-out both;
 	  -webkit-mask: 
 	   conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 
-	     calc(50% - 20px) calc(200% + 40px)/80px calc(50% + 21px) repeat-x,
+	     calc(50% - 20px) calc( 200% + 40px)/80px calc(50% + 21px) repeat-x,
 	   conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 
-	     calc(50% + 20px) calc(-100% - 40px)  /80px calc(50% + 21px) repeat-x,
+	     calc(50% + 20px) calc(-100% - 40px)/80px calc(50% + 21px) repeat-x,
 	   linear-gradient(#000 0 0);
 	  -webkit-mask-composite: destination-out;
 
