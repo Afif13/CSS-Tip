@@ -54,7 +54,7 @@
 <time datetime="2023-04-18">April 18, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
-<div data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
+<div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
 <p>Do you want to select the first and last element with a specific class? It's possible and you can do it using 2 different methods!</p>
 <pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/* First element with class "cat" */</span><br><span class="token selector">.cat:not(.cat ~ *)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br><span class="token comment">/* OR */</span><br><span class="token selector">:nth-child(1 of .cat)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br><br><br><span class="token comment">/* Last element with class "bird" */</span><br><span class="token selector">.bird:not(:has(~ .bird))</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br><span class="token comment">/* OR */</span><br><span class="token selector">:nth-last-child(1 of .bird)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
