@@ -21,3 +21,4 @@ Use online generators to create CSS shapes using clip-path in not time!
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+Related Article: [verpex.com/blog/website-tips/css-shapes-polygon-starburst](https://verpex.com/blog/website-tips/css-shapes-polygon-starburst)
