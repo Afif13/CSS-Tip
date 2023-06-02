@@ -9,7 +9,7 @@
 	--background-color: #fff;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #054676;
+	--text-color-link: #033254;/*#054676;*/
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
 
@@ -23,7 +23,7 @@
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
+		--text-color-link: #6fa2cc;/*#1493fb;*/
 		--text-color-link-active: #6969f7;
 		--text-color-link-visited: #a6a6f8;
 
@@ -109,9 +109,9 @@ li {
 a[href] {
 	color: var(--text-color-link);
 }
-a[href]:visited {
+/*a[href]:visited {
 	color: var(--text-color-link-visited);
-}
+}*/
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
@@ -158,9 +158,6 @@ footer {
 .links-nextprev a:not(:hover) {
 	text-decoration: none;
 }
-.links-nextprev a:visited {
-	color:var(--text-color-link)
-}
 .links-nextprev a {
 	position: relative;
 }
@@ -170,7 +167,7 @@ footer {
   inset: 0 100% 0 auto;
   width: 1em;
   margin-right: 0.3em;
-  background: var(--text-color-link);
+  background: currentColor;
   clip-path: polygon(100% 0,0 50%,100% 100%);
 }
 .links-nextprev .next a:after {
@@ -179,7 +176,7 @@ footer {
   inset: 0 auto 0 100%;
   width: 1em;
   margin-left: 0.3em;
-  background: var(--text-color-link);
+  background: currentColor;
   clip-path: polygon(0 0,100% 50%,0 100%);
 }
 @supports (animation-timeline: scroll(root)){
