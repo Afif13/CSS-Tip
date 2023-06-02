@@ -20,13 +20,11 @@ Use an online generator to easily get the code: [css-generators.com/wavy-shapes]
   --p: .6;   /* the curvature of the wave [0 2] */
 
   --R: calc(var(--s)*sqrt(var(--p)*var(--p) + 1)) at 50%;
-  --m:
+  mask:
     radial-gradient(var(--R) calc(100% - var(--s)*(1 + var(--p))), #000 99%, #0000 101%) 
       calc(50% - 2*var(--s)) 0/calc(4 * var(--s)),
     radial-gradient(var(--R) calc(100% + var(--s)*var(--p)), #0000 99%, #000 101%) 
       50% calc(-1*var(--s))/calc(4 * var(--s)) repeat-x;
-  -webkit-mask: var(--m);
-          mask: var(--m);
 }
 ```
 
