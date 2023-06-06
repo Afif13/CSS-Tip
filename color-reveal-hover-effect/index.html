@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>3D shine effect on hover</title>
+		<title>Color your image with a sliding hover effect</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A fancy 3D effect with a shiny animation on hover">
+		<meta name="description" content="Reveal the color of a black &amp; white image using a simple code">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/3d-shine-effect/" >
+		<link rel=canonical href="https://css-tip.com/color-reveal-hover-effect/" >
 		<meta name="view-transition" content="same-origin" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="3D shine effect on hover">
+		<meta property="og:title" content="Color your image with a sliding hover effect">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/3d-shine-effect/">
-		<meta property="og:description" content="A fancy 3D effect with a shiny animation on hover">
+		<meta property="og:url" content="https://css-tip.com/color-reveal-hover-effect/">
+		<meta property="og:description" content="Reveal the color of a black &amp; white image using a simple code">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -49,29 +49,31 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>3D shine effect on hover</h1>
+			<h1>Color your image with a sliding hover effect</h1>
 
-<time datetime="2023-06-01">June 01, 2023</time>
+<time datetime="2023-06-06">June 06, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Add a 3D effect to your image with a shiny animation on hover ✨</p>
+<p>Reveal the colors of your images with a sliding animation on hover</p>
 <ul>
 <li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
 <li>No pseudo-element</li>
-<li>Less than 10 CSS declrations</li>
+<li>Less than 15 CSS declarations</li>
+<li>Easily control the sliding direction</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/pGOYAlKbmd-715.avif 715w"><source type="image/webp" srcset="/img/pGOYAlKbmd-715.webp 715w"><img alt="A 3D shine effect on image" loading="lazy" decoding="async" src="/img/pGOYAlKbmd-715.png" width="715" height="326"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--a</span><span class="token punctuation">:</span> 8deg<span class="token punctuation">;</span> <span class="token comment">/* control the angle of rotation (the smaller, the better) */</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>400px<span class="token punctuation">)</span> <span class="token function">rotate3d</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">,</span>1<span class="token punctuation">,</span>-1<span class="token punctuation">)</span><span class="token punctuation">,</span>0<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>135deg<span class="token punctuation">,</span>#000c 40%<span class="token punctuation">,</span>#000<span class="token punctuation">,</span>#000c 60%<span class="token punctuation">)</span><br>    100% 100%/240% 240%<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .4s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--i</span><span class="token punctuation">:</span>-1<span class="token punctuation">,</span>1<span class="token punctuation">;</span><br>  <span class="token property">mask-position</span><span class="token punctuation">:</span> 0 0<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="VwEJqKV" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/VwEJqKV" target="_blank" rel="noopener">
-  3D Shine effect on hover</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/yWSBoyzTgt-540.avif 540w"><source type="image/webp" srcset="/img/yWSBoyzTgt-540.webp 540w"><img alt="CSS reveal hover effect" loading="lazy" decoding="async" src="/img/yWSBoyzTgt-540.png" width="540" height="470"></picture></p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token comment">&lt;!-- I have to duplicate the url, that's the only drawback --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://picsum.photos/id/56/250/250<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">--i</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>https://picsum.photos/id/56/250/250<span class="token punctuation">)</span></span></span><span class="token punctuation">"</span></span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span> <span class="token comment">/* the image size */</span><br>  <br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* better than aspect-ratio in case the image has a height attribute */</span><br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span> 50%/cover #000<span class="token punctuation">;</span><br>  <span class="token property">background-blend-mode</span><span class="token punctuation">:</span> luminosity<span class="token punctuation">;</span><br>  <span class="token property">object-fit</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span><br>  <span class="token property">object-position</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span><br>  <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .5s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="gOQYqRp" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/gOQYqRp" target="_blank" rel="noopener">
+  Color your image with a sliding hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-<ul class="links-nextprev"><li class="prev"><a href="/rhombus-image/" title="A Rhombus shape with rounded corners for your image">Previous CSS Tip</a></li><li class="next"><a href="/color-reveal-hover-effect/" title="Color your image with a sliding hover effect">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/3d-shine-effect/" title="3D shine effect on hover">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
