@@ -36,3 +36,5 @@ img:hover {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+Related Article: [verpex.com/blog/website-tips/css-shapes-the-heart](https://verpex.com/blog/website-tips/css-shapes-the-heart)
