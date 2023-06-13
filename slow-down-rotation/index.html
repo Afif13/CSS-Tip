@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy one</title>
+		<title>Slow down a rotation on hover</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta name="description" content="A simple trick to reduce the speed of your rotating element">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/slow-down-rotation/" >
 		<meta name="view-transition" content="same-origin" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy one">
+		<meta property="og:title" content="Slow down a rotation on hover">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta property="og:url" content="https://css-tip.com/slow-down-rotation/">
+		<meta property="og:description" content="A simple trick to reduce the speed of your rotating element">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -42,88 +42,38 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="skip">
-			
+			<h1>Slow down a rotation on hover</h1>
 
-<h1>Learn CSS the easy way</h1>
-<p>Welcome to CSS Tip. A small website where you can learn a new CSS trick every day. All the CSS secrets are here (Flexbox, CSS Grid, Gradients, Colors, Animation, Masking, Selectors, etc). It takes one minute to read a tip.</p>
+<time datetime="2023-06-13">June 13, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<br>
-
-
-<ul class="postlist" >
-
-	<li>
-		<a href="/slow-down-rotation/" >Slow down a rotation on hover</a>
-		<time datetime="2023-06-13">June 13, 2023</time>
-	</li>
-
-	<li>
-		<a href="/sliding-reveal-image/" >Sliding reveal animation for your image</a>
-		<time datetime="2023-06-10">June 10, 2023</time>
-	</li>
-
-	<li>
-		<a href="/color-reveal-hover-effect/" >Color your image with a sliding hover effect</a>
-		<time datetime="2023-06-06">June 06, 2023</time>
-	</li>
-
-	<li>
-		<a href="/3d-shine-effect/" >3D shine effect on hover</a>
-		<time datetime="2023-06-01">June 01, 2023</time>
-	</li>
-
-	<li>
-		<a href="/rhombus-image/" >A Rhombus shape with rounded corners for your image</a>
-		<time datetime="2023-05-29">May 29, 2023</time>
-	</li>
-
-	<li>
-		<a href="/gradient-overlay-border-image/" >Add a gradient overlay using border-image</a>
-		<time datetime="2023-05-18">May 18, 2023</time>
-	</li>
-
-	<li>
-		<a href="/image-3d-effect/" >Transform a 2D image into a 3D one</a>
-		<time datetime="2023-05-17">May 17, 2023</time>
-	</li>
-
-	<li>
-		<a href="/3d-parallax-image/" >3D parallax effect on images</a>
-		<time datetime="2023-05-16">May 16, 2023</time>
-	</li>
-
-	<li>
-		<a href="/folded-ribbon/" >A folded ribbon to the corner</a>
-		<time datetime="2023-05-12">May 12, 2023</time>
-	</li>
-
-	<li>
-		<a href="/ribbon-style-title/" >A Ribbon title to the edge of the screen</a>
-		<time datetime="2023-05-08">May 08, 2023</time>
-	</li>
-
+<p>Did you ever wanted to slow down a rotating element on mouse hover? You can easily do it with a simple code:</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>One animation</li>
+<li>Easy to control with CSS variables</li>
 </ul>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 5s<span class="token punctuation">;</span> <span class="token comment">/* animation duration */</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 0.5<span class="token punctuation">;</span> <span class="token comment">/* speed factor <br>          0   : nothing happens<br>         [0 1]: decrease the speed<br>            1 : stops the animation<br>[1 +infinity[ : move in the opposite direction<br>  */</span><br>  <span class="token property">--_a</span><span class="token punctuation">:</span> r linear infinite<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> <br>    <span class="token function">var</span><span class="token punctuation">(</span>--_a<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">var</span><span class="token punctuation">(</span>--_a<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>    reverse paused<span class="token punctuation">;</span><br>  <span class="token property">animation-composition</span><span class="token punctuation">:</span> add<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">animation-play-state</span><span class="token punctuation">:</span> running<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>There is a fallback version for browsers that don't support <code>animation-composition</code>. It is also an interesting way with a simple code.</p>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="vYQNLoe" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/vYQNLoe" target="_blank" rel="noopener">
+  Hover to slow down the animation</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-
-
-
-<p>74 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
+<ul class="links-nextprev"><li class="prev"><a href="/sliding-reveal-image/" title="Sliding reveal animation for your image">Previous CSS Tip</a></li>
+</ul>
 
 		</main>
 		<footer>
