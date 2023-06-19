@@ -22,3 +22,4 @@ Adding more variations to [the previous reveal animation](/reveal-hover-effect/)
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+Related Article: [www.sitepoint.com/css-image-reveal-animation](https://www.sitepoint.com/css-image-reveal-animation/)
