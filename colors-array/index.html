@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy one</title>
+		<title>A CSS-only array of colors</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta name="description" content="Create an array of colors and use an index to navigate">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/colors-array/" >
 		<meta name="view-transition" content="same-origin" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy one">
+		<meta property="og:title" content="A CSS-only array of colors">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta property="og:url" content="https://css-tip.com/colors-array/">
+		<meta property="og:description" content="Create an array of colors and use an index to navigate">
 		<meta property="og:image" content="https://css-tip/img/css-tip.jpg">
 		<meta property="og:image:width" content="1600" >
 		<meta property="og:image:height" content="800" >
@@ -42,97 +42,34 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="skip">
-			
+			<h1>A CSS-only array of colors</h1>
 
-<h1>Learn CSS the easy way</h1>
-<p>Welcome to CSS Tip. A small website where you can learn a new CSS trick every day. All the CSS secrets are here (Flexbox, CSS Grid, Gradients, Colors, Animation, Masking, Selectors, etc). It takes one minute to read a tip.</p>
+<time datetime="2023-06-26">June 26, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<br>
+<p>Do you want to define an array of colors using only CSS? Yes, it's possible! It's limited to only background coloration but can be useful in many situations.</p>
+<p>Use an index like any programming language to iterate through the array. Practical when you are already using an index for something else.</p>
+<p><picture><source type="image/avif" srcset="/img/5Yicnsy4u6-830.avif 830w"><source type="image/webp" srcset="/img/5Yicnsy4u6-830.webp 830w"><img alt="Boxes with different colors" loading="lazy" decoding="async" src="/img/5Yicnsy4u6-830.png" width="830" height="313"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--colors</span><span class="token punctuation">:</span> red<span class="token punctuation">,</span> blue<span class="token punctuation">,</span> green<span class="token punctuation">,</span> purple<span class="token punctuation">;</span> <span class="token comment">/* colors array */</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span> <span class="token comment">/* length of the array  */</span><br>  <span class="token property">--i</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token comment">/* index of the color [0 to N-1] */</span><br>  <br>  <span class="token property">background</span><span class="token punctuation">:</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--colors<span class="token punctuation">)</span><span class="token punctuation">)</span> no-repeat<br>     0 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span>*100%/<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span> - 1<span class="token punctuation">)</span><span class="token punctuation">)</span><br>     /100% <span class="token function">calc</span><span class="token punctuation">(</span>1px*infinity<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* yes infinity is doing the magic */</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="KKrNYyp" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKrNYyp" target="_blank" rel="noopener">
+  Colors array using only CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<p>If you want to work with only 2 colors, I have a better version: <a href="https://css-tip.com/color-switch-color-mix/" target="_blank" rel="noopener">Color Switch Using Color-Mix()</a></p>
 
-
-<ul class="postlist" >
-
-	<li>
-		<a href="/colors-array/" >A CSS-only array of colors</a>
-		<time datetime="2023-06-26">June 26, 2023</time>
-	</li>
-
-	<li>
-		<a href="/3d-shine-animation/" >3D shine animation with a hover effect</a>
-		<time datetime="2023-06-19">June 19, 2023</time>
-	</li>
-
-	<li>
-		<a href="/slow-down-rotation/" >Slow down a rotation on hover</a>
-		<time datetime="2023-06-13">June 13, 2023</time>
-	</li>
-
-	<li>
-		<a href="/sliding-reveal-image/" >Sliding reveal animation for your image</a>
-		<time datetime="2023-06-10">June 10, 2023</time>
-	</li>
-
-	<li>
-		<a href="/color-reveal-hover-effect/" >Color your image with a sliding hover effect</a>
-		<time datetime="2023-06-06">June 06, 2023</time>
-	</li>
-
-	<li>
-		<a href="/3d-shine-effect/" >3D shine effect on hover</a>
-		<time datetime="2023-06-01">June 01, 2023</time>
-	</li>
-
-	<li>
-		<a href="/rhombus-image/" >A Rhombus shape with rounded corners for your image</a>
-		<time datetime="2023-05-29">May 29, 2023</time>
-	</li>
-
-	<li>
-		<a href="/gradient-overlay-border-image/" >Add a gradient overlay using border-image</a>
-		<time datetime="2023-05-18">May 18, 2023</time>
-	</li>
-
-	<li>
-		<a href="/image-3d-effect/" >Transform a 2D image into a 3D one</a>
-		<time datetime="2023-05-17">May 17, 2023</time>
-	</li>
-
-	<li>
-		<a href="/3d-parallax-image/" >3D parallax effect on images</a>
-		<time datetime="2023-05-16">May 16, 2023</time>
-	</li>
-
+<ul class="links-nextprev"><li class="prev"><a href="/3d-shine-animation/" title="3D shine animation with a hover effect">Previous CSS Tip</a></li>
 </ul>
-
-
-
-
-<p>76 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
-<br>
-
-<h3>CSS Webring</h3>
-
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a>. Cool websites doing CSS stuff!</p>
-
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
 
 		</main>
 		<footer>
