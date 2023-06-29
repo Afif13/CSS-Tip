@@ -14,6 +14,10 @@ const CleanCSS = require("clean-css");
 
 const externalLinks = require('eleventy-plugin-external-links')
 
+const EleventyPluginOgImage = require('eleventy-plugin-og-image');
+const fs = require('fs');
+
+
 module.exports = (eleventyConfig) => {
     
 }
@@ -56,6 +60,21 @@ module.exports = function(eleventyConfig) {
         extensions: [".html"],          // Extensions to apply transform to
         includeDoctype: true,           // Default to include '<!DOCTYPE html>' at the beginning of the file
     })
+
+	eleventyConfig.addPlugin(EleventyPluginOgImage, {
+	  satoriOptions: {
+	  	width: 1200,
+	  	height: 675,
+	  	fonts: [
+         {
+           name: 'Montserrat',
+           data: fs.readFileSync('_includes/Montserrat-Bold.woff'),
+           weight: 700,
+           style: 'normal',
+         },
+       ],
+	   },
+	 });
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
