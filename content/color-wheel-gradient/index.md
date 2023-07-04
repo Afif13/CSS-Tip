@@ -27,8 +27,3 @@ Use `conic-gradient()` and the new color interpolation to create a nice color wh
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-
-## Related Links
-
-* [https://developer.chrome.com/articles/high-definition-css-color-guide/](https://developer.chrome.com/articles/high-definition-css-color-guide/)
-* [https://www.w3.org/TR/css-color-4/#hue-interpolation](https://www.w3.org/TR/css-color-4/#hue-interpolation)
