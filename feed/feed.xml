@@ -4,11 +4,34 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2023-07-04T00:00:00Z</updated>
+	<updated>2023-07-06T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Overlapping border on images with hover effect</title>
+		<link href="https://css-tip.com/overlapping-border-image/"/>
+		<updated>2023-07-06T00:00:00Z</updated>
+		<id>https://css-tip.com/overlapping-border-image/</id>
+		<content type="html">&lt;p&gt;Add an overlapping border to your image with a nice hover effect&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No extra element (only the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag)&lt;/li&gt;
+&lt;li&gt;No pseudo-element&lt;/li&gt;
+&lt;li&gt;10 CSS declarations&lt;/li&gt;
+&lt;li&gt;Optimized with CSS variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/Nod4Ss43g_-810.avif 810w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/Nod4Ss43g_-810.webp 810w&quot;&gt;&lt;img alt=&quot;images with overlapping border&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/Nod4Ss43g_-810.png&quot; width=&quot;810&quot; height=&quot;394&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--c&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #F9CDAD&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* the main color */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 8px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* thickness of the border */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--o&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 25px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* control the offset */&lt;/span&gt;&lt;br&gt;  &lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 200px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* the image size */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--_p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;2*&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--o&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; + &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--_p&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--_p&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 0 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;outline&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; solid &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;outline-offset&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--o&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; - &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--_p&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; .4s&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;img:hover&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--_p&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;/2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;PoxKmgX&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/PoxKmgX&quot;&gt;
+  Overlapping border on image (with hover effect)&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>3D trailing shadows for images</title>
@@ -622,11 +645,6 @@
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;h2 id=&quot;related-links&quot; tabindex=&quot;-1&quot;&gt;Related Links &lt;a class=&quot;header-anchor&quot; href=&quot;https://css-tip.com/hue-manipulation-color-mix/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/articles/high-definition-css-color-guide/&quot;&gt;https://developer.chrome.com/articles/high-definition-css-color-guide/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/css-color-5/#color-mix&quot;&gt;https://www.w3.org/TR/css-color-5/#color-mix&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
 	</entry>
 	
