@@ -59,3 +59,4 @@ img:hover {
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+More detail: [smashingmagazine.com/2023/07/shines-perspective-rotations-css-3d-effects-images](https://www.smashingmagazine.com/2023/07/shines-perspective-rotations-css-3d-effects-images/)
