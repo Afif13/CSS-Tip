@@ -40,3 +40,5 @@ img {
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 More detail: [css-tricks.com/fancy-image-decorations-single-element-magic](https://css-tricks.com/fancy-image-decorations-single-element-magic/)
+
+Another idea: [Corner-only borders with hover effect](/corner-only-border-image/)
