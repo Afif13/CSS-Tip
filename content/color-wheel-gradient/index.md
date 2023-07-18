@@ -5,6 +5,7 @@ description: Use the new color interpolation to create a color wheel using conic
 date: 2023-04-03
 tags: posts
 ---
+
 Use `conic-gradient()` and the new color interpolation to create a nice color wheel 🤩
 
 {% image "./color-wheel.png", "A color wheel made conic-gradient" %}
