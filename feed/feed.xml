@@ -4,11 +4,33 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2023-07-14T00:00:00Z</updated>
+	<updated>2023-07-18T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A color wheel with an array of colors</title>
+		<link href="https://css-tip.com/color-wheel/"/>
+		<updated>2023-07-18T00:00:00Z</updated>
+		<id>https://css-tip.com/color-wheel/</id>
+		<content type="html">&lt;p&gt;Create a perfect color wheel with multiple colors using &lt;code&gt;conic-gradient()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One variable to define all the colors&lt;/li&gt;
+&lt;li&gt;No color duplication&lt;/li&gt;
+&lt;li&gt;Smooth transition between all the colors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/Piw2vIbsEl-405.avif 405w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/Piw2vIbsEl-405.webp 405w&quot;&gt;&lt;img alt=&quot;A color wheel using conic-gradient&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/Piw2vIbsEl-405.png&quot; width=&quot;405&quot; height=&quot;495&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;   &lt;span class=&quot;token comment&quot;&gt;/* your colors without duplication */&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;--colors&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; green&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;yellow&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;red&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;blue&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;pink&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;conic-gradient&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--colors&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--colors&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;NWEMdvw&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/NWEMdvw&quot;&gt;
+  Color wheel with colors array&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Zoom effect on hover</title>
@@ -1814,7 +1836,9 @@
   Full height element&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;More detail: &lt;a href=&quot;https://verpex.com/blog/website-tips/modern-layouts-using-css-grid&quot;&gt;verpex.com/blog/website-tips/modern-layouts-using-css-grid&lt;/a&gt;&lt;/p&gt;
+</content>
 	</entry>
 	
 	<entry>
