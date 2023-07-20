@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A color wheel with an array of colors</title>
+		<title>A reveal hover effect using CSS mask</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A simple conic-gradient() trick to create a color wheel">
+		<meta name="description" content="Use CSS mask to create a nice reveal effect on hover">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/color-wheel/" >
+		<link rel=canonical href="https://css-tip.com/reveal-hover-mask/" >
 		<meta name="view-transition" content="same-origin" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A color wheel with an array of colors">
+		<meta property="og:title" content="A reveal hover effect using CSS mask">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/color-wheel/">
-		<meta property="og:description" content="A simple conic-gradient() trick to create a color wheel">
-		<meta property="og:image" content="/og-images/HOKR6ZC4C6.png" >
+		<meta property="og:url" content="https://css-tip.com/reveal-hover-mask/">
+		<meta property="og:description" content="Use CSS mask to create a nice reveal effect on hover">
+		<meta property="og:image" content="/og-images/14_vWtxjDs.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -49,29 +49,28 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>A color wheel with an array of colors</h1>
+			<h1>A reveal hover effect using CSS mask</h1>
 
-<time datetime="2023-07-18">July 18, 2023</time>
+<time datetime="2023-07-20">July 20, 2023</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Create a perfect color wheel with multiple colors using <code>conic-gradient()</code></p>
+<p>Reveal your images with a nice hover effect and a few lines of code</p>
 <ul>
-<li>One variable to define all the colors</li>
-<li>No color duplication</li>
-<li>Smooth transition between all the colors</li>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>Less than 10 CSS declarations</li>
+<li>Powered by CSS Mask</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/Piw2vIbsEl-405.avif 405w"><source type="image/webp" srcset="/img/Piw2vIbsEl-405.webp 405w"><img alt="A color wheel using conic-gradient" loading="lazy" decoding="async" src="/img/Piw2vIbsEl-405.png" width="405" height="495"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>   <span class="token comment">/* your colors without duplication */</span><br>  <span class="token property">--colors</span><span class="token punctuation">:</span> green<span class="token punctuation">,</span>yellow<span class="token punctuation">,</span>red<span class="token punctuation">,</span>blue<span class="token punctuation">,</span>pink<span class="token punctuation">;</span><br><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">conic-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--colors<span class="token punctuation">)</span> 0<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--colors<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="NWEMdvw" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/NWEMdvw" target="_blank" rel="noopener">
-  Color wheel with colors array</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/NdX_TUQ_GC-742.avif 742w"><source type="image/webp" srcset="/img/NdX_TUQ_GC-742.webp 742w"><img alt="A reveal hover effect using mask" loading="lazy" decoding="async" src="/img/NdX_TUQ_GC-742.png" width="742" height="369"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/* control the space for the gradient */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">repeating-linear-gradient</span><span class="token punctuation">(</span>45deg<span class="token punctuation">,</span>#FF6B6B 0 10px<span class="token punctuation">,</span>#4ECDC4 0 20px<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span>#000 70%<span class="token punctuation">,</span>#0000 71%<span class="token punctuation">)</span> content-box<br>    50%/<span class="token function">var</span><span class="token punctuation">(</span>--_s<span class="token punctuation">,</span>150% 150%<span class="token punctuation">)</span> no-repeat<span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask-composite</span><span class="token punctuation">:</span> exclude<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .5s<span class="token punctuation">;</span><br>  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--_s</span><span class="token punctuation">:</span> 0% 0%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="abQGGew" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/abQGGew" target="_blank" rel="noopener">
+  Hover reveal animation using mask</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-<ul class="links-nextprev"><li class="prev"><a href="/zoom-hover-effect/" title="Zoom effect on hover">Previous CSS Tip</a></li><li class="next"><a href="/reveal-hover-mask/" title="A reveal hover effect using CSS mask">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/color-wheel/" title="A color wheel with an array of colors">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
