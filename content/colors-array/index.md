@@ -34,3 +34,6 @@ Use an index like any programming language to iterate through the array. Practic
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 If you want to work with only 2 colors, I have a better version: [Color Switch Using Color-Mix()](/color-switch-color-mix/)
+
+
+Related Article: [www.smashingmagazine.com/2023/07/define-array-colors-css](https://www.smashingmagazine.com/2023/07/define-array-colors-css/)

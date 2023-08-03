@@ -38,3 +38,5 @@ img:hover {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More detail: [verpex.com/blog/website-tips/css-effects-on-images-ii](https://verpex.com/blog/website-tips/css-effects-on-images-ii)

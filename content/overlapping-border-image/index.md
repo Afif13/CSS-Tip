@@ -39,3 +39,5 @@ img:hover {
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+
+More detail: [verpex.com/blog/website-tips/css-effects-on-images-ii](https://verpex.com/blog/website-tips/css-effects-on-images-ii)
