@@ -477,22 +477,27 @@
 	</url>
 	
 	<url>
+		<loc>https://css-tip.com/checkbox-mask/</loc>
+		<lastmod>2023-08-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://css-tip.com/reveal-hover-mask-3/</loc>
+		<lastmod>2023-08-09</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/about/</loc>
-		<lastmod>2023-08-03</lastmod>
+		<lastmod>2023-08-09</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://css-tip.com/archive/</loc>
-		<lastmod>2023-08-03</lastmod>
+		<lastmod>2023-08-09</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://css-tip.com/</loc>
-		<lastmod>2023-08-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://css-tip.com/checkbox-mask/</loc>
-		<lastmod>2023-08-04</lastmod>
+		<lastmod>2023-08-09</lastmod>
 	</url>
 </urlset>
