@@ -185,7 +185,7 @@ footer {
 	  animation-timeline: scroll(root);
 	}
 	@keyframes t {
-		0%,93% {transform: translate(var(--t))}
+		0%,95% {transform: translate(var(--t))}
 		to {transform: translate(0)}
 	}
 
