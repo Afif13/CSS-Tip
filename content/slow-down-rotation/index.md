@@ -32,6 +32,9 @@ Did you ever wanted to slow down a rotating element on mouse hover? You can easi
 .box:hover {
   animation-play-state: running;
 }
+@keyframes r {
+  to {rotate: 1turn}
+}
 ```
 
 There is a fallback version for browsers that don't support `animation-composition`. It is also an interesting way with a simple code.

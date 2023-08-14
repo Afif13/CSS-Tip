@@ -13,7 +13,7 @@ Add a nice "Pop out" hover effect to your avatar using a minimalist code
 * Optimized with CSS variables
 
 
-{% image "./image.png", "A 3D shine effect on image" %}
+{% image "./image.png", "A pop out hover effect to image" %}
 
 ```css
 img {
