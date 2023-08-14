@@ -9,8 +9,8 @@ tags: posts
 Add a fancy "Pop out" hover effect to your avatar using modern CSS. Another variation of [the previous effect](/avatar-hover-effect)
 * No extra element (only the `<img>` tag)
 * No pseudo-element
-* Powered by the future of CSS (mask, @property, CSS variables and a lot of math)
-* Optimized with Sass
+* Powered by the future of CSS (mask, @property, Trigonometric functions and a lot of math)
+* Optimized with Sass & CSS Variables
 
 {% image "./image.png", "A pop out hover effect to image" %}
 
