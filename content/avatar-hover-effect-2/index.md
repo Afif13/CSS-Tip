@@ -30,25 +30,23 @@ $n: 15; /* number of small circles */
 
 img {
   --r: 50px; /* control the small circles radius and the main size */
-  --f: 1.7;  /* control the scale factor, between 1.5 and 2 you get nice result */
+  --f: 1.7;  /* control the scale factor, between 1.2 and 2 you get nice result */
   --c: #E4844A;
   
   width: calc(var(--r)*(1 + 1/tan(180deg/#{$n})));
   aspect-ratio: 1;
   border-radius: 50%;
-  --_d: 50% + (50% - var(--i,0px));
   $m: ();
   @for $i from 1 through ($n) {
     $m: append($m, 
          radial-gradient(var(--c) 70%,#0000 72%) no-repeat
-          calc(var(--_d)*cos(360deg*#{$i/$n} + var(--a,0deg))) 
-          calc(var(--_d)*sin(360deg*#{$i/$n} + var(--a,0deg)))/
+          calc(50% + (50% - var(--i,0px))*cos(360deg*#{$i/$n} + var(--a,0deg))) 
+          calc(50% + (50% - var(--i,0px))*sin(360deg*#{$i/$n} + var(--a,0deg)))/
           var(--r) var(--r), 
         comma);
    }
   --_m: 
-    radial-gradient(var(--c) calc(72% - var(--r)/2),#0000 0) no-repeat
-     50%/calc(100% - var(--i,0px)) calc(100% - var(--i,0px)),
+    radial-gradient(var(--c) calc(72% - var(--r)/2 - var(--i,0px)),#0000 0) no-repeat,
     #{$m};
   mask: 
     linear-gradient(#000 0 0) top/100% 50% no-repeat,
@@ -64,7 +62,7 @@ img {
 }
 img:hover {
   --i: calc(var(--r)/var(--f));
-  scale: calc((1 + 1/tan(180deg/#{$n}))/(1 - var(--f) + 1/tan(180deg/#{$n})));
+  scale: calc((1 + 1/tan(180deg/#{$n}))/(1 - 2/var(--f) + 1/tan(180deg/#{$n})));
   animation-play-state: running, paused;
 }
 @keyframes rotate {
