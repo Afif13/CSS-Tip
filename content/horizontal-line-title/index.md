@@ -22,7 +22,6 @@ h2 {
   --c: red;   /* the color */
   --w: 100px; /* the width */
   --g: 10px;  /* the gap */
-  border: 1px solid;
   border-image: 
     linear-gradient(
      #0000      calc(50% - var(--s)/2),
@@ -32,7 +31,7 @@ h2 {
 }
 ```
 
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="BaYXdmM" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="BaYXdmM" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/BaYXdmM">
   Horizontal lines around your title</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
