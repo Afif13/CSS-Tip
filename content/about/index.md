@@ -15,6 +15,7 @@ Want more CSS fun? Check my other websites:
 * [CSS Generators](https://css-generators.com/)
 * [CSS Articles](https://css-articles.com/)
 * [CSS Patterns](https://css-pattern.com/)
+* [CSS Loaders](https://css-loaders.com/)
 * [CSS Arts](https://css-only.art/)
 * [CSS Games](https://css-games.com/)
 
