@@ -19,6 +19,9 @@ eleventyNavigation:
 {% include "postslist.njk" %}
 
 <script>
+const urlParams = new URLSearchParams(window.location.search);
+const s = urlParams.get('s');
+
 let all = document.querySelectorAll('.postlist li a');
 document.querySelector("input[type=search]").addEventListener("input",function(e) {
   let s = e.target.value.toUpperCase();
@@ -30,4 +33,10 @@ document.querySelector("input[type=search]").addEventListener("input",function(e
     }
   }
 })
+
+if(s) {
+  document.querySelector("input[type=search]").value=s;
+  document.querySelector("input[type=search]").dispatchEvent(new Event('input', { bubbles: true }));
+}
+
 </script>

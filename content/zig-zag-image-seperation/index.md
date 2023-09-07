@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Zig Zag sepration between images with hover effect
+title: Zig-Zag sepration between images with hover effect
 description: A fancy image sepration with zig-zag shapes and cool hover effect
 date: 2023-08-21
 tags: posts
