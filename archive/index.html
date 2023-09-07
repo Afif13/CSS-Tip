@@ -89,7 +89,7 @@
 	</li>
 
 	<li>
-		<a href="/zig-zag-image-seperation/" >Zig Zag sepration between images with hover effect</a>
+		<a href="/zig-zag-image-seperation/" >Zig-Zag sepration between images with hover effect</a>
 		<time datetime="2023-08-21">August 21, 2023</time>
 	</li>
 
@@ -592,6 +592,9 @@
 
 
 <script>
+const urlParams = new URLSearchParams(window.location.search);
+const s = urlParams.get('s');
+
 let all = document.querySelectorAll('.postlist li a');
 document.querySelector("input[type=search]").addEventListener("input",function(e) {
   let s = e.target.value.toUpperCase();
@@ -603,6 +606,12 @@ document.querySelector("input[type=search]").addEventListener("input",function(e
     }
   }
 })
+
+if(s) {
+  document.querySelector("input[type=search]").value=s;
+  document.querySelector("input[type=search]").dispatchEvent(new Event('input', { bubbles: true }));
+}
+
 </script>
 
 		</main>
