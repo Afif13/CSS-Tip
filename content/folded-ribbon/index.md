@@ -44,7 +44,5 @@ Add a folded ribbon to the corner of your container using a few lines of code
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-### More Ribbons
 
-* [A CSS-Only Ribbon](/css-ribbon-2/)
-* [CSS-Only Folded Ribbon](/css-ribbon/)
+More Ribbon Shapes: [css-generators.com/ribbon-shapes](https://css-generators.com/ribbon-shapes/)

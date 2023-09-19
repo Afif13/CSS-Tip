@@ -49,7 +49,5 @@ Create a cool Ribbon using one element and a few lines of code.
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-### More Ribbons
 
-* [A Folded Ribbon To The Corner](/folded-ribbon/)
-* [A CSS-only Ribbon](/css-ribbon-2/)
+More Ribbon Shapes: [css-generators.com/ribbon-shapes](https://css-generators.com/ribbon-shapes/)
