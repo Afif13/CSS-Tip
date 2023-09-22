@@ -15,12 +15,6 @@ Turn your title into a fancy Ribbon Shape 🎀
 {% image "./image.png", "A folded ribbon shape" %}
 
 ```css
-@property --d {
-  syntax: "<length>";
-  initial-value: 0px;
-  inherits: true;
-}
-
 h1 {
   --r: 20px; /* control the cutout of the ribbon */
   --s: 20px; /* size of the folded part */
@@ -30,20 +24,14 @@ h1 {
   line-height: 1.6; /* control the height */
   padding-inline: 1.2lh calc(var(--r) + .2lh);
   background: linear-gradient(#0000 40%,#0002) var(--c);
-  clip-path: polygon(calc(1lh + var(--d)) 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,100% 999px, var(--d) 999px,var(--d) 100%);
-  position: relative;
-  transition: --d .3s linear;
+  clip-path: polygon(calc(1lh + var(--d)) 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,calc(1lh + var(--d)) 100%,calc(1lh + var(--d)) calc(100% + var(--s) + var(--d)),calc(.5lh + var(--d)) calc(100% + var(--s) + var(--r) + var(--d)),var(--d) calc(100% + var(--s) + var(--d)),var(--d) 100%);
+  box-shadow:
+    0 0 10px #000,
+    0 0 0 999px var(--c);
+  cursor: pointer;
+  transition: .3s linear;
 }
-h1:before {
-  content:"";
-  position: absolute;
-  top: 100%;
-  left: var(--d);
-  width: 1lh;
-  height: calc(var(--s) + var(--r) + var(--d));
-  background: linear-gradient(#0005,#0000 20%) var(--c);
-  clip-path: polygon(0 0,100% 0,100% calc(100% - var(--r)),50% 100%,0 calc(100% - var(--r)));
-}
+
 h1:hover {
   --d: .2lh; /* don't use a big value to not cut the text */
 }
