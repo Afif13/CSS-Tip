@@ -8,6 +8,7 @@ tags: posts
 
 Turn your title into a fancy Ribbon Shape 🎀
 * One element (no complex HTML)
+* No pseudo-elements
 * Optimized with CSS variables
 * Cool animation on hover
 
