@@ -76,3 +76,5 @@ img:hover {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More Detail: [www.smashingmagazine.com/2023/09/re-creating-pop-out-hover-effect-css-part1](https://www.smashingmagazine.com/2023/09/re-creating-pop-out-hover-effect-css-part1/)
