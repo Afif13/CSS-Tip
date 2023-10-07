@@ -57,3 +57,5 @@ And why not the Zig-Zag version as well
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More Detail: [www.smashingmagazine.com/2023/09/revealing-images-css-mask-animations](https://www.smashingmagazine.com/2023/09/revealing-images-css-mask-animations/)
