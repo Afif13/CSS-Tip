@@ -79,4 +79,4 @@ img:hover {
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-More detail: [www.smashingmagazine.com/2023/10/re-creating-pop-out-hover-effect-modern-css-part2](https://www.smashingmagazine.com/2023/10/re-creating-pop-out-hover-effect-modern-css-part2/)
+More Detail: [www.smashingmagazine.com/2023/10/re-creating-pop-out-hover-effect-modern-css-part2](https://www.smashingmagazine.com/2023/10/re-creating-pop-out-hover-effect-modern-css-part2/)

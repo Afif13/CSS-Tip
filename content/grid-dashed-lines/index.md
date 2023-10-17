@@ -7,7 +7,7 @@ tags: posts
 ---
 
 Create a grid of dashed lines using a few lines of code
-* Two properties
+* One property
 * Two gradients
 * Easy to adjust using CSS variables
 
