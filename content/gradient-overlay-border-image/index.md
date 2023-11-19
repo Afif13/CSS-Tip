@@ -19,8 +19,7 @@ Only one line of code and you have your overlay 🤩
 .container {
   border-image:
     linear-gradient(#0003,#000) /* your gradient here */
-    50%/50%; /* no need to touch this, we always want 50% of slice 
-                                                  and 50% border-width */
+    fill 0;
 }
 ```
 
