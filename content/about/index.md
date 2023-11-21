@@ -29,11 +29,9 @@ Find me on:
 * [Stack Overflow](https://stackoverflow.com/users/8620333/temani-afif)
 
 
-<br>
+<hr>
 
-### CSS Webring
-
-This site is a member of [CS.Sjoy.lol](https://cs.sjoy.lol/). Cool websites doing CSS stuff!
+This site is a member of [CS.Sjoy.lol](https://cs.sjoy.lol/) webring. Cool websites doing CSS stuff!
 
 Explore the Ring: [Previous Site](https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com) | 
 [Random Site](https://webri.ng/webring/cssjoy/random?via=https://css-tip.com) | 
