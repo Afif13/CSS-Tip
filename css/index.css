@@ -345,7 +345,7 @@ input[type=search] {
 	display: none!important;
 }
 
-html {
+/*html {
 	view-transition-name: main;
 	background-color: var(--c1);
 }
@@ -373,4 +373,4 @@ html {
 	@keyframes y {
 		0%,20% {-webkit-mask-position: calc(50% - 20px) 100%, calc(50% + 20px) 0%}
 	}
-}
+}*/
