@@ -11,7 +11,6 @@
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<link rel=canonical href="https://css-tip.com{{ page.url }}" >
-		<meta name="view-transition" content="same-origin" />
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" />
@@ -39,13 +38,6 @@
 		  {% include "public/css/index.css" %}
 	  {% endset %}
 		<style>{{ css | cssmin | safe }}</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KSNXZ63602"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KSNXZ63602');
-</script>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -67,5 +59,12 @@
 		<footer>
 			<p>Created by <a href="https://github.com/Afif13/" target="_blank">Temani Afif</a> | <a href="https://support.temani-afif.com/" target="_blank">Support This Project</a> | <a href="/feed/feed.xml" target="_blank">RSS Feed</a></p>
 		</footer>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KSNXZ63602"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KSNXZ63602');
+</script>
 	</body>
 </html>
