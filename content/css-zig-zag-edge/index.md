@@ -13,16 +13,21 @@ How much code is needed to create a Zig-Zag edge?
 Use an online generator to easily get the code: [css-generators.com/custom-borders](https://css-generators.com/custom-borders/)
 
 
-{% image "./zig-zag-edge.png", "A CSS-only zig-zag border" %}
+{% image "./image.png", "A CSS-only zig-zag border" %}
 
 ```css
 .zig-zag {
-  mask: conic-gradient(from -45deg at bottom,#000 90deg,#0000 0) 50% / 60px 100%;
+  --a: 90deg; /* the angle of the spikes */
+  --s: 60px;  /* the size of the spikes */
+  
+  mask:  
+    conic-gradient(from calc(var(--a)/-2) at bottom,
+      #000 var(--a),#0000 0) 50%/var(--s);
 }
 ```
 
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="VwxwpbB" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/VwxwpbB">
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="eYxrmgx" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/eYxrmgx">
   CSS only Zig-Zag edge</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
