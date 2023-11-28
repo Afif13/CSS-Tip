@@ -16,7 +16,7 @@ Extend the background of an element outside of its container to cover the full s
 
 ```css
 .full-background {
-  border-image: conic-gradient(pink 0 0) fill 0//0 100vmax;
+  border-image: conic-gradient(pink 0 0) fill 0//0 100vw;
 }
 ```
 
@@ -33,9 +33,9 @@ Another idea more versbose using `box-shadow`
   --c: pink;
   background: var(--c);
   /* a big box-shadow */
-  box-shadow: 0 0 0 100vmax var(--c);
+  box-shadow: 0 0 0 100vw var(--c);
   /* clip only the top and bottom part of it */
-  clip-path: inset(0 -100vmax);
+  clip-path: inset(0 -100vw);
 }
 ```
 
