@@ -26,7 +26,7 @@ img {
     linear-gradient(45deg,
       color-mix(in srgb,var(--c),#000 20%) 50%,
       color-mix(in srgb,var(--c),#000 40%) 0) 
-     9999/9999px/9999px;
+     fill 0//9999px;
   clip-path: 
     polygon(0 100%,0 0,100% 0,
       calc(100% + 9999px) 9999px,
