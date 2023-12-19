@@ -46,3 +46,5 @@ Here is an interactive demo where you can update the text content and see how th
 
 
 More Ribbon Shapes: [css-generators.com/ribbon-shapes](https://css-generators.com/ribbon-shapes/)
+
+More Detail: [www.smashingmagazine.com/2023/11/css-responsive-multi-line-ribbon-shapes-part1](https://www.smashingmagazine.com/2023/11/css-responsive-multi-line-ribbon-shapes-part1/)

@@ -86,3 +86,5 @@ An interactive version to see how the shape fit its content. Edit the text and s
 
 
 More Ribbon Shapes: [css-generators.com/ribbon-shapes](https://css-generators.com/ribbon-shapes/)
+
+More Detail: [www.smashingmagazine.com/2023/11/css-responsive-multi-line-ribbon-shapes-part2](https://www.smashingmagazine.com/2023/11/css-responsive-multi-line-ribbon-shapes-part2/)
