@@ -7,12 +7,12 @@ tags: posts
 ---
 
 Place your image inside a 3D box and reveal it with a cool hover effect. Perfect for your virtual gifts 🎁
-* No extra element (only the image tag)
+* No extra element (only the `<img>` tag)
 * No pseudo-elements
 * Optimized with CSS Variables
 
 
-{% image "./image.png", "A 3D shine animation on image" %}
+{% image "./image.png", "A 3D box with image" %}
 
 ```css
 @property --h {
