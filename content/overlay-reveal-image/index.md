@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Overlay reveal animation for your image
+title: Overlay reveal animation for your images
 description: a fancy reveal animation using only one element
 date: 2023-11-30
 tags: posts

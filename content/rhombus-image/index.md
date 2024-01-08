@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: A Rhombus shape with rounded corners for your image
+title: A Rhombus shape with rounded corners for your images
 description: 3 lines of code to create a rhombus shape for your image
 date: 2023-05-29
 tags: posts

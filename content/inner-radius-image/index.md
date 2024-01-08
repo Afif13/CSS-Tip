@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Border with inner radius for your image
-description: Two lines of code to add an inner radius to your image
+title: Border with inner radius for your images
+description: Two lines of code to add an inner radius to your images
 date: 2024-01-03
 tags: posts
 ---

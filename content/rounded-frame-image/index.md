@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Fancy Rounded frame around your image
+title: Fancy Rounded frame around your images
 description: Combine gradients and CSS mask to create a fancy frame around an image
 date: 2022-11-01
 tags: posts

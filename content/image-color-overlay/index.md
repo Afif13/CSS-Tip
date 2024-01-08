@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: A color overlay above your image
+title: A color overlay above your images
 description: Use outline to add an overlay to your image
 date: 2022-04-07
 tags: posts

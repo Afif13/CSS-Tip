@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Sliding reveal animation for your image
+title: Sliding reveal animation for your images
 description: A cool reveal effect on hover with a sliding animation
 date: 2023-06-10
 tags: posts
