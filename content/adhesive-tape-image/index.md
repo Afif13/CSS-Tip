@@ -40,4 +40,15 @@ img {
   Adhesive tape for your images</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
+Another way still using a single element but less adhesive tape (With border-radius as a bonus).
+
+{% image "./image-alt.png", "images with adhesive tape" %}
+
+
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="jOJrazb" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/jOJrazb">
+  Adhesive tape for your images II</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
