@@ -28,6 +28,13 @@
   Adhesive tape for your images&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
+&lt;p&gt;Another way still using a single element but less adhesive tape (With border-radius as a bonus).&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/WlYMzsNlEc-665.avif 665w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/WlYMzsNlEc-665.webp 665w&quot;&gt;&lt;img alt=&quot;images with adhesive tape&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/WlYMzsNlEc-665.png&quot; width=&quot;665&quot; height=&quot;435&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;jOJrazb&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/jOJrazb&quot;&gt;
+  Adhesive tape for your images II&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
 	</entry>
 	
