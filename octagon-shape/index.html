@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A Modern way to create hexagon shapes</title>
+		<title>A Modern way to create octagon shapes</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Two lines of CSS code an no magic number for an hexagon shape">
+		<meta name="description" content="Two lines of CSS code an no magic number for an octagon shape">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/hexagon-shape/" >
+		<link rel=canonical href="https://css-tip.com/octagon-shape/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A Modern way to create hexagon shapes">
+		<meta property="og:title" content="A Modern way to create octagon shapes">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/hexagon-shape/">
-		<meta property="og:description" content="Two lines of CSS code an no magic number for an hexagon shape">
-		<meta property="og:image" content="/og-images/hJEVj8g-Wb.png" >
+		<meta property="og:url" content="https://css-tip.com/octagon-shape/">
+		<meta property="og:description" content="Two lines of CSS code an no magic number for an octagon shape">
+		<meta property="og:image" content="/og-images/m99onVUGei.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -41,29 +41,29 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>A Modern way to create hexagon shapes</h1>
+			<h1>A Modern way to create octagon shapes</h1>
 
-<time datetime="2024-01-11">January 11, 2024</time>
+<time datetime="2024-01-16">January 16, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>An easy and modern way to create Hexagon Shapes</p>
+<p>An easy and modern way to create Octagon shapes</p>
 <ul>
 <li>Only 2 CSS declarations</li>
 <li>No magic numbers</li>
-<li>A simple 4-point polygon for the clip-path</li>
+<li>A 4-point polygon (instead of 8) for the clip-path</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/Pu0FVteBwx-725.avif 725w"><source type="image/webp" srcset="/img/Pu0FVteBwx-725.webp 725w"><img alt="CSS-only hexagon shapes" loading="lazy" decoding="async" src="/img/Pu0FVteBwx-725.png" width="725" height="287"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.hex</span> <span class="token punctuation">{</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1/<span class="token function">cos</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>50% -50%<span class="token punctuation">,</span>100% 50%<span class="token punctuation">,</span>50% 150%<span class="token punctuation">,</span>0 50%<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.hex-alt</span> <span class="token punctuation">{</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> <span class="token function">cos</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>-50% 50%<span class="token punctuation">,</span>50% 100%<span class="token punctuation">,</span>150% 50%<span class="token punctuation">,</span>50% 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* Notice how I simply switched the x/y <br>     of the previous polygon, easy! */</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="KKEMjxV" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKEMjxV" target="_blank" rel="noopener">
-  CSS-only hexagon shapes (the modern way)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/boVVg8KjTa-672.avif 672w"><source type="image/webp" srcset="/img/boVVg8KjTa-672.webp 672w"><img alt="CSS-only octagon shapes" loading="lazy" decoding="async" src="/img/boVVg8KjTa-672.png" width="672" height="345"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.octa</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span><br>  <br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">--o</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span>50%*<span class="token function">tan</span><span class="token punctuation">(</span>-22.5deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span><br>    <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span> 50%<span class="token punctuation">,</span>50% <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span><span class="token punctuation">)</span> 50%<span class="token punctuation">,</span><br>    50% <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span><span class="token punctuation">)</span><br>  <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="LYaxqEg" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LYaxqEg" target="_blank" rel="noopener">
+  CSS-only octagon shapes (the modern way)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-<ul class="links-nextprev"><li class="prev"><a href="/adhesive-tape-image/" title="Fix your images with an adhesive tape">Previous CSS Tip</a></li><li class="next"><a href="/octagon-shape/" title="A Modern way to create octagon shapes">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/hexagon-shape/" title="A Modern way to create hexagon shapes">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
