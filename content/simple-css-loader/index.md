@@ -39,3 +39,5 @@ Create a CSS-only loader with a simple code.
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More loaders: [css-loaders.com](https://css-loaders.com/)

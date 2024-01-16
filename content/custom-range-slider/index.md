@@ -21,3 +21,4 @@ Use modern CSS tricks to create fancy range sliders with a little code
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+Related [sitepoint.com/css-custom-range-slider/](https://www.sitepoint.com/css-custom-range-slider/)

@@ -28,7 +28,6 @@ Add a slanted background to your container that extend to the edge of the screen
     );
 }
 ```
-I know the code is scary but I will soon have an article to detail such techniques
 
 <p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="zYmpdeK" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/zYmpdeK">
@@ -36,3 +35,5 @@ I know the code is scary but I will soon have an article to detail such techniqu
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+Related: [smashingmagazine.com/2024/01/css-border-image-property/](https://www.smashingmagazine.com/2024/01/css-border-image-property/)

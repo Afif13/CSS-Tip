@@ -39,3 +39,5 @@ img {
   padding: 20px; /* border thickness */
 }
 ```
+
+Related: [smashingmagazine.com/2024/01/css-border-image-property/](https://www.smashingmagazine.com/2024/01/css-border-image-property/)

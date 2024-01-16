@@ -25,8 +25,6 @@ Do you want to have a radius inside the element but not outside? You can do it u
 }
 ```
 
-I may have an article to explain the logic behind the different values.
-
 <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="XWxexjZ" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/XWxexjZ">
   Inner border-radius</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
@@ -36,3 +34,5 @@ I may have an article to explain the logic behind the different values.
 
 
 There are easier way to achieve the same result with more properties and accurate values but I wanted to share this magic one-property trick.
+
+Related: [smashingmagazine.com/2024/01/css-border-image-property/](https://www.smashingmagazine.com/2024/01/css-border-image-property/)

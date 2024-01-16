@@ -26,6 +26,8 @@ Extend the background of an element outside of its container to cover the full s
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
+Related: [smashingmagazine.com/2024/01/css-border-image-property/](https://www.smashingmagazine.com/2024/01/css-border-image-property/)
+
 Another idea more versbose using `box-shadow`
 
 ```css

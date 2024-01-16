@@ -16,10 +16,10 @@ Improving [the previous effect](/overflowing-underline/) to consider an underlin
 
 ```css
 .full-line {
-  --b: 8; /* border thickness without unit */
+  --b: 8px; /* border thickness */
   --g: repeating-linear-gradient(45deg,#BD1550 0 10px,#E97F02 0 20px,#F8CA00 0 30px);
-  border-image: var(--g) var(--b)//0 100vw 0 0;
-  border-bottom: calc(var(--b)*1px) solid;
+  border-image: var(--g) fill 0/calc(100% - var(--b)) 0 0/0 100vw 0 0 repeat;
+  padding-block: 10px;
 }
 .left {
   border-image-outset: 0 0 0 100vw;
@@ -32,3 +32,5 @@ Improving [the previous effect](/overflowing-underline/) to consider an underlin
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+Related: [smashingmagazine.com/2024/01/css-border-image-property/](https://www.smashingmagazine.com/2024/01/css-border-image-property/)

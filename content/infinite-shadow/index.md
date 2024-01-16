@@ -20,28 +20,21 @@ img {
   --c: #A7DBD8;
   --s: 10px; /* the border thickness*/
   
-  border-radius: 50%; /* optional */
-  outline: var(--s) solid var(--c)
+  border-radius: 50%; /* works with any value or without */
+  outline: var(--s) solid var(--c);
+  --_c: conic-gradient(var(--c) 0 0);
 }
 .top {
-  border-image: 
-   linear-gradient(var(--c) 50%,#0000 0) 
-   fill 0//100vh var(--s);
+  border-image: var(--_c) 1 0 0 0/50% 0/100vh var(--s);
 }
 .bottom {
-  border-image: 
-   linear-gradient(#0000 50%,var(--c) 0) 
-   fill 0//100vh var(--s);
+  border-image: var(--_c) 0 0 1 0/50% 0/100vh var(--s);
 }
 .right {
-  border-image: 
-   linear-gradient(90deg,#0000 50%,var(--c) 0) 
-   fill 0//var(--s) 100vw;
+  border-image: var(--_c) 0 1 0 0/0 50%/var(--s) 100vw;
 }
 .left {
-  border-image: 
-   linear-gradient(90deg,var(--c) 50%,#0000 0) 
-   fill 0//var(--s) 100vw;
+  border-image: var(--_c) 0 0 0 1/0 50%/var(--s) 100vw;
 }
 ```
 
@@ -52,3 +45,5 @@ img {
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+
+Related: [smashingmagazine.com/2024/01/css-border-image-property/](https://www.smashingmagazine.com/2024/01/css-border-image-property/)

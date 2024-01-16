@@ -29,3 +29,4 @@ Only one line of code and you have your overlay 🤩
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
+Related: [smashingmagazine.com/2024/01/css-border-image-property/](https://www.smashingmagazine.com/2024/01/css-border-image-property/)

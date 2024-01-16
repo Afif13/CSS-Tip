@@ -23,7 +23,7 @@ img {
   padding: calc(var(--g) + var(--t));
   outline: var(--t) solid #B38184; /* the color here */
   outline-offset: calc(-1*var(--t));
-  -webkit-mask:
+  mask:
     conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
     0 0/calc(100% - var(--s)) calc(100% - var(--s)),
     linear-gradient(#000 0 0) content-box;
