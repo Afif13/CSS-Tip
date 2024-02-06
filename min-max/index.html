@@ -3,24 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy one</title>
+		<title>When to use the min() or max() function</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta name="description" content="a quick trick to know when to use min() or max()">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/min-max/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy one">
+		<meta property="og:title" content="When to use the min() or max() function">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/min-max/">
+		<meta property="og:description" content="a quick trick to know when to use min() or max()">
+		<meta property="og:image" content="/og-images/7nUMXkFMLU.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy one">
 		<meta name="generator" content="Eleventy v2.0.1">
@@ -34,90 +34,45 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="skip">
-			
+			<h1>When to use the min() or max() function</h1>
 
-<h1>Learn CSS the easy way</h1>
-<p>Welcome to CSS Tip. A small website where you can learn a new CSS trick every day. All the CSS secrets are here (Flexbox, CSS Grid, Gradients, Colors, Animation, Masking, Selectors, etc). It takes one minute to read a tip.</p>
+<time datetime="2024-02-06">February 06, 2024</time>
+
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
-<p>Want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<hr>
 
-
-<ul class="postlist" >
-
-	<li>
-		<a href="/min-max/" >When to use the min() or max() function</a>
-		<time datetime="2024-02-06">February 06, 2024</time>
-	</li>
-
-	<li>
-		<a href="/infinite-borders/" >An infinite number of borders around images</a>
-		<time datetime="2024-01-31">January 31, 2024</time>
-	</li>
-
-	<li>
-		<a href="/curved-ribbon/" >A curved ribbon shape with hover effect</a>
-		<time datetime="2024-01-29">January 29, 2024</time>
-	</li>
-
-	<li>
-		<a href="/image-wavy-borders-2/" >A fancy frame with wavy borders II</a>
-		<time datetime="2024-01-24">January 24, 2024</time>
-	</li>
-
-	<li>
-		<a href="/image-wavy-borders/" >A fancy frame with wavy borders</a>
-		<time datetime="2024-01-23">January 23, 2024</time>
-	</li>
-
-	<li>
-		<a href="/triangle-rounded-corner/" >Triangle shape with rounded corners</a>
-		<time datetime="2024-01-19">January 19, 2024</time>
-	</li>
-
-	<li>
-		<a href="/octagon-shape/" >A Modern way to create octagon shapes</a>
-		<time datetime="2024-01-16">January 16, 2024</time>
-	</li>
-
-	<li>
-		<a href="/hexagon-shape/" >A Modern way to create hexagon shapes</a>
-		<time datetime="2024-01-11">January 11, 2024</time>
-	</li>
-
-	<li>
-		<a href="/adhesive-tape-image/" >Fix your images with an adhesive tape</a>
-		<time datetime="2024-01-08">January 08, 2024</time>
-	</li>
-
-	<li>
-		<a href="/fancy-corner-decoration/" >Fancy corner decoration for your images</a>
-		<time datetime="2024-01-05">January 05, 2024</time>
-	</li>
-
+<p><code>min()</code> or <code>max()</code>? You always struggle to know which one to use and you end up trying both until one of them works.</p>
+<p>💡 Here is a figure to help you decide when to use them</p>
+<p>You start with <code>clamp()</code> then:</p>
+<ul>
+<li>when you remove max, you use <code>max()</code></li>
+<li>when you remove min, you use <code>min()</code></li>
 </ul>
-
-
-
-
-<p>128 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-<hr>
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
+<p><picture><source type="image/avif" srcset="/img/uI7CCFn8mO-926.avif 926w"><source type="image/webp" srcset="/img/uI7CCFn8mO-926.webp 926w"><img alt="A 3D shine animation on image" loading="lazy" decoding="async" src="/img/uI7CCFn8mO-926.png" width="926" height="491"></picture></p>
+<p>If you want to set a <code>max-width</code> to your element then it's <code>min()</code></p>
+<p><code>width: clamp(min,100%,max)</code> ➞ <code>width: min(100%, max)</code></p>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="KKEeLpp" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKEeLpp" target="_blank" rel="noopener">
+  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>If you want to set a min value for <code>font-size</code> then it's <code>max()</code></p>
+<p><code>font-size: clamp(min,5vw,max)</code> ➞ <code>font-size: max(min, 5vw)</code></p>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="KKEeLzd" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKEeLzd" target="_blank" rel="noopener">
+  min font-size using max()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<ul class="links-nextprev"><li class="prev"><a href="/infinite-borders/" title="An infinite number of borders around images">Previous CSS Tip</a></li>
+</ul>
 
 		</main>
 		<footer>

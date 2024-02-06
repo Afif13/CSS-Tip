@@ -4,11 +4,41 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-01-31T00:00:00Z</updated>
+	<updated>2024-02-06T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>When to use the min() or max() function</title>
+		<link href="https://css-tip.com/min-max/"/>
+		<updated>2024-02-06T00:00:00Z</updated>
+		<id>https://css-tip.com/min-max/</id>
+		<content type="html">&lt;p&gt;&lt;code&gt;min()&lt;/code&gt; or &lt;code&gt;max()&lt;/code&gt;? You always struggle to know which one to use and you end up trying both until one of them works.&lt;/p&gt;
+&lt;p&gt;💡 Here is a figure to help you decide when to use them&lt;/p&gt;
+&lt;p&gt;You start with &lt;code&gt;clamp()&lt;/code&gt; then:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;when you remove max, you use &lt;code&gt;max()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;when you remove min, you use &lt;code&gt;min()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/uI7CCFn8mO-926.avif 926w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/uI7CCFn8mO-926.webp 926w&quot;&gt;&lt;img alt=&quot;A 3D shine animation on image&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/uI7CCFn8mO-926.png&quot; width=&quot;926&quot; height=&quot;491&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;If you want to set a &lt;code&gt;max-width&lt;/code&gt; to your element then it&#39;s &lt;code&gt;min()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;width: clamp(min,100%,max)&lt;/code&gt; ➞ &lt;code&gt;width: min(100%, max)&lt;/code&gt;&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;KKEeLpp&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/KKEeLpp&quot;&gt;
+  Untitled&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;If you want to set a min value for &lt;code&gt;font-size&lt;/code&gt; then it&#39;s &lt;code&gt;max()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;font-size: clamp(min,5vw,max)&lt;/code&gt; ➞ &lt;code&gt;font-size: max(min, 5vw)&lt;/code&gt;&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;KKEeLzd&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/KKEeLzd&quot;&gt;
+  min font-size using max()&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>An infinite number of borders around images</title>

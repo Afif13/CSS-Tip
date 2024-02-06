@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/min-max/",
+			"url": "https://css-tip.com/min-max/",
+			"title": "When to use the min() or max() function",
+			"content_html": "<p><code>min()</code> or <code>max()</code>? You always struggle to know which one to use and you end up trying both until one of them works.</p>\n<p>💡 Here is a figure to help you decide when to use them</p>\n<p>You start with <code>clamp()</code> then:</p>\n<ul>\n<li>when you remove max, you use <code>max()</code></li>\n<li>when you remove min, you use <code>min()</code></li>\n</ul>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/uI7CCFn8mO-926.avif 926w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/uI7CCFn8mO-926.webp 926w\"><img alt=\"A 3D shine animation on image\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/uI7CCFn8mO-926.png\" width=\"926\" height=\"491\"></picture></p>\n<p>If you want to set a <code>max-width</code> to your element then it's <code>min()</code></p>\n<p><code>width: clamp(min,100%,max)</code> ➞ <code>width: min(100%, max)</code></p>\n<p class=\"codepen\" data-height=\"300\" data-default-tab=\"result\" data-slug-hash=\"KKEeLpp\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/KKEeLpp\">\n  Untitled</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<p>If you want to set a min value for <code>font-size</code> then it's <code>max()</code></p>\n<p><code>font-size: clamp(min,5vw,max)</code> ➞ <code>font-size: max(min, 5vw)</code></p>\n<p class=\"codepen\" data-height=\"300\" data-default-tab=\"result\" data-slug-hash=\"KKEeLzd\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/KKEeLzd\">\n  min font-size using max()</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>",
+			"date_published": "2024-02-06T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/infinite-borders/",
 			"url": "https://css-tip.com/infinite-borders/",
 			"title": "An infinite number of borders around images",
