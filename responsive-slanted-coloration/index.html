@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>When to use the min() or max() function</title>
+		<title>Responsive full-screen slanted coloration</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="a quick trick to know when to use min() or max()">
+		<meta name="description" content="three CSS proeprties for a fancy full width responsive coloration">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/min-max/" >
+		<link rel=canonical href="https://css-tip.com/responsive-slanted-coloration/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="When to use the min() or max() function">
+		<meta property="og:title" content="Responsive full-screen slanted coloration">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/min-max/">
-		<meta property="og:description" content="a quick trick to know when to use min() or max()">
-		<meta property="og:image" content="/og-images/7nUMXkFMLU.png" >
+		<meta property="og:url" content="https://css-tip.com/responsive-slanted-coloration/">
+		<meta property="og:description" content="three CSS proeprties for a fancy full width responsive coloration">
+		<meta property="og:image" content="/og-images/YbI9jR590q.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -41,37 +41,32 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>When to use the min() or max() function</h1>
+			<h1>Responsive full-screen slanted coloration</h1>
 
-<time datetime="2024-02-06">February 06, 2024</time>
+<time datetime="2024-02-07">February 07, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p><code>min()</code> or <code>max()</code>? You always struggle to know which one to use and you end up trying both until one of them works.</p>
-<p>💡 Here is a figure to help you decide when to use them</p>
-<p>You start with <code>clamp()</code> then:</p>
+<p>Use modern CSS to:</p>
 <ul>
-<li>when you remove max, you use <code>max()</code></li>
-<li>when you remove min, you use <code>min()</code></li>
+<li>Set a max-width</li>
+<li>Center an element</li>
+<li>Set a minimum margin</li>
+<li>Add a full-width slanted coloration</li>
+<li>Make the slant effect responsive</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/uI7CCFn8mO-926.avif 926w"><source type="image/webp" srcset="/img/uI7CCFn8mO-926.webp 926w"><img alt="A 3D shine animation on image" loading="lazy" decoding="async" src="/img/uI7CCFn8mO-926.png" width="926" height="491"></picture></p>
-<p>If you want to set a <code>max-width</code> to your element then it's <code>min()</code></p>
-<p><code>width: clamp(min,100%,max)</code> ➞ <code>width: min(100%, max)</code></p>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="KKEeLpp" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKEeLpp" target="_blank" rel="noopener">
-  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>If you want to set a min value for <code>font-size</code> then it's <code>max()</code></p>
-<p><code>font-size: clamp(min,5vw,max)</code> ➞ <code>font-size: max(min, 5vw)</code></p>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="KKEeLzd" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKEeLzd" target="_blank" rel="noopener">
-  min font-size using max()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>All of this, using only 3 properties and easy to control with CSS variables</p>
+<p><picture><source type="image/avif" srcset="/img/LekOYP9m0T-876.avif 876w"><source type="image/webp" srcset="/img/LekOYP9m0T-876.webp 876w"><img alt="max-width section with a full screen responsive slanted coloration" loading="lazy" decoding="async" src="/img/LekOYP9m0T-876.png" width="876" height="402"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">section</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 800px<span class="token punctuation">;</span> <span class="token comment">/* max-wdith */</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>  <span class="token comment">/* control the slanted effect */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span><br>  <br>  <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">,</span>0<span class="token punctuation">)</span> <span class="token function">max</span><span class="token punctuation">(</span>1rem<span class="token punctuation">,</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> fill 0//99vw <span class="token function">conic-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span> 0 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_s</span><span class="token punctuation">:</span> <span class="token function">clamp</span><span class="token punctuation">(</span>0px<span class="token punctuation">,</span><span class="token punctuation">(</span>100vw - <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">)</span>*999<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> margin-box<br>    <span class="token function">polygon</span><span class="token punctuation">(</span><br>      0    <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2 + <span class="token function">var</span><span class="token punctuation">(</span>--_s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>      100% <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2 - <span class="token function">var</span><span class="token punctuation">(</span>--_s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>      100% <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2 - <span class="token function">var</span><span class="token punctuation">(</span>--_s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>      0    <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2 + <span class="token function">var</span><span class="token punctuation">(</span>--_s<span class="token punctuation">)</span><span class="token punctuation">)</span><br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Resize the screen to see the responsive part of the slant effect</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="jOJpZZb" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/jOJpZZb" target="_blank" rel="noopener">
+  Slanted responsive coloration</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<ul class="links-nextprev"><li class="prev"><a href="/infinite-borders/" title="An infinite number of borders around images">Previous CSS Tip</a></li><li class="next"><a href="/responsive-slanted-coloration/" title="Responsive full-screen slanted coloration">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/min-max/" title="When to use the min() or max() function">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
