@@ -4,11 +4,27 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-02-07T00:00:00Z</updated>
+	<updated>2024-02-11T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Create a triangle shape with 2 CSS properties</title>
+		<link href="https://css-tip.com/triangle-shape/"/>
+		<updated>2024-02-11T00:00:00Z</updated>
+		<id>https://css-tip.com/triangle-shape/</id>
+		<content type="html">&lt;p&gt;Creating a basic triangle shape is as simple as using two CSS properties&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;aspect-ratio&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clip-path&lt;/code&gt; (with a 3-point polygon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&#39;s it, and it works with any kind of elements including images.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/_IILhUo0EL-859.avif 859w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/_IILhUo0EL-859.webp 859w&quot;&gt;&lt;img alt=&quot;A diagram showing to create CSS-only triangle shapes&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/_IILhUo0EL-859.png&quot; width=&quot;859&quot; height=&quot;502&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Get the CSS code from: &lt;a href=&quot;https://css-generators.com/triangle-shapes/&quot;&gt;css-generators.com/triangle-shapes&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Responsive full-screen slanted coloration</title>
@@ -170,7 +186,9 @@
   Rounded triangles with hover effect&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
 &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;More CSS-only triangle shapes: &lt;a href=&quot;https://css-generators.com/triangle-shapes/&quot;&gt;css-generators.com/triangle-shapes&lt;/a&gt;&lt;/p&gt;
+</content>
 	</entry>
 	
 	<entry>

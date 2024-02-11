@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Triangle shape with rounded corners</title>
+		<title>Create a triangle shape with 2 CSS properties</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A few lines of code to create a triangle with rounded corner using only CSS">
+		<meta name="description" content="Only two CSS properties to create a triangle shape">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/triangle-rounded-corner/" >
+		<link rel=canonical href="https://css-tip.com/triangle-shape/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Triangle shape with rounded corners">
+		<meta property="og:title" content="Create a triangle shape with 2 CSS properties">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/triangle-rounded-corner/">
-		<meta property="og:description" content="A few lines of code to create a triangle with rounded corner using only CSS">
-		<meta property="og:image" content="/og-images/HN0GUKNlDs.png" >
+		<meta property="og:url" content="https://css-tip.com/triangle-shape/">
+		<meta property="og:description" content="Only two CSS properties to create a triangle shape">
+		<meta property="og:image" content="/og-images/8jzHMzt33Z.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -41,36 +41,23 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Triangle shape with rounded corners</h1>
+			<h1>Create a triangle shape with 2 CSS properties</h1>
 
-<time datetime="2024-01-19">January 19, 2024</time>
+<time datetime="2024-02-11">February 11, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>A modern way to create a triangle with rounded corners</p>
+<p>Creating a basic triangle shape is as simple as using two CSS properties</p>
 <ul>
-<li>Only one element (no pseudo-elements)</li>
-<li>Only three CSS properties</li>
-<li>One variable to control the radius</li>
+<li><code>aspect-ratio</code></li>
+<li><code>clip-path</code> (with a 3-point polygon)</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/cfl_-Efu8b-663.avif 663w"><source type="image/webp" srcset="/img/cfl_-Efu8b-663.webp 663w"><img alt="triangles with rounded corners" loading="lazy" decoding="async" src="/img/cfl_-Efu8b-663.png" width="663" height="340"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.tri</span> <span class="token punctuation">{</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span> <span class="token comment">/* the radius */</span><br>  <br>  <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1/<span class="token function">cos</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from -30deg at 50% <span class="token function">calc</span><span class="token punctuation">(</span>200% - 3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">,</span>#000 60deg<span class="token punctuation">,</span>#0000 0<span class="token punctuation">)</span><br>     0 100%/100% <span class="token function">calc</span><span class="token punctuation">(</span>100% - 3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span>/2<span class="token punctuation">)</span> no-repeat<span class="token punctuation">,</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> at 50% <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>#000 98%<span class="token punctuation">,</span>#0000 101%<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">,</span>#000 98%<span class="token punctuation">,</span>#0000 101%<span class="token punctuation">)</span> space no-repeat<br>     0 100%/<span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">tan</span><span class="token punctuation">(</span>60deg<span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>50% 0<span class="token punctuation">,</span>100% 100%<span class="token punctuation">,</span>0 100%<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="QWovwoW" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/QWovwoW" target="_blank" rel="noopener">
-  Rounded triangles (the modern way)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>We can also have a cool hover effect</p>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="poYPLbp" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/poYPLbp" target="_blank" rel="noopener">
-  Rounded triangles with hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More CSS-only triangle shapes: <a href="https://css-generators.com/triangle-shapes/" target="_blank" rel="noopener">css-generators.com/triangle-shapes</a></p>
+<p>That's it, and it works with any kind of elements including images.</p>
+<p><picture><source type="image/avif" srcset="/img/_IILhUo0EL-859.avif 859w"><source type="image/webp" srcset="/img/_IILhUo0EL-859.webp 859w"><img alt="A diagram showing to create CSS-only triangle shapes" loading="lazy" decoding="async" src="/img/_IILhUo0EL-859.png" width="859" height="502"></picture></p>
+<p>Get the CSS code from: <a href="https://css-generators.com/triangle-shapes/" target="_blank" rel="noopener">css-generators.com/triangle-shapes</a></p>
 
-<ul class="links-nextprev"><li class="prev"><a href="/octagon-shape/" title="A Modern way to create octagon shapes">Previous CSS Tip</a></li><li class="next"><a href="/image-wavy-borders/" title="A fancy frame with wavy borders">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/responsive-slanted-coloration/" title="Responsive full-screen slanted coloration">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
