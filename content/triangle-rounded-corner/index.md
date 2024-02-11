@@ -44,3 +44,5 @@ We can also have a cool hover effect
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More CSS-only triangle shapes: [css-generators.com/triangle-shapes](https://css-generators.com/triangle-shapes/)
