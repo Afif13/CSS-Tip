@@ -56,8 +56,14 @@
   How many elements it :has()?</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
+<p>You can also have range selection</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container:has(> :nth-child(3))</span> <span class="token punctuation">{</span> <span class="token comment">/* 3 elements or more */</span> <span class="token punctuation">}</span><br><span class="token comment">/* .container:has(> :nth-child(X)) : X elements or more */</span><br><br><span class="token selector">.container:has(> :last-child:nth-child(-n + 3))</span> <span class="token punctuation">{</span> <span class="token comment">/* between 1 and 3 elements */</span><span class="token punctuation">}</span><br><span class="token comment">/* .container:has(> :last-child:nth-child(-n + X)): between 1 and X elements */</span><br><br><span class="token selector">.container:has(> :nth-last-child(3):nth-child(-n + 3))</span> <span class="token punctuation">{</span> <span class="token comment">/* between 3 and 5 elements */</span><span class="token punctuation">}</span><br><span class="token comment">/* .container:has(> :nth-last-child(X):nth-child(-n + (Y - X + 1))): between X and Y elements */</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="oNVJVJq" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/oNVJVJq" target="_blank" rel="noopener">
+  How many elements it :has()?</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
 <ul class="links-nextprev"><li class="prev"><a href="/css-wavy-shape/" title="A CSS-only wavy shapes">Previous CSS Tip</a></li><li class="next"><a href="/rounded-frame-image/" title="Fancy Rounded frame around your images">Next CSS Tip</a></li>
 </ul>
 

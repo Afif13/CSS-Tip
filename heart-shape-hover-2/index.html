@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Heart shape with a sliding hover effect</title>
+		<title>Heart shape with a sliding hover effect II</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
 		<meta name="description" content="A lovely animation to your heart shape image">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/heart-shape-hover/" >
+		<link rel=canonical href="https://css-tip.com/heart-shape-hover-2/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Heart shape with a sliding hover effect">
+		<meta property="og:title" content="Heart shape with a sliding hover effect II">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/heart-shape-hover/">
+		<meta property="og:url" content="https://css-tip.com/heart-shape-hover-2/">
 		<meta property="og:description" content="A lovely animation to your heart shape image">
-		<meta property="og:image" content="/og-images/YKojJpu8tl.png" >
+		<meta property="og:image" content="/og-images/i2Np64ifwq.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -41,30 +41,27 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Heart shape with a sliding hover effect</h1>
+			<h1>Heart shape with a sliding hover effect II</h1>
 
-<time datetime="2024-02-14">February 14, 2024</time>
+<time datetime="2024-02-15">February 15, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Turn your image into a heart shape with a lovely hover animation 😍</p>
+<p>Another variation of <a href="/heart-shape-hover/">the previous effect</a> using the same code structure</p>
 <ul>
 <li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
 <li>No pseudo-elements</li>
-<li>Less than 15 CSS declarations</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/Dam1kyw7Nw-876.avif 876w"><source type="image/webp" srcset="/img/Dam1kyw7Nw-876.webp 876w"><img alt="A CSS only heart shape for images" loading="lazy" decoding="async" src="/img/Dam1kyw7Nw-876.png" width="876" height="388"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span> <span class="token comment">/* image size */</span><br>  <br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #e5414e<span class="token punctuation">;</span> <span class="token comment">/* heart color */</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">object-fit</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span><br>  <span class="token property">mask-border</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span>#000 69%<span class="token punctuation">,</span>#0000 70%<span class="token punctuation">)</span> 84.5%/50%<span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>-41% 0<span class="token punctuation">,</span>50% 91%<span class="token punctuation">,</span> 141% 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .6s padding-block<span class="token punctuation">,</span> padding-inline 0s .6s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .6s padding-inline<span class="token punctuation">,</span> padding-block 0s<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="abMPBdg" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/abMPBdg" target="_blank" rel="noopener">
-  Heart shape image reveal  ❤️</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/h6R95RuTIP-891.avif 891w"><source type="image/webp" srcset="/img/h6R95RuTIP-891.webp 891w"><img alt="A CSS only heart shape" loading="lazy" decoding="async" src="/img/h6R95RuTIP-891.png" width="891" height="395"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span> <span class="token comment">/* image size */</span><br>  <br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>.09*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2 - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span><br>  <span class="token property">object-fit</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span>#e5414e 69%<span class="token punctuation">,</span>#0000 70%<span class="token punctuation">)</span> <br>    84.5%/<span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span>/0 <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>-41% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> 0<span class="token punctuation">,</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>50%  - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> 91%<span class="token punctuation">,</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>50%  + <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> 91%<span class="token punctuation">,</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>141% + <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .5s<span class="token punctuation">;</span><br>  <span class="token property">--_p</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--_p</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="VwRqQZY" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/VwRqQZY" target="_blank" rel="noopener">
+  Heart shape image reveal  II ❤️</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>Related Article: <a href="https://verpex.com/blog/website-tips/css-shapes-the-heart" target="_blank" rel="noopener">verpex.com/blog/website-tips/css-shapes-the-heart</a></p>
-
-<ul class="links-nextprev"><li class="prev"><a href="/triangle-shape/" title="Create a triangle shape with 2 CSS properties">Previous CSS Tip</a></li><li class="next"><a href="/heart-shape-hover-2/" title="Heart shape with a sliding hover effect II">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/heart-shape-hover/" title="Heart shape with a sliding hover effect">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
