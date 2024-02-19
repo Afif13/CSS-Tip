@@ -49,3 +49,7 @@ Here are two demos using the same code but with a different setting.
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 The nesting selector can be desugared by replacing it with the parent style rule’s selector, wrapped in an `:is()` selector. <sup>[ref](https://www.w3.org/TR/css-nesting-1/#nest-selector)</sup>
+
+---
+
+To be more accurate, the selector should be `.main :is(:is(section) p) ` but we can omit the second `:is()` since we have a simple selector inside it. `:is(section)` and `section` are somehow equivalent
