@@ -41,8 +41,6 @@
 &lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;The nesting selector can be desugared by replacing it with the parent style rule’s selector, wrapped in an &lt;code&gt;:is()&lt;/code&gt; selector. &lt;sup&gt;&lt;a href=&quot;https://www.w3.org/TR/css-nesting-1/#nest-selector&quot;&gt;ref&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;To be more accurate, the selector should be &lt;code&gt;.main :is(:is(section) p) &lt;/code&gt; but we can omit the second &lt;code&gt;:is()&lt;/code&gt; since we have a simple selector inside it. &lt;code&gt;:is(section)&lt;/code&gt; and &lt;code&gt;section&lt;/code&gt; are somehow equivalent&lt;/p&gt;
 </content>
 	</entry>
 	
