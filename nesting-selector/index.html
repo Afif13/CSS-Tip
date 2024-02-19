@@ -74,6 +74,8 @@
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 <p>The nesting selector can be desugared by replacing it with the parent style rule’s selector, wrapped in an <code>:is()</code> selector. <sup><a href="https://www.w3.org/TR/css-nesting-1/#nest-selector" target="_blank" rel="noopener">ref</a></sup></p>
+<hr>
+<p>To be more accurate, the selector should be <code>.main :is(:is(section) p) </code> but we can omit the second <code>:is()</code> since we have a simple selector inside it. <code>:is(section)</code> and <code>section</code> are somehow equivalent</p>
 
 <ul class="links-nextprev"><li class="prev"><a href="/heart-shape-hover-2/" title="Heart shape with a sliding hover effect II">Previous CSS Tip</a></li>
 </ul>
