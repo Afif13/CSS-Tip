@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Be careful when using the nesting selector (&amp;)</title>
+		<title>Create a flower shape using CSS mask</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The &quot;&amp;&quot; selector is not the same in CSS and Sass so use it carefully">
+		<meta name="description" content="Use an online generator to create a fancy flower shape using mask">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/nesting-selector/" >
+		<link rel=canonical href="https://css-tip.com/flower-shape/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Be careful when using the nesting selector (&amp;)">
+		<meta property="og:title" content="Create a flower shape using CSS mask">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/nesting-selector/">
-		<meta property="og:description" content="The &quot;&amp;&quot; selector is not the same in CSS and Sass so use it carefully">
-		<meta property="og:image" content="/og-images/vsTOcVpIcX.png" >
+		<meta property="og:url" content="https://css-tip.com/flower-shape/">
+		<meta property="og:description" content="Use an online generator to create a fancy flower shape using mask">
+		<meta property="og:image" content="/og-images/TL8VFt6LJ0.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -41,41 +41,24 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Be careful when using the nesting selector (&amp;)</h1>
+			<h1>Create a flower shape using CSS mask</h1>
 
-<time datetime="2024-02-19">February 19, 2024</time>
+<time datetime="2024-02-20">February 20, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>CSS Nesting is cool and using the &quot;&amp;&quot; is a lifesaver BUT be careful. There's a gotcha!</p>
-<p>⚠️ &quot;&amp;&quot; in CSS is different from the one in Sass ⚠️</p>
-<p>Your Sass code won't work the same way if you use it as a CSS code.</p>
-<p>The below code won't give the same result when used with CSS Nesting and Sass</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">section</span> <span class="token punctuation">{</span><br>   <span class="token selector">p</span> <span class="token punctuation">{</span><br>    <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span><br>    <span class="token selector">.main &amp;</span> <span class="token punctuation">{</span><br>      <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p><picture><source type="image/avif" srcset="/img/DaOX3NBWB2-718.avif 718w"><source type="image/webp" srcset="/img/DaOX3NBWB2-718.webp 718w"><img alt="Difference between Sass and CSS when using nesting" loading="lazy" decoding="async" src="/img/DaOX3NBWB2-718.png" width="718" height="445"></picture></p>
-<p>CSS Nesting introduces the <code>:is()</code> part which make the selection different: [Select any element that is descendant of .main AND is “section p” (p element descendant of section)]</p>
-<p>Here are two demos using the same code but with a different setting.</p>
+<p>Create a fancy flower shape using an online generator 🌺</p>
+<p><a href="https://css-generators.com/flower-shapes/" target="_blank" rel="noopener">css-generators.com/flower-shapes</a></p>
+<p>Get an optimized code in no time. Adjust the setting and then click!</p>
 <ul>
-<li>Using native CSS</li>
+<li>Only one element</li>
+<li>Works with images</li>
+<li>Powered by CSS Mask</li>
 </ul>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="zYbbmbb" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zYbbmbb" target="_blank" rel="noopener">
-  CSS nesting code</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<ul>
-<li>Using Sass</li>
-</ul>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="zYbbMKg" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zYbbMKg" target="_blank" rel="noopener">
-  Sass  nesting code</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>The nesting selector can be desugared by replacing it with the parent style rule’s selector, wrapped in an <code>:is()</code> selector. <sup><a href="https://www.w3.org/TR/css-nesting-1/#nest-selector" target="_blank" rel="noopener">ref</a></sup></p>
+<p><picture><source type="image/avif" srcset="/img/PDiTyOSHYb-781.avif 781w"><source type="image/webp" srcset="/img/PDiTyOSHYb-781.webp 781w"><img alt="CSS-only flower shapes" loading="lazy" decoding="async" src="/img/PDiTyOSHYb-781.png" width="781" height="389"></picture></p>
 
-<ul class="links-nextprev"><li class="prev"><a href="/heart-shape-hover-2/" title="Heart shape with a sliding hover effect II">Previous CSS Tip</a></li><li class="next"><a href="/flower-shape/" title="Create a flower shape using CSS mask">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/nesting-selector/" title="Be careful when using the nesting selector (&amp;)">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
