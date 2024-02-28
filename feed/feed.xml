@@ -4,11 +4,36 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-02-20T00:00:00Z</updated>
+	<updated>2024-02-28T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>CSS Functions that work with arguments</title>
+		<link href="https://css-tip.com/css-functions/"/>
+		<updated>2024-02-28T00:00:00Z</updated>
+		<id>https://css-tip.com/css-functions/</id>
+		<content type="html">&lt;p&gt;Do you know that some CSS functions can be used without arguments?&lt;/p&gt;
+&lt;p&gt;This is the case with &lt;code&gt;circle()&lt;/code&gt; and &lt;code&gt;ellipse()&lt;/code&gt; of &lt;code&gt;clip-path&lt;/code&gt;. No need to provide any argument and they will, by default, round your element. &lt;code&gt;circle()&lt;/code&gt; is a particular case of the &lt;code&gt;ellipse()&lt;/code&gt; and is useful with square elements.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/CrKrPblYto-827.avif 827w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/CrKrPblYto-827.webp 827w&quot;&gt;&lt;img alt=&quot;clip-path circle and ellipse&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/CrKrPblYto-827.png&quot; width=&quot;827&quot; height=&quot;534&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;The browser will default &lt;code&gt;circle()&lt;/code&gt; to &lt;code&gt;circle(closest-side at center)&lt;/code&gt; and &lt;code&gt;ellipse()&lt;/code&gt; to &lt;code&gt;ellipse(closest-side closest-side at center)&lt;/code&gt;&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;400&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;wvZwapN&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/wvZwapN&quot;&gt;
+  clip-path: circle()/ellipse()&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;The filter functions can also be used with arguments. Most of them have no effect on the element except for &lt;code&gt;invert()&lt;/code&gt;, &lt;code&gt;grayscale()&lt;/code&gt;, and &lt;code&gt;sepia()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/IojtMus0tp-710.avif 710w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/IojtMus0tp-710.webp 710w&quot;&gt;&lt;img alt=&quot;CSS filter function (sepia, grayscale and invert)&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/IojtMus0tp-710.png&quot; width=&quot;710&quot; height=&quot;444&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;You can invert the colors of your image, turn it into black &amp;amp; white, or make it sepia without the need to remember the values you have to provide to each function.&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;400&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;XWQrPmP&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/XWQrPmP&quot;&gt;
+  filter: invert()/grayscale()/sepia()&lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>Create a flower shape using CSS mask</title>

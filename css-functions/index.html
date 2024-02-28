@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Create a flower shape using CSS mask</title>
+		<title>CSS Functions that work with arguments</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use an online generator to create a fancy flower shape using mask">
+		<meta name="description" content="Some functions in CSS don&#39;t require arguments and it can be helpful">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/flower-shape/" >
+		<link rel=canonical href="https://css-tip.com/css-functions/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Create a flower shape using CSS mask">
+		<meta property="og:title" content="CSS Functions that work with arguments">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/flower-shape/">
-		<meta property="og:description" content="Use an online generator to create a fancy flower shape using mask">
-		<meta property="og:image" content="/og-images/TL8VFt6LJ0.png" >
+		<meta property="og:url" content="https://css-tip.com/css-functions/">
+		<meta property="og:description" content="Some functions in CSS don&#39;t require arguments and it can be helpful">
+		<meta property="og:image" content="/og-images/K96Yoa5b9n.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -41,24 +41,32 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Create a flower shape using CSS mask</h1>
+			<h1>CSS Functions that work with arguments</h1>
 
-<time datetime="2024-02-20">February 20, 2024</time>
+<time datetime="2024-02-28">February 28, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Create a fancy flower shape using an online generator 🌺</p>
-<p><a href="https://css-generators.com/flower-shapes/" target="_blank" rel="noopener">css-generators.com/flower-shapes</a></p>
-<p>Get an optimized code in no time. Adjust the setting and then click!</p>
-<ul>
-<li>Only one element</li>
-<li>Works with images</li>
-<li>Powered by CSS Mask</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/PDiTyOSHYb-781.avif 781w"><source type="image/webp" srcset="/img/PDiTyOSHYb-781.webp 781w"><img alt="CSS-only flower shapes" loading="lazy" decoding="async" src="/img/PDiTyOSHYb-781.png" width="781" height="389"></picture></p>
-
-<ul class="links-nextprev"><li class="prev"><a href="/nesting-selector/" title="Be careful when using the nesting selector (&amp;)">Previous CSS Tip</a></li><li class="next"><a href="/css-functions/" title="CSS Functions that work with arguments">Next CSS Tip</a></li>
+<p>Do you know that some CSS functions can be used without arguments?</p>
+<p>This is the case with <code>circle()</code> and <code>ellipse()</code> of <code>clip-path</code>. No need to provide any argument and they will, by default, round your element. <code>circle()</code> is a particular case of the <code>ellipse()</code> and is useful with square elements.</p>
+<p><picture><source type="image/avif" srcset="/img/CrKrPblYto-827.avif 827w"><source type="image/webp" srcset="/img/CrKrPblYto-827.webp 827w"><img alt="clip-path circle and ellipse" loading="lazy" decoding="async" src="/img/CrKrPblYto-827.png" width="827" height="534"></picture></p>
+<p>The browser will default <code>circle()</code> to <code>circle(closest-side at center)</code> and <code>ellipse()</code> to <code>ellipse(closest-side closest-side at center)</code></p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="wvZwapN" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/wvZwapN" target="_blank" rel="noopener">
+  clip-path: circle()/ellipse()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>The filter functions can also be used with arguments. Most of them have no effect on the element except for <code>invert()</code>, <code>grayscale()</code>, and <code>sepia()</code></p>
+<p><picture><source type="image/avif" srcset="/img/IojtMus0tp-710.avif 710w"><source type="image/webp" srcset="/img/IojtMus0tp-710.webp 710w"><img alt="CSS filter function (sepia, grayscale and invert)" loading="lazy" decoding="async" src="/img/IojtMus0tp-710.png" width="710" height="444"></picture></p>
+<p>You can invert the colors of your image, turn it into black &amp; white, or make it sepia without the need to remember the values you have to provide to each function.</p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="XWQrPmP" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/XWQrPmP" target="_blank" rel="noopener">
+  filter: invert()/grayscale()/sepia()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<ul class="links-nextprev"><li class="prev"><a href="/flower-shape/" title="Create a flower shape using CSS mask">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
