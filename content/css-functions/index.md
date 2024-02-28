@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: CSS Functions that work with arguments
+title: CSS Functions that work without arguments
 description: Some functions in CSS don't require arguments and it can be helpful
 date: 2024-02-28
 tags: posts
