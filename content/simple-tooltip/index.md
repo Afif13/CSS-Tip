@@ -36,3 +36,5 @@ The smallest code to create a simple Tooltip Shape
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More Tooltip shapes: [css-generators.com/tooltip-speech-bubble](https://css-generators.com/tooltip-speech-bubble/)

@@ -8,42 +8,49 @@ tags: posts
 
 Create a border-only Tooltip with a few lines of code
 * One element
-* Less than 20 CSS declarations
 * Support gradient coloration
 * Support `border-radius`
 * Optimized with CSS variables
 
-{% image "./css-tooltip.png", "A border-only tooltip with gradient coloration" %}
+{% image "./image.png", "CSS border-only tooltip with gradient coloration" %}
 
 ```css
 .tooltip {
-  --r: 30px; /* border radius*/
-  --b: 8px;  /* border length */
-  --s: 55px; /* arrow size */
-  --a: 90deg; /* angle of the arrow */
-  --c: linear-gradient(60deg,#E84A5F,#355C7D);
+  /* triangle dimension */
+  --a: 90deg; /* angle */
+  --h: 1.5em; /* height */
   
-  max-width: 410px;
-  font-size: 20px;
-  padding: calc(var(--r) + var(--b));
   position: relative;
-  font-weight: bold;
-  font-family: sans-serif;
+  z-index: 0;
 }
-.tooltip::before {
+.tooltip:before,
+.tooltip:after {
   content: "";
   position: absolute;
-  inset: calc(-1*var(--s));
-  border-radius: calc(var(--r) + var(--s));
-  border: var(--s) solid #0000;
-  padding: var(--b);
-  background: var(--c) border-box;
-  --_m:/100% var(--s) no-repeat conic-gradient(from calc(var(--a)/-2),#000 var(--a),#0000 0),
-       linear-gradient(#000 0 0);
-  mask: 
-    50% calc(100% - var(--b)) var(--_m) content-box, 
-    bottom var(--_m) padding-box;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(60deg,#E84A5F,#355C7D);  /* your coloration */
+}
+.tooltip:before {
+  padding: 8px; /* the border width */
+  border-radius: 1.2em; /* the radius */
+  background-size: 100% calc(100% + var(--h));
+  clip-path: polygon(0 100%,0 0,100% 0,100% 100%,
+    calc(50% + var(--h)*tan(var(--a)/2) - var(--b)*tan(45deg - var(--a)/4)) 100%,
+    calc(50% + var(--h)*tan(var(--a)/2) - var(--b)*tan(45deg - var(--a)/4)) calc(100% - var(--b)),
+    calc(50% - var(--h)*tan(var(--a)/2) + var(--b)*tan(45deg - var(--a)/4)) calc(100% - var(--b)),
+    calc(50% - var(--h)*tan(var(--a)/2) + var(--b)*tan(45deg - var(--a)/4)) 100%);
+  mask: linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
   mask-composite: exclude;
+}
+.tooltip:after {
+  bottom: calc(-1*var(--h));
+  clip-path: polygon(
+    calc(50% + var(--h)*tan(var(--a)/2)) calc(100% - var(--h)),50% 100%,
+    calc(50% - var(--h)*tan(var(--a)/2)) calc(100% - var(--h)),
+    calc(50% - var(--h)*tan(var(--a)/2) + var(--b)*tan(45deg - var(--a)/4)) calc(100% - var(--h) - var(--b)),
+    50% calc(100% - var(--b)/sin(var(--a)/2)),
+    calc(50% + var(--h)*tan(var(--a)/2) - var(--b)*tan(45deg - var(--a)/4)) calc(100% - var(--h) - var(--b)));
 }
 ```
 
@@ -55,4 +62,5 @@ Create a border-only Tooltip with a few lines of code
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+More Tooltip shapes: [css-generators.com/tooltip-speech-bubble](https://css-generators.com/tooltip-speech-bubble/)
 

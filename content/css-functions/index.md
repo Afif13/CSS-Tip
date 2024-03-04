@@ -21,7 +21,7 @@ The browser will default `circle()` to `circle(closest-side at center)` and `ell
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-The filter functions can also be used with arguments. Most of them have no effect on the element except for `invert()`, `grayscale()`, and `sepia()`
+The filter functions can also be used without arguments. Most of them have no effect on the element except for `invert()`, `grayscale()`, and `sepia()`
 
 {% image "./image.png", "CSS filter function (sepia, grayscale and invert)" %}
 
