@@ -4,11 +4,32 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-02-28T00:00:00Z</updated>
+	<updated>2024-03-11T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>The gotcha of align-content with block elements</title>
+		<link href="https://css-tip.com/align-content-center/"/>
+		<updated>2024-03-11T00:00:00Z</updated>
+		<id>https://css-tip.com/align-content-center/</id>
+		<content type="html">&lt;p&gt;Everyone is excited about the new &lt;code&gt;align-content&lt;/code&gt; that works with block-level elements, but pay attention when you want to center elements such as &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;, etc.&lt;/p&gt;
+&lt;p&gt;⚠️ They won&#39;t get centered ⚠️&lt;/p&gt;
+&lt;p&gt;They will look centered but in reality, they are not and this is not a bug!&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/ApGZN7i9Vk-835.avif 835w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/ApGZN7i9Vk-835.webp 835w&quot;&gt;&lt;img alt=&quot;Illustrating the effect of align-content on image inside block level elements: the image is not perfectly centered&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/ApGZN7i9Vk-835.png&quot; width=&quot;835&quot; height=&quot;432&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Images and similar inline-level elements have that strange white space under them due to the default baseline alignment, and that space is preserved when using &lt;code&gt;align-content&lt;/code&gt; because we align the &amp;quot;whole content&amp;quot;&lt;/p&gt;
+&lt;p&gt;So don&#39;t forget to get rid of that space using &lt;code&gt;vertical-align: top&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://css-tip.com/img/ApGZN7i9Vk-835.avif 835w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://css-tip.com/img/ApGZN7i9Vk-835.webp 835w&quot;&gt;&lt;img alt=&quot;Adding vertical-align: top to the image to have a perfect centering alignment&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://css-tip.com/img/ApGZN7i9Vk-835.png&quot; width=&quot;835&quot; height=&quot;432&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;That space may look small but it can make a difference especially if you use a big &lt;code&gt;font-size&lt;/code&gt;.&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;400&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;bGJpKGX&quot; data-preview=&quot;true&quot; data-user=&quot;t_afif&quot; style=&quot;height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/t_afif/pen/bGJpKGX&quot;&gt;
+  align-content with block elements &lt;/a&gt; by Temani Afif (&lt;a href=&quot;https://codepen.io/t_afif&quot;&gt;@t_afif&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content>
+	</entry>
 	
 	<entry>
 		<title>CSS Functions that work without arguments</title>
@@ -2036,7 +2057,7 @@
 	</entry>
 	
 	<entry>
-		<title>A border-only Tooltip using mask</title>
+		<title>A border-only Tooltip using mask &amp; clip-path</title>
 		<link href="https://css-tip.com/border-only-tooltip-mask/"/>
 		<updated>2023-02-08T00:00:00Z</updated>
 		<id>https://css-tip.com/border-only-tooltip-mask/</id>
