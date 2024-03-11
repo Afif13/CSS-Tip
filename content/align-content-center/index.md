@@ -18,7 +18,7 @@ Images and similar inline-level elements have that strange white space under the
 
 So don't forget to get rid of that space using `vertical-align: top`
 
-{% image "./image.png", "Adding vertical-align: top to the image to have a perfect centering alignment" %}
+{% image "./image1.png", "Adding vertical-align: top to the image to have a perfect centering alignment" %}
 
 That space may look small but it can make a difference especially if you use a big `font-size`. 
 
