@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: A border-only Tooltip using mask
-description: Use CSS mask to create a border-only tooltip with a gradient coloration
+title: A border-only Tooltip using mask & clip-path
+description: Use CSS mask & clip-path to create a border-only tooltip with a gradient coloration
 date: 2023-02-08
 tags: posts
 ---
