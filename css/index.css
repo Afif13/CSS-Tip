@@ -239,10 +239,16 @@ header {
 	justify-content: space-between;
 	padding: 1em;
 }
+@media (max-width:540px) {
+	header {
+		display: grid;
+		place-items: center;
+		place-content: center;
+	}
+}
 .home-link {
 	font-size: 2em; 
 	font-weight: 700;
-	margin-right: 2em;
 	text-decoration: none;
 	color:var(--text-color)!important
 }
@@ -298,7 +304,9 @@ header {
 	text-underline-position: from-font;
 	text-transform: capitalize;
 }
-
+[data-ea-type=text] + p {
+    margin-top: 0;
+}
 
 /* Tags list */
 h1 + time {
