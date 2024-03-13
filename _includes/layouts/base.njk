@@ -50,6 +50,7 @@
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
+					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS Feed</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -57,7 +58,7 @@
 			{{ content | safe }}
 		</main>
 		<footer>
-			<p>Created by <a href="https://github.com/Afif13/" target="_blank">Temani Afif</a> | <a href="https://support.temani-afif.com/" target="_blank">Support This Project</a> | <a href="/feed/feed.xml" target="_blank">RSS Feed</a></p>
+			<p>Created by <a href="https://github.com/Afif13/" target="_blank">Temani Afif</a> | <a href="https://support.temani-afif.com/" target="_blank">Support This Project</a> | <a href="https://css-generators.com/" target="_blank">CSS Generators</a> | <a href="https://css-loaders.com/" target="_blank">CSS Loaders</a></p>
 		</footer>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KSNXZ63602"></script>
 <script>
