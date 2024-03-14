@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A wavy circle with cool hover effect</title>
+		<title>Turn an image into a postage stamp</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Place your image inside a fancy wavy frame with a cool hover effect">
+		<meta name="description" content="A few lines of code to create a cool postage stamp shape">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/wavy-circle/" >
+		<link rel=canonical href="https://css-tip.com/postage-stamp/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A wavy circle with cool hover effect">
+		<meta property="og:title" content="Turn an image into a postage stamp">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/wavy-circle/">
-		<meta property="og:description" content="Place your image inside a fancy wavy frame with a cool hover effect">
-		<meta property="og:image" content="/og-images/4s-tMTEqel.png" >
+		<meta property="og:url" content="https://css-tip.com/postage-stamp/">
+		<meta property="og:description" content="A few lines of code to create a cool postage stamp shape">
+		<meta property="og:image" content="/og-images/0owqsSnAJL.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -42,28 +42,29 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>A wavy circle with cool hover effect</h1>
+			<h1>Turn an image into a postage stamp</h1>
 
-<time datetime="2024-03-13">March 13, 2024</time>
+<time datetime="2024-03-14">March 14, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Place you image inside a wavy circular frame powered by modern CSS (mask, trigonometric functions, <code>@property</code>, <code>animation-composition</code> and more)</p>
+<p>Transform your image into a cool postage stamp with a few lines of code</p>
 <ul>
 <li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
-<li>No pseudo element</li>
-<li>A cool animation on hover</li>
-<li>Optimized with Sass and CSS variables</li>
+<li>Only two CSS gradients</li>
+<li>Works with any image size</li>
+<li>Easy to adjust using CSS variables</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/Nd3mDXci4S-770.avif 770w"><source type="image/webp" srcset="/img/Nd3mDXci4S-770.webp 770w"><img alt="CSS-only wavy circles" loading="lazy" decoding="async" src="/img/Nd3mDXci4S-770.png" width="770" height="398"></picture></p>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="abxZaXm" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/abxZaXm" target="_blank" rel="noopener">
-  Wavy circles with hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/4L77LQv2KX-899.avif 899w"><source type="image/webp" srcset="/img/4L77LQv2KX-899.webp 899w"><img alt="CSS-only overlay reveal animation" loading="lazy" decoding="async" src="/img/4L77LQv2KX-899.png" width="899" height="322"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/* control the radius of the circles */</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">grayscale</span><span class="token punctuation">(</span>.4<span class="token punctuation">)</span> <span class="token function">drop-shadow</span><span class="token punctuation">(</span>0 0 1px #0005<span class="token punctuation">)</span> <span class="token function">drop-shadow</span><span class="token punctuation">(</span>0 0 1px #0005<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 98%<span class="token punctuation">,</span>#fff<span class="token punctuation">)</span> round<br>      <span class="token function">calc</span><span class="token punctuation">(</span>-1.5*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1.5*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> /<span class="token function">calc</span><span class="token punctuation">(</span>3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#fff 0 0<span class="token punctuation">)</span>  no-repeat<br>      50%/<span class="token function">calc</span><span class="token punctuation">(</span>100% - 3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="gOXxvgM" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/gOXxvgM" target="_blank" rel="noopener">
+  CSS-only Stamp effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<ul class="links-nextprev"><li class="prev"><a href="/align-content-center/" title="The gotcha of align-content with block elements">Previous CSS Tip</a></li><li class="next"><a href="/postage-stamp/" title="Turn an image into a postage stamp">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/wavy-circle/" title="A wavy circle with cool hover effect">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
