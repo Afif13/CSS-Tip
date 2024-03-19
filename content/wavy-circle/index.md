@@ -21,3 +21,5 @@ Place you image inside a wavy circular frame powered by modern CSS (mask, trigon
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More detail: [frontendmasters.com/blog/creating-wavy-circles-with-fancy-animations](https://frontendmasters.com/blog/creating-wavy-circles-with-fancy-animations/)
