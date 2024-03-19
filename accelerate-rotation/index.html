@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Turn an image into a postage stamp</title>
+		<title>Accelerate a rotation on hover</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A few lines of code to create a cool postage stamp shape">
+		<meta name="description" content="A simple CSS trick to speed up of your rotating element">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/postage-stamp/" >
+		<link rel=canonical href="https://css-tip.com/accelerate-rotation/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Turn an image into a postage stamp">
+		<meta property="og:title" content="Accelerate a rotation on hover">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/postage-stamp/">
-		<meta property="og:description" content="A few lines of code to create a cool postage stamp shape">
-		<meta property="og:image" content="/og-images/0owqsSnAJL.png" >
+		<meta property="og:url" content="https://css-tip.com/accelerate-rotation/">
+		<meta property="og:description" content="A simple CSS trick to speed up of your rotating element">
+		<meta property="og:image" content="/og-images/GiE6ZS1_gT.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -42,29 +42,29 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Turn an image into a postage stamp</h1>
+			<h1>Accelerate a rotation on hover</h1>
 
-<time datetime="2024-03-14">March 14, 2024</time>
+<time datetime="2024-03-19">March 19, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Transform your image into a cool postage stamp with a few lines of code</p>
+<p>Do you want to accelerate the rotation of your element on hover? Here is a simple CSS trick using <code>animation-composition</code> and a few lines of code</p>
 <ul>
-<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
-<li>Only two CSS gradients</li>
-<li>Works with any image size</li>
-<li>Easy to adjust using CSS variables</li>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>One animation</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/4L77LQv2KX-899.avif 899w"><source type="image/webp" srcset="/img/4L77LQv2KX-899.webp 899w"><img alt="CSS-only overlay reveal animation" loading="lazy" decoding="async" src="/img/4L77LQv2KX-899.png" width="899" height="322"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/* control the radius of the circles */</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">grayscale</span><span class="token punctuation">(</span>.4<span class="token punctuation">)</span> <span class="token function">drop-shadow</span><span class="token punctuation">(</span>0 0 1px #0005<span class="token punctuation">)</span> <span class="token function">drop-shadow</span><span class="token punctuation">(</span>0 0 1px #0005<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 98%<span class="token punctuation">,</span>#fff<span class="token punctuation">)</span> round<br>      <span class="token function">calc</span><span class="token punctuation">(</span>-1.5*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1.5*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> /<span class="token function">calc</span><span class="token punctuation">(</span>3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#fff 0 0<span class="token punctuation">)</span>  no-repeat<br>      50%/<span class="token function">calc</span><span class="token punctuation">(</span>100% - 3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 3*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="gOXxvgM" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/gOXxvgM" target="_blank" rel="noopener">
-  CSS-only Stamp effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--_a</span><span class="token punctuation">:</span> rotate 5s linear infinite<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_a<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_a<span class="token punctuation">)</span> paused<span class="token punctuation">;</span><br>  <span class="token property">animation-composition</span><span class="token punctuation">:</span> add<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">animation-play-state</span><span class="token punctuation">:</span> running<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> rotate</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">rotate</span><span class="token punctuation">:</span> 1turn<span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="ZEZLRXd" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ZEZLRXd" target="_blank" rel="noopener">
+  Accelerate a rotation on hover</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<ul class="links-nextprev"><li class="prev"><a href="/wavy-circle/" title="A wavy circle with cool hover effect">Previous CSS Tip</a></li><li class="next"><a href="/accelerate-rotation/" title="Accelerate a rotation on hover">Next CSS Tip</a></li>
+<p>The same trick can be used <a href="/slow-down-rotation/">to slow down the rotation</a></p>
+
+<ul class="links-nextprev"><li class="prev"><a href="/postage-stamp/" title="Turn an image into a postage stamp">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
