@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Accelerate a rotation on hover</title>
+		<title>Smoothly stop a rotation on hover</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A simple CSS trick to speed up of your rotating element">
+		<meta name="description" content="A simple CSS trick to slowly stop a rotation on hover">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/accelerate-rotation/" >
+		<link rel=canonical href="https://css-tip.com/stop-rotation/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Accelerate a rotation on hover">
+		<meta property="og:title" content="Smoothly stop a rotation on hover">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/accelerate-rotation/">
-		<meta property="og:description" content="A simple CSS trick to speed up of your rotating element">
-		<meta property="og:image" content="/og-images/GiE6ZS1_gT.png" >
+		<meta property="og:url" content="https://css-tip.com/stop-rotation/">
+		<meta property="og:description" content="A simple CSS trick to slowly stop a rotation on hover">
+		<meta property="og:image" content="/og-images/4NmDJ4Dgek.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -42,29 +42,24 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Accelerate a rotation on hover</h1>
+			<h1>Smoothly stop a rotation on hover</h1>
 
-<time datetime="2024-03-19">March 19, 2024</time>
+<time datetime="2024-03-21">March 21, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Do you want to accelerate the rotation of your element on hover? Here is a simple CSS trick using <code>animation-composition</code> and a few lines of code</p>
-<ul>
-<li>No extra element</li>
-<li>No pseudo-element</li>
-<li>One animation</li>
-</ul>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--_a</span><span class="token punctuation">:</span> rotate 5s linear infinite<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_a<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_a<span class="token punctuation">)</span> paused<span class="token punctuation">;</span><br>  <span class="token property">animation-composition</span><span class="token punctuation">:</span> add<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">animation-play-state</span><span class="token punctuation">:</span> running<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> rotate</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">rotate</span><span class="token punctuation">:</span> 1turn<span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="ZEZLRXd" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ZEZLRXd" target="_blank" rel="noopener">
-  Accelerate a rotation on hover</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Make your rotation look more natural by smoothly stopping it on hover instead of an abrupt stop. No complex code is required!</p>
+<p>The rotation will resume slowly on mouse-out as well.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> rotate 2s linear infinite<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> 1s ease-out<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">animation-play-state</span><span class="token punctuation">:</span> paused<span class="token punctuation">;</span><br>  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>.2turn<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> rotate</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">rotate</span><span class="token punctuation">:</span> 1turn<span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="XWQMPqY" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/XWQMPqY" target="_blank" rel="noopener">
+  Smooth stop the rotation on hover</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>The same trick can be used <a href="/slow-down-rotation/">to slow down the rotation</a></p>
 
-<ul class="links-nextprev"><li class="prev"><a href="/postage-stamp/" title="Turn an image into a postage stamp">Previous CSS Tip</a></li><li class="next"><a href="/stop-rotation/" title="Smoothly stop a rotation on hover">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/accelerate-rotation/" title="Accelerate a rotation on hover">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
