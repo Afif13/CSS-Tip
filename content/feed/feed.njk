@@ -20,7 +20,7 @@ permalink: /feed/feed.xml
 		<link href="{{ absolutePostUrl }}"/>
 		<updated>{{ post.date | dateToRfc3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
-		<content type="html">{{ post.templateContent | excerpt }} <a href="{{ absolutePostUrl }}">Read more</a></content>
+		<content type="html"><![CDATA[ {{ post.templateContent | excerpt | safe }} <p><a href="{{ absolutePostUrl }}">Read more</a></p> ]]></content>
 	</entry>
 	{%- endfor %}
 </feed>

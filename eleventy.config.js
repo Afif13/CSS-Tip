@@ -122,8 +122,14 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("excerpt", (post) => {
-	  const content = post.replace(/(<([^>]+)>)/gi, "");
-	  return content.substr(0, content.lastIndexOf(" ", 150)) + "...";
+	  //const content = post.replace(/(<([^>]+)>)/gi, "");
+	  if(post.indexOf("<pre ")!=-1)
+		  return post.substr(0, post.indexOf("<pre "));
+		else if(post.indexOf('<p class="codepen"')!=-1)
+		  return post.substr(0, post.indexOf('<p class="codepen"'));
+		else
+			return post;
+
 	});
 
 	// Customize Markdown library settings:
