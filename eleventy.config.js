@@ -121,6 +121,11 @@ module.exports = function(eleventyConfig) {
 	   	return new CleanCSS({}).minify(code).styles;
 	});
 
+	eleventyConfig.addFilter("excerpt", (post) => {
+	  const content = post.replace(/(<([^>]+)>)/gi, "");
+	  return content.substr(0, content.lastIndexOf(" ", 150)) + "...";
+	});
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, {
