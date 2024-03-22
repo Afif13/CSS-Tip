@@ -15,8 +15,9 @@
 		<link href="https://css-tip.com/stop-rotation/"/>
 		<updated>2024-03-21T00:00:00Z</updated>
 		<id>https://css-tip.com/stop-rotation/</id>
-		<content type="html">Make your rotation look more natural by smoothly stopping it on hover instead of an abrupt stop. No complex code is required!
-The rotation will resume... <a href="https://css-tip.com/stop-rotation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Make your rotation look more natural by smoothly stopping it on hover instead of an abrupt stop. No complex code is required!</p>
+<p>The rotation will resume slowly on mouse-out as well.</p>
+ <p><a href="https://css-tip.com/stop-rotation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -24,9 +25,13 @@ The rotation will resume... <a href="https://css-tip.com/stop-rotation/">Read mo
 		<link href="https://css-tip.com/accelerate-rotation/"/>
 		<updated>2024-03-19T00:00:00Z</updated>
 		<id>https://css-tip.com/accelerate-rotation/</id>
-		<content type="html">Do you want to accelerate the rotation of your element on hover? Here is a simple CSS trick using animation-composition and a few lines of code
-
-No... <a href="https://css-tip.com/accelerate-rotation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Do you want to accelerate the rotation of your element on hover? Here is a simple CSS trick using <code>animation-composition</code> and a few lines of code</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>One animation</li>
+</ul>
+ <p><a href="https://css-tip.com/accelerate-rotation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -34,11 +39,15 @@ No... <a href="https://css-tip.com/accelerate-rotation/">Read more</a></content>
 		<link href="https://css-tip.com/postage-stamp/"/>
 		<updated>2024-03-14T00:00:00Z</updated>
 		<id>https://css-tip.com/postage-stamp/</id>
-		<content type="html">Transform your image into a cool postage stamp with a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-Only two CSS gradients
-Works with... <a href="https://css-tip.com/postage-stamp/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Transform your image into a cool postage stamp with a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>Only two CSS gradients</li>
+<li>Works with any image size</li>
+<li>Easy to adjust using CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/4L77LQv2KX-899.avif 899w"><source type="image/webp" srcset="/img/4L77LQv2KX-899.webp 899w"><img alt="CSS-only overlay reveal animation" loading="lazy" decoding="async" src="/img/4L77LQv2KX-899.png" width="899" height="322"></picture></p>
+ <p><a href="https://css-tip.com/postage-stamp/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -46,9 +55,15 @@ Works with... <a href="https://css-tip.com/postage-stamp/">Read more</a></conten
 		<link href="https://css-tip.com/wavy-circle/"/>
 		<updated>2024-03-13T00:00:00Z</updated>
 		<id>https://css-tip.com/wavy-circle/</id>
-		<content type="html">Place you image inside a wavy circular frame powered by modern CSS (mask, trigonometric functions, @property, animation-composition and more)
-
-No... <a href="https://css-tip.com/wavy-circle/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Place you image inside a wavy circular frame powered by modern CSS (mask, trigonometric functions, <code>@property</code>, <code>animation-composition</code> and more)</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo element</li>
+<li>A cool animation on hover</li>
+<li>Optimized with Sass and CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Nd3mDXci4S-770.avif 770w"><source type="image/webp" srcset="/img/Nd3mDXci4S-770.webp 770w"><img alt="CSS-only wavy circles" loading="lazy" decoding="async" src="/img/Nd3mDXci4S-770.png" width="770" height="398"></picture></p>
+ <p><a href="https://css-tip.com/wavy-circle/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -56,7 +71,15 @@ No... <a href="https://css-tip.com/wavy-circle/">Read more</a></content>
 		<link href="https://css-tip.com/align-content-center/"/>
 		<updated>2024-03-11T00:00:00Z</updated>
 		<id>https://css-tip.com/align-content-center/</id>
-		<content type="html">Everyone is excited about the new align-content that works with block-level elements, but pay attention when you want to center elements such as... <a href="https://css-tip.com/align-content-center/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Everyone is excited about the new <code>align-content</code> that works with block-level elements, but pay attention when you want to center elements such as <code>&lt;img&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;canvas&gt;</code>, <code>&lt;video&gt;</code>, etc.</p>
+<p>⚠️ They won't get centered ⚠️</p>
+<p>They will look centered but in reality, they are not and this is not a bug!</p>
+<p><picture><source type="image/avif" srcset="/img/ApGZN7i9Vk-835.avif 835w"><source type="image/webp" srcset="/img/ApGZN7i9Vk-835.webp 835w"><img alt="Illustrating the effect of align-content on image inside block level elements: the image is not perfectly centered" loading="lazy" decoding="async" src="/img/ApGZN7i9Vk-835.png" width="835" height="432"></picture></p>
+<p>Images and similar inline-level elements have that strange white space under them due to the default baseline alignment, and that space is preserved when using <code>align-content</code> because we align the &quot;whole content&quot;</p>
+<p>So don't forget to get rid of that space using <code>vertical-align: top</code></p>
+<p><picture><source type="image/avif" srcset="/img/rDRDRoHi5i-870.avif 870w"><source type="image/webp" srcset="/img/rDRDRoHi5i-870.webp 870w"><img alt="Adding vertical-align: top to the image to have a perfect centering alignment" loading="lazy" decoding="async" src="/img/rDRDRoHi5i-870.png" width="870" height="468"></picture></p>
+<p>That space may look small but it can make a difference especially if you use a big <code>font-size</code>.</p>
+ <p><a href="https://css-tip.com/align-content-center/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -64,8 +87,11 @@ No... <a href="https://css-tip.com/wavy-circle/">Read more</a></content>
 		<link href="https://css-tip.com/css-functions/"/>
 		<updated>2024-02-28T00:00:00Z</updated>
 		<id>https://css-tip.com/css-functions/</id>
-		<content type="html">Do you know that some CSS functions can be used without arguments?
-This is the case with circle() and ellipse() of clip-path. No need to provide any... <a href="https://css-tip.com/css-functions/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Do you know that some CSS functions can be used without arguments?</p>
+<p>This is the case with <code>circle()</code> and <code>ellipse()</code> of <code>clip-path</code>. No need to provide any argument and they will, by default, round your element. <code>circle()</code> is a particular case of the <code>ellipse()</code> and is useful with square elements.</p>
+<p><picture><source type="image/avif" srcset="/img/CrKrPblYto-827.avif 827w"><source type="image/webp" srcset="/img/CrKrPblYto-827.webp 827w"><img alt="clip-path circle and ellipse" loading="lazy" decoding="async" src="/img/CrKrPblYto-827.png" width="827" height="534"></picture></p>
+<p>The browser will default <code>circle()</code> to <code>circle(closest-side at center)</code> and <code>ellipse()</code> to <code>ellipse(closest-side closest-side at center)</code></p>
+ <p><a href="https://css-tip.com/css-functions/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -73,9 +99,16 @@ This is the case with circle() and ellipse() of clip-path. No need to provide an
 		<link href="https://css-tip.com/flower-shape/"/>
 		<updated>2024-02-20T00:00:00Z</updated>
 		<id>https://css-tip.com/flower-shape/</id>
-		<content type="html">Create a fancy flower shape using an online generator 🌺
-css-generators.com/flower-shapes
-Get an optimized code in no time. Adjust the setting and... <a href="https://css-tip.com/flower-shape/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a fancy flower shape using an online generator 🌺</p>
+<p><a href="https://css-generators.com/flower-shapes/">css-generators.com/flower-shapes</a></p>
+<p>Get an optimized code in no time. Adjust the setting and then click!</p>
+<ul>
+<li>Only one element</li>
+<li>Works with images</li>
+<li>Powered by CSS Mask</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/PDiTyOSHYb-781.avif 781w"><source type="image/webp" srcset="/img/PDiTyOSHYb-781.webp 781w"><img alt="CSS-only flower shapes" loading="lazy" decoding="async" src="/img/PDiTyOSHYb-781.png" width="781" height="389"></picture></p>
+ <p><a href="https://css-tip.com/flower-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -83,8 +116,11 @@ Get an optimized code in no time. Adjust the setting and... <a href="https://css
 		<link href="https://css-tip.com/nesting-selector/"/>
 		<updated>2024-02-19T00:00:00Z</updated>
 		<id>https://css-tip.com/nesting-selector/</id>
-		<content type="html">CSS Nesting is cool and using the &amp;quot;&amp;amp;&amp;quot; is a lifesaver BUT be careful. There&#39;s a gotcha!
-⚠️ &amp;quot;&amp;amp;&amp;quot; in CSS is different from the... <a href="https://css-tip.com/nesting-selector/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>CSS Nesting is cool and using the &quot;&amp;&quot; is a lifesaver BUT be careful. There's a gotcha!</p>
+<p>⚠️ &quot;&amp;&quot; in CSS is different from the one in Sass ⚠️</p>
+<p>Your Sass code won't work the same way if you use it as a CSS code.</p>
+<p>The below code won't give the same result when used with CSS Nesting and Sass</p>
+ <p><a href="https://css-tip.com/nesting-selector/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -92,13 +128,13 @@ Get an optimized code in no time. Adjust the setting and... <a href="https://css
 		<link href="https://css-tip.com/heart-shape-hover-2/"/>
 		<updated>2024-02-15T00:00:00Z</updated>
 		<id>https://css-tip.com/heart-shape-hover-2/</id>
-		<content type="html">Another variation of the previous effect using the same code structure
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-
-
-img {  --s:... <a href="https://css-tip.com/heart-shape-hover-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Another variation of <a href="/heart-shape-hover/">the previous effect</a> using the same code structure</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/h6R95RuTIP-891.avif 891w"><source type="image/webp" srcset="/img/h6R95RuTIP-891.webp 891w"><img alt="A CSS only heart shape" loading="lazy" decoding="async" src="/img/h6R95RuTIP-891.png" width="891" height="395"></picture></p>
+ <p><a href="https://css-tip.com/heart-shape-hover-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -106,11 +142,14 @@ img {  --s:... <a href="https://css-tip.com/heart-shape-hover-2/">Read more</a><
 		<link href="https://css-tip.com/heart-shape-hover/"/>
 		<updated>2024-02-14T00:00:00Z</updated>
 		<id>https://css-tip.com/heart-shape-hover/</id>
-		<content type="html">Turn your image into a heart shape with a lovely hover animation 😍
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-Less than 15 CSS... <a href="https://css-tip.com/heart-shape-hover/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Turn your image into a heart shape with a lovely hover animation 😍</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Less than 15 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Dam1kyw7Nw-876.avif 876w"><source type="image/webp" srcset="/img/Dam1kyw7Nw-876.webp 876w"><img alt="A CSS only heart shape for images" loading="lazy" decoding="async" src="/img/Dam1kyw7Nw-876.png" width="876" height="388"></picture></p>
+ <p><a href="https://css-tip.com/heart-shape-hover/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -118,12 +157,15 @@ Less than 15 CSS... <a href="https://css-tip.com/heart-shape-hover/">Read more</
 		<link href="https://css-tip.com/triangle-shape/"/>
 		<updated>2024-02-11T00:00:00Z</updated>
 		<id>https://css-tip.com/triangle-shape/</id>
-		<content type="html">Creating a basic triangle shape is as simple as using two CSS properties
-
-aspect-ratio
-clip-path (with a 3-point polygon)
-
-That&#39;s it, and it works... <a href="https://css-tip.com/triangle-shape/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Creating a basic triangle shape is as simple as using two CSS properties</p>
+<ul>
+<li><code>aspect-ratio</code></li>
+<li><code>clip-path</code> (with a 3-point polygon)</li>
+</ul>
+<p>That's it, and it works with any kind of elements including images.</p>
+<p><picture><source type="image/avif" srcset="/img/_IILhUo0EL-859.avif 859w"><source type="image/webp" srcset="/img/_IILhUo0EL-859.webp 859w"><img alt="A diagram showing to create CSS-only triangle shapes" loading="lazy" decoding="async" src="/img/_IILhUo0EL-859.png" width="859" height="502"></picture></p>
+<p>Get the CSS code from: <a href="https://css-generators.com/triangle-shapes/">css-generators.com/triangle-shapes</a></p>
+ <p><a href="https://css-tip.com/triangle-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -131,15 +173,17 @@ That&#39;s it, and it works... <a href="https://css-tip.com/triangle-shape/">Rea
 		<link href="https://css-tip.com/responsive-slanted-coloration/"/>
 		<updated>2024-02-07T00:00:00Z</updated>
 		<id>https://css-tip.com/responsive-slanted-coloration/</id>
-		<content type="html">Use modern CSS to:
-
-Set a max-width
-Center an element
-Set a minimum margin
-Add a full-width slanted coloration
-Make the slant effect responsive
-
-All... <a href="https://css-tip.com/responsive-slanted-coloration/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use modern CSS to:</p>
+<ul>
+<li>Set a max-width</li>
+<li>Center an element</li>
+<li>Set a minimum margin</li>
+<li>Add a full-width slanted coloration</li>
+<li>Make the slant effect responsive</li>
+</ul>
+<p>All of this, using only 3 properties and easy to control with CSS variables</p>
+<p><picture><source type="image/avif" srcset="/img/LekOYP9m0T-876.avif 876w"><source type="image/webp" srcset="/img/LekOYP9m0T-876.webp 876w"><img alt="max-width section with a full screen responsive slanted coloration" loading="lazy" decoding="async" src="/img/LekOYP9m0T-876.png" width="876" height="402"></picture></p>
+ <p><a href="https://css-tip.com/responsive-slanted-coloration/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -147,8 +191,17 @@ All... <a href="https://css-tip.com/responsive-slanted-coloration/">Read more</a
 		<link href="https://css-tip.com/min-max/"/>
 		<updated>2024-02-06T00:00:00Z</updated>
 		<id>https://css-tip.com/min-max/</id>
-		<content type="html">min() or max()? You always struggle to know which one to use and you end up trying both until one of them works.
-💡 Here is a figure to help you... <a href="https://css-tip.com/min-max/">Read more</a></content>
+		<content type="html"><![CDATA[ <p><code>min()</code> or <code>max()</code>? You always struggle to know which one to use and you end up trying both until one of them works.</p>
+<p>💡 Here is a figure to help you decide when to use them</p>
+<p>You start with <code>clamp()</code> then:</p>
+<ul>
+<li>when you remove max, you use <code>max()</code></li>
+<li>when you remove min, you use <code>min()</code></li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/uI7CCFn8mO-926.avif 926w"><source type="image/webp" srcset="/img/uI7CCFn8mO-926.webp 926w"><img alt="A 3D shine animation on image" loading="lazy" decoding="async" src="/img/uI7CCFn8mO-926.png" width="926" height="491"></picture></p>
+<p>If you want to set a <code>max-width</code> to your element then it's <code>min()</code></p>
+<p><code>width: clamp(min,100%,max)</code> ➞ <code>width: min(100%, max)</code></p>
+ <p><a href="https://css-tip.com/min-max/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -156,10 +209,14 @@ All... <a href="https://css-tip.com/responsive-slanted-coloration/">Read more</a
 		<link href="https://css-tip.com/infinite-borders/"/>
 		<updated>2024-01-31T00:00:00Z</updated>
 		<id>https://css-tip.com/infinite-borders/</id>
-		<content type="html">Use the magic border-image and add as many borders as you want to your images for a fancy decoration
-
-No extra elements &amp;amp; No pseudo-elements
-Only... <a href="https://css-tip.com/infinite-borders/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use the magic <code>border-image</code> and add as many borders as you want to your images for a fancy decoration</p>
+<ul>
+<li>No extra elements &amp; No pseudo-elements</li>
+<li>Only one gradient</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Cutx_RWLU7-940.avif 940w"><source type="image/webp" srcset="/img/Cutx_RWLU7-940.webp 940w"><img alt="images with infinite borders" loading="lazy" decoding="async" src="/img/Cutx_RWLU7-940.png" width="940" height="474"></picture></p>
+ <p><a href="https://css-tip.com/infinite-borders/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -167,14 +224,14 @@ Only... <a href="https://css-tip.com/infinite-borders/">Read more</a></content>
 		<link href="https://css-tip.com/curved-ribbon/"/>
 		<updated>2024-01-29T00:00:00Z</updated>
 		<id>https://css-tip.com/curved-ribbon/</id>
-		<content type="html">Create a simple ribbon shape with a cool hover effect
-
-Only one element
-Optimized with CSS variables
-Powered by @property
-
-
-@property --a {  syntax:... <a href="https://css-tip.com/curved-ribbon/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a simple ribbon shape with a cool hover effect</p>
+<ul>
+<li>Only one element</li>
+<li>Optimized with CSS variables</li>
+<li>Powered by @property</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/3irYIwAMb9-819.avif 819w"><source type="image/webp" srcset="/img/3irYIwAMb9-819.webp 819w"><img alt="Curved ribbon shape" loading="lazy" decoding="async" src="/img/3irYIwAMb9-819.png" width="819" height="457"></picture></p>
+ <p><a href="https://css-tip.com/curved-ribbon/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -182,9 +239,9 @@ Powered by @property
 		<link href="https://css-tip.com/image-wavy-borders-2/"/>
 		<updated>2024-01-24T00:00:00Z</updated>
 		<id>https://css-tip.com/image-wavy-borders-2/</id>
-		<content type="html">Improving the previous effect to consider a gradient coloration instead of a solid color. Using the same code structure.
-
-img {  --s: 40px;  /*... <a href="https://css-tip.com/image-wavy-borders-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Improving <a href="/image-wavy-borders/">the previous effect</a> to consider a gradient coloration instead of a solid color. Using the same code structure.</p>
+<p><picture><source type="image/avif" srcset="/img/QTFGlOdIux-792.avif 792w"><source type="image/webp" srcset="/img/QTFGlOdIux-792.webp 792w"><img alt="CSS-only images with wavy borders on all the sides" loading="lazy" decoding="async" src="/img/QTFGlOdIux-792.png" width="792" height="403"></picture></p>
+ <p><a href="https://css-tip.com/image-wavy-borders-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -192,11 +249,15 @@ img {  --s: 40px;  /*... <a href="https://css-tip.com/image-wavy-borders-2/">Rea
 		<link href="https://css-tip.com/image-wavy-borders/"/>
 		<updated>2024-01-23T00:00:00Z</updated>
 		<id>https://css-tip.com/image-wavy-borders/</id>
-		<content type="html">Place your image inside a fancy frame! Wavy borders on all the sides 🤩
-
-Only one element (the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-Optimized with CSS... <a href="https://css-tip.com/image-wavy-borders/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Place your image inside a fancy frame! Wavy borders on all the sides 🤩</p>
+<ul>
+<li>Only one element (the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS Variables</li>
+<li>First use case of the <code>round()</code> function 🥳</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/LCOqEDBVzH-840.avif 840w"><source type="image/webp" srcset="/img/LCOqEDBVzH-840.webp 840w"><img alt="CSS-only images with wavy borders on all the sides" loading="lazy" decoding="async" src="/img/LCOqEDBVzH-840.png" width="840" height="446"></picture></p>
+ <p><a href="https://css-tip.com/image-wavy-borders/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -204,11 +265,14 @@ Optimized with CSS... <a href="https://css-tip.com/image-wavy-borders/">Read mor
 		<link href="https://css-tip.com/triangle-rounded-corner/"/>
 		<updated>2024-01-19T00:00:00Z</updated>
 		<id>https://css-tip.com/triangle-rounded-corner/</id>
-		<content type="html">A modern way to create a triangle with rounded corners
-
-Only one element (no pseudo-elements)
-Only three CSS properties
-One variable to control the... <a href="https://css-tip.com/triangle-rounded-corner/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>A modern way to create a triangle with rounded corners</p>
+<ul>
+<li>Only one element (no pseudo-elements)</li>
+<li>Only three CSS properties</li>
+<li>One variable to control the radius</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/cfl_-Efu8b-663.avif 663w"><source type="image/webp" srcset="/img/cfl_-Efu8b-663.webp 663w"><img alt="triangles with rounded corners" loading="lazy" decoding="async" src="/img/cfl_-Efu8b-663.png" width="663" height="340"></picture></p>
+ <p><a href="https://css-tip.com/triangle-rounded-corner/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -216,14 +280,14 @@ One variable to control the... <a href="https://css-tip.com/triangle-rounded-cor
 		<link href="https://css-tip.com/octagon-shape/"/>
 		<updated>2024-01-16T00:00:00Z</updated>
 		<id>https://css-tip.com/octagon-shape/</id>
-		<content type="html">An easy and modern way to create Octagon shapes
-
-Only 2 CSS declarations
-No magic numbers
-A 4-point polygon (instead of 8) for the clip-path
-
-
-.octa {... <a href="https://css-tip.com/octagon-shape/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>An easy and modern way to create Octagon shapes</p>
+<ul>
+<li>Only 2 CSS declarations</li>
+<li>No magic numbers</li>
+<li>A 4-point polygon (instead of 8) for the clip-path</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/boVVg8KjTa-672.avif 672w"><source type="image/webp" srcset="/img/boVVg8KjTa-672.webp 672w"><img alt="CSS-only octagon shapes" loading="lazy" decoding="async" src="/img/boVVg8KjTa-672.png" width="672" height="345"></picture></p>
+ <p><a href="https://css-tip.com/octagon-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -231,14 +295,14 @@ A 4-point polygon (instead of 8) for the clip-path
 		<link href="https://css-tip.com/hexagon-shape/"/>
 		<updated>2024-01-11T00:00:00Z</updated>
 		<id>https://css-tip.com/hexagon-shape/</id>
-		<content type="html">An easy and modern way to create Hexagon Shapes
-
-Only 2 CSS declarations
-No magic numbers
-A simple 4-point polygon for the clip-path
-
-
-.hex { ... <a href="https://css-tip.com/hexagon-shape/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>An easy and modern way to create Hexagon Shapes</p>
+<ul>
+<li>Only 2 CSS declarations</li>
+<li>No magic numbers</li>
+<li>A simple 4-point polygon for the clip-path</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Pu0FVteBwx-725.avif 725w"><source type="image/webp" srcset="/img/Pu0FVteBwx-725.webp 725w"><img alt="CSS-only hexagon shapes" loading="lazy" decoding="async" src="/img/Pu0FVteBwx-725.png" width="725" height="287"></picture></p>
+ <p><a href="https://css-tip.com/hexagon-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -246,9 +310,14 @@ A simple 4-point polygon for the clip-path
 		<link href="https://css-tip.com/adhesive-tape-image/"/>
 		<updated>2024-01-08T00:00:00Z</updated>
 		<id>https://css-tip.com/adhesive-tape-image/</id>
-		<content type="html">Don&#39;t let your images fall. Stick them with some adhesive tape! A CSS-only solution using a single element.
-
-Durable fixation &amp;amp; easy to... <a href="https://css-tip.com/adhesive-tape-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Don't let your images fall. Stick them with some adhesive tape! A CSS-only solution using a single element.</p>
+<ul>
+<li>Durable fixation &amp; easy to remove</li>
+<li>Pre-cut adhesive tape</li>
+<li>Environment friendly ♻️</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/ZhQhzgYfSO-685.avif 685w"><source type="image/webp" srcset="/img/ZhQhzgYfSO-685.webp 685w"><img alt="images with adhesive tape" loading="lazy" decoding="async" src="/img/ZhQhzgYfSO-685.png" width="685" height="381"></picture></p>
+ <p><a href="https://css-tip.com/adhesive-tape-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -256,11 +325,14 @@ Durable fixation &amp;amp; easy to... <a href="https://css-tip.com/adhesive-tape
 		<link href="https://css-tip.com/fancy-corner-decoration/"/>
 		<updated>2024-01-05T00:00:00Z</updated>
 		<id>https://css-tip.com/fancy-corner-decoration/</id>
-		<content type="html">Add a fancy decoration to the corners of your image using a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Optimized... <a href="https://css-tip.com/fancy-corner-decoration/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a fancy decoration to the corners of your image using a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Optimized with CSS Variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/CTZFfIIaF7-774.avif 774w"><source type="image/webp" srcset="/img/CTZFfIIaF7-774.webp 774w"><img alt="corner-only decoration for images" loading="lazy" decoding="async" src="/img/CTZFfIIaF7-774.png" width="774" height="368"></picture></p>
+ <p><a href="https://css-tip.com/fancy-corner-decoration/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -268,14 +340,14 @@ Optimized... <a href="https://css-tip.com/fancy-corner-decoration/">Read more</a
 		<link href="https://css-tip.com/inner-radius-image/"/>
 		<updated>2024-01-03T00:00:00Z</updated>
 		<id>https://css-tip.com/inner-radius-image/</id>
-		<content type="html">Add a border with an inner radius to your image using a simple code.
-
-No extra element
-No pseudo-element
-Only 2 CSS declarations
-
-
-img { ... <a href="https://css-tip.com/inner-radius-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a border with an inner radius to your image using a simple code.</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>Only 2 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/EU1DquEJ49-943.avif 943w"><source type="image/webp" srcset="/img/EU1DquEJ49-943.webp 943w"><img alt="images with inner border radius" loading="lazy" decoding="async" src="/img/EU1DquEJ49-943.png" width="943" height="398"></picture></p>
+ <p><a href="https://css-tip.com/inner-radius-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -283,10 +355,16 @@ img { ... <a href="https://css-tip.com/inner-radius-image/">Read more</a></conte
 		<link href="https://css-tip.com/circular-stack-avatars/"/>
 		<updated>2023-12-28T00:00:00Z</updated>
 		<id>https://css-tip.com/circular-stack-avatars/</id>
-		<content type="html">An horizontal list is good but a circular one is better 🤩
-Another list of stacked avatars using the same code structure
-
-Minimal HTML (images inside... <a href="https://css-tip.com/circular-stack-avatars/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>An <a href="/horizontal-stack-avatars/">horizontal list</a> is good but a circular one is better 🤩</p>
+<p>Another list of stacked avatars using the same code structure</p>
+<ul>
+<li>Minimal HTML (images inside a container)</li>
+<li>Works with any number of images</li>
+<li>Powered by modern CSS (CSS variables, mask, @property, and more)</li>
+<li>Optimized with Sass</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/9krzjYwMqu-829.avif 829w"><source type="image/webp" srcset="/img/9krzjYwMqu-829.webp 829w"><img alt="CSS-only circular list of stacked avatars" loading="lazy" decoding="async" src="/img/9krzjYwMqu-829.png" width="829" height="557"></picture></p>
+ <p><a href="https://css-tip.com/circular-stack-avatars/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -294,10 +372,14 @@ Minimal HTML (images inside... <a href="https://css-tip.com/circular-stack-avata
 		<link href="https://css-tip.com/horizontal-stack-avatars/"/>
 		<updated>2023-12-25T00:00:00Z</updated>
 		<id>https://css-tip.com/horizontal-stack-avatars/</id>
-		<content type="html">Create a list of stacked avatars with a cool hover effect and with transparency
-
-Minimal HTML (images inside a container)
-Works with any number of... <a href="https://css-tip.com/horizontal-stack-avatars/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a list of stacked avatars with a cool hover effect and with transparency</p>
+<ul>
+<li>Minimal HTML (images inside a container)</li>
+<li>Works with any number of images</li>
+<li>Powered by modern CSS (CSS variables, mask, @property, has() selector and more)</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/IyAMhCsjXI-705.avif 705w"><source type="image/webp" srcset="/img/IyAMhCsjXI-705.webp 705w"><img alt="CSS-only list of stacked avatars" loading="lazy" decoding="async" src="/img/IyAMhCsjXI-705.png" width="705" height="323"></picture></p>
+ <p><a href="https://css-tip.com/horizontal-stack-avatars/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -305,11 +387,14 @@ Works with any number of... <a href="https://css-tip.com/horizontal-stack-avatar
 		<link href="https://css-tip.com/3d-style-text-3/"/>
 		<updated>2023-12-22T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-style-text-3/</id>
-		<content type="html">Add a cool 3D effect to your name or your favorite number
-
-Only one element per word (not per letter)
-No pseudo-elements
-Optimized with CSS... <a href="https://css-tip.com/3d-style-text-3/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a cool 3D effect to your name or your favorite number</p>
+<ul>
+<li>Only one element per word (not per letter)</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/2lycYM48yk-789.avif 789w"><source type="image/webp" srcset="/img/2lycYM48yk-789.webp 789w"><img alt="A 3D text using CSS" loading="lazy" decoding="async" src="/img/2lycYM48yk-789.png" width="789" height="417"></picture></p>
+ <p><a href="https://css-tip.com/3d-style-text-3/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -317,8 +402,10 @@ Optimized with CSS... <a href="https://css-tip.com/3d-style-text-3/">Read more</
 		<link href="https://css-tip.com/image-gift-box-2/"/>
 		<updated>2023-12-20T00:00:00Z</updated>
 		<id>https://css-tip.com/image-gift-box-2/</id>
-		<content type="html">Here is another variation of the previous effect. Now you can open the gift box from both sides 🎁
-Still using only the &amp;lt;img&amp;gt; tag (No extra... <a href="https://css-tip.com/image-gift-box-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Here is another variation of <a href="/image-gift-box/">the previous effect</a>. Now you can open the gift box from both sides 🎁</p>
+<p>Still using only the <code>&lt;img&gt;</code> tag (No extra elements, No pseudo-elements) and a touch of magic 🪄</p>
+<p><picture><source type="image/avif" srcset="/img/7D7bComfzJ-837.avif 837w"><source type="image/webp" srcset="/img/7D7bComfzJ-837.webp 837w"><img alt="A 3D box with image" loading="lazy" decoding="async" src="/img/7D7bComfzJ-837.png" width="837" height="375"></picture></p>
+ <p><a href="https://css-tip.com/image-gift-box-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -326,9 +413,14 @@ Still using only the &amp;lt;img&amp;gt; tag (No extra... <a href="https://css-t
 		<link href="https://css-tip.com/image-gift-box/"/>
 		<updated>2023-12-19T00:00:00Z</updated>
 		<id>https://css-tip.com/image-gift-box/</id>
-		<content type="html">Place your image inside a 3D box and reveal it with a cool hover effect. Perfect for your virtual gifts 🎁
-
-No extra element (only the &amp;lt;img&amp;gt;... <a href="https://css-tip.com/image-gift-box/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Place your image inside a 3D box and reveal it with a cool hover effect. Perfect for your virtual gifts 🎁</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS Variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/6_yugLDkQL-780.avif 780w"><source type="image/webp" srcset="/img/6_yugLDkQL-780.webp 780w"><img alt="A 3D box with image" loading="lazy" decoding="async" src="/img/6_yugLDkQL-780.png" width="780" height="459"></picture></p>
+ <p><a href="https://css-tip.com/image-gift-box/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -336,11 +428,14 @@ No extra element (only the &amp;lt;img&amp;gt;... <a href="https://css-tip.com/i
 		<link href="https://css-tip.com/circular-reveal-effect/"/>
 		<updated>2023-12-14T00:00:00Z</updated>
 		<id>https://css-tip.com/circular-reveal-effect/</id>
-		<content type="html">Add a fancy reveal effect to your images with a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-Powered by CSS... <a href="https://css-tip.com/circular-reveal-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a fancy reveal effect to your images with a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Powered by CSS Variables &amp; @property</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/H5WJpRV8gS-731.avif 731w"><source type="image/webp" srcset="/img/H5WJpRV8gS-731.webp 731w"><img alt="CSS-only reveal effect on hover" loading="lazy" decoding="async" src="/img/H5WJpRV8gS-731.png" width="731" height="396"></picture></p>
+ <p><a href="https://css-tip.com/circular-reveal-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -348,11 +443,14 @@ Powered by CSS... <a href="https://css-tip.com/circular-reveal-effect/">Read mor
 		<link href="https://css-tip.com/infinite-stripes-shadow/"/>
 		<updated>2023-12-08T00:00:00Z</updated>
 		<id>https://css-tip.com/infinite-stripes-shadow/</id>
-		<content type="html">Another variation of the previous effect with infinite stripes
-
-No extra element (only the image tag)
-No pseudo-elements
-Optimized with CSS... <a href="https://css-tip.com/infinite-stripes-shadow/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Another variation of <a href="/infinite-shadow-image/">the previous effect</a> with infinite stripes</p>
+<ul>
+<li>No extra element (only the image tag)</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/yJTvMbyJ4J-683.avif 683w"><source type="image/webp" srcset="/img/yJTvMbyJ4J-683.webp 683w"><img alt="CSS infinite stripes shadow" loading="lazy" decoding="async" src="/img/yJTvMbyJ4J-683.png" width="683" height="434"></picture></p>
+ <p><a href="https://css-tip.com/infinite-stripes-shadow/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -360,9 +458,14 @@ Optimized with CSS... <a href="https://css-tip.com/infinite-stripes-shadow/">Rea
 		<link href="https://css-tip.com/infinite-shadow-image/"/>
 		<updated>2023-12-06T00:00:00Z</updated>
 		<id>https://css-tip.com/infinite-shadow-image/</id>
-		<content type="html">Another variation of the previous effect where you can add a diagonal infinite shadow to your rounded image.
-
-No extra element (only the &amp;lt;img&amp;gt;... <a href="https://css-tip.com/infinite-shadow-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Another variation of <a href="/infinite-shadow/">the previous effect</a> where you can add a diagonal infinite shadow to your rounded image.</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/yLJtrVwq9N-863.avif 863w"><source type="image/webp" srcset="/img/yLJtrVwq9N-863.webp 863w"><img alt="four images with a diagonal infinite shadow" loading="lazy" decoding="async" src="/img/yLJtrVwq9N-863.png" width="863" height="479"></picture></p>
+ <p><a href="https://css-tip.com/infinite-shadow-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -370,11 +473,14 @@ No extra element (only the &amp;lt;img&amp;gt;... <a href="https://css-tip.com/i
 		<link href="https://css-tip.com/overlay-reveal-image/"/>
 		<updated>2023-11-30T00:00:00Z</updated>
 		<id>https://css-tip.com/overlay-reveal-image/</id>
-		<content type="html">Add a reveal animation to your image with a simple code
-
-No extra element (only the image tag)
-No pseudo-elements
-Optimized with CSS... <a href="https://css-tip.com/overlay-reveal-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a reveal animation to your image with a simple code</p>
+<ul>
+<li>No extra element (only the image tag)</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS Variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/NSg6lG_cPe-838.avif 838w"><source type="image/webp" srcset="/img/NSg6lG_cPe-838.webp 838w"><img alt="CSS-only overlay reveal animation" loading="lazy" decoding="async" src="/img/NSg6lG_cPe-838.png" width="838" height="343"></picture></p>
+ <p><a href="https://css-tip.com/overlay-reveal-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -382,11 +488,14 @@ Optimized with CSS... <a href="https://css-tip.com/overlay-reveal-image/">Read m
 		<link href="https://css-tip.com/ribbon-reveal-effect/"/>
 		<updated>2023-11-29T00:00:00Z</updated>
 		<id>https://css-tip.com/ribbon-reveal-effect/</id>
-		<content type="html">Create a ribbon shape with a fancy reveal effect on hover
-
-Only one element
-No fixed size (it fits your text content)
-Optimized with CSS... <a href="https://css-tip.com/ribbon-reveal-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a ribbon shape with a fancy reveal effect on hover</p>
+<ul>
+<li>Only one element</li>
+<li>No fixed size (it fits your text content)</li>
+<li>Optimized with CSS Variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/FPw73fPe2W-612.avif 612w"><source type="image/webp" srcset="/img/FPw73fPe2W-612.webp 612w"><img alt="CSS Ribbon shape with reveal effect" loading="lazy" decoding="async" src="/img/FPw73fPe2W-612.png" width="612" height="302"></picture></p>
+ <p><a href="https://css-tip.com/ribbon-reveal-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -394,11 +503,14 @@ Optimized with CSS... <a href="https://css-tip.com/ribbon-reveal-effect/">Read m
 		<link href="https://css-tip.com/gradient-border-hover/"/>
 		<updated>2023-11-28T00:00:00Z</updated>
 		<id>https://css-tip.com/gradient-border-hover/</id>
-		<content type="html">Add a fancy hover effect to your image with a gradient border
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Powered by CSS mask &amp;amp;... <a href="https://css-tip.com/gradient-border-hover/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a fancy hover effect to your image with a gradient border</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Powered by CSS mask &amp; @property</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/oUQ5ykVNfV-730.avif 730w"><source type="image/webp" srcset="/img/oUQ5ykVNfV-730.webp 730w"><img alt="rounded gradient border" loading="lazy" decoding="async" src="/img/oUQ5ykVNfV-730.png" width="730" height="380"></picture></p>
+ <p><a href="https://css-tip.com/gradient-border-hover/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -406,14 +518,14 @@ Powered by CSS mask &amp;amp;... <a href="https://css-tip.com/gradient-border-ho
 		<link href="https://css-tip.com/simple-tooltip/"/>
 		<updated>2023-11-21T00:00:00Z</updated>
 		<id>https://css-tip.com/simple-tooltip/</id>
-		<content type="html">The smallest code to create a simple Tooltip Shape
-
-One element (No pseudo-elements)
-Only 2 CSS Properties
-Optimized with CSS Variables
-
-
-.tooltip { ... <a href="https://css-tip.com/simple-tooltip/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>The smallest code to create a simple Tooltip Shape</p>
+<ul>
+<li>One element (No pseudo-elements)</li>
+<li>Only 2 CSS Properties</li>
+<li>Optimized with CSS Variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/256GJgrdV5-754.avif 754w"><source type="image/webp" srcset="/img/256GJgrdV5-754.webp 754w"><img alt="A CSS-only tooltip shape" loading="lazy" decoding="async" src="/img/256GJgrdV5-754.png" width="754" height="328"></picture></p>
+ <p><a href="https://css-tip.com/simple-tooltip/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -421,14 +533,14 @@ Optimized with CSS Variables
 		<link href="https://css-tip.com/3d-style-text-2/"/>
 		<updated>2023-11-17T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-style-text-2/</id>
-		<content type="html">Another concept of 3D text with a minimal code
-
-Only one element (no pseudo-elements)
-Works with multi-line text
-Optimized with CSS variables
-
-
-h2 {  ... <a href="https://css-tip.com/3d-style-text-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Another concept of 3D text with a minimal code</p>
+<ul>
+<li>Only one element (no pseudo-elements)</li>
+<li>Works with multi-line text</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/imFKrxkJNV-955.avif 955w"><source type="image/webp" srcset="/img/imFKrxkJNV-955.webp 955w"><img alt="A 3D text using CSS" loading="lazy" decoding="async" src="/img/imFKrxkJNV-955.png" width="955" height="392"></picture></p>
+ <p><a href="https://css-tip.com/3d-style-text-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -436,14 +548,14 @@ h2 {  ... <a href="https://css-tip.com/3d-style-text-2/">Read more</a></content>
 		<link href="https://css-tip.com/3d-style-text/"/>
 		<updated>2023-11-15T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-style-text/</id>
-		<content type="html">Add a touch of 3D to your text using a few lines of code
-
-Minimal HTML
-Works with multi-line text
-Less than 10 CSS declarations
-
-
-h2 {   --d: .3em; /*... <a href="https://css-tip.com/3d-style-text/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a touch of 3D to your text using a few lines of code</p>
+<ul>
+<li>Minimal HTML</li>
+<li>Works with multi-line text</li>
+<li>Less than 10 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/GEYku6Vyue-935.avif 935w"><source type="image/webp" srcset="/img/GEYku6Vyue-935.webp 935w"><img alt="A 3D text using CSS" loading="lazy" decoding="async" src="/img/GEYku6Vyue-935.png" width="935" height="400"></picture></p>
+ <p><a href="https://css-tip.com/3d-style-text/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -451,10 +563,14 @@ h2 {   --d: .3em; /*... <a href="https://css-tip.com/3d-style-text/">Read more</
 		<link href="https://css-tip.com/multi-line-ribbon-shape-2/"/>
 		<updated>2023-11-10T00:00:00Z</updated>
 		<id>https://css-tip.com/multi-line-ribbon-shape-2/</id>
-		<content type="html">After the previous one, here is another concept of Responsive Ribbon Shape using the same code structure.
-
-Only one element
-Works with multi-line... <a href="https://css-tip.com/multi-line-ribbon-shape-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>After <a href="/multi-line-ribbon-shape/">the previous one</a>, here is another concept of Responsive Ribbon Shape using the same code structure.</p>
+<ul>
+<li>Only one element</li>
+<li>Works with multi-line text</li>
+<li>Optimized with CSS variables and Math functions</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/2FUQo1j1Rx-984.avif 984w"><source type="image/webp" srcset="/img/2FUQo1j1Rx-984.webp 984w"><img alt="CSS only ribbon shapes with multi-line text" loading="lazy" decoding="async" src="/img/2FUQo1j1Rx-984.png" width="984" height="676"></picture></p>
+ <p><a href="https://css-tip.com/multi-line-ribbon-shape-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -462,14 +578,14 @@ Works with multi-line... <a href="https://css-tip.com/multi-line-ribbon-shape-2/
 		<link href="https://css-tip.com/infinite-ribbon-shape/"/>
 		<updated>2023-11-03T00:00:00Z</updated>
 		<id>https://css-tip.com/infinite-ribbon-shape/</id>
-		<content type="html">Transform your title into an Infinite Ribbon Shape using a few lines of code
-
-Only one element
-No pseudo-elements
-No overflow issue
-
-
-.ribbon {  --r:... <a href="https://css-tip.com/infinite-ribbon-shape/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Transform your title into an Infinite Ribbon Shape using a few lines of code</p>
+<ul>
+<li>Only one element</li>
+<li>No pseudo-elements</li>
+<li>No overflow issue</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/ZsgT0Qu8D7-1066.avif 1066w"><source type="image/webp" srcset="/img/ZsgT0Qu8D7-1066.webp 1066w"><img alt="CSS only infinite ribbon shapes" loading="lazy" decoding="async" src="/img/ZsgT0Qu8D7-1066.png" width="1066" height="641"></picture></p>
+ <p><a href="https://css-tip.com/infinite-ribbon-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -477,14 +593,14 @@ No overflow issue
 		<link href="https://css-tip.com/multi-line-ribbon-shape/"/>
 		<updated>2023-11-02T00:00:00Z</updated>
 		<id>https://css-tip.com/multi-line-ribbon-shape/</id>
-		<content type="html">Place your text inside a responsive ribbon shape using a few lines of code.
-
-Only one element
-No pseudo-elements
-Works with multi-line text
-
-
-.ribbon... <a href="https://css-tip.com/multi-line-ribbon-shape/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Place your text inside a responsive ribbon shape using a few lines of code.</p>
+<ul>
+<li>Only one element</li>
+<li>No pseudo-elements</li>
+<li>Works with multi-line text</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/gIEb6R7oay-888.avif 888w"><source type="image/webp" srcset="/img/gIEb6R7oay-888.webp 888w"><img alt="CSS only ribbon shapes with multi-line text" loading="lazy" decoding="async" src="/img/gIEb6R7oay-888.png" width="888" height="482"></picture></p>
+ <p><a href="https://css-tip.com/multi-line-ribbon-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -492,15 +608,15 @@ Works with multi-line text
 		<link href="https://css-tip.com/folded-ribbon-hover-2/"/>
 		<updated>2023-09-26T00:00:00Z</updated>
 		<id>https://css-tip.com/folded-ribbon-hover-2/</id>
-		<content type="html">Create a fancy ribbon shape with a few lines of code
-
-Only one element
-No pseudo-elements
-Optimized with CSS variables
-Nice animation on hover
-
-
-h1 { ... <a href="https://css-tip.com/folded-ribbon-hover-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a fancy ribbon shape with a few lines of code</p>
+<ul>
+<li>Only one element</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS variables</li>
+<li>Nice animation on hover</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Bs5rm4Cha2-795.avif 795w"><source type="image/webp" srcset="/img/Bs5rm4Cha2-795.webp 795w"><img alt="A folded ribbon shape using CSS" loading="lazy" decoding="async" src="/img/Bs5rm4Cha2-795.png" width="795" height="456"></picture></p>
+ <p><a href="https://css-tip.com/folded-ribbon-hover-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -508,11 +624,14 @@ h1 { ... <a href="https://css-tip.com/folded-ribbon-hover-2/">Read more</a></con
 		<link href="https://css-tip.com/rotated-ribbon-hover/"/>
 		<updated>2023-09-21T00:00:00Z</updated>
 		<id>https://css-tip.com/rotated-ribbon-hover/</id>
-		<content type="html">Place your title into a fancy Ribbon Shape with a cool hover effect 😍
-
-Only one element
-Optimized with CSS variables
-Powered by modern CSS features... <a href="https://css-tip.com/rotated-ribbon-hover/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Place your title into a fancy Ribbon Shape with a cool hover effect 😍</p>
+<ul>
+<li>Only one element</li>
+<li>Optimized with CSS variables</li>
+<li>Powered by modern CSS features 💪</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/tidteBCI9a-877.avif 877w"><source type="image/webp" srcset="/img/tidteBCI9a-877.webp 877w"><img alt="A CSS-only ribbon shape" loading="lazy" decoding="async" src="/img/tidteBCI9a-877.png" width="877" height="380"></picture></p>
+ <p><a href="https://css-tip.com/rotated-ribbon-hover/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -520,12 +639,15 @@ Powered by modern CSS features... <a href="https://css-tip.com/rotated-ribbon-ho
 		<link href="https://css-tip.com/folded-ribbon-hover/"/>
 		<updated>2023-09-19T00:00:00Z</updated>
 		<id>https://css-tip.com/folded-ribbon-hover/</id>
-		<content type="html">Turn your title into a fancy Ribbon Shape 🎀
-
-One element (no complex HTML)
-No pseudo-elements
-Optimized with CSS variables
-Cool animation on... <a href="https://css-tip.com/folded-ribbon-hover/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Turn your title into a fancy Ribbon Shape 🎀</p>
+<ul>
+<li>One element (no complex HTML)</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS variables</li>
+<li>Cool animation on hover</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/s-Rr_8yq0a-788.avif 788w"><source type="image/webp" srcset="/img/s-Rr_8yq0a-788.webp 788w"><img alt="A folded ribbon shape" loading="lazy" decoding="async" src="/img/s-Rr_8yq0a-788.png" width="788" height="351"></picture></p>
+ <p><a href="https://css-tip.com/folded-ribbon-hover/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -533,9 +655,15 @@ Cool animation on... <a href="https://css-tip.com/folded-ribbon-hover/">Read mor
 		<link href="https://css-tip.com/avatar-hover-effect-3/"/>
 		<updated>2023-09-13T00:00:00Z</updated>
 		<id>https://css-tip.com/avatar-hover-effect-3/</id>
-		<content type="html">Another fancy &amp;quot;Pop out&amp;quot; hover effect using modern CSS. The spiky variation of the previous effect
-
-No extra element (only the &amp;lt;img&amp;gt;... <a href="https://css-tip.com/avatar-hover-effect-3/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Another fancy &quot;Pop out&quot; hover effect using modern CSS. The spiky variation of <a href="/avatar-hover-effect-2">the previous effect</a></p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Powered by the future of CSS (mask, @property, Trigonometric functions and a lot of math)</li>
+<li>Optimized with Sass &amp; CSS Variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/2I3LyTVeze-798.avif 798w"><source type="image/webp" srcset="/img/2I3LyTVeze-798.webp 798w"><img alt="A pop out hover effect to image" loading="lazy" decoding="async" src="/img/2I3LyTVeze-798.png" width="798" height="369"></picture></p>
+ <p><a href="https://css-tip.com/avatar-hover-effect-3/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -543,11 +671,15 @@ No extra element (only the &amp;lt;img&amp;gt;... <a href="https://css-tip.com/a
 		<link href="https://css-tip.com/slanted-underline/"/>
 		<updated>2023-09-12T00:00:00Z</updated>
 		<id>https://css-tip.com/slanted-underline/</id>
-		<content type="html">Add a slanted underline to your text with a nice hover effect using a simple code
-
-Minimal HTML
-No pseudo-elements
-Works with multi-line... <a href="https://css-tip.com/slanted-underline/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a slanted underline to your text with a nice hover effect using a simple code</p>
+<ul>
+<li>Minimal HTML</li>
+<li>No pseudo-elements</li>
+<li>Works with multi-line text</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/I5xzP3wlnl-777.avif 777w"><source type="image/webp" srcset="/img/I5xzP3wlnl-777.webp 777w"><img alt="text with slanted underline" loading="lazy" decoding="async" src="/img/I5xzP3wlnl-777.png" width="777" height="305"></picture></p>
+ <p><a href="https://css-tip.com/slanted-underline/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -555,12 +687,14 @@ Works with multi-line... <a href="https://css-tip.com/slanted-underline/">Read m
 		<link href="https://css-tip.com/starburst-image/"/>
 		<updated>2023-09-07T00:00:00Z</updated>
 		<id>https://css-tip.com/starburst-image/</id>
-		<content type="html">Place your image inside a Starburst shape with a cool rotation 🤩
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-Powered by clip-path
-
-Get the code in... <a href="https://css-tip.com/starburst-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Place your image inside a Starburst shape with a cool rotation 🤩</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>Powered by clip-path</li>
+</ul>
+<p>Get the code in no time using an <a href="https://css-generators.com/starburst-shape/">Online Generator for Starburst Shape</a></p>
+<p><picture><source type="image/avif" srcset="/img/M6xCRrQX7d-796.avif 796w"><source type="image/webp" srcset="/img/M6xCRrQX7d-796.webp 796w"><img alt="Images with Starburst shapes" loading="lazy" decoding="async" src="/img/M6xCRrQX7d-796.png" width="796" height="436"></picture></p>
+ <p><a href="https://css-tip.com/starburst-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -568,11 +702,15 @@ Get the code in... <a href="https://css-tip.com/starburst-image/">Read more</a><
 		<link href="https://css-tip.com/infinite-shadow/"/>
 		<updated>2023-09-05T00:00:00Z</updated>
 		<id>https://css-tip.com/infinite-shadow/</id>
-		<content type="html">Add an infinite shadow to your image in any direction using a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-Only 2... <a href="https://css-tip.com/infinite-shadow/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add an infinite shadow to your image in any direction using a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Only 2 CSS properties</li>
+<li>Works with rounded corners</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/RzAzx-J09T-1120.avif 1120w"><source type="image/webp" srcset="/img/RzAzx-J09T-1120.webp 1120w"><img alt="four images with an infinite shadow" loading="lazy" decoding="async" src="/img/RzAzx-J09T-1120.png" width="1120" height="638"></picture></p>
+ <p><a href="https://css-tip.com/infinite-shadow/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -580,11 +718,15 @@ Only 2... <a href="https://css-tip.com/infinite-shadow/">Read more</a></content>
 		<link href="https://css-tip.com/fancy-circular-hover/"/>
 		<updated>2023-09-01T00:00:00Z</updated>
 		<id>https://css-tip.com/fancy-circular-hover/</id>
-		<content type="html">Create a fancy hover effect with small circles rotating around your image.
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-Powered by... <a href="https://css-tip.com/fancy-circular-hover/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a fancy hover effect with small circles rotating around your image.</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Powered by CSS Mask and <code>@property</code></li>
+<li>Optimized with Sass</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/2rDueUVYlI-733.avif 733w"><source type="image/webp" srcset="/img/2rDueUVYlI-733.webp 733w"><img alt="Small circles around an image" loading="lazy" decoding="async" src="/img/2rDueUVYlI-733.png" width="733" height="357"></picture></p>
+ <p><a href="https://css-tip.com/fancy-circular-hover/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -592,12 +734,15 @@ Powered by... <a href="https://css-tip.com/fancy-circular-hover/">Read more</a><
 		<link href="https://css-tip.com/border-reveal-animation/"/>
 		<updated>2023-08-23T00:00:00Z</updated>
 		<id>https://css-tip.com/border-reveal-animation/</id>
-		<content type="html">Add a simple border around your image with a nice hover effect
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-Only 3 Gradients
-Less... <a href="https://css-tip.com/border-reveal-animation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a simple border around your image with a nice hover effect</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Only 3 Gradients</li>
+<li>Less than 15 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/o7ShP6kTMP-773.avif 773w"><source type="image/webp" srcset="/img/o7ShP6kTMP-773.webp 773w"><img alt="animation to reveal a border around the image" loading="lazy" decoding="async" src="/img/o7ShP6kTMP-773.png" width="773" height="374"></picture></p>
+ <p><a href="https://css-tip.com/border-reveal-animation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -605,12 +750,15 @@ Less... <a href="https://css-tip.com/border-reveal-animation/">Read more</a></co
 		<link href="https://css-tip.com/fancy-frame-image/"/>
 		<updated>2023-08-22T00:00:00Z</updated>
 		<id>https://css-tip.com/fancy-frame-image/</id>
-		<content type="html">Add a nice frame around your image with a cool hover effect
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-Only 4 gradients
-Optimized... <a href="https://css-tip.com/fancy-frame-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a nice frame around your image with a cool hover effect</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Only 4 gradients</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/F2kN1-jt1L-788.avif 788w"><source type="image/webp" srcset="/img/F2kN1-jt1L-788.webp 788w"><img alt="CSS only frame with hover effect around an image" loading="lazy" decoding="async" src="/img/F2kN1-jt1L-788.png" width="788" height="370"></picture></p>
+ <p><a href="https://css-tip.com/fancy-frame-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -618,12 +766,16 @@ Optimized... <a href="https://css-tip.com/fancy-frame-image/">Read more</a></con
 		<link href="https://css-tip.com/zig-zag-image-seperation/"/>
 		<updated>2023-08-21T00:00:00Z</updated>
 		<id>https://css-tip.com/zig-zag-image-seperation/</id>
-		<content type="html">Place 2 images next to each other with a Zig-Zag separation ⚡️
-
-Minimal HTML code
-Less than 25 CSS declarations
-Optimized with CSS variables
-Nice... <a href="https://css-tip.com/zig-zag-image-seperation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Place 2 images next to each other with a Zig-Zag separation ⚡️</p>
+<ul>
+<li>Minimal HTML code</li>
+<li>Less than 25 CSS declarations</li>
+<li>Optimized with CSS variables</li>
+<li>Nice hover effect</li>
+</ul>
+<p>Zig-Zag edge generator 👉 <a href="http://css-generators.com/custom-borders">css-generators.com/custom-borders</a></p>
+<p><picture><source type="image/avif" srcset="/img/8Aa3MPPEse-868.avif 868w"><source type="image/webp" srcset="/img/8Aa3MPPEse-868.webp 868w"><img alt="Zig Zag seperation between two images" loading="lazy" decoding="async" src="/img/8Aa3MPPEse-868.png" width="868" height="479"></picture></p>
+ <p><a href="https://css-tip.com/zig-zag-image-seperation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -631,9 +783,15 @@ Nice... <a href="https://css-tip.com/zig-zag-image-seperation/">Read more</a></c
 		<link href="https://css-tip.com/avatar-hover-effect-2/"/>
 		<updated>2023-08-14T00:00:00Z</updated>
 		<id>https://css-tip.com/avatar-hover-effect-2/</id>
-		<content type="html">Add a fancy &amp;quot;Pop out&amp;quot; hover effect to your avatar using modern CSS. Another variation of the previous effect
-
-No extra element (only the... <a href="https://css-tip.com/avatar-hover-effect-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a fancy &quot;Pop out&quot; hover effect to your avatar using modern CSS. Another variation of <a href="/avatar-hover-effect">the previous effect</a></p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Powered by the future of CSS (mask, @property, Trigonometric functions and a lot of math)</li>
+<li>Optimized with Sass &amp; CSS Variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Lkf1jdfP68-763.avif 763w"><source type="image/webp" srcset="/img/Lkf1jdfP68-763.webp 763w"><img alt="A pop out hover effect to image" loading="lazy" decoding="async" src="/img/Lkf1jdfP68-763.png" width="763" height="335"></picture></p>
+ <p><a href="https://css-tip.com/avatar-hover-effect-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -641,11 +799,15 @@ No extra element (only the... <a href="https://css-tip.com/avatar-hover-effect-2
 		<link href="https://css-tip.com/avatar-hover-effect/"/>
 		<updated>2023-08-11T00:00:00Z</updated>
 		<id>https://css-tip.com/avatar-hover-effect/</id>
-		<content type="html">Add a nice &amp;quot;Pop out&amp;quot; hover effect to your avatar using a minimalist code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Less... <a href="https://css-tip.com/avatar-hover-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a nice &quot;Pop out&quot; hover effect to your avatar using a minimalist code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Less than 20 declarations</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/eEsUcieK72-713.avif 713w"><source type="image/webp" srcset="/img/eEsUcieK72-713.webp 713w"><img alt="A pop out hover effect to image" loading="lazy" decoding="async" src="/img/eEsUcieK72-713.png" width="713" height="362"></picture></p>
+ <p><a href="https://css-tip.com/avatar-hover-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -653,11 +815,14 @@ Less... <a href="https://css-tip.com/avatar-hover-effect/">Read more</a></conten
 		<link href="https://css-tip.com/reveal-hover-mask-3/"/>
 		<updated>2023-08-09T00:00:00Z</updated>
 		<id>https://css-tip.com/reveal-hover-mask-3/</id>
-		<content type="html">Add a nice reveal animation to your image with a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-elements
-Powered by CSS Mask... <a href="https://css-tip.com/reveal-hover-mask-3/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a nice reveal animation to your image with a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Powered by CSS Mask &amp; @property</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/VLo3Ng7SF9-713.avif 713w"><source type="image/webp" srcset="/img/VLo3Ng7SF9-713.webp 713w"><img alt="A reveal hover effect using mask &amp; @property" loading="lazy" decoding="async" src="/img/VLo3Ng7SF9-713.png" width="713" height="369"></picture></p>
+ <p><a href="https://css-tip.com/reveal-hover-mask-3/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -665,11 +830,15 @@ Powered by CSS Mask... <a href="https://css-tip.com/reveal-hover-mask-3/">Read m
 		<link href="https://css-tip.com/checkbox-mask/"/>
 		<updated>2023-08-04T00:00:00Z</updated>
 		<id>https://css-tip.com/checkbox-mask/</id>
-		<content type="html">A simple design for your checkbox with a nice animation on click.
-
-No extra element (only the &amp;lt;input&amp;gt; tag)
-No pseudo-elements
-One value to... <a href="https://css-tip.com/checkbox-mask/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>A simple design for your checkbox with a nice animation on click.</p>
+<ul>
+<li>No extra element (only the <code>&lt;input&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>One value to control the size</li>
+<li>Less than 15 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/ly9a0Fi8Q4-512.avif 512w"><source type="image/webp" srcset="/img/ly9a0Fi8Q4-512.webp 512w"><img alt="CSS-only checkbox using CSS mask" loading="lazy" decoding="async" src="/img/ly9a0Fi8Q4-512.png" width="512" height="291"></picture></p>
+ <p><a href="https://css-tip.com/checkbox-mask/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -677,10 +846,14 @@ One value to... <a href="https://css-tip.com/checkbox-mask/">Read more</a></cont
 		<link href="https://css-tip.com/rhombus-hover-effect/"/>
 		<updated>2023-07-31T00:00:00Z</updated>
 		<id>https://css-tip.com/rhombus-hover-effect/</id>
-		<content type="html">Add a fancy reveal animation to your image on hover
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-Powered by Trigonometric functions and... <a href="https://css-tip.com/rhombus-hover-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a fancy reveal animation to your image on hover</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>Powered by Trigonometric functions and @property</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/WmksdG8J3k-756.avif 756w"><source type="image/webp" srcset="/img/WmksdG8J3k-756.webp 756w"><img alt="A reveal animation with a rotating square" loading="lazy" decoding="async" src="/img/WmksdG8J3k-756.png" width="756" height="397"></picture></p>
+ <p><a href="https://css-tip.com/rhombus-hover-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -688,9 +861,14 @@ Powered by Trigonometric functions and... <a href="https://css-tip.com/rhombus-h
 		<link href="https://css-tip.com/reveal-hover-mask-2/"/>
 		<updated>2023-07-21T00:00:00Z</updated>
 		<id>https://css-tip.com/reveal-hover-mask-2/</id>
-		<content type="html">Another variation of the previous hover effect with a diagonal reveal. Using the same code structure.
-
-No extra element (only the &amp;lt;img&amp;gt;... <a href="https://css-tip.com/reveal-hover-mask-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Another variation of <a href="/reveal-hover-mask">the previous hover effect</a> with a diagonal reveal. Using the same code structure.</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>Less than 10 CSS declarations</li>
+<li>Powered by CSS mask and CSS gradients</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/WTLEmUf4up-661.avif 661w"><source type="image/webp" srcset="/img/WTLEmUf4up-661.webp 661w"><img alt="A diagonal reveal effect using mask" loading="lazy" decoding="async" src="/img/WTLEmUf4up-661.png" width="661" height="356"></picture></p>
+ <p><a href="https://css-tip.com/reveal-hover-mask-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -698,11 +876,14 @@ No extra element (only the &amp;lt;img&amp;gt;... <a href="https://css-tip.com/r
 		<link href="https://css-tip.com/reveal-hover-mask/"/>
 		<updated>2023-07-20T00:00:00Z</updated>
 		<id>https://css-tip.com/reveal-hover-mask/</id>
-		<content type="html">Reveal your images with a nice hover effect and a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-Less than 10 CSS declarations
-Powered... <a href="https://css-tip.com/reveal-hover-mask/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Reveal your images with a nice hover effect and a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>Less than 10 CSS declarations</li>
+<li>Powered by CSS Mask</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/NdX_TUQ_GC-742.avif 742w"><source type="image/webp" srcset="/img/NdX_TUQ_GC-742.webp 742w"><img alt="A reveal hover effect using mask" loading="lazy" decoding="async" src="/img/NdX_TUQ_GC-742.png" width="742" height="369"></picture></p>
+ <p><a href="https://css-tip.com/reveal-hover-mask/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -710,11 +891,14 @@ Powered... <a href="https://css-tip.com/reveal-hover-mask/">Read more</a></conte
 		<link href="https://css-tip.com/color-wheel/"/>
 		<updated>2023-07-18T00:00:00Z</updated>
 		<id>https://css-tip.com/color-wheel/</id>
-		<content type="html">Create a perfect color wheel with multiple colors using conic-gradient()
-
-One variable to define all the colors
-No color duplication
-Smooth transition... <a href="https://css-tip.com/color-wheel/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a perfect color wheel with multiple colors using <code>conic-gradient()</code></p>
+<ul>
+<li>One variable to define all the colors</li>
+<li>No color duplication</li>
+<li>Smooth transition between all the colors</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Piw2vIbsEl-405.avif 405w"><source type="image/webp" srcset="/img/Piw2vIbsEl-405.webp 405w"><img alt="A color wheel using conic-gradient" loading="lazy" decoding="async" src="/img/Piw2vIbsEl-405.png" width="405" height="495"></picture></p>
+ <p><a href="https://css-tip.com/color-wheel/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -722,12 +906,12 @@ Smooth transition... <a href="https://css-tip.com/color-wheel/">Read more</a></c
 		<link href="https://css-tip.com/zoom-hover-effect/"/>
 		<updated>2023-07-14T00:00:00Z</updated>
 		<id>https://css-tip.com/zoom-hover-effect/</id>
-		<content type="html">Add a simple zoom effect on hover for your images with a small code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-5 CSS declarations
-
-img {  --f: 1.15;... <a href="https://css-tip.com/zoom-hover-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a simple zoom effect on hover for your images with a small code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>5 CSS declarations</li>
+</ul>
+ <p><a href="https://css-tip.com/zoom-hover-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -735,11 +919,15 @@ img {  --f: 1.15;... <a href="https://css-tip.com/zoom-hover-effect/">Read more<
 		<link href="https://css-tip.com/corner-only-border-image/"/>
 		<updated>2023-07-13T00:00:00Z</updated>
 		<id>https://css-tip.com/corner-only-border-image/</id>
-		<content type="html">Add corner-only borders to your images with a nice hover effect
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Less than 10 CSS... <a href="https://css-tip.com/corner-only-border-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add corner-only borders to your images with a nice hover effect</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Less than 10 CSS declarations</li>
+<li>Only 2 gradients</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/-SuJdpYyOd-786.avif 786w"><source type="image/webp" srcset="/img/-SuJdpYyOd-786.webp 786w"><img alt="Images with corner-only border" loading="lazy" decoding="async" src="/img/-SuJdpYyOd-786.png" width="786" height="409"></picture></p>
+ <p><a href="https://css-tip.com/corner-only-border-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -747,11 +935,15 @@ Less than 10 CSS... <a href="https://css-tip.com/corner-only-border-image/">Read
 		<link href="https://css-tip.com/overlapping-border-image/"/>
 		<updated>2023-07-06T00:00:00Z</updated>
 		<id>https://css-tip.com/overlapping-border-image/</id>
-		<content type="html">Add an overlapping border to your image with a nice hover effect
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-10 CSS... <a href="https://css-tip.com/overlapping-border-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add an overlapping border to your image with a nice hover effect</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>10 CSS declarations</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Nod4Ss43g_-810.avif 810w"><source type="image/webp" srcset="/img/Nod4Ss43g_-810.webp 810w"><img alt="images with overlapping border" loading="lazy" decoding="async" src="/img/Nod4Ss43g_-810.png" width="810" height="394"></picture></p>
+ <p><a href="https://css-tip.com/overlapping-border-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -759,11 +951,15 @@ No pseudo-element
 		<link href="https://css-tip.com/3d-trailing-shadow/"/>
 		<updated>2023-07-04T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-trailing-shadow/</id>
-		<content type="html">Add a 3D trailing shadow to your image with a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Less than 10 CSS... <a href="https://css-tip.com/3d-trailing-shadow/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a 3D trailing shadow to your image with a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Less than 10 CSS declarations</li>
+<li>No scrollbar issue</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/TOpEg3tdkY-895.avif 895w"><source type="image/webp" srcset="/img/TOpEg3tdkY-895.webp 895w"><img alt="A 3D trailing shadow for images" loading="lazy" decoding="async" src="/img/TOpEg3tdkY-895.png" width="895" height="481"></picture></p>
+ <p><a href="https://css-tip.com/3d-trailing-shadow/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -771,11 +967,14 @@ Less than 10 CSS... <a href="https://css-tip.com/3d-trailing-shadow/">Read more<
 		<link href="https://css-tip.com/circle-hover-effect/"/>
 		<updated>2023-06-29T00:00:00Z</updated>
 		<id>https://css-tip.com/circle-hover-effect/</id>
-		<content type="html">Add a reveal animation to your image with a simple and nice hover effect
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-10 CSS... <a href="https://css-tip.com/circle-hover-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a reveal animation to your image with a simple and nice hover effect</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>10 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/F8YlgoON5E-612.avif 612w"><source type="image/webp" srcset="/img/F8YlgoON5E-612.webp 612w"><img alt="A reveal hover effect with an expanding circle" loading="lazy" decoding="async" src="/img/F8YlgoON5E-612.png" width="612" height="288"></picture></p>
+ <p><a href="https://css-tip.com/circle-hover-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -783,7 +982,10 @@ No pseudo-element
 		<link href="https://css-tip.com/colors-array/"/>
 		<updated>2023-06-26T00:00:00Z</updated>
 		<id>https://css-tip.com/colors-array/</id>
-		<content type="html">Do you want to define an array of colors using only CSS? Yes, it&#39;s possible! It&#39;s limited to only background coloration but can be useful in many... <a href="https://css-tip.com/colors-array/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Do you want to define an array of colors using only CSS? Yes, it's possible! It's limited to only background coloration but can be useful in many situations.</p>
+<p>Use an index like any programming language to iterate through the array. Practical when you are already using an index for something else.</p>
+<p><picture><source type="image/avif" srcset="/img/5Yicnsy4u6-830.avif 830w"><source type="image/webp" srcset="/img/5Yicnsy4u6-830.webp 830w"><img alt="Boxes with different colors" loading="lazy" decoding="async" src="/img/5Yicnsy4u6-830.png" width="830" height="313"></picture></p>
+ <p><a href="https://css-tip.com/colors-array/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -791,11 +993,14 @@ No pseudo-element
 		<link href="https://css-tip.com/3d-shine-animation/"/>
 		<updated>2023-06-19T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-shine-animation/</id>
-		<content type="html">Add a fancy 3D animation to your image with a cool hover effect
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Optimized with CSS... <a href="https://css-tip.com/3d-shine-animation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a fancy 3D animation to your image with a cool hover effect</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Kjo4muoTMF-635.avif 635w"><source type="image/webp" srcset="/img/Kjo4muoTMF-635.webp 635w"><img alt="A 3D shine animation on image" loading="lazy" decoding="async" src="/img/Kjo4muoTMF-635.png" width="635" height="407"></picture></p>
+ <p><a href="https://css-tip.com/3d-shine-animation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -803,11 +1008,14 @@ Optimized with CSS... <a href="https://css-tip.com/3d-shine-animation/">Read mor
 		<link href="https://css-tip.com/slow-down-rotation/"/>
 		<updated>2023-06-13T00:00:00Z</updated>
 		<id>https://css-tip.com/slow-down-rotation/</id>
-		<content type="html">Did you ever wanted to slow down a rotating element on mouse hover? You can easily do it with a simple code:
-
-No extra element
-No pseudo-element
-One... <a href="https://css-tip.com/slow-down-rotation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Did you ever wanted to slow down a rotating element on mouse hover? You can easily do it with a simple code:</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>One animation</li>
+<li>Easy to control with CSS variables</li>
+</ul>
+ <p><a href="https://css-tip.com/slow-down-rotation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -815,11 +1023,14 @@ One... <a href="https://css-tip.com/slow-down-rotation/">Read more</a></content>
 		<link href="https://css-tip.com/sliding-reveal-image/"/>
 		<updated>2023-06-10T00:00:00Z</updated>
 		<id>https://css-tip.com/sliding-reveal-image/</id>
-		<content type="html">Add a reveal effect to your image with a sliding animation on hover
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo element
-Less than 10 CSS... <a href="https://css-tip.com/sliding-reveal-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a reveal effect to your image with a sliding animation on hover</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo element</li>
+<li>Less than 10 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/eXCF9NUzzO-728.avif 728w"><source type="image/webp" srcset="/img/eXCF9NUzzO-728.webp 728w"><img alt="Sliding reveal animation" loading="lazy" decoding="async" src="/img/eXCF9NUzzO-728.png" width="728" height="366"></picture></p>
+ <p><a href="https://css-tip.com/sliding-reveal-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -827,11 +1038,15 @@ Less than 10 CSS... <a href="https://css-tip.com/sliding-reveal-image/">Read mor
 		<link href="https://css-tip.com/color-reveal-hover-effect/"/>
 		<updated>2023-06-06T00:00:00Z</updated>
 		<id>https://css-tip.com/color-reveal-hover-effect/</id>
-		<content type="html">Reveal the colors of your images with a sliding animation on hover
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Less than 15 CSS... <a href="https://css-tip.com/color-reveal-hover-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Reveal the colors of your images with a sliding animation on hover</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Less than 15 CSS declarations</li>
+<li>Easily control the sliding direction</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/yWSBoyzTgt-540.avif 540w"><source type="image/webp" srcset="/img/yWSBoyzTgt-540.webp 540w"><img alt="CSS reveal hover effect" loading="lazy" decoding="async" src="/img/yWSBoyzTgt-540.png" width="540" height="470"></picture></p>
+ <p><a href="https://css-tip.com/color-reveal-hover-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -839,11 +1054,14 @@ Less than 15 CSS... <a href="https://css-tip.com/color-reveal-hover-effect/">Rea
 		<link href="https://css-tip.com/3d-shine-effect/"/>
 		<updated>2023-06-01T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-shine-effect/</id>
-		<content type="html">Add a 3D effect to your image with a shiny animation on hover ✨
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Less than 10 CSS... <a href="https://css-tip.com/3d-shine-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a 3D effect to your image with a shiny animation on hover ✨</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Less than 10 CSS declrations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/pGOYAlKbmd-715.avif 715w"><source type="image/webp" srcset="/img/pGOYAlKbmd-715.webp 715w"><img alt="A 3D shine effect on image" loading="lazy" decoding="async" src="/img/pGOYAlKbmd-715.png" width="715" height="326"></picture></p>
+ <p><a href="https://css-tip.com/3d-shine-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -851,10 +1069,15 @@ Less than 10 CSS... <a href="https://css-tip.com/3d-shine-effect/">Read more</a>
 		<link href="https://css-tip.com/rhombus-image/"/>
 		<updated>2023-05-29T00:00:00Z</updated>
 		<id>https://css-tip.com/rhombus-image/</id>
-		<content type="html">Transform your image into a Rhombus shape with rounded corners using a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No overflow... <a href="https://css-tip.com/rhombus-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Transform your image into a Rhombus shape with rounded corners using a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No overflow issue</li>
+<li>Only 3 properties</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/YSSn1zD2Wm-743.avif 743w"><source type="image/webp" srcset="/img/YSSn1zD2Wm-743.webp 743w"><img alt="A Rhombus shape with rounded corners" loading="lazy" decoding="async" src="/img/YSSn1zD2Wm-743.png" width="743" height="380"></picture></p>
+ <p><a href="https://css-tip.com/rhombus-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -862,7 +1085,11 @@ No overflow... <a href="https://css-tip.com/rhombus-image/">Read more</a></conte
 		<link href="https://css-tip.com/gradient-overlay-border-image/"/>
 		<updated>2023-05-18T00:00:00Z</updated>
 		<id>https://css-tip.com/gradient-overlay-border-image/</id>
-		<content type="html">Do you want to add a gradient overlay above your background but you cannot edit the background property, add an extra element or use... <a href="https://css-tip.com/gradient-overlay-border-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Do you want to add a gradient overlay above your background but you cannot edit the background property, add an extra element or use pseudo-element?</p>
+<p>You can do it with <code>border-image</code>!</p>
+<p>Only one line of code and you have your overlay 🤩</p>
+<p><picture><source type="image/avif" srcset="/img/JvmFbGjHUO-685.avif 685w"><source type="image/webp" srcset="/img/JvmFbGjHUO-685.webp 685w"><img alt="A gradient overaly above a background" loading="lazy" decoding="async" src="/img/JvmFbGjHUO-685.png" width="685" height="633"></picture></p>
+ <p><a href="https://css-tip.com/gradient-overlay-border-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -870,11 +1097,14 @@ No overflow... <a href="https://css-tip.com/rhombus-image/">Read more</a></conte
 		<link href="https://css-tip.com/image-3d-effect/"/>
 		<updated>2023-05-17T00:00:00Z</updated>
 		<id>https://css-tip.com/image-3d-effect/</id>
-		<content type="html">Transform your 2D image into a 3D one using a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Nice animation on hover... <a href="https://css-tip.com/image-3d-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Transform your 2D image into a 3D one using a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Nice animation on hover 🤩</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/80Shj-q4F9-714.avif 714w"><source type="image/webp" srcset="/img/80Shj-q4F9-714.webp 714w"><img alt="3D images using CSS" loading="lazy" decoding="async" src="/img/80Shj-q4F9-714.png" width="714" height="363"></picture></p>
+ <p><a href="https://css-tip.com/image-3d-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -882,12 +1112,15 @@ Nice animation on hover... <a href="https://css-tip.com/image-3d-effect/">Read m
 		<link href="https://css-tip.com/3d-parallax-image/"/>
 		<updated>2023-05-16T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-parallax-image/</id>
-		<content type="html">Add a fancy 3D effect to your image with a simple code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-No JavaScript
-Perfect 3D... <a href="https://css-tip.com/3d-parallax-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a fancy 3D effect to your image with a simple code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>No JavaScript</li>
+<li>Perfect 3D illusion on hover 🤩</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/ULpXUaKeIK-906.avif 906w"><source type="image/webp" srcset="/img/ULpXUaKeIK-906.webp 906w"><img alt="A 3D effect to your image" loading="lazy" decoding="async" src="/img/ULpXUaKeIK-906.png" width="906" height="432"></picture></p>
+ <p><a href="https://css-tip.com/3d-parallax-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -895,10 +1128,15 @@ Perfect 3D... <a href="https://css-tip.com/3d-parallax-image/">Read more</a></co
 		<link href="https://css-tip.com/folded-ribbon/"/>
 		<updated>2023-05-12T00:00:00Z</updated>
 		<id>https://css-tip.com/folded-ribbon/</id>
-		<content type="html">Add a folded ribbon to the corner of your container using a few lines of code
-
-One element (no pseudo-element)
-No fixed width/height (fit content... <a href="https://css-tip.com/folded-ribbon/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a folded ribbon to the corner of your container using a few lines of code</p>
+<ul>
+<li>One element (no pseudo-element)</li>
+<li>No fixed width/height (fit content size)</li>
+<li>No magic positioning numbers</li>
+<li>Easy switch between both positions</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/1ybg1RXeIE-704.avif 704w"><source type="image/webp" srcset="/img/1ybg1RXeIE-704.webp 704w"><img alt="A CSS folded ribbon" loading="lazy" decoding="async" src="/img/1ybg1RXeIE-704.png" width="704" height="620"></picture></p>
+ <p><a href="https://css-tip.com/folded-ribbon/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -906,12 +1144,15 @@ No fixed width/height (fit content... <a href="https://css-tip.com/folded-ribbon
 		<link href="https://css-tip.com/ribbon-style-title/"/>
 		<updated>2023-05-08T00:00:00Z</updated>
 		<id>https://css-tip.com/ribbon-style-title/</id>
-		<content type="html">Add a ribbon style to your title that extend to the edge of the screen.
-
-Only one CSS property 🤩
-No extra element
-No pseudo-element
-No scrollbar... <a href="https://css-tip.com/ribbon-style-title/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a ribbon style to your title that extend to the edge of the screen.</p>
+<ul>
+<li>Only one CSS property 🤩</li>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>No scrollbar issue</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/uyhB6bdIpg-895.avif 895w"><source type="image/webp" srcset="/img/uyhB6bdIpg-895.webp 895w"><img alt="Titles having a ribbon style that extend to the left edge of the screen" loading="lazy" decoding="async" src="/img/uyhB6bdIpg-895.png" width="895" height="638"></picture></p>
+ <p><a href="https://css-tip.com/ribbon-style-title/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -919,12 +1160,15 @@ No scrollbar... <a href="https://css-tip.com/ribbon-style-title/">Read more</a><
 		<link href="https://css-tip.com/stanled-background-full-screen/"/>
 		<updated>2023-05-05T00:00:00Z</updated>
 		<id>https://css-tip.com/stanled-background-full-screen/</id>
-		<content type="html">Add a slanted background to your container that extend to the edge of the screen.
-
-Only 2 CSS properties 🤯
-No pseudo-element
-No scrollbar issue
-One... <a href="https://css-tip.com/stanled-background-full-screen/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a slanted background to your container that extend to the edge of the screen.</p>
+<ul>
+<li>Only 2 CSS properties 🤯</li>
+<li>No pseudo-element</li>
+<li>No scrollbar issue</li>
+<li>One variable to control the angle</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/byDI9znpYf-944.avif 944w"><source type="image/webp" srcset="/img/byDI9znpYf-944.webp 944w"><img alt="A full screen slanted background" loading="lazy" decoding="async" src="/img/byDI9znpYf-944.jpeg" width="944" height="682"></picture></p>
+ <p><a href="https://css-tip.com/stanled-background-full-screen/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -932,9 +1176,9 @@ One... <a href="https://css-tip.com/stanled-background-full-screen/">Read more</
 		<link href="https://css-tip.com/inner-border-radius/"/>
 		<updated>2023-05-03T00:00:00Z</updated>
 		<id>https://css-tip.com/inner-border-radius/</id>
-		<content type="html">Do you want to have a radius inside the element but not outside? You can do it using only one property 🤩
-
-.box {  --c: orange;  --r: 50px; /* control... <a href="https://css-tip.com/inner-border-radius/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Do you want to have a radius inside the element but not outside? You can do it using only one property 🤩</p>
+<p><picture><source type="image/avif" srcset="/img/CD8MU3o29n-497.avif 497w"><source type="image/webp" srcset="/img/CD8MU3o29n-497.webp 497w"><img alt="A box with an inner border-radius" loading="lazy" decoding="async" src="/img/CD8MU3o29n-497.png" width="497" height="419"></picture></p>
+ <p><a href="https://css-tip.com/inner-border-radius/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -942,10 +1186,8 @@ One... <a href="https://css-tip.com/stanled-background-full-screen/">Read more</
 		<link href="https://css-tip.com/select-elements-between-two-class/"/>
 		<updated>2023-05-02T00:00:00Z</updated>
 		<id>https://css-tip.com/select-elements-between-two-class/</id>
-		<content type="html">Do you want to select all the elements between two different class names? Use the :not() selector to do it
-.start ~ :not(.end,.end ~ *) {  }
-
-  See... <a href="https://css-tip.com/select-elements-between-two-class/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Do you want to select all the elements between two different class names? Use the :not() selector to do it</p>
+ <p><a href="https://css-tip.com/select-elements-between-two-class/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -953,11 +1195,15 @@ One... <a href="https://css-tip.com/stanled-background-full-screen/">Read more</
 		<link href="https://css-tip.com/reveal-hover-effect-2/"/>
 		<updated>2023-05-01T00:00:00Z</updated>
 		<id>https://css-tip.com/reveal-hover-effect-2/</id>
-		<content type="html">Adding more variations to the previous reveal animation using the same tricks
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Powered... <a href="https://css-tip.com/reveal-hover-effect-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Adding more variations to <a href="/reveal-hover-effect/">the previous reveal animation</a> using the same tricks</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Powered by object-fit &amp; object-position</li>
+<li>A lot of possible combination</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/mB5WrHlAcP-494.avif 494w"><source type="image/webp" srcset="/img/mB5WrHlAcP-494.webp 494w"><img alt="CSS reveal animation using padding and object-fit" loading="lazy" decoding="async" src="/img/mB5WrHlAcP-494.png" width="494" height="481"></picture></p>
+ <p><a href="https://css-tip.com/reveal-hover-effect-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -965,11 +1211,15 @@ Powered... <a href="https://css-tip.com/reveal-hover-effect-2/">Read more</a></c
 		<link href="https://css-tip.com/reveal-hover-effect/"/>
 		<updated>2023-04-27T00:00:00Z</updated>
 		<id>https://css-tip.com/reveal-hover-effect/</id>
-		<content type="html">Add a simple reveal animation to your images using a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Less than 10 CSS... <a href="https://css-tip.com/reveal-hover-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a simple reveal animation to your images using a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Less than 10 CSS declarations</li>
+<li>Powered by <code>object-fit</code> and <code>object-position</code></li>
+<li>Easily control the reveal direction</li>
+</ul>
+ <p><a href="https://css-tip.com/reveal-hover-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -977,10 +1227,15 @@ Less than 10 CSS... <a href="https://css-tip.com/reveal-hover-effect/">Read more
 		<link href="https://css-tip.com/rotating-square-hover-effect/"/>
 		<updated>2023-04-26T00:00:00Z</updated>
 		<id>https://css-tip.com/rotating-square-hover-effect/</id>
-		<content type="html">Add a fancy hover effect to your image with a small code. Transform your image into little rotating squares!
-
-One element (the &amp;lt;img&amp;gt; tag)
-No... <a href="https://css-tip.com/rotating-square-hover-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a fancy hover effect to your image with a small code. Transform your image into little rotating squares!</p>
+<ul>
+<li>One element (the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Powered by CSS mask and @property</li>
+</ul>
+<p>Pay attention to the support of <a href="https://caniuse.com/mdn-css_at-rules_property">the @property</a>.</p>
+<p><picture><source type="image/avif" srcset="/img/_ywdQGjexe-607.avif 607w"><source type="image/webp" srcset="/img/_ywdQGjexe-607.webp 607w"><img alt="Image with rotating squares" loading="lazy" decoding="async" src="/img/_ywdQGjexe-607.png" width="607" height="353"></picture></p>
+ <p><a href="https://css-tip.com/rotating-square-hover-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -988,11 +1243,15 @@ No... <a href="https://css-tip.com/rotating-square-hover-effect/">Read more</a><
 		<link href="https://css-tip.com/css-ribbon-2/"/>
 		<updated>2023-04-24T00:00:00Z</updated>
 		<id>https://css-tip.com/css-ribbon-2/</id>
-		<content type="html">Create a cool CSS Ribbon with a little code
-
-One element (no pseudo-element)
-One color definition
-No fixed width/height (It fits the content... <a href="https://css-tip.com/css-ribbon-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a cool CSS Ribbon with a little code</p>
+<ul>
+<li>One element (no pseudo-element)</li>
+<li>One color definition</li>
+<li>No fixed width/height (It fits the content size)</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/k4SFE8f0If-534.avif 534w"><source type="image/webp" srcset="/img/k4SFE8f0If-534.webp 534w"><img alt="A CSS-only Ribbon" loading="lazy" decoding="async" src="/img/k4SFE8f0If-534.png" width="534" height="435"></picture></p>
+ <p><a href="https://css-tip.com/css-ribbon-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1000,12 +1259,15 @@ No fixed width/height (It fits the content... <a href="https://css-tip.com/css-r
 		<link href="https://css-tip.com/3d-zig-zag-edge/"/>
 		<updated>2023-04-19T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-zig-zag-edge/</id>
-		<content type="html">Create a nice 3D Zig-Zag edge with a simple code:
-
-One element (No pseudo-element)
-Two gradients
-One color definition
-Optimized with CSS... <a href="https://css-tip.com/3d-zig-zag-edge/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a nice 3D Zig-Zag edge with a simple code:</p>
+<ul>
+<li>One element (No pseudo-element)</li>
+<li>Two gradients</li>
+<li>One color definition</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/n2vx-pAYXN-905.avif 905w"><source type="image/webp" srcset="/img/n2vx-pAYXN-905.webp 905w"><img alt="A CSS-only 3D Zig Zag edge" loading="lazy" decoding="async" src="/img/n2vx-pAYXN-905.png" width="905" height="638"></picture></p>
+ <p><a href="https://css-tip.com/3d-zig-zag-edge/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1013,8 +1275,8 @@ Optimized with CSS... <a href="https://css-tip.com/3d-zig-zag-edge/">Read more</
 		<link href="https://css-tip.com/first-last-element-with-class/"/>
 		<updated>2023-04-18T00:00:00Z</updated>
 		<id>https://css-tip.com/first-last-element-with-class/</id>
-		<content type="html">Do you want to select the first and last element with a specific class? It&#39;s possible and you can do it using 2 different methods!
-/* First element... <a href="https://css-tip.com/first-last-element-with-class/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Do you want to select the first and last element with a specific class? It's possible and you can do it using 2 different methods!</p>
+ <p><a href="https://css-tip.com/first-last-element-with-class/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1022,12 +1284,15 @@ Optimized with CSS... <a href="https://css-tip.com/3d-zig-zag-edge/">Read more</
 		<link href="https://css-tip.com/custom-numbered-list/"/>
 		<updated>2023-04-17T00:00:00Z</updated>
 		<id>https://css-tip.com/custom-numbered-list/</id>
-		<content type="html">Use @counter-style to customize your &amp;lt;ol&amp;gt; list with a simple code
-
-No extra markup
-No pseudo-element
-No need for counter()
-Keep the default... <a href="https://css-tip.com/custom-numbered-list/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use <code>@counter-style</code> to customize your <code>&lt;ol&gt;</code> list with a simple code</p>
+<ul>
+<li>No extra markup</li>
+<li>No pseudo-element</li>
+<li>No need for <code>counter()</code></li>
+<li>Keep the default browser algorithm</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/RXLpZ1338s-205.avif 205w"><source type="image/webp" srcset="/img/RXLpZ1338s-205.webp 205w"><img alt="A numbered list" loading="lazy" decoding="async" src="/img/RXLpZ1338s-205.png" width="205" height="268"></picture></p>
+ <p><a href="https://css-tip.com/custom-numbered-list/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1035,10 +1300,14 @@ Keep the default... <a href="https://css-tip.com/custom-numbered-list/">Read mor
 		<link href="https://css-tip.com/custom-range-slider/"/>
 		<updated>2023-04-10T00:00:00Z</updated>
 		<id>https://css-tip.com/custom-range-slider/</id>
-		<content type="html">Use modern CSS tricks to create fancy range sliders with a little code
-
-No extra element (only the &amp;lt;input&amp;gt; element)
-Optimized with CSS... <a href="https://css-tip.com/custom-range-slider/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use modern CSS tricks to create fancy range sliders with a little code</p>
+<ul>
+<li>No extra element (only the <code>&lt;input&gt;</code> element)</li>
+<li>Optimized with CSS variables</li>
+<li>Transparent gap around the thumb</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/ie1IP0P4s8-588.avif 588w"><source type="image/webp" srcset="/img/ie1IP0P4s8-588.webp 588w"><img alt="CSS-only range slider" loading="lazy" decoding="async" src="/img/ie1IP0P4s8-588.png" width="588" height="259"></picture></p>
+ <p><a href="https://css-tip.com/custom-range-slider/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1046,9 +1315,9 @@ Optimized with CSS... <a href="https://css-tip.com/custom-range-slider/">Read mo
 		<link href="https://css-tip.com/color-wheel-gradient/"/>
 		<updated>2023-04-03T00:00:00Z</updated>
 		<id>https://css-tip.com/color-wheel-gradient/</id>
-		<content type="html">Use conic-gradient() and the new color interpolation to create a nice color wheel 🤩
-
-.box {  background: conic-gradient(in hsl longer hue,red 0... <a href="https://css-tip.com/color-wheel-gradient/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use <code>conic-gradient()</code> and the new color interpolation to create a nice color wheel 🤩</p>
+<p><picture><source type="image/avif" srcset="/img/58NlxWHnqQ-593.avif 593w"><source type="image/webp" srcset="/img/58NlxWHnqQ-593.webp 593w"><img alt="A color wheel made conic-gradient" loading="lazy" decoding="async" src="/img/58NlxWHnqQ-593.png" width="593" height="385"></picture></p>
+ <p><a href="https://css-tip.com/color-wheel-gradient/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1056,9 +1325,9 @@ Optimized with CSS... <a href="https://css-tip.com/custom-range-slider/">Read mo
 		<link href="https://css-tip.com/fade-content-border-mask/"/>
 		<updated>2023-03-30T00:00:00Z</updated>
 		<id>https://css-tip.com/fade-content-border-mask/</id>
-		<content type="html">Create a fading content while keeping the border visible using CSS mask. It works with border-radius and no need to know the value of border.
-
-.box { ... <a href="https://css-tip.com/fade-content-border-mask/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a fading content while keeping the border visible using CSS mask. It works with <code>border-radius</code> and no need to know the value of border.</p>
+<p><picture><source type="image/avif" srcset="/img/vGWO9Bu1K4-754.avif 754w"><source type="image/webp" srcset="/img/vGWO9Bu1K4-754.webp 754w"><img alt="A fading content" loading="lazy" decoding="async" src="/img/vGWO9Bu1K4-754.png" width="754" height="475"></picture></p>
+ <p><a href="https://css-tip.com/fade-content-border-mask/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1066,8 +1335,8 @@ Optimized with CSS... <a href="https://css-tip.com/custom-range-slider/">Read mo
 		<link href="https://css-tip.com/hue-manipulation-color-mix/"/>
 		<updated>2023-03-29T00:00:00Z</updated>
 		<id>https://css-tip.com/hue-manipulation-color-mix/</id>
-		<content type="html">Use the new color-mix() to manipulate the Hue of a color in the HSL color space
-.box {  --color: red;   --h: 0; /* angle (from 0 to 360 without unit)... <a href="https://css-tip.com/hue-manipulation-color-mix/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use the new <code>color-mix()</code> to manipulate the Hue of a color in the HSL color space</p>
+ <p><a href="https://css-tip.com/hue-manipulation-color-mix/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1075,10 +1344,10 @@ Optimized with CSS... <a href="https://css-tip.com/custom-range-slider/">Read mo
 		<link href="https://css-tip.com/color-shades-color-mix/"/>
 		<updated>2023-03-28T00:00:00Z</updated>
 		<id>https://css-tip.com/color-shades-color-mix/</id>
-		<content type="html">Use the new color-mix() to create different shades from one color.
-Mix with ⚫️ black for a darker color and ⚪️ white for a lighter color
-
-html { ... <a href="https://css-tip.com/color-shades-color-mix/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use the new <code>color-mix()</code> to create different shades from one color.</p>
+<p>Mix with ⚫️ black for a darker color and ⚪️ white for a lighter color</p>
+<p><picture><source type="image/avif" srcset="/img/bQn4Q-ryeF-715.avif 715w"><source type="image/webp" srcset="/img/bQn4Q-ryeF-715.webp 715w"><img alt="3 color shades from one color" loading="lazy" decoding="async" src="/img/bQn4Q-ryeF-715.png" width="715" height="371"></picture></p>
+ <p><a href="https://css-tip.com/color-shades-color-mix/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1086,11 +1355,14 @@ html { ... <a href="https://css-tip.com/color-shades-color-mix/">Read more</a></
 		<link href="https://css-tip.com/color-switch-color-mix/"/>
 		<updated>2023-03-27T00:00:00Z</updated>
 		<id>https://css-tip.com/color-switch-color-mix/</id>
-		<content type="html">Use the new color-mix() function to create a color switch with a compact code
-
-No color duplication
-Define your colors using one variable
-Easy switch... <a href="https://css-tip.com/color-switch-color-mix/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use the new <code>color-mix()</code> function to create a color switch with a compact code</p>
+<ul>
+<li>No color duplication</li>
+<li>Define your colors using one variable</li>
+<li>Easy switch between colors</li>
+<li>Suitable for dark/light mode</li>
+</ul>
+ <p><a href="https://css-tip.com/color-switch-color-mix/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1098,10 +1370,13 @@ Easy switch... <a href="https://css-tip.com/color-switch-color-mix/">Read more</
 		<link href="https://css-tip.com/polygon-starburst-shapes/"/>
 		<updated>2023-03-08T00:00:00Z</updated>
 		<id>https://css-tip.com/polygon-starburst-shapes/</id>
-		<content type="html">Use online generators to create CSS shapes using clip-path in not time!
-
-Polygon Shapes: css-generators.com/polygon-shape
-Starburst Shapes: ... <a href="https://css-tip.com/polygon-starburst-shapes/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use online generators to create CSS shapes using clip-path in not time!</p>
+<ul>
+<li>Polygon Shapes: <a href="https://css-generators.com/polygon-shape">css-generators.com/polygon-shape</a></li>
+<li>Starburst Shapes:  <a href="https://css-generators.com/starburst-shape">css-generators.com/starburst-shape</a></li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/0vzRz_JzPZ-896.avif 896w"><source type="image/webp" srcset="/img/0vzRz_JzPZ-896.webp 896w"><img alt="Starburst &amp; polygon shapes" loading="lazy" decoding="async" src="/img/0vzRz_JzPZ-896.png" width="896" height="557"></picture></p>
+ <p><a href="https://css-tip.com/polygon-starburst-shapes/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1109,10 +1384,14 @@ Starburst Shapes: ... <a href="https://css-tip.com/polygon-starburst-shapes/">Re
 		<link href="https://css-tip.com/css-gradient-shadows/"/>
 		<updated>2023-02-10T00:00:00Z</updated>
 		<id>https://css-tip.com/css-gradient-shadows/</id>
-		<content type="html">An online tool to create fancy CSS shadows with gradients coloration. Get the code in One click 🌟
-
-Works with transparency
-Works with... <a href="https://css-tip.com/css-gradient-shadows/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>An online tool to create fancy CSS shadows with gradients coloration. Get the code in One click 🌟</p>
+<ul>
+<li>Works with transparency</li>
+<li>Works with <code>border-radius</code></li>
+</ul>
+<p><a href="https://css-generators.com/gradient-shadows/">css-generators.com/gradient-shadows</a></p>
+<p><picture><source type="image/avif" srcset="/img/XgBVTDjc_k-627.avif 627w"><source type="image/webp" srcset="/img/XgBVTDjc_k-627.webp 627w"><img alt="CSS-only gradient shadows" loading="lazy" decoding="async" src="/img/XgBVTDjc_k-627.png" width="627" height="452"></picture></p>
+ <p><a href="https://css-tip.com/css-gradient-shadows/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1120,12 +1399,15 @@ Works with... <a href="https://css-tip.com/css-gradient-shadows/">Read more</a><
 		<link href="https://css-tip.com/border-only-tooltip-mask/"/>
 		<updated>2023-02-08T00:00:00Z</updated>
 		<id>https://css-tip.com/border-only-tooltip-mask/</id>
-		<content type="html">Create a border-only Tooltip with a few lines of code
-
-One element
-Support gradient coloration
-Support border-radius
-Optimized with CSS... <a href="https://css-tip.com/border-only-tooltip-mask/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a border-only Tooltip with a few lines of code</p>
+<ul>
+<li>One element</li>
+<li>Support gradient coloration</li>
+<li>Support <code>border-radius</code></li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/ShKAVVX8Lb-583.avif 583w"><source type="image/webp" srcset="/img/ShKAVVX8Lb-583.webp 583w"><img alt="CSS border-only tooltip with gradient coloration" loading="lazy" decoding="async" src="/img/ShKAVVX8Lb-583.png" width="583" height="345"></picture></p>
+ <p><a href="https://css-tip.com/border-only-tooltip-mask/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1133,12 +1415,12 @@ Optimized with CSS... <a href="https://css-tip.com/border-only-tooltip-mask/">Re
 		<link href="https://css-tip.com/rainbow-gradient-animation/"/>
 		<updated>2023-01-31T00:00:00Z</updated>
 		<id>https://css-tip.com/rainbow-gradient-animation/</id>
-		<content type="html">Use the new color interpolation to easily create an infinite rainbow animation using CSS gradients 🌈
-
-One color declaration
-A simple animation
-
-html... <a href="https://css-tip.com/rainbow-gradient-animation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use the new color interpolation to easily create an infinite rainbow animation using CSS gradients 🌈</p>
+<ul>
+<li>One color declaration</li>
+<li>A simple animation</li>
+</ul>
+ <p><a href="https://css-tip.com/rainbow-gradient-animation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1146,15 +1428,14 @@ html... <a href="https://css-tip.com/rainbow-gradient-animation/">Read more</a><
 		<link href="https://css-tip.com/card-reveal-animation/"/>
 		<updated>2023-01-23T00:00:00Z</updated>
 		<id>https://css-tip.com/card-reveal-animation/</id>
-		<content type="html">Add a cool text reveal animation to your image card
-
-Minimal HTML
-No pseudo-element
-Powered by CSS Mask (with fallback for old browsers)
-
-
-
-  See the... <a href="https://css-tip.com/card-reveal-animation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a cool text reveal animation to your image card</p>
+<ul>
+<li>Minimal HTML</li>
+<li>No pseudo-element</li>
+<li>Powered by CSS Mask (with fallback for old browsers)</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/FP23B-Ut5L-744.avif 744w"><source type="image/webp" srcset="/img/FP23B-Ut5L-744.webp 744w"><img alt="Card reveal animation" loading="lazy" decoding="async" src="/img/FP23B-Ut5L-744.png" width="744" height="371"></picture></p>
+ <p><a href="https://css-tip.com/card-reveal-animation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1162,12 +1443,15 @@ Powered by CSS Mask (with fallback for old browsers)
 		<link href="https://css-tip.com/rounded-frame-image/"/>
 		<updated>2022-11-01T00:00:00Z</updated>
 		<id>https://css-tip.com/rounded-frame-image/</id>
-		<content type="html">Add a nice frame around your image using a few lines of code
-
-One element (The &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Only 3 CSS properties
-Optimized with... <a href="https://css-tip.com/rounded-frame-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a nice frame around your image using a few lines of code</p>
+<ul>
+<li>One element (The <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Only 3 CSS properties</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/pLV0Nqd5QD-529.avif 529w"><source type="image/webp" srcset="/img/pLV0Nqd5QD-529.webp 529w"><img alt="An image with a fancy rounded frame" loading="lazy" decoding="async" src="/img/pLV0Nqd5QD-529.png" width="529" height="384"></picture></p>
+ <p><a href="https://css-tip.com/rounded-frame-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1175,8 +1459,9 @@ Optimized with... <a href="https://css-tip.com/rounded-frame-image/">Read more</
 		<link href="https://css-tip.com/number-elements-has-selector/"/>
 		<updated>2022-10-10T00:00:00Z</updated>
 		<id>https://css-tip.com/number-elements-has-selector/</id>
-		<content type="html">Use the :has() selector and style your container based on its number of elements (direct children)
-⚠️ It doesn&#39;t count text nodes. Only... <a href="https://css-tip.com/number-elements-has-selector/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Use the <code>:has()</code> selector and style your container based on its number of elements (direct children)</p>
+<p>⚠️ It doesn't count text nodes. Only tags!</p>
+ <p><a href="https://css-tip.com/number-elements-has-selector/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1184,12 +1469,14 @@ Optimized with... <a href="https://css-tip.com/rounded-frame-image/">Read more</
 		<link href="https://css-tip.com/css-wavy-shape/"/>
 		<updated>2022-09-29T00:00:00Z</updated>
 		<id>https://css-tip.com/css-wavy-shape/</id>
-		<content type="html">How much code is needed to create a Wavy Shape?
-
-1 Property
-2 Gradients
-
-Use an online generator to easily get the code:... <a href="https://css-tip.com/css-wavy-shape/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>How much code is needed to create a Wavy Shape?</p>
+<ul>
+<li>1 Property</li>
+<li>2 Gradients</li>
+</ul>
+<p>Use an online generator to easily get the code: <a href="https://css-generators.com/wavy-shapes/">css-generators.com/wavy-shapes</a></p>
+<p><picture><source type="image/avif" srcset="/img/sPEkQ4KdZP-1036.avif 1036w"><source type="image/webp" srcset="/img/sPEkQ4KdZP-1036.webp 1036w"><img alt="A wavy shape" loading="lazy" decoding="async" src="/img/sPEkQ4KdZP-1036.png" width="1036" height="328"></picture></p>
+ <p><a href="https://css-tip.com/css-wavy-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1197,11 +1484,15 @@ Use an online generator to easily get the code:... <a href="https://css-tip.com/
 		<link href="https://css-tip.com/infinite-image-slider/"/>
 		<updated>2022-09-16T00:00:00Z</updated>
 		<id>https://css-tip.com/infinite-image-slider/</id>
-		<content type="html">Create an infinite image carousel using a few lines of code:
-
-Minimal HTML (&amp;lt;img&amp;gt;s inside a container)
-No duplicated images
-One simple... <a href="https://css-tip.com/infinite-image-slider/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create an infinite image carousel using a few lines of code:</p>
+<ul>
+<li>Minimal HTML (<code>&lt;img&gt;</code>s inside a container)</li>
+<li>No duplicated images</li>
+<li>One simple animation</li>
+<li>Works with any number of images</li>
+<li>Optimized with Sass</li>
+</ul>
+ <p><a href="https://css-tip.com/infinite-image-slider/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1209,12 +1500,14 @@ One simple... <a href="https://css-tip.com/infinite-image-slider/">Read more</a>
 		<link href="https://css-tip.com/css-cut-corners/"/>
 		<updated>2022-09-08T00:00:00Z</updated>
 		<id>https://css-tip.com/css-cut-corners/</id>
-		<content type="html">How much code is needed to cut the four corners of an element? Also known as inverted border-radius
-
-One Property
-One Gradient
-
-Use an online... <a href="https://css-tip.com/css-cut-corners/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>How much code is needed to cut the four corners of an element? Also known as inverted <code>border-radius</code></p>
+<ul>
+<li>One Property</li>
+<li>One Gradient</li>
+</ul>
+<p>Use an online generator to easily get the code: <a href="https://css-generators.com/custom-corners/">css-generators.com/custom-corners</a></p>
+<p><picture><source type="image/avif" srcset="/img/-7jrrE-sC--1000.avif 1000w"><source type="image/webp" srcset="/img/-7jrrE-sC--1000.webp 1000w"><img alt="An element with 4 cut corners" loading="lazy" decoding="async" src="/img/-7jrrE-sC--1000.png" width="1000" height="426"></picture></p>
+ <p><a href="https://css-tip.com/css-cut-corners/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1222,12 +1515,14 @@ Use an online... <a href="https://css-tip.com/css-cut-corners/">Read more</a></c
 		<link href="https://css-tip.com/css-zig-zag-edge/"/>
 		<updated>2022-09-02T00:00:00Z</updated>
 		<id>https://css-tip.com/css-zig-zag-edge/</id>
-		<content type="html">How much code is needed to create a Zig-Zag edge?
-
-One Property
-One Gradient
-
-Use an online generator to easily get the code:... <a href="https://css-tip.com/css-zig-zag-edge/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>How much code is needed to create a Zig-Zag edge?</p>
+<ul>
+<li>One Property</li>
+<li>One Gradient</li>
+</ul>
+<p>Use an online generator to easily get the code: <a href="https://css-generators.com/custom-borders/">css-generators.com/custom-borders</a></p>
+<p><picture><source type="image/avif" srcset="/img/zg-435mZxE-652.avif 652w"><source type="image/webp" srcset="/img/zg-435mZxE-652.webp 652w"><img alt="A CSS-only zig-zag border" loading="lazy" decoding="async" src="/img/zg-435mZxE-652.png" width="652" height="470"></picture></p>
+ <p><a href="https://css-tip.com/css-zig-zag-edge/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1235,12 +1530,16 @@ Use an online generator to easily get the code:... <a href="https://css-tip.com/
 		<link href="https://css-tip.com/fancy-title-divider-2/"/>
 		<updated>2022-08-26T00:00:00Z</updated>
 		<id>https://css-tip.com/fancy-title-divider-2/</id>
-		<content type="html">After the previous one, here is another fancy design for your title
-
-No extra element
-No pseudo element
-No overflow issue
-Less than 15 CSS... <a href="https://css-tip.com/fancy-title-divider-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>After <a href="/fancy-title-divider/">the previous one</a>, here is another fancy design for your title</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo element</li>
+<li>No overflow issue</li>
+<li>Less than 15 CSS declarations</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/n7OScssUaH-952.avif 952w"><source type="image/webp" srcset="/img/n7OScssUaH-952.webp 952w"><img alt="A title with a fancy decoration" loading="lazy" decoding="async" src="/img/n7OScssUaH-952.png" width="952" height="249"></picture></p>
+ <p><a href="https://css-tip.com/fancy-title-divider-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1248,12 +1547,15 @@ Less than 15 CSS... <a href="https://css-tip.com/fancy-title-divider-2/">Read mo
 		<link href="https://css-tip.com/fancy-title-divider/"/>
 		<updated>2022-08-25T00:00:00Z</updated>
 		<id>https://css-tip.com/fancy-title-divider/</id>
-		<content type="html">Turn your titles into a fancy divider using few lines of code
-
-No extra element
-No pseudo element
-No overflow issue
-Easy to update using CSS... <a href="https://css-tip.com/fancy-title-divider/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Turn your titles into a fancy divider using few lines of code</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo element</li>
+<li>No overflow issue</li>
+<li>Easy to update using CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/hp9Tw2Lp2_-961.avif 961w"><source type="image/webp" srcset="/img/hp9Tw2Lp2_-961.webp 961w"><img alt="A title with a fancy decoration" loading="lazy" decoding="async" src="/img/hp9Tw2Lp2_-961.png" width="961" height="262"></picture></p>
+ <p><a href="https://css-tip.com/fancy-title-divider/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1261,11 +1563,15 @@ Easy to update using CSS... <a href="https://css-tip.com/fancy-title-divider/">R
 		<link href="https://css-tip.com/outline-hover-effect/"/>
 		<updated>2022-08-24T00:00:00Z</updated>
 		<id>https://css-tip.com/outline-hover-effect/</id>
-		<content type="html">Add a cool hover effect to your images using a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo element
-Using only the outline... <a href="https://css-tip.com/outline-hover-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a cool hover effect to your images using a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo element</li>
+<li>Using only the outline property</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/OVJbn-NoQH-784.avif 784w"><source type="image/webp" srcset="/img/OVJbn-NoQH-784.webp 784w"><img alt="A fancy hover effect using CSS outline" loading="lazy" decoding="async" src="/img/OVJbn-NoQH-784.png" width="784" height="396"></picture></p>
+ <p><a href="https://css-tip.com/outline-hover-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1273,16 +1579,15 @@ Using only the outline... <a href="https://css-tip.com/outline-hover-effect/">Re
 		<link href="https://css-tip.com/css-zig-zag-panel/"/>
 		<updated>2022-08-22T00:00:00Z</updated>
 		<id>https://css-tip.com/css-zig-zag-panel/</id>
-		<content type="html">Build an expanding image panels with Zig-Zag edges
-
-Minimal HTML
-Works with any number of images
-Optimized with CSS variables
-
-
-Flexbox Demo #
-
-  See... <a href="https://css-tip.com/css-zig-zag-panel/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Build an expanding image panels with Zig-Zag edges</p>
+<ul>
+<li>Minimal HTML</li>
+<li>Works with any number of images</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/J-IOOmg4RA-1365.avif 1365w"><source type="image/webp" srcset="/img/J-IOOmg4RA-1365.webp 1365w"><img alt="A fancy hover effect using outline" loading="lazy" decoding="async" src="/img/J-IOOmg4RA-1365.png" width="1365" height="553"></picture></p>
+<h3 id="flexbox-demo" tabindex="-1">Flexbox Demo <a class="header-anchor" href="#flexbox-demo">#</a></h3>
+ <p><a href="https://css-tip.com/css-zig-zag-panel/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1290,10 +1595,14 @@ Flexbox Demo #
 		<link href="https://css-tip.com/diagonal-reveal-effect/"/>
 		<updated>2022-08-19T00:00:00Z</updated>
 		<id>https://css-tip.com/diagonal-reveal-effect/</id>
-		<content type="html">Reveal your images with a cool hover effect using a few lines of code
-
-Minimal HTML (2 &amp;lt;img&amp;gt; inside a container)
-Less than 15 CSS... <a href="https://css-tip.com/diagonal-reveal-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Reveal your images with a cool hover effect using a few lines of code</p>
+<ul>
+<li>Minimal HTML (2 <code>&lt;img&gt;</code> inside a container)</li>
+<li>Less than 15 CSS declaration</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/jLPv626qI1-886.avif 886w"><source type="image/webp" srcset="/img/jLPv626qI1-886.webp 886w"><img alt="A fancy hover effect using CSS clip-path" loading="lazy" decoding="async" src="/img/jLPv626qI1-886.png" width="886" height="455"></picture></p>
+ <p><a href="https://css-tip.com/diagonal-reveal-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1301,15 +1610,15 @@ Less than 15 CSS... <a href="https://css-tip.com/diagonal-reveal-effect/">Read m
 		<link href="https://css-tip.com/css-speech-bubble/"/>
 		<updated>2022-08-18T00:00:00Z</updated>
 		<id>https://css-tip.com/css-speech-bubble/</id>
-		<content type="html">Create a Speech Bubble using a few lines of code
-
-One element
-No pseudo-element
-Only 3 CSS properties
-Optimized with CSS variables
-
-
-.bubble {  --r:... <a href="https://css-tip.com/css-speech-bubble/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a Speech Bubble using a few lines of code</p>
+<ul>
+<li>One element</li>
+<li>No pseudo-element</li>
+<li>Only 3 CSS properties</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/wRJV30L5yB-647.avif 647w"><source type="image/webp" srcset="/img/wRJV30L5yB-647.webp 647w"><img alt="A speech bubble made with CSS" loading="lazy" decoding="async" src="/img/wRJV30L5yB-647.png" width="647" height="455"></picture></p>
+ <p><a href="https://css-tip.com/css-speech-bubble/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1317,14 +1626,14 @@ Optimized with CSS variables
 		<link href="https://css-tip.com/css-dashed-border/"/>
 		<updated>2022-08-10T00:00:00Z</updated>
 		<id>https://css-tip.com/css-dashed-border/</id>
-		<content type="html">Create a custom dashed border using a few lines of code.
-
-No extra element
-Less than 8 CSS properties
-Easy to update using CSS variables
-
-
-.dashed { ... <a href="https://css-tip.com/css-dashed-border/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a custom dashed border using a few lines of code.</p>
+<ul>
+<li>No extra element</li>
+<li>Less than 8 CSS properties</li>
+<li>Easy to update using CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/TSX-OaIKeT-553.avif 553w"><source type="image/webp" srcset="/img/TSX-OaIKeT-553.webp 553w"><img alt="A custom dashed border" loading="lazy" decoding="async" src="/img/TSX-OaIKeT-553.png" width="553" height="391"></picture></p>
+ <p><a href="https://css-tip.com/css-dashed-border/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1332,11 +1641,15 @@ Easy to update using CSS variables
 		<link href="https://css-tip.com/number-inside-box/"/>
 		<updated>2022-08-02T00:00:00Z</updated>
 		<id>https://css-tip.com/number-inside-box/</id>
-		<content type="html">Make your numbers look fancy by placing each digit inside its own box.
-
-Only one element
-Easy to control using CSS variables
-Two versions: Full &amp;amp;... <a href="https://css-tip.com/number-inside-box/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Make your numbers look fancy by placing each digit inside its own box.</p>
+<ul>
+<li>Only one element</li>
+<li>Easy to control using CSS variables</li>
+<li>Two versions: Full &amp; Border-only</li>
+<li>No restriction on the number length</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/wYhO_K0mdr-879.avif 879w"><source type="image/webp" srcset="/img/wYhO_K0mdr-879.webp 879w"><img alt="A number where each digit is inside a box" loading="lazy" decoding="async" src="/img/wYhO_K0mdr-879.png" width="879" height="463"></picture></p>
+ <p><a href="https://css-tip.com/number-inside-box/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1344,12 +1657,14 @@ Two versions: Full &amp;amp;... <a href="https://css-tip.com/number-inside-box/"
 		<link href="https://css-tip.com/back-to-top/"/>
 		<updated>2022-07-27T00:00:00Z</updated>
 		<id>https://css-tip.com/back-to-top/</id>
-		<content type="html">Create a CSS-only &amp;quot;Back To Top&amp;quot; button with a simple code
-
-No JavaScript
-Control when the button appears
-Smooth scroll on click
-Powered by... <a href="https://css-tip.com/back-to-top/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a CSS-only &quot;Back To Top&quot; button with a simple code</p>
+<ul>
+<li>No JavaScript</li>
+<li>Control when the button appears</li>
+<li>Smooth scroll on click</li>
+<li>Powered by CSS grid and sticky position</li>
+</ul>
+ <p><a href="https://css-tip.com/back-to-top/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1357,12 +1672,14 @@ Powered by... <a href="https://css-tip.com/back-to-top/">Read more</a></content>
 		<link href="https://css-tip.com/sliding-navigation-menu/"/>
 		<updated>2022-07-22T00:00:00Z</updated>
 		<id>https://css-tip.com/sliding-navigation-menu/</id>
-		<content type="html">Create a simple navigation menu with a sliding effect
-
-Minimal HTML code
-No duplicated text
-Less than 20 CSS declarations
-Optimized with CSS... <a href="https://css-tip.com/sliding-navigation-menu/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a simple navigation menu with a sliding effect</p>
+<ul>
+<li>Minimal HTML code</li>
+<li>No duplicated text</li>
+<li>Less than 20 CSS declarations</li>
+<li>Optimized with CSS variables</li>
+</ul>
+ <p><a href="https://css-tip.com/sliding-navigation-menu/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1370,9 +1687,9 @@ Optimized with CSS... <a href="https://css-tip.com/sliding-navigation-menu/">Rea
 		<link href="https://css-tip.com/css-dashed-lines/"/>
 		<updated>2022-07-13T00:00:00Z</updated>
 		<id>https://css-tip.com/css-dashed-lines/</id>
-		<content type="html">Create dashed lines using only one gradient
-
-html {  --c: #333; /* color */  --t: 2px;  /* thickness of the lines */  --g: 50px; /* gap between lines... <a href="https://css-tip.com/css-dashed-lines/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create dashed lines using only one gradient</p>
+<p><picture><source type="image/avif" srcset="/img/0tFDcIlduB-739.avif 739w"><source type="image/webp" srcset="/img/0tFDcIlduB-739.webp 739w"><img alt="A background with dashed lines" loading="lazy" decoding="async" src="/img/0tFDcIlduB-739.png" width="739" height="367"></picture></p>
+ <p><a href="https://css-tip.com/css-dashed-lines/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1380,11 +1697,14 @@ html {  --c: #333; /* color */  --t: 2px;  /* thickness of the lines */  --g: 50
 		<link href="https://css-tip.com/heart-shape-animation/"/>
 		<updated>2022-07-04T00:00:00Z</updated>
 		<id>https://css-tip.com/heart-shape-animation/</id>
-		<content type="html">Add a beautiful animation to a Heart shape and reveal your best images 🥰 😍
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Less than... <a href="https://css-tip.com/heart-shape-animation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a beautiful animation to a <a href="/image-heart-shape/">Heart shape</a> and reveal your best images 🥰 😍</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Less than 10 declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/3leNleYhaO-780.avif 780w"><source type="image/webp" srcset="/img/3leNleYhaO-780.webp 780w"><img alt="An image with a heart shape" loading="lazy" decoding="async" src="/img/3leNleYhaO-780.png" width="780" height="374"></picture></p>
+ <p><a href="https://css-tip.com/heart-shape-animation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1392,11 +1712,14 @@ Less than... <a href="https://css-tip.com/heart-shape-animation/">Read more</a><
 		<link href="https://css-tip.com/image-heart-shape/"/>
 		<updated>2022-07-01T00:00:00Z</updated>
 		<id>https://css-tip.com/image-heart-shape/</id>
-		<content type="html">Turn your favorite image into a Heart 💖 using a few lines of code
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo-element
-Only two CSS... <a href="https://css-tip.com/image-heart-shape/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Turn your favorite image into a Heart 💖 using a few lines of code</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Only two CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/VXwd44Un44-698.avif 698w"><source type="image/webp" srcset="/img/VXwd44Un44-698.webp 698w"><img alt="An image with a heart shape" loading="lazy" decoding="async" src="/img/VXwd44Un44-698.png" width="698" height="340"></picture></p>
+ <p><a href="https://css-tip.com/image-heart-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1404,13 +1727,16 @@ Only two CSS... <a href="https://css-tip.com/image-heart-shape/">Read more</a></
 		<link href="https://css-tip.com/horizontal-line-title/"/>
 		<updated>2022-06-24T00:00:00Z</updated>
 		<id>https://css-tip.com/horizontal-line-title/</id>
-		<content type="html">Add horizontal lines around your title using border-image
-
-No extra element
-No pseudo-element
-No overflow issue
-Only two CSS properties
-Optimized with... <a href="https://css-tip.com/horizontal-line-title/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add horizontal lines around your title using <code>border-image</code></p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>No overflow issue</li>
+<li>Only two CSS properties</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/YZVy8KXhip-855.avif 855w"><source type="image/webp" srcset="/img/YZVy8KXhip-855.webp 855w"><img alt="Titles with horizontal lines on the sides" loading="lazy" decoding="async" src="/img/YZVy8KXhip-855.png" width="855" height="251"></picture></p>
+ <p><a href="https://css-tip.com/horizontal-line-title/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1418,14 +1744,14 @@ Optimized with... <a href="https://css-tip.com/horizontal-line-title/">Read more
 		<link href="https://css-tip.com/float-bottom-corner/"/>
 		<updated>2022-06-22T00:00:00Z</updated>
 		<id>https://css-tip.com/float-bottom-corner/</id>
-		<content type="html">Make an element float to the bottom corner of your text content
-
-Minimal HTML code
-No JavaScript
-No media query
-
-
-&amp;lt;div class=&quot;wrapper&quot;&gt;  &amp;lt;p&gt;   ... <a href="https://css-tip.com/float-bottom-corner/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Make an element float to the bottom corner of your text content</p>
+<ul>
+<li>Minimal HTML code</li>
+<li>No JavaScript</li>
+<li>No media query</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/yjys4W7DiV-816.avif 816w"><source type="image/webp" srcset="/img/yjys4W7DiV-816.webp 816w"><img alt="An image float at the bottom corner of the text" loading="lazy" decoding="async" src="/img/yjys4W7DiV-816.png" width="816" height="312"></picture></p>
+ <p><a href="https://css-tip.com/float-bottom-corner/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1433,10 +1759,15 @@ No media query
 		<link href="https://css-tip.com/overflowing-underline-2/"/>
 		<updated>2022-06-20T00:00:00Z</updated>
 		<id>https://css-tip.com/overflowing-underline-2/</id>
-		<content type="html">Improving the previous effect to consider an underline with a gradient coloration that extend to the edge of the screen
-
-No extra element
-No... <a href="https://css-tip.com/overflowing-underline-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Improving <a href="/overflowing-underline/">the previous effect</a> to consider an underline with a gradient coloration that extend to the edge of the screen</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>No overflow issue</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/BnrTOpZYpC-1248.avif 1248w"><source type="image/webp" srcset="/img/BnrTOpZYpC-1248.webp 1248w"><img alt="An extended underline to left and the right" loading="lazy" decoding="async" src="/img/BnrTOpZYpC-1248.png" width="1248" height="467"></picture></p>
+ <p><a href="https://css-tip.com/overflowing-underline-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1444,10 +1775,15 @@ No... <a href="https://css-tip.com/overflowing-underline-2/">Read more</a></cont
 		<link href="https://css-tip.com/overflowing-underline/"/>
 		<updated>2022-06-16T00:00:00Z</updated>
 		<id>https://css-tip.com/overflowing-underline/</id>
-		<content type="html">Add an underline to your title and extend it to the right (or left) edge of the screen whatever the element/container size
-
-No extra element
-No... <a href="https://css-tip.com/overflowing-underline/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add an underline to your title and extend it to the right (or left) edge of the screen whatever the element/container size</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>No overflow issue</li>
+<li>Only one CSS property</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/LTa4N02Chk-1352.avif 1352w"><source type="image/webp" srcset="/img/LTa4N02Chk-1352.webp 1352w"><img alt="An extended underline to left and the right" loading="lazy" decoding="async" src="/img/LTa4N02Chk-1352.png" width="1352" height="521"></picture></p>
+ <p><a href="https://css-tip.com/overflowing-underline/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1455,8 +1791,9 @@ No... <a href="https://css-tip.com/overflowing-underline/">Read more</a></conten
 		<link href="https://css-tip.com/css-custom-cursor/"/>
 		<updated>2022-06-14T00:00:00Z</updated>
 		<id>https://css-tip.com/css-custom-cursor/</id>
-		<content type="html">Create a custom cursor using CSS without external resources. Style your cursor like you do with a simple &amp;lt;div&amp;gt;!
-Powered by... <a href="https://css-tip.com/css-custom-cursor/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a custom cursor using CSS without external resources. Style your cursor like you do with a simple <code>&lt;div&gt;</code>!</p>
+<p>Powered by CSS-in-SVG-in-CSS</p>
+ <p><a href="https://css-tip.com/css-custom-cursor/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1464,12 +1801,15 @@ Powered by... <a href="https://css-tip.com/css-custom-cursor/">Read more</a></co
 		<link href="https://css-tip.com/overflowing-background/"/>
 		<updated>2022-06-09T00:00:00Z</updated>
 		<id>https://css-tip.com/overflowing-background/</id>
-		<content type="html">Extend the background of an element outside of its container to cover the full screen width
-
-No extra element
-No pseudo-element
-No overflow issue
-Only... <a href="https://css-tip.com/overflowing-background/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Extend the background of an element outside of its container to cover the full screen width</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>No overflow issue</li>
+<li>Only one CSS declaration</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/hluZLXzrbs-1353.avif 1353w"><source type="image/webp" srcset="/img/hluZLXzrbs-1353.webp 1353w"><img alt="An overflowing background" loading="lazy" decoding="async" src="/img/hluZLXzrbs-1353.png" width="1353" height="299"></picture></p>
+ <p><a href="https://css-tip.com/overflowing-background/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1477,9 +1817,9 @@ Only... <a href="https://css-tip.com/overflowing-background/">Read more</a></con
 		<link href="https://css-tip.com/css-graph-paper/"/>
 		<updated>2022-06-07T00:00:00Z</updated>
 		<id>https://css-tip.com/css-graph-paper/</id>
-		<content type="html">Create a Graph Paper design using only 2 gradients
-
-html {  --s: 100px; /* control the size */    --_g: #0000 90deg,#366 0;  background:    ... <a href="https://css-tip.com/css-graph-paper/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a Graph Paper design using only 2 gradients</p>
+<p><picture><source type="image/avif" srcset="/img/SVxfRQPx9J-461.avif 461w"><source type="image/webp" srcset="/img/SVxfRQPx9J-461.webp 461w"><img alt="A graph paper pattern" loading="lazy" decoding="async" src="/img/SVxfRQPx9J-461.png" width="461" height="373"></picture></p>
+ <p><a href="https://css-tip.com/css-graph-paper/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1487,16 +1827,15 @@ html {  --s: 100px; /* control the size */    --_g: #0000 90deg,#366 0;  backgro
 		<link href="https://css-tip.com/responsive-hexagon-grid/"/>
 		<updated>2022-06-03T00:00:00Z</updated>
 		<id>https://css-tip.com/responsive-hexagon-grid/</id>
-		<content type="html">Create a fully responsive grid of Hexagon shapes (and more!)
-
-No media query
-No JavaScript
-Minimal HTML code
-Easy to control using CSS variables
-
-
-
- ... <a href="https://css-tip.com/responsive-hexagon-grid/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a fully responsive grid of Hexagon shapes (and more!)</p>
+<ul>
+<li>No media query</li>
+<li>No JavaScript</li>
+<li>Minimal HTML code</li>
+<li>Easy to control using CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/EVGROkluQ0-1067.avif 1067w"><source type="image/webp" srcset="/img/EVGROkluQ0-1067.webp 1067w"><img alt="responsive grid of Hexagon shapes" loading="lazy" decoding="async" src="/img/EVGROkluQ0-1067.png" width="1067" height="519"></picture></p>
+ <p><a href="https://css-tip.com/responsive-hexagon-grid/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1504,15 +1843,13 @@ Easy to control using CSS variables
 		<link href="https://css-tip.com/wavy-text-animation-2/"/>
 		<updated>2022-04-20T00:00:00Z</updated>
 		<id>https://css-tip.com/wavy-text-animation-2/</id>
-		<content type="html">Improving the previous CSS-only Wavy animation
-
-Adding another wave
-Support multi-line of text
-
-
-
-  See the Pen 
-  Multi-line CSS only wavy text by... <a href="https://css-tip.com/wavy-text-animation-2/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Improving <a href="/wavy-text-animation">the previous CSS-only Wavy animation</a></p>
+<ul>
+<li>Adding another wave</li>
+<li>Support multi-line of text</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/h2ywDF7YmN-926.avif 926w"><source type="image/webp" srcset="/img/h2ywDF7YmN-926.webp 926w"><img alt="A text with a wavy background coloration" loading="lazy" decoding="async" src="/img/h2ywDF7YmN-926.png" width="926" height="324"></picture></p>
+ <p><a href="https://css-tip.com/wavy-text-animation-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1520,16 +1857,16 @@ Support multi-line of text
 		<link href="https://css-tip.com/wavy-text-animation/"/>
 		<updated>2022-04-19T00:00:00Z</updated>
 		<id>https://css-tip.com/wavy-text-animation/</id>
-		<content type="html">Create a Wavy text animation using a few lines of code
-
-One element
-No pseudo element
-No duplicated text
-No SVG
-Optimized with CSS variables
-
-
-h1 { ... <a href="https://css-tip.com/wavy-text-animation/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a Wavy text animation using a few lines of code</p>
+<ul>
+<li>One element</li>
+<li>No pseudo element</li>
+<li>No duplicated text</li>
+<li>No SVG</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/KcQEe5l1ce-791.avif 791w"><source type="image/webp" srcset="/img/KcQEe5l1ce-791.webp 791w"><img alt="A text with a wavy background coloration" loading="lazy" decoding="async" src="/img/KcQEe5l1ce-791.png" width="791" height="220"></picture></p>
+ <p><a href="https://css-tip.com/wavy-text-animation/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1537,11 +1874,15 @@ h1 { ... <a href="https://css-tip.com/wavy-text-animation/">Read more</a></conte
 		<link href="https://css-tip.com/image-color-overlay/"/>
 		<updated>2022-04-07T00:00:00Z</updated>
 		<id>https://css-tip.com/image-color-overlay/</id>
-		<content type="html">Add a color overlay above your image using only 3 declarations
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo element
-Works with rounded... <a href="https://css-tip.com/image-color-overlay/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a color overlay above your image using only 3 declarations</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo element</li>
+<li>Works with rounded image</li>
+</ul>
+<p>You can also have a cool transition on hover</p>
+<p><picture><source type="image/avif" srcset="/img/MkQIDXOEy6-895.avif 895w"><source type="image/webp" srcset="/img/MkQIDXOEy6-895.webp 895w"><img alt="A color overlay above an image" loading="lazy" decoding="async" src="/img/MkQIDXOEy6-895.png" width="895" height="301"></picture></p>
+ <p><a href="https://css-tip.com/image-color-overlay/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1549,12 +1890,15 @@ Works with rounded... <a href="https://css-tip.com/image-color-overlay/">Read mo
 		<link href="https://css-tip.com/tooltip-mask/"/>
 		<updated>2022-04-04T00:00:00Z</updated>
 		<id>https://css-tip.com/tooltip-mask/</id>
-		<content type="html">Create a Tooltip shape with rounded corners using a few lines of code
-
-No extra element
-No pseudo element
-Works with any background
-Easy to control... <a href="https://css-tip.com/tooltip-mask/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a Tooltip shape with rounded corners using a few lines of code</p>
+<ul>
+<li>No extra element</li>
+<li>No pseudo element</li>
+<li>Works with any background</li>
+<li>Easy to control using CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/pWlhh68H8B-655.avif 655w"><source type="image/webp" srcset="/img/pWlhh68H8B-655.webp 655w"><img alt="A tooltip with gradient coloration" loading="lazy" decoding="async" src="/img/pWlhh68H8B-655.png" width="655" height="331"></picture></p>
+ <p><a href="https://css-tip.com/tooltip-mask/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1562,12 +1906,10 @@ Easy to control... <a href="https://css-tip.com/tooltip-mask/">Read more</a></co
 		<link href="https://css-tip.com/section-divider/"/>
 		<updated>2022-03-07T00:00:00Z</updated>
 		<id>https://css-tip.com/section-divider/</id>
-		<content type="html">Create a cool divider between your sections in no time using an online generator.
-css-generators.com/section-divider
-
-
-  See the Pen 
-  Section... <a href="https://css-tip.com/section-divider/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a cool divider between your sections in no time using an online generator.</p>
+<p><a href="http://css-generators.com/section-divider/">css-generators.com/section-divider</a></p>
+<p><picture><source type="image/avif" srcset="/img/zdDSb3hbQf-925.avif 925w"><source type="image/webp" srcset="/img/zdDSb3hbQf-925.webp 925w"><img alt="different section dividers" loading="lazy" decoding="async" src="/img/zdDSb3hbQf-925.png" width="925" height="296"></picture></p>
+ <p><a href="https://css-tip.com/section-divider/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1575,14 +1917,14 @@ css-generators.com/section-divider
 		<link href="https://css-tip.com/grid-dashed-lines/"/>
 		<updated>2022-02-28T00:00:00Z</updated>
 		<id>https://css-tip.com/grid-dashed-lines/</id>
-		<content type="html">Create a grid of dashed lines using a few lines of code
-
-One property
-Two gradients
-Easy to adjust using CSS variables
-
-
-html {  --c1: black;    --c2:... <a href="https://css-tip.com/grid-dashed-lines/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a grid of dashed lines using a few lines of code</p>
+<ul>
+<li>One property</li>
+<li>Two gradients</li>
+<li>Easy to adjust using CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/wC0K2mQ2cO-550.avif 550w"><source type="image/webp" srcset="/img/wC0K2mQ2cO-550.webp 550w"><img alt="A grid of dashed lines" loading="lazy" decoding="async" src="/img/wC0K2mQ2cO-550.png" width="550" height="358"></picture></p>
+ <p><a href="https://css-tip.com/grid-dashed-lines/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1590,11 +1932,15 @@ html {  --c1: black;    --c2:... <a href="https://css-tip.com/grid-dashed-lines/
 		<link href="https://css-tip.com/css-zoom-effect/"/>
 		<updated>2022-02-17T00:00:00Z</updated>
 		<id>https://css-tip.com/css-zoom-effect/</id>
-		<content type="html">Apply a zoom effect to your image with a few lines of code:
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No duplicated images
-Only three CSS... <a href="https://css-tip.com/css-zoom-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Apply a zoom effect to your image with a few lines of code:</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No duplicated images</li>
+<li>Only three CSS properties</li>
+<li>Easy to adjust using CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/qjURBW_mM7-1055.avif 1055w"><source type="image/webp" srcset="/img/qjURBW_mM7-1055.webp 1055w"><img alt="A zoom effect on images" loading="lazy" decoding="async" src="/img/qjURBW_mM7-1055.png" width="1055" height="343"></picture></p>
+ <p><a href="https://css-tip.com/css-zoom-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1602,12 +1948,15 @@ Only three CSS... <a href="https://css-tip.com/css-zoom-effect/">Read more</a></
 		<link href="https://css-tip.com/3d-image-effect/"/>
 		<updated>2022-02-11T00:00:00Z</updated>
 		<id>https://css-tip.com/3d-image-effect/</id>
-		<content type="html">Add a 3D effect to your images with a few lines of code:
-
-No extra element (only the &amp;lt;img&amp;gt; tag)
-No pseudo element
-No duplicated image
-A cool... <a href="https://css-tip.com/3d-image-effect/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a 3D effect to your images with a few lines of code:</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo element</li>
+<li>No duplicated image</li>
+<li>A cool animation on hover</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/qbhJ78Mwvb-1137.avif 1137w"><source type="image/webp" srcset="/img/qbhJ78Mwvb-1137.webp 1137w"><img alt="Images with 3D effect" loading="lazy" decoding="async" src="/img/qbhJ78Mwvb-1137.png" width="1137" height="356"></picture></p>
+ <p><a href="https://css-tip.com/3d-image-effect/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1615,11 +1964,15 @@ A cool... <a href="https://css-tip.com/3d-image-effect/">Read more</a></content>
 		<link href="https://css-tip.com/css-ribbon/"/>
 		<updated>2022-02-07T00:00:00Z</updated>
 		<id>https://css-tip.com/css-ribbon/</id>
-		<content type="html">Create a cool Ribbon using one element and a few lines of code.
-
-Easy to update using CSS variables
-No hard-coded values
-Works with any text... <a href="https://css-tip.com/css-ribbon/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a cool Ribbon using one element and a few lines of code.</p>
+<ul>
+<li>Easy to update using CSS variables</li>
+<li>No hard-coded values</li>
+<li>Works with any text content</li>
+<li>Works with multi-lines of text</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/3e5JR-Qjp--665.avif 665w"><source type="image/webp" srcset="/img/3e5JR-Qjp--665.webp 665w"><img alt="A CSS ribbon" loading="lazy" decoding="async" src="/img/3e5JR-Qjp--665.png" width="665" height="322"></picture></p>
+ <p><a href="https://css-tip.com/css-ribbon/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1627,13 +1980,13 @@ Works with any text... <a href="https://css-tip.com/css-ribbon/">Read more</a></
 		<link href="https://css-tip.com/simple-css-loader/"/>
 		<updated>2022-02-02T00:00:00Z</updated>
 		<id>https://css-tip.com/simple-css-loader/</id>
-		<content type="html">Create a CSS-only loader with a simple code.
-
-One &amp;lt;div&amp;gt;
-Less than 10 CSS declarations
-
-
-.loader {  width: 120px;        /* the size */  padding:... <a href="https://css-tip.com/simple-css-loader/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a CSS-only loader with a simple code.</p>
+<ul>
+<li>One <code>&lt;div&gt;</code></li>
+<li>Less than 10 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/_mk16Cda-f-433.avif 433w"><source type="image/webp" srcset="/img/_mk16Cda-f-433.webp 433w"><img alt="A CSS only loader" loading="lazy" decoding="async" src="/img/_mk16Cda-f-433.png" width="433" height="222"></picture></p>
+ <p><a href="https://css-tip.com/simple-css-loader/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1641,13 +1994,16 @@ Less than 10 CSS declarations
 		<link href="https://css-tip.com/rounded-dashed-underline/"/>
 		<updated>2022-02-01T00:00:00Z</updated>
 		<id>https://css-tip.com/rounded-dashed-underline/</id>
-		<content type="html">Add a nice rounded dashed underline to your text.
-
-No SVG, No image
-No extra element
-No pseudo-element
-Works with multi-lines of text
-Easy to update... <a href="https://css-tip.com/rounded-dashed-underline/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Add a nice rounded dashed underline to your text.</p>
+<ul>
+<li>No SVG, No image</li>
+<li>No extra element</li>
+<li>No pseudo-element</li>
+<li>Works with multi-lines of text</li>
+<li>Easy to update using CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/DvDlgrjXGq-721.avif 721w"><source type="image/webp" srcset="/img/DvDlgrjXGq-721.webp 721w"><img alt="A text with a rounded dashed underline" loading="lazy" decoding="async" src="/img/DvDlgrjXGq-721.png" width="721" height="317"></picture></p>
+ <p><a href="https://css-tip.com/rounded-dashed-underline/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1655,11 +2011,14 @@ Easy to update... <a href="https://css-tip.com/rounded-dashed-underline/">Read m
 		<link href="https://css-tip.com/equal-width-button/"/>
 		<updated>2022-01-20T00:00:00Z</updated>
 		<id>https://css-tip.com/equal-width-button/</id>
-		<content type="html">Make a set of buttons equal in width to the largest one using a few lines of code.
-
-No JavaScript
-Works with any number of button
-Easily switch... <a href="https://css-tip.com/equal-width-button/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Make a set of buttons equal in width to the largest one using a few lines of code.</p>
+<ul>
+<li>No JavaScript</li>
+<li>Works with any number of button</li>
+<li>Easily switch between the horizontal and vertical configuration</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/c_xIq51nxq-690.avif 690w"><source type="image/webp" srcset="/img/c_xIq51nxq-690.webp 690w"><img alt="eqaul width buttons" loading="lazy" decoding="async" src="/img/c_xIq51nxq-690.png" width="690" height="250"></picture></p>
+ <p><a href="https://css-tip.com/equal-width-button/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1667,9 +2026,9 @@ Easily switch... <a href="https://css-tip.com/equal-width-button/">Read more</a>
 		<link href="https://css-tip.com/stick-element-grid/"/>
 		<updated>2022-01-13T00:00:00Z</updated>
 		<id>https://css-tip.com/stick-element-grid/</id>
-		<content type="html">Make an element stay at the top-right corner of your responsive grid using one instruction.
-
-grid-area: 1/auto/auto/-1;  /* OR... <a href="https://css-tip.com/stick-element-grid/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Make an element stay at the top-right corner of your responsive grid using one instruction.</p>
+<p><picture><source type="image/avif" srcset="/img/dG5RitB-l6-827.avif 827w"><source type="image/webp" srcset="/img/dG5RitB-l6-827.webp 827w"><img alt="A grid with an element anchored on the top right corner" loading="lazy" decoding="async" src="/img/dG5RitB-l6-827.png" width="827" height="322"></picture></p>
+ <p><a href="https://css-tip.com/stick-element-grid/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1677,9 +2036,9 @@ grid-area: 1/auto/auto/-1;  /* OR... <a href="https://css-tip.com/stick-element-
 		<link href="https://css-tip.com/matrix-cube/"/>
 		<updated>2022-01-03T00:00:00Z</updated>
 		<id>https://css-tip.com/matrix-cube/</id>
-		<content type="html">Create a matrix of cubes using only one &amp;lt;div&amp;gt;. Yes it&#39;s possible!
-
-.cube {  --m: 4; /* number of columns */  --n: 5; /* number of rows */ ... <a href="https://css-tip.com/matrix-cube/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a matrix of cubes using only one <code>&lt;div&gt;</code>. Yes it's possible!</p>
+<p><picture><source type="image/avif" srcset="/img/cpOE5xlsc4-453.avif 453w"><source type="image/webp" srcset="/img/cpOE5xlsc4-453.webp 453w"><img alt="A matrix of cube" loading="lazy" decoding="async" src="/img/cpOE5xlsc4-453.png" width="453" height="355"></picture></p>
+ <p><a href="https://css-tip.com/matrix-cube/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1687,9 +2046,9 @@ grid-area: 1/auto/auto/-1;  /* OR... <a href="https://css-tip.com/stick-element-
 		<link href="https://css-tip.com/matrix-image/"/>
 		<updated>2022-01-02T00:00:00Z</updated>
 		<id>https://css-tip.com/matrix-image/</id>
-		<content type="html">Cut your image into small pieces using one CSS instruction.
-
-img {  --n: 10; /* number of rows */  --m: 15; /* number of columns */  --gap: 3px; ... <a href="https://css-tip.com/matrix-image/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Cut your image into small pieces using one CSS instruction.</p>
+<p><picture><source type="image/avif" srcset="/img/X_UmozURIl-628.avif 628w"><source type="image/webp" srcset="/img/X_UmozURIl-628.webp 628w"><img alt="A image cut into small pieces" loading="lazy" decoding="async" src="/img/X_UmozURIl-628.png" width="628" height="422"></picture></p>
+ <p><a href="https://css-tip.com/matrix-image/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1697,9 +2056,9 @@ img {  --n: 10; /* number of rows */  --m: 15; /* number of columns */  --gap: 3
 		<link href="https://css-tip.com/image-thumbnail/"/>
 		<updated>2021-12-15T00:00:00Z</updated>
 		<id>https://css-tip.com/image-thumbnail/</id>
-		<content type="html">A big image + thumbnails using CSS Grid. Same code for both the horizontal and vertical layout.
-
-&amp;lt;div class=&quot;grid&quot;&gt;  &amp;lt;img src=&quot;&quot; alt=&quot;&quot;&gt; ... <a href="https://css-tip.com/image-thumbnail/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>A big image + thumbnails using CSS Grid. Same code for both the horizontal and vertical layout.</p>
+<p><picture><source type="image/avif" srcset="/img/wXkI80JM_S-439.avif 439w"><source type="image/webp" srcset="/img/wXkI80JM_S-439.webp 439w"><img alt="A big image plus thumbnail" loading="lazy" decoding="async" src="/img/wXkI80JM_S-439.png" width="439" height="490"></picture></p>
+ <p><a href="https://css-tip.com/image-thumbnail/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1707,12 +2066,14 @@ img {  --n: 10; /* number of rows */  --m: 15; /* number of columns */  --gap: 3
 		<link href="https://css-tip.com/full-screen-height/"/>
 		<updated>2021-12-15T00:00:00Z</updated>
 		<id>https://css-tip.com/full-screen-height/</id>
-		<content type="html">Make your container fill all the screen height
-
-No cascading height:100%
-No side effects of the 100vh
-Works with the default margin of &amp;lt;body&amp;gt;
-No... <a href="https://css-tip.com/full-screen-height/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Make your container fill all the screen height</p>
+<ul>
+<li>No cascading <code>height:100%</code></li>
+<li>No side effects of the <code>100vh</code></li>
+<li>Works with the default margin of <code>&lt;body&gt;</code></li>
+<li>No overflow issue. The height will grow to fit the content.</li>
+</ul>
+ <p><a href="https://css-tip.com/full-screen-height/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1720,10 +2081,9 @@ No... <a href="https://css-tip.com/full-screen-height/">Read more</a></content>
 		<link href="https://css-tip.com/center-max-width/"/>
 		<updated>2021-12-10T00:00:00Z</updated>
 		<id>https://css-tip.com/center-max-width/</id>
-		<content type="html">Set max-width and center your block element with one CSS declaration using margin-inline and max().
-
-margin-inline: max(0px,50% - 800px/2);
-You can... <a href="https://css-tip.com/center-max-width/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Set <code>max-width</code> and center your block element with one CSS declaration using <code>margin-inline</code> and <code>max()</code>.</p>
+<p><picture><source type="image/avif" srcset="/img/MwCcy4QIP0-746.avif 746w"><source type="image/webp" srcset="/img/MwCcy4QIP0-746.webp 746w"><img alt="Centering and settin a max-width using max()" loading="lazy" decoding="async" src="/img/MwCcy4QIP0-746.png" width="746" height="387"></picture></p>
+ <p><a href="https://css-tip.com/center-max-width/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1731,9 +2091,9 @@ You can... <a href="https://css-tip.com/center-max-width/">Read more</a></conten
 		<link href="https://css-tip.com/css-menu-icon/"/>
 		<updated>2021-12-07T00:00:00Z</updated>
 		<id>https://css-tip.com/css-menu-icon/</id>
-		<content type="html">Create a CSS-only hamburger menu icon with 2 gradients. Adjust one value to control the size.
-
-.menu {  width:80px; /* update this to control the size... <a href="https://css-tip.com/css-menu-icon/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a CSS-only hamburger menu icon with 2 gradients. Adjust one value to control the size.</p>
+<p><picture><source type="image/avif" srcset="/img/rjTIoal23k-228.avif 228w"><source type="image/webp" srcset="/img/rjTIoal23k-228.webp 228w"><img alt="A CSS-only menu icon" loading="lazy" decoding="async" src="/img/rjTIoal23k-228.png" width="228" height="137"></picture></p>
+ <p><a href="https://css-tip.com/css-menu-icon/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1741,11 +2101,9 @@ You can... <a href="https://css-tip.com/center-max-width/">Read more</a></conten
 		<link href="https://css-tip.com/multi-line-text-decoration/"/>
 		<updated>2021-11-30T00:00:00Z</updated>
 		<id>https://css-tip.com/multi-line-text-decoration/</id>
-		<content type="html">Give your your text a fancy looking using box-decoration-break: clone and CSS gradients.
-
-
-  See the Pen 
-  gradient + box-decoration-break by Temani... <a href="https://css-tip.com/multi-line-text-decoration/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Give your your text a fancy looking using <code>box-decoration-break: clone</code> and CSS gradients.</p>
+<p><picture><source type="image/avif" srcset="/img/ZcenS0lT81-680.avif 680w"><source type="image/webp" srcset="/img/ZcenS0lT81-680.webp 680w"><img alt="A CSS-only menu icon" loading="lazy" decoding="async" src="/img/ZcenS0lT81-680.jpeg" width="680" height="277"></picture></p>
+ <p><a href="https://css-tip.com/multi-line-text-decoration/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1753,7 +2111,9 @@ You can... <a href="https://css-tip.com/center-max-width/">Read more</a></conten
 		<link href="https://css-tip.com/dashed-rounded-border/"/>
 		<updated>2021-11-25T00:00:00Z</updated>
 		<id>https://css-tip.com/dashed-rounded-border/</id>
-		<content type="html">Create a circular dashed border with full control over the dashes. Only one element and a few lines of code are required.  Simply update the CSS... <a href="https://css-tip.com/dashed-rounded-border/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a circular dashed border with full control over the dashes. Only one element and a few lines of code are required.  Simply update the CSS variables to control the design of the border.</p>
+<p><picture><source type="image/avif" srcset="/img/CUX7aRZ0ZR-437.avif 437w"><source type="image/webp" srcset="/img/CUX7aRZ0ZR-437.webp 437w"><img alt="Circular dashed border " loading="lazy" decoding="async" src="/img/CUX7aRZ0ZR-437.png" width="437" height="286"></picture></p>
+ <p><a href="https://css-tip.com/dashed-rounded-border/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1761,12 +2121,15 @@ You can... <a href="https://css-tip.com/center-max-width/">Read more</a></conten
 		<link href="https://css-tip.com/css-scrolling-shadow/"/>
 		<updated>2021-11-24T00:00:00Z</updated>
 		<id>https://css-tip.com/css-scrolling-shadow/</id>
-		<content type="html">Create a CSS-only Scrolling Shadow effect with a few lines of code.
-
-No JavaScript
-No extra element
-No pseudo element
-Only background... <a href="https://css-tip.com/css-scrolling-shadow/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a CSS-only Scrolling Shadow effect with a few lines of code.</p>
+<ul>
+<li>No JavaScript</li>
+<li>No extra element</li>
+<li>No pseudo element</li>
+<li>Only background properties.</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Nv_iDIXq3J-470.avif 470w"><source type="image/webp" srcset="/img/Nv_iDIXq3J-470.webp 470w"><img alt="CSS-only scrolling shadow" loading="lazy" decoding="async" src="/img/Nv_iDIXq3J-470.png" width="470" height="241"></picture></p>
+ <p><a href="https://css-tip.com/css-scrolling-shadow/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1774,10 +2137,13 @@ Only background... <a href="https://css-tip.com/css-scrolling-shadow/">Read more
 		<link href="https://css-tip.com/progress-bar-dynamic-color/"/>
 		<updated>2021-11-15T00:00:00Z</updated>
 		<id>https://css-tip.com/progress-bar-dynamic-color/</id>
-		<content type="html">Create a CSS-only progress bar with a dynamic coloration. The color change based on the value
-
-No JavaScript
-No specific CSS... <a href="https://css-tip.com/progress-bar-dynamic-color/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a CSS-only progress bar with a dynamic coloration. The color change based on the value</p>
+<ul>
+<li>No JavaScript</li>
+<li>No specific CSS selector</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/NFetG98fqb-296.avif 296w"><source type="image/webp" srcset="/img/NFetG98fqb-296.webp 296w"><img alt="progress bar with dynamic coloration" loading="lazy" decoding="async" src="/img/NFetG98fqb-296.png" width="296" height="303"></picture></p>
+ <p><a href="https://css-tip.com/progress-bar-dynamic-color/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1785,9 +2151,11 @@ No specific CSS... <a href="https://css-tip.com/progress-bar-dynamic-color/">Rea
 		<link href="https://css-tip.com/equal-height-column/"/>
 		<updated>2021-11-05T00:00:00Z</updated>
 		<id>https://css-tip.com/equal-height-column/</id>
-		<content type="html">Make one column control the height of another column whatever its content.
-Below, the left column will control the right column.
-No JavaScript is... <a href="https://css-tip.com/equal-height-column/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Make one column control the height of another column whatever its content.</p>
+<p>Below, the left column will control the right column.</p>
+<p>No JavaScript is needed, only three lines of CSS will do the job</p>
+<p><picture><source type="image/avif" srcset="/img/VwWaJVwIuv-617.avif 617w"><source type="image/webp" srcset="/img/VwWaJVwIuv-617.webp 617w"><img alt="equal height column" loading="lazy" decoding="async" src="/img/VwWaJVwIuv-617.png" width="617" height="367"></picture></p>
+ <p><a href="https://css-tip.com/equal-height-column/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1795,15 +2163,15 @@ No JavaScript is... <a href="https://css-tip.com/equal-height-column/">Read more
 		<link href="https://css-tip.com/css-plus-symbol/"/>
 		<updated>2021-11-04T00:00:00Z</updated>
 		<id>https://css-tip.com/css-plus-symbol/</id>
-		<content type="html">Create a plus icon ➕ or a cross icon ✖️
-
-One element
-No Pseudo element
-One gradient
-Easily adjust the size and coloration
-
-
-.plus {  --b: 10px;   /*... <a href="https://css-tip.com/css-plus-symbol/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a plus icon ➕ or a cross icon ✖️</p>
+<ul>
+<li>One element</li>
+<li>No Pseudo element</li>
+<li>One gradient</li>
+<li>Easily adjust the size and coloration</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/x0su4mufe3-361.avif 361w"><source type="image/webp" srcset="/img/x0su4mufe3-361.webp 361w"><img alt="CSS-only cross/plus icon" loading="lazy" decoding="async" src="/img/x0su4mufe3-361.png" width="361" height="243"></picture></p>
+ <p><a href="https://css-tip.com/css-plus-symbol/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1811,14 +2179,14 @@ Easily adjust the size and coloration
 		<link href="https://css-tip.com/corner-only-border/"/>
 		<updated>2021-11-03T00:00:00Z</updated>
 		<id>https://css-tip.com/corner-only-border/</id>
-		<content type="html">Create a corner-only border around any element.
-
-No extra element
-No Pseudo-element
-Only background properties
-
-You can also animate it on hover!
-
-img... <a href="https://css-tip.com/corner-only-border/">Read more</a></content>
+		<content type="html"><![CDATA[ <p>Create a corner-only border around any element.</p>
+<ul>
+<li>No extra element</li>
+<li>No Pseudo-element</li>
+<li>Only background properties</li>
+</ul>
+<p>You can also animate it on hover!</p>
+<p><picture><source type="image/avif" srcset="/img/8vYKHHOPGb-334.avif 334w"><source type="image/webp" srcset="/img/8vYKHHOPGb-334.webp 334w"><img alt="image with corner-only border" loading="lazy" decoding="async" src="/img/8vYKHHOPGb-334.png" width="334" height="293"></picture></p>
+ <p><a href="https://css-tip.com/corner-only-border/">Read more</a></p> ]]></content>
 	</entry>
 </feed>
