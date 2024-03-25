@@ -4,11 +4,21 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-03-21T00:00:00Z</updated>
+	<updated>2024-03-25T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A CSS-only fragmentation effect</title>
+		<link href="https://css-tip.com/fragmentation-effect/"/>
+		<updated>2024-03-25T00:00:00Z</updated>
+		<id>https://css-tip.com/fragmentation-effect/</id>
+		<content type="html"><![CDATA[ <p>Add a hover aniamtion with a fancy fragmentation effect using only the <code>&lt;img&gt;</code> tag. Powered by CSS Mask, <code>@property</code> and optimized with CSS mask</p>
+<p><picture><source type="image/avif" srcset="/img/4SVF0lm--D-815.avif 815w"><source type="image/webp" srcset="/img/4SVF0lm--D-815.webp 815w"><img alt="CSS-only fragmentation effect" loading="lazy" decoding="async" src="/img/4SVF0lm--D-815.png" width="815" height="391"></picture></p>
+ <p><a href="https://css-tip.com/fragmentation-effect/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Smoothly stop a rotation on hover</title>

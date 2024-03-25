@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/fragmentation-effect/",
+			"url": "https://css-tip.com/fragmentation-effect/",
+			"title": "A CSS-only fragmentation effect",
+			"content_html": "<p>Add a hover aniamtion with a fancy fragmentation effect using only the <code>&lt;img&gt;</code> tag. Powered by CSS Mask, <code>@property</code> and optimized with CSS mask</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/4SVF0lm--D-815.avif 815w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/4SVF0lm--D-815.webp 815w\"><img alt=\"CSS-only fragmentation effect\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/4SVF0lm--D-815.png\" width=\"815\" height=\"391\"></picture></p>\n<p class=\"codepen\" data-height=\"450\" data-default-tab=\"result\" data-slug-hash=\"ZEZyemJ\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/ZEZyemJ\">\n  CSS-only fragmentation effect on hover</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>",
+			"date_published": "2024-03-25T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/stop-rotation/",
 			"url": "https://css-tip.com/stop-rotation/",
 			"title": "Smoothly stop a rotation on hover",
