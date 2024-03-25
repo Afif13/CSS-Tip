@@ -16,3 +16,5 @@ Add a hover aniamtion with a fancy fragmentation effect using only the `<img>` t
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More detail [css-tricks.com/image-fragmentation-effect-with-css-masks-and-custom-properties](https://css-tricks.com/image-fragmentation-effect-with-css-masks-and-custom-properties/)
