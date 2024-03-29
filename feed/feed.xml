@@ -4,11 +4,21 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-03-25T00:00:00Z</updated>
+	<updated>2024-03-29T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A CSS-only wavy divider</title>
+		<link href="https://css-tip.com/wavy-divider/"/>
+		<updated>2024-03-29T00:00:00Z</updated>
+		<id>https://css-tip.com/wavy-divider/</id>
+		<content type="html"><![CDATA[ <p>Use modern CSS and add a cool Wavy divider to your section. Only one property and two gradients are needed.</p>
+<p><picture><source type="image/avif" srcset="/img/3lt5YnnsJM-1262.avif 1262w"><source type="image/webp" srcset="/img/3lt5YnnsJM-1262.webp 1262w"><img alt="CSS-only wavy divider" loading="lazy" decoding="async" src="/img/3lt5YnnsJM-1262.png" width="1262" height="447"></picture></p>
+ <p><a href="https://css-tip.com/wavy-divider/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>A CSS-only fragmentation effect</title>

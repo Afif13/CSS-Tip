@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Extend your underline to the edge of the screen II</title>
+		<title>A CSS-only wavy divider</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use a border-image trick to create an overflowing underline">
+		<meta name="description" content="Use modern CSS and few lines of code to create a cool divider">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/overflowing-underline-2/" >
+		<link rel=canonical href="https://css-tip.com/wavy-divider/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Extend your underline to the edge of the screen II">
+		<meta property="og:title" content="A CSS-only wavy divider">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/overflowing-underline-2/">
-		<meta property="og:description" content="Use a border-image trick to create an overflowing underline">
-		<meta property="og:image" content="/og-images/Kzkdh4Y4h1.png" >
+		<meta property="og:url" content="https://css-tip.com/wavy-divider/">
+		<meta property="og:description" content="Use modern CSS and few lines of code to create a cool divider">
+		<meta property="og:image" content="/og-images/_KNkdmyrBO.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -42,31 +42,26 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Extend your underline to the edge of the screen II</h1>
+			<h1>A CSS-only wavy divider</h1>
 
-<time datetime="2022-06-20">June 20, 2022</time>
+<time datetime="2024-03-29">March 29, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Improving <a href="/overflowing-underline/">the previous effect</a> to consider an underline with a gradient coloration that extend to the edge of the screen</p>
-<ul>
-<li>No extra element</li>
-<li>No pseudo-element</li>
-<li>No overflow issue</li>
-<li>Optimized with CSS variables</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/BnrTOpZYpC-1248.avif 1248w"><source type="image/webp" srcset="/img/BnrTOpZYpC-1248.webp 1248w"><img alt="An extended underline to left and the right" loading="lazy" decoding="async" src="/img/BnrTOpZYpC-1248.png" width="1248" height="467"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.full-line</span> <span class="token punctuation">{</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span> <span class="token comment">/* border thickness */</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">repeating-linear-gradient</span><span class="token punctuation">(</span>45deg<span class="token punctuation">,</span>#BD1550 0 10px<span class="token punctuation">,</span>#E97F02 0 20px<span class="token punctuation">,</span>#F8CA00 0 30px<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span> fill 0/<span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span> 0 0/0 100vw 0 0 repeat<span class="token punctuation">;</span><br>  <span class="token property">padding-block</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.left</span> <span class="token punctuation">{</span><br>  <span class="token property">border-image-outset</span><span class="token punctuation">:</span> 0 0 0 100vw<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="mdXYyRg" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/mdXYyRg" target="_blank" rel="noopener">
-  CSS only extended underline with gradient </a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Use modern CSS and add a cool Wavy divider to your section. Only one property and two gradients are needed.</p>
+<p><picture><source type="image/avif" srcset="/img/3lt5YnnsJM-1262.avif 1262w"><source type="image/webp" srcset="/img/3lt5YnnsJM-1262.webp 1262w"><img alt="CSS-only wavy divider" loading="lazy" decoding="async" src="/img/3lt5YnnsJM-1262.png" width="1262" height="447"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.wavy</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 1.6em<span class="token punctuation">;</span> <span class="token comment">/* the size of the wave */</span><br>  <span class="token property">--p</span><span class="token punctuation">:</span> .8<span class="token punctuation">;</span>    <span class="token comment">/* the curvature of the wave [0 2] */</span><br><br>  <span class="token property">--R</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>*<span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--p<span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--p<span class="token punctuation">)</span> + 1<span class="token punctuation">)</span><span class="token punctuation">)</span> at 50%<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--R<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>*<span class="token punctuation">(</span>1 + <span class="token function">var</span><span class="token punctuation">(</span>--p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> #000 99%<span class="token punctuation">,</span> #0000 101%<span class="token punctuation">)</span> <br>      <span class="token function">calc</span><span class="token punctuation">(</span>50% - 2*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> 0/<span class="token function">calc</span><span class="token punctuation">(</span>4*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--R<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> #0000 99%<span class="token punctuation">,</span> #000 101%<span class="token punctuation">)</span> <br>      50% <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span>/<span class="token function">calc</span><span class="token punctuation">(</span>4*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> repeat-x<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="RwOLZrL" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/RwOLZrL" target="_blank" rel="noopener">
+  CSS-only wavy divider</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>Related: <a href="https://www.smashingmagazine.com/2024/01/css-border-image-property/" target="_blank" rel="noopener">smashingmagazine.com/2024/01/css-border-image-property/</a></p>
+<p>You can also get the code from <a href="https://css-generators.com/wavy-shapes/" target="_blank" rel="noopener">my online generator</a>.</p>
+<p>More detail: <a href="https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/" target="_blank" rel="noopener">css-tricks.com/how-to-create-wavy-shapes-patterns-in-css</a></p>
 
-<ul class="links-nextprev"><li class="prev"><a href="/overflowing-underline/" title="Extend your underline to the edge of the screen">Previous CSS Tip</a></li><li class="next"><a href="/float-bottom-corner/" title="Float an element to the bottom corner">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/fragmentation-effect/" title="A CSS-only fragmentation effect">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
