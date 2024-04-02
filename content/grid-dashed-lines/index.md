@@ -11,25 +11,23 @@ Create a grid of dashed lines using a few lines of code
 * Two gradients
 * Easy to adjust using CSS variables
 
-{% image "./dash.png", "A grid of dashed lines" %}
+{% image "./image.png", "A grid of dashed lines" %}
 
 ```css
 html {
-  --c1: black;  
-  --c2: pink;  
   --s: 100px;  /* control the size of the grid */
-  --n: 4;      /* control the number of dashes*/
-  --t: 3px;    /* the thickness of dashes */
+  --n: 4;      /* control the granularity */
+  --t: 2px;    /* the thickness */
   --g: 10px;   /* the gap between dashes */
   
-  --_d:calc(var(--s)/var(--n));
+  --c:#556270 25%,#0000 0;
   background: 
-    conic-gradient(from 90deg at var(--t) var(--t),var(--c2) 90deg,#0000 0) 
-     calc(-1*var(--t)) calc(-1*var(--t)) / var(--s) var(--s),
-    conic-gradient(from 90deg at var(--g) var(--g),var(--c1) 90deg,var(--c2) 0) 
-     calc((var(--_d) + var(--g) + var(--t))/-2) 
-     calc((var(--_d) + var(--g) + var(--t))/-2) 
-    / var(--_d) var(--_d);
+    conic-gradient(at var(--g) var(--t),var(--c))
+     calc((var(--s)/var(--n) - var(--g) + var(--t))/2) 0/
+     calc(var(--s)/var(--n)) var(--s),
+    conic-gradient(from 180deg at var(--t) var(--g),var(--c))
+     0 calc((var(--s)/var(--n) - var(--g) + var(--t))/2)/
+     var(--s) calc(var(--s)/var(--n));
 }
 ```
 
