@@ -4,11 +4,21 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-03-29T00:00:00Z</updated>
+	<updated>2024-04-03T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Fluid typography with discrete steps</title>
+		<link href="https://css-tip.com/fluid-typography/"/>
+		<updated>2024-04-03T00:00:00Z</updated>
+		<id>https://css-tip.com/fluid-typography/</id>
+		<content type="html"><![CDATA[ <p>Use the <code>round()</code> function and create a fluid typography with a discrete function instead of a continuous one.</p>
+<p>Define the step and get precise values within a specific range. Very useful if you have some calculation based on the <code>font-size</code> like using the <code>em</code> unit. No more rounding issue!</p>
+ <p><a href="https://css-tip.com/fluid-typography/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>A CSS-only wavy divider</title>
