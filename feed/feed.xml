@@ -1118,7 +1118,7 @@
 		<content type="html"><![CDATA[ <p>Transform your image into a Rhombus shape with rounded corners using a few lines of code</p>
 <ul>
 <li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
-<li>No overflow issue</li>
+<li>No pseudo-element</li>
 <li>Only 3 properties</li>
 <li>Optimized with CSS variables</li>
 </ul>
