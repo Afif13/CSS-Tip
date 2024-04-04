@@ -21,9 +21,7 @@ Use modern CSS to create those famous rounded tabs with inner curves.
   
   border: solid #0000;
   border-width: 0 var(--r);
-  border-radius: 
-    calc(2*var(--r)) calc(2*var(--r)) 0 0/
-           var(--r)         var(--r)  0 0;
+  border-radius: calc(2*var(--r)) calc(2*var(--r)) 0 0/var(--r);
   mask: 
     radial-gradient(var(--r) at var(--r) 0,#0000 98%,#000 101%)
       calc(-1*var(--r)) 100%/100% var(--r) repeat-x,
