@@ -8,7 +8,7 @@ tags: posts
 
 Transform your image into a Rhombus shape with rounded corners using a few lines of code
 * No extra element (only the `<img>` tag)
-* No overflow issue
+* No pseudo-element
 * Only 3 properties
 * Optimized with CSS variables
 
@@ -18,17 +18,17 @@ Transform your image into a Rhombus shape with rounded corners using a few lines
 ```css
 img {
   --r: 50px; /* the radius */
+  
+  width: 250px; /* the image size */
   aspect-ratio: 1;
-  clip-path: 
-   polygon(
-    50% calc(-.414*var(--r)), calc(100% + .414*var(--r)) 50%, 
-    50% calc(100% + .414*var(--r)), calc(-.414*var(--r)) 50%
-   );
-  --_l: #0000 calc(25% + .707*var(--r)),
-       #000 0 calc(75% - .707*var(--r)), #0000 0;
-  --_g:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+  object-fit: cover;
+  margin: calc(tan(22.5deg)*var(--r));
+  clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%) margin-box;
+  --_g:/calc(2*var(--r)) calc(2*var(--r)) 
+    radial-gradient(#000 70%,#0000 72%);
+  --_s:calc(100% - (1 - tan(22.5deg))*var(--r));
   mask:
-    linear-gradient(45deg,var(--_l)),linear-gradient(-45deg,var(--_l)),
+    conic-gradient(#000 0 0) no-repeat 50%/var(--_s) var(--_s),
     top var(--_g) no-repeat space,left var(--_g) space no-repeat;
 }
 ```
