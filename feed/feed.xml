@@ -4,11 +4,26 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-04-04T00:00:00Z</updated>
+	<updated>2024-04-11T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>CSS-Only pixelated cut corners</title>
+		<link href="https://css-tip.com/pixelated-corner/"/>
+		<updated>2024-04-11T00:00:00Z</updated>
+		<id>https://css-tip.com/pixelated-corner/</id>
+		<content type="html"><![CDATA[ <p>Use modern CSS to cut the corner of an image with a pixelated effect.</p>
+<ul>
+<li>Only one element (the <code>&lt;img&gt;</code> tag)</li>
+<li>Only 4 properties</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/_0DZyp3k-z-738.avif 738w"><source type="image/webp" srcset="/img/_0DZyp3k-z-738.webp 738w"><img alt="A Rhombus shape with rounded corners" loading="lazy" decoding="async" src="/img/_0DZyp3k-z-738.png" width="738" height="316"></picture></p>
+ <p><a href="https://css-tip.com/pixelated-corner/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Rounded tabs with inner curves</title>
