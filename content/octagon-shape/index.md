@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: A Modern way to create octagon shapes
+title: A Modern way to create an octagon shape
 description: Two lines of CSS code an no magic number for an octagon shape
 date: 2024-01-16
 tags: posts
