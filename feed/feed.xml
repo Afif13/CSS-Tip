@@ -4,11 +4,27 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-04-11T00:00:00Z</updated>
+	<updated>2024-04-16T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A Modern way to create a star shape</title>
+		<link href="https://css-tip.com/star-shape/"/>
+		<updated>2024-04-16T00:00:00Z</updated>
+		<id>https://css-tip.com/star-shape/</id>
+		<content type="html"><![CDATA[ <p>Create a Star shape using clip-path and only 5 points instead of 10.</p>
+<p>Three different codes to create the same shape</p>
+<ol>
+<li>Precise version using math</li>
+<li>Calculated version without math</li>
+<li>Simplified version with easier coordinates values</li>
+</ol>
+<p><picture><source type="image/avif" srcset="/img/zvyFrX7bmC-764.avif 764w"><source type="image/webp" srcset="/img/zvyFrX7bmC-764.webp 764w"><img alt="CSS-only star shape" loading="lazy" decoding="async" src="/img/zvyFrX7bmC-764.png" width="764" height="262"></picture></p>
+ <p><a href="https://css-tip.com/star-shape/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>CSS-Only pixelated cut corners</title>
@@ -337,7 +353,7 @@
 	</entry>
 	
 	<entry>
-		<title>A Modern way to create octagon shapes</title>
+		<title>A Modern way to create an octagon shape</title>
 		<link href="https://css-tip.com/octagon-shape/"/>
 		<updated>2024-01-16T00:00:00Z</updated>
 		<id>https://css-tip.com/octagon-shape/</id>
