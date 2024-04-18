@@ -4,11 +4,27 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-04-16T00:00:00Z</updated>
+	<updated>2024-04-18T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A fancy frame with Zig-Zag borders</title>
+		<link href="https://css-tip.com/zig-zag-box/"/>
+		<updated>2024-04-18T00:00:00Z</updated>
+		<id>https://css-tip.com/zig-zag-box/</id>
+		<content type="html"><![CDATA[ <p>Use modern CSS to create a fancy Zig-Zag border around images using a few lines of code.</p>
+<ul>
+<li>Only one element (the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p>⚠️ Not suitable for touch screen (the sharp edges may hurt you) use <a href="/image-wavy-borders/">wavy borders</a></p>
+<p><picture><source type="image/avif" srcset="/img/o6xjkYuG9w-804.avif 804w"><source type="image/webp" srcset="/img/o6xjkYuG9w-804.webp 804w"><img alt="CSS-only zig-zag borders" loading="lazy" decoding="async" src="/img/o6xjkYuG9w-804.png" width="804" height="432"></picture></p>
+ <p><a href="https://css-tip.com/zig-zag-box/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>A Modern way to create a star shape</title>
