@@ -18,3 +18,4 @@ Get an optimized code in no time. Adjust the setting and then click!
 
 {% image "./image.png", "CSS-only flower shapes" %}
 
+More CSS Shapes: [css-shape.com](https://css-shape.com)

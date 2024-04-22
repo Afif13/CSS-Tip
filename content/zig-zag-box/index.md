@@ -28,12 +28,12 @@ img {
   --_c:#0000 calc(2*atan(2)),var(--c) 0;
   background:
     conic-gradient(from atan(-2) at 50% var(--s),var(--_c)),
-    conic-gradient(from calc(180deg - atan(2)) at 50% calc(100% - var(--s)),var(--_c)) bottom;
+    conic-gradient(from calc(180deg - atan(2)) at 50% calc(100% - var(--s)),var(--_c)) 0 100%;
   background-size: calc(4*var(--s)) 50%;
   background-repeat: repeat-x;
   mask:
     conic-gradient(from calc(atan(-2) - 90deg) at var(--s),var(--_c)),
-    conic-gradient(from atan(.5) at calc(100% - var(--s)),var(--_c)) right;
+    conic-gradient(from atan(.5) at calc(100% - var(--s)),var(--_c)) 100% 0;
   mask-size: 50% calc(4*var(--s));
   mask-repeat: repeat-y;
 }
