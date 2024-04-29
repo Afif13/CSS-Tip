@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/css-shapes/",
+			"url": "https://css-tip.com/css-shapes/",
+			"title": "Create CSS Shapes with a single element",
+			"content_html": "<p><a href=\"https://css-shape.com\">css-shape.com</a>: The Ultimate Collection of CSS-Only shapes</p>\n<ul>\n<li>Single-element implementation</li>\n<li>Optimized CSS code</li>\n<li>Easy to customize</li>\n<li>One click to copy the code</li>\n</ul>\n<p>The modern way to create CSS Shapes</p>\n<p><a href=\"https://css-shape.com\"><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/2lulFMixSz-1600.avif 1600w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/2lulFMixSz-1600.webp 1600w\"><img alt=\"CSS Shapes The modern way\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/2lulFMixSz-1600.jpeg\" width=\"1600\" height=\"800\"></picture></a></p>\n",
+			"date_published": "2024-04-29T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/better-modern-css/",
 			"url": "https://css-tip.com/better-modern-css/",
 			"title": "Write better CSS with modern CSS",

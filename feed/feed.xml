@@ -4,11 +4,28 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-04-24T00:00:00Z</updated>
+	<updated>2024-04-29T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Create CSS Shapes with a single element</title>
+		<link href="https://css-tip.com/css-shapes/"/>
+		<updated>2024-04-29T00:00:00Z</updated>
+		<id>https://css-tip.com/css-shapes/</id>
+		<content type="html"><![CDATA[ <p><a href="https://css-shape.com">css-shape.com</a>: The Ultimate Collection of CSS-Only shapes</p>
+<ul>
+<li>Single-element implementation</li>
+<li>Optimized CSS code</li>
+<li>Easy to customize</li>
+<li>One click to copy the code</li>
+</ul>
+<p>The modern way to create CSS Shapes</p>
+<p><a href="https://css-shape.com"><picture><source type="image/avif" srcset="/img/2lulFMixSz-1600.avif 1600w"><source type="image/webp" srcset="/img/2lulFMixSz-1600.webp 1600w"><img alt="CSS Shapes The modern way" loading="lazy" decoding="async" src="/img/2lulFMixSz-1600.jpeg" width="1600" height="800"></picture></a></p>
+ <p><a href="https://css-tip.com/css-shapes/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Write better CSS with modern CSS</title>
