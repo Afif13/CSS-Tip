@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Create CSS Shapes with a single element</title>
+		<title>Avatar with status indicator</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="An online resource to grab the code of any CSS shape with one click">
+		<meta name="description" content="A few lines of code to add a status indicator to any image">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/css-shapes/" >
+		<link rel=canonical href="https://css-tip.com/status-indicator/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Create CSS Shapes with a single element">
+		<meta property="og:title" content="Avatar with status indicator">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/css-shapes/">
-		<meta property="og:description" content="An online resource to grab the code of any CSS shape with one click">
-		<meta property="og:image" content="/og-images/ipnAPocrGe.png" >
+		<meta property="og:url" content="https://css-tip.com/status-indicator/">
+		<meta property="og:description" content="A few lines of code to add a status indicator to any image">
+		<meta property="og:image" content="/og-images/7rVyWdCxqX.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -42,24 +42,30 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Create CSS Shapes with a single element</h1>
+			<h1>Avatar with status indicator</h1>
 
-<time datetime="2024-04-29">April 29, 2024</time>
+<time datetime="2024-04-30">April 30, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p><a href="https://css-shape.com" target="_blank" rel="noopener">css-shape.com</a>: The Ultimate Collection of CSS-Only shapes</p>
+<p>Use modern CSS to add that little status indicator to your avatar using less than 10 CSS declarations and without extra elements.</p>
 <ul>
-<li>Single-element implementation</li>
-<li>Optimized CSS code</li>
-<li>Easy to customize</li>
-<li>One click to copy the code</li>
+<li>Only the <code>&lt;img&gt;</code> tag</li>
+<li>No pseudo-elements</li>
+<li>Transparent gap</li>
+<li>Optimized with CSS variables</li>
+<li>Subtle animation on hover</li>
 </ul>
-<p>The modern way to create CSS Shapes</p>
-<p><a href="https://css-shape.com" target="_blank" rel="noopener"><picture><source type="image/avif" srcset="/img/2lulFMixSz-1600.avif 1600w"><source type="image/webp" srcset="/img/2lulFMixSz-1600.webp 1600w"><img alt="CSS Shapes The modern way" loading="lazy" decoding="async" src="/img/2lulFMixSz-1600.jpeg" width="1600" height="800"></picture></a></p>
-
-<ul class="links-nextprev"><li class="prev"><a href="/better-modern-css/" title="Write better CSS with modern CSS">Previous CSS Tip</a></li><li class="next"><a href="/status-indicator/" title="Avatar with status indicator">Next CSS Tip</a></li>
+<p><picture><source type="image/avif" srcset="/img/Qqj9gfpUcn-643.avif 643w"><source type="image/webp" srcset="/img/Qqj9gfpUcn-643.webp 643w"><img alt="CSS-only avatar with status indicator" loading="lazy" decoding="async" src="/img/Qqj9gfpUcn-643.png" width="643" height="354"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --s</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;length>"</span><span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 170px<span class="token punctuation">;</span> <span class="token comment">/* the image size */</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>  <span class="token comment">/* control the indicator size */</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>   <span class="token comment">/* control the gap (+ a default gap) */</span><br>  <br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 0 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/<span class="token function">sqrt</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/<span class="token function">sqrt</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">)</span> 0<span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> 0 <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/<span class="token function">sqrt</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/<span class="token function">sqrt</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">)</span> 0<span class="token punctuation">;</span><br>  <span class="token property">outline</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> solid #B90504<span class="token punctuation">;</span><br>  <span class="token property">outline-offset</span><span class="token punctuation">:</span> -9e9q<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span>#000 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> - 1px<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span>#000 70%<span class="token punctuation">,</span>#0000 71%<span class="token punctuation">)</span> 0 0/<span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> subtract<span class="token punctuation">,</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><br>      #000  <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sqrt</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>      #0000 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sqrt</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span> + 1px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* clip-path is only needed to reduce the mouse interaction area */</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">circle</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/2 + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> at <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/2<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> --s .5s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="yLrWeQP" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yLrWeQP" target="_blank" rel="noopener">
+  Status indicator using only an image element</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<ul class="links-nextprev"><li class="prev"><a href="/css-shapes/" title="Create CSS Shapes with a single element">Previous CSS Tip</a></li>
 </ul>
 
 		</main>

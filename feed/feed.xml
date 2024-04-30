@@ -4,11 +4,28 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-04-29T00:00:00Z</updated>
+	<updated>2024-04-30T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Avatar with status indicator</title>
+		<link href="https://css-tip.com/status-indicator/"/>
+		<updated>2024-04-30T00:00:00Z</updated>
+		<id>https://css-tip.com/status-indicator/</id>
+		<content type="html"><![CDATA[ <p>Use modern CSS to add that little status indicator to your avatar using less than 10 CSS declarations and without extra elements.</p>
+<ul>
+<li>Only the <code>&lt;img&gt;</code> tag</li>
+<li>No pseudo-elements</li>
+<li>Transparent gap</li>
+<li>Optimized with CSS variables</li>
+<li>Subtle animation on hover</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Qqj9gfpUcn-643.avif 643w"><source type="image/webp" srcset="/img/Qqj9gfpUcn-643.webp 643w"><img alt="CSS-only avatar with status indicator" loading="lazy" decoding="async" src="/img/Qqj9gfpUcn-643.png" width="643" height="354"></picture></p>
+ <p><a href="https://css-tip.com/status-indicator/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Create CSS Shapes with a single element</title>
