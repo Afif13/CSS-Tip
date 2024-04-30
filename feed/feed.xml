@@ -15,7 +15,7 @@
 		<link href="https://css-tip.com/status-indicator/"/>
 		<updated>2024-04-30T00:00:00Z</updated>
 		<id>https://css-tip.com/status-indicator/</id>
-		<content type="html"><![CDATA[ <p>Use modern CSS to add that little status indicator to your avatar using less than 10 CSS declarations and without extra elements.</p>
+		<content type="html"><![CDATA[ <p>Use modern CSS to add a status indicator to your avatar using less than 10 CSS declarations and without extra elements.</p>
 <ul>
 <li>Only the <code>&lt;img&gt;</code> tag</li>
 <li>No pseudo-elements</li>
