@@ -6,7 +6,7 @@ date: 2024-04-30
 tags: posts
 ---
 
-Use modern CSS to add that little status indicator to your avatar using less than 10 CSS declarations and without extra elements.
+Use modern CSS to add a status indicator to your avatar using less than 10 CSS declarations and without extra elements.
 * Only the `<img>` tag
 * No pseudo-elements
 * Transparent gap
