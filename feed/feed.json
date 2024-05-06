@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/root-selector/",
+			"url": "https://css-tip.com/root-selector/",
+			"title": "The shortest selector for the root element",
+			"content_html": "<p>To target the <code>html</code> element, you either use &quot;<code>html{}</code>&quot; or &quot;<code>:root{}</code>&quot; but thanks to CSS nesting you can simply use &quot;<code>&amp;{}</code>&quot;</p>\n<p>When used alone, the nesting selector will match the root element!</p>\n<p>A one-character selector 🤯</p>\n<p>⚠️ It has a lower specificity than html and :root</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">&amp;</span> <span class=\"token punctuation\">{</span><br>  <span class=\"token property\">font-family</span><span class=\"token punctuation\">:</span> sans-serif<span class=\"token punctuation\">;</span><br>  <span class=\"token property\">background</span><span class=\"token punctuation\">:</span> #25fca4<span class=\"token punctuation\">;</span><br>  <span class=\"token property\">--variable</span><span class=\"token punctuation\">:</span> value<span class=\"token punctuation\">;</span><br>  <span class=\"token comment\">/* and so on */</span><br><span class=\"token punctuation\">}</span><br><span class=\"token comment\">/* same as html {} and :root {} <br>   with a lower specificity! <br>*/</span></code></pre>\n",
+			"date_published": "2024-05-06T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/status-indicator/",
 			"url": "https://css-tip.com/status-indicator/",
 			"title": "Avatar with status indicator",

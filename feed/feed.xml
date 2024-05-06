@@ -4,11 +4,23 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-04-30T00:00:00Z</updated>
+	<updated>2024-05-06T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>The shortest selector for the root element</title>
+		<link href="https://css-tip.com/root-selector/"/>
+		<updated>2024-05-06T00:00:00Z</updated>
+		<id>https://css-tip.com/root-selector/</id>
+		<content type="html"><![CDATA[ <p>To target the <code>html</code> element, you either use &quot;<code>html{}</code>&quot; or &quot;<code>:root{}</code>&quot; but thanks to CSS nesting you can simply use &quot;<code>&amp;{}</code>&quot;</p>
+<p>When used alone, the nesting selector will match the root element!</p>
+<p>A one-character selector 🤯</p>
+<p>⚠️ It has a lower specificity than html and :root</p>
+ <p><a href="https://css-tip.com/root-selector/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Avatar with status indicator</title>
