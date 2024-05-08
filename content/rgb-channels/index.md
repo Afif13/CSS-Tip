@@ -21,3 +21,18 @@ Useful when you want to do some color manipulation.
   --B: rgb(from var(--c) 0 0 b);
 }
 ```
+
+You can do the same thing with a different syntax using the `color()` function.
+
+```css
+:root {
+  --c: #BD1550; /* the main color */
+  
+  /* the R,G,B channels as separate colors */
+  --R: color(from var(--c) srgb r 0 0);
+  --G: color(from var(--c) srgb 0 g 0);
+  --B: color(from var(--c) srgb 0 0 b);
+}
+```
+
+In both cases, you can either use "none" or "0". "none" is equivalent to "0" but has a special behavior when color interpolation is in play.
