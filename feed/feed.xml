@@ -4,11 +4,21 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-05-06T00:00:00Z</updated>
+	<updated>2024-05-08T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>How to extra R,G,B Channels from a color</title>
+		<link href="https://css-tip.com/rgb-channels/"/>
+		<updated>2024-05-08T00:00:00Z</updated>
+		<id>https://css-tip.com/rgb-channels/</id>
+		<content type="html"><![CDATA[ <p>Using the new <a href="https://developer.chrome.com/blog/css-relative-color-syntax">relative color syntax</a>, you can easily extract the R,G,B channels of any color and use them as separate colors.</p>
+<p>Useful when you want to do some color manipulation.</p>
+ <p><a href="https://css-tip.com/rgb-channels/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>The shortest selector for the root element</title>
