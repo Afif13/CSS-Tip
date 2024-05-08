@@ -17,25 +17,23 @@ Create a Speech Bubble using a few lines of code
 
 ```css
 .bubble {
-  --r: 25px; /* the radius */
-  --t: 30px; /* the size of the tail */
+  --r: 1rem;   /* the radius */
+  --t: 1.5em;  /* the size of the tail */
   
-  padding: calc(2*var(--r)/3);
+  border-inline: var(--t) solid #0000;
+  border-radius: calc(var(--r) + var(--t))/var(--r);
   mask: 
-    radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
-      var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
-    conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
-      calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
-    radial-gradient(50% 50%,#000 98%,#0000 101%) 
-      0 0/var(--r) var(--r) space padding-box;
+    radial-gradient(100% 100% at var(--_p) 0,#0000 99%,#000) 
+      var(--_p) 100%/var(--t) var(--t) no-repeat,
+    linear-gradient(#000 0 0) padding-box;
 }
 .left {
-  --_d: 0%;
-  border-left: var(--t) solid #0000;
+  --_d: 0;
+  border-bottom-left-radius: 0 0;
 }
 .right {
   --_d: 100%;
-  border-right: var(--t) solid #0000;
+  border-bottom-right-radius: 0 0;
 }
 ```
 
@@ -46,4 +44,4 @@ Create a Speech Bubble using a few lines of code
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-More detail: [verpex.com/blog/website-tips/how-to-create-a-tooltip-speech-bubble-using-css](https://verpex.com/blog/website-tips/how-to-create-a-tooltip-speech-bubble-using-css)
+More Speech Bubble shapes: [css-generators.com/tooltip-speech-bubble](https://css-generators.com/tooltip-speech-bubble/)
