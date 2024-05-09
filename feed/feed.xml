@@ -1230,7 +1230,7 @@
 	</entry>
 	
 	<entry>
-		<title>A Rhombus shape with rounded corners for your images</title>
+		<title>A Rhombus shape with rounded corners</title>
 		<link href="https://css-tip.com/rhombus-image/"/>
 		<updated>2023-05-29T00:00:00Z</updated>
 		<id>https://css-tip.com/rhombus-image/</id>
@@ -1238,7 +1238,6 @@
 <ul>
 <li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
 <li>No pseudo-element</li>
-<li>Only 3 properties</li>
 <li>Optimized with CSS variables</li>
 </ul>
 <p><picture><source type="image/avif" srcset="/img/YSSn1zD2Wm-743.avif 743w"><source type="image/webp" srcset="/img/YSSn1zD2Wm-743.webp 743w"><img alt="A Rhombus shape with rounded corners" loading="lazy" decoding="async" src="/img/YSSn1zD2Wm-743.png" width="743" height="380"></picture></p>
