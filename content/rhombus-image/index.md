@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: A Rhombus shape with rounded corners for your images
-description: 3 lines of code to create a rhombus shape for your image
+title: A Rhombus shape with rounded corners
+description: 3 lines of code to create a rhombus shape with rounded corners
 date: 2023-05-29
 tags: posts
 ---
@@ -9,7 +9,6 @@ tags: posts
 Transform your image into a Rhombus shape with rounded corners using a few lines of code
 * No extra element (only the `<img>` tag)
 * No pseudo-element
-* Only 3 properties
 * Optimized with CSS variables
 
 
@@ -21,7 +20,6 @@ img {
   
   width: 250px; /* the image size */
   aspect-ratio: 1;
-  object-fit: cover;
   margin: calc(tan(22.5deg)*var(--r));
   clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%) margin-box;
   --_g:/calc(2*var(--r)) calc(2*var(--r)) 
