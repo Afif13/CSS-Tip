@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: How to extra R,G,B Channels from a color
-description: Use the relative syntax color to extra R,G,B Channels
+title: How to extract R,G,B Channels from a color
+description: Use the relative color syntax to extract R,G,B Channels
 date: 2024-05-08
 tags: posts
 ---
