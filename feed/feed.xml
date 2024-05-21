@@ -4,11 +4,29 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-05-14T00:00:00Z</updated>
+	<updated>2024-05-21T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>CSS-only background patterns with a minimal code</title>
+		<link href="https://css-tip.com/css-pattern/"/>
+		<updated>2024-05-21T00:00:00Z</updated>
+		<id>https://css-tip.com/css-pattern/</id>
+		<content type="html"><![CDATA[ <p><a href="https://css-pattern.com">css-pattern.com</a>: The Biggest Collection Of Background Patterns</p>
+<ul>
+<li>A unique URL per pattern</li>
+<li>Controls to adjust the size &amp; colors</li>
+<li>Easy navigation between the patterns</li>
+<li>Optimized with CSS variables</li>
+<li>One-click to copy the code</li>
+</ul>
+<p>You can also surprise yourself with <a href="https://random.css-pattern.com">a random CSS Pattern!</a></p>
+<p><a href="https://css-pattern.com"><picture><source type="image/avif" srcset="/img/0OMYAMUTS7-1350.avif 1350w"><source type="image/webp" srcset="/img/0OMYAMUTS7-1350.webp 1350w"><img alt="CSS patterns made with CSS gradients" loading="lazy" decoding="async" src="/img/0OMYAMUTS7-1350.png" width="1350" height="546"></picture></a></p>
+ <p><a href="https://css-tip.com/css-pattern/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Single-digit inputs with one element (OTP)</title>
@@ -2007,7 +2025,7 @@
 		<link href="https://css-tip.com/css-graph-paper/"/>
 		<updated>2022-06-07T00:00:00Z</updated>
 		<id>https://css-tip.com/css-graph-paper/</id>
-		<content type="html"><![CDATA[ <p>Create a Graph Paper design using only 2 gradients</p>
+		<content type="html"><![CDATA[ <p>Create a <a href="https://css-pattern.com/graph-paper">Graph Paper</a> design using only 2 gradients</p>
 <p><picture><source type="image/avif" srcset="/img/SVxfRQPx9J-461.avif 461w"><source type="image/webp" srcset="/img/SVxfRQPx9J-461.webp 461w"><img alt="A graph paper pattern" loading="lazy" decoding="async" src="/img/SVxfRQPx9J-461.png" width="461" height="373"></picture></p>
  <p><a href="https://css-tip.com/css-graph-paper/">Read more</a></p> ]]></content>
 	</entry>
