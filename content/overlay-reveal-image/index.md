@@ -57,7 +57,7 @@ img:hover {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-Another version with a simplier animation
+Another version with a simpler animation
 
 <p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="KKJxXKZ" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKJxXKZ">

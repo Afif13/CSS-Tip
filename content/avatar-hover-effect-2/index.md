@@ -33,7 +33,7 @@ img {
   --f: 1.7;  /* control the scale factor, between 1.2 and 2 you get nice result */
   --c: #E4844A;
   
-  width: calc(var(--r)*(1 + 1/tan(180deg/#{$n})));
+  width: calc(var(--r)*(1 + 1/sin(180deg/#{$n})));
   aspect-ratio: 1;
   border-radius: 50%;
   $m: ();
@@ -62,7 +62,7 @@ img {
 }
 img:hover {
   --i: calc(var(--r)/var(--f));
-  scale: calc((1 + 1/tan(180deg/#{$n}))/(1 - 2/var(--f) + 1/tan(180deg/#{$n})));
+  scale: calc((1 + 1/sin(180deg/#{$n}))/(1 - 2/var(--f) + 1/sin(180deg/#{$n})));
   animation-play-state: running, paused;
 }
 @keyframes rotate {

@@ -6,7 +6,7 @@ date: 2022-06-07
 tags: posts
 ---
 
-Create a Graph Paper design using only 2 gradients
+Create a [Graph Paper](https://css-pattern.com/graph-paper) design using only 2 gradients
 
 {% image "./graph.png", "A graph paper pattern" %}
 

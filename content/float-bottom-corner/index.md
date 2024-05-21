@@ -16,7 +16,7 @@ Make an element float to the bottom corner of your text content
 ```html
 <div class="wrapper">
   <p>
-    <span class="float"><img src="" alt=""></span>
+    <img class="float">
     ....
   </p>
 </div>
@@ -29,11 +29,10 @@ Make an element float to the bottom corner of your text content
 .float {
   float: right; 
   height: 100%; 
-  margin-left: 15px;
-  display: flex; 
-  align-items: flex-end; 
-  /* 100px = image height */
-  shape-outside: inset(calc(100% - 100px) 0 0); /* (6) */
+  width: 100px;
+  shape-outside: inset(calc(100% - 100px /*height */) 0 0);
+  object-fit: contain;
+  object-position: bottom;
 }
 ```
 

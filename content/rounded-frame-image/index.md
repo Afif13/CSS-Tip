@@ -24,12 +24,10 @@ img {
   background: 
     radial-gradient(farthest-side,var(--c) 97%,#0000)
     0 0/calc(2*var(--s)) calc(2*var(--s)) round;
-  --_m:
+  mask:
     conic-gradient(from 90deg at calc(2*var(--s)) calc(2*var(--s)),#0000 25%,#000 0)
      calc(-1*var(--s)) calc(-1*var(--s)),
     linear-gradient(#000 0 0) content-box;
-  -webkit-mask: var(--_m);
-          mask: var(--_m);
 }
 ```
 
