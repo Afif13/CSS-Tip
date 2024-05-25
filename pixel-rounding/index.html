@@ -3,24 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy one</title>
+		<title>No more pixel rounding issues!</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta name="description" content="One line of code to fix all your pixel rounding issues">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/pixel-rounding/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy one">
+		<meta property="og:title" content="No more pixel rounding issues!">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/pixel-rounding/">
+		<meta property="og:description" content="One line of code to fix all your pixel rounding issues">
+		<meta property="og:image" content="/og-images/BcTsDjGNIm.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy one">
 		<meta name="generator" content="Eleventy v2.0.1">
@@ -34,7 +34,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS Feed</a></li>
@@ -42,83 +42,29 @@
 			</nav>
 		</header>
 		<main id="skip">
-			
+			<h1>No more pixel rounding issues!</h1>
 
-<h1>Learn CSS the easy way</h1>
-<p>Learn a new CSS Trick every day and become a better web developer. All the CSS secrets are here (Flexbox, CSS Grid, Shapes, Gradients, Colors, Animations, Selectors, Variables, Masking, Clipping, etc). It takes <strong>one minute</strong> to read a tip.</p>
+<time datetime="2024-05-25">May 25, 2024</time>
+
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
-<p>Want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<hr>
 
+<p>One line of code that looks strange and confusing. You may think it's not even CSS but it will save you many times in the future:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc-size</span><span class="token punctuation">(</span>auto<span class="token punctuation">,</span><span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span>size<span class="token punctuation">,</span>1px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <br>  <span class="token comment">/* works with height as well */</span><br><span class="token punctuation">}</span></code></pre>
+<p>It will make sure the width of your element is always an integer! No more decimal and rounding issues!</p>
+<p>The behavior of <code>width:auto</code> with an upgrade.</p>
+<p>No browser support yet but you can test it on the latest Chrome with the experimental flag enabled:</p>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="rNgLyJz" data-pen-title="width: auto with pixel rounding" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/rNgLyJz" target="_blank" rel="noopener">
+  width: auto with pixel rounding</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<p>If you are explicitly setting a size you can use the following which is widely supported:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span>X<span class="token punctuation">,</span>1px<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">/* instead of width: X */</span><br><br>  <span class="token comment">/* X can be anything (100%,10rem,50vw,45cqi, etc) */</span><br><span class="token punctuation">}</span></code></pre>
 
-<ul class="postlist" >
-
-	<li>
-		<a href="/pixel-rounding/" >No more pixel rounding issues!</a>
-		<time datetime="2024-05-25">May 25, 2024</time>
-	</li>
-
-	<li>
-		<a href="/css-pattern/" >CSS-only background patterns with a minimal code</a>
-		<time datetime="2024-05-21">May 21, 2024</time>
-	</li>
-
-	<li>
-		<a href="/single-digit-inputs/" >Single-digit inputs with one element (OTP)</a>
-		<time datetime="2024-05-14">May 14, 2024</time>
-	</li>
-
-	<li>
-		<a href="/sparkle-shape/" >A Sparkle shape with one gradient</a>
-		<time datetime="2024-05-09">May 09, 2024</time>
-	</li>
-
-	<li>
-		<a href="/rgb-channels/" >How to extract R,G,B Channels from a color</a>
-		<time datetime="2024-05-08">May 08, 2024</time>
-	</li>
-
-	<li>
-		<a href="/root-selector/" >The shortest selector for the root element</a>
-		<time datetime="2024-05-06">May 06, 2024</time>
-	</li>
-
-	<li>
-		<a href="/status-indicator/" >Avatar with status indicator</a>
-		<time datetime="2024-04-30">April 30, 2024</time>
-	</li>
-
-	<li>
-		<a href="/css-shapes/" >Create CSS Shapes with a single element</a>
-		<time datetime="2024-04-29">April 29, 2024</time>
-	</li>
-
-	<li>
-		<a href="/better-modern-css/" >Write better CSS with modern CSS</a>
-		<time datetime="2024-04-24">April 24, 2024</time>
-	</li>
-
-	<li>
-		<a href="/zig-zag-box/" >A fancy frame with Zig-Zag borders</a>
-		<time datetime="2024-04-18">April 18, 2024</time>
-	</li>
-
+<ul class="links-nextprev"><li class="prev"><a href="/css-pattern/" title="CSS-only background patterns with a minimal code">Previous CSS Tip</a></li>
 </ul>
-
-
-
-
-<p>156 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-<hr>
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
 
 		</main>
 		<footer>
