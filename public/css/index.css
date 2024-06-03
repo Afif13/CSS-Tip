@@ -12,8 +12,6 @@
 	--text-color-link: #033254;/*#054676;*/
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
-
-	--syntax-tab-size: 2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,10 +33,7 @@
 	box-sizing: border-box;
 }
 
-html,
-body {
-	padding: 0;
-	margin: 0 auto;
+html {
 	font-family: var(--font-family);
 	color: var(--text-color);
 }
@@ -59,6 +54,7 @@ html {
   background-attachment: fixed;
   overflow-y: scroll;
   overflow-x: hidden;
+  font-size: 17px;
 }
 @media (prefers-color-scheme: dark) {
 	html {
@@ -68,6 +64,7 @@ html {
 }
 body {
 	max-width: 40em;
+	margin: 0 auto;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -98,11 +95,7 @@ h1 {
 	white-space: nowrap;
 	width: 1px;
 }
-p {
-	line-height: 1.5;
-}
-
-li {
+p,li {
 	line-height: 1.5;
 }
 
@@ -190,7 +183,7 @@ footer {
 	}
 
 }
-@media (max-width:1000px) {
+@media (max-width:1100px) {
 	.links-nextprev {
 		position: static;
 	}
@@ -214,9 +207,7 @@ code {
 pre:not([class*="language-"]) {
 	margin: .5em 0;
 	line-height: 1.375; /* 22px /16 */
-	-moz-tab-size: var(--syntax-tab-size);
-	-o-tab-size: var(--syntax-tab-size);
-	tab-size: var(--syntax-tab-size);
+	tab-size: 2;
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
@@ -273,6 +264,16 @@ header {
 	list-style: none;
 	padding: 0;
 	padding-left: 1.5rem;
+	text-wrap: pretty;
+}
+.postlist li:nth-child(1) {
+	font-size: 1.4em;
+}
+.postlist li:nth-child(2) {
+	font-size: 1.2em;
+}
+.postlist li:nth-child(2) {
+	font-size: 1.1em;
 }
 .postlist > * {
 	display: flex;
