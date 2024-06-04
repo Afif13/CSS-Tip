@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>No more pixel rounding issues!</title>
+		<title>Custom range slider with tooltip</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="One line of code to fix all your pixel rounding issues">
+		<meta name="description" content="Using modern CSS features to create a fancy range slider with tooltop">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/pixel-rounding/" >
+		<link rel=canonical href="https://css-tip.com/range-slider-tooltip/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="No more pixel rounding issues!">
+		<meta property="og:title" content="Custom range slider with tooltip">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/pixel-rounding/">
-		<meta property="og:description" content="One line of code to fix all your pixel rounding issues">
-		<meta property="og:image" content="/og-images/BcTsDjGNIm.png" >
+		<meta property="og:url" content="https://css-tip.com/range-slider-tooltip/">
+		<meta property="og:description" content="Using modern CSS features to create a fancy range slider with tooltop">
+		<meta property="og:image" content="/og-images/F3GsdZ90hD.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
@@ -42,28 +42,30 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>No more pixel rounding issues!</h1>
+			<h1>Custom range slider with tooltip</h1>
 
-<time datetime="2024-05-25">May 25, 2024</time>
+<time datetime="2024-06-04">June 04, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>One line of code that looks strange and confusing. You may think it's not even CSS but it will save you many times in the future:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc-size</span><span class="token punctuation">(</span>auto<span class="token punctuation">,</span><span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span>size<span class="token punctuation">,</span>1px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <br>  <span class="token comment">/* works with height as well */</span><br><span class="token punctuation">}</span></code></pre>
-<p>It will make sure the width of your element is always an integer! No more decimal and rounding issues!</p>
-<p>The behavior of <code>width:auto</code> with an upgrade.</p>
-<p>No browser support yet but you can test it on the latest Chrome with the experimental flag enabled:</p>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="rNgLyJz" data-pen-title="width: auto with pixel rounding" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/rNgLyJz" target="_blank" rel="noopener">
-  width: auto with pixel rounding</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Create a custom range slider with a tooltip showing the selected value. There is no JS to update the values, it's pure CSS with minimal HTML!</p>
+<p><picture><source type="image/avif" srcset="/img/aEqFiCZTu3-639.avif 639w"><source type="image/webp" srcset="/img/aEqFiCZTu3-639.webp 639w"><img alt="CSS-only range slider with tooltip" loading="lazy" decoding="async" src="/img/aEqFiCZTu3-639.png" width="639" height="338"></picture></p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span> <span class="token attr-name">min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>120<span class="token punctuation">"</span></span> <span class="token attr-name">step</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>output</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">--min</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token property">--max</span><span class="token punctuation">:</span> 120</span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>output</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span></code></pre>
+<p>Powered by modern CSS features:</p>
+<ul>
+<li>Scroll Driven animation</li>
+<li>Anchor positioning</li>
+<li><code>@property</code> &amp; CSS variables</li>
+</ul>
+<p>The support for the tooltip feature is still limited (chrome-only for now) but the range slider works fine in all the browsers.</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="JjqNEbZ" data-pen-title="CSS-only Custom range slider" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/JjqNEbZ" target="_blank" rel="noopener">
+  CSS-only Custom range slider</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>If you are explicitly setting a size you can use the following which is widely supported:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span>X<span class="token punctuation">,</span>1px<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">/* instead of width: X */</span><br><br>  <span class="token comment">/* X can be anything (100%,10rem,50vw,45cqi, etc) */</span><br><span class="token punctuation">}</span></code></pre>
-
-<ul class="links-nextprev"><li class="prev"><a href="/css-pattern/" title="CSS-only background patterns with a minimal code">Previous CSS Tip</a></li><li class="next"><a href="/range-slider-tooltip/" title="Custom range slider with tooltip">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/pixel-rounding/" title="No more pixel rounding issues!">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
