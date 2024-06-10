@@ -4,11 +4,22 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-06-04T00:00:00Z</updated>
+	<updated>2024-06-10T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Better text wrapping using text-wrap</title>
+		<link href="https://css-tip.com/text-wrap/"/>
+		<updated>2024-06-10T00:00:00Z</updated>
+		<id>https://css-tip.com/text-wrap/</id>
+		<content type="html"><![CDATA[ <p>Enhance your text wrapping using <code>text-wrap</code>.</p>
+<p><picture><source type="image/avif" srcset="/img/-fc0eICcTx-1207.avif 1207w"><source type="image/webp" srcset="/img/-fc0eICcTx-1207.webp 1207w"><img alt="Showing the effect of text-wrap" loading="lazy" decoding="async" src="/img/-fc0eICcTx-1207.png" width="1207" height="272"></picture></p>
+<p>No more lonely words at the end of paragraphs, and titles will look much better.</p>
+ <p><a href="https://css-tip.com/text-wrap/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Custom range slider with tooltip</title>
