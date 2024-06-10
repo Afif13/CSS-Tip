@@ -15,9 +15,7 @@
 		<link href="https://css-tip.com/text-wrap/"/>
 		<updated>2024-06-10T00:00:00Z</updated>
 		<id>https://css-tip.com/text-wrap/</id>
-		<content type="html"><![CDATA[ <p>Enhance your text wrapping using <code>text-wrap</code>.</p>
-<p><picture><source type="image/avif" srcset="/img/-fc0eICcTx-1207.avif 1207w"><source type="image/webp" srcset="/img/-fc0eICcTx-1207.webp 1207w"><img alt="Showing the effect of text-wrap" loading="lazy" decoding="async" src="/img/-fc0eICcTx-1207.png" width="1207" height="272"></picture></p>
-<p>No more lonely words at the end of paragraphs, and titles will look much better.</p>
+		<content type="html"><![CDATA[ <p>Enhance your text wrapping using <code>text-wrap</code>.  No more lonely words at the end of paragraphs, and titles will look much better.</p>
  <p><a href="https://css-tip.com/text-wrap/">Read more</a></p> ]]></content>
 	</entry>
 	
