@@ -7,11 +7,7 @@ tags: posts
 ---
 
 
-Enhance your text wrapping using `text-wrap`. 
-
-{% image "./image.png", "Showing the effect of text-wrap" %}
-
-No more lonely words at the end of paragraphs, and titles will look much better.
+Enhance your text wrapping using `text-wrap`.  No more lonely words at the end of paragraphs, and titles will look much better.
 
 ```css
 * {
@@ -22,3 +18,5 @@ h1,h2,h3,h4,h5,h6 {
   /* it works well with text-align: center */
 }
 ```
+
+{% image "./image.png", "Showing the effect of text-wrap" %}
