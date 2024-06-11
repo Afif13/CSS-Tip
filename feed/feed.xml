@@ -4,18 +4,34 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-06-10T00:00:00Z</updated>
+	<updated>2024-06-11T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
 	
 	<entry>
+		<title>Custom range slider with tooltip II</title>
+		<link href="https://css-tip.com/range-slider-tooltip-2/"/>
+		<updated>2024-06-11T00:00:00Z</updated>
+		<id>https://css-tip.com/range-slider-tooltip-2/</id>
+		<content type="html"><![CDATA[ <p>After <a href="/range-slider-tooltip/">the previous concept</a>, here is another idea of range slider. The tooltip will adjust its shape to stay within the boundaries of the slider. Even the radius will adjust when the tail get closer to the corners.</p>
+<p><picture><source type="image/avif" srcset="/img/B-TqBYV8ob-580.avif 580w"><source type="image/webp" srcset="/img/B-TqBYV8ob-580.webp 580w"><img alt="CSS-only range slider with tooltip" loading="lazy" decoding="async" src="/img/B-TqBYV8ob-580.png" width="580" height="276"></picture></p>
+<p>Powered by modern CSS features:</p>
+<ul>
+<li>Scroll Driven animation</li>
+<li>Anchor positioning</li>
+<li><code>@property</code> &amp; CSS variables</li>
+</ul>
+ <p><a href="https://css-tip.com/range-slider-tooltip-2/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
 		<title>Better text wrapping using text-wrap</title>
 		<link href="https://css-tip.com/text-wrap/"/>
 		<updated>2024-06-10T00:00:00Z</updated>
 		<id>https://css-tip.com/text-wrap/</id>
-		<content type="html"><![CDATA[ <p>Enhance your text wrapping using <code>text-wrap</code>.  No more lonely words at the end of paragraphs, and titles will look much better.</p>
+		<content type="html"><![CDATA[ <p>Enhance your text wrapping using <code>text-wrap</code>. No more lonely words at the end of paragraphs, and titles will look much better.</p>
  <p><a href="https://css-tip.com/text-wrap/">Read more</a></p> ]]></content>
 	</entry>
 	

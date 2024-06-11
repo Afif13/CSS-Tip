@@ -3,24 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy one</title>
+		<title>Custom range slider with tooltip II</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
+		<meta name="description" content="Using modern CSS features to create a fancy range slider with tooltop">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/range-slider-tooltip-2/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy one">
+		<meta property="og:title" content="Custom range slider with tooltip II">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/range-slider-tooltip-2/">
+		<meta property="og:description" content="Using modern CSS features to create a fancy range slider with tooltop">
+		<meta property="og:image" content="/og-images/eLJePo4g2H.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy one">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy one">
@@ -35,7 +35,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS Feed</a></li>
@@ -43,83 +43,30 @@
 			</nav>
 		</header>
 		<main id="skip">
-			
+			<h1>Custom range slider with tooltip II</h1>
 
-<h1>Learn CSS the easy way</h1>
-<p>Learn a new CSS Trick every day and become a better web developer. All the CSS secrets are here (Flexbox, CSS Grid, Shapes, Gradients, Colors, Animations, Selectors, Variables, Masking, Clipping, etc). It takes <strong>one minute</strong> to read a tip.</p>
+<time datetime="2024-06-11">June 11, 2024</time>
+
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
-<p>Want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<hr>
 
-
-<ul class="postlist" >
-
-	<li>
-		<a href="/range-slider-tooltip-2/" >Custom range slider with tooltip II</a>
-		<time datetime="2024-06-11">June 11, 2024</time>
-	</li>
-
-	<li>
-		<a href="/text-wrap/" >Better text wrapping using text-wrap</a>
-		<time datetime="2024-06-10">June 10, 2024</time>
-	</li>
-
-	<li>
-		<a href="/range-slider-tooltip/" >Custom range slider with tooltip</a>
-		<time datetime="2024-06-04">June 04, 2024</time>
-	</li>
-
-	<li>
-		<a href="/pixel-rounding/" >No more pixel rounding issues!</a>
-		<time datetime="2024-05-25">May 25, 2024</time>
-	</li>
-
-	<li>
-		<a href="/css-pattern/" >CSS-only background patterns with a minimal code</a>
-		<time datetime="2024-05-21">May 21, 2024</time>
-	</li>
-
-	<li>
-		<a href="/single-digit-inputs/" >Single-digit inputs with one element (OTP)</a>
-		<time datetime="2024-05-14">May 14, 2024</time>
-	</li>
-
-	<li>
-		<a href="/sparkle-shape/" >A Sparkle shape with one gradient</a>
-		<time datetime="2024-05-09">May 09, 2024</time>
-	</li>
-
-	<li>
-		<a href="/rgb-channels/" >How to extract R,G,B Channels from a color</a>
-		<time datetime="2024-05-08">May 08, 2024</time>
-	</li>
-
-	<li>
-		<a href="/root-selector/" >The shortest selector for the root element</a>
-		<time datetime="2024-05-06">May 06, 2024</time>
-	</li>
-
-	<li>
-		<a href="/status-indicator/" >Avatar with status indicator</a>
-		<time datetime="2024-04-30">April 30, 2024</time>
-	</li>
-
+<p>After <a href="/range-slider-tooltip/">the previous concept</a>, here is another idea of range slider. The tooltip will adjust its shape to stay within the boundaries of the slider. Even the radius will adjust when the tail get closer to the corners.</p>
+<p><picture><source type="image/avif" srcset="/img/B-TqBYV8ob-580.avif 580w"><source type="image/webp" srcset="/img/B-TqBYV8ob-580.webp 580w"><img alt="CSS-only range slider with tooltip" loading="lazy" decoding="async" src="/img/B-TqBYV8ob-580.png" width="580" height="276"></picture></p>
+<p>Powered by modern CSS features:</p>
+<ul>
+<li>Scroll Driven animation</li>
+<li>Anchor positioning</li>
+<li><code>@property</code> &amp; CSS variables</li>
 </ul>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="vYweZQa" data-pen-title="CSS-only Custom range slider" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/vYweZQa" target="_blank" rel="noopener">
+  CSS-only Custom range slider</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-
-
-
-<p>159 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-<hr>
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
+<ul class="links-nextprev"><li class="prev"><a href="/text-wrap/" title="Better text wrapping using text-wrap">Previous CSS Tip</a></li>
+</ul>
 
 		</main>
 		<footer>
