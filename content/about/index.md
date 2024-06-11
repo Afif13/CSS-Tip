@@ -9,6 +9,9 @@ eleventyNavigation:
 
 My name is **Temani Afif** and I made this website to share with you a few CSS Tips. No complex tutorial, No lengthy video, No boring streaming. Read a tip per day and become a CSS expert.
 
+<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+<div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
+
 
 Want more CSS fun? Check my other websites:
 * [CSS Challenges](https://css-challenges.com/)

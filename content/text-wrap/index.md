@@ -7,7 +7,7 @@ tags: posts
 ---
 
 
-Enhance your text wrapping using `text-wrap`.  No more lonely words at the end of paragraphs, and titles will look much better.
+Enhance your text wrapping using `text-wrap`. No more lonely words at the end of paragraphs, and titles will look much better.
 
 ```css
 * {
