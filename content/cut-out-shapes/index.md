@@ -17,17 +17,15 @@ A simple code to easily invert any shape created using `clip-path: polygon()`. A
   /* the size */
   width: ...;
   aspect-ratio: ...;
-  /* the normal shape */
+  /* the main shape */
   clip-path: polygon(var(--shape)); 
 }
 .shape.invert {
   --s: -20px; /* to control the space */
   padding: calc(-1*var(--s));
   box-sizing: content-box; /* reset the box-sizing */
-  /* the inverted shape */
-  clip-path: 
    /* evenodd at the beginning and content-box at the end */
-    polygon(evenodd,var(--s) var(--s),calc(100% - var(--s)) var(--s),calc(100% - var(--s)) calc(100% - var(--s)),var(--s) calc(100% - var(--s)),var(--s) var(--s),var(--shape)) content-box; 
+  clip-path: polygon(evenodd,var(--s) var(--s),calc(100% - var(--s)) var(--s),calc(100% - var(--s)) calc(100% - var(--s)),var(--s) calc(100% - var(--s)),var(--s) var(--s),var(--shape)) content-box; 
 }
 ```
 
