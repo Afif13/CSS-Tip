@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A rounded &amp; dashed underline</title>
+		<title>Fancy hover effect with anchor positioning</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A combination of gradients to create a rounded dashed underline">
+		<meta name="description" content="Create a navigation menu with a cool hover effect">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/rounded-dashed-underline/" >
+		<link rel=canonical href="https://css-tip.com/hover-anchor-positionning/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A rounded &amp; dashed underline">
+		<meta property="og:title" content="Fancy hover effect with anchor positioning">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/rounded-dashed-underline/">
-		<meta property="og:description" content="A combination of gradients to create a rounded dashed underline">
-		<meta property="og:image" content="/og-images/lJYn46pptu.png" >
+		<meta property="og:url" content="https://css-tip.com/hover-anchor-positionning/">
+		<meta property="og:description" content="Create a navigation menu with a cool hover effect">
+		<meta property="og:image" content="/og-images/SvVv4JK9vj.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -43,30 +43,27 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>A rounded &amp; dashed underline</h1>
+			<h1>Fancy hover effect with anchor positioning</h1>
 
-<time datetime="2022-02-01">February 01, 2022</time>
+<time datetime="2024-06-21">June 21, 2024</time>
 
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 <div class="adaptive" data-ea-publisher="css-challengescom" id="css-tip" data-ea-type="text" style="min-height: 100px;"></div>
 
-<p>Add a nice rounded dashed underline to your text.</p>
-<ul>
-<li>No SVG, No image</li>
-<li>No extra element</li>
-<li>No pseudo-element</li>
-<li>Works with multi-lines of text</li>
-<li>Easy to update using CSS variables</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/DvDlgrjXGq-721.avif 721w"><source type="image/webp" srcset="/img/DvDlgrjXGq-721.webp 721w"><img alt="A text with a rounded dashed underline" loading="lazy" decoding="async" src="/img/DvDlgrjXGq-721.png" width="721" height="317"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">p span</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>    <span class="token comment">/* the width of dashes */</span><br>  <span class="token property">--h</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>     <span class="token comment">/* the height of dashes */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> #4b9ed9<span class="token punctuation">;</span> <span class="token comment">/* the color */</span><br>  <br>  <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>1.2em + 2*<span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">padding-bottom</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> bottom/<span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span><span class="token punctuation">)</span> space no-repeat<span class="token punctuation">;</span><br>  <span class="token property">--_g</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/2<span class="token punctuation">)</span> top 50%<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span> 90%<span class="token punctuation">,</span>#0000 105%<span class="token punctuation">;</span><br>  <span class="token property">background-image</span><span class="token punctuation">:</span> <br>   <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span> at left  <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>   <br>   <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span> at right <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>   <br>   <span class="token function">linear-gradient</span><span class="token punctuation">(</span>90deg<span class="token punctuation">,</span>#0000 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span> 0 <span class="token function">calc</span><span class="token punctuation">(</span>3*<span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">,</span> #0000 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">-webkit-box-decoration-break</span><span class="token punctuation">:</span> clone<span class="token punctuation">;</span><br>          <span class="token property">box-decoration-break</span><span class="token punctuation">:</span> clone<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="dyZGBvN" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/dyZGBvN" target="_blank" rel="noopener">
-  Multi-line rounded dashes</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>A few experiemntation usign Anchor Positioning to create fancy hover effects. Highlight the menu items with a sliding effect.</p>
+<p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="ExzEjoQ" data-pen-title="Menu hover effect (with Anchor Positioning)" data-preview="true" data-user="t_afif" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ExzEjoQ" target="_blank" rel="noopener">
+  Menu hover effect (with Anchor Positioning)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>Or jumping effect.</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="jOozyLY" data-pen-title="Menu hover effect (with Anchor Positioning)" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/jOozyLY" target="_blank" rel="noopener">
+  Menu hover effect (with Anchor Positioning)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<ul class="links-nextprev"><li class="prev"><a href="/equal-width-button/" title="Equal width buttons">Previous CSS Tip</a></li><li class="next"><a href="/simple-css-loader/" title="A simple CSS loader">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/cut-out-shapes/" title="Cut-out shapes using clip-path">Previous CSS Tip</a></li>
 </ul>
 
 		</main>

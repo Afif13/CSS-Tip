@@ -4,11 +4,20 @@
 	<subtitle>A wide collection of CSS tips and tricks. The best place to keep up to date with the new CSS features</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-06-19T00:00:00Z</updated>
+	<updated>2024-06-21T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Fancy hover effect with anchor positioning</title>
+		<link href="https://css-tip.com/hover-anchor-positionning/"/>
+		<updated>2024-06-21T00:00:00Z</updated>
+		<id>https://css-tip.com/hover-anchor-positionning/</id>
+		<content type="html"><![CDATA[ <p>A few experiemntation usign Anchor Positioning to create fancy hover effects. Highlight the menu items with a sliding effect.</p>
+ <p><a href="https://css-tip.com/hover-anchor-positionning/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Cut-out shapes using clip-path</title>

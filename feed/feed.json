@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/hover-anchor-positionning/",
+			"url": "https://css-tip.com/hover-anchor-positionning/",
+			"title": "Fancy hover effect with anchor positioning",
+			"content_html": "<p>A few experiemntation usign Anchor Positioning to create fancy hover effects. Highlight the menu items with a sliding effect.</p>\n<p class=\"codepen\" data-height=\"350\" data-default-tab=\"result\" data-slug-hash=\"ExzEjoQ\" data-pen-title=\"Menu hover effect (with Anchor Positioning)\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/ExzEjoQ\">\n  Menu hover effect (with Anchor Positioning)</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<p>Or jumping effect.</p>\n<p class=\"codepen\" data-height=\"500\" data-default-tab=\"result\" data-slug-hash=\"jOozyLY\" data-pen-title=\"Menu hover effect (with Anchor Positioning)\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/jOozyLY\">\n  Menu hover effect (with Anchor Positioning)</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>",
+			"date_published": "2024-06-21T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/cut-out-shapes/",
 			"url": "https://css-tip.com/cut-out-shapes/",
 			"title": "Cut-out shapes using clip-path",
