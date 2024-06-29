@@ -136,8 +136,8 @@ footer {
 	padding: 0;
 	margin: 1em;
 	position: sticky;
-	bottom: 1em;
-	font-size: 1.25em;
+	bottom: .5em;
+	font-size: 1.15em;
 }
 .links-nextprev > * {
 	transform: translate(var(--t));
@@ -345,7 +345,7 @@ h2 + .header-anchor {
 input[type=search] {
 	display: block;
   width: calc(100% - 24px);
-  margin: 0 auto 2em;
+  margin: 1em auto;
   padding: .8em;
   border-radius: 5px;
   border: 1px solid #0005;
@@ -356,6 +356,47 @@ input[type=search] {
 	display: none!important;
 }
 
+#carbonads {
+    margin: 0!important;
+}
+#carbon-responsive {
+    max-width: 100%!important;
+    position: relative;
+}
+#carbon-responsive .carbon-responsive-wrap {
+    padding: 0!important;
+}
+#carbon-responsive .carbon-text {
+    padding: 24px 12px;
+    display: grid;
+    place-content: center;
+}
+#carbon-responsive .carbon-poweredby {
+    opacity: .68!important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: .2em .8em;
+    border: solid 1px var(--carbon-bg-secondary);
+    border-width: 1px 0 0 1px;
+    background: #0001;
+}
+#_stickybox_ .stickybox-outer {
+	max-width: 200px!important;
+	bottom: 4em!important;
+}
+#_stickybox_ .stickybox-inner {
+	flex-direction: column;
+	gap: 1em;
+}
+#_stickybox_ .stickybox-banner {
+	margin-right: 0!important;
+}
+@media (max-width:1100px) {
+	#_stickybox_ {
+		display: none!important;
+	}
+}
 /*html {
 	view-transition-name: main;
 	background-color: var(--c1);
