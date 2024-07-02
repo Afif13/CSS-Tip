@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-06-21T00:00:00Z</updated>
+	<updated>2024-07-02T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Grainy texture using CSS gradients</title>
+		<link href="https://css-tip.com/grainy-texture/"/>
+		<updated>2024-07-02T00:00:00Z</updated>
+		<id>https://css-tip.com/grainy-texture/</id>
+		<content type="html"><![CDATA[ <p>Create a random-style background (grainy texture) using a few lines of code.</p>
+<p><picture><source type="image/avif" srcset="/img/XgE-360PzK-857.avif 857w"><source type="image/webp" srcset="/img/XgE-360PzK-857.webp 857w"><img alt="grainy background texture" loading="lazy" decoding="async" src="/img/XgE-360PzK-857.png" width="857" height="372"></picture></p>
+ <p><a href="https://css-tip.com/grainy-texture/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Fancy hover effect with anchor positioning</title>
