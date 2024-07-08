@@ -268,21 +268,13 @@ header {
 	padding-left: 1.5rem;
 	text-wrap: pretty;
 }
-.postlist li:nth-child(1) {
-	font-size: 1.4em;
-}
-.postlist li:nth-child(2) {
-	font-size: 1.25em;
-}
-.postlist li:nth-child(3) {
-	font-size: 1.1em;
-}
 .postlist > * {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	margin-bottom: 1em;
 	position: relative;
+	font-size: 1.1em;
 }
 .postlist > *:before {
     pointer-events: none;
