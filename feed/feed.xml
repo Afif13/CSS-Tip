@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-07-04T00:00:00Z</updated>
+	<updated>2024-07-09T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Inverted border-radius using CSS mask</title>
+		<link href="https://css-tip.com/inverted-radius/"/>
+		<updated>2024-07-09T00:00:00Z</updated>
+		<id>https://css-tip.com/inverted-radius/</id>
+		<content type="html"><![CDATA[ <p>Use CSS mask to create <a href="https://css-shape.com/inverted-radius/">an inverted radius corner</a> with a minimal code.</p>
+<ul>
+<li>No extra elements</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/shmuVxu7mb-1027.avif 1027w"><source type="image/webp" srcset="/img/shmuVxu7mb-1027.webp 1027w"><img alt="CSS-only inverted border-radius" loading="lazy" decoding="async" src="/img/shmuVxu7mb-1027.png" width="1027" height="317"></picture></p>
+ <p><a href="https://css-tip.com/inverted-radius/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Circular progress using scroll-driven animations</title>
