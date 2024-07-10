@@ -4,11 +4,27 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-07-09T00:00:00Z</updated>
+	<updated>2024-07-10T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Border gradient with border-radius</title>
+		<link href="https://css-tip.com/border-gradient/"/>
+		<updated>2024-07-10T00:00:00Z</updated>
+		<id>https://css-tip.com/border-gradient/</id>
+		<content type="html"><![CDATA[ <p>Save this code for the future! It will be the easiest way to add a gradient coloration to borders while having rounded corners.</p>
+<ul>
+<li>No pseudo-element</li>
+<li>One gradient layer</li>
+<li>Transparent background</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/upkJLfF6zC-716.avif 716w"><source type="image/webp" srcset="/img/upkJLfF6zC-716.webp 716w"><img alt="CSS gradient border with border-radius" loading="lazy" decoding="async" src="/img/upkJLfF6zC-716.png" width="716" height="191"></picture></p>
+<p>⚠️ There is no implementation yet, but it's good to know.</p>
+ <p><a href="https://css-tip.com/border-gradient/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Inverted border-radius using CSS mask</title>
