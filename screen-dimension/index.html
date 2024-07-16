@@ -3,24 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>Get the screen width &amp; height without JavaScript</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="A few lines of CSS to get the screen width/height as integer values">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/screen-dimension/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="Get the screen width &amp; height without JavaScript">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/screen-dimension/">
+		<meta property="og:description" content="A few lines of CSS to get the screen width/height as integer values">
+		<meta property="og:image" content="/og-images/vxO26Src4h.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -35,7 +35,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS Feed</a></li>
@@ -43,82 +43,28 @@
 			</nav>
 		</header>
 		<main id="skip">
-			
+			<h1>Get the screen width &amp; height without JavaScript</h1>
 
-<h1>Learn CSS the easy way</h1>
-<p>Learn a new CSS Trick every day and become a better web developer. All the CSS secrets are here (Flexbox, CSS Grid, Shapes, Gradients, Colors, Animations, Selectors, Variables, Masking, Clipping, etc). It takes <strong>one minute</strong> to read a tip.</p>
-<div style="min-height: 126px;overflow: auto;padding-block:12px;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=responsive" id="_carbonads_js"></script></div>
-<p>Want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<hr>
+<time datetime="2024-07-16">July 16, 2024</time>
 
+<div style="min-height: 117px;padding-bottom:15px;overflow: auto;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=responsive" id="_carbonads_js"></script></div>
 
-<ul class="postlist" >
-
-	<li>
-		<a href="/screen-dimension/" >Get the screen width &amp; height without JavaScript</a>
-		<time datetime="2024-07-16">July 16, 2024</time>
-	</li>
-
-	<li>
-		<a href="/border-gradient/" >Border gradient with border-radius</a>
-		<time datetime="2024-07-10">July 10, 2024</time>
-	</li>
-
-	<li>
-		<a href="/inverted-radius/" >Inverted border-radius using CSS mask</a>
-		<time datetime="2024-07-09">July 09, 2024</time>
-	</li>
-
-	<li>
-		<a href="/circular-progress/" >Circular progress using scroll-driven animations</a>
-		<time datetime="2024-07-04">July 04, 2024</time>
-	</li>
-
-	<li>
-		<a href="/grainy-texture/" >Grainy texture using CSS gradients</a>
-		<time datetime="2024-07-02">July 02, 2024</time>
-	</li>
-
-	<li>
-		<a href="/hover-anchor-positionning/" >Fancy hover effect with anchor positioning</a>
-		<time datetime="2024-06-21">June 21, 2024</time>
-	</li>
-
-	<li>
-		<a href="/cut-out-shapes/" >Cut-out shapes using clip-path</a>
-		<time datetime="2024-06-19">June 19, 2024</time>
-	</li>
-
-	<li>
-		<a href="/range-slider-tooltip-2/" >Custom range slider with tooltip II</a>
-		<time datetime="2024-06-11">June 11, 2024</time>
-	</li>
-
-	<li>
-		<a href="/text-wrap/" >Better text wrapping using text-wrap</a>
-		<time datetime="2024-06-10">June 10, 2024</time>
-	</li>
-
-	<li>
-		<a href="/range-slider-tooltip/" >Custom range slider with tooltip</a>
-		<time datetime="2024-06-04">June 04, 2024</time>
-	</li>
-
+<p>Get the screen width and height as pixel values using a few lines of CSS.</p>
+<ul>
+<li>Powered by <code>@property</code> &amp; trigonometric functions</li>
+<li>Unitless values so you can easily use them inside any formula</li>
+<li>Updates on screen resize (No need for JavaScript)</li>
 </ul>
-
-
-
-
-<p>166 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-<hr>
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_w</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;length>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 100vw<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --_h</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;length>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">:root</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> <span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">atan2</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_w<span class="token punctuation">)</span><span class="token punctuation">,</span>1px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* screen width */</span><br>  <span class="token property">--h</span><span class="token punctuation">:</span> <span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">atan2</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_h<span class="token punctuation">)</span><span class="token punctuation">,</span>1px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* screen height*/</span><br>  <span class="token comment">/* The result is an integer without unit  */</span><br><span class="token punctuation">}</span></code></pre>
+<p>Resize the below demo to see how the values update in real-time:</p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="ExBVLBW" data-pen-title="Screen width/Screen height (CSS-only)" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ExBVLBW" target="_blank" rel="noopener">
+  Screen width/Screen height (CSS-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<ul class="links-nextprev"><li class="prev"><a href="/border-gradient/" title="Border gradient with border-radius">Previous CSS Tip</a></li>
+</ul>
 
 		</main>
 		<footer>
