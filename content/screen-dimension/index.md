@@ -38,3 +38,5 @@ Resize the below demo to see how the values update in real-time:
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More detail: [dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j](https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j)
