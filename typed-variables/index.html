@@ -3,24 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>Typed CSS variables using @property</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="Upgrade your CSS variables by registring them using the @property">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/typed-variables/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="Typed CSS variables using @property">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/typed-variables/">
+		<meta property="og:description" content="Upgrade your CSS variables by registring them using the @property">
+		<meta property="og:image" content="/og-images/dLvKGk-8lF.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -35,7 +35,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS Feed</a></li>
@@ -43,82 +43,31 @@
 			</nav>
 		</header>
 		<main id="skip">
-			
+			<h1>Typed CSS variables using @property</h1>
 
-<h1>Learn CSS the easy way</h1>
-<p>Learn a new CSS Trick every day and become a better web developer. All the CSS secrets are here (Flexbox, CSS Grid, Shapes, Gradients, Colors, Animations, Selectors, Variables, Masking, Clipping, etc). It takes <strong>one minute</strong> to read a tip.</p>
-<div style="min-height: 126px;overflow: auto;padding-block:12px;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=responsive" id="_carbonads_js"></script></div>
-<p>Want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<hr>
+<time datetime="2024-07-17">July 17, 2024</time>
 
+<div style="min-height: 117px;padding-bottom:15px;overflow: auto;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=responsive" id="_carbonads_js"></script></div>
 
-<ul class="postlist" >
-
-	<li>
-		<a href="/typed-variables/" >Typed CSS variables using @property</a>
-		<time datetime="2024-07-17">July 17, 2024</time>
-	</li>
-
-	<li>
-		<a href="/screen-dimension/" >Get the screen width &amp; height without JavaScript</a>
-		<time datetime="2024-07-16">July 16, 2024</time>
-	</li>
-
-	<li>
-		<a href="/border-gradient/" >Border gradient with border-radius</a>
-		<time datetime="2024-07-10">July 10, 2024</time>
-	</li>
-
-	<li>
-		<a href="/inverted-radius/" >Inverted border-radius using CSS mask</a>
-		<time datetime="2024-07-09">July 09, 2024</time>
-	</li>
-
-	<li>
-		<a href="/circular-progress/" >Circular progress using scroll-driven animations</a>
-		<time datetime="2024-07-04">July 04, 2024</time>
-	</li>
-
-	<li>
-		<a href="/grainy-texture/" >Grainy texture using CSS gradients</a>
-		<time datetime="2024-07-02">July 02, 2024</time>
-	</li>
-
-	<li>
-		<a href="/hover-anchor-positionning/" >Fancy hover effect with anchor positioning</a>
-		<time datetime="2024-06-21">June 21, 2024</time>
-	</li>
-
-	<li>
-		<a href="/cut-out-shapes/" >Cut-out shapes using clip-path</a>
-		<time datetime="2024-06-19">June 19, 2024</time>
-	</li>
-
-	<li>
-		<a href="/range-slider-tooltip-2/" >Custom range slider with tooltip II</a>
-		<time datetime="2024-06-11">June 11, 2024</time>
-	</li>
-
-	<li>
-		<a href="/text-wrap/" >Better text wrapping using text-wrap</a>
-		<time datetime="2024-06-10">June 10, 2024</time>
-	</li>
-
+<p>Stop defining your variables inside <code>:root</code>!</p>
+<p>Use the <code>@property</code> instead and create &quot;Typed CSS Variables&quot;</p>
+<ul>
+<li>Easy to debug using Dev tools</li>
+<li>Implicit data validation</li>
+<li>Can be animated if the type allows it</li>
+<li>Available globally with a default value</li>
 </ul>
-
-
-
-
-<p>167 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
+<p>Instead of doing this:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/*<br>  We don't know the type of the variables 🤔<br>  Valid or invalid? We don't know! 🫣<br>  Hard to debug &amp; the browser won't help you 😖<br>*/</span><br><span class="token selector">:root</span> <span class="token punctuation">{</span><br>  <span class="token property">--color</span><span class="token punctuation">:</span> #586de7<span class="token punctuation">;</span><br>  <span class="token property">--size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span><br>  <span class="token property">--cols</span><span class="token punctuation">:</span> 12<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Do this:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/*<br>  Typed CSS variables! 🤩<br>  Easy to debug and the browser will help you 😃<br>*/</span><br><span class="token atrule"><span class="token rule">@property</span> --color</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;color>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> #586de7<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --size</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;length>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --cols</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;integer>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 12<span class="token punctuation">;</span> <br><span class="token punctuation">}</span></code></pre>
 <hr>
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
+<p>Example of a data validation through the Dev tools.</p>
+<p>&quot;darkpink&quot; could have been a valid color. The browser will show you a warning and use the initial-value as a fallback. Without <code>@property</code>, there is no way to know the issue.</p>
+<p><picture><source type="image/avif" srcset="/img/7qlIH2iYKr-934.avif 934w"><source type="image/webp" srcset="/img/7qlIH2iYKr-934.webp 934w"><img alt="Dev tools CSS variables" loading="lazy" decoding="async" src="/img/7qlIH2iYKr-934.png" width="934" height="383"></picture></p>
+
+<ul class="links-nextprev"><li class="prev"><a href="/screen-dimension/" title="Get the screen width &amp; height without JavaScript">Previous CSS Tip</a></li>
+</ul>
 
 		</main>
 		<footer>

@@ -4,11 +4,28 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-07-16T00:00:00Z</updated>
+	<updated>2024-07-17T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Typed CSS variables using @property</title>
+		<link href="https://css-tip.com/typed-variables/"/>
+		<updated>2024-07-17T00:00:00Z</updated>
+		<id>https://css-tip.com/typed-variables/</id>
+		<content type="html"><![CDATA[ <p>Stop defining your variables inside <code>:root</code>!</p>
+<p>Use the <code>@property</code> instead and create &quot;Typed CSS Variables&quot;</p>
+<ul>
+<li>Easy to debug using Dev tools</li>
+<li>Implicit data validation</li>
+<li>Can be animated if the type allows it</li>
+<li>Available globally with a default value</li>
+</ul>
+<p>Instead of doing this:</p>
+ <p><a href="https://css-tip.com/typed-variables/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Get the screen width &amp; height without JavaScript</title>
