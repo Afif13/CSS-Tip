@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Manual typography using Scroll-driven animations</title>
+		<title>Calculate the scroll progress of the page</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use a range slider to manually adjust the font-size of your website (100% CSS)">
+		<meta name="description" content="A few lines of CSS to get the scroll progress of the page inside a CSS variable">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/manual-typography/" >
+		<link rel=canonical href="https://css-tip.com/scroll-progress/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Manual typography using Scroll-driven animations">
+		<meta property="og:title" content="Calculate the scroll progress of the page">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/manual-typography/">
-		<meta property="og:description" content="Use a range slider to manually adjust the font-size of your website (100% CSS)">
-		<meta property="og:image" content="/og-images/yYM82IAeue.png" >
+		<meta property="og:url" content="https://css-tip.com/scroll-progress/">
+		<meta property="og:description" content="A few lines of CSS to get the scroll progress of the page inside a CSS variable">
+		<meta property="og:image" content="/og-images/4wmKx6EjSt.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -43,27 +43,27 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Manual typography using Scroll-driven animations</h1>
+			<h1>Calculate the scroll progress of the page</h1>
 
-<time datetime="2024-07-18">July 18, 2024</time>
+<time datetime="2024-07-23">July 23, 2024</time>
 
 <div style="min-height: 117px;padding-bottom:15px;overflow: auto;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=responsive" id="_carbonads_js"></script></div>
 
-<p>Add a slider to adjust the <code>font-size</code> of your website using modern CSS features.</p>
+<p>Get the scroll progress of the page as a CSS variable using a few lines of code</p>
 <ul>
-<li>0 JavaScript required (100% CSS)</li>
-<li>Powered by Scroll-driven animations &amp; @property</li>
-<li>Easy to control using CSS variables</li>
+<li>Powered by Scroll-Driven animations</li>
+<li>Defined at the <code>:root</code> level (avaiable to all the elements)</li>
+<li>Typed using @property</li>
+<li>You can easily use it within any formula</li>
 </ul>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --i</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">--min</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span><br>  <span class="token property">--max</span><span class="token punctuation">:</span> 64px<span class="token punctuation">;</span><br>  <span class="token property">--step</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span><br>  <br>  <span class="token property">timeline-scope</span><span class="token punctuation">:</span> --thumb-view<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> i 1s linear<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --thumb-view<span class="token punctuation">;</span><br>  <span class="token property">animation-range</span><span class="token punctuation">:</span> entry 100% exit 0%<span class="token punctuation">;</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--min<span class="token punctuation">)</span> + <span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--max<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--min<span class="token punctuation">)</span><span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--step<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> i</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span><span class="token punctuation">{</span><span class="token property">--i</span><span class="token punctuation">:</span> 0<span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><span class="token selector">input[type="range" i]::-webkit-slider-thumb</span><span class="token punctuation">{</span><br>  <span class="token property">view-timeline</span><span class="token punctuation">:</span> --thumb-view inline<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Adjust the slider on the left to control the <code>font-size</code></p>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="yLdeEqa" data-pen-title="Fluid typography with slider (CSS-only)" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yLdeEqa" target="_blank" rel="noopener">
-  Fluid typography with slider (CSS-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --s</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;integer>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">:root</span> <span class="token punctuation">{</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> scroll 1s linear<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> <span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> scroll</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">--s</span><span class="token punctuation">:</span> 100<span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><br><span class="token selector">element:before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token function">counter</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token string">"%"</span><span class="token punctuation">;</span><br>  <span class="token property">counter-reset</span><span class="token punctuation">:</span> s <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="dyBXjYe" data-pen-title="CSS only scroll progress " data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/dyBXjYe" target="_blank" rel="noopener">
+  CSS only scroll progress </a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<ul class="links-nextprev"><li class="prev"><a href="/typed-variables/" title="Typed CSS variables using @property">Previous CSS Tip</a></li><li class="next"><a href="/scroll-progress/" title="Calculate the scroll progress of the page">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/manual-typography/" title="Manual typography using Scroll-driven animations">Previous CSS Tip</a></li>
 </ul>
 
 		</main>

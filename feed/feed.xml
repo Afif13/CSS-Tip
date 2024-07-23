@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-07-18T00:00:00Z</updated>
+	<updated>2024-07-23T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Calculate the scroll progress of the page</title>
+		<link href="https://css-tip.com/scroll-progress/"/>
+		<updated>2024-07-23T00:00:00Z</updated>
+		<id>https://css-tip.com/scroll-progress/</id>
+		<content type="html"><![CDATA[ <p>Get the scroll progress of the page as a CSS variable using a few lines of code</p>
+<ul>
+<li>Powered by Scroll-Driven animations</li>
+<li>Defined at the <code>:root</code> level (avaiable to all the elements)</li>
+<li>Typed using @property</li>
+<li>You can easily use it within any formula</li>
+</ul>
+ <p><a href="https://css-tip.com/scroll-progress/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Manual typography using Scroll-driven animations</title>
