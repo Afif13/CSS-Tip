@@ -15,7 +15,7 @@
 		<link href="https://css-tip.com/scroll-progress-2/"/>
 		<updated>2024-07-24T00:00:00Z</updated>
 		<id>https://css-tip.com/scroll-progress-2/</id>
-		<content type="html"><![CDATA[ <p>The same code of <a href="/scroll-progress/">the previous trick</a> can also be used to get the scroll progress of any element on the page. The only difference is the use of <code>self</code> inside the <code>scroll()</code> value</p>
+		<content type="html"><![CDATA[ <p>The same code of <a href="/scroll-progress/">the previous trick</a> can also be used to get the scroll progress of any element on the page. The only difference is the use of <code>self</code> inside the <code>scroll()</code> value.</p>
  <p><a href="https://css-tip.com/scroll-progress-2/">Read more</a></p> ]]></content>
 	</entry>
 	
