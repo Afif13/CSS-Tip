@@ -6,7 +6,7 @@ date: 2024-07-24
 tags: posts
 ---
 
-The same code of [the previous trick](/scroll-progress/) can also be used to get the scroll progress of any element on the page. The only difference is the use of `self` inside the `scroll()` value
+The same code of [the previous trick](/scroll-progress/) can also be used to get the scroll progress of any element on the page. The only difference is the use of `self` inside the `scroll()` value.
 
 ```css
 @property --s {
