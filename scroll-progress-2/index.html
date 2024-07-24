@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Diagonal split &amp; reveal animation</title>
+		<title>Calculate the scroll progress of an arbitrary element</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use clip-path to create a nice hover effect to reveal images">
+		<meta name="description" content="A few lines of CSS to get the scroll progress of any element in the page">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/diagonal-reveal-effect/" >
+		<link rel=canonical href="https://css-tip.com/scroll-progress-2/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Diagonal split &amp; reveal animation">
+		<meta property="og:title" content="Calculate the scroll progress of an arbitrary element">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/diagonal-reveal-effect/">
-		<meta property="og:description" content="Use clip-path to create a nice hover effect to reveal images">
-		<meta property="og:image" content="/og-images/d8kwPD2v_h.png" >
+		<meta property="og:url" content="https://css-tip.com/scroll-progress-2/">
+		<meta property="og:description" content="A few lines of CSS to get the scroll progress of any element in the page">
+		<meta property="og:image" content="/og-images/d_EStxhinO.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -43,29 +43,21 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Diagonal split &amp; reveal animation</h1>
+			<h1>Calculate the scroll progress of an arbitrary element</h1>
 
-<time datetime="2022-08-19">August 19, 2022</time>
+<time datetime="2024-07-24">July 24, 2024</time>
 
 <div style="min-height: 117px;padding-bottom:15px;overflow: auto;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=responsive" id="_carbonads_js"></script></div>
 
-<p>Reveal your images with a cool hover effect using a few lines of code</p>
-<ul>
-<li>Minimal HTML (2 <code>&lt;img&gt;</code> inside a container)</li>
-<li>Less than 15 CSS declaration</li>
-<li>Optimized with CSS variables</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/jLPv626qI1-886.avif 886w"><source type="image/webp" srcset="/img/jLPv626qI1-886.webp 886w"><img alt="A fancy hover effect using CSS clip-path" loading="lazy" decoding="async" src="/img/jLPv626qI1-886.png" width="886" height="455"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.gallery</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span> <span class="token comment">/* the gap */</span><br>  <br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.gallery > img</span> <span class="token punctuation">{</span><br>  <span class="token property">--_p</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">grid-area</span><span class="token punctuation">:</span> 1/1<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .4s .1s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.gallery > img:first-child</span> <span class="token punctuation">{</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>0 0<span class="token punctuation">,</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% + <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> 0 <span class="token punctuation">,</span> 0 <span class="token function">calc</span><span class="token punctuation">(</span>100% + <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token punctuation">}</span><br><span class="token selector">.gallery > img:last-child</span> <span class="token punctuation">{</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>100% 100%<span class="token punctuation">,</span> 100% <span class="token function">calc</span><span class="token punctuation">(</span>0% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">calc</span><span class="token punctuation">(</span>0% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> 100%<span class="token punctuation">)</span><br><span class="token punctuation">}</span><br><span class="token selector">.gallery:hover > img:last-child,<br>.gallery:hover > img:first-child:hover</span><span class="token punctuation">{</span><br>  <span class="token property">--_p</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.gallery:hover > img:first-child,<br>.gallery:hover > img:first-child:hover + img</span><span class="token punctuation">{</span><br>  <span class="token property">--_p</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>-50% - <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="LYdqGKQ" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LYdqGKQ" target="_blank" rel="noopener">
-  Dual image with hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>The same code of <a href="/scroll-progress/">the previous trick</a> can also be used to get the scroll progress of any element on the page. The only difference is the use of <code>self</code> inside the <code>scroll()</code> value</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --s</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;integer>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">.scroll</span> <span class="token punctuation">{</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> scroll 1s linear<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> <span class="token function">scroll</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> scroll</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">--s</span><span class="token punctuation">:</span> 100<span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.scroll:before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">"Scroll Progress: "</span> <span class="token function">counter</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token string">"%"</span><span class="token punctuation">;</span><br>  <span class="token property">counter-reset</span><span class="token punctuation">:</span> s <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="qBzaOdP" data-pen-title="CSS only scroll progress II" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/qBzaOdP" target="_blank" rel="noopener">
+  CSS only scroll progress II</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More detail: <a href="https://css-tricks.com/css-grid-and-custom-shapes-part-3/#aa-the-split-image-reveal" target="_blank" rel="noopener">css-tricks.com/css-grid-and-custom-shapes-part-3</a></p>
-
-<ul class="links-nextprev"><li class="prev"><a href="/css-speech-bubble/" title="A CSS-only Speech Bubble">Previous CSS Tip</a></li><li class="next"><a href="/css-zig-zag-panel/" title="Zig-Zag expanding image panels">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/scroll-progress/" title="Calculate the scroll progress of the page">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
