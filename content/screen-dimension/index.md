@@ -40,3 +40,5 @@ Resize the below demo to see how the values update in real-time:
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 More detail: [dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j](https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j)
+
+You can also [get the width/height of any element using a different method](/element-dimension/)
