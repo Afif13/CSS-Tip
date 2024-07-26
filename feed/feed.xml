@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-07-24T00:00:00Z</updated>
+	<updated>2024-07-26T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Get the width &amp; height of any element without JavaScript</title>
+		<link href="https://css-tip.com/element-dimension/"/>
+		<updated>2024-07-26T00:00:00Z</updated>
+		<id>https://css-tip.com/element-dimension/</id>
+		<content type="html"><![CDATA[ <p>Use modern CSS features to get the width and height of any element as CSS variables.</p>
+<ul>
+<li>Powered by Scroll-Driven animations and <code>@property</code></li>
+<li>Unitless values so you can easily use them inside any formula</li>
+<li>You can apply the trick to multiple elements on the page</li>
+<li>You can make the variables available everywhere on the page</li>
+</ul>
+ <p><a href="https://css-tip.com/element-dimension/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Calculate the scroll progress of an arbitrary element</title>

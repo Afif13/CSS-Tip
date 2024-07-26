@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Get the screen width &amp; height without JavaScript</title>
+		<title>Get the width &amp; height of any element without JavaScript</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A few lines of CSS to get the screen width/height as integer values">
+		<meta name="description" content="Using modern CSS to get the size of any element as CSS variables">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/screen-dimension/" >
+		<link rel=canonical href="https://css-tip.com/element-dimension/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Get the screen width &amp; height without JavaScript">
+		<meta property="og:title" content="Get the width &amp; height of any element without JavaScript">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/screen-dimension/">
-		<meta property="og:description" content="A few lines of CSS to get the screen width/height as integer values">
-		<meta property="og:image" content="/og-images/9R_W71-JCW.png" >
+		<meta property="og:url" content="https://css-tip.com/element-dimension/">
+		<meta property="og:description" content="Using modern CSS to get the size of any element as CSS variables">
+		<meta property="og:image" content="/og-images/iiRt5A7KOm.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -43,30 +43,36 @@
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>Get the screen width &amp; height without JavaScript</h1>
+			<h1>Get the width &amp; height of any element without JavaScript</h1>
 
-<time datetime="2024-07-16">July 16, 2024</time>
+<time datetime="2024-07-26">July 26, 2024</time>
 
 <div style="min-height: 117px;padding-bottom:15px;overflow: auto;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=responsive" id="_carbonads_js"></script></div>
 
-<p>Get the screen width and height as pixel values using a few lines of CSS.</p>
+<p>Use modern CSS features to get the width and height of any element as CSS variables.</p>
 <ul>
-<li>Powered by <code>@property</code> &amp; trigonometric functions</li>
+<li>Powered by Scroll-Driven animations and <code>@property</code></li>
 <li>Unitless values so you can easily use them inside any formula</li>
-<li>Updates on screen resize (No need for JavaScript)</li>
+<li>You can apply the trick to multiple elements on the page</li>
+<li>You can make the variables available everywhere on the page</li>
 </ul>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_w</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;length>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 100vw<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --_h</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;length>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">:root</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> <span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">atan2</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_w<span class="token punctuation">)</span><span class="token punctuation">,</span>1px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* screen width */</span><br>  <span class="token property">--h</span><span class="token punctuation">:</span> <span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">atan2</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_h<span class="token punctuation">)</span><span class="token punctuation">,</span>1px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* screen height*/</span><br>  <span class="token comment">/* The result is an integer without unit  */</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_x</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --_y</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --w</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;integer>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --h</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;integer>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><br><span class="token selector">.size</span> <span class="token punctuation">{</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span>1/<span class="token punctuation">(</span>1 - <span class="token function">var</span><span class="token punctuation">(</span>--_x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* element width */</span><br>  <span class="token property">--h</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span>1/<span class="token punctuation">(</span>1 - <span class="token function">var</span><span class="token punctuation">(</span>--_y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* element height */</span><br>  <span class="token property">timeline-scope</span><span class="token punctuation">:</span> --cx<span class="token punctuation">,</span>--cy<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> x linear<span class="token punctuation">,</span>y linear<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --cx<span class="token punctuation">,</span>--cy<span class="token punctuation">;</span><br>  <span class="token property">animation-range</span><span class="token punctuation">:</span> entry 100% exit 100%<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">.size:before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span><span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">view-timeline</span><span class="token punctuation">:</span> --cx inline<span class="token punctuation">,</span>--cy block<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> x</span> <span class="token punctuation">{</span><span class="token selector">to</span><span class="token punctuation">{</span><span class="token property">--_x</span><span class="token punctuation">:</span>1<span class="token punctuation">}</span><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> y</span> <span class="token punctuation">{</span><span class="token selector">to</span><span class="token punctuation">{</span><span class="token property">--_y</span><span class="token punctuation">:</span>1<span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
 <p>Resize the below demo to see how the values update in real-time:</p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="ExBVLBW" data-pen-title="Screen width/Screen height (CSS-only)" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ExBVLBW" target="_blank" rel="noopener">
-  Screen width/Screen height (CSS-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="MWMyYeP" data-pen-title="Get width/height of elements using CSS" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/MWMyYeP" target="_blank" rel="noopener">
+  Get width/height of elements using CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>Here is the particular case of the screen sizes</p>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="eYwZgqL" data-pen-title="Get screen dimension using only CSS" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/eYwZgqL" target="_blank" rel="noopener">
+  Get screen dimension using only CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More detail: <a href="https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j" target="_blank" rel="noopener">dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j</a></p>
-<p>You can also <a href="/element-dimension/">get the width/height of any element using a different method</a></p>
+<p>More detail: <a href="https://frontendmasters.com/blog/how-to-get-the-width-height-of-any-element-in-only-css/" target="_blank" rel="noopener">frontendmasters.com/blog/how-to-get-the-width-height-of-any-element-in-only-css</a></p>
 
-<ul class="links-nextprev"><li class="prev"><a href="/border-gradient/" title="Border gradient with border-radius">Previous CSS Tip</a></li><li class="next"><a href="/typed-variables/" title="Typed CSS variables using @property">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/scroll-progress-2/" title="Calculate the scroll progress of an arbitrary element">Previous CSS Tip</a></li>
 </ul>
 
 		</main>
