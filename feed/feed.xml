@@ -4,11 +4,20 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-07-26T00:00:00Z</updated>
+	<updated>2024-07-29T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Count the number of lines inside a text</title>
+		<link href="https://css-tip.com/count-lines/"/>
+		<updated>2024-07-29T00:00:00Z</updated>
+		<id>https://css-tip.com/count-lines/</id>
+		<content type="html"><![CDATA[ <p>By adjusting the code of <a href="/element-dimension/">the previous tip (getting the width/height of any element)</a> we can do some intresting counting. For example, we can count the number of lines inside a text.</p>
+ <p><a href="https://css-tip.com/count-lines/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Get the width &amp; height of any element without JavaScript</title>
