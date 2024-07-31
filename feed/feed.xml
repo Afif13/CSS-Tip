@@ -4,11 +4,20 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-07-29T00:00:00Z</updated>
+	<updated>2024-07-31T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Get the width of the scrollbar using only CSS</title>
+		<link href="https://css-tip.com/scrollbar-width/"/>
+		<updated>2024-07-31T00:00:00Z</updated>
+		<id>https://css-tip.com/scrollbar-width/</id>
+		<content type="html"><![CDATA[ <p>&quot;What is the width of the scrollbar?&quot; A question we can answer using a few lines of modern CSS! No need for JavaScript and you get the value as a CSS variable defined at <code>:root</code> level.</p>
+ <p><a href="https://css-tip.com/scrollbar-width/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Count the number of lines inside a text</title>
