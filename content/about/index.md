@@ -9,9 +9,6 @@ eleventyNavigation:
 
 My name is **Temani Afif** and I made this website to share with you a few CSS Tips. No complex tutorial, No lengthy video, No boring streaming. Read a tip per day and become a CSS expert.
 
-<div style="min-height: 126px;overflow: auto;padding-block:12px;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=responsive" id="_carbonads_js"></script></div>
-
-
 Want more CSS fun? Check my other websites:
 * [CSS Challenges](https://css-challenges.com/)
 * [CSS Generators](https://css-generators.com/)
