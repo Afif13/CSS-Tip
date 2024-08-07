@@ -4,11 +4,27 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-07-31T00:00:00Z</updated>
+	<updated>2024-08-07T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Arc shape with rounded edges</title>
+		<link href="https://css-tip.com/arc-shape/"/>
+		<updated>2024-08-07T00:00:00Z</updated>
+		<id>https://css-tip.com/arc-shape/</id>
+		<content type="html"><![CDATA[ <p>Create an <a href="https://css-shape.com/arc/">arc shape</a> with rounded edges using a few lines of CSS</p>
+<ul>
+<li>Single element (no pseudo-element)</li>
+<li>Less than 10 CSS declarations</li>
+<li>Supports gradient coloration</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/jFTRMClVU9-827.avif 827w"><source type="image/webp" srcset="/img/jFTRMClVU9-827.webp 827w"><img alt="A 3D shine animation on image" loading="lazy" decoding="async" src="/img/jFTRMClVU9-827.png" width="827" height="296"></picture></p>
+ <p><a href="https://css-tip.com/arc-shape/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Get the width of the scrollbar using only CSS</title>
