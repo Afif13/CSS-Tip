@@ -294,8 +294,9 @@ nav {
 /* Tags list */
 h1 + time {
 	display: block;
-	margin: 0 .5em;
+	margin: 1em 0 3em;
 	font-style: italic;
+	font-weight: 500;
 }
 
 /* Direct Links / Markdown Headers */
