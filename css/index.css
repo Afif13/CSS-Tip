@@ -84,8 +84,22 @@ footer {
 aside {
 	padding: 1rem;
 	display: grid;
-    align-content: start;
+	grid-template-rows: repeat(5,auto) 1fr;
+	align-items: start;
     gap: 1rem;
+}
+aside > a {
+	display: grid;
+	border: 1px solid hsl(0, 0%, 92%);
+	overflow: hidden;
+	border-radius: 9px;
+}
+aside > :last-child {
+	position: sticky;
+	top: 1em;
+}
+aside img{
+	max-width: 100%;
 }
 footer {
 	margin-top: auto;
@@ -340,6 +354,8 @@ input[type=search] {
 
 #carbonads {
     margin: 0!important;
+    position:sticky;
+    top:1em
 }
 #carbon-responsive .carbon-responsive-wrap {
 	border-radius: 9px;
