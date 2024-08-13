@@ -6,7 +6,7 @@ date: 2023-03-08
 tags: posts
 ---
 
-Use online generators to create CSS shapes using clip-path in not time! 
+Use online generators to create CSS shapes using clip-path in no time! 
 
 * Polygon Shapes: [css-generators.com/polygon-shape](https://css-generators.com/polygon-shape)
 * Starburst Shapes:  [css-generators.com/starburst-shape](https://css-generators.com/starburst-shape)
