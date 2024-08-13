@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Arc shape with rounded edges</title>
+		<title>A CSS generator for wavy circle shapes</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="a few lines of modern CSS to create an arc shape with rounded edges">
+		<meta name="description" content="Use modern CSS to create a wavy circle shape in no time">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/arc-shape/" >
+		<link rel=canonical href="https://css-tip.com/wavy-circles/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Arc shape with rounded edges">
+		<meta property="og:title" content="A CSS generator for wavy circle shapes">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/arc-shape/">
-		<meta property="og:description" content="a few lines of modern CSS to create an arc shape with rounded edges">
-		<meta property="og:image" content="/og-images/XGP7869rX4.png" >
+		<meta property="og:url" content="https://css-tip.com/wavy-circles/">
+		<meta property="og:description" content="Use modern CSS to create a wavy circle shape in no time">
+		<meta property="og:image" content="/og-images/sMUUvBsQAL.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -44,30 +44,24 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/scrollbar-width/" title="Get the width of the scrollbar using only CSS">Previous CSS Tip</a></li><li class="next"><a href="/wavy-circles/" title="A CSS generator for wavy circle shapes">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/arc-shape/" title="Arc shape with rounded edges">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Arc shape with rounded edges</h1>
+<h1>A CSS generator for wavy circle shapes</h1>
 
-<time datetime="2024-08-07">August 07, 2024</time>
+<time datetime="2024-08-13">August 13, 2024</time>
 
-<p>Create an <a href="https://css-shape.com/arc/" target="_blank" rel="noopener">arc shape</a> with rounded edges using a few lines of CSS</p>
+<p>Use an online generator to create fancy wavy circles in no time!</p>
+<p><a href="https://css-generators.com/wavy-circle/" target="_blank" rel="noopener">css-generators.com/wavy-circle</a></p>
 <ul>
-<li>Single element (no pseudo-element)</li>
-<li>Less than 10 CSS declarations</li>
+<li>Only one element (no pseudo-elements)</li>
+<li>Works with <code>&lt;img&gt;</code> element</li>
 <li>Supports gradient coloration</li>
-<li>Optimized with CSS variables</li>
+<li>Powered by CSS mask</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/jFTRMClVU9-827.avif 827w"><source type="image/webp" srcset="/img/jFTRMClVU9-827.webp 827w"><img alt="A 3D shine animation on image" loading="lazy" decoding="async" src="/img/jFTRMClVU9-827.png" width="827" height="296"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.arc</span> <span class="token punctuation">{</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span> <span class="token comment">/* the boder thickness */</span><br>  <span class="token property">--a</span><span class="token punctuation">:</span> 220deg<span class="token punctuation">;</span> <span class="token comment">/* control the progression */</span><br>  <br>  <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#CC333F<span class="token punctuation">,</span>#8A9B0F<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_g</span><span class="token punctuation">:</span>/<span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> no-repeat<br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span>50% 50%<span class="token punctuation">,</span>#000 <span class="token function">calc</span><span class="token punctuation">(</span>100% - 1px<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    top <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">,</span><br>     <span class="token function">calc</span><span class="token punctuation">(</span>50% + 50%*<span class="token function">sin</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <br>     <span class="token function">calc</span><span class="token punctuation">(</span>50% - 50%*<span class="token function">cos</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#0000 0 0<span class="token punctuation">)</span> content-box intersect<span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#000 <span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="oNrwRqP" data-pen-title="Arc shape with rounded edges" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/oNrwRqP" target="_blank" rel="noopener">
-  Arc shape with rounded edges</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More CSS Shapes: <a href="https://css-shape.com/" target="_blank" rel="noopener">css-shape.com</a></p>
+<p><picture><source type="image/avif" srcset="/img/ruuEoicEmA-1094.avif 1094w"><source type="image/webp" srcset="/img/ruuEoicEmA-1094.webp 1094w"><img alt="CSS only wavy circles shape" loading="lazy" decoding="async" src="/img/ruuEoicEmA-1094.png" width="1094" height="367"></picture></p>
+<p>Related: <a href="https://css-tip.com/wavy-circle/" target="_blank" rel="noopener">css-tip.com/wavy-circle</a></p>
 
 
 		</main>
