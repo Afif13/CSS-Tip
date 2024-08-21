@@ -12,14 +12,15 @@ Create a custom range slider with a tooltip showing the selected value. There is
 
 ```html
 <label>
+   your label
   <input type="range" id="one" min="0" max="120" step="1" value="20">
   <output for="one" style="--min: 0;--max: 120"></output>
 </label>
 ```
 
 Powered by modern CSS features:
-* Scroll Driven animation
-* Anchor positioning
+* Scroll-Driven Animations
+* Anchor Positioning
 * `@property` & CSS variables
 
 
@@ -39,3 +40,6 @@ We can also add some motion to the tooltip to get a fancy effect.
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+More detail: [frontendmasters.com/blog/custom-range-slider-using-anchor-positioning-scroll-driven-animations](https://frontendmasters.com/blog/custom-range-slider-using-anchor-positioning-scroll-driven-animations/)

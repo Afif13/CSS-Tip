@@ -6,7 +6,7 @@ date: 2024-04-18
 tags: posts
 ---
 
-Use modern CSS to create a fancy Zig-Zag border around images using a few lines of code.
+Use modern CSS to create a fancy [Zig-Zag border around images](https://css-shape.com/zig-zag-box/) using a few lines of code.
 * Only one element (the `<img>` tag)
 * No pseudo-element
 * Optimized with CSS variables
