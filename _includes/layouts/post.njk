@@ -19,3 +19,20 @@ layout: layouts/base.njk
 <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
 
 {{ content | safe }}
+
+<hr>
+
+<h2>More CSS Tips</h2>
+
+{%- set index = collections.posts | getCollectionItemIndex %}
+
+<ul class="postlist" >
+{%- for i in [3,2,1,-1,-2,-3] %}
+  {%- set p = collections.posts[index + i] %}
+  	{%- if p %}
+  	<li>
+		<a href="{{ p.url }}" >{% if p.data.title %}{{ p.data.title }}{% else %}<code>{{ p.url }}</code>{% endif %}</a>
+	</li>
+	{%- endif %}
+{%- endfor %}
+</ul>

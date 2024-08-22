@@ -11,8 +11,8 @@ After [the previous concept](/range-slider-tooltip/), here is another idea of ra
 {% image "./image.png", "CSS-only range slider with tooltip" %}
 
 Powered by modern CSS features:
-* Scroll Driven animation
-* Anchor positioning
+* Scroll-Driven animations
+* Anchor Positioning
 * `@property` & CSS variables
 
 
