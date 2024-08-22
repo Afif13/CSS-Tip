@@ -250,8 +250,8 @@
 <p><picture><source type="image/avif" srcset="/img/B-TqBYV8ob-580.avif 580w"><source type="image/webp" srcset="/img/B-TqBYV8ob-580.webp 580w"><img alt="CSS-only range slider with tooltip" loading="lazy" decoding="async" src="/img/B-TqBYV8ob-580.png" width="580" height="276"></picture></p>
 <p>Powered by modern CSS features:</p>
 <ul>
-<li>Scroll Driven animation</li>
-<li>Anchor positioning</li>
+<li>Scroll-Driven animations</li>
+<li>Anchor Positioning</li>
 <li><code>@property</code> &amp; CSS variables</li>
 </ul>
  <p><a href="https://css-tip.com/range-slider-tooltip-2/">Read more</a></p> ]]></content>
