@@ -4,11 +4,31 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-08-15T00:00:00Z</updated>
+	<updated>2024-08-26T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Quantity queries using has() selector</title>
+		<link href="https://css-tip.com/quantity-queries/"/>
+		<updated>2024-08-26T00:00:00Z</updated>
+		<id>https://css-tip.com/quantity-queries/</id>
+		<content type="html"><![CDATA[ <style>
+  input,select {font-size: 1em}
+  input[type=number] {font-family: monospace;width: 6ch}
+  input[type=text] {width:150px}
+</style>
+<p>Adjust the below to get your quantity query selector!</p>
+<form>Select <input type="text" value=".container"> if it has <select>
+  <option value="0">Exactly</option>
+  <option value="1">At least</option>
+  <option value="2">At most</option>
+  <option value="3" selected>Between</option>
+</select> <input type="number" value="3" min=0> <span>and <input type="number" value="10" min=0></span> child elements</form>
+ <p><a href="https://css-tip.com/quantity-queries/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>A decorative line with rounded dashes</title>

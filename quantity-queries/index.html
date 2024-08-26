@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A reveal hover effect with a single element II</title>
+		<title>Quantity queries using has() selector</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Add a reveal animation to your image with a minimal code">
+		<meta name="description" content="a simple way to generate a Quantity query selector">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/reveal-hover-effect-2/" >
+		<link rel=canonical href="https://css-tip.com/quantity-queries/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A reveal hover effect with a single element II">
+		<meta property="og:title" content="Quantity queries using has() selector">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/reveal-hover-effect-2/">
-		<meta property="og:description" content="Add a reveal animation to your image with a minimal code">
-		<meta property="og:image" content="/og-images/aODRCdrZXu.png" >
+		<meta property="og:url" content="https://css-tip.com/quantity-queries/">
+		<meta property="og:description" content="a simple way to generate a Quantity query selector">
+		<meta property="og:image" content="/og-images/8Qf-tflqIA.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -44,30 +44,97 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/reveal-hover-effect/" title="A reveal hover effect with a single element">Previous CSS Tip</a></li><li class="next"><a href="/select-elements-between-two-class/" title="Select all elemens between two class names">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/line-rounded-dashes/" title="A decorative line with rounded dashes">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>A reveal hover effect with a single element II</h1>
+<h1>Quantity queries using has() selector</h1>
 
-<time datetime="2023-05-01">May 01, 2023</time>
+<time datetime="2024-08-26">August 26, 2024</time>
 
-<p>Adding more variations to <a href="/reveal-hover-effect/">the previous reveal animation</a> using the same tricks</p>
-<ul>
-<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
-<li>No pseudo-element</li>
-<li>Powered by object-fit &amp; object-position</li>
-<li>A lot of possible combination</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/mB5WrHlAcP-494.avif 494w"><source type="image/webp" srcset="/img/mB5WrHlAcP-494.webp 494w"><img alt="CSS reveal animation using padding and object-fit" loading="lazy" decoding="async" src="/img/mB5WrHlAcP-494.png" width="494" height="481"></picture></p>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="RweZBRg" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/RweZBRg" target="_blank" rel="noopener">
-  A reveal hover effect with one element II</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>Related Article: <a href="https://www.sitepoint.com/css-image-reveal-animation/" target="_blank" rel="noopener">www.sitepoint.com/css-image-reveal-animation</a></p>
+<style>
+  input,select {font-size: 1em}
+  input[type=number] {font-family: monospace;width: 6ch}
+  input[type=text] {width:150px}
+</style>
+<p>Adjust the below to get your quantity query selector!</p>
+<form>Select <input type="text" value=".container"> if it has <select>
+  <option value="0">Exactly</option>
+  <option value="1">At least</option>
+  <option value="2">At most</option>
+  <option value="3" selected>Between</option>
+</select> <input type="number" value="3" min=0> <span>and <input type="number" value="10" min=0></span> child elements</form>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container:has(> :nth-last-child(3):nth-child(-n + 8))</span> <span class="token punctuation">{</span><br>  <span class="token comment">/*                */</span><br>  <span class="token comment">/* your CSS here  */</span><br>  <span class="token comment">/*                */</span><br><span class="token punctuation">}</span></code></pre>
+<p>Note: &quot;At most N&quot; is the same as &quot;Between 1 and N&quot; (0 is not included)</p>
+<p>Related: <a href="/number-elements-has-selector/">How many elements your container has?</a></p>
+<script>
 
+let cod = document.querySelector('code .token.selector');
+let span = document.querySelector('form span')
+
+document.querySelector('form').addEventListener('input', function() {
+  let type = document.querySelector("select").value;
+  let selector = document.querySelector("input[type=text]").value;
+  let min = document.querySelectorAll("input[type=number]")[0].value;
+  let max = document.querySelectorAll("input[type=number]")[1].value;
+
+  if((+min < 0) || (+max < 0)) {
+    document.querySelector('.language-css').style.background="url(https://assets.codepen.io/1480814/rick.webp) 50%/contain";
+  } else {
+    document.querySelector('.language-css').style.background="#272822"
+  }
+
+  span.style.display= "none";
+  switch (type) {
+    case "0":
+      if(min == 0)
+        cod.innerHTML = `${selector}:not(:has(*))`;
+      else if(min == 1)
+        cod.innerHTML = `${selector}:has(> :only-child)`;
+      else
+        cod.innerHTML = `${selector}:has(> :last-child:nth-child(${min}))`;
+      break;
+    case "1":
+      if(min == 0)
+        cod.innerHTML = `${selector}`;
+      else 
+        cod.innerHTML = `${selector}:has(> :nth-child(${min}))`;
+      break;
+    case "2":
+      if(min == 0)
+        cod.innerHTML = `_nothing_to_select_`;
+      else if(min == 1)
+        cod.innerHTML = `${selector}:has(> :only-child)`;
+      else
+        cod.innerHTML = `${selector}:has(> :last-child:nth-child(-n + ${min}))`;
+      break;
+    case "3":
+      span.style.display= "revert";
+      if (+min > +max) 
+        cod.innerHTML = `_nothing_to_select_`;
+      else if(min == max) {
+        if(min == 0)
+          cod.innerHTML = `${selector}:not(:has(*))`;
+        else if(min == 1)
+          cod.innerHTML = `${selector}:has(> :only-child)`;
+        else
+          cod.innerHTML = `${selector}:has(> :last-child:nth-child(${min}))`;
+      }
+      else if(min == 0) {
+        if(max == 1)
+          cod.innerHTML = `${selector}:is(:has(> :only-child),:not(:has(*)))`;
+        else
+          cod.innerHTML = `${selector}:is(:has(> :last-child:nth-child(-n + ${max})),:not(:has(*)))`;
+      }
+      else if(min == 1)
+        cod.innerHTML = `${selector}:has(> :last-child:nth-child(-n + ${max}))`;
+      else
+        cod.innerHTML = `${selector}:has(> :nth-last-child(${min}):nth-child(-n + ${max - min + 1}))`;
+      break
+    default:
+  }
+});
+</script>
 
 <hr style="margin-block: 2rem">
 
@@ -75,22 +142,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/stanled-background-full-screen/" >Full screen slanted background</a>
+		<a href="/line-rounded-dashes/" >A decorative line with rounded dashes</a>
 	</li>
   	<li>
-		<a href="/inner-border-radius/" >An inner border-radius with one property</a>
+		<a href="/wavy-circles/" >A CSS generator for wavy circle shapes</a>
 	</li>
   	<li>
-		<a href="/select-elements-between-two-class/" >Select all elemens between two class names</a>
-	</li>
-  	<li>
-		<a href="/reveal-hover-effect/" >A reveal hover effect with a single element</a>
-	</li>
-  	<li>
-		<a href="/rotating-square-hover-effect/" >A fancy hover effect with rotating squares</a>
-	</li>
-  	<li>
-		<a href="/css-ribbon-2/" >A CSS-only Ribbon</a>
+		<a href="/arc-shape/" >Arc shape with rounded edges</a>
 	</li>
 </ul>
 		</main>
