@@ -59,8 +59,8 @@
 			{{ content | safe }}
 		</main>
 		<aside>
-			<div id="custom-ad" style="height: 250px;"></div>
-			<div style="height:450px;overflow: clip;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=cover" id="_carbonads_js"></script></div>
+			<div id="custom-ad" style="height: 230px;"></div>
+			<div style="height:400px;overflow: clip;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=cover" id="_carbonads_js"></script></div>
 			<a href="https://css-loaders.com/" target="_blank">
 				<img src="/img/css-loader.jpg" alt="CSS Loaders" >
 			</a>
@@ -91,9 +91,18 @@
     <div class="wall__cta" style="background-color: ##ctaBackgroundColor##; color: ##ctaTextColor##;">##callToAction##</div>
   </div>
 </a>
-`
-    });
-
+`});
+    _bsa.init('custom', 'CW7DPK7N', 'placement:css-tipcom',
+    {
+      target: '#inline-ad',
+      template: `
+  <a href="##link##" class="native-link" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+    <img src="##image##" style="background-color: ##backgroundColor##" class="native-img">
+    <div class="native-text"><span class="native-company">##company##</span> ##description##</div>
+  </a>
+  <a href="##ad_via_link##" class="native-ad">AD</a>
+    `
+        });
   }
 })();
 </script>
