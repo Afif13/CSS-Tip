@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Quantity queries using has() selector
-description: a simple way to generate a Quantity query selector
+description: a simple way to generate a quantity query selector using modern CSS
 date: 2024-08-26
 tags: posts
 ---
@@ -32,6 +32,20 @@ Adjust the below to get your quantity query selector!
 ```
 
 Note: "At most N" is the same as "Between 1 and N" (0 is not included)
+
+Here are two special quantity selectors that can be useful
+
+```css
+/* select .container if it has an even number of child elements */
+.container:has(> :last-child:nth-child(even)) {
+  /* your CSS here */
+}
+/* select .container if it has an odd number of child elements */
+.container:has(> :last-child:nth-child(odd)) {
+  /* your CSS here */
+}
+```
+
 
 Related: [How many elements your container has?](/number-elements-has-selector/)
 

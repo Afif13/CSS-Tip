@@ -43,3 +43,5 @@ You can also have range selection
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+Related: [Quantity queries using has() selector](/quantity-queries/)
