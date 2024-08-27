@@ -380,6 +380,9 @@ input[type=search] {
 #custom-ad {
 	display: grid;
 }
+#custom-ad:empty {
+	display: none;
+}
 .wall {
   height: 100%;
   font-size: 18px;
@@ -425,6 +428,9 @@ input[type=search] {
   text-transform: uppercase;
   border-radius: 4px;
   place-self: center end;
+}
+#inline-ad {
+	display: block;
 }
 #inline-ad:has(#_custom_) > hr {
 	display: none;
