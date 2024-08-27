@@ -377,10 +377,10 @@ input[type=search] {
     place-content: center;
     font-size: 15px;
 }
-#custom-ad {
+#custom-wall {
 	display: grid;
 }
-#custom-ad:empty {
+#custom-wall:empty {
 	display: none;
 }
 .wall {
@@ -429,26 +429,26 @@ input[type=search] {
   border-radius: 4px;
   place-self: center end;
 }
-#inline-ad {
+#inline-custom {
 	display: block;
 }
-#inline-ad:has(#_custom_) > hr {
+#inline-custom:has(#_custom_) > hr {
 	display: none;
 }
-#inline-ad #_custom_ {
+#inline-custom #_custom_ {
   position: relative;
   padding: 8px 18px 8px 0;
   border-radius: 4px;
   background-color: #f0f0f0;
 }
 
-#inline-ad .native-link {
+#inline-custom .native-link {
   position: relative;
 }
-#inline-ad a {
+#inline-custom a {
   text-decoration: none;
 }
-#inline-ad .native-img {
+#inline-custom .native-img {
   position: absolute;
   top: calc(50% - 21px);
   left: -21px;
@@ -460,17 +460,17 @@ input[type=search] {
   border-radius: 50%;
   box-shadow: inset 0 0 2px hsla(0, 0%, 0%, .2);
 }
-#inline-ad .native-text {
+#inline-custom .native-text {
   margin-right: 10px;
   margin-left: 24px;
   color: #111;
   font-size: 16px;
   line-height: 1.5;
 }
-#inline-ad .native-company {
+#inline-custom .native-company {
   font-weight: 600;
 }
-#inline-ad .native-ad {
+#inline-custom .native-ad {
   position: absolute;
   top: 0;
   right: 0;
