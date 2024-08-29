@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Inner curve/notch shape using CSS mask</title>
+		<title>Curved avatar header with hover effect</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Create an inner curve using modern CSS and a few lines of code">
+		<meta name="description" content="Create a fancy curved header with a cool hover effect">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/inner-curve-notch/" >
+		<link rel=canonical href="https://css-tip.com/fancy-avatar-header/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Inner curve/notch shape using CSS mask">
+		<meta property="og:title" content="Curved avatar header with hover effect">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/inner-curve-notch/">
-		<meta property="og:description" content="Create an inner curve using modern CSS and a few lines of code">
-		<meta property="og:image" content="/og-images/AC5QkcaBjb.png" >
+		<meta property="og:url" content="https://css-tip.com/fancy-avatar-header/">
+		<meta property="og:description" content="Create a fancy curved header with a cool hover effect">
+		<meta property="og:image" content="/og-images/4te6r3E03M.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -44,31 +44,27 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/quantity-queries/" title="Quantity queries using has() selector">Previous CSS Tip</a></li><li class="next"><a href="/fancy-avatar-header/" title="Curved avatar header with hover effect">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/inner-curve-notch/" title="Inner curve/notch shape using CSS mask">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Inner curve/notch shape using CSS mask</h1>
+<h1>Curved avatar header with hover effect</h1>
 
-<time datetime="2024-08-28">August 28, 2024</time>
+<time datetime="2024-08-29">August 29, 2024</time>
 
-<p>Create an <a href="https://css-shape.com/inner-curve/" target="_blank" rel="noopener">inner curve/notch shape</a> using CSS mask and a few lines of code</p>
+<p>I am using the <a href="/inner-curve-notch/">inner curve/notch shape</a> to create a fancy header with an avatar and a cool hover effect.</p>
 <ul>
-<li>Only one element</li>
-<li>No pseudo-element</li>
-<li>Works with gradients &amp; images</li>
+<li>No complex HTML code</li>
+<li>Powered by CSS mask, <code>@property</code> and math functions</li>
 <li>Optimized with CSS variables</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/OBqui9PDhN-1023.avif 1023w"><source type="image/webp" srcset="/img/OBqui9PDhN-1023.webp 1023w"><img alt="CSS only inner curve/notch shape" loading="lazy" decoding="async" src="/img/OBqui9PDhN-1023.png" width="1023" height="424"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.shape</span> <span class="token punctuation">{</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span> <span class="token comment">/* control the rounded part*/</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span> <span class="token comment">/* control the size of the cut */</span><br>  <span class="token property">--a</span><span class="token punctuation">:</span> 40deg<span class="token punctuation">;</span> <span class="token comment">/* control the depth of the curvature*/</span><br>  <br>  <span class="token property">--_m</span><span class="token punctuation">:</span>0/<span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> no-repeat<br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span>50% 100% at bottom<span class="token punctuation">,</span>#000 <span class="token function">calc</span><span class="token punctuation">(</span>100% - 1px<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_d</span><span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span>*<span class="token function">cos</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token function">var</span><span class="token punctuation">(</span>--_d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--_d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> at 50% <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">sin</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>      #0000 100%<span class="token punctuation">,</span>#000 <span class="token function">calc</span><span class="token punctuation">(</span>100% + 1px<span class="token punctuation">)</span><span class="token punctuation">)</span> 0 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span>*<span class="token punctuation">(</span>1 - <span class="token function">sin</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> no-repeat<span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>90deg<span class="token punctuation">,</span>#000 <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--_d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 0 <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token function">var</span><span class="token punctuation">(</span>--_d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>#000 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="oNrMYRO" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/oNrMYRO" target="_blank" rel="noopener">
-  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/O19-X6S8BW-958.avif 958w"><source type="image/webp" srcset="/img/O19-X6S8BW-958.webp 958w"><img alt="CSS only curved header with avatar" loading="lazy" decoding="async" src="/img/O19-X6S8BW-958.png" width="958" height="380"></picture></p>
+<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="oNrMJXL" data-pen-title="Fancy avatar header with hover effect" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/oNrMJXL" target="_blank" rel="noopener">
+  Fancy avatar header with hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More CSS Shapes: <a href="https://css-shape.com/" target="_blank" rel="noopener">css-shape.com</a></p>
-
 
 <div style="padding-block:2rem" id="inline-custom"><hr></div>
 
@@ -76,16 +72,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/fancy-avatar-header/" >Curved avatar header with hover effect</a>
+		<a href="/inner-curve-notch/" >Inner curve/notch shape using CSS mask</a>
 	</li>
   	<li>
 		<a href="/quantity-queries/" >Quantity queries using has() selector</a>
 	</li>
   	<li>
 		<a href="/line-rounded-dashes/" >A decorative line with rounded dashes</a>
-	</li>
-  	<li>
-		<a href="/wavy-circles/" >A CSS generator for wavy circle shapes</a>
 	</li>
 </ul>
 		</main>

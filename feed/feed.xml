@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-08-28T00:00:00Z</updated>
+	<updated>2024-08-29T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Curved avatar header with hover effect</title>
+		<link href="https://css-tip.com/fancy-avatar-header/"/>
+		<updated>2024-08-29T00:00:00Z</updated>
+		<id>https://css-tip.com/fancy-avatar-header/</id>
+		<content type="html"><![CDATA[ <p>I am using the <a href="/inner-curve-notch/">inner curve/notch shape</a> to create a fancy header with an avatar and a cool hover effect.</p>
+<ul>
+<li>No complex HTML code</li>
+<li>Powered by CSS mask, <code>@property</code> and math functions</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/O19-X6S8BW-958.avif 958w"><source type="image/webp" srcset="/img/O19-X6S8BW-958.webp 958w"><img alt="CSS only curved header with avatar" loading="lazy" decoding="async" src="/img/O19-X6S8BW-958.png" width="958" height="380"></picture></p>
+ <p><a href="https://css-tip.com/fancy-avatar-header/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Inner curve/notch shape using CSS mask</title>
