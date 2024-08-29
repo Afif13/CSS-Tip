@@ -15,7 +15,7 @@
 		<link href="https://css-tip.com/fancy-avatar-header/"/>
 		<updated>2024-08-29T00:00:00Z</updated>
 		<id>https://css-tip.com/fancy-avatar-header/</id>
-		<content type="html"><![CDATA[ <p>I am using the <a href="/inner-curve-notch/">inner curve/notch shape</a> to create a fancy header with an avatar and a cool hover effect.</p>
+		<content type="html"><![CDATA[ <p>I am using the <a href="https://css-shape.com/inner-curve/">inner curve/notch shape</a> to create a fancy header with an avatar and a cool hover effect.</p>
 <ul>
 <li>No complex HTML code</li>
 <li>Powered by CSS mask, <code>@property</code> and math functions</li>
