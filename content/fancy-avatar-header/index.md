@@ -6,7 +6,7 @@ date: 2024-08-29
 tags: posts
 ---
 
-I am using the [inner curve/notch shape](/inner-curve-notch/) to create a fancy header with an avatar and a cool hover effect.
+I am using the [inner curve/notch shape](https://css-shape.com/inner-curve/) to create a fancy header with an avatar and a cool hover effect.
 * No complex HTML code
 * Powered by CSS mask, `@property` and math functions
 * Optimized with CSS variables
