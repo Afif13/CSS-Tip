@@ -12,9 +12,9 @@
 	
 	<entry>
 		<title>Progress element with a tooltip</title>
-		<link href="https://css-tip.com/progress-with-tootlip/"/>
+		<link href="https://css-tip.com/progress-with-tooltip/"/>
 		<updated>2024-09-10T00:00:00Z</updated>
-		<id>https://css-tip.com/progress-with-tootlip/</id>
+		<id>https://css-tip.com/progress-with-tooltip/</id>
 		<content type="html"><![CDATA[ <p>Adding a tooltip to the native progress element showing the percentage of progress.</p>
 <ul>
 <li>No extra elements (only the <code>&lt;progress&gt;</code> tag)</li>
@@ -24,7 +24,7 @@
 </ul>
 <p><picture><source type="image/avif" srcset="/img/8tXVzNhsjg-773.avif 773w"><source type="image/webp" srcset="/img/8tXVzNhsjg-773.webp 773w"><img alt="CSS-only progress element with a tooltip" loading="lazy" decoding="async" src="/img/8tXVzNhsjg-773.png" width="773" height="310"></picture></p>
 <p>It's a Chrome-only experimentation:</p>
- <p><a href="https://css-tip.com/progress-with-tootlip/">Read more</a></p> ]]></content>
+ <p><a href="https://css-tip.com/progress-with-tooltip/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
