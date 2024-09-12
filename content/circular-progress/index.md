@@ -22,3 +22,5 @@ It's a Chrome-only experimentation:
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+Related: [Progress element with a tooltip](/progress-with-tooltip/)
