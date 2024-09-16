@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Curved avatar header with hover effect</title>
+		<title>Update CSS variables using range slider</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Create a fancy curved header with a cool hover effect">
+		<meta name="description" content="A CSS-only way to update CSS variables in real time using range slider">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/fancy-avatar-header/" >
+		<link rel=canonical href="https://css-tip.com/css-variables-range-slider/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Curved avatar header with hover effect">
+		<meta property="og:title" content="Update CSS variables using range slider">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/fancy-avatar-header/">
-		<meta property="og:description" content="Create a fancy curved header with a cool hover effect">
-		<meta property="og:image" content="/og-images/4te6r3E03M.png" >
+		<meta property="og:url" content="https://css-tip.com/css-variables-range-slider/">
+		<meta property="og:description" content="A CSS-only way to update CSS variables in real time using range slider">
+		<meta property="og:image" content="/og-images/EgMjVlvyDC.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -44,33 +44,25 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/inner-curve-notch/" title="Inner curve/notch shape using CSS mask">Previous CSS Tip</a></li><li class="next"><a href="/progress-with-tooltip/" title="Progress element with a tooltip">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/progress-with-tooltip/" title="Progress element with a tooltip">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Curved avatar header with hover effect</h1>
+<h1>Update CSS variables using range slider</h1>
 
-<time datetime="2024-08-29">August 29, 2024</time>
+<time datetime="2024-09-16">September 16, 2024</time>
 
-<p>I am using the <a href="https://css-shape.com/inner-curve/" target="_blank" rel="noopener">inner curve/notch shape</a> to create a fancy header with an avatar and a cool hover effect.</p>
-<ul>
-<li>No complex HTML code</li>
-<li>Powered by CSS mask, <code>@property</code> and math functions</li>
-<li>Optimized with CSS variables</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/O19-X6S8BW-958.avif 958w"><source type="image/webp" srcset="/img/O19-X6S8BW-958.webp 958w"><img alt="CSS only curved header with avatar" loading="lazy" decoding="async" src="/img/O19-X6S8BW-958.png" width="958" height="380"></picture></p>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="oNrMJXL" data-pen-title="Fancy avatar header with hover effect" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/oNrMJXL" target="_blank" rel="noopener">
-  Fancy avatar header with hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>Another version with a drop effect</p>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="LYKqQVP" data-pen-title="Fancy avatar header with hover effect II" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LYKqQVP" target="_blank" rel="noopener">
-  Fancy avatar header with hover effect II</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Using scroll-driven animations, you can link a CSS variable with a range slider and easily update its value!</p>
+<p>No more JavaScript to do this. A few lines of CSS, one HTML element and you can update any value in real time.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_f</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">:root</span> <span class="token punctuation">{</span><br>  <span class="token property">--font-size-min</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span> <span class="token comment">/* define the min */</span><br>  <span class="token property">--font-size-max</span><span class="token punctuation">:</span> 64px<span class="token punctuation">;</span> <span class="token comment">/* define the max */</span><br>  <span class="token comment">/* the variable you will be using */</span><br>  <span class="token property">--font-size</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><br>      <span class="token function">var</span><span class="token punctuation">(</span>--font-size-max<span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--_f<span class="token punctuation">)</span> +<br>      <span class="token function">var</span><span class="token punctuation">(</span>--font-size-min<span class="token punctuation">)</span>*<span class="token punctuation">(</span>1 - <span class="token function">var</span><span class="token punctuation">(</span>--_f<span class="token punctuation">)</span><span class="token punctuation">)</span><br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token comment">/* No need to touch the below<br>   Yes, you can use --_f everywhere<br>*/</span><br>  <span class="token property">timeline-scope</span><span class="token punctuation">:</span> --_f<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_f<span class="token punctuation">)</span> linear both<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --_f<span class="token punctuation">;</span><br>  <span class="token property">animation-range</span><span class="token punctuation">:</span> entry 100% exit 0%<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> --_f</span> <span class="token punctuation">{</span><span class="token selector">0%</span><span class="token punctuation">{</span><span class="token property">--_f</span><span class="token punctuation">:</span> 1<span class="token punctuation">}</span><span class="token punctuation">}</span><br><br><span class="token selector">input[type="range"]</span> <span class="token punctuation">{</span> <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span> <span class="token punctuation">}</span><br><span class="token selector">input[type="range"]::-webkit-slider-thumb</span><span class="token punctuation">{</span> <br>  <span class="token property">view-timeline</span><span class="token punctuation">:</span> --_f inline<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token comment">/* --- */</span><br><br><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--font-size<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Here is a demo where you can update three different variables (chrome-only for now)</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="GRbawQm" data-pen-title="Update CSS variables using range slider (CSS-only)" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GRbawQm" target="_blank" rel="noopener">
+  Update CSS variables using range slider (CSS-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 <div style="padding-block:2rem" id="inline-custom"><hr></div>
 
@@ -78,19 +70,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/css-variables-range-slider/" >Update CSS variables using range slider</a>
-	</li>
-  	<li>
 		<a href="/progress-with-tooltip/" >Progress element with a tooltip</a>
 	</li>
   	<li>
+		<a href="/fancy-avatar-header/" >Curved avatar header with hover effect</a>
+	</li>
+  	<li>
 		<a href="/inner-curve-notch/" >Inner curve/notch shape using CSS mask</a>
-	</li>
-  	<li>
-		<a href="/quantity-queries/" >Quantity queries using has() selector</a>
-	</li>
-  	<li>
-		<a href="/line-rounded-dashes/" >A decorative line with rounded dashes</a>
 	</li>
 </ul>
 		</main>
