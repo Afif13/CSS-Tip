@@ -41,7 +41,7 @@ Make your numbers look fancy by placing each digit inside its own box.
   background:
     conic-gradient(from  90deg at var(--b) var(--_g)),
     conic-gradient(from -90deg at right calc(var(--b) + var(--g)) bottom var(--_g));
-   background-size: calc(1ch + var(--w)) 100%;
+  background-size: calc(1ch + var(--w)) 100%;
 }
 ```
 

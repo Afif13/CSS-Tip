@@ -27,7 +27,7 @@ img {
   transition: .5s;
 }
 img:hover {
-  -webkit-mask-position: 0% 0%,100% 100%;
+  mask-position: 0% 0%,100% 100%;
 }
 /* we update the angle for the alternative version */
 img.alt {

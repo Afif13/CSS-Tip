@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: A fancy title divider I
+title: A fancy title divider
 description: Use background and border-image to create a fancy title divider
 date: 2022-08-25
 tags: posts
