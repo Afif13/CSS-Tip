@@ -6,7 +6,7 @@ date: 2022-02-28
 tags: posts
 ---
 
-Create a grid of dashed lines using a few lines of code
+Create [a grid of dashed lines](https://css-shape.com/grid-lines/) using a few lines of code
 * One property
 * Two gradients
 * Easy to adjust using CSS variables

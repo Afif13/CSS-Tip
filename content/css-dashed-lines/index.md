@@ -13,13 +13,12 @@ Create dashed lines using only one gradient
 
 ```css
 html {
-  --c: #333; /* color */
   --t: 2px;  /* thickness of the lines */
   --g: 50px; /* gap between lines */
   --s: 12px; /* size of the dashes*/
   
   background:
-    conic-gradient(at var(--t) 50%,#0000 75%,var(--c) 0)
+    conic-gradient(at var(--t),#0000 75%,#000 0)
     var(--g)/calc(var(--g) + var(--t)) var(--s);
 }
 ```
