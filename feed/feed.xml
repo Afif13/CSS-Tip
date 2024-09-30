@@ -4,11 +4,34 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-09-25T00:00:00Z</updated>
+	<updated>2024-09-30T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Default behavior of position absolute</title>
+		<link href="https://css-tip.com/initial-containing-block/"/>
+		<updated>2024-09-30T00:00:00Z</updated>
+		<id>https://css-tip.com/initial-containing-block/</id>
+		<content type="html"><![CDATA[ <p>Many have a wrong information about the default behavior of <code>position: absolute</code> element.</p>
+<p><i>&quot;if an absolute positioned element has no positioned ancestors, it uses the body element&quot;</i> NO, <strong>this is false!</strong></p>
+<p>The W3Schools page is showing a wrong information but the MDN page is showing the correct one.</p>
+<style>
+  @media (width < 900px) {tr,td {display: block;}}
+</style> 
+<table>
+  <tr>
+    <td><picture><source type="image/avif" srcset="/img/MjOSwFw8UO-512.avif 512w"><source type="image/webp" srcset="/img/MjOSwFw8UO-512.webp 512w"><img alt="Screenshot from W3schools showing a wrong information about position: absolute" loading="lazy" decoding="async" src="/img/MjOSwFw8UO-512.png" width="512" height="345"></picture></td>
+    <td><picture><source type="image/avif" srcset="/img/FbqacAZUzf-512.avif 512w"><source type="image/webp" srcset="/img/FbqacAZUzf-512.webp 512w"><img alt="Screenshot from MDN showing a correct information about position: absolute" loading="lazy" decoding="async" src="/img/FbqacAZUzf-512.png" width="512" height="345"></picture></td>
+  </tr>
+</table>
+<p>What is the <a href="https://www.w3.org/TR/CSS22/visudet.html#containing-block-details">initial containing block</a>?</p>
+<p>It's a rectangle having the same dimension as the viewport (full width/height) and anchored at the canvas origin (moves on scroll). In other words, it's similar to the viewport but moves if we have scrolling.</p>
+<p>Here is a demo to illustrate:</p>
+ <p><a href="https://css-tip.com/initial-containing-block/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Animate to height/width auto (without hacks)</title>
