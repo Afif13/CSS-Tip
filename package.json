@@ -1,6 +1,6 @@
 {
 	"name": "CSS Tip",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "A little CSS blog",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
@@ -11,16 +11,19 @@
 		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^2.0.1",
-		"@11ty/eleventy-img": "^3.0.0",
+		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy-img": "^5.0.0",
 		"@11ty/eleventy-navigation": "^0.3.5",
 		"@11ty/eleventy-plugin-bundle": "^1.0.4",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
 		"clean-css": "^5.3.2",
 		"eleventy-plugin-external-links": "^1.1.2",
-		"eleventy-plugin-og-image": "^2.0.1",
+		"eleventy-plugin-og-image": "^4.0.0-beta.8",
 		"luxon": "^3.3.0",
 		"markdown-it-anchor": "^8.6.7"
+	},
+	"dependencies": {
+		"sharp": "^0.33.5"
 	}
 }

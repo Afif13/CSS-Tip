@@ -19,7 +19,7 @@
 		<meta property="og:url" content="https://css-tip.com{{ page.url }}">
 		<meta property="og:description" content="{{ description or metadata.description }}">
 		{%- if tags == "posts" %}
-		{% ogImage "_includes/og-image.njk" , { title: title } %}
+		{% ogImage "../_includes/og-image.njk" , { title: title } %}
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="675" />
 		{%- else %}
