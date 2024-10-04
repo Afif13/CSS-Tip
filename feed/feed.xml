@@ -4,11 +4,23 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-09-30T00:00:00Z</updated>
+	<updated>2024-10-04T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>The Filling CSS loaders Collection</title>
+		<link href="https://css-tip.com/filling-loader/"/>
+		<updated>2024-10-04T00:00:00Z</updated>
+		<id>https://css-tip.com/filling-loader/</id>
+		<content type="html"><![CDATA[ <p>Adding a new set of loaders to <a href="https://css-loaders.com/">the biggest collection of loading animations</a>.</p>
+<h3 id="the-filling-css-loaders-collection" tabindex="-1"><a href="https://css-loaders.com/filling/">The Filling CSS Loaders Collection</a> <a class="header-anchor" href="#the-filling-css-loaders-collection">#</a></h3>
+<p><picture><source type="image/avif" srcset="/img/gQh3yMb_Ft-1256.avif 1256w"><source type="image/webp" srcset="/img/gQh3yMb_Ft-1256.webp 1256w"><img alt="CSS-only single element loaders" loading="lazy" decoding="async" src="/img/gQh3yMb_Ft-1256.png" width="1256" height="619"></picture></p>
+<p>One example:</p>
+ <p><a href="https://css-tip.com/filling-loader/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Default behavior of position absolute</title>
