@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/inner-outer-display/",
+			"url": "https://css-tip.com/inner-outer-display/",
+			"title": "Inner display vs Outer display",
+			"content_html": "<p>Do you know that the below declarations are the same?</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">element</span> <span class=\"token punctuation\">{</span><br>  <span class=\"token comment\">/* old way (always supported for backward compatibility) */</span><br>  <span class=\"token property\">display</span><span class=\"token punctuation\">:</span> inline-grid<span class=\"token punctuation\">;</span><br>  <span class=\"token comment\">/* new way */</span><br>  <span class=\"token property\">display</span><span class=\"token punctuation\">:</span> inline grid<span class=\"token punctuation\">;</span><br>  <span class=\"token property\">display</span><span class=\"token punctuation\">:</span> grid inline<span class=\"token punctuation\">;</span><br>  <span class=\"token comment\">/* The two values correspond to the<br>     Outer display: I am seen as an \"inline\" element from the outside<br>     Inner display: I create a \"grid\" layout inside me<br>  */</span><br><span class=\"token punctuation\">}</span></code></pre>\n<p>The display property can take two values in any order:</p>\n<ul>\n<li>The Outer display tells how the element is seen from the outside</li>\n<li>The Inner display tells what kind of layout the element will generate (flexbox, grid, table, etc)</li>\n</ul>\n<p>You may ask why making the display property complex?</p>\n<p>The reason is simple: If in the future we add new layouts, we don't have to define two values (&quot;x&quot;, &quot;inline-x&quot;) but only one value (&quot;x&quot;)</p>\n<p>A masonry layout? We define <code>masonry</code> and we use <code>display: inline masonry</code> and <code>display: block masonry</code></p>\n<p>More detail: <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display\">Using the multi-keyword syntax with CSS display</a></p>\n",
+			"date_published": "2024-10-16T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/puzzle-shape/",
 			"url": "https://css-tip.com/puzzle-shape/",
 			"title": "Puzzle shapes using CSS mask",

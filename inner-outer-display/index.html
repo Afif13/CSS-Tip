@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Default behavior of position absolute</title>
+		<title>Inner display vs Outer display</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Know the meaning of initial containing block and its relation with position absolute">
+		<meta name="description" content="Learn the modern way to use the display property">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/initial-containing-block/" >
+		<link rel=canonical href="https://css-tip.com/inner-outer-display/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Default behavior of position absolute">
+		<meta property="og:title" content="Inner display vs Outer display">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/initial-containing-block/">
-		<meta property="og:description" content="Know the meaning of initial containing block and its relation with position absolute">
-		<meta property="og:image" content="/og-images/066f6562.png" >
+		<meta property="og:url" content="https://css-tip.com/inner-outer-display/">
+		<meta property="og:description" content="Learn the modern way to use the display property">
+		<meta property="og:image" content="/og-images/5148ff25.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -45,36 +45,25 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/animate-height-auto/" title="Animate to height/width auto (without hacks)">Previous CSS Tip</a></li><li class="next"><a href="/filling-loader/" title="The Filling CSS loaders Collection">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/puzzle-shape/" title="Puzzle shapes using CSS mask">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Default behavior of position absolute</h1>
+<h1>Inner display vs Outer display</h1>
 
-<time datetime="2024-09-30">September 30, 2024</time>
+<time datetime="2024-10-16">October 16, 2024</time>
 
-<p>Many have a wrong information about the default behavior of <code>position: absolute</code> element.</p>
-<p><i>&quot;if an absolute positioned element has no positioned ancestors, it uses the body element&quot;</i> NO, <strong>this is false!</strong></p>
-<p>The W3Schools page is showing a wrong information but the MDN page is showing the correct one.</p>
-<style>
-  @media (width < 900px) {tr,td {display: block;}}
-</style> 
-<table>
-  <tr>
-    <td><picture><source type="image/avif" srcset="/img/MjOSwFw8UO-512.avif 512w"><source type="image/webp" srcset="/img/MjOSwFw8UO-512.webp 512w"><img alt="Screenshot from W3schools showing a wrong information about position: absolute" loading="lazy" decoding="async" src="/img/MjOSwFw8UO-512.png" width="512" height="345"></picture></td>
-    <td><picture><source type="image/avif" srcset="/img/FbqacAZUzf-512.avif 512w"><source type="image/webp" srcset="/img/FbqacAZUzf-512.webp 512w"><img alt="Screenshot from MDN showing a correct information about position: absolute" loading="lazy" decoding="async" src="/img/FbqacAZUzf-512.png" width="512" height="345"></picture></td>
-  </tr>
-</table>
-<p>What is the <a href="https://www.w3.org/TR/CSS22/visudet.html#containing-block-details" target="_blank" rel="noopener">initial containing block</a>?</p>
-<p>It's a rectangle having the same dimension as the viewport (full width/height) and anchored at the canvas origin (moves on scroll). In other words, it's similar to the viewport but moves if we have scrolling.</p>
-<p>Here is a demo to illustrate:</p>
-<p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="bGXVMjp" data-pen-title="Default behavior of position: absolute" data-preview="true" data-user="t_afif" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/bGXVMjp" target="_blank" rel="noopener">
-  Default behavior of position: absolute</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>The absolute element is not using the body (blue rectangle) nor the html (red rectangle) but that green rectangle having the viewport dimension and moving on scroll. That's the initial containing block!</p>
+<p>Do you know that the below declarations are the same?</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">element</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* old way (always supported for backward compatibility) */</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> inline-grid<span class="token punctuation">;</span><br>  <span class="token comment">/* new way */</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> inline grid<span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid inline<span class="token punctuation">;</span><br>  <span class="token comment">/* The two values correspond to the<br>     Outer display: I am seen as an "inline" element from the outside<br>     Inner display: I create a "grid" layout inside me<br>  */</span><br><span class="token punctuation">}</span></code></pre>
+<p>The display property can take two values in any order:</p>
+<ul>
+<li>The Outer display tells how the element is seen from the outside</li>
+<li>The Inner display tells what kind of layout the element will generate (flexbox, grid, table, etc)</li>
+</ul>
+<p>You may ask why making the display property complex?</p>
+<p>The reason is simple: If in the future we add new layouts, we don't have to define two values (&quot;x&quot;, &quot;inline-x&quot;) but only one value (&quot;x&quot;)</p>
+<p>A masonry layout? We define <code>masonry</code> and we use <code>display: inline masonry</code> and <code>display: block masonry</code></p>
+<p>More detail: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display" target="_blank" rel="noopener">Using the multi-keyword syntax with CSS display</a></p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -83,22 +72,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/inner-outer-display/" >Inner display vs Outer display</a>
-	</li>
-  	<li>
 		<a href="/puzzle-shape/" >Puzzle shapes using CSS mask</a>
 	</li>
   	<li>
 		<a href="/filling-loader/" >The Filling CSS loaders Collection</a>
 	</li>
   	<li>
-		<a href="/animate-height-auto/" >Animate to height/width auto (without hacks)</a>
-	</li>
-  	<li>
-		<a href="/length-to-integer/" >Remove the unit from any CSS value</a>
-	</li>
-  	<li>
-		<a href="/css-variables-range-slider/" >Update CSS variables using range slider</a>
+		<a href="/initial-containing-block/" >Default behavior of position absolute</a>
 	</li>
 </ul>
 		</main>
