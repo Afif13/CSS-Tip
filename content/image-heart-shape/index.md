@@ -6,7 +6,7 @@ date: 2022-07-01
 tags: posts
 ---
 
-Turn your favorite image into a Heart 💖 using a few lines of code 
+Turn your favorite image into a [Heart 💖](https://css-shape.com/heart/) using a few lines of code 
 * No extra element (only the `<img>` tag)
 * No pseudo-element
 * Only two CSS declarations
