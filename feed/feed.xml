@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-10-16T00:00:00Z</updated>
+	<updated>2024-10-18T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Avatar hover effect with a rhombus shape</title>
+		<link href="https://css-tip.com/avatar-rhombus/"/>
+		<updated>2024-10-18T00:00:00Z</updated>
+		<id>https://css-tip.com/avatar-rhombus/</id>
+		<content type="html"><![CDATA[ <p>Place you image inside a <a href="https://css-shape.com/rhombus/">rhombus shape</a> with a cool hover effect</p>
+<ul>
+<li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-element</li>
+<li>Less than 15 CSS declarations</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/GSxUX2XOe0-899.avif 899w"><source type="image/webp" srcset="/img/GSxUX2XOe0-899.webp 899w"><img alt="CSS-only images with a rhombus shape" loading="lazy" decoding="async" src="/img/GSxUX2XOe0-899.png" width="899" height="372"></picture></p>
+ <p><a href="https://css-tip.com/avatar-rhombus/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Inner display vs Outer display</title>
@@ -2352,7 +2367,7 @@
 		<link href="https://css-tip.com/image-heart-shape/"/>
 		<updated>2022-07-01T00:00:00Z</updated>
 		<id>https://css-tip.com/image-heart-shape/</id>
-		<content type="html"><![CDATA[ <p>Turn your favorite image into a Heart 💖 using a few lines of code</p>
+		<content type="html"><![CDATA[ <p>Turn your favorite image into a <a href="https://css-shape.com/heart/">Heart 💖</a> using a few lines of code</p>
 <ul>
 <li>No extra element (only the <code>&lt;img&gt;</code> tag)</li>
 <li>No pseudo-element</li>
