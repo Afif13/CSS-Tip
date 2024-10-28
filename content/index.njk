@@ -9,7 +9,7 @@ numberOfLatestPostsToShow: 20
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Learn CSS the easy way</h1>
 <p>Learn a new CSS Trick every day and become a better web developer. All the CSS secrets are here (Flexbox, CSS Grid, Shapes, Gradients, Colors, Animations, Selectors, Variables, Masking, Clipping, etc). <br>It takes only <strong>one minute</strong> to read a tip.</p>
-<p>Want to surprise yourself? <a href="https://random.css-tip.com">Get a random CSS Tip!</a></p>
+<p>Do you want to surprise yourself? <a href="https://random.css-tip.com">Get a random CSS Tip!</a></p>
 <hr>
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
