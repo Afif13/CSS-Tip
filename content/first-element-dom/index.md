@@ -6,7 +6,7 @@ date: 2024-10-30
 tags: posts
 ---
 
-A CSS selector to select the first occurrence of an element whatever its position in the document. The equivalent of `document.querySelector('.target')`.
+A CSS selector to select the first occurrence of an element regardless of its position in the document. The equivalent of `document.querySelector('.target')`.
 
 ```css
 .target { /* Update with what you want to select (class, tag, etc) */
