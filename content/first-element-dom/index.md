@@ -23,7 +23,7 @@ The above will select the element with the class `.target` if:
 * It's not preceded by an element having an element with the same class (`:not(:has(&) ~ *)`)
 * It's not the child of an element that is preceded by an element having an element with the same class (`:not(:has(&) ~ * *)`)
 
-No need to learn it by heart. Simply update the `.target` with wataver you want.
+No need to learn it by heart. Simply update the `.target` with watever you want.
 
 <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="yLmKdZo" data-pen-title="First occurence of an element in the whole document" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/yLmKdZo">
