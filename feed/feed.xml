@@ -15,7 +15,7 @@
 		<link href="https://css-tip.com/first-element-dom/"/>
 		<updated>2024-10-30T00:00:00Z</updated>
 		<id>https://css-tip.com/first-element-dom/</id>
-		<content type="html"><![CDATA[ <p>A CSS selector to select the first occurrence of an element whatever its position in the document. The equivalent of <code>document.querySelector('.target')</code>.</p>
+		<content type="html"><![CDATA[ <p>A CSS selector to select the first occurrence of an element regardless of its position in the document. The equivalent of <code>document.querySelector('.target')</code>.</p>
  <p><a href="https://css-tip.com/first-element-dom/">Read more</a></p> ]]></content>
 	</entry>
 	

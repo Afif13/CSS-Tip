@@ -53,7 +53,7 @@
 
 <time datetime="2024-10-30">October 30, 2024</time>
 
-<p>A CSS selector to select the first occurrence of an element whatever its position in the document. The equivalent of <code>document.querySelector('.target')</code>.</p>
+<p>A CSS selector to select the first occurrence of an element regardless of its position in the document. The equivalent of <code>document.querySelector('.target')</code>.</p>
 <pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.target</span> <span class="token punctuation">{</span> <span class="token comment">/* Update with what you want to select (class, tag, etc) */</span><br>  <span class="token selector">&amp;:nth-child(1 of &amp;):not(:has(&amp;) ~ * *):not(:has(&amp;) ~ *):not(&amp; ~ * *):not(&amp; *)</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* your CSS here  */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 <p>The above will select the element with the class <code>.target</code> if:</p>
 <ul>
