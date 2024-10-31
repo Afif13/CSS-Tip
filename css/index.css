@@ -464,6 +464,54 @@ input[type=search] {
     font-weight: 500!important;
 }
 
+.sponso {
+	border: 1px solid #eaeaea;
+  padding: 1em;
+  border-radius: 0.5em;
+  background: #fff;
+}
+.sponso p {
+	line-height: 1.3;
+  margin-block: .5em;
+  font-size: 17px
+}
+.sponso small {
+	font-size: .7em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8714bd;
+}
+.sponso img {
+	height: 50px;
+}
+.sponso p:last-child {
+	display: flex;
+	justify-content: space-between;
+	margin-block: 2em 0;
+}
+.sponso p:last-child a {
+	background: #8714bd;
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: 5px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  align-content: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sponso p:last-child a:after {
+  content: "";
+  width: 20px;
+  height: 80%;
+  margin: auto;
+  background: #fff;
+  clip-path: polygon(0 30%, 50% 30%, 50% 0, 100% 50%, 50% 100%, 50% 70%, 0 70%);
+}
+
 /*html {
 	view-transition-name: main;
 	background-color: var(--c1);
