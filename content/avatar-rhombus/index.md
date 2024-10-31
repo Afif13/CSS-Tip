@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Avatar hover effect with a rhombus shape
-description: Add a  fancy hover effect to your image with a simple code
+description: Add a fancy hover effect to your image with a simple code
 date: 2024-10-18
 tags: posts
 ---
