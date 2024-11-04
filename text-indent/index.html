@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Select the last occurrence of an element in the whole document</title>
+		<title>Indent each line of your text</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Select the last occurrence of any element in the whole document">
+		<meta name="description" content="A new value of text-indent that allows you to indent each line of text">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/last-element-dom/" >
+		<link rel=canonical href="https://css-tip.com/text-indent/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Select the last occurrence of an element in the whole document">
+		<meta property="og:title" content="Indent each line of your text">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/last-element-dom/">
-		<meta property="og:description" content="Select the last occurrence of any element in the whole document">
-		<meta property="og:image" content="/og-images/7168b58f.png" >
+		<meta property="og:url" content="https://css-tip.com/text-indent/">
+		<meta property="og:description" content="A new value of text-indent that allows you to indent each line of text">
+		<meta property="og:image" content="/og-images/7d1f8f1f.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -45,35 +45,21 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/first-element-dom/" title="Select the first occurrence of an element in the whole document">Previous CSS Tip</a></li><li class="next"><a href="/text-indent/" title="Indent each line of your text">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/last-element-dom/" title="Select the last occurrence of an element in the whole document">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Select the last occurrence of an element in the whole document</h1>
+<h1>Indent each line of your text</h1>
 
-<time datetime="2024-10-31">October 31, 2024</time>
+<time datetime="2024-11-04">November 04, 2024</time>
 
-<p>We saw <a href="/first-element-dom/">the selector for the first occurrence</a> and here is the selector for the last occurrence.</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.target</span> <span class="token punctuation">{</span> <span class="token comment">/* Update with what you want to select (class, tag, etc) */</span><br>  <span class="token selector">&amp;:nth-last-child(1 of &amp;):not(:has(~ * &amp;) *):not(:has(~ &amp;) *):not(:has(~ * &amp;)):not(:has(&amp;))</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* your CSS here  */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p>The above will select the element with the class <code>.target</code> if:</p>
-<ul>
-<li>It's the last element among its siblings having the same class (<code>&amp;:nth-last-child(1 of &amp;)</code>)</li>
-<li>It doesn't have a child with the same class (<code>:not(:has(&amp;))</code>)</li>
-<li>It's not the previous sibling of an element having a child with the same class (<code>:not(:has(~ * &amp;))</code>)</li>
-<li>It's not the child of an element that is the previous sibling of an element with the same class (<code>:not(:has(~ &amp;) *)</code>)</li>
-<li>It's not the child of an element that is the previous sibling of an element having a child with the same class (<code>:not(:has(~ * &amp;) *)</code>)</li>
-</ul>
-<p>No need to learn it by heart. Simply update the <code>.target</code> with whatever you want.</p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="GRVdQqv" data-pen-title="Last occurrence of an element in the whole document" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GRVdQqv" target="_blank" rel="noopener">
-  Last occurrence of an element in the whole document</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>Another example using <code>span</code> as a selector:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">span</span> <span class="token punctuation">{</span> <br>  <span class="token selector">&amp;:nth-last-child(1 of &amp;):not(:has(~ * &amp;) *):not(:has(~ &amp;) *):not(:has(~ * &amp;)):not(:has(&amp;))</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* your CSS here  */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="yLmjvGB" data-pen-title="Last occurrence of an element in the whole document" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yLmjvGB" target="_blank" rel="noopener">
-  Last occurrence of an element in the whole document</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Do you know that <code>text-indent</code> can take an extra value <code>each-line</code>? It allows you to have an indentation after each line! Useful if you rely on <code>&lt;br&gt;</code> to add new lines.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">text-indent</span><span class="token punctuation">:</span> 2em each-line<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p><picture><source type="image/avif" srcset="/img/jkL9SW8Wev-1195.avif 1195w"><source type="image/webp" srcset="/img/jkL9SW8Wev-1195.webp 1195w"><img alt="text-indent each-line" loading="lazy" decoding="async" src="/img/jkL9SW8Wev-1195.png" width="1195" height="441"></picture></p>
+<p>⚠️ It has limited support. Only Firefox and Safari for now ⚠️</p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="MWNBrab" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/MWNBrab" target="_blank" rel="noopener">
+  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -84,16 +70,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/text-indent/" >Indent each line of your text</a>
+		<a href="/last-element-dom/" >Select the last occurrence of an element in the whole document</a>
 	</li>
   	<li>
 		<a href="/first-element-dom/" >Select the first occurrence of an element in the whole document</a>
 	</li>
   	<li>
 		<a href="/3d-parallax-effect/" >3D parallax effect on hover</a>
-	</li>
-  	<li>
-		<a href="/one-color-gradient/" >How to correctly define a one-color gradient</a>
 	</li>
 </ul>
 		</main>

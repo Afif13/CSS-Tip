@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/text-indent/",
+			"url": "https://css-tip.com/text-indent/",
+			"title": "Indent each line of your text",
+			"content_html": "<p>Do you know that <code>text-indent</code> can take an extra value <code>each-line</code>? It allows you to have an indentation after each line! Useful if you rely on <code>&lt;br&gt;</code> to add new lines.</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">p</span> <span class=\"token punctuation\">{</span><br>  <span class=\"token property\">text-indent</span><span class=\"token punctuation\">:</span> 2em each-line<span class=\"token punctuation\">;</span><br><span class=\"token punctuation\">}</span></code></pre>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/jkL9SW8Wev-1195.avif 1195w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/jkL9SW8Wev-1195.webp 1195w\"><img alt=\"text-indent each-line\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/jkL9SW8Wev-1195.png\" width=\"1195\" height=\"441\"></picture></p>\n<p>⚠️ It has limited support. Only Firefox and Safari for now ⚠️</p>\n<p class=\"codepen\" data-height=\"400\" data-default-tab=\"result\" data-slug-hash=\"MWNBrab\" data-pen-title=\"Untitled\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/MWNBrab\">\n  Untitled</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>",
+			"date_published": "2024-11-04T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/last-element-dom/",
 			"url": "https://css-tip.com/last-element-dom/",
 			"title": "Select the last occurrence of an element in the whole document",
