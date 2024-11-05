@@ -21,6 +21,14 @@ It's a Chrome-only experimentation:
   Circular progress element using scroll-driven animation</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
+And a version with animation
+
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="ZEgjNxm" data-pen-title="Circular progress element using scroll-driven animation II" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ZEgjNxm">
+  Circular progress element using scroll-driven animation II</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Related: [Progress element with a tooltip](/progress-with-tooltip/)
