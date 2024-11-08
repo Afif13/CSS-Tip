@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Select the first occurrence of an element in the whole document</title>
+		<title>Folded rectangle shapes using CSS mask</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Select the first occurrence of any element in the whole document">
+		<meta name="description" content="Create a folded rectangle shape with minimal code and a subtle 3D effect">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/first-element-dom/" >
+		<link rel=canonical href="https://css-tip.com/folded-rectangle/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Select the first occurrence of an element in the whole document">
+		<meta property="og:title" content="Folded rectangle shapes using CSS mask">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/first-element-dom/">
-		<meta property="og:description" content="Select the first occurrence of any element in the whole document">
-		<meta property="og:image" content="/og-images/9233800a.png" >
+		<meta property="og:url" content="https://css-tip.com/folded-rectangle/">
+		<meta property="og:description" content="Create a folded rectangle shape with minimal code and a subtle 3D effect">
+		<meta property="og:image" content="/og-images/a28b98a2.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -45,38 +45,30 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/3d-parallax-effect/" title="3D parallax effect on hover">Previous CSS Tip</a></li><li class="next"><a href="/last-element-dom/" title="Select the last occurrence of an element in the whole document">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/text-indent/" title="Indent each line of your text">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Select the first occurrence of an element in the whole document</h1>
+<h1>Folded rectangle shapes using CSS mask</h1>
 
-<time datetime="2024-10-30">October 30, 2024</time>
+<time datetime="2024-11-08">November 08, 2024</time>
 
-<p>A CSS selector to select the first occurrence of an element regardless of its position in the document. The equivalent of <code>document.querySelector('.target')</code>.</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.target</span> <span class="token punctuation">{</span> <span class="token comment">/* Update with what you want to select (class, tag, etc) */</span><br>  <span class="token selector">&amp;:nth-child(1 of &amp;):not(:has(&amp;) ~ * *):not(:has(&amp;) ~ *):not(&amp; ~ * *):not(&amp; *)</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* your CSS here  */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p>The above will select the element with the class <code>.target</code> if:</p>
+<p>Create <a href="https://css-shape.com/folded-rectangle/" target="_blank" rel="noopener">folded rectangle shapes</a> with a subtle 3D effect</p>
 <ul>
-<li>It's the first element among its siblings having the same class (<code>&amp;:nth-child(1 of &amp;)</code>)</li>
-<li>It's not the child of an element with the same class (<code>:not(&amp; *)</code>)</li>
-<li>It's not the child of an element that is preceded by an element with the same class (<code>:not(&amp; ~ * *)</code>)</li>
-<li>It's not preceded by an element having an element with the same class (<code>:not(:has(&amp;) ~ *)</code>)</li>
-<li>It's not the child of an element that is preceded by an element having an element with the same class (<code>:not(:has(&amp;) ~ * *)</code>)</li>
+<li>Single element (no pseudo-element)</li>
+<li>Optimized with CSS Variables</li>
+<li>Powered by CSS mask</li>
 </ul>
-<p>No need to learn it by heart. Simply update the <code>.target</code> with whatever you want.</p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="yLmKdZo" data-pen-title="First occurence of an element in the whole document" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yLmKdZo" target="_blank" rel="noopener">
-  First occurence of an element in the whole document</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>Another example using <code>span</code> as a selector:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">span</span> <span class="token punctuation">{</span> <br>  <span class="token selector">&amp;:nth-child(1 of &amp;):not(:has(&amp;) ~ * *):not(:has(&amp;) ~ *):not(&amp; ~ * *):not(&amp; *)</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* your CSS here  */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="jOgxEzz" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/jOgxEzz" target="_blank" rel="noopener">
-  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/8nw5NCKnkb-1022.avif 1022w"><source type="image/webp" srcset="/img/8nw5NCKnkb-1022.webp 1022w"><img alt="CSS only folded rectangle shapes" loading="lazy" decoding="async" src="/img/8nw5NCKnkb-1022.png" width="1022" height="272"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.folded</span> <span class="token punctuation">{</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span> <span class="token comment">/* control the folded part */</span><br>  <br>  <span class="token property">background</span><span class="token punctuation">:</span> <br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>90deg<span class="token punctuation">,</span>#0007<span class="token punctuation">,</span>#0000 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span>/2<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">,</span>#0007<span class="token punctuation">)</span> <br>    #88C425<span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 0 0 <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_m</span><span class="token punctuation">:</span>0<span class="token punctuation">,</span>#0000 100%<span class="token punctuation">,</span>#000 <span class="token function">calc</span><span class="token punctuation">(</span>100% + 1px<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> at 100% <span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">)</span> no-repeat<span class="token punctuation">,</span><br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> at 0    <span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">)</span> 100% 0 no-repeat<span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#0000 <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">,</span>#000 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="eYqQZqj" data-pen-title="CSS-only folded rectangle shapes" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/eYqQZqj" target="_blank" rel="noopener">
+  CSS-only folded rectangle shapes</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<p>More CSS Shapes: <a href="https://css-shape.com" target="_blank" rel="noopener">css-shape.com</a></p>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -84,22 +76,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/folded-rectangle/" >Folded rectangle shapes using CSS mask</a>
-	</li>
-  	<li>
 		<a href="/text-indent/" >Indent each line of your text</a>
 	</li>
   	<li>
 		<a href="/last-element-dom/" >Select the last occurrence of an element in the whole document</a>
 	</li>
   	<li>
-		<a href="/3d-parallax-effect/" >3D parallax effect on hover</a>
-	</li>
-  	<li>
-		<a href="/one-color-gradient/" >How to correctly define a one-color gradient</a>
-	</li>
-  	<li>
-		<a href="/avatar-rhombus/" >Avatar hover effect with a rhombus shape</a>
+		<a href="/first-element-dom/" >Select the first occurrence of an element in the whole document</a>
 	</li>
 </ul>
 		</main>

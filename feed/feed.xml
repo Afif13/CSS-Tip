@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-11-04T00:00:00Z</updated>
+	<updated>2024-11-08T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Folded rectangle shapes using CSS mask</title>
+		<link href="https://css-tip.com/folded-rectangle/"/>
+		<updated>2024-11-08T00:00:00Z</updated>
+		<id>https://css-tip.com/folded-rectangle/</id>
+		<content type="html"><![CDATA[ <p>Create <a href="https://css-shape.com/folded-rectangle/">folded rectangle shapes</a> with a subtle 3D effect</p>
+<ul>
+<li>Single element (no pseudo-element)</li>
+<li>Optimized with CSS Variables</li>
+<li>Powered by CSS mask</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/8nw5NCKnkb-1022.avif 1022w"><source type="image/webp" srcset="/img/8nw5NCKnkb-1022.webp 1022w"><img alt="CSS only folded rectangle shapes" loading="lazy" decoding="async" src="/img/8nw5NCKnkb-1022.png" width="1022" height="272"></picture></p>
+ <p><a href="https://css-tip.com/folded-rectangle/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Indent each line of your text</title>
