@@ -316,7 +316,8 @@
 		<link href="https://css-tip.com/scrollbar-width/"/>
 		<updated>2024-07-31T00:00:00Z</updated>
 		<id>https://css-tip.com/scrollbar-width/</id>
-		<content type="html"><![CDATA[ <p>&quot;What is the width of the scrollbar?&quot; A question we can answer using a few lines of modern CSS! No need for JavaScript and you get the value as a CSS variable defined at <code>:root</code> level.</p>
+		<content type="html"><![CDATA[ <p><small>You can find a better implementation here: <a href="/width-scrollbar/">Get the scrollbar width using only CSS</a> </small></p>
+<p>&quot;What is the width of the scrollbar?&quot; A question we can answer using a few lines of modern CSS! No need for JavaScript and you get the value as a CSS variable defined at <code>:root</code> level.</p>
  <p><a href="https://css-tip.com/scrollbar-width/">Read more</a></p> ]]></content>
 	</entry>
 	
