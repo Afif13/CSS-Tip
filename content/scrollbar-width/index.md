@@ -6,6 +6,8 @@ date: 2024-07-31
 tags: posts
 ---
 
+<small>You can find a better implementation here: [Get the scrollbar width using only CSS](/width-scrollbar/) </small>
+
 "What is the width of the scrollbar?" A question we can answer using a few lines of modern CSS! No need for JavaScript and you get the value as a CSS variable defined at `:root` level. 
 
 ```css
@@ -41,7 +43,6 @@ html:before {
   view-timeline: --cx inline;
 }
 @keyframes x {to{--_x:1}}
-
 ```
 
 Chrome-only for now
