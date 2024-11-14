@@ -6,7 +6,7 @@ date: 2024-04-04
 tags: posts
 ---
 
-Use modern CSS to create those famous rounded tabs with inner curves. 
+Use modern CSS to create those famous [rounded tabs](https://css-shape.com/rounded-tab/) with inner curves. 
 * No extra element & No pseudo-element
 * Less than 10 CSS declarations to get the three variations
 * One variable to control the curvature
@@ -43,3 +43,5 @@ Use modern CSS to create those famous rounded tabs with inner curves.
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+More CSS Shapes: [css-shape.com](https://css-shape.com)
