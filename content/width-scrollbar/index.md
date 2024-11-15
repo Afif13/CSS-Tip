@@ -17,7 +17,7 @@ As a bonus, you can also have an integer value!
   initial-value: 0px; 
 }
 html {
-  container-type: size;
+  container-type: inline-size;
 }
 body {
   --scrollbar: calc(100vw - 100cqw);
