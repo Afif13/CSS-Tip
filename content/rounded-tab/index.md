@@ -19,8 +19,7 @@ Use modern CSS to create those famous [rounded tabs](https://css-shape.com/round
 .rounded-tab {
   --r: .8em; /* control the curvature */
   
-  border: solid #0000;
-  border-width: 0 var(--r);
+  border-inline: var(--r) solid #0000;
   border-radius: calc(2*var(--r)) calc(2*var(--r)) 0 0/var(--r);
   mask: 
     radial-gradient(var(--r) at var(--r) 0,#0000 98%,#000 101%)
