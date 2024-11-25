@@ -6,7 +6,7 @@ date: 2024-04-16
 tags: posts
 ---
 
-Create a Star shape using clip-path and only 5 points instead of 10.
+Create a [Star shape](https://css-shape.com/star/) using clip-path and only 5 points instead of 10.
 
 Three different codes to create the same shape
 1. Precise version using math
@@ -41,6 +41,11 @@ Three different codes to create the same shape
 }
 ```
 
+The first and second methods consider the inscribed circle of a square to draw the points while the third method considers the smallest rectangle that can contain the star shape.
+
+{% image "./image2.png", "CSS-only star shape" %}
+
+
 <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="jORvmKG" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/jORvmKG">
   Modern ways to create a Star shape</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
@@ -48,4 +53,4 @@ Three different codes to create the same shape
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-More CSS Shapes: [css-shape.com](https://css-shape.com)
+More detail: [smashingmagazine.com/2024/05/modern-guide-making-css-shapes](https://www.smashingmagazine.com/2024/05/modern-guide-making-css-shapes/)
