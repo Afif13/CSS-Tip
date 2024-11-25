@@ -697,7 +697,7 @@
 		<link href="https://css-tip.com/star-shape/"/>
 		<updated>2024-04-16T00:00:00Z</updated>
 		<id>https://css-tip.com/star-shape/</id>
-		<content type="html"><![CDATA[ <p>Create a Star shape using clip-path and only 5 points instead of 10.</p>
+		<content type="html"><![CDATA[ <p>Create a <a href="https://css-shape.com/star/">Star shape</a> using clip-path and only 5 points instead of 10.</p>
 <p>Three different codes to create the same shape</p>
 <ol>
 <li>Precise version using math</li>
