@@ -17,33 +17,29 @@ Use modern CSS and a few lines of code to create a full-bleed layout.
 html {
   container-type: inline-size;
 }
-main { /* this is the main container */
-  /* 
-     1em is the margin on small screen
-     600px is the max-width value
-  */
-  --_m: max(1em,(100cqw - 600px)/2);
-  margin-inline: var(--_m);
+main {
+  --w: 600px; /* the max-width */
+  --m: 1em;   /* margin on small screen */
+  
+  margin-inline: max(var(--m),(100cqw - var(--w))/2);
 }
 .full-bleed {
-  margin-inline: calc(-1*var(--_m));
+  margin-inline: min(-1*var(--m),(var(--w) - 100cqw)/2);
 }
 ```
 
-Another syntax
+Another more-compact syntax 
 
 ```css
 html {
   container-type: inline-size;
 }
 main {
-  --w: 600px; /* the max-width*/
-  --m: 1em;   /* minimum margin */
-  
-  margin-inline: max(var(--m),(100cqw - var(--w))/2);
+  --_m: max(1em,(100cqw - 600px)/2);
+  margin-inline: var(--_m);
 }
 .full-bleed {
-  margin-inline: min(-1*var(--m),(var(--w) - 100cqw)/2);
+  margin-inline: calc(-1*var(--_m));
 }
 ```
 
