@@ -21,7 +21,7 @@ main {
   --w: 600px; /* the max-width */
   --m: 1em;   /* margin on small screen */
   
-  margin-inline: max(var(--m),(100cqw - var(--w))/2);
+  margin-inline: max(   var(--m),(100cqw - var(--w))/2);
 }
 .full-bleed {
   margin-inline: min(-1*var(--m),(var(--w) - 100cqw)/2);
