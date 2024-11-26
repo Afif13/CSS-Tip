@@ -8,7 +8,7 @@ tags: posts
 
 Use modern CSS and a few lines of code to create a full-bleed layout. 
 
-**Full-bleed**? It's when an element needs to get outside the boundary of its container and extend to the edge of the page.
+**Full-bleed**? It's when an element needs to bleed outside the main container and extend to the edge of the page.
 
 
 {% image "./image.png", "CSS-only zig-zag borders" %}
@@ -49,6 +49,10 @@ main {
   Full-bleed layout with modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
+Check the following to understand why `margin-inline` and `max()`: ["max-width + centering with one instruction"](/center-max-width/)
+
+----
 
 Here are other variations with different margin behaviors
 
