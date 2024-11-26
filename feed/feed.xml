@@ -16,7 +16,7 @@
 		<updated>2024-11-26T00:00:00Z</updated>
 		<id>https://css-tip.com/full-bleed-layout/</id>
 		<content type="html"><![CDATA[ <p>Use modern CSS and a few lines of code to create a full-bleed layout.</p>
-<p><strong>Full-bleed</strong>? It's when an element needs to get outside the boundary of its container and extend to the edge of the page.</p>
+<p><strong>Full-bleed</strong>? It's when an element needs to bleed outside the main container and extend to the edge of the page.</p>
 <p><picture><source type="image/avif" srcset="/img/Zu0r1t7fxP-935.avif 935w"><source type="image/webp" srcset="/img/Zu0r1t7fxP-935.webp 935w"><img alt="CSS-only zig-zag borders" loading="lazy" decoding="async" src="/img/Zu0r1t7fxP-935.png" width="935" height="442"></picture></p>
  <p><a href="https://css-tip.com/full-bleed-layout/">Read more</a></p> ]]></content>
 	</entry>
