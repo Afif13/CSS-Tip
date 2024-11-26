@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Vertical rounded tabs using CSS mask</title>
+		<title>Full-bleed layout with modern CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A few lines of code to get vertical rounded tabs using CSS mask">
+		<meta name="description" content="A few lines of code to make a section extend to the edges of the screen">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/vertical-rounded-tab/" >
+		<link rel=canonical href="https://css-tip.com/full-bleed-layout/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Vertical rounded tabs using CSS mask">
+		<meta property="og:title" content="Full-bleed layout with modern CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/vertical-rounded-tab/">
-		<meta property="og:description" content="A few lines of code to get vertical rounded tabs using CSS mask">
-		<meta property="og:image" content="/og-images/964b1176.png" >
+		<meta property="og:url" content="https://css-tip.com/full-bleed-layout/">
+		<meta property="og:description" content="A few lines of code to make a section extend to the edges of the screen">
+		<meta property="og:image" content="/og-images/904b910a.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -45,31 +45,34 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/width-scrollbar/" title="Get the scrollbar width using only CSS">Previous CSS Tip</a></li><li class="next"><a href="/steps/" title="How to correctly use steps() with animations">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/steps/" title="How to correctly use steps() with animations">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Vertical rounded tabs using CSS mask</h1>
+<h1>Full-bleed layout with modern CSS</h1>
 
-<time datetime="2024-11-15">November 15, 2024</time>
+<time datetime="2024-11-26">November 26, 2024</time>
 
-<p>Updating the previous <a href="/rounded-tab/">rounded tab shape</a> to create the <a href="https://css-shape.com/vertical-rounded-tab/" target="_blank" rel="noopener">vertical version</a> using the same code structure.</p>
-<ul>
-<li>No extra element &amp; No pseudo-element</li>
-<li>One variable to control the curvature</li>
-<li>Works with gradient coloration</li>
-<li>Powered by CSS mask</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/aSWNYMBWnz-868.avif 868w"><source type="image/webp" srcset="/img/aSWNYMBWnz-868.webp 868w"><img alt="CSS-only vertical rounded tabs using CSS mask" loading="lazy" decoding="async" src="/img/aSWNYMBWnz-868.png" width="868" height="326"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.rounded-tab</span> <span class="token punctuation">{</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> .8em<span class="token punctuation">;</span> <span class="token comment">/* control the radius/curvature */</span><br><br>  <span class="token property">border-block</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> solid #0000<span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> 0 0 <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span>/<span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> at 0 <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 98%<span class="token punctuation">,</span>#000 101%<span class="token punctuation">)</span><br>      100% <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> 100% repeat-y<span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span> padding-box<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.rounded-tab.alt</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 0 <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> 0/<span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    <span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> at 100% <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 98%<span class="token punctuation">,</span>#000 101%<span class="token punctuation">)</span><br>      0 <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> 100% repeat-y<span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span> padding-box<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="ExqrYyW" data-pen-title="Vertical rounded tabs using CSS mask" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ExqrYyW" target="_blank" rel="noopener">
-  Vertical rounded tabs using CSS mask</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Use modern CSS and a few lines of code to create a full-bleed layout.</p>
+<p><strong>Full-bleed</strong>? It's when an element needs to get outside the boundary of its container and extend to the edge of the page.</p>
+<p><picture><source type="image/avif" srcset="/img/Zu0r1t7fxP-935.avif 935w"><source type="image/webp" srcset="/img/Zu0r1t7fxP-935.webp 935w"><img alt="CSS-only zig-zag borders" loading="lazy" decoding="async" src="/img/Zu0r1t7fxP-935.png" width="935" height="442"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">main</span> <span class="token punctuation">{</span> <span class="token comment">/* this is the main container */</span><br>  <span class="token comment">/* <br>     1em is the margin on small screen<br>     600px is the max-width value<br>  */</span><br>  <span class="token property">--_m</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span>1em<span class="token punctuation">,</span><span class="token punctuation">(</span>100cqw - 600px<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Another syntax</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">main</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 600px<span class="token punctuation">;</span> <span class="token comment">/* the max-width*/</span><br>  <span class="token property">--m</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>   <span class="token comment">/* minimum margin */</span><br>  <br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>100cqw - <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> - 100cqw<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="vEBBoWj" data-pen-title="Full-bleed layout with modern CSS" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/vEBBoWj" target="_blank" rel="noopener">
+  Full-bleed layout with modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>Here are other variations with different margin behaviors</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">main</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 600px<span class="token punctuation">;</span> <span class="token comment">/* the max width*/</span><br>  <span class="token property">--m</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>   <span class="token comment">/* minimum margin */</span><br>  <br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>100cqw - <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed-2</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> - 100cqw<span class="token punctuation">)</span>/2 + <span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed-3</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>0px<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> - 100cqw<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed-4</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>0px<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> - 100cqw<span class="token punctuation">)</span>/2 + <span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Resize the below demo to see the difference</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="PwYYMRX" data-pen-title="Full-bleed layout variations" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwYYMRX" target="_blank" rel="noopener">
+  Full-bleed layout variations</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More CSS Shapes: <a href="https://css-shape.com" target="_blank" rel="noopener">css-shape.com</a></p>
-
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -77,19 +80,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/full-bleed-layout/" >Full-bleed layout with modern CSS</a>
-	</li>
-  	<li>
 		<a href="/steps/" >How to correctly use steps() with animations</a>
 	</li>
   	<li>
+		<a href="/vertical-rounded-tab/" >Vertical rounded tabs using CSS mask</a>
+	</li>
+  	<li>
 		<a href="/width-scrollbar/" >Get the scrollbar width using only CSS</a>
-	</li>
-  	<li>
-		<a href="/folded-rectangle/" >Folded rectangle shapes using CSS mask</a>
-	</li>
-  	<li>
-		<a href="/text-indent/" >Indent each line of your text</a>
 	</li>
 </ul>
 		</main>
