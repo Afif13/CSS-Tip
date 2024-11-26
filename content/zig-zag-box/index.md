@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: A fancy frame with Zig-Zag borders
-description: Use modern CSS to create a fancy frame around images
+description: Use modern CSS to create a Zig-Zag box
 date: 2024-04-18
 tags: posts
 ---
@@ -20,22 +20,15 @@ Use modern CSS to create a fancy [Zig-Zag border around images](https://css-shap
 img {
   --s: 16px;  /* control the size of the spikes */
   --w: 250px; /* preferred image width */
-  --c:#0B486B;
   
   width: round(var(--w),4*var(--s)); 
   aspect-ratio: 1;
-  padding: calc(2*var(--s));
-  --_c:#0000 calc(2*atan(2)),var(--c) 0;
-  background:
-    conic-gradient(from atan(-2) at 50% var(--s),var(--_c)),
-    conic-gradient(from calc(180deg - atan(2)) at 50% calc(100% - var(--s)),var(--_c)) 0 100%;
-  background-size: calc(4*var(--s)) 50%;
-  background-repeat: repeat-x;
+  --_m:#0000 0 calc(2*atan(.5)),#000 0 50%;
   mask:
-    conic-gradient(from calc(atan(-2) - 90deg) at var(--s),var(--_c)),
-    conic-gradient(from atan(.5) at calc(100% - var(--s)),var(--_c)) 100% 0;
-  mask-size: 50% calc(4*var(--s));
-  mask-repeat: repeat-y;
+    repeating-conic-gradient(from atan(2) at 50% var(--s),var(--_m))
+     calc(2*var(--s)) calc(-1*var(--s))/calc(4*var(--s)) 100% intersect,
+    repeating-conic-gradient(from atan(-.5) at var(--s),var(--_m))
+     calc(-1*var(--s)) calc(2*var(--s))/100% calc(4*var(--s));
 }
 ```
 
