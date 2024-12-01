@@ -1,0 +1,144 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Advertise
+  order: 4
+---
+<style>
+main button {
+  background: var(--text-color-link);
+  color: var(--background-color);
+  border: none;
+  padding: .3em 1.5em;
+  display: block;
+  margin: 1em auto;
+  font-size: 1.75em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main button:hover {
+  background: hsl(from var(--text-color-link) h s calc(l * 1.5));
+}
+ul.stats {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+ul.stats li {
+  flex: 1;
+  display: grid;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5em;
+  line-height: 1.2;
+  padding: .6em .1em;
+  background: var(--text-color);
+  color: var(--background-color);
+  margin: 3px;
+}
+ul.stats li span {
+  font-size: .3em;
+}
+ul.types {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+ul.types li {
+  position: relative;
+  flex: 200px;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0 1em;
+}
+ul.types li h3 {
+  font-size: 2em;
+  margin-block: 20px 0;
+}
+ul.types li div {
+  color: var(--text-color);
+  font-weight: 500;
+}
+ul.types li p {
+  font-famoly: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+  width: fit-content;
+  margin-inline: auto;
+  text-align: left;
+}
+ul.types li:before {
+  position: absolute;
+  inset: -.5lh 0 auto;
+  background: var(--text-color);
+  width: fit-content;
+  margin: auto;
+  color: var(--background-color);
+  font-size: 15px;
+  padding: 0 10px;
+}
+ul.types li:nth-child(1):before {
+  content: "Visible on load";
+}
+ul.types li:nth-child(2):before {
+  content: "Multiple spots";
+}
+ul.types li:nth-child(3):before {
+  content: "Responsive";
+}
+main div#contact {
+  width: fit-content;
+  margin: 20px auto;
+  font-size: 1.2em;
+  border: 2px dashed;
+  padding: 1em;
+}
+</style>
+
+<h1>Advertise with CSS Tip</h1>
+
+<p>Reach a wide audience of passionate web developers around the world!</p> 
+
+<ul class="stats">
+  <li>32,000 <span>Monthly page views*</span></li>
+  <li>14,000 <span>Monthly active users*</span></li>
+</ul>
+
+<p>Get a personalized and attractive ad seamlessly integrated into the website (I am a CSS expert after all). Say goodbye to the boring ads and explore a better way to advertise your product.</p>
+
+<h2>Ad placements</h2>
+
+{% image "./image.png", "Overview of ad placement" %}
+
+<ul class="types">
+  <li><h3>Top</h3><div>300$/month</div><p>width: 415px; <br> height: 240px;</p></li>
+  <li><h3>Side</h3><div>200$/month</div><p>width: 415px; <br> height: 200px;</p></li>
+  <li><h3>Bottom</h3><div>150$/month</div><p>width: 100%; <br> min-height: 100px;</p></li>
+</ul>
+
+<p>A preview? It's unnecessary because it will look like you want it to look. We will create together the perfect eye-catching ad. It won't be a simple clickable image but a semantic HTML code integrated into the website. You can update its content at any time with no additional fees.</p>
+
+<p>What are you waiting for? Start advertising with CSS Tip!</p>
+
+<button id="touch">Get in Touch</button>
+
+<h2>Do you want a special ad?</h2>
+
+<p>The <strong>reserved</strong> spot is for you! Up to 400px in height, you can promote as many products as you want there. You can even have interactive widgets (subscription form, images slider, etc). Contact me to discuss the pricing.</p>
+
+<br><br>
+
+<small>* It's an average based on the values provided by analytic tools of the previous months. Real numbers may vary.</small>
+
+
+<script>
+document.querySelector("#touch").addEventListener('click',function(e){
+  const div = document.createElement("div");
+  div.id="contact";
+  div.innerHTML="email me at <a href='mailt1:pr1@css-tip.c1m'>pr1@css-tip.c1m</a>".replaceAll("1","o");
+  e.target.replaceWith(div);
+})
+</script>

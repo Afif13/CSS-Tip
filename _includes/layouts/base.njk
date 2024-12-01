@@ -52,7 +52,7 @@
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
-					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS Feed</a></li>
+					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -60,11 +60,6 @@
 			{{ content | safe }}
 		</main>
 		<aside>
-			<!--<div class="sponso">
-				<a href="https://www.launchfa.st/?utm_source=css-tip"><small>LaunchFast</small></a>
-				<p>High Quality Starter Kits with <strong>object uploads</strong>, <strong>built-in authentication flow</strong>, <strong>payments</strong>, <strong>email verification flow</strong>, and much more.<br> Compatible with Redis, Postgres, MongoDB, Firestore or SQLite as your database.</p>
-				<p><img src="/img/launchfast-symbol.svg" alt="launch fast logo" height="50"> <a href="https://www.launchfa.st/?utm_source=css-tip">Launch Fast Now</a></p>
-			</div>-->
 			<div id="custom-wall" style="height: 230px;"></div>
 			<div style="height:400px;overflow: clip;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=cover" id="_carbonads_js"></script></div>
 			<a href="https://css-loaders.com/" target="_blank">
@@ -87,8 +82,8 @@
 <script>
 (function() {
   if (typeof _bsa !== 'undefined' && _bsa) {
-    _bsa.init('custom', 'CW7D653L', 'placement:css-tipcom', {
-    //_bsa.init('custom', 'CVADC53U', 'placement:yoursitedomain', {
+    _bsa.initBatch('custom', 'CW7D653L', 'placement:css-tipcom', {
+    //_bsa.initBatch('custom', 'CVADC53U', 'placement:yoursitedomain', {
       target: '#custom-wall',
       template:
 `
@@ -102,10 +97,22 @@
   </div>
 </a>
 `});
-  _bsa.init('responsive', 'CW7DPK7N', 'placement:css-tipcom', { target: "#inline-custom" });
-  //_bsa.init('responsive', 'CVADC53U', 'placement:yoursitedomain', { target: "#inline-custom" });
+  _bsa.initBatch('responsive', 'CW7DPK7N', 'placement:css-tipcom', { target: "#inline-custom" });
+  //_bsa.initBatch('responsive', 'CVADC53U', 'placement:yoursitedomain', { target: "#inline-custom" });
+  _bsa.loadBatch();
   }
 })();
+function BSANativeCallback({ ads, key }) {
+  if (ads.length === 0) {
+  	document.querySelector("#custom-wall").innerHTML='<div class="sponso">\
+				<a href="/advertise/"><small>Place your ad here</small></a>\
+				<p>Reach a wide audience of web developers with a personalized and attractive ad.</p>\
+				<p>Don\'t miss the opportunity to promote your product starting from <strong>150$/month</strong>.</p>\
+				<a href="/advertise/">Advertise with CSS Tip</a>\
+			</div>';
+		document.querySelector("#custom-wall").style.height="";	
+  }
+}
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSNXZ63602"></script>
 <script>
