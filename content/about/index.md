@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+title: About CSS Tip
 eleventyNavigation:
   key: About
   order: 3

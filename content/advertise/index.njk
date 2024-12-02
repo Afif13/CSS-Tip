@@ -1,5 +1,7 @@
 ---
 layout: layouts/home.njk
+title: Advertise with CSS Tip
+description: Promote your product with a personalised and attractive ad starting from 150$/month.
 eleventyNavigation:
   key: Advertise
   order: 4
@@ -140,5 +142,6 @@ document.querySelector("#touch").addEventListener('click',function(e){
   div.id="contact";
   div.innerHTML="email me at <a href='mailt1:pr1@css-tip.c1m'>pr1@css-tip.c1m</a>".replaceAll("1","o");
   e.target.replaceWith(div);
+  gtag('event', 'advertise');
 })
 </script>
