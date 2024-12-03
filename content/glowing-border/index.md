@@ -45,4 +45,12 @@ img:hover {
   Glowing border animation on hover with a smooth stop</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
+Another version where the border will choose the shortest path when returning to the initial position. Hover a lot of times to notice the difference!
+
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="YPKXoEo" data-pen-title="Glowing border animation on hover with a smooth stop II" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/YPKXoEo">
+  Glowing border animation on hover with a smooth stop II</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
