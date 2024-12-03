@@ -22,12 +22,10 @@ Turn your titles into a fancy divider using few lines of code
   --g: 15px;  /* control the gap */
   --c: #0B486B;
  
-  border: 1px solid;
   background: 
     conic-gradient(from   45deg at left ,var(--c) 25%,#0000 0) 0,
     conic-gradient(from -135deg at right,var(--c) 25%,#0000 0) 100%;
   background-size: 51% 100%;
-  background-origin: border-box;
   background-repeat: no-repeat;
   border-image: 
      linear-gradient(
