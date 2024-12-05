@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-12-03T00:00:00Z</updated>
+	<updated>2024-12-05T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Border-only breadcrumb shape using modern CSS</title>
+		<link href="https://css-tip.com/border-only-breadcrumb/"/>
+		<updated>2024-12-05T00:00:00Z</updated>
+		<id>https://css-tip.com/border-only-breadcrumb/</id>
+		<content type="html"><![CDATA[ <p>Create a border-only <a href="https://css-shape.com/breadcrumb/">breadcrumb shape</a> using a few lines of code and modern CSS.</p>
+<ul>
+<li>No extra element</li>
+<li>Powered by <code>clip-path</code> &amp; math functions</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/t-QZvH0jgA-901.avif 901w"><source type="image/webp" srcset="/img/t-QZvH0jgA-901.webp 901w"><img alt="Border-only breadcrumb shape using CSS" loading="lazy" decoding="async" src="/img/t-QZvH0jgA-901.png" width="901" height="355"></picture></p>
+ <p><a href="https://css-tip.com/border-only-breadcrumb/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Glowing border animation with a smooth stop</title>
