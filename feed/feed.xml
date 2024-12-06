@@ -4,11 +4,20 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-12-05T00:00:00Z</updated>
+	<updated>2024-12-06T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A new way to center block elements using justify-self: center</title>
+		<link href="https://css-tip.com/center-block-element/"/>
+		<updated>2024-12-06T00:00:00Z</updated>
+		<id>https://css-tip.com/center-block-element/</id>
+		<content type="html"><![CDATA[ <p>A new way to center block elements is available! One line of code and you can replace the use of <code>margin: auto</code> combined with <code>width</code>/<code>max-width</code>.</p>
+ <p><a href="https://css-tip.com/center-block-element/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Border-only breadcrumb shape using modern CSS</title>

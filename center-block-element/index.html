@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Full-bleed layout with modern CSS</title>
+		<title>A new way to center block elements using justify-self: center</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A few lines of code to make a section extend to the edges of the screen">
+		<meta name="description" content="Now you can center block elements using justify-self: center instead of auto margin">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/full-bleed-layout/" >
+		<link rel=canonical href="https://css-tip.com/center-block-element/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Full-bleed layout with modern CSS">
+		<meta property="og:title" content="A new way to center block elements using justify-self: center">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/full-bleed-layout/">
-		<meta property="og:description" content="A few lines of code to make a section extend to the edges of the screen">
-		<meta property="og:image" content="/og-images/904b910a.png" >
+		<meta property="og:url" content="https://css-tip.com/center-block-element/">
+		<meta property="og:description" content="Now you can center block elements using justify-self: center instead of auto margin">
+		<meta property="og:image" content="/og-images/df9b7df4.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,36 +46,31 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/steps/" title="How to correctly use steps() with animations">Previous CSS Tip</a></li><li class="next"><a href="/glowing-border/" title="Glowing border animation with a smooth stop">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/border-only-breadcrumb/" title="Border-only breadcrumb shape using modern CSS">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Full-bleed layout with modern CSS</h1>
+<h1>A new way to center block elements using justify-self: center</h1>
 
-<time datetime="2024-11-26">November 26, 2024</time>
+<time datetime="2024-12-06">December 06, 2024</time>
 
-<p>Use modern CSS and a few lines of code to create a full-bleed layout.</p>
-<p><strong>Full-bleed</strong>? It's when an element needs to bleed outside the main container and extend to the edge of the page.</p>
-<p><picture><source type="image/avif" srcset="/img/Zu0r1t7fxP-935.avif 935w"><source type="image/webp" srcset="/img/Zu0r1t7fxP-935.webp 935w"><img alt="CSS-only zig-zag borders" loading="lazy" decoding="async" src="/img/Zu0r1t7fxP-935.png" width="935" height="442"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">main</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 600px<span class="token punctuation">;</span> <span class="token comment">/* the max-width */</span><br>  <span class="token property">--m</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>   <span class="token comment">/* margin on small screen */</span><br>  <br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span>   <span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>100cqw - <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> - 100cqw<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Another more-compact syntax</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">main</span> <span class="token punctuation">{</span><br>  <span class="token property">--_m</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span>1em<span class="token punctuation">,</span><span class="token punctuation">(</span>100cqw - 600px<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="vEBBoWj" data-pen-title="Full-bleed layout with modern CSS" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/vEBBoWj" target="_blank" rel="noopener">
-  Full-bleed layout with modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>A new way to center block elements is available! One line of code and you can replace the use of <code>margin: auto</code> combined with <code>width</code>/<code>max-width</code>.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">justify-self</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>The support is still not good. Use the latest version of Chrome to test:</p>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="ByBKNPP" data-pen-title="justify-self on block element" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ByBKNPP" target="_blank" rel="noopener">
+  justify-self on block element</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<p>Check the following to understand why <code>margin-inline</code> and <code>max()</code>: <a href="/center-max-width/">&quot;max-width + centering with one instruction&quot;</a></p>
-<hr>
-<p>Here are other variations with different margin behaviors</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">main</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 600px<span class="token punctuation">;</span> <span class="token comment">/* the max width*/</span><br>  <span class="token property">--m</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>   <span class="token comment">/* minimum margin */</span><br>  <br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>100cqw - <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed-2</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> - 100cqw<span class="token punctuation">)</span>/2 + <span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed-3</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>0px<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> - 100cqw<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.full-bleed-4</span> <span class="token punctuation">{</span><br>  <span class="token property">margin-inline</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>0px<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span> - 100cqw<span class="token punctuation">)</span>/2 + <span class="token function">var</span><span class="token punctuation">(</span>--m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Resize the below demo to see the difference</p>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="PwYYMRX" data-pen-title="Full-bleed layout variations" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwYYMRX" target="_blank" rel="noopener">
-  Full-bleed layout variations</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Using <code>justify-items: center</code> on a parent element will do the same. It's useful if you want to center all the elements inside a container.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">justify-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="wBwGKaN" data-pen-title="justify-items on block elements" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/wBwGKaN" target="_blank" rel="noopener">
+  justify-items on block elements</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -83,22 +78,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/center-block-element/" >A new way to center block elements using justify-self: center</a>
-	</li>
-  	<li>
 		<a href="/border-only-breadcrumb/" >Border-only breadcrumb shape using modern CSS</a>
 	</li>
   	<li>
 		<a href="/glowing-border/" >Glowing border animation with a smooth stop</a>
 	</li>
   	<li>
-		<a href="/steps/" >How to correctly use steps() with animations</a>
-	</li>
-  	<li>
-		<a href="/vertical-rounded-tab/" >Vertical rounded tabs using CSS mask</a>
-	</li>
-  	<li>
-		<a href="/width-scrollbar/" >Get the scrollbar width using only CSS</a>
+		<a href="/full-bleed-layout/" >Full-bleed layout with modern CSS</a>
 	</li>
 </ul>
 		</main>
