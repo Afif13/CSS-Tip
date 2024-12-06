@@ -25,7 +25,7 @@ The support is still not good. Use the latest version of Chrome to test:
 Using `justify-items: center` on a parent element will do the same. It's useful if you want to center all the elements inside a container.
 
 ```css
-.box {
+.container {
   justify-items: center;
 }
 ```
