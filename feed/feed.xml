@@ -4,11 +4,20 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2024-12-06T00:00:00Z</updated>
+	<updated>2024-12-10T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Overflow/scrollbar detection using modern CSS</title>
+		<link href="https://css-tip.com/overflow-detection/"/>
+		<updated>2024-12-10T00:00:00Z</updated>
+		<id>https://css-tip.com/overflow-detection/</id>
+		<content type="html"><![CDATA[ <p>Do you want to detect if an element is having an overflow or if it's scrollable? It's possible with scroll-driven animation! You can also store this information within a variable at <code>:root</code> level and do whatever you want (like styling any elements on the page)</p>
+ <p><a href="https://css-tip.com/overflow-detection/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>A new way to center block elements using justify-self: center</title>

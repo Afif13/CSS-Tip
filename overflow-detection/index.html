@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>Overflow/scrollbar detection using modern CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="Using scroll-driven animations you can detect when an element is overflowing or has a scrollbar">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/overflow-detection/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="Overflow/scrollbar detection using modern CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/overflow-detection/">
+		<meta property="og:description" content="Using scroll-driven animations you can detect when an element is overflowing or has a scrollbar">
+		<meta property="og:image" content="/og-images/7184f9cf.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -36,7 +36,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/advertise/">Advertise</a></li>
@@ -46,131 +46,48 @@
 		</header>
 		<main id="skip">
 			
-
-<h1>Learn CSS the easy way</h1>
-<p>Learn a new CSS Trick every day and become a better web developer. All the CSS secrets are here (Flexbox, CSS Grid, Shapes, Gradients, Colors, Animations, Selectors, Variables, Masking, Clipping, etc). <br>It takes only <strong>one minute</strong> to read a tip.</p>
-<p>Do you want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Get a random CSS Tip!</a></p>
-<hr>
-
-
-<ul class="postlist" >
-
-	<li>
-		<a href="/overflow-detection/" >Overflow/scrollbar detection using modern CSS</a>
-		<time datetime="2024-12-10">December 10, 2024</time>
-	</li>
-
-	<li>
-		<a href="/center-block-element/" >A new way to center block elements using justify-self: center</a>
-		<time datetime="2024-12-06">December 06, 2024</time>
-	</li>
-
-	<li>
-		<a href="/border-only-breadcrumb/" >Border-only breadcrumb shape using modern CSS</a>
-		<time datetime="2024-12-05">December 05, 2024</time>
-	</li>
-
-	<li>
-		<a href="/glowing-border/" >Glowing border animation with a smooth stop</a>
-		<time datetime="2024-12-03">December 03, 2024</time>
-	</li>
-
-	<li>
-		<a href="/full-bleed-layout/" >Full-bleed layout with modern CSS</a>
-		<time datetime="2024-11-26">November 26, 2024</time>
-	</li>
-
-	<li>
-		<a href="/steps/" >How to correctly use steps() with animations</a>
-		<time datetime="2024-11-18">November 18, 2024</time>
-	</li>
-
-	<li>
-		<a href="/vertical-rounded-tab/" >Vertical rounded tabs using CSS mask</a>
-		<time datetime="2024-11-15">November 15, 2024</time>
-	</li>
-
-	<li>
-		<a href="/width-scrollbar/" >Get the scrollbar width using only CSS</a>
-		<time datetime="2024-11-14">November 14, 2024</time>
-	</li>
-
-	<li>
-		<a href="/folded-rectangle/" >Folded rectangle shapes using CSS mask</a>
-		<time datetime="2024-11-08">November 08, 2024</time>
-	</li>
-
-	<li>
-		<a href="/text-indent/" >Indent each line of your text</a>
-		<time datetime="2024-11-04">November 04, 2024</time>
-	</li>
-
-	<li>
-		<a href="/last-element-dom/" >Select the last occurrence of an element in the whole document</a>
-		<time datetime="2024-10-31">October 31, 2024</time>
-	</li>
-
-	<li>
-		<a href="/first-element-dom/" >Select the first occurrence of an element in the whole document</a>
-		<time datetime="2024-10-30">October 30, 2024</time>
-	</li>
-
-	<li>
-		<a href="/3d-parallax-effect/" >3D parallax effect on hover</a>
-		<time datetime="2024-10-23">October 23, 2024</time>
-	</li>
-
-	<li>
-		<a href="/one-color-gradient/" >How to correctly define a one-color gradient</a>
-		<time datetime="2024-10-21">October 21, 2024</time>
-	</li>
-
-	<li>
-		<a href="/avatar-rhombus/" >Avatar hover effect with a rhombus shape</a>
-		<time datetime="2024-10-18">October 18, 2024</time>
-	</li>
-
-	<li>
-		<a href="/inner-outer-display/" >Inner display vs Outer display</a>
-		<time datetime="2024-10-16">October 16, 2024</time>
-	</li>
-
-	<li>
-		<a href="/puzzle-shape/" >Puzzle shapes using CSS mask</a>
-		<time datetime="2024-10-09">October 09, 2024</time>
-	</li>
-
-	<li>
-		<a href="/filling-loader/" >The Filling CSS loaders Collection</a>
-		<time datetime="2024-10-04">October 04, 2024</time>
-	</li>
-
-	<li>
-		<a href="/initial-containing-block/" >Default behavior of position absolute</a>
-		<time datetime="2024-09-30">September 30, 2024</time>
-	</li>
-
-	<li>
-		<a href="/animate-height-auto/" >Animate to height/width auto (without hacks)</a>
-		<time datetime="2024-09-25">September 25, 2024</time>
-	</li>
-
+<ul class="links-nextprev"><li class="prev"><a href="/center-block-element/" title="A new way to center block elements using justify-self: center">Previous CSS Tip</a></li>
 </ul>
 
 
+<h1>Overflow/scrollbar detection using modern CSS</h1>
 
+<time datetime="2024-12-10">December 10, 2024</time>
 
-<p>192 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
+<p>Do you want to detect if an element is having an overflow or if it's scrollable? It's possible with scroll-driven animation! You can also store this information within a variable at <code>:root</code> level and do whatever you want (like styling any elements on the page)</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span><br>  <span class="token property">timeline-scope</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> --scroll forwards<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br>  <span class="token property">container</span><span class="token punctuation">:</span> --scroll/inline-size<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box</span> <span class="token punctuation">{</span> <span class="token comment">/* the concerned element */</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span> <span class="token comment">/* or hidden */</span><br>  <span class="token property">scroll-timeline</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> --scroll</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%,to</span><span class="token punctuation">{</span><span class="token property">--scroll</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@container</span> --scroll <span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--scroll</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token comment">/* The CSS when .box is overflowing <br>     you can target any element on the page!<br>  */</span><br><span class="token punctuation">}</span><br><span class="token comment">/* Yes you can use --scroll everywhere! */</span></code></pre>
+<p>Resize the <code>.box</code> element in the demo below and see the magic! (chrome only for now)</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="GgKZBWX" data-pen-title="Overflow detection using only CSS" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GgKZBWX" target="_blank" rel="noopener">
+  Overflow detection using only CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>The use of style query is not mandatory and you can have a simpler version if you want to target the concerned element.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span> <span class="token comment">/* or hidden */</span><br>  <span class="token property">scroll-timeline</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> scrolling forwards<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> scrolling</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%,to</span><span class="token punctuation">{</span><br>    <span class="token comment">/* the CSS applied to .box when it has overflow */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>Or a child element</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span> <span class="token comment">/* or hidden */</span><br>  <span class="token property">scroll-timeline</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box .child</span> <span class="token punctuation">{</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> scrolling forwards<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> scrolling</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%,to</span><span class="token punctuation">{</span><br>    <span class="token comment">/* the CSS applied to .child when .box has overflow */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="ZYzOaZp" data-pen-title="Overflow detection using only CSS (simple version)" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ZYzOaZp" target="_blank" rel="noopener">
+  Overflow detection using only CSS (simple version)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
 
+<h2>More CSS Tips</h2>
 
-
-<hr>
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
-
+<ul class="postlist" >
+  	<li>
+		<a href="/center-block-element/" >A new way to center block elements using justify-self: center</a>
+	</li>
+  	<li>
+		<a href="/border-only-breadcrumb/" >Border-only breadcrumb shape using modern CSS</a>
+	</li>
+  	<li>
+		<a href="/glowing-border/" >Glowing border animation with a smooth stop</a>
+	</li>
+</ul>
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
