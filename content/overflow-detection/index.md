@@ -43,9 +43,8 @@ The use of style query is not mandatory and you can have a simpler version if yo
 ```css
 .box {
   overflow: auto; /* or hidden */
-  scroll-timeline: --scroll;
   animation: scrolling forwards;
-  animation-timeline: --scroll;
+  animation-timeline: scroll(self);
 }
 @keyframes scrolling {
   0%,to{
@@ -59,11 +58,10 @@ Or a child element
 ```css
 .box {
   overflow: auto; /* or hidden */
-  scroll-timeline: --scroll;
 }
 .box .child {
   animation: scrolling forwards;
-  animation-timeline: --scroll;
+  animation-timeline: scroll(); /* it will consider the ancestor having overflow: auto/hidden  */
 }
 @keyframes scrolling {
   0%,to{
