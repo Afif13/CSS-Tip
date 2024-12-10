@@ -13,7 +13,7 @@ Do you want to detect if an element is having an overflow or if it's scrollable?
   timeline-scope: --scroll;
   animation: --scroll forwards;
   animation-timeline: --scroll;
-  container: --scroll/inline-size;
+  container-name: --scroll;
 }
 .box { /* the concerned element */
   overflow: auto; /* or hidden */
