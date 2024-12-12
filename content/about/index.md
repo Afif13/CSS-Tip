@@ -20,17 +20,18 @@ Want more CSS fun? Check my other websites:
 * [CSS Arts](https://css-only.art/)
 * [CSS Games](https://css-games.com/)
 
-Did you like this website? [You can thank me with a small coffee](https://support.temani-afif.com/)
+If you like this website [You can support me](https://support.temani-afif.com/) (I know you will do before leaving this page because you are great person!)
 
 
 Find me on:
-* [Twitter](https://twitter.com/ChallengesCss)
+* [X (Twitter)](https://x.com/ChallengesCss)
 * [Mastodon](https://front-end.social/@css)
+* [Bluesky](https://bsky.app/profile/css-only.dev)
 * [Github](https://github.com/Afif13/)
 * [Stack Overflow](https://stackoverflow.com/users/8620333/temani-afif)
 
 
-<hr>
+<div id="inline-custom"><hr></div>
 
 This site is a member of [CS.Sjoy.lol](https://cs.sjoy.lol/) webring. Cool websites doing CSS stuff!
 
