@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Overflow/scrollbar detection using modern CSS</title>
+		<title>Smooth rotation with modern CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Using scroll-driven animations you can detect when an element is overflowing or has a scrollbar">
+		<meta name="description" content="Create a smooth rotation of any element using modern CSS">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/overflow-detection/" >
+		<link rel=canonical href="https://css-tip.com/smooth-rotation/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Overflow/scrollbar detection using modern CSS">
+		<meta property="og:title" content="Smooth rotation with modern CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/overflow-detection/">
-		<meta property="og:description" content="Using scroll-driven animations you can detect when an element is overflowing or has a scrollbar">
-		<meta property="og:image" content="/og-images/7184f9cf.png" >
+		<meta property="og:url" content="https://css-tip.com/smooth-rotation/">
+		<meta property="og:description" content="Create a smooth rotation of any element using modern CSS">
+		<meta property="og:image" content="/og-images/76de73a2.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,32 +46,28 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/center-block-element/" title="A new way to center block elements using justify-self: center">Previous CSS Tip</a></li><li class="next"><a href="/smooth-rotation/" title="Smooth rotation with modern CSS">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/overflow-detection/" title="Overflow/scrollbar detection using modern CSS">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Overflow/scrollbar detection using modern CSS</h1>
+<h1>Smooth rotation with modern CSS</h1>
 
-<time datetime="2024-12-10">December 10, 2024</time>
+<time datetime="2025-01-03">January 03, 2025</time>
 
-<p>Do you want to detect if an element is having an overflow or if it's scrollable? It's possible with scroll-driven animation! You can also store this information within a variable at <code>:root</code> level and do whatever you want (like styling any elements on the page)</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span><br>  <span class="token property">timeline-scope</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> --scroll forwards<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br>  <span class="token property">container-name</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box</span> <span class="token punctuation">{</span> <span class="token comment">/* the concerned element */</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span> <span class="token comment">/* or hidden */</span><br>  <span class="token property">scroll-timeline</span><span class="token punctuation">:</span> --scroll<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> --scroll</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%,to</span><span class="token punctuation">{</span><span class="token property">--scroll</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@container</span> --scroll <span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--scroll</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token comment">/* The CSS when .box is overflowing <br>     you can target any element on the page!<br>  */</span><br><span class="token punctuation">}</span><br><span class="token comment">/* Yes you can use --scroll everywhere! */</span></code></pre>
-<p>Resize the <code>.box</code> element in the demo below and see the magic! (chrome only for now)</p>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="GgKZBWX" data-pen-title="Overflow detection using only CSS" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GgKZBWX" target="_blank" rel="noopener">
-  Overflow detection using only CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Use modern CSS to control the rotation of any element smoothly. Hover to rotate, click to accelerate, unhover to return to the initial position following the shortest path!</p>
+<ul>
+<li>Single element (no pseudo-element)</li>
+<li>No keyframes</li>
+<li>Powered by <code>@property</code> and math functions</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/qVI02NkVhk-855.avif 855w"><source type="image/webp" srcset="/img/qVI02NkVhk-855.webp 855w"><img alt="CSS-only smooth rotation" loading="lazy" decoding="async" src="/img/qVI02NkVhk-855.png" width="855" height="311"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --a</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;angle>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0deg<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --i</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --j</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--t</span><span class="token punctuation">:</span> 1turn<span class="token punctuation">;</span> <span class="token comment">/* control the modulo (the smallest angle after which you get back to the same visual) */</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> .8s<span class="token punctuation">;</span>   <span class="token comment">/* the transition when you unhover */</span><br><br>  <span class="token property">rotate</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">mod</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--t<span class="token punctuation">)</span>/2<span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span> + <span class="token function">clamp</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--t<span class="token punctuation">)</span>/-2*<span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--t<span class="token punctuation">)</span>/2 - <span class="token function">mod</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--a<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--t<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>*9999<span class="token punctuation">,</span>0deg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> --i <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span>--a 0s <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span>--j <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--i</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">--a</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>15turn*<span class="token function">var</span><span class="token punctuation">(</span>--j<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> --i 0s<span class="token punctuation">,</span>--a 30s linear<span class="token punctuation">,</span>--j .5s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box:active</span> <span class="token punctuation">{</span><br>  <span class="token property">--j</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span> <span class="token comment">/* control the speed on click [1 infinity[ */</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="azoVpzN" data-pen-title="Hover to rotate, click to accelerate, unhover for a smooth stop!" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/azoVpzN" target="_blank" rel="noopener">
+  Hover to rotate, click to accelerate, unhover for a smooth stop!</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<p>The use of style query is not mandatory and you can have a simpler version if you want to target the concerned element.</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span> <span class="token comment">/* or hidden */</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> scrolling forwards<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> <span class="token function">scroll</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> scrolling</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%,to</span><span class="token punctuation">{</span><br>    <span class="token comment">/* the CSS applied to .box when it has overflow */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p>Or a child element</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span> <span class="token comment">/* or hidden */</span><br><span class="token punctuation">}</span><br><span class="token selector">.box .child</span> <span class="token punctuation">{</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> scrolling forwards<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> <span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* it will consider the ancestor having overflow: auto/hidden  */</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> scrolling</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%,to</span><span class="token punctuation">{</span><br>    <span class="token comment">/* the CSS applied to .child when .box has overflow */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="ZYzOaZp" data-pen-title="Overflow detection using only CSS (simple version)" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ZYzOaZp" target="_blank" rel="noopener">
-  Overflow detection using only CSS (simple version)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -79,16 +75,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/smooth-rotation/" >Smooth rotation with modern CSS</a>
+		<a href="/overflow-detection/" >Overflow/scrollbar detection using modern CSS</a>
 	</li>
   	<li>
 		<a href="/center-block-element/" >A new way to center block elements using justify-self: center</a>
 	</li>
   	<li>
 		<a href="/border-only-breadcrumb/" >Border-only breadcrumb shape using modern CSS</a>
-	</li>
-  	<li>
-		<a href="/glowing-border/" >Glowing border animation with a smooth stop</a>
 	</li>
 </ul>
 		</main>
