@@ -10,7 +10,7 @@ What time is it? We can answer this question using only CSS! The demo below is a
 
 A chrome-only experimentation for now:
 
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="LEPemRQ" data-pen-title="What time is it? (A CSS-only clock with the current time)" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="LEPemRQ" data-pen-title="What time is it? (A CSS-only clock with the current time)" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/LEPemRQ">
   What time is it? (A CSS-only clock with the current time)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
