@@ -18,5 +18,3 @@ A chrome-only experimentation for now:
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 Based on [a clever idea by Jane Ori](https://dev.to/janeori/getting-your-ip-address-with-css-and-other-32-bit-api-responses-without-javascript-402h)
-
-PS: I don't know how it behaves in different timezones, so the hour may be wrong for your location.
