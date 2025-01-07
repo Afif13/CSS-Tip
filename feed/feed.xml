@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-01-03T00:00:00Z</updated>
+	<updated>2025-01-07T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A CSS-only clock showing the current time</title>
+		<link href="https://css-tip.com/clock/"/>
+		<updated>2025-01-07T00:00:00Z</updated>
+		<id>https://css-tip.com/clock/</id>
+		<content type="html"><![CDATA[ <p>What time is it? We can answer this question using only CSS! The demo below is a clock that shows you the current time (You can compare with your smartwatch, it's accurate!). It's a single-element implementation powered by modern CSS.</p>
+<p>A chrome-only experimentation for now:</p>
+ <p><a href="https://css-tip.com/clock/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Smooth rotation with modern CSS</title>
