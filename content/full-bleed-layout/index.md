@@ -21,10 +21,10 @@ main {
   --w: 600px; /* the max-width */
   --m: 1em;   /* margin on small screen */
   
-  margin-inline: max(   var(--m),(100cqw - var(--w))/2);
+  margin-inline: max(   var(--m),50cqw - var(--w)/2);
 }
 .full-bleed {
-  margin-inline: min(-1*var(--m),(var(--w) - 100cqw)/2);
+  margin-inline: min(-1*var(--m),var(--w)/2 - 50cqw);
 }
 ```
 
@@ -35,7 +35,7 @@ html {
   container-type: inline-size;
 }
 main {
-  --_m: max(1em,(100cqw - 600px)/2);
+  --_m: max(1em,50cqw - 600px/2);
   margin-inline: var(--_m);
 }
 .full-bleed {
@@ -64,16 +64,16 @@ main {
   --w: 600px; /* the max width*/
   --m: 1em;   /* minimum margin */
   
-  margin-inline: max(var(--m),(100cqw - var(--w))/2);
+  margin-inline: max(var(--m),50cqw - var(--w)/2);
 }
 .full-bleed-2 {
-  margin-inline: min(-1*var(--m),(var(--w) - 100cqw)/2 + var(--m));
+  margin-inline: min(-1*var(--m),var(--w)/2 - 50cqw + var(--m));
 }
 .full-bleed-3 {
-  margin-inline: min(0px,(var(--w) - 100cqw)/2);
+  margin-inline: min(0px        ,var(--w)/2 - 50cqw);
 }
 .full-bleed-4 {
-  margin-inline: min(0px,(var(--w) - 100cqw)/2 + var(--m));
+  margin-inline: min(0px         ,var(--w)/2 - 50cqw + var(--m));
 }
 ```
 
