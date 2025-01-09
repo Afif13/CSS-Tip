@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A CSS-only clock showing the current time</title>
+		<title>Running animations without keyframes</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use modern CSS (and some hacks) to show the current time using only CSS">
+		<meta name="description" content="A new way to create animations without relying on keyframes">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/clock/" >
+		<link rel=canonical href="https://css-tip.com/animation-without-keyframes/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A CSS-only clock showing the current time">
+		<meta property="og:title" content="Running animations without keyframes">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/clock/">
-		<meta property="og:description" content="Use modern CSS (and some hacks) to show the current time using only CSS">
-		<meta property="og:image" content="/og-images/87d2c44b.png" >
+		<meta property="og:url" content="https://css-tip.com/animation-without-keyframes/">
+		<meta property="og:description" content="A new way to create animations without relying on keyframes">
+		<meta property="og:image" content="/og-images/ebe6f448.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,23 +46,31 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/smooth-rotation/" title="Smooth rotation with modern CSS">Previous CSS Tip</a></li><li class="next"><a href="/animation-without-keyframes/" title="Running animations without keyframes">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/clock/" title="A CSS-only clock showing the current time">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>A CSS-only clock showing the current time</h1>
+<h1>Running animations without keyframes</h1>
 
-<time datetime="2025-01-07">January 07, 2025</time>
+<time datetime="2025-01-09">January 09, 2025</time>
 
-<p>What time is it? We can answer this question using only CSS! The demo below is a clock that shows you the current time (You can compare with your smartwatch, it's accurate!). It's a single-element implementation powered by modern CSS.</p>
-<p>A chrome-only experimentation for now:</p>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="LEPemRQ" data-pen-title="What time is it? (A CSS-only clock with the current time)" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LEPemRQ" target="_blank" rel="noopener">
-  What time is it? (A CSS-only clock with the current time)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Using the new <code>@starting-style</code> you can create animations without using <code>@keyframes</code>. It's not a replacement for the classic way to create animations but it can be a useful CSS trick in some situations.</p>
+<p>Here is a simple example with a rotation. I am using big values to simulate an infinite rotation.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> 40s linear 1s<span class="token punctuation">;</span> <span class="token comment">/* duration easing delay */</span><br>  <span class="token property">rotate</span><span class="token punctuation">:</span> 0turn<span class="token punctuation">;</span> <span class="token comment">/* To (can be removed as it's the default value) */</span><br>  <span class="token atrule"><span class="token rule">@starting-style</span></span> <span class="token punctuation">{</span><br>    <span class="token property">rotate</span><span class="token punctuation">:</span> -20turn<span class="token punctuation">;</span> <span class="token comment">/* From */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="MYgQVbZ" data-pen-title="Infinite rotation without keyframes" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/MYgQVbZ" target="_blank" rel="noopener">
+  Infinite rotation without keyframes</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>Here is a more generic example where I animate one variable and then use it within different properties</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --i</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 1000<span class="token punctuation">;</span> <span class="token comment">/* To */</span><br><span class="token punctuation">}</span><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">hsl</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span>*10<span class="token punctuation">)</span> 80% 50%<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">translate</span><span class="token punctuation">:</span> 0 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sin</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span><span class="token punctuation">)</span>*20px<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">rotate</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">clamp</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span><span class="token function">mod</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span><span class="token punctuation">,</span>10<span class="token punctuation">)</span> - 5<span class="token punctuation">,</span>1<span class="token punctuation">)</span>*90deg<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token property">transition</span><span class="token punctuation">:</span> --i 120s linear 1s<span class="token punctuation">;</span> <span class="token comment">/* duration easing delay */</span><br>  <span class="token atrule"><span class="token rule">@starting-style</span></span> <span class="token punctuation">{</span><br>    <span class="token property">--i</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token comment">/* From */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="OPLQvjz" data-pen-title="Complex animation without keyframes" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/OPLQvjz" target="_blank" rel="noopener">
+  Complex animation without keyframes</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>Based on <a href="https://dev.to/janeori/getting-your-ip-address-with-css-and-other-32-bit-api-responses-without-javascript-402h" target="_blank" rel="noopener">a clever idea by Jane Ori</a></p>
+<p>Again, I am not saying it's better than an <code>animation</code> combined with <code>keyframes</code>. It's just a different way to express animations.</p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -71,16 +79,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/animation-without-keyframes/" >Running animations without keyframes</a>
+		<a href="/clock/" >A CSS-only clock showing the current time</a>
 	</li>
   	<li>
 		<a href="/smooth-rotation/" >Smooth rotation with modern CSS</a>
 	</li>
   	<li>
 		<a href="/overflow-detection/" >Overflow/scrollbar detection using modern CSS</a>
-	</li>
-  	<li>
-		<a href="/center-block-element/" >A new way to center block elements using justify-self: center</a>
 	</li>
 </ul>
 		</main>

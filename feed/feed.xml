@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-01-07T00:00:00Z</updated>
+	<updated>2025-01-09T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Running animations without keyframes</title>
+		<link href="https://css-tip.com/animation-without-keyframes/"/>
+		<updated>2025-01-09T00:00:00Z</updated>
+		<id>https://css-tip.com/animation-without-keyframes/</id>
+		<content type="html"><![CDATA[ <p>Using the new <code>@starting-style</code> you can create animations without using <code>@keyframes</code>. It's not a replacement for the classic way to create animations but it can be a useful CSS trick in some situations.</p>
+<p>Here is a simple example with a rotation. I am using big values to simulate an infinite rotation.</p>
+ <p><a href="https://css-tip.com/animation-without-keyframes/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>A CSS-only clock showing the current time</title>
