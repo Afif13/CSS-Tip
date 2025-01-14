@@ -73,7 +73,7 @@ main {
   margin-inline: min(0px        ,var(--w)/2 - 50cqw);
 }
 .full-bleed-4 {
-  margin-inline: min(0px         ,var(--w)/2 - 50cqw + var(--m));
+  margin-inline: min(0px        ,var(--w)/2 - 50cqw + var(--m));
 }
 ```
 

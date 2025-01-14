@@ -11,7 +11,6 @@ Make your rotation look more natural by smoothly stopping it on hover instead of
 The rotation will resume slowly on mouse-out as well.
 
 
-
 ```css
 .box {
   animation: rotate 2s linear infinite;
