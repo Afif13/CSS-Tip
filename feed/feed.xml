@@ -1094,28 +1094,18 @@
 	</entry>
 	
 	<entry>
-		<title>A fancy frame with wavy borders II</title>
-		<link href="https://css-tip.com/image-wavy-borders-2/"/>
-		<updated>2024-01-24T00:00:00Z</updated>
-		<id>https://css-tip.com/image-wavy-borders-2/</id>
-		<content type="html"><![CDATA[ <p>Improving <a href="/image-wavy-borders/">the previous effect</a> to consider a gradient coloration instead of a solid color. Using the same code structure.</p>
-<p><picture><source type="image/avif" srcset="/img/QTFGlOdIux-792.avif 792w"><source type="image/webp" srcset="/img/QTFGlOdIux-792.webp 792w"><img alt="CSS-only images with wavy borders on all the sides" loading="lazy" decoding="async" src="/img/QTFGlOdIux-792.png" width="792" height="403"></picture></p>
- <p><a href="https://css-tip.com/image-wavy-borders-2/">Read more</a></p> ]]></content>
-	</entry>
-	
-	<entry>
-		<title>A fancy frame with wavy borders</title>
+		<title>A fancy frame with wavy borders (wavy box)</title>
 		<link href="https://css-tip.com/image-wavy-borders/"/>
 		<updated>2024-01-23T00:00:00Z</updated>
 		<id>https://css-tip.com/image-wavy-borders/</id>
-		<content type="html"><![CDATA[ <p>Place your image inside a fancy frame! Wavy borders on all the sides 🤩</p>
+		<content type="html"><![CDATA[ <p>Place your image inside a <a href="https://css-shape.com/wavy-box/">wavy box</a> using a few lines of code</p>
 <ul>
 <li>Only one element (the <code>&lt;img&gt;</code> tag)</li>
 <li>No pseudo-elements</li>
 <li>Optimized with CSS Variables</li>
-<li>First use case of the <code>round()</code> function 🥳</li>
+<li>Works with gradient coloration</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/LCOqEDBVzH-840.avif 840w"><source type="image/webp" srcset="/img/LCOqEDBVzH-840.webp 840w"><img alt="CSS-only images with wavy borders on all the sides" loading="lazy" decoding="async" src="/img/LCOqEDBVzH-840.png" width="840" height="446"></picture></p>
+<p><picture><source type="image/avif" srcset="/img/_vyxvr2Nxo-991.avif 991w"><source type="image/webp" srcset="/img/_vyxvr2Nxo-991.webp 991w"><img alt="CSS-only images with wavy borders on all the sides" loading="lazy" decoding="async" src="/img/_vyxvr2Nxo-991.png" width="991" height="369"></picture></p>
  <p><a href="https://css-tip.com/image-wavy-borders/">Read more</a></p> ]]></content>
 	</entry>
 	
