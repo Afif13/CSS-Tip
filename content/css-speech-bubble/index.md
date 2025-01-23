@@ -28,11 +28,11 @@ Create a Speech Bubble using a few lines of code
     linear-gradient(#000 0 0) padding-box;
 }
 .left {
-  --_d: 0;
+  --_p: 0;
   border-bottom-left-radius: 0 0;
 }
 .right {
-  --_d: 100%;
+  --_p: 100%;
   border-bottom-right-radius: 0 0;
 }
 ```
