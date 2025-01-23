@@ -4,11 +4,27 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-01-14T00:00:00Z</updated>
+	<updated>2025-01-23T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A wiggly box (wavy borders) using CSS Mask</title>
+		<link href="https://css-tip.com/wiggly-borders/"/>
+		<updated>2025-01-23T00:00:00Z</updated>
+		<id>https://css-tip.com/wiggly-borders/</id>
+		<content type="html"><![CDATA[ <p>Using the same code structure as <a href="/image-wavy-borders/">the wavy box</a> to create another variation, a <a href="https://css-shape.com/wiggly-box/">wiggly box</a>!</p>
+<ul>
+<li>Only one element (the <code>&lt;img&gt;</code> tag)</li>
+<li>No pseudo-elements</li>
+<li>Optimized with CSS Variables</li>
+<li>Works with gradient coloration</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/e78M06997j-891.avif 891w"><source type="image/webp" srcset="/img/e78M06997j-891.webp 891w"><img alt="Images inside a CSS-only wiggly box" loading="lazy" decoding="async" src="/img/e78M06997j-891.png" width="891" height="372"></picture></p>
+ <p><a href="https://css-tip.com/wiggly-borders/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Smoothly stop an infinite rotation</title>
