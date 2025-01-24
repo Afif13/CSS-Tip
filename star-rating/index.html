@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>About CSS Tip</title>
+		<title>A single-element star rating component (without JS)</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="Using a few lines of code to transfom the native range slider into a star rating component">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/about/" >
+		<link rel=canonical href="https://css-tip.com/star-rating/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="About CSS Tip">
+		<meta property="og:title" content="A single-element star rating component (without JS)">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/about/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/star-rating/">
+		<meta property="og:description" content="Using a few lines of code to transfom the native range slider into a star rating component">
+		<meta property="og:image" content="/og-images/d73af386.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -38,41 +38,50 @@
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
-					<li class="nav-item"><a href="/about/" aria-current="page">About</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/advertise/">Advertise</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="skip">
-			<h1>About</h1>
-<p>My name is <strong>Temani Afif</strong> and I made this website to share with you a few CSS Tips. No complex tutorial, No lengthy video, No boring streaming. Read a tip per day and become a CSS expert.</p>
-<p>Want more CSS fun? Check my other websites:</p>
-<ul>
-<li><a href="https://css-challenges.com/" target="_blank" rel="noopener">CSS Challenges</a></li>
-<li><a href="https://css-generators.com/" target="_blank" rel="noopener">CSS Generators</a></li>
-<li><a href="https://css-articles.com/" target="_blank" rel="noopener">CSS Articles</a></li>
-<li><a href="https://css-loaders.com/" target="_blank" rel="noopener">CSS Loaders</a></li>
-<li><a href="https://css-pattern.com/" target="_blank" rel="noopener">CSS Pattern</a></li>
-<li><a href="https://css-shape.com/" target="_blank" rel="noopener">CSS Shape</a></li>
-<li><a href="https://css-only.art/" target="_blank" rel="noopener">CSS Arts</a></li>
-<li><a href="https://css-games.com/" target="_blank" rel="noopener">CSS Games</a></li>
+			
+<ul class="links-nextprev"><li class="prev"><a href="/wiggly-borders/" title="A wiggly box (wavy borders) using CSS Mask">Previous CSS Tip</a></li>
 </ul>
-<p>If you like this website <a href="https://support.temani-afif.com/" target="_blank" rel="noopener">You can support me</a> (I know you will do before leaving this page because you are a great person!)</p>
-<p>Find me on:</p>
-<ul>
-<li><a href="https://x.com/ChallengesCss" target="_blank" rel="noopener">X (Twitter)</a></li>
-<li><a href="https://front-end.social/@css" target="_blank" rel="noopener">Mastodon</a></li>
-<li><a href="https://bsky.app/profile/css-only.dev" target="_blank" rel="noopener">Bluesky</a></li>
-<li><a href="https://github.com/Afif13/" target="_blank" rel="noopener">Github</a></li>
-<li><a href="https://stackoverflow.com/users/8620333/temani-afif" target="_blank" rel="noopener">Stack Overflow</a></li>
-</ul>
-<div id="inline-custom"><hr></div>
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> |
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> |
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
 
+
+<h1>A single-element star rating component (without JS)</h1>
+
+<time datetime="2025-01-24">January 24, 2025</time>
+
+<p>Transform the native range slider into a star rating component using a few lines of CSS and zero JavaScript. You can adjust the number of stars by simply changing the <code>max</code> attribute.</p>
+<p>Yes, you can click to update the rating. It's an interactive widget!</p>
+<p><picture><source type="image/avif" srcset="/img/6TxEMXr4Oy-758.avif 758w"><source type="image/webp" srcset="/img/6TxEMXr4Oy-758.webp 758w"><img alt="CSS-only star rating component" loading="lazy" decoding="async" src="/img/6TxEMXr4Oy-758.png" width="758" height="196"></picture></p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range<span class="token punctuation">"</span></span> <span class="token attr-name">min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">input[type="range"]</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span> <span class="token comment">/* control the size */</span><br>  <br>  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">attr</span><span class="token punctuation">(</span>max <span class="token function">type</span><span class="token punctuation">(</span>&lt;integer><span class="token punctuation">)</span><span class="token punctuation">)</span> - 1<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">padding-inline</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> 0 <span class="token function">calc</span><span class="token punctuation">(</span>.4*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask-image</span><span class="token punctuation">:</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 162deg at 50% 65%<span class="token punctuation">,</span>#000 .1turn<span class="token punctuation">,</span>#0000 0<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 18deg  at 21% 55%<span class="token punctuation">,</span>#000 .1turn<span class="token punctuation">,</span>#0000 0<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 306deg at 79% 55%<span class="token punctuation">,</span>#000 .1turn<span class="token punctuation">,</span>#0000 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><br>  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">input[type="range" i]::-webkit-slider-thumb</span><span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>at <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">,</span>#7b7b7b 50%<span class="token punctuation">,</span>#fff220 0<span class="token punctuation">)</span><br>    fill 0//<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>20*<span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="GgKYbee" data-pen-title="CSS-Only  Rating Component (Click to update!)" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GgKYbee" target="_blank" rel="noopener">
+  CSS-Only  Rating Component (Click to update!)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
+
+<ul class="postlist" >
+  	<li>
+		<a href="/wiggly-borders/" >A wiggly box (wavy borders) using CSS Mask</a>
+	</li>
+  	<li>
+		<a href="/stop-animation/" >Smoothly stop an infinite rotation</a>
+	</li>
+  	<li>
+		<a href="/animation-without-keyframes/" >Running animations without keyframes</a>
+	</li>
+</ul>
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
