@@ -20,7 +20,7 @@ Want more CSS fun? Check my other websites:
 * [CSS Arts](https://css-only.art/)
 * [CSS Games](https://css-games.com/)
 
-If you like this website [You can support me](https://support.temani-afif.com/) (I know you will do before leaving this page because you are great person!)
+If you like this website [You can support me](https://support.temani-afif.com/) (I know you will do before leaving this page because you are a great person!)
 
 
 Find me on:
