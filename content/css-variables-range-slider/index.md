@@ -29,7 +29,7 @@ No more JavaScript to do this. A few lines of CSS, one HTML element and you can 
    Yes, you can use --_f everywhere
 */
   timeline-scope: --_f;
-  animation: var(--_f) linear both;
+  animation: --_f linear both;
   animation-timeline: --_f;
   animation-range: entry 100% exit 0%;
 }
