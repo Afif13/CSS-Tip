@@ -17,14 +17,12 @@ Transform your image into a cool postage stamp with a few lines of code
 
 ```css
 img {
-  --r: 10px; /* control the radius of the circles */
-  padding: calc(2*var(--r));
+  --r: 20px; /* control the radius of the circles */
+  padding: var(--r);
   filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
   background: 
-    radial-gradient(var(--r),#0000 98%,#fff) round
-      calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
-    linear-gradient(#fff 0 0)  no-repeat
-      50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+    radial-gradient(50% 50%,#0000 65%,#fff 67%) round 
+     var(--r) var(--r)/calc(2*var(--r)) calc(2*var(--r));
 }
 ```
 
