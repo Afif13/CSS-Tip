@@ -42,5 +42,32 @@ img {
   Images inside wiggly boxes</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
 
+Here is another implementation with less gradients but no rounded corners for the image:
+
+```css
+img {
+  --s: 20px;  /* control the size of the wave */
+  --w: 350px; /* preferred image width */
+  
+  width: round(var(--w),4*var(--s));
+  aspect-ratio: 1;
+  border: calc(2*var(--s)) solid #0000;
+  padding: calc(1.5*var(--s));
+  box-sizing: border-box;
+  mask: 
+    radial-gradient(var(--s),#000 100%,#0000 calc(100% + 1px)) 
+     0 0/calc(4*var(--s)) calc(4*var(--s)),
+    conic-gradient(#000 0 0) no-repeat
+     50%/calc(100% - 6*var(--s)) calc(100% - 6*var(--s)),
+    radial-gradient(var(--s),#0000 calc(100% - 1px),#000) 
+     var(--s) var(--s)/calc(2*var(--s)) calc(2*var(--s)) padding-box;
+}
+```
+
+<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="LEPqOwy" data-pen-title="Images inside wiggly boxes II" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LEPqOwy">
+  Images inside wiggly boxes II</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
