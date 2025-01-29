@@ -16,23 +16,21 @@ Place your image inside a [wavy box](https://css-shape.com/wavy-box/) using a fe
 
 ```css
 img {
-  --s: 80px;  /* control the size of the wave */
+  --s: 20px;  /* control the size of the wave */
   --w: 300px; /* preferred image width */
   
-  width: round(var(--w),var(--s)); 
+  width: round(var(--w),4*var(--s)); 
   aspect-ratio: 1;
-  padding: calc(var(--s)/2);
+  padding: var(--s);
+  border: var(--s) solid #0000;
   box-sizing: border-box;
-  border-radius: calc(.85*var(--s));
-  --_r:calc(sqrt(2)*var(--s)/4),#000;
-  --_g:conic-gradient(#000 0 0) no-repeat;
+  border-radius: calc(3.5*var(--s));
   mask: 
-    radial-gradient(var(--_r) calc(100% - 1px),#0000) 
-     0 0/var(--s) var(--s),
-    var(--_g) content-box,var(--_g) subtract 
-     50%/calc(100% - var(--s)/2) calc(100% - var(--s)/2),
-    radial-gradient(var(--_r) 100%,#0000 calc(100% + 1px)) 
-     calc(var(--s)/2) calc(var(--s)/2)/var(--s) var(--s);
+    radial-gradient(calc(sqrt(2)*var(--s)),#000 calc(100% - 1px),#0000),
+    conic-gradient(#000 0 0) content-box,
+    radial-gradient(calc(sqrt(2)*var(--s)),#0000 100%,#000 calc(100% + 1px)) 
+     var(--s) var(--s) padding-box;
+  mask-size: calc(var(--s)*4) calc(var(--s)*4);
 }
 ```
 
