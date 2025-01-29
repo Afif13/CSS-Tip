@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-01-24T00:00:00Z</updated>
+	<updated>2025-01-29T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Inverted radius shape with hover effect</title>
+		<link href="https://css-tip.com/inverted-radius-hover/"/>
+		<updated>2025-01-29T00:00:00Z</updated>
+		<id>https://css-tip.com/inverted-radius-hover/</id>
+		<content type="html"><![CDATA[ <p>Combining the <a href="https://css-shape.com/inverted-radius/">inverted radius shape</a> with modern CSS to create a fancy reveal animation. Hover the image to reveal the text.</p>
+<ul>
+<li>Minimal HTML (the <code>&lt;figure&gt;</code> element)</li>
+<li>Powered by <code>@property</code> and CSS Mask</li>
+<li>Optimized with CSS variables</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/Sur6acQ2zu-893.avif 893w"><source type="image/webp" srcset="/img/Sur6acQ2zu-893.webp 893w"><img alt="CSS-only inverted radius shape" loading="lazy" decoding="async" src="/img/Sur6acQ2zu-893.png" width="893" height="386"></picture></p>
+ <p><a href="https://css-tip.com/inverted-radius-hover/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>A single-element star rating component (without JS)</title>
