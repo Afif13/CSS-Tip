@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-01-29T00:00:00Z</updated>
+	<updated>2025-02-04T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>A single-element volume control component</title>
+		<link href="https://css-tip.com/volume-control/"/>
+		<updated>2025-02-04T00:00:00Z</updated>
+		<id>https://css-tip.com/volume-control/</id>
+		<content type="html"><![CDATA[ <p>Similar to <a href="/star-rating/">the star rating component</a>, I am creating a volume control component using the native range slider and zero JavaScript. No extra element is used and you can control the number of bars by simply adjusting the <code>max</code> attribute.</p>
+<p><picture><source type="image/avif" srcset="/img/PUtycn8QEg-715.avif 715w"><source type="image/webp" srcset="/img/PUtycn8QEg-715.webp 715w"><img alt="CSS-only volume control component" loading="lazy" decoding="async" src="/img/PUtycn8QEg-715.png" width="715" height="282"></picture></p>
+ <p><a href="https://css-tip.com/volume-control/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Inverted radius shape with hover effect</title>
