@@ -36,7 +36,7 @@ input[type=text] {
   background:
     repeating-linear-gradient(90deg,
       var(--c) 0 var(--b),#0000 0 calc(1ch + var(--w) - var(--g) - var(--b)),
-      var(--c) 0 calc(1ch + var(--w) - var(--g)),#0000 0 2ch),
+      var(--c) 0 calc(1ch + var(--w) - var(--g)),#0000 0 calc(1ch + var(--w))),
     conic-gradient(at calc(100% - var(--g) - 1px) var(--b),#0000 75%,var(--c) 0) 
      0 0/calc(1ch + var(--w)) calc(100% - var(--b));
 }
