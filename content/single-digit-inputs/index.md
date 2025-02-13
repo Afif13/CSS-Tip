@@ -14,18 +14,23 @@ Turn a simple input into single-digit inputs using a few lines of CSS. Useful fo
 
 {% image "./image.png", "CSS-only One-Time Password field" %}
 
+```html
+<input type="text" maxlength="6">
+```
+
 ```css
 input[type=text] {
   --w: 1ch;   /* control the width for each letter */
   --g: .15em; /* the gap between letters */
   --b: 2px;   /* the border thickness */
-  --n: 6;     /* the number of letters */
-  
+ 
   --c: #888;
+  --_n: attr(maxlength type(<integer>)); 
+  font-size: 70px;
   line-height: 1.5; /* control the height */
   letter-spacing: var(--w);
   font-family: monospace;
-  width: calc(var(--n)*(1ch + var(--w)));
+  width: calc(var(--_n)*(1ch + var(--w)));
   padding-left: calc((var(--w) - var(--g))/2);
   clip-path: inset(0 calc(var(--w)/2) 0 0);
   background:
