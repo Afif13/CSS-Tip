@@ -21,8 +21,8 @@ input[type="range"] {
   --s: 100px; /* control the size */
   
   height: var(--s);
-  aspect-ratio: calc(attr(max type(<integer>)) - 1);
-  padding-inline: calc(var(--s)/2);
+  aspect-ratio: attr(max type(<integer>));
+  padding-inline: calc(var(--s)/4);
   mask: 0 calc(.4*var(--s))/var(--s);
   mask-image:
     conic-gradient(from 162deg at 50% 65%,#000 .1turn,#0000 0),
@@ -31,7 +31,7 @@ input[type="range"] {
   appearance: none;
   cursor: pointer;
 }
-input[type="range" i]::-webkit-slider-thumb{
+input[type="range"]::-webkit-slider-thumb{
   width: 1px;
   border-image: 
     conic-gradient(at calc(50% + var(--s)/2),#7b7b7b 50%,#fff220 0)
@@ -57,8 +57,9 @@ input[type="range"] {
   --s: 100px; /* control the size*/
   
   height: var(--s);
-  aspect-ratio: calc(attr(max type(<integer>)) - .5);
+  aspect-ratio: attr(max type(<integer>));
   padding-inline: calc(var(--s)/4);
+  box-sizing: border-box;
   mask: 0 calc(.4*var(--s))/var(--s);
   mask-image:
     conic-gradient(from 162deg at 50% 65%,#000 .1turn,#0000 0),
@@ -67,7 +68,7 @@ input[type="range"] {
   appearance: none;
   cursor: pointer;
 }
-input[type="range" i]::-webkit-slider-thumb{
+input[type="range"]::-webkit-slider-thumb{
   width: 1px;
   border-image: 
     conic-gradient(at calc(50% + var(--s)/4),#7b7b7b 50%,#fff220 0)
