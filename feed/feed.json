@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/zoom/",
+			"url": "https://css-tip.com/zoom/",
+			"title": "The difference between zoom and scale",
+			"content_html": "<p>Do you know the <code>zoom</code> property? It works the same way as a scale transformation but unlike <code>scale</code>, it affects the page layout. In other words, the page layout is recalculated considering the new dimension of the scaled element.</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/U4BbIIqciE-897.avif 897w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/U4BbIIqciE-897.webp 897w\"><img alt=\"difference between the zoom property and the scale property\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/U4BbIIqciE-897.png\" width=\"897\" height=\"450\"></picture></p>\n<p class=\"codepen\" data-height=\"600\" data-default-tab=\"result\" data-slug-hash=\"emYpvZN\" data-pen-title=\"Scale vs Zoom\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/emYpvZN\">\n  Scale vs Zoom</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>",
+			"date_published": "2025-02-17T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/bouncy-input/",
 			"url": "https://css-tip.com/bouncy-input/",
 			"title": "Bouncy radio buttons using modern CSS",
