@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Corner-only border around an image</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use CSS gradient to create a Corner-only border around your image">
+		<meta name="description" content="Use CSS gradient and mask to create a Corner-only border around your image">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -18,7 +18,7 @@
 		<meta property="og:title" content="Corner-only border around an image">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://css-tip.com/corner-only-border/">
-		<meta property="og:description" content="Use CSS gradient to create a Corner-only border around your image">
+		<meta property="og:description" content="Use CSS gradient and mask to create a Corner-only border around your image">
 		<meta property="og:image" content="/og-images/bb7d182b.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
@@ -54,22 +54,20 @@
 
 <time datetime="2021-11-03">November 03, 2021</time>
 
-<p>Create a corner-only border around any element.</p>
+<p>Create a corner-only border around an image (or any element) using a few lines of code.</p>
 <ul>
 <li>No extra element</li>
 <li>No Pseudo-element</li>
-<li>Only background properties</li>
+<li>Only three properties</li>
 </ul>
-<p>You can also animate it on hover!</p>
-<p><picture><source type="image/avif" srcset="/img/8vYKHHOPGb-334.avif 334w"><source type="image/webp" srcset="/img/8vYKHHOPGb-334.webp 334w"><img alt="image with corner-only border" loading="lazy" decoding="async" src="/img/8vYKHHOPGb-334.png" width="334" height="293"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span> <span class="token comment">/* border thickness */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> #0000 25%<span class="token punctuation">,</span>darkblue 0<span class="token punctuation">;</span> <span class="token comment">/* define the color here */</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 90deg  at top    <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> left  <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">)</span> 0    0<span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 180deg at top    <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> right <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">)</span> 100% 0<span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 0deg   at bottom <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> left  <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">)</span> 0    100%<span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from -90deg at bottom <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> right <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">)</span> 100% 100%<span class="token punctuation">;</span><br>  <span class="token property">background-size</span><span class="token punctuation">:</span> 50px 50px<span class="token punctuation">;</span> <span class="token comment">/* adjust border length here */</span><br>  <span class="token property">background-repeat</span><span class="token punctuation">:</span> no-repeat<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="abyEmgj" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/abyEmgj" target="_blank" rel="noopener">
-  Corner only frames</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><picture><source type="image/avif" srcset="/img/F85FrPdz6B-926.avif 926w"><source type="image/webp" srcset="/img/F85FrPdz6B-926.webp 926w"><img alt="image with corner-only border" loading="lazy" decoding="async" src="/img/F85FrPdz6B-926.png" width="926" height="395"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span> <span class="token comment">/* corner size */</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span> <span class="token comment">/* the gap */</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 8px solid #69D2E7<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>at <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 75%<span class="token punctuation">,</span>#000 0<span class="token punctuation">)</span><br>     0 0/<span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span> content-box<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="EaxVzyb" data-pen-title="Corner-only borders" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/EaxVzyb" target="_blank" rel="noopener">
+  Corner-only borders</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More detail: <a href="https://css-tricks.com/fancy-image-decorations-single-element-magic/" target="_blank" rel="noopener">css-tricks.com/fancy-image-decorations-single-element-magic</a></p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
 <p>Another idea: <a href="/corner-only-border-image/">Corner-only borders with hover effect</a></p>
 
 

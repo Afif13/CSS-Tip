@@ -3098,14 +3098,13 @@
 		<link href="https://css-tip.com/corner-only-border/"/>
 		<updated>2021-11-03T00:00:00Z</updated>
 		<id>https://css-tip.com/corner-only-border/</id>
-		<content type="html"><![CDATA[ <p>Create a corner-only border around any element.</p>
+		<content type="html"><![CDATA[ <p>Create a corner-only border around an image (or any element) using a few lines of code.</p>
 <ul>
 <li>No extra element</li>
 <li>No Pseudo-element</li>
-<li>Only background properties</li>
+<li>Only three properties</li>
 </ul>
-<p>You can also animate it on hover!</p>
-<p><picture><source type="image/avif" srcset="/img/8vYKHHOPGb-334.avif 334w"><source type="image/webp" srcset="/img/8vYKHHOPGb-334.webp 334w"><img alt="image with corner-only border" loading="lazy" decoding="async" src="/img/8vYKHHOPGb-334.png" width="334" height="293"></picture></p>
+<p><picture><source type="image/avif" srcset="/img/F85FrPdz6B-926.avif 926w"><source type="image/webp" srcset="/img/F85FrPdz6B-926.webp 926w"><img alt="image with corner-only border" loading="lazy" decoding="async" src="/img/F85FrPdz6B-926.png" width="926" height="395"></picture></p>
  <p><a href="https://css-tip.com/corner-only-border/">Read more</a></p> ]]></content>
 	</entry>
 </feed>
