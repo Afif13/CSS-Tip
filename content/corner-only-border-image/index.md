@@ -25,12 +25,12 @@ img {
   outline-offset: calc(-1*var(--t));
   mask:
     conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
-    0 0/calc(100% - var(--s)) calc(100% - var(--s)),
-    linear-gradient(#000 0 0) content-box;
+     0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+    conic-gradient(#000 0 0) content-box;
   transition: .4s;
 }
 img:hover {
-  outline-offset: calc(var(--g)/-1);
+  outline-offset: calc(-1*var(--g));
 }
 ```
 
