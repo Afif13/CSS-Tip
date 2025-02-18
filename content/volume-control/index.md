@@ -25,12 +25,13 @@ input[type=range] {
   padding-inline: calc(var(--s)/2);
   box-sizing: border-box;
   mask:
-    linear-gradient(90deg,#0000 calc(var(--g)/2),#000 0 calc(100% - var(--g)/2),#0000 0) 
-     0/var(--s) intersect,
-    linear-gradient(to top left,#000 50%,#0000 0),
-    repeating-conic-gradient(#000 0 25%,#0000 0 50%)
+    conic-gradient(#000 0 0) subtract no-clip,
+    linear-gradient(90deg,#000 calc(var(--g)/2),#0000 0 calc(100% - var(--g)/2),#000 0) 
+     0/var(--s),
+    linear-gradient(to top left,#0000 50%,#000 0) intersect,
+    linear-gradient(to top left,#0000 calc(50% + 50%/var(--_n)),#000 0),
+    repeating-conic-gradient(#0000 0 25%,#000 0 50%)
      0 100%/calc(2*var(--s)) calc(200%/var(--_n));
-  clip-path: polygon(100% calc(-100%/var(--_n)),100% 100%,calc(-100%/var(--_n)) 100%);
   appearance: none;
 }
 input[type="range" i]::-webkit-slider-thumb{

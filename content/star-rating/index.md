@@ -22,14 +22,13 @@ input[type="range"] {
   
   height: var(--s);
   aspect-ratio: attr(max type(<integer>));
-  padding-inline: calc(var(--s)/4);
-  mask: 0 calc(.4*var(--s))/var(--s);
-  mask-image:
-    conic-gradient(from 162deg at 50% 65%,#000 .1turn,#0000 0),
-    conic-gradient(from 18deg  at 21% 55%,#000 .1turn,#0000 0),
-    conic-gradient(from 306deg at 79% 55%,#000 .1turn,#0000 0);
+  padding-inline: calc(var(--s)/2);
+  box-sizing: border-box;
+  mask: 
+    url("data:image/svg+xml;utf8,<svg><path d='path_of_a_star_shape'/></svg>") 0/var(--s),
+    conic-gradient(#000 0 0) exclude,
+    conic-gradient(#000 0 0) no-clip;
   appearance: none;
-  cursor: pointer;
 }
 input[type="range"]::-webkit-slider-thumb{
   width: 1px;
@@ -60,13 +59,11 @@ input[type="range"] {
   aspect-ratio: attr(max type(<integer>));
   padding-inline: calc(var(--s)/4);
   box-sizing: border-box;
-  mask: 0 calc(.4*var(--s))/var(--s);
-  mask-image:
-    conic-gradient(from 162deg at 50% 65%,#000 .1turn,#0000 0),
-    conic-gradient(from 18deg  at 21% 55%,#000 .1turn,#0000 0),
-    conic-gradient(from 306deg at 79% 55%,#000 .1turn,#0000 0);
+  mask: 
+    url("data:image/svg+xml;utf8,<svg><path d='path_of_a_star_shape'/></svg>") 0/var(--s),
+    conic-gradient(#000 0 0) exclude,
+    conic-gradient(#000 0 0) no-clip;
   appearance: none;
-  cursor: pointer;
 }
 input[type="range"]::-webkit-slider-thumb{
   width: 1px;
