@@ -3070,10 +3070,9 @@
 		<link href="https://css-tip.com/equal-height-column/"/>
 		<updated>2021-11-05T00:00:00Z</updated>
 		<id>https://css-tip.com/equal-height-column/</id>
-		<content type="html"><![CDATA[ <p>Make one column control the height of another column whatever its content.</p>
-<p>Below, the left column will control the right column.</p>
-<p>No JavaScript is needed, only three lines of CSS will do the job</p>
-<p><picture><source type="image/avif" srcset="/img/VwWaJVwIuv-617.avif 617w"><source type="image/webp" srcset="/img/VwWaJVwIuv-617.webp 617w"><img alt="equal height column" loading="lazy" decoding="async" src="/img/VwWaJVwIuv-617.png" width="617" height="367"></picture></p>
+		<content type="html"><![CDATA[ <p>Make one column control the height of another column whatever its content using the <code>contain</code> prorperty. No JavaScript is needed.</p>
+<p>Below, the right column will follow the height of the left column.</p>
+<p><picture><source type="image/avif" srcset="/img/VwWaJVwIuv-617.avif 617w"><source type="image/webp" srcset="/img/VwWaJVwIuv-617.webp 617w"><img alt="CSS-only equal height column" loading="lazy" decoding="async" src="/img/VwWaJVwIuv-617.png" width="617" height="367"></picture></p>
  <p><a href="https://css-tip.com/equal-height-column/">Read more</a></p> ]]></content>
 	</entry>
 	

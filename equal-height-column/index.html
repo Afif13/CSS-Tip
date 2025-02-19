@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>One column to control the height of another</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Make one height control the height of another">
+		<meta name="description" content="Make one column control the height of another one with a simple property">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -18,7 +18,7 @@
 		<meta property="og:title" content="One column to control the height of another">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://css-tip.com/equal-height-column/">
-		<meta property="og:description" content="Make one height control the height of another">
+		<meta property="og:description" content="Make one column control the height of another one with a simple property">
 		<meta property="og:image" content="/og-images/cb4cc2ec.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
@@ -54,18 +54,18 @@
 
 <time datetime="2021-11-05">November 05, 2021</time>
 
-<p>Make one column control the height of another column whatever its content.</p>
-<p>Below, the left column will control the right column.</p>
-<p>No JavaScript is needed, only three lines of CSS will do the job</p>
-<p><picture><source type="image/avif" srcset="/img/VwWaJVwIuv-617.avif 617w"><source type="image/webp" srcset="/img/VwWaJVwIuv-617.webp 617w"><img alt="equal height column" loading="lazy" decoding="async" src="/img/VwWaJVwIuv-617.png" width="617" height="367"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr 1fr<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.grid .left</span> <span class="token punctuation">{</span><span class="token comment">/*nothing here*/</span><span class="token punctuation">}</span><br><span class="token selector">.grid .right</span> <span class="token punctuation">{</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">min-height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="poraqNz" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p>Make one column control the height of another column whatever its content using the <code>contain</code> prorperty. No JavaScript is needed.</p>
+<p>Below, the right column will follow the height of the left column.</p>
+<p><picture><source type="image/avif" srcset="/img/VwWaJVwIuv-617.avif 617w"><source type="image/webp" srcset="/img/VwWaJVwIuv-617.webp 617w"><img alt="CSS-only equal height column" loading="lazy" decoding="async" src="/img/VwWaJVwIuv-617.png" width="617" height="367"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr 1fr<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.grid .right</span> <span class="token punctuation">{</span><br>  <span class="token property">contain</span><span class="token punctuation">:</span> size<span class="token punctuation">;</span> <span class="token comment">/* Disable the size contribution of the content inside the right column */</span><br><span class="token punctuation">}</span><br><span class="token selector">.grid .left</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* nothing here */</span><br><span class="token punctuation">}</span></code></pre>
+<p>We can also replace <code>contain: size</code> with the below:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr 1fr<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.grid .right</span> <span class="token punctuation">{</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token comment">/* No size contribution */</span><br>  <span class="token property">min-height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token comment">/* force the element to be full height after size calculation */</span><br><span class="token punctuation">}</span><br><span class="token selector">.grid .left</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* nothing here */</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="poraqNz" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/poraqNz" target="_blank" rel="noopener">
   CSS grid - dynamic columns</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More detail: <a href="https://dev.to/afif/responsive-text-based-on-image-size-36n9" target="_blank" rel="noopener">dev.to/afif/responsive-text-based-on-image-size-36n9</a></p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
