@@ -45,7 +45,7 @@ input[type="range"]::-webkit-slider-thumb{
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-We can update the code slightly to get a variation that works with half-stars.
+We can update the code slightly to get a variation that works with half stars.
 
 ```html
 <input type="range" min=".5" step=".5" max="5">
