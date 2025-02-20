@@ -1,16 +1,14 @@
 ---
 layout: layouts/post.njk
-title: A simple CSS loader
-description: A mask trick to create a simple loader
+title: A single-element spinner loader
+description: A mask trick to create a simple CSS loader with a single element
 date: 2022-02-02
 tags: posts
 ---
 
-Create a CSS-only loader with a simple code. 
-* One `<div>`
-* Less than 10 CSS declarations
+Create a spinner loader using one element and less than 10 CSS declarations
 
-{% image "./loader.png", "A CSS only loader" %}
+{% image "./loader.png", "A CSS-sonly spinner loader" %}
 
 ```css
 .loader {
@@ -21,15 +19,12 @@ Create a CSS-only loader with a simple code.
   aspect-ratio: 1;
   border-radius: 50%;
   mask: 
-    conic-gradient(#0000,#000),
-    linear-gradient(#000 0 0) content-box;
-  mask-composite: subtract;
-  box-sizing: border-box;
+    conic-gradient(#0000,#000) subtract,
+    conic-gradient(#000 0 0) content-box;
   animation: load 1s linear infinite;
 }
-
 @keyframes load {
-  to{transform: rotate(1turn)}
+  to{rotate: 1turn}
 }
 ```
 
