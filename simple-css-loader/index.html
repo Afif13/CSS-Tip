@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A simple CSS loader</title>
+		<title>A single-element spinner loader</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A mask trick to create a simple loader">
+		<meta name="description" content="A mask trick to create a simple CSS loader with a single element">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -15,11 +15,11 @@
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A simple CSS loader">
+		<meta property="og:title" content="A single-element spinner loader">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://css-tip.com/simple-css-loader/">
-		<meta property="og:description" content="A mask trick to create a simple loader">
-		<meta property="og:image" content="/og-images/92b2294b.png" >
+		<meta property="og:description" content="A mask trick to create a simple CSS loader with a single element">
+		<meta property="og:image" content="/og-images/62ecd8d6.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -50,17 +50,13 @@
 </ul>
 
 
-<h1>A simple CSS loader</h1>
+<h1>A single-element spinner loader</h1>
 
 <time datetime="2022-02-02">February 02, 2022</time>
 
-<p>Create a CSS-only loader with a simple code.</p>
-<ul>
-<li>One <code>&lt;div&gt;</code></li>
-<li>Less than 10 CSS declarations</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/_mk16Cda-f-433.avif 433w"><source type="image/webp" srcset="/img/_mk16Cda-f-433.webp 433w"><img alt="A CSS only loader" loading="lazy" decoding="async" src="/img/_mk16Cda-f-433.png" width="433" height="222"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.loader</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 120px<span class="token punctuation">;</span>        <span class="token comment">/* the size */</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>       <span class="token comment">/* the border thickness */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #07e8d6<span class="token punctuation">;</span> <span class="token comment">/* the color */</span><br>  <br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#0000<span class="token punctuation">,</span>#000<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span> content-box<span class="token punctuation">;</span><br>  <span class="token property">mask-composite</span><span class="token punctuation">:</span> subtract<span class="token punctuation">;</span><br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> load 1s linear infinite<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token atrule"><span class="token rule">@keyframes</span> load</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span><span class="token punctuation">{</span><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>1turn<span class="token punctuation">)</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>Create a spinner loader using one element and less than 10 CSS declarations</p>
+<p><picture><source type="image/avif" srcset="/img/_mk16Cda-f-433.avif 433w"><source type="image/webp" srcset="/img/_mk16Cda-f-433.webp 433w"><img alt="A CSS-sonly spinner loader" loading="lazy" decoding="async" src="/img/_mk16Cda-f-433.png" width="433" height="222"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.loader</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 120px<span class="token punctuation">;</span>        <span class="token comment">/* the size */</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>       <span class="token comment">/* the border thickness */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #07e8d6<span class="token punctuation">;</span> <span class="token comment">/* the color */</span><br>  <br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#0000<span class="token punctuation">,</span>#000<span class="token punctuation">)</span> subtract<span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span> content-box<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> load 1s linear infinite<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> load</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span><span class="token punctuation">{</span><span class="token property">rotate</span><span class="token punctuation">:</span> 1turn<span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="zYPqMgq" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/zYPqMgq" target="_blank" rel="noopener">
   Spinner loader</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
@@ -88,7 +84,7 @@
 		<a href="/rounded-dashed-underline/" >A rounded &amp; dashed underline</a>
 	</li>
   	<li>
-		<a href="/equal-width-button/" >Equal width buttons</a>
+		<a href="/equal-width-button/" >Equal width buttons to the widest one</a>
 	</li>
   	<li>
 		<a href="/stick-element-grid/" >Stick an element to the top-right corner</a>

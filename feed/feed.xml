@@ -2895,16 +2895,12 @@
 	</entry>
 	
 	<entry>
-		<title>A simple CSS loader</title>
+		<title>A single-element spinner loader</title>
 		<link href="https://css-tip.com/simple-css-loader/"/>
 		<updated>2022-02-02T00:00:00Z</updated>
 		<id>https://css-tip.com/simple-css-loader/</id>
-		<content type="html"><![CDATA[ <p>Create a CSS-only loader with a simple code.</p>
-<ul>
-<li>One <code>&lt;div&gt;</code></li>
-<li>Less than 10 CSS declarations</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/_mk16Cda-f-433.avif 433w"><source type="image/webp" srcset="/img/_mk16Cda-f-433.webp 433w"><img alt="A CSS only loader" loading="lazy" decoding="async" src="/img/_mk16Cda-f-433.png" width="433" height="222"></picture></p>
+		<content type="html"><![CDATA[ <p>Create a spinner loader using one element and less than 10 CSS declarations</p>
+<p><picture><source type="image/avif" srcset="/img/_mk16Cda-f-433.avif 433w"><source type="image/webp" srcset="/img/_mk16Cda-f-433.webp 433w"><img alt="A CSS-sonly spinner loader" loading="lazy" decoding="async" src="/img/_mk16Cda-f-433.png" width="433" height="222"></picture></p>
  <p><a href="https://css-tip.com/simple-css-loader/">Read more</a></p> ]]></content>
 	</entry>
 	
@@ -2926,17 +2922,17 @@
 	</entry>
 	
 	<entry>
-		<title>Equal width buttons</title>
+		<title>Equal width buttons to the widest one</title>
 		<link href="https://css-tip.com/equal-width-button/"/>
 		<updated>2022-01-20T00:00:00Z</updated>
 		<id>https://css-tip.com/equal-width-button/</id>
-		<content type="html"><![CDATA[ <p>Make a set of buttons equal in width to the largest one using a few lines of code.</p>
+		<content type="html"><![CDATA[ <p>Make a set of buttons equal in width to the widest one using a few lines of code.</p>
 <ul>
 <li>No JavaScript</li>
 <li>Works with any number of button</li>
 <li>Easily switch between the horizontal and vertical configuration</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/c_xIq51nxq-690.avif 690w"><source type="image/webp" srcset="/img/c_xIq51nxq-690.webp 690w"><img alt="eqaul width buttons" loading="lazy" decoding="async" src="/img/c_xIq51nxq-690.png" width="690" height="250"></picture></p>
+<p><picture><source type="image/avif" srcset="/img/jQI0Mtq5xT-1041.avif 1041w"><source type="image/webp" srcset="/img/jQI0Mtq5xT-1041.webp 1041w"><img alt="eqaul width buttons" loading="lazy" decoding="async" src="/img/jQI0Mtq5xT-1041.png" width="1041" height="339"></picture></p>
  <p><a href="https://css-tip.com/equal-width-button/">Read more</a></p> ]]></content>
 	</entry>
 	
