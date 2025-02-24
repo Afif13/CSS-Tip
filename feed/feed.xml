@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-02-17T00:00:00Z</updated>
+	<updated>2025-02-24T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Perfectly center an uppercase text</title>
+		<link href="https://css-tip.com/center-uppercase/"/>
+		<updated>2025-02-24T00:00:00Z</updated>
+		<id>https://css-tip.com/center-uppercase/</id>
+		<content type="html"><![CDATA[ <p>Are you tired of the unwanted spaces above and below your text? One line of code can fix this and you can have a perfect centering for your uppercase text.</p>
+<p><picture><source type="image/avif" srcset="/img/1dgOHOJVrV-817.avif 817w"><source type="image/webp" srcset="/img/1dgOHOJVrV-817.webp 817w"><img alt="Vertically center text" loading="lazy" decoding="async" src="/img/1dgOHOJVrV-817.png" width="817" height="281"></picture></p>
+ <p><a href="https://css-tip.com/center-uppercase/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>The difference between zoom and scale</title>
@@ -2932,7 +2942,7 @@
 <li>Works with any number of button</li>
 <li>Easily switch between the horizontal and vertical configuration</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/jQI0Mtq5xT-1041.avif 1041w"><source type="image/webp" srcset="/img/jQI0Mtq5xT-1041.webp 1041w"><img alt="eqaul width buttons" loading="lazy" decoding="async" src="/img/jQI0Mtq5xT-1041.png" width="1041" height="339"></picture></p>
+<p><picture><source type="image/avif" srcset="/img/jQI0Mtq5xT-1041.avif 1041w"><source type="image/webp" srcset="/img/jQI0Mtq5xT-1041.webp 1041w"><img alt="equal width buttons" loading="lazy" decoding="async" src="/img/jQI0Mtq5xT-1041.png" width="1041" height="339"></picture></p>
  <p><a href="https://css-tip.com/equal-width-button/">Read more</a></p> ]]></content>
 	</entry>
 	
