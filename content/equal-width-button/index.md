@@ -11,12 +11,12 @@ Make a set of buttons equal in width to the widest one using a few lines of code
 * Works with any number of button
 * Easily switch between the horizontal and vertical configuration
 
-{% image "./image.png", "eqaul width buttons" %}
+{% image "./image.png", "equal width buttons" %}
 
 ```css
 .container {
   display: inline grid;
-  grid-auto-flow: column; /* OR row */
+  grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
 ```
