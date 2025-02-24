@@ -25,7 +25,7 @@ Chrome-only for now
 </p>
 
 
-Another interesting one in case you have a lowercase text without ascenders or descenders.
+Another interesting one in case you have a lowercase text (without ascender or descender).
 
 ```css
 .text {
