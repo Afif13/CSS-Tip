@@ -4,11 +4,100 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-02-24T00:00:00Z</updated>
+	<updated>2025-02-26T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Trim extra space using text-box</title>
+		<link href="https://css-tip.com/text-box/"/>
+		<updated>2025-02-26T00:00:00Z</updated>
+		<id>https://css-tip.com/text-box/</id>
+		<content type="html"><![CDATA[ <style>
+  select {
+    font-size: 1em;
+    margin-block: .1em;
+  }
+  section {
+    border: 1px solid;
+    margin: 10px auto;
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 400px;
+  }
+  section > * {
+    margin: 0;
+  }
+  .trim {
+    text-align: center;
+    font-size: min(61px,12vw);
+    font-weight: bold;
+    line-height: 2.5;
+    border-block: 1px solid #f92672;
+    position: relative;
+    overflow: hidden;
+    margin-block: .5em;
+  }
+  p.trim:before {
+    content: "";
+    position: absolute;
+    inset: 3px auto 4px 40px;
+    width: 10px;
+    background: #f92672;
+    clip-path: polygon(50% 0,100% 10px,65% 10px,65% calc(100% - 10px),100% calc(100% - 10px),50% 100%,0 calc(100% - 10px),35% calc(100% - 10px),35% 10px,0 10px);
+  }
+  p.trim::after {
+    content: "Line height";
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    inset: 0 auto 0 40px;
+    line-height: 1;
+    rotate: -90deg;
+    color: #f92672;
+  }
+  .trim span {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    justify-self: center;
+    background: #69D2E7;
+  }
+  .trim span:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 0 100px #fff5;
+    z-index: 1;
+    clip-path: inset(-200px 0);
+}
+  @media (width < 450px) {
+    .trim:before,
+    .trim:after {
+      display: none;
+    }
+  }
+</style>
+<p>Ready for the new <code>text-box</code> property? With it, you can easily remove extra space above and below your text. Adjust the setting to see the effect of the different values.</p>
+<p>⚠️ Support is limited (Chrome-only for now) ⚠️</p>
+<form>
+From the top <select name="top">
+  <option value="0" selected>trim Nothing</option>
+  <option value="text">trim to Ascender</option>
+  <option value="cap">trim to Uppercase</option>
+  <option value="ex">trim to Lowercase</option>
+</select> 
+and from the bottom <select name="bottom">
+  <option value="0" selected>trim Nothing</option>
+  <option value="text">trim to Descender</option>
+  <option value="alphabetic">trim to Baseline</option>
+</select> 
+</form>
+<p class="trim"><span>Ab-xy-12-Êç</span></p>
+ <p><a href="https://css-tip.com/text-box/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Perfectly center an uppercase text</title>

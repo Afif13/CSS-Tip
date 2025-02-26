@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>The difference between zoom and scale</title>
+		<title>Trim extra space using text-box</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Learn about the zoom property and how it works">
+		<meta name="description" content="An interactive tool to illustrate how to trim the extra space below and above text">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/zoom/" >
+		<link rel=canonical href="https://css-tip.com/text-box/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="The difference between zoom and scale">
+		<meta property="og:title" content="Trim extra space using text-box">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/zoom/">
-		<meta property="og:description" content="Learn about the zoom property and how it works">
-		<meta property="og:image" content="/og-images/75d3b235.png" >
+		<meta property="og:url" content="https://css-tip.com/text-box/">
+		<meta property="og:description" content="An interactive tool to illustrate how to trim the extra space below and above text">
+		<meta property="og:image" content="/og-images/3b84ec88.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,22 +46,142 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/bouncy-input/" title="Bouncy radio buttons using modern CSS">Previous CSS Tip</a></li><li class="next"><a href="/center-uppercase/" title="Perfectly center an uppercase text">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/center-uppercase/" title="Perfectly center an uppercase text">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>The difference between zoom and scale</h1>
+<h1>Trim extra space using text-box</h1>
 
-<time datetime="2025-02-17">February 17, 2025</time>
+<time datetime="2025-02-26">February 26, 2025</time>
 
-<p>Do you know the <code>zoom</code> property? It works the same way as a scale transformation but unlike <code>scale</code>, it affects the page layout. In other words, the page layout is recalculated considering the new dimension of the scaled element.</p>
-<p><picture><source type="image/avif" srcset="/img/U4BbIIqciE-897.avif 897w"><source type="image/webp" srcset="/img/U4BbIIqciE-897.webp 897w"><img alt="difference between the zoom property and the scale property" loading="lazy" decoding="async" src="/img/U4BbIIqciE-897.png" width="897" height="450"></picture></p>
-<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="emYpvZN" data-pen-title="Scale vs Zoom" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/emYpvZN" target="_blank" rel="noopener">
-  Scale vs Zoom</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<style>
+  select {
+    font-size: 1em;
+    margin-block: .1em;
+  }
+  section {
+    border: 1px solid;
+    margin: 10px auto;
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 400px;
+  }
+  section > * {
+    margin: 0;
+  }
+  .trim {
+    text-align: center;
+    font-size: min(61px,12vw);
+    font-weight: bold;
+    line-height: 2.5;
+    border-block: 1px solid #f92672;
+    position: relative;
+    overflow: hidden;
+    margin-block: .5em;
+  }
+  p.trim:before {
+    content: "";
+    position: absolute;
+    inset: 3px auto 4px 40px;
+    width: 10px;
+    background: #f92672;
+    clip-path: polygon(50% 0,100% 10px,65% 10px,65% calc(100% - 10px),100% calc(100% - 10px),50% 100%,0 calc(100% - 10px),35% calc(100% - 10px),35% 10px,0 10px);
+  }
+  p.trim::after {
+    content: "Line height";
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    inset: 0 auto 0 40px;
+    line-height: 1;
+    rotate: -90deg;
+    color: #f92672;
+  }
+  .trim span {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    justify-self: center;
+    background: #69D2E7;
+  }
+  .trim span:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 0 100px #fff5;
+    z-index: 1;
+    clip-path: inset(-200px 0);
+}
+  @media (width < 450px) {
+    .trim:before,
+    .trim:after {
+      display: none;
+    }
+  }
+</style>
+<p>Ready for the new <code>text-box</code> property? With it, you can easily remove extra space above and below your text. Adjust the setting to see the effect of the different values.</p>
+<p>⚠️ Support is limited (Chrome-only for now) ⚠️</p>
+<form>
+From the top <select name="top">
+  <option value="0" selected>trim Nothing</option>
+  <option value="text">trim to Ascender</option>
+  <option value="cap">trim to Uppercase</option>
+  <option value="ex">trim to Lowercase</option>
+</select> 
+and from the bottom <select name="bottom">
+  <option value="0" selected>trim Nothing</option>
+  <option value="text">trim to Descender</option>
+  <option value="alphabetic">trim to Baseline</option>
+</select> 
+</form>
+<p class="trim"><span>Ab-xy-12-Êç</span></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<section>
+  <h3>Block of Text</h3>
+  <p>For a multi-line content, we trim the top of the first line and the bottom of the last line (jpq).</p>
+</section>
+<script>
+let code = document.querySelector('pre code');
+let trim = document.querySelector('.trim span');
+let section = document.querySelector('section');
+
+document.querySelector('form').addEventListener('input', function() {
+  let top = document.querySelector("select[name=top]").value;
+  let bottom = document.querySelector("select[name=bottom]").value;
+
+  if(top==0 && bottom == 0) {
+    code.innerHTML=`<span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span><br><span class="token punctuation">}</span>`;
+    trim.style.textBox= 'normal';
+    section.style.textBox= 'normal';
+  } else if(top == 0) {
+    if(bottom == "text") {
+      code.innerHTML=`<span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> trim-end text<span class="token punctuation">;</span> <br><span class="token punctuation">}</span>`;
+    } else {
+      code.innerHTML=`<span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> trim-end text ${bottom}<span class="token punctuation">;</span> <br><span class="token punctuation">}</span>`;
+    }
+    trim.style.textBox= `trim-end text ${bottom}`;
+    section.style.textBox= `trim-end text ${bottom}`;
+  } else if(bottom == 0) {
+    if(top == "text") {
+      code.innerHTML=`<span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> trim-start text<span class="token punctuation">;</span> <br><span class="token punctuation">}</span>`;
+
+    } else {
+      code.innerHTML=`<span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> trim-start ${top} text<span class="token punctuation">;</span> <br><span class="token punctuation">}</span>`;
+    }
+    trim.style.textBox= `trim-start ${top} text`;
+    section.style.textBox= `trim-start ${top} text`;
+  } else if(top == bottom){
+    code.innerHTML=`<span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> ${top}<span class="token punctuation">;</span> <span class="token comment"></span><br><span class="token punctuation">}</span>`;
+    trim.style.textBox= `${top}`;
+    section.style.textBox= `${top}`;
+  } else { 
+    code.innerHTML=`<span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> ${top} ${bottom}<span class="token punctuation">;</span><br><span class="token punctuation">}</span>`;
+    trim.style.textBox=`${top} ${bottom}`;
+    section.style.textBox=`${top} ${bottom}`;
+  }
+});
+</script>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -69,19 +189,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/text-box/" >Trim extra space using text-box</a>
-	</li>
-  	<li>
 		<a href="/center-uppercase/" >Perfectly center an uppercase text</a>
 	</li>
   	<li>
+		<a href="/zoom/" >The difference between zoom and scale</a>
+	</li>
+  	<li>
 		<a href="/bouncy-input/" >Bouncy radio buttons using modern CSS</a>
-	</li>
-  	<li>
-		<a href="/volume-control/" >A single-element volume control component</a>
-	</li>
-  	<li>
-		<a href="/inverted-radius-hover/" >Inverted radius shape with hover effect</a>
 	</li>
 </ul>
 		</main>
