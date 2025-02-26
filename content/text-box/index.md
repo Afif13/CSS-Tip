@@ -55,6 +55,7 @@ tags: posts
     white-space: nowrap;
     justify-self: center;
     background: #69D2E7;
+    color: #333;
   }
   .trim span:before {
     content: "";
