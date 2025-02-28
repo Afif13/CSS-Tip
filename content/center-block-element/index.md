@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: "A new way to center block elements using justify-self: center"
-description: "Now you can center block elements using justify-self: center instead of auto margin"
+title: A new way to center block elements using place-self
+description: A modern way to center block elements using place-self instead of auto margin and max-width
 date: 2024-12-06
 tags: posts
 ---
@@ -10,7 +10,7 @@ A new way to center block elements is available! One line of code and you can re
 
 ```css
 .box {
-  justify-self: center;
+  place-self: center; /* OR justify-self: center */
 }
 ```
 
@@ -22,11 +22,11 @@ The support is still not good. Use the latest version of Chrome to test:
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-Using `justify-items: center` on a parent element will do the same. It's useful if you want to center all the elements inside a container.
+Using `place-items: center` on a parent element will do the same. It's useful if you want to center all the elements inside a container.
 
 ```css
 .container {
-  justify-items: center;
+  place-items: center; /* OR justify-items: center */
 }
 ```
 
