@@ -6,7 +6,7 @@ date: 2024-12-06
 tags: posts
 ---
 
-A new way to center block elements is available! One line of code and you can replace the use of `margin: auto` combined with `width`/`max-width`.
+A modern and more intuitive way to center block elements is available! One line of code and you can replace the use of `margin: auto` combined with `width`/`max-width`.
 
 ```css
 .box {
