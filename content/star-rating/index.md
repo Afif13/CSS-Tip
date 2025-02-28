@@ -24,10 +24,7 @@ input[type="range"] {
   aspect-ratio: attr(max type(<integer>));
   padding-inline: calc(var(--s)/2);
   box-sizing: border-box;
-  mask: 
-    url("data:image/svg+xml;utf8,<svg><path d='path_of_a_star_shape'/></svg>") 0/var(--s),
-    conic-gradient(#000 0 0) exclude,
-    conic-gradient(#000 0 0) no-clip;
+  mask: url("data:image/svg+xml;utf8,<svg><path d='path_of_a_star_shape'/></svg>") 0/var(--s);
   appearance: none;
 }
 input[type="range"]::-webkit-slider-thumb{
@@ -59,10 +56,7 @@ input[type="range"] {
   aspect-ratio: attr(max type(<integer>));
   padding-inline: calc(var(--s)/4);
   box-sizing: border-box;
-  mask: 
-    url("data:image/svg+xml;utf8,<svg><path d='path_of_a_star_shape'/></svg>") 0/var(--s),
-    conic-gradient(#000 0 0) exclude,
-    conic-gradient(#000 0 0) no-clip;
+  mask: url("data:image/svg+xml;utf8,<svg><path d='path_of_a_star_shape'/></svg>") 0/var(--s);
   appearance: none;
 }
 input[type="range"]::-webkit-slider-thumb{
@@ -80,3 +74,6 @@ input[type="range"]::-webkit-slider-thumb{
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+
+More detail: [A CSS-Only Star Rating Component and More!](https://css-tricks.com/a-css-only-star-rating-component-and-more-part-1/)
