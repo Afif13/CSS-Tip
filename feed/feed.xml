@@ -235,7 +235,7 @@ and from the bottom <select name="bottom">
 	</entry>
 	
 	<entry>
-		<title>A new way to center block elements using justify-self: center</title>
+		<title>A new way to center block elements using place-self</title>
 		<link href="https://css-tip.com/center-block-element/"/>
 		<updated>2024-12-06T00:00:00Z</updated>
 		<id>https://css-tip.com/center-block-element/</id>
