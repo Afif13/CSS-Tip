@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Equal width buttons to the widest one
-description: A few lines of code ot create equal width buttons.
+description: A few lines of code ot create equal width buttons
 date: 2022-01-20
 tags: posts
 ---

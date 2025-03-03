@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: A fancy hover effect with rotating squares
-description: Transform your image into little rotating squares with a fancy hover effect.
+description: Transform your image into little rotating squares with a fancy hover effect
 date: 2023-04-26
 tags: posts
 ---

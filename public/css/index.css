@@ -300,18 +300,22 @@ nav {
 }
 .postlist time,
 .postlist > *:before {
-	font-size: 0.8125em; /* 13px /16 */
+	font-size: 0.9em; 
 	color: var(--color-gray-90);
 }
 .postlist time{
 	word-spacing: -0.5px;
+	margin-top: .5em;
 }
 .postlist a {
-	font-size: 1.1875em; /* 19px /16 */
+	font-size: 1.3em; 
 	font-weight: 700;
 	padding-right: .5em;
 	text-underline-position: from-font;
 	text-transform: capitalize;
+}
+.postlist a:not(:hover) {
+	text-decoration: none;
 }
 [data-ea-type=text] + p {
     margin-top: 0;

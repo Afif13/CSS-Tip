@@ -1,9 +1,6 @@
 ---
 layout: layouts/base.njk
 title: About CSS Tip
-eleventyNavigation:
-  key: About
-  order: 3
 ---
 
 <h1>About</h1>

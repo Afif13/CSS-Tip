@@ -3,7 +3,7 @@ layout: layouts/home.njk
 title: Archive of CSS Tip
 eleventyNavigation:
   key: Archive
-  order: 2
+  order: 3
 ---
 <h1>Archive</h1>
 
@@ -20,7 +20,7 @@ eleventyNavigation:
 const urlParams = new URLSearchParams(window.location.search);
 const s = urlParams.get('s');
 
-let all = document.querySelectorAll('.postlist li a');
+let all = document.querySelectorAll('.postlist li');
 document.querySelector("input[type=search]").addEventListener("input",function(e) {
   let s = e.target.value.toUpperCase();
   for(let i = 0;i<all.length;i++) {
