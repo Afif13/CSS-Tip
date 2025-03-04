@@ -25,9 +25,9 @@ document.querySelector("input[type=search]").addEventListener("input",function(e
   let s = e.target.value.toUpperCase();
   for(let i = 0;i<all.length;i++) {
     if(all[i].innerText.toUpperCase().includes(s)) {
-      all[i].parentNode.classList.remove('hide');
+      all[i].classList.remove('hide');
     } else {
-      all[i].parentNode.classList.add('hide');
+      all[i].classList.add('hide');
     }
   }
 })
