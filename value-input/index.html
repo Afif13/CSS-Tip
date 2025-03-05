@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Perfectly center an uppercase text</title>
+		<title>Get the value of an input range (without JavaScript)</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="One line of code and you can have a true centering for any uppercase text">
+		<meta name="description" content="Use modern features to get the value of an input range using only CSS">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/center-uppercase/" >
+		<link rel=canonical href="https://css-tip.com/value-input/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Perfectly center an uppercase text">
+		<meta property="og:title" content="Get the value of an input range (without JavaScript)">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/center-uppercase/">
-		<meta property="og:description" content="One line of code and you can have a true centering for any uppercase text">
-		<meta property="og:image" content="/og-images/8c24e6ad.png" >
+		<meta property="og:url" content="https://css-tip.com/value-input/">
+		<meta property="og:description" content="Use modern features to get the value of an input range using only CSS">
+		<meta property="og:image" content="/og-images/2a5d42d0.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,32 +46,32 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/zoom/" title="The difference between zoom and scale">Previous CSS Tip</a></li><li class="next"><a href="/text-box/" title="Trim extra space using text-box">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/text-box/" title="Trim extra space using text-box">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Perfectly center an uppercase text</h1>
+<h1>Get the value of an input range (without JavaScript)</h1>
 
-<time datetime="2025-02-24">February 24, 2025</time>
+<time datetime="2025-03-05">March 05, 2025</time>
 
-<p>Are you tired of the unwanted spaces above and below your text? One line of code can fix this and you can have a perfect centering for your uppercase text.</p>
-<p><picture><source type="image/avif" srcset="/img/1dgOHOJVrV-817.avif 817w"><source type="image/webp" srcset="/img/1dgOHOJVrV-817.webp 817w"><img alt="Vertically center uppercase text" loading="lazy" decoding="async" src="/img/1dgOHOJVrV-817.png" width="817" height="281"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> cap alphabetic<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Chrome-only for now</p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="WbNxPzq" data-pen-title="Perfectly centered uppercase!" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/WbNxPzq" target="_blank" rel="noopener">
-  Perfectly centered uppercase!</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>A few lines of code and you have a CSS-only way to read the value of an input range slider. Powered by Scroll-driven animations, <code>attr()</code>, and <code>@property</code>. No more JavaScript!</p>
+<p>⚠️ Chrome-only for now ⚠️</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --val</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">input[type="range"]</span> <span class="token punctuation">{</span><br>  <span class="token property">timeline-scope</span><span class="token punctuation">:</span> --val<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> --val linear both<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --val<span class="token punctuation">;</span><br>  <span class="token property">animation-range</span><span class="token punctuation">:</span> entry 100% exit 0%<span class="token punctuation">;</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><br>  <span class="token comment">/* --val will automatically update when you interact with the range slider */</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> --val</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%</span> <span class="token punctuation">{</span><span class="token property">--val</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>max <span class="token function">type</span><span class="token punctuation">(</span>&lt;number><span class="token punctuation">)</span><span class="token punctuation">,</span>100<span class="token punctuation">)</span><span class="token punctuation">}</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">--val</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>min <span class="token function">type</span><span class="token punctuation">(</span>&lt;number><span class="token punctuation">)</span><span class="token punctuation">,</span>1  <span class="token punctuation">)</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><span class="token selector">input[type="range"]::-webkit-slider-thumb</span><span class="token punctuation">{</span><br>  <span class="token property">view-timeline</span><span class="token punctuation">:</span> --val inline<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>The value is scoped to the input element, if you want to make it available everywhere on the page check this: <a href="https://css-tip.com/css-variables-range-slider/" target="_blank" rel="noopener">Update CSS variables using range slider</a></p>
+<p>Here is an example of a star rating component built using the above code:</p>
+<p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="dPyWvqg" data-pen-title="Star rating using scroll-driven animations" data-preview="true" data-user="t_afif" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/dPyWvqg" target="_blank" rel="noopener">
+  Star rating using scroll-driven animations</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<p>Another interesting one in case you have a lowercase text (without ascender or descender).</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.text</span> <span class="token punctuation">{</span><br>  <span class="token property">text-box</span><span class="token punctuation">:</span> ex alphabetic<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p><picture><source type="image/avif" srcset="/img/6PkhGTO7Ue-887.avif 887w"><source type="image/webp" srcset="/img/6PkhGTO7Ue-887.webp 887w"><img alt="Vertically center lowercase text" loading="lazy" decoding="async" src="/img/6PkhGTO7Ue-887.png" width="887" height="212"></picture></p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="yyLaNVd" data-pen-title="Perfectly centered lowercase!" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yyLaNVd" target="_blank" rel="noopener">
-  Perfectly centered lowercase!</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Another crazy idea with a wavy range slider.</p>
+<p class="codepen" data-height="351" data-default-tab="result" data-slug-hash="xbxVxVQ" data-pen-title="Single-element wavy range slider" data-preview="true" data-user="t_afif" style="height: 351px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/xbxVxVQ" target="_blank" rel="noopener">
+  Single-element wavy range slider</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -79,19 +79,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/value-input/" >Get the value of an input range (without JavaScript)</a>
-	</li>
-  	<li>
 		<a href="/text-box/" >Trim extra space using text-box</a>
 	</li>
   	<li>
+		<a href="/center-uppercase/" >Perfectly center an uppercase text</a>
+	</li>
+  	<li>
 		<a href="/zoom/" >The difference between zoom and scale</a>
-	</li>
-  	<li>
-		<a href="/bouncy-input/" >Bouncy radio buttons using modern CSS</a>
-	</li>
-  	<li>
-		<a href="/volume-control/" >A single-element volume control component</a>
 	</li>
 </ul>
 		</main>

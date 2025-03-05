@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-02-26T00:00:00Z</updated>
+	<updated>2025-03-05T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Get the value of an input range (without JavaScript)</title>
+		<link href="https://css-tip.com/value-input/"/>
+		<updated>2025-03-05T00:00:00Z</updated>
+		<id>https://css-tip.com/value-input/</id>
+		<content type="html"><![CDATA[ <p>A few lines of code and you have a CSS-only way to read the value of an input range slider. Powered by Scroll-driven animations, <code>attr()</code>, and <code>@property</code>. No more JavaScript!</p>
+<p>⚠️ Chrome-only for now ⚠️</p>
+ <p><a href="https://css-tip.com/value-input/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Trim extra space using text-box</title>
