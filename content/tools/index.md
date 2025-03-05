@@ -65,7 +65,6 @@ A collection of CSS Tools to easily generate a modern & optimized code in no tim
       <p>Generator for section divider<br> (Triangular, Circular, Slanted)</p>
     </a>
   </li>
-  <li><div id="inline-custom"></div></li>
   <li>
     <a href="/quantity-queries/">
       {% image "./quantity-query.png", "CSS quantity queries" %}
@@ -78,6 +77,7 @@ A collection of CSS Tools to easily generate a modern & optimized code in no tim
       <p>Collection of triangle shapes</p>
     </a>
   </li>
+  <li><div id="inline-custom"></div></li>
   <li>
     <a href="https://css-generators.com/ribbon-shapes/">
       {% image "./ribbons.png", "CSS ribbons" %}
