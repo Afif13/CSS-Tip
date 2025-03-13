@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Transparent inner border for images</title>
+		<title>An infinite logos animation</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A simple code to add a fancy transparent inner border to image elements">
+		<meta name="description" content="Using the offset property to create a CSS-only infinite logos animation">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/inner-border/" >
+		<link rel=canonical href="https://css-tip.com/infinite-logos-animation/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Transparent inner border for images">
+		<meta property="og:title" content="An infinite logos animation">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/inner-border/">
-		<meta property="og:description" content="A simple code to add a fancy transparent inner border to image elements">
-		<meta property="og:image" content="/og-images/2bcdfaa3.png" >
+		<meta property="og:url" content="https://css-tip.com/infinite-logos-animation/">
+		<meta property="og:description" content="Using the offset property to create a CSS-only infinite logos animation">
+		<meta property="og:image" content="/og-images/894d7676.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,26 +46,26 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/value-input/" title="Get the value of an input range (without JavaScript)">Previous CSS Tip</a></li><li class="next"><a href="/infinite-logos-animation/" title="An infinite logos animation">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/inner-border/" title="Transparent inner border for images">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Transparent inner border for images</h1>
+<h1>An infinite logos animation</h1>
 
-<time datetime="2025-03-06">March 06, 2025</time>
+<time datetime="2025-03-13">March 13, 2025</time>
 
-<p>Cut a border from the inside of an image using the <code>mask</code> property and two gradients.</p>
-<p><picture><source type="image/avif" srcset="/img/lKrfrzByAL-936.avif 936w"><source type="image/webp" srcset="/img/lKrfrzByAL-936.webp 936w"><img alt="CSS-only inverted radius shape" loading="lazy" decoding="async" src="/img/lKrfrzByAL-936.png" width="936" height="351"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--o</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span> <span class="token comment">/* offset of the border*/</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>  <span class="token comment">/* border thickness */</span><br>  <br>  <span class="token property">mask</span><span class="token punctuation">:</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span> no-repeat 50%/<br>     <span class="token function">calc</span><span class="token punctuation">(</span>100% - 2*<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <br>     <span class="token function">calc</span><span class="token punctuation">(</span>100% - 2*<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>from 90deg at <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span><span class="token punctuation">,</span>#0000 25%<span class="token punctuation">,</span>#000 0<span class="token punctuation">)</span><br>     0 0/<span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="YPzVmmd" data-pen-title="Transparent inner border for images" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/YPzVmmd" target="_blank" rel="noopener">
-  Transparent inner border for images</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>Here is another demo with a hover effect</p>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="jOzzzLL" data-pen-title="Transparent inner border with hover effect" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/jOzzzLL" target="_blank" rel="noopener">
-  Transparent inner border with hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Another classic logos animation?! No! This one is THE real infinite ∞ logos animation.</p>
+<ul>
+<li>Minimal HTML</li>
+<li>Powered by the <code>offset</code> property</li>
+<li>Responsive</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/ffkjLzFJ5J-928.avif 928w"><source type="image/webp" srcset="/img/ffkjLzFJ5J-928.webp 928w"><img alt="CSS-only infinite logos animation" loading="lazy" decoding="async" src="/img/ffkjLzFJ5J-928.png" width="928" height="331"></picture></p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>-152 -75 304 150<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>path<span class="token punctuation">"</span></span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>M-150 0 C-130 -150 130 150 150 0 C130 -150 -130 150 -150 0 Z<span class="token punctuation">'</span></span><span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_w</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">'&lt;length>'</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>100vw<span class="token punctuation">,</span>200vh<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span><br>  <span class="token property">scale</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token function">tan</span><span class="token punctuation">(</span><span class="token function">atan2</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_w<span class="token punctuation">)</span><span class="token punctuation">,</span>350px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>3<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* for the responsive part */</span><br><span class="token punctuation">}</span><br><span class="token selector">.container > img</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-area</span><span class="token punctuation">:</span> 1/1<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 35px<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">translate</span><span class="token punctuation">:</span> 150px 75px<span class="token punctuation">;</span><br>  <span class="token property">offset</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>#path<span class="token punctuation">)</span></span> 0% 0deg<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> x 13s linear infinite<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> x</span> <span class="token punctuation">{</span> <br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">offset-distance</span><span class="token punctuation">:</span> 100%<span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><span class="token selector">.container > :nth-of-type(2)</span> <span class="token punctuation">{</span><span class="token property">animation-delay</span><span class="token punctuation">:</span>-1s<span class="token punctuation">}</span><br><span class="token selector">.container > :nth-of-type(3)</span> <span class="token punctuation">{</span><span class="token property">animation-delay</span><span class="token punctuation">:</span>-2s<span class="token punctuation">}</span><br><span class="token selector">.container > :nth-of-type(4)</span> <span class="token punctuation">{</span><span class="token property">animation-delay</span><span class="token punctuation">:</span>-3s<span class="token punctuation">}</span><br><span class="token selector">.container > :nth-of-type(5)</span> <span class="token punctuation">{</span><span class="token property">animation-delay</span><span class="token punctuation">:</span>-4s<span class="token punctuation">}</span><br><span class="token selector">.container > :nth-of-type(6)</span> <span class="token punctuation">{</span><span class="token property">animation-delay</span><span class="token punctuation">:</span>-5s<span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="wBvPWwB" data-pen-title="Infinite ∞ logos animation" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/wBvPWwB" target="_blank" rel="noopener">
+  Infinite ∞ logos animation</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
@@ -76,16 +76,13 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/infinite-logos-animation/" >An infinite logos animation</a>
+		<a href="/inner-border/" >Transparent inner border for images</a>
 	</li>
   	<li>
 		<a href="/value-input/" >Get the value of an input range (without JavaScript)</a>
 	</li>
   	<li>
 		<a href="/text-box/" >Trim extra space using text-box</a>
-	</li>
-  	<li>
-		<a href="/center-uppercase/" >Perfectly center an uppercase text</a>
 	</li>
 </ul>
 		</main>

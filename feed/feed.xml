@@ -4,11 +4,26 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-03-06T00:00:00Z</updated>
+	<updated>2025-03-13T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>An infinite logos animation</title>
+		<link href="https://css-tip.com/infinite-logos-animation/"/>
+		<updated>2025-03-13T00:00:00Z</updated>
+		<id>https://css-tip.com/infinite-logos-animation/</id>
+		<content type="html"><![CDATA[ <p>Another classic logos animation?! No! This one is THE real infinite ∞ logos animation.</p>
+<ul>
+<li>Minimal HTML</li>
+<li>Powered by the <code>offset</code> property</li>
+<li>Responsive</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/ffkjLzFJ5J-928.avif 928w"><source type="image/webp" srcset="/img/ffkjLzFJ5J-928.webp 928w"><img alt="CSS-only infinite logos animation" loading="lazy" decoding="async" src="/img/ffkjLzFJ5J-928.png" width="928" height="331"></picture></p>
+ <p><a href="https://css-tip.com/infinite-logos-animation/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Transparent inner border for images</title>
