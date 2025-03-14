@@ -14,7 +14,7 @@ The rotation will resume slowly on mouse-out as well.
 ```css
 .box {
   animation: rotate 2s linear infinite;
-  transition: 1s ease-out;
+  transition: transform 1s ease-out;
 }
 .box:hover {
   animation-play-state: paused;
@@ -37,7 +37,7 @@ The element will slowly stop on mouse-out as well.
 ```css
 .box {
   animation: rotate 2s linear infinite paused;
-  transition: 1s ease-out;
+  transition: transform 1s ease-out;
 }
 .box:hover {
   animation-play-state: running;

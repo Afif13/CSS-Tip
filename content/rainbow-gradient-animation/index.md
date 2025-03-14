@@ -15,7 +15,7 @@ Use the new color interpolation to easily create an infinite rainbow animation u
 
 ```css
 html {
-  background: linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
+  background: repeating-linear-gradient(90deg in hsl longer hue, red 0 50%) 0/200%;
   animation: r 6s linear infinite;
 }
 @keyframes r {

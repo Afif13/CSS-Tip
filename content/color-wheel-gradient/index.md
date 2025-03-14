@@ -12,7 +12,7 @@ Use `conic-gradient()` and the new color interpolation to create a nice color wh
 
 ```css
 .box {
-  background: conic-gradient(in hsl longer hue,red 0 0);
+  background: conic-gradient(in hsl longer hue,red 0 100%);
 }
 ```
 
