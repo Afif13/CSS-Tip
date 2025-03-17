@@ -51,3 +51,5 @@ Another crazy idea with a wavy range slider.
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+More detail: [A CSS-Only Star Rating Component and More!](https://css-tricks.com/a-css-only-star-rating-component-and-more-part-2/)
