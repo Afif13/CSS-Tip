@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-03-13T00:00:00Z</updated>
+	<updated>2025-03-18T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Split and assemble an image using CSS mask</title>
+		<link href="https://css-tip.com/assemble-image/"/>
+		<updated>2025-03-18T00:00:00Z</updated>
+		<id>https://css-tip.com/assemble-image/</id>
+		<content type="html"><![CDATA[ <p>Split an image into pieces using the <code>mask</code> property, then show it fully on hover. A single-element implementation using less than 10 CSS declarations.</p>
+<p><picture><source type="image/avif" srcset="/img/blR3hYCu_W-933.avif 933w"><source type="image/webp" srcset="/img/blR3hYCu_W-933.webp 933w"><img alt="Assemble a broken image using CSS" loading="lazy" decoding="async" src="/img/blR3hYCu_W-933.png" width="933" height="381"></picture></p>
+ <p><a href="https://css-tip.com/assemble-image/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>An infinite logos animation</title>
