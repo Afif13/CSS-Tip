@@ -27,11 +27,13 @@ layout: layouts/base.njk
 {%- set index = collections.posts | getCollectionItemIndex %}
 
 <ul class="postlist" >
-{%- for i in [3,2,1,-1,-2,-3] %}
+{%- for i in [3,2,-2,-3] %}
   {%- set p = collections.posts[index + i] %}
   	{%- if p %}
   	<li>
 		<a href="{{ p.url }}" >{% if p.data.title %}{{ p.data.title }}{% else %}<code>{{ p.url }}</code>{% endif %}</a>
+		<small>{{ p.data.description }}.</small>
+		<time datetime="{{ p.date | htmlDateString }}">{{ p.date | readableDate }}</time>
 	</li>
 	{%- endif %}
 {%- endfor %}
