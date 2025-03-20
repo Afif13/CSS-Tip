@@ -32,5 +32,3 @@ Use an online generator to easily get the code: [css-generators.com/custom-borde
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-More detail: [css-tricks.com/css-borders-using-masks](https://css-tricks.com/css-borders-using-masks/)
