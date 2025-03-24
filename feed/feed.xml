@@ -837,7 +837,7 @@ and from the bottom <select name="bottom">
 		<link href="https://css-tip.com/cut-out-shapes/"/>
 		<updated>2024-06-19T00:00:00Z</updated>
 		<id>https://css-tip.com/cut-out-shapes/</id>
-		<content type="html"><![CDATA[ <p>A simple code to easily invert any shape created using <code>clip-path: polygon()</code>. An easy way to create Cut-out shapes.</p>
+		<content type="html"><![CDATA[ <p>A simple code to invert any kind of shape created using <code>clip-path: polygon()</code>. An easy way to create Cut-out shapes.</p>
 <p><picture><source type="image/avif" srcset="/img/cIlCQwBVBe-761.avif 761w"><source type="image/webp" srcset="/img/cIlCQwBVBe-761.webp 761w"><img alt="CSS-only Cut-out shapes using clip-path" loading="lazy" decoding="async" src="/img/cIlCQwBVBe-761.png" width="761" height="385"></picture></p>
  <p><a href="https://css-tip.com/cut-out-shapes/">Read more</a></p> ]]></content>
 	</entry>
