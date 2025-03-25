@@ -25,7 +25,7 @@ A simple code to invert any kind of shape created using `clip-path: polygon()`. 
 }
 ```
 
-The first part before `var(--shape)` is static. It's the same for all the shapes, you don't need to change it. Don't forget the "content-box" at the end!
+The first part before `var(--shape)` is static. It's the same for all the shapes, you don't need to change it. Don't forget the `content-box` at the end!
 
 <p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="gOJvdav" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/gOJvdav">
