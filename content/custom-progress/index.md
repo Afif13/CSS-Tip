@@ -32,6 +32,8 @@ progress[value]::-moz-progress-bar {
 }
 ```
 
+The support is still limited (Chrome-only for now)
+
 <p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="OPJwbVJ" data-pen-title="Progress bar with dynamic coloration" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/OPJwbVJ">
   Progress bar with dynamic coloration</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
