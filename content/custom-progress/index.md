@@ -40,3 +40,5 @@ The support is still limited (Chrome-only for now)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+For better support check the following method: [Progress bar with dynamic coloration](/progress-bar-dynamic-color/)

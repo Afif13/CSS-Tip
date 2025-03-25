@@ -15,34 +15,25 @@ Create a CSS-only progress bar with a dynamic coloration. The color change based
 
 ```css
 progress[value] {
-  --w:200px; /* The width */
+  --w: 200px; /* The width */
   /* The background property */
   --b: /* static layers */
       linear-gradient(#fff8,#fff0),
       repeating-linear-gradient(135deg,#0003 0 10px,#0000 0 20px),
       /* dynamic layers */
       /* if < 30% "red" */
-      linear-gradient(red    0 0) 0 /calc(var(--w)*.3 - 100%) 1px,
+      conic-gradient(red    0 0) 0 /calc(var(--w)*.3 - 100%) 1%,
       /* if < 60% "orange" */
-      linear-gradient(orange 0 0) 0 /calc(var(--w)*.6 - 100%) 1px,
+      conic-gradient(orange 0 0) 0 /calc(var(--w)*.6 - 100%) 1%,
       /* else "green" */
       green;
   width: var(--w); 
-  height: 20px;
-  background-color: lightgrey;
-  border-radius: 50px;
-}
-progress[value]::-webkit-progress-bar {
-  background-color: lightgrey;
-  border-radius: 50px;
 }
 progress[value]::-webkit-progress-value {
-  border-radius: 50px;
-  background:var(--b);
+  background: var(--b);
 }
 progress[value]::-moz-progress-bar {
-  border-radius: 50px;
-  background:var(--b);
+  background: var(--b);
 }
 ```
 
