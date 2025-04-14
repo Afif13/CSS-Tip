@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Split and assemble an image using CSS mask</title>
+		<title>The unknown behavior of flex-wrap</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A few lines of code to create a fancy reveal animation for images">
+		<meta name="description" content="flex-wrap doesn&#39;t only control the wrapping of items but also affects the alignment">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/assemble-image/" >
+		<link rel=canonical href="https://css-tip.com/flex-wrap/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Split and assemble an image using CSS mask">
+		<meta property="og:title" content="The unknown behavior of flex-wrap">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/assemble-image/">
-		<meta property="og:description" content="A few lines of code to create a fancy reveal animation for images">
-		<meta property="og:image" content="/og-images/f4cd6b4a.png" >
+		<meta property="og:url" content="https://css-tip.com/flex-wrap/">
+		<meta property="og:description" content="flex-wrap doesn&#39;t only control the wrapping of items but also affects the alignment">
+		<meta property="og:image" content="/og-images/0fae9733.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,27 +46,21 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/infinite-logos-animation/" title="An infinite logos animation">Previous CSS Tip</a></li><li class="next"><a href="/zig-zag-edge/" title="Zig-Zag edges using CSS mask">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/custom-progress/" title="Custom progress element using attr()">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Split and assemble an image using CSS mask</h1>
+<h1>The unknown behavior of flex-wrap</h1>
 
-<time datetime="2025-03-18">March 18, 2025</time>
+<time datetime="2025-04-14">April 14, 2025</time>
 
-<p>Split an image into pieces using the <code>mask</code> property, then show it fully on hover. A single-element implementation using less than 10 CSS declarations.</p>
-<p><picture><source type="image/avif" srcset="/img/blR3hYCu_W-933.avif 933w"><source type="image/webp" srcset="/img/blR3hYCu_W-933.webp 933w"><img alt="Assemble a broken image using CSS" loading="lazy" decoding="async" src="/img/blR3hYCu_W-933.png" width="933" height="381"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span> <span class="token comment">/* control the gap */</span><br>  <br>  <span class="token property">width</span><span class="token punctuation">:</span> 280px<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span><br>  <span class="token property">--_g</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span>/<span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>    no-repeat <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    left   <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span><span class="token punctuation">)</span> top    <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    bottom <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span><span class="token punctuation">)</span> left   <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    top    <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span><span class="token punctuation">)</span> right  <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    right  <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span><span class="token punctuation">)</span> bottom <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .3s linear<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--_i</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="yyLvRqW" data-pen-title="Image assembly hover effect" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yyLvRqW" target="_blank" rel="noopener">
-  Image assembly hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>Another simpler version without the moving effect:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">--_g</span><span class="token punctuation">:</span> 10%/45% 45% no-repeat <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#000 0 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">mask</span><span class="token punctuation">:</span> <br>    left   <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span><span class="token punctuation">)</span> top    <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    bottom <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span><span class="token punctuation">)</span> left   <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    top    <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span><span class="token punctuation">)</span> right  <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    right  <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span><span class="token punctuation">)</span> bottom <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .3s linear<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--_i</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="qBpyWgK" data-pen-title="Image mask hover effect" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/qBpyWgK" target="_blank" rel="noopener">
-  Image mask hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><code>flex-wrap: wrap</code> allows items to wrap onto multiple lines but it has another function. It transforms your flex container from a single-line to a multi-line container even if at the end you have only one flex line. This means we can use <code>align-content</code> to align the content.</p>
+<p>In other words, you need to use <code>flex-wrap: wrap</code> to align the content using <code>align-content</code> even if there is no wrapping.</p>
+<p><picture><source type="image/avif" srcset="/img/SWx-mwUvAs-888.avif 888w"><source type="image/webp" srcset="/img/SWx-mwUvAs-888.webp 888w"><img alt="flex-wrap &amp; align-content" loading="lazy" decoding="async" src="/img/SWx-mwUvAs-888.png" width="888" height="278"></picture></p>
+<p>It's different from <code>align-items</code> which aligns the items inside the line whereas <code>align-content</code> aligns the whole line. Here is an interactive demo to see the behavior of each property:</p>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="EaxBevN" data-pen-title="flex-wrap &amp;amp; alignment" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/EaxBevN" target="_blank" rel="noopener">
+  flex-wrap &amp; alignment</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
@@ -77,24 +71,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/flex-wrap/" >The unknown behavior of flex-wrap</a>
-		<small>flex-wrap doesn&#39;t only control the wrapping of items but also affects the alignment.</small>
-		<time datetime="2025-04-14">April 14, 2025</time>
+		<a href="/zig-zag-edge/" >Zig-Zag edges using CSS mask</a>
+		<small>One line of code to add Zig-Zag edges to any element using the mask property.</small>
+		<time datetime="2025-03-20">March 20, 2025</time>
 	</li>
   	<li>
-		<a href="/custom-progress/" >Custom progress element using attr()</a>
-		<small>Create a custom progress element with a dynamic coloration based on the value.</small>
-		<time datetime="2025-03-25">March 25, 2025</time>
-	</li>
-  	<li>
-		<a href="/inner-border/" >Transparent inner border for images</a>
-		<small>A simple code to add a fancy transparent inner border to image elements.</small>
-		<time datetime="2025-03-06">March 06, 2025</time>
-	</li>
-  	<li>
-		<a href="/value-input/" >Get the value of an input range (without JavaScript)</a>
-		<small>Use modern features to get the value of an input range using only CSS.</small>
-		<time datetime="2025-03-05">March 05, 2025</time>
+		<a href="/assemble-image/" >Split and assemble an image using CSS mask</a>
+		<small>A few lines of code to create a fancy reveal animation for images.</small>
+		<time datetime="2025-03-18">March 18, 2025</time>
 	</li>
 </ul>
 		</main>

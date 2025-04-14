@@ -4,11 +4,23 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-03-25T00:00:00Z</updated>
+	<updated>2025-04-14T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>The unknown behavior of flex-wrap</title>
+		<link href="https://css-tip.com/flex-wrap/"/>
+		<updated>2025-04-14T00:00:00Z</updated>
+		<id>https://css-tip.com/flex-wrap/</id>
+		<content type="html"><![CDATA[ <p><code>flex-wrap: wrap</code> allows items to wrap onto multiple lines but it has another function. It transforms your flex container from a single-line to a multi-line container even if at the end you have only one flex line. This means we can use <code>align-content</code> to align the content.</p>
+<p>In other words, you need to use <code>flex-wrap: wrap</code> to align the content using <code>align-content</code> even if there is no wrapping.</p>
+<p><picture><source type="image/avif" srcset="/img/SWx-mwUvAs-888.avif 888w"><source type="image/webp" srcset="/img/SWx-mwUvAs-888.webp 888w"><img alt="flex-wrap &amp; align-content" loading="lazy" decoding="async" src="/img/SWx-mwUvAs-888.png" width="888" height="278"></picture></p>
+<p>It's different from <code>align-items</code> which aligns the items inside the line whereas <code>align-content</code> aligns the whole line. Here is an interactive demo to see the behavior of each property:</p>
+ <p><a href="https://css-tip.com/flex-wrap/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Custom progress element using attr()</title>
