@@ -18,9 +18,9 @@ progress[value] {
   --_p: calc(100%*var(--val)/var(--max)); /* the percentage of progression */
   --_b: 
     /* if (p < 30%) "red" */
-    conic-gradient(red    0 0) 0/calc(30% - var(--_p)) 1%,
+    conic-gradient(red    0 0) 0/max(0%,30% - var(--_p)) 1%,
     /* else if (p < 60%) "orange" */
-    conic-gradient(orange 0 0) 0/calc(60% - var(--_p)) 1%,
+    conic-gradient(orange 0 0) 0/max(0%,60% - var(--_p)) 1%,
     /* else "green" */
     green;
 }

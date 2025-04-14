@@ -26,7 +26,7 @@ input[type="range"] {
 }
 @keyframes --val {
   0% {--val: attr(max type(<number>),100)}
-  to {--val: attr(min type(<number>),1  )}
+  to {--val: attr(min type(<number>),0  )}
 }
 input[type="range"]::-webkit-slider-thumb{
   view-timeline: --val inline;
