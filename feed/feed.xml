@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-04-14T00:00:00Z</updated>
+	<updated>2025-04-16T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Hexagon shapes with rounded corners</title>
+		<link href="https://css-tip.com/rounded-hexagon/"/>
+		<updated>2025-04-16T00:00:00Z</updated>
+		<id>https://css-tip.com/rounded-hexagon/</id>
+		<content type="html"><![CDATA[ <p>We can create <a href="/hexagon-shape/">a hexagon shape</a> using <code>clip-path: polygon()</code> but what about the rounded corners variation? It's now possible with the new <code>clip-path: shape()</code>. The code is more complex but you can easily control it using CSS variables.</p>
+<p><picture><source type="image/avif" srcset="/img/TSxiojA-g7-835.avif 835w"><source type="image/webp" srcset="/img/TSxiojA-g7-835.webp 835w"><img alt="CSS-only hexagon shape with rounded corners" loading="lazy" decoding="async" src="/img/TSxiojA-g7-835.png" width="835" height="357"></picture></p>
+ <p><a href="https://css-tip.com/rounded-hexagon/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>The unknown behavior of flex-wrap</title>
