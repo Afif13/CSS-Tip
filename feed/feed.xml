@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-04-16T00:00:00Z</updated>
+	<updated>2025-04-17T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Polygon shapes with rounded corners</title>
+		<link href="https://css-tip.com/rounded-polygon/"/>
+		<updated>2025-04-17T00:00:00Z</updated>
+		<id>https://css-tip.com/rounded-polygon/</id>
+		<content type="html"><![CDATA[ <p>Similar to <a href="/rounded-hexagon/">the hexagon shape</a>, here is a generic code to create any regular polygon shape with rounded corners. Powered by Sass and the new <code>shape()</code> function.</p>
+<p><picture><source type="image/avif" srcset="/img/XOAYt9t8ba-785.avif 785w"><source type="image/webp" srcset="/img/XOAYt9t8ba-785.webp 785w"><img alt="CSS-only polygon shapes with rounded corners" loading="lazy" decoding="async" src="/img/XOAYt9t8ba-785.png" width="785" height="283"></picture></p>
+ <p><a href="https://css-tip.com/rounded-polygon/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Hexagon shapes with rounded corners</title>
