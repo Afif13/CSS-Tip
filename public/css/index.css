@@ -419,10 +419,20 @@ input[type=search] {
 .wall__tagline {
   font-weight: 600;
 }
+h3.wall__tagline {
+	margin-block: .3em;
+  font-size: 1.25em;
+  text-transform: capitalize;
+}
 .wall__description {
   font-size: 0.875em;
   line-height: 1.35;
   flex: 1;
+}
+p.wall__description {
+	font-size: 1em;
+	line-height: 1.4;
+	margin-block: .5em 1.5em;
 }
 .wall__sponsor {
   font-size: 0.625em;
@@ -441,6 +451,25 @@ input[type=search] {
   border-radius: 4px;
   place-self: center end;
 }
+
+.statamic.wall:before {
+    content: "";
+    position: absolute;
+    background: url(https://statamic.com/img/branding/toucan.webp) center/contain;
+    width: 100px;
+    aspect-ratio: 1.6;
+    right: 0;
+    bottom: 45px;
+}
+.statamic .wall__footer {
+	gap: 30px;
+	align-items: center;
+}
+.statamic .wall__image img {
+  height: 40px;
+  display: block;
+}
+
 #inline-custom {
 	display: block;
 }
