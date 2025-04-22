@@ -4,11 +4,22 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-04-17T00:00:00Z</updated>
+	<updated>2025-04-22T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Arrow-like Box with rounded corners</title>
+		<link href="https://css-tip.com/arrow-like-box/"/>
+		<updated>2025-04-22T00:00:00Z</updated>
+		<id>https://css-tip.com/arrow-like-box/</id>
+		<content type="html"><![CDATA[ <p>Another experimentation using the new <code>shape()</code> function to add rounded corners to a box with a triangular shape.</p>
+<p><picture><source type="image/avif" srcset="/img/9HYAgNFCP0-994.avif 994w"><source type="image/webp" srcset="/img/9HYAgNFCP0-994.webp 994w"><img alt="A CSS-only arrow-like rectangle" loading="lazy" decoding="async" src="/img/9HYAgNFCP0-994.png" width="994" height="410"></picture></p>
+<p>A complex-looking code but all you have to do is to update a few variables.</p>
+ <p><a href="https://css-tip.com/arrow-like-box/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Polygon shapes with rounded corners</title>
