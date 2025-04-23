@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Arrow-like Box with rounded corners
-description: Using modern CSS to create a rectangle with a rounded triangle shape on one side
+description: Create a rectangle with a rounded triangle shape on one side
 date: 2025-04-22
 tags: posts
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Polygon shapes with rounded corners
-description: Using modern CSS and Sass to generate the code of rounded polygon shapes
+description: Use modern CSS and Sass to generate the code of rounded polygon shapes
 date: 2025-04-17
 tags: posts
 ---

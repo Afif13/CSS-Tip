@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Hexagon shapes with rounded corners
-description: Using the new shape() function to create a hexagon shape with rounded corners
+description: Use the new shape() function to create a hexagon shape with rounded corners
 date: 2025-04-16
 tags: posts
 ---
