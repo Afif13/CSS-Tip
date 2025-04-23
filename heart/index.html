@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Custom progress element using attr()</title>
+		<title>A heart shape with modern CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Create a custom progress element with a dynamic coloration based on the value">
+		<meta name="description" content="Use the new shape() function to create a heart shape with minimal code">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/custom-progress/" >
+		<link rel=canonical href="https://css-tip.com/heart/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Custom progress element using attr()">
+		<meta property="og:title" content="A heart shape with modern CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/custom-progress/">
-		<meta property="og:description" content="Create a custom progress element with a dynamic coloration based on the value">
-		<meta property="og:image" content="/og-images/6d61f6b2.png" >
+		<meta property="og:url" content="https://css-tip.com/heart/">
+		<meta property="og:description" content="Use the new shape() function to create a heart shape with minimal code">
+		<meta property="og:image" content="/og-images/70ffd2c0.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,33 +46,24 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/zig-zag-edge/" title="Zig-Zag edges using CSS mask">Previous CSS Tip</a></li><li class="next"><a href="/flex-wrap/" title="The unknown behavior of flex-wrap">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/arrow-like-box/" title="Arrow-like Box with rounded corners">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Custom progress element using attr()</h1>
+<h1>A heart shape with modern CSS</h1>
 
-<time datetime="2025-03-25">March 25, 2025</time>
+<time datetime="2025-04-23">April 23, 2025</time>
 
-<p>Using the new <code>attr()</code> function, we can customize a progress element based on the progression. We can, for example, have a different coloration for each range of values! A single-element implementation without JavaSript.</p>
-<p><picture><source type="image/avif" srcset="/img/JhnYUtNu9T-699.avif 699w"><source type="image/webp" srcset="/img/JhnYUtNu9T-699.webp 699w"><img alt="CSS-only Cut-out shapes using clip-path" loading="lazy" decoding="async" src="/img/JhnYUtNu9T-699.png" width="699" height="298"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">progress[value]</span> <span class="token punctuation">{</span><br>  <span class="token property">--val</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>value <span class="token function">type</span><span class="token punctuation">(</span>&lt;number><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--max</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>max <span class="token function">type</span><span class="token punctuation">(</span>&lt;number><span class="token punctuation">)</span><span class="token punctuation">,</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <br>  <span class="token property">--_p</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100%*<span class="token function">var</span><span class="token punctuation">(</span>--val<span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--max<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* the percentage of progression */</span><br>  <span class="token property">--_b</span><span class="token punctuation">:</span> <br>    <span class="token comment">/* if (p &lt; 30%) "red" */</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>red    0 0<span class="token punctuation">)</span> 0/<span class="token function">max</span><span class="token punctuation">(</span>0%<span class="token punctuation">,</span>30% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> 1%<span class="token punctuation">,</span><br>    <span class="token comment">/* else if (p &lt; 60%) "orange" */</span><br>    <span class="token function">conic-gradient</span><span class="token punctuation">(</span>orange 0 0<span class="token punctuation">)</span> 0/<span class="token function">max</span><span class="token punctuation">(</span>0%<span class="token punctuation">,</span>60% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> 1%<span class="token punctuation">,</span><br>    <span class="token comment">/* else "green" */</span><br>    green<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">progress[value]::-webkit-progress-value</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_b<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">progress[value]::-moz-progress-bar</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_b<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>The support is still limited (Chrome-only for now)</p>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="OPJwbVJ" data-pen-title="Progress bar with dynamic coloration" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/OPJwbVJ" target="_blank" rel="noopener">
-  Progress bar with dynamic coloration</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Another classic shape made easy with the new <code>shape()</code> function. The heart shape with a simple code.</p>
+<p><picture><source type="image/avif" srcset="/img/kDYcuzrfNS-901.avif 901w"><source type="image/webp" srcset="/img/kDYcuzrfNS-901.webp 901w"><img alt="CSS-only heart shape" loading="lazy" decoding="async" src="/img/kDYcuzrfNS-901.png" width="901" height="301"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.heart</span> <span class="token punctuation">{</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <br>    <span class="token function">shape</span><span class="token punctuation">(</span><br>      from 50% 91%<span class="token punctuation">,</span><br>      line to 90% 50%<span class="token punctuation">,</span><br>      arc to 50% 9%  of 1%<span class="token punctuation">,</span><br>      arc to 10% 50% of 1%<br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="LEEbdrw" data-pen-title="Heart shape using shape()" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LEEbdrw" target="_blank" rel="noopener">
+  Heart shape using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>Here is another implementation where you can control the number of ranges and set the color for each one like an array.</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">progress[value]</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span> <span class="token comment">/* number of ranges */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> #F04155<span class="token punctuation">,</span>#F27435<span class="token punctuation">,</span>#7AB317<span class="token punctuation">,</span>#0D6759<span class="token punctuation">;</span> <span class="token comment">/* color for each range */</span><br>  <span class="token comment">/* N=4 so we have the following ranges [0% 25%[ [25% 50%[ [50% 75%[ [75% 100%] */</span><br><br>  <span class="token property">--_v</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>value <span class="token function">type</span><span class="token punctuation">(</span>&lt;number><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_m</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>max <span class="token function">type</span><span class="token punctuation">(</span>&lt;number><span class="token punctuation">)</span><span class="token punctuation">,</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_i</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span><span class="token function">min</span><span class="token punctuation">(</span>99<span class="token punctuation">,</span>100*<span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--_m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>100/<span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_b</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">)</span> no-repeat<br>     0 <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span>*1%/<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span> - 1<span class="token punctuation">)</span><span class="token punctuation">)</span>/100% <span class="token function">calc</span><span class="token punctuation">(</span>1px*infinity<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">progress[value]::-webkit-progress-value</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_b<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">progress[value]::-moz-progress-bar</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_b<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="LEYJGoQ" data-pen-title="Progress bar with dynamic coloration" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LEYJGoQ" target="_blank" rel="noopener">
-  Progress bar with dynamic coloration</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>For better support check the following method: <a href="/progress-bar-dynamic-color/">Progress bar with dynamic coloration</a></p>
+<p>For better support check this: <a href="/image-heart-shape/">Turn your image into a heart</a></p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -89,16 +80,6 @@
 		<a href="/rounded-hexagon/" >Hexagon shapes with rounded corners</a>
 		<small>Use the new shape() function to create a hexagon shape with rounded corners.</small>
 		<time datetime="2025-04-16">April 16, 2025</time>
-	</li>
-  	<li>
-		<a href="/assemble-image/" >Split and assemble an image using CSS mask</a>
-		<small>A few lines of code to create a fancy reveal animation for images.</small>
-		<time datetime="2025-03-18">March 18, 2025</time>
-	</li>
-  	<li>
-		<a href="/infinite-logos-animation/" >An infinite logos animation</a>
-		<small>Using the offset property to create a CSS-only infinite logos animation.</small>
-		<time datetime="2025-03-13">March 13, 2025</time>
 	</li>
 </ul>
 		</main>

@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/heart/",
+			"url": "https://css-tip.com/heart/",
+			"title": "A heart shape with modern CSS",
+			"content_html": "<p>Another classic shape made easy with the new <code>shape()</code> function. The heart shape with a simple code.</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/kDYcuzrfNS-901.avif 901w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/kDYcuzrfNS-901.webp 901w\"><img alt=\"CSS-only heart shape\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/kDYcuzrfNS-901.png\" width=\"901\" height=\"301\"></picture></p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">.heart</span> <span class=\"token punctuation\">{</span><br>  <span class=\"token property\">aspect-ratio</span><span class=\"token punctuation\">:</span> 1<span class=\"token punctuation\">;</span><br>  <span class=\"token property\">clip-path</span><span class=\"token punctuation\">:</span> <br>    <span class=\"token function\">shape</span><span class=\"token punctuation\">(</span><br>      from 50% 91%<span class=\"token punctuation\">,</span><br>      line to 90% 50%<span class=\"token punctuation\">,</span><br>      arc to 50% 9%  of 1%<span class=\"token punctuation\">,</span><br>      arc to 10% 50% of 1%<br>    <span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span><br><span class=\"token punctuation\">}</span></code></pre>\n<p class=\"codepen\" data-height=\"450\" data-default-tab=\"result\" data-slug-hash=\"LEEbdrw\" data-pen-title=\"Heart shape using shape()\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/LEEbdrw\">\n  Heart shape using shape()</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>\n<p>For better support check this: <a href=\"https://css-tip.com/image-heart-shape/\">Turn your image into a heart</a></p>\n",
+			"date_published": "2025-04-23T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/arrow-like-box/",
 			"url": "https://css-tip.com/arrow-like-box/",
 			"title": "Arrow-like Box with rounded corners",
