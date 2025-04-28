@@ -115,6 +115,12 @@ A collection of CSS Tools to easily generate a modern & optimized code in no tim
     </a>
   </li>
   <li>
+    <a href="https://css-generators.com/blob/">
+      {% image "./blob.png", "CSS blob shapes" %}
+      <p>Generator for blob shapes</p>
+    </a>
+  </li>
+  <li>
     <a href="https://css-generators.com/flower-shapes/">
       {% image "./flowers.png", "CSS flower shapes" %}
       <p>Generator for flower shapes</p>

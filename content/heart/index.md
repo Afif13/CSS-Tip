@@ -6,7 +6,7 @@ date: 2025-04-23
 tags: posts
 ---
 
-Another classic shape made easy with the new `shape()` function. The heart shape with a simple code.
+Another classic shape made easy with the new `shape()` function. A heart shape with a simple code.
 
 {% image "./image.png", "CSS-only heart shape" %}
 
