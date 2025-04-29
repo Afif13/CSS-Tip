@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://css-tip.com/blob-hover/",
+			"url": "https://css-tip.com/blob-hover/",
+			"title": "Blob shape with hover effect",
+			"content_html": "<p>Use the new <code>shape()</code> and create a cool CSS-only blob shape. Get the code from <a href=\"https://css-generators.com/blob/\">my online generator</a>.</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/uhV35LdNhb-805.avif 805w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/uhV35LdNhb-805.webp 805w\"><img alt=\"CSS-only blob shapes\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/uhV35LdNhb-805.png\" width=\"805\" height=\"302\"></picture></p>\n<p>You can have a cool hover effect by using a transition between two different shapes.</p>\n<p>⚠️ Chrome-only for now ⚠️</p>\n<p class=\"codepen\" data-height=\"500\" data-default-tab=\"result\" data-slug-hash=\"PwwJgyr\" data-pen-title=\"Blob  shape with hover effect!\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/PwwJgyr\">\n  Blob  shape with hover effect!</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>\n",
+			"date_published": "2025-04-29T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/heart/",
 			"url": "https://css-tip.com/heart/",
 			"title": "A heart shape with modern CSS",

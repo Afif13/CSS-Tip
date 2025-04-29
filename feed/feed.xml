@@ -4,11 +4,23 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-04-23T00:00:00Z</updated>
+	<updated>2025-04-29T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Blob shape with hover effect</title>
+		<link href="https://css-tip.com/blob-hover/"/>
+		<updated>2025-04-29T00:00:00Z</updated>
+		<id>https://css-tip.com/blob-hover/</id>
+		<content type="html"><![CDATA[ <p>Use the new <code>shape()</code> and create a cool CSS-only blob shape. Get the code from <a href="https://css-generators.com/blob/">my online generator</a>.</p>
+<p><picture><source type="image/avif" srcset="/img/uhV35LdNhb-805.avif 805w"><source type="image/webp" srcset="/img/uhV35LdNhb-805.webp 805w"><img alt="CSS-only blob shapes" loading="lazy" decoding="async" src="/img/uhV35LdNhb-805.png" width="805" height="302"></picture></p>
+<p>You can have a cool hover effect by using a transition between two different shapes.</p>
+<p>⚠️ Chrome-only for now ⚠️</p>
+ <p><a href="https://css-tip.com/blob-hover/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>A heart shape with modern CSS</title>
