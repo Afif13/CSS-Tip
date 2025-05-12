@@ -60,6 +60,12 @@ A collection of CSS Tools to easily generate a modern & optimized code in no tim
     </a>
   </li>
   <li>
+    <a href="https://css-generators.com/svg-to-css/">
+      {% image "./svg-to-css.png", "SVG to CSS" %}
+      <p>SVG to CSS Shape converter</p>
+    </a>
+  </li>
+  <li>
     <a href="https://css-generators.com/section-divider/">
       {% image "./section-divider.png", "CSS section divider" %}
       <p>Generator for section divider<br> (Triangular, Circular, Slanted)</p>
