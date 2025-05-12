@@ -4,11 +4,22 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-04-29T00:00:00Z</updated>
+	<updated>2025-05-12T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>SVG to CSS Shape Converter</title>
+		<link href="https://css-tip.com/svg-to-css/"/>
+		<updated>2025-05-12T00:00:00Z</updated>
+		<id>https://css-tip.com/svg-to-css/</id>
+		<content type="html"><![CDATA[ <p>Do you want to convert an SVG code into CSS? Check my online generator: <a href="https://css-generators.com/svg-to-css/">css-generators.com/svg-to-css</a></p>
+<p>It will transform a shape created using <code>&lt;path d=&quot;...&quot;&gt;</code> into a CSS code using <code>clip-path: shape()</code>. It's responsive, and the HTML code is a single element. No need to care about the viewBox, the generator will automatically find the smallest rectangle in which the shape fits.</p>
+<p>Example of SVG path:</p>
+ <p><a href="https://css-tip.com/svg-to-css/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Blob shape with hover effect</title>
