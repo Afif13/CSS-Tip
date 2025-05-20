@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-05-12T00:00:00Z</updated>
+	<updated>2025-05-20T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Arc shape with rounded edges</title>
+		<link href="https://css-tip.com/arc-shape-rounded/"/>
+		<updated>2025-05-20T00:00:00Z</updated>
+		<id>https://css-tip.com/arc-shape-rounded/</id>
+		<content type="html"><![CDATA[ <p><a href="/arc-shape/">Previously</a>, I used CSS mask to create an arc shape with rounded edges. Now, we can rely on the new <code>shape()</code> function that produces a more compact code and gives better rendering. A single-element implementation optimized with CSS variables.</p>
+<p><picture><source type="image/avif" srcset="/img/BcsFvj3ZhR-937.avif 937w"><source type="image/webp" srcset="/img/BcsFvj3ZhR-937.webp 937w"><img alt="CSS-only arc shape with rounded edges" loading="lazy" decoding="async" src="/img/BcsFvj3ZhR-937.png" width="937" height="376"></picture></p>
+ <p><a href="https://css-tip.com/arc-shape-rounded/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>SVG to CSS Shape Converter</title>

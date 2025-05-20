@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A heart shape with modern CSS</title>
+		<title>Arc shape with rounded edges</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use the new shape() function to create a heart shape with minimal code">
+		<meta name="description" content="A modern way to create arc shapes with rounded edges using minimal code">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/heart/" >
+		<link rel=canonical href="https://css-tip.com/arc-shape-rounded/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A heart shape with modern CSS">
+		<meta property="og:title" content="Arc shape with rounded edges">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/heart/">
-		<meta property="og:description" content="Use the new shape() function to create a heart shape with minimal code">
-		<meta property="og:image" content="/og-images/70ffd2c0.png" >
+		<meta property="og:url" content="https://css-tip.com/arc-shape-rounded/">
+		<meta property="og:description" content="A modern way to create arc shapes with rounded edges using minimal code">
+		<meta property="og:image" content="/og-images/7886a50f.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,24 +46,30 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/arrow-like-box/" title="Arrow-like Box with rounded corners">Previous CSS Tip</a></li><li class="next"><a href="/blob-hover/" title="Blob shape with hover effect">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/svg-to-css/" title="SVG to CSS Shape Converter">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>A heart shape with modern CSS</h1>
+<h1>Arc shape with rounded edges</h1>
 
-<time datetime="2025-04-23">April 23, 2025</time>
+<time datetime="2025-05-20">May 20, 2025</time>
 
-<p>Another classic shape made easy with the new <code>shape()</code> function. A heart shape with a simple code.</p>
-<p><picture><source type="image/avif" srcset="/img/kDYcuzrfNS-901.avif 901w"><source type="image/webp" srcset="/img/kDYcuzrfNS-901.webp 901w"><img alt="CSS-only heart shape" loading="lazy" decoding="async" src="/img/kDYcuzrfNS-901.png" width="901" height="301"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.heart</span> <span class="token punctuation">{</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <br>    <span class="token function">shape</span><span class="token punctuation">(</span><br>      from 50% 91%<span class="token punctuation">,</span><br>      line to 90% 50%<span class="token punctuation">,</span><br>      arc to 50% 9%  of 1%<span class="token punctuation">,</span><br>      arc to 10% 50% of 1%<br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="LEEbdrw" data-pen-title="Heart shape using shape()" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LEEbdrw" target="_blank" rel="noopener">
-  Heart shape using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p><a href="/arc-shape/">Previously</a>, I used CSS mask to create an arc shape with rounded edges. Now, we can rely on the new <code>shape()</code> function that produces a more compact code and gives better rendering. A single-element implementation optimized with CSS variables.</p>
+<p><picture><source type="image/avif" srcset="/img/BcsFvj3ZhR-937.avif 937w"><source type="image/webp" srcset="/img/BcsFvj3ZhR-937.webp 937w"><img alt="CSS-only arc shape with rounded edges" loading="lazy" decoding="async" src="/img/BcsFvj3ZhR-937.png" width="937" height="376"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_f</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">.arc</span> <span class="token punctuation">{</span><br>  <span class="token property">--v</span><span class="token punctuation">:</span> 35<span class="token punctuation">;</span> <span class="token comment">/* [0 100] */</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span> <span class="token comment">/* thickness */</span><br>  <br>  <span class="token property">--_v</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>99.99<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--v<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_f</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span><span class="token punctuation">,</span>50<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_c</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--_f</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span><span class="token punctuation">:</span> small<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> large<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span>from top<span class="token punctuation">,</span><br>    arc to <span class="token function">calc</span><span class="token punctuation">(</span>50% + 50%*<span class="token function">sin</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>*3.6deg<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>           <span class="token function">calc</span><span class="token punctuation">(</span>50% - 50%*<span class="token function">cos</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>*3.6deg<span class="token punctuation">)</span><span class="token punctuation">)</span> of 50% <span class="token function">var</span><span class="token punctuation">(</span>--_c<span class="token punctuation">)</span> cw<span class="token punctuation">,</span><br>    arc to <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span>*<span class="token function">sin</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>*3.6deg<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>           <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span>*<span class="token function">cos</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>*3.6deg<span class="token punctuation">)</span><span class="token punctuation">)</span> of 1% cw<span class="token punctuation">,</span><br>    arc to 50% <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> of <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_c<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    arc to top of 1% cw<br>  <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="pvvXJLY" data-pen-title="Arc shape with rounded edges" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/pvvXJLY" target="_blank" rel="noopener">
+  Arc shape with rounded edges</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>Another implementation using styles queries instead of inline conditions:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_f</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">.arc</span> <span class="token punctuation">{</span><br>  <span class="token property">--v</span><span class="token punctuation">:</span> 35<span class="token punctuation">;</span> <span class="token comment">/* [0 100] */</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span> <span class="token comment">/* thickness */</span><br>  <br>  <span class="token property">--_v</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>99.99<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--v<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_f</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span><span class="token punctuation">,</span>50<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">container-name</span><span class="token punctuation">:</span> arc<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.arc:before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span>from top<span class="token punctuation">,</span><br>    arc to <span class="token function">calc</span><span class="token punctuation">(</span>50% + 50%*<span class="token function">sin</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>*3.6deg<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>           <span class="token function">calc</span><span class="token punctuation">(</span>50% - 50%*<span class="token function">cos</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>*3.6deg<span class="token punctuation">)</span><span class="token punctuation">)</span> of 50% <span class="token function">var</span><span class="token punctuation">(</span>--_c<span class="token punctuation">,</span>large<span class="token punctuation">)</span> cw<span class="token punctuation">,</span><br>    arc to <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span>*<span class="token function">sin</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>*3.6deg<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>           <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span>*<span class="token function">cos</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span>*3.6deg<span class="token punctuation">)</span><span class="token punctuation">)</span> of 1% cw<span class="token punctuation">,</span><br>    arc to 50% <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> of <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_c<span class="token punctuation">,</span>large<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    arc to top of 1% cw<br>  <span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token atrule"><span class="token rule">@container</span> <span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--_f</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><span class="token property">--_c</span><span class="token punctuation">:</span> small<span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="xbboGaO" data-pen-title="Arc shape with rounded edges" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/xbboGaO" target="_blank" rel="noopener">
+  Arc shape with rounded edges</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>For better support check this: <a href="/image-heart-shape/">Turn your image into a heart</a></p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -72,24 +78,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/arc-shape-rounded/" >Arc shape with rounded edges</a>
-		<small>A modern way to create arc shapes with rounded edges using minimal code.</small>
-		<time datetime="2025-05-20">May 20, 2025</time>
+		<a href="/blob-hover/" >Blob shape with hover effect</a>
+		<small>Add a blob shape to your image with a cool bouncy hover effect.</small>
+		<time datetime="2025-04-29">April 29, 2025</time>
 	</li>
   	<li>
-		<a href="/svg-to-css/" >SVG to CSS Shape Converter</a>
-		<small>The easiest way to convert an SVG shape into a CSS one.</small>
-		<time datetime="2025-05-12">May 12, 2025</time>
-	</li>
-  	<li>
-		<a href="/rounded-polygon/" >Polygon shapes with rounded corners</a>
-		<small>Use modern CSS and Sass to generate the code of rounded polygon shapes.</small>
-		<time datetime="2025-04-17">April 17, 2025</time>
-	</li>
-  	<li>
-		<a href="/rounded-hexagon/" >Hexagon shapes with rounded corners</a>
-		<small>Use the new shape() function to create a hexagon shape with rounded corners.</small>
-		<time datetime="2025-04-16">April 16, 2025</time>
+		<a href="/heart/" >A heart shape with modern CSS</a>
+		<small>Use the new shape() function to create a heart shape with minimal code.</small>
+		<time datetime="2025-04-23">April 23, 2025</time>
 	</li>
 </ul>
 		</main>
