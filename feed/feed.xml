@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-05-20T00:00:00Z</updated>
+	<updated>2025-05-22T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>How to style a broken image</title>
+		<link href="https://css-tip.com/broken-image/"/>
+		<updated>2025-05-22T00:00:00Z</updated>
+		<id>https://css-tip.com/broken-image/</id>
+		<content type="html"><![CDATA[ <p>When an image fails to load the browser will simply show you the alt text but you can change this using a cool CSS trick. Broken images accept pseudo-elements such as <code>::before</code> and <code>::after</code> so we can tweak them to add a custom error message or any visual you want.</p>
+<p><picture><source type="image/avif" srcset="/img/kudh9WxESu-987.avif 987w"><source type="image/webp" srcset="/img/kudh9WxESu-987.webp 987w"><img alt="Custom error message for broken images" loading="lazy" decoding="async" src="/img/kudh9WxESu-987.png" width="987" height="332"></picture></p>
+ <p><a href="https://css-tip.com/broken-image/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Arc shape with rounded edges</title>

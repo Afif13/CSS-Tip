@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Blob shape with hover effect</title>
+		<title>How to style a broken image</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Add a blob shape to your image with a cool bouncy hover effect">
+		<meta name="description" content="Give a nice visual touch to images that fail to load">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/blob-hover/" >
+		<link rel=canonical href="https://css-tip.com/broken-image/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Blob shape with hover effect">
+		<meta property="og:title" content="How to style a broken image">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/blob-hover/">
-		<meta property="og:description" content="Add a blob shape to your image with a cool bouncy hover effect">
-		<meta property="og:image" content="/og-images/4ee226e1.png" >
+		<meta property="og:url" content="https://css-tip.com/broken-image/">
+		<meta property="og:description" content="Give a nice visual touch to images that fail to load">
+		<meta property="og:image" content="/og-images/f881e48b.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,27 +46,21 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/heart/" title="A heart shape with modern CSS">Previous CSS Tip</a></li><li class="next"><a href="/svg-to-css/" title="SVG to CSS Shape Converter">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/arc-shape-rounded/" title="Arc shape with rounded edges">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Blob shape with hover effect</h1>
+<h1>How to style a broken image</h1>
 
-<time datetime="2025-04-29">April 29, 2025</time>
+<time datetime="2025-05-22">May 22, 2025</time>
 
-<p>Use the new <code>shape()</code> and create a cool CSS-only blob shape. Get the code from <a href="https://css-generators.com/blob/" target="_blank" rel="noopener">my online generator</a>.</p>
-<p><picture><source type="image/avif" srcset="/img/uhV35LdNhb-805.avif 805w"><source type="image/webp" srcset="/img/uhV35LdNhb-805.webp 805w"><img alt="CSS-only blob shapes" loading="lazy" decoding="async" src="/img/uhV35LdNhb-805.png" width="805" height="302"></picture></p>
-<p>You can have a cool hover effect by applying a transition between two different shapes.</p>
-<p>⚠️ Chrome-only for now ⚠️</p>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="PwwJgyr" data-pen-title="Blob  shape with hover effect!" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwwJgyr" target="_blank" rel="noopener">
-  Blob  shape with hover effect!</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>Another example:</p>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="yyyPONb" data-pen-title="Blob  shape with hover effect!" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yyyPONb" target="_blank" rel="noopener">
-  Blob  shape with hover effect!</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>When an image fails to load the browser will simply show you the alt text but you can change this using a cool CSS trick. Broken images accept pseudo-elements such as <code>::before</code> and <code>::after</code> so we can tweak them to add a custom error message or any visual you want.</p>
+<p><picture><source type="image/avif" srcset="/img/kudh9WxESu-987.avif 987w"><source type="image/webp" srcset="/img/kudh9WxESu-987.webp 987w"><img alt="Custom error message for broken images" loading="lazy" decoding="async" src="/img/kudh9WxESu-987.png" width="987" height="332"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img::after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">"We failed to load the image of \A'"</span> <span class="token function">attr</span><span class="token punctuation">(</span>alt<span class="token punctuation">)</span> <span class="token string">"'\A 😞"</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">inset</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">place-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 2px dashed<span class="token punctuation">;</span><br>  <span class="token property">font</span><span class="token punctuation">:</span> bold 1.6em/1.5 system-ui<span class="token punctuation">;</span><br>  <span class="token property">white-space</span><span class="token punctuation">:</span> pre-wrap<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>The above style will not apply to correctly loaded images so no need for any specific selector to exclude them</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="QwbLwEb" data-pen-title="Style broken images" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/QwbLwEb" target="_blank" rel="noopener">
+  Style broken images</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
@@ -77,24 +71,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/broken-image/" >How to style a broken image</a>
-		<small>Give a nice visual touch to images that fail to load.</small>
-		<time datetime="2025-05-22">May 22, 2025</time>
+		<a href="/svg-to-css/" >SVG to CSS Shape Converter</a>
+		<small>The easiest way to convert an SVG shape into a CSS one.</small>
+		<time datetime="2025-05-12">May 12, 2025</time>
 	</li>
   	<li>
-		<a href="/arc-shape-rounded/" >Arc shape with rounded edges</a>
-		<small>A modern way to create arc shapes with rounded edges using minimal code.</small>
-		<time datetime="2025-05-20">May 20, 2025</time>
-	</li>
-  	<li>
-		<a href="/arrow-like-box/" >Arrow-like Box with rounded corners</a>
-		<small>Create a rectangle with a rounded triangle shape on one side.</small>
-		<time datetime="2025-04-22">April 22, 2025</time>
-	</li>
-  	<li>
-		<a href="/rounded-polygon/" >Polygon shapes with rounded corners</a>
-		<small>Use modern CSS and Sass to generate the code of rounded polygon shapes.</small>
-		<time datetime="2025-04-17">April 17, 2025</time>
+		<a href="/blob-hover/" >Blob shape with hover effect</a>
+		<small>Add a blob shape to your image with a cool bouncy hover effect.</small>
+		<time datetime="2025-04-29">April 29, 2025</time>
 	</li>
 </ul>
 		</main>
