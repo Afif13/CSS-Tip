@@ -16,7 +16,7 @@ img {
   position: relative;
 }
 img::after {
-  content: "We failed to load the image of \A'" attr(alt) "'\A 😞";
+  content: "We failed to load the image of \A'" attr(alt) "'\A 😞"/"";
   position: absolute;
   inset: 0;
   display: grid;
