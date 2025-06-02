@@ -4,11 +4,20 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-05-22T00:00:00Z</updated>
+	<updated>2025-06-02T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>How to correctly use if() in CSS</title>
+		<link href="https://css-tip.com/inline-if/"/>
+		<updated>2025-06-02T00:00:00Z</updated>
+		<id>https://css-tip.com/inline-if/</id>
+		<content type="html"><![CDATA[ <p>CSS is adding a new way to express conditions using an <a href="https://github.com/w3c/csswg-drafts/issues/10064#issuecomment-2165157958">if() syntax</a>. While it looks easy to use, there is a gotcha you should be aware of. Take the example below:</p>
+ <p><a href="https://css-tip.com/inline-if/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>How to style a broken image</title>

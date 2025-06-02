@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>How to correctly use if() in CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="Learn how to easily fix an issue you will face when using if()">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/inline-if/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="How to correctly use if() in CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/inline-if/">
+		<meta property="og:description" content="Learn how to easily fix an issue you will face when using if()">
+		<meta property="og:image" content="/og-images/dd814099.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -36,7 +36,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/advertise/">Advertise</a></li>
@@ -46,123 +46,50 @@
 		</header>
 		<main id="skip">
 			
+<ul class="links-nextprev"><li class="prev"><a href="/broken-image/" title="How to style a broken image">Previous CSS Tip</a></li>
+</ul>
 
-<h1>Learn CSS the easy way</h1>
-<p>Discover a new CSS Trick every day and enhance your web development skills. CSS Tip helps you stay up to date with the latest and modern web features. It takes a few minutes to unlock all the CSS secrets!</p>
-<p>Do you want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Read a random CSS Tip!</a></p>
-<hr>
 
+<h1>How to correctly use if() in CSS</h1>
+
+<time datetime="2025-06-02">June 02, 2025</time>
+
+<p>CSS is adding a new way to express conditions using an <a href="https://github.com/w3c/csswg-drafts/issues/10064#issuecomment-2165157958" target="_blank" rel="noopener">if() syntax</a>. While it looks easy to use, there is a gotcha you should be aware of. Take the example below:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> 6<span class="token punctuation">;</span> <span class="token comment">/* We define 6 */</span><br>  <br>  <span class="token property">--f</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* the result is 3 */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--f</span><span class="token punctuation">:</span> 3<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* We get a red color */</span><br><span class="token punctuation">}</span></code></pre>
+<p>The color is <code>red</code>, right? No, it's <code>green</code>! For the browser the value of <code>--f</code> is equal to <code>calc(var(--n)/2)</code> (no calculation are made)</p>
+<p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="dPoMeOB" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/dPoMeOB" target="_blank" rel="noopener">
+  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>This can be confusing but the fix is quite easy. You have to register the value using <code>@property</code> so the browser can perform the calculation. Otherwise, the browser will see the value as it is (It's like a string value).</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --f</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> 6<span class="token punctuation">;</span> <span class="token comment">/* We define 6 */</span><br>  <br>  <span class="token property">--f</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* the result is 3 */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--f</span><span class="token punctuation">:</span> 3<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* We get a red color */</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="zxGqjwm" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zxGqjwm" target="_blank" rel="noopener">
+  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>The registration is not required if there is no calculation and you want an exact matching like the below examples:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--f</span><span class="token punctuation">:</span> error<span class="token punctuation">;</span> <br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--f</span><span class="token punctuation">:</span> error<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--v</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--v</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
 
 <ul class="postlist" >
-
-	<li>
-		<a href="/inline-if/" >How to correctly use if() in CSS</a>
-		<small>Learn how to easily fix an issue you will face when using if().</small>
-		<time datetime="2025-06-02">June 02, 2025</time>
-	</li>
-
-	<li>
-		<a href="/broken-image/" >How to style a broken image</a>
-		<small>Give a nice visual touch to images that fail to load.</small>
-		<time datetime="2025-05-22">May 22, 2025</time>
-	</li>
-
-	<li>
+  	<li>
 		<a href="/arc-shape-rounded/" >Arc shape with rounded edges</a>
 		<small>A modern way to create arc shapes with rounded edges using minimal code.</small>
 		<time datetime="2025-05-20">May 20, 2025</time>
 	</li>
-
-	<li>
+  	<li>
 		<a href="/svg-to-css/" >SVG to CSS Shape Converter</a>
 		<small>The easiest way to convert an SVG shape into a CSS one.</small>
 		<time datetime="2025-05-12">May 12, 2025</time>
 	</li>
-
-	<li>
-		<a href="/blob-hover/" >Blob shape with hover effect</a>
-		<small>Add a blob shape to your image with a cool bouncy hover effect.</small>
-		<time datetime="2025-04-29">April 29, 2025</time>
-	</li>
-
-	<li>
-		<a href="/heart/" >A heart shape with modern CSS</a>
-		<small>Use the new shape() function to create a heart shape with minimal code.</small>
-		<time datetime="2025-04-23">April 23, 2025</time>
-	</li>
-
-	<li>
-		<a href="/arrow-like-box/" >Arrow-like Box with rounded corners</a>
-		<small>Create a rectangle with a rounded triangle shape on one side.</small>
-		<time datetime="2025-04-22">April 22, 2025</time>
-	</li>
-
-	<li>
-		<a href="/rounded-polygon/" >Polygon shapes with rounded corners</a>
-		<small>Use modern CSS and Sass to generate the code of rounded polygon shapes.</small>
-		<time datetime="2025-04-17">April 17, 2025</time>
-	</li>
-
-	<li>
-		<a href="/rounded-hexagon/" >Hexagon shapes with rounded corners</a>
-		<small>Use the new shape() function to create a hexagon shape with rounded corners.</small>
-		<time datetime="2025-04-16">April 16, 2025</time>
-	</li>
-
-	<li>
-		<a href="/flex-wrap/" >The unknown behavior of flex-wrap</a>
-		<small>flex-wrap doesn&#39;t only control the wrapping of items but also affects the alignment.</small>
-		<time datetime="2025-04-14">April 14, 2025</time>
-	</li>
-
-	<li>
-		<a href="/custom-progress/" >Custom progress element using attr()</a>
-		<small>Create a custom progress element with a dynamic coloration based on the value.</small>
-		<time datetime="2025-03-25">March 25, 2025</time>
-	</li>
-
-	<li>
-		<a href="/zig-zag-edge/" >Zig-Zag edges using CSS mask</a>
-		<small>One line of code to add Zig-Zag edges to any element using the mask property.</small>
-		<time datetime="2025-03-20">March 20, 2025</time>
-	</li>
-
-	<li>
-		<a href="/assemble-image/" >Split and assemble an image using CSS mask</a>
-		<small>A few lines of code to create a fancy reveal animation for images.</small>
-		<time datetime="2025-03-18">March 18, 2025</time>
-	</li>
-
-	<li>
-		<a href="/infinite-logos-animation/" >An infinite logos animation</a>
-		<small>Using the offset property to create a CSS-only infinite logos animation.</small>
-		<time datetime="2025-03-13">March 13, 2025</time>
-	</li>
-
-	<li>
-		<a href="/inner-border/" >Transparent inner border for images</a>
-		<small>A simple code to add a fancy transparent inner border to image elements.</small>
-		<time datetime="2025-03-06">March 06, 2025</time>
-	</li>
-
 </ul>
-
-
-
-
-<p>224 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
-<div id="inline-custom"><hr></div>
-
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
-
 		</main>
 		<aside>
 			<div>
