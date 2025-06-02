@@ -19,7 +19,7 @@ CSS is adding a new way to express conditions using an [if() syntax](https://git
 
 The color is `red`, right? No, it's `green`! For the browser the value of `--f` is equal to `calc(var(--n)/2)` (no calculation are made)
 
-<p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="dPoMeOB" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="450" data-default-tab="css,result" data-slug-hash="dPoMeOB" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/dPoMeOB">
   Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
