@@ -4,11 +4,22 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-06-10T00:00:00Z</updated>
+	<updated>2025-06-12T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>The future of hexagon shapes</title>
+		<link href="https://css-tip.com/hexagon/"/>
+		<updated>2025-06-12T00:00:00Z</updated>
+		<id>https://css-tip.com/hexagon/</id>
+		<content type="html"><![CDATA[ <p>A new and easy way to create hexagon shapes using <code>corner-shape</code>. As a bonus, you can add a border to it.</p>
+<p>It's the only method that works with borders!</p>
+<p><picture><source type="image/avif" srcset="/img/8ljNIW_RhN-858.avif 858w"><source type="image/webp" srcset="/img/8ljNIW_RhN-858.webp 858w"><img alt="CSS-only hexagon shapes using corner-shape" loading="lazy" decoding="async" src="/img/8ljNIW_RhN-858.png" width="858" height="332"></picture></p>
+ <p><a href="https://css-tip.com/hexagon/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Safe align your content</title>
