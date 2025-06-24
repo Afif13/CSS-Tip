@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>How to correctly use if() in CSS</title>
+		<title>Dots loader using shape()</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Learn how to easily fix an issue you will face when using if()">
+		<meta name="description" content="A classic 3 dots loader created using the new shape()">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/inline-if/" >
+		<link rel=canonical href="https://css-tip.com/dots-loader/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="How to correctly use if() in CSS">
+		<meta property="og:title" content="Dots loader using shape()">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/inline-if/">
-		<meta property="og:description" content="Learn how to easily fix an issue you will face when using if()">
-		<meta property="og:image" content="/og-images/dd814099.png" >
+		<meta property="og:url" content="https://css-tip.com/dots-loader/">
+		<meta property="og:description" content="A classic 3 dots loader created using the new shape()">
+		<meta property="og:image" content="/og-images/83534b29.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,32 +46,24 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/broken-image/" title="How to style a broken image">Previous CSS Tip</a></li><li class="next"><a href="/safe-align/" title="Safe align your content">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/hexagon/" title="The future of hexagon shapes">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>How to correctly use if() in CSS</h1>
+<h1>Dots loader using shape()</h1>
 
-<time datetime="2025-06-02">June 02, 2025</time>
+<time datetime="2025-06-24">June 24, 2025</time>
 
-<p>CSS is adding a new way to express conditions using an <a href="https://github.com/w3c/csswg-drafts/issues/10064#issuecomment-2165157958" target="_blank" rel="noopener">if() syntax</a>. While it looks easy to use, there is a gotcha you should be aware of. Take the example below:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> 6<span class="token punctuation">;</span> <span class="token comment">/* We define 6 */</span><br>  <br>  <span class="token property">--f</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* the result is 3 */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--f</span><span class="token punctuation">:</span> 3<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* We get a red color */</span><br><span class="token punctuation">}</span></code></pre>
-<p>The color is <code>red</code>, right? No, it's <code>green</code>! For the browser the value of <code>--f</code> is equal to <code>calc(var(--n)/2)</code> (no calculation are made)</p>
-<p class="codepen" data-height="450" data-default-tab="css,result" data-slug-hash="dPoMeOB" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/dPoMeOB" target="_blank" rel="noopener">
-  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>This can be confusing but the fix is quite easy. You have to register the value using <code>@property</code> so the browser can perform the calculation. Otherwise, the browser will see the value as it is (It's like a string value).</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --f</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> 6<span class="token punctuation">;</span> <span class="token comment">/* We define 6 */</span><br>  <br>  <span class="token property">--f</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* the result is 3 */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--f</span><span class="token punctuation">:</span> 3<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* We get a red color */</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="zxGqjwm" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zxGqjwm" target="_blank" rel="noopener">
-  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Recreating a 3 dots loader using <code>shape()</code> and animating it using CSS variables and <code>@property</code></p>
+<p><picture><source type="image/avif" srcset="/img/PrYho_qwXv-446.avif 446w"><source type="image/webp" srcset="/img/PrYho_qwXv-446.webp 446w"><img alt="CSS-only dots loader" loading="lazy" decoding="async" src="/img/PrYho_qwXv-446.png" width="446" height="139"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --x</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;percentage>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 80%<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --y</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;percentage>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 80%<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@property</span> --z</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;percentage>"</span><span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 80%<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">.loader</span> <span class="token punctuation">{</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 3<span class="token punctuation">;</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> <span class="token punctuation">,</span>arc by 0 -60% of 1px<span class="token punctuation">,</span> arc by 0 60% of 1px<span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <br>    <span class="token function">shape</span><span class="token punctuation">(</span><br>      from    <span class="token function">calc</span><span class="token punctuation">(</span> 50%/3<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--x<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span><br>      move to <span class="token function">calc</span><span class="token punctuation">(</span>150%/3<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--y<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span><br>      move to <span class="token function">calc</span><span class="token punctuation">(</span>250%/3<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--z<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> l 1s infinite<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> l</span> <span class="token punctuation">{</span><br>  <span class="token selector">20%</span>  <span class="token punctuation">{</span><span class="token property">--x</span><span class="token punctuation">:</span>60%<span class="token punctuation">;</span> <span class="token property">--y</span><span class="token punctuation">:</span>80%<span class="token punctuation">;</span>         <span class="token punctuation">}</span><br>  <span class="token selector">40%</span>  <span class="token punctuation">{</span><span class="token property">--x</span><span class="token punctuation">:</span>100%<span class="token punctuation">;</span><span class="token property">--y</span><span class="token punctuation">:</span>60%<span class="token punctuation">;</span> <span class="token property">--z</span><span class="token punctuation">:</span>80% <span class="token punctuation">}</span><br>  <span class="token selector">60%</span>  <span class="token punctuation">{</span><span class="token property">--x</span><span class="token punctuation">:</span>80%<span class="token punctuation">;</span> <span class="token property">--y</span><span class="token punctuation">:</span>100%<span class="token punctuation">;</span><span class="token property">--z</span><span class="token punctuation">:</span>60% <span class="token punctuation">}</span><br>  <span class="token selector">80%</span>  <span class="token punctuation">{</span>         <span class="token property">--y</span><span class="token punctuation">:</span>80%<span class="token punctuation">;</span> <span class="token property">--z</span><span class="token punctuation">:</span>100%<span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="azOPoaO" data-pen-title="Dots loader using shape()" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/azOPoaO" target="_blank" rel="noopener">
+  Dots loader using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>The registration is not required if there is no calculation and you want an exact matching like the below examples:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--f</span><span class="token punctuation">:</span> error<span class="token punctuation">;</span> <br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--f</span><span class="token punctuation">:</span> error<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--v</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--v</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>More CSS Loaders: <a href="https://css-loaders.com/" target="_blank" rel="noopener">css-loaders.com</a></p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -80,24 +72,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/dots-loader/" >Dots loader using shape()</a>
-		<small>A classic 3 dots loader created using the new shape().</small>
-		<time datetime="2025-06-24">June 24, 2025</time>
+		<a href="/safe-align/" >Safe align your content</a>
+		<small>Learn about the keyword &quot;safe&quot; and how to use it.</small>
+		<time datetime="2025-06-10">June 10, 2025</time>
 	</li>
   	<li>
-		<a href="/hexagon/" >The future of hexagon shapes</a>
-		<small>A new way to easily create hexagon shapes using corner-shape.</small>
-		<time datetime="2025-06-12">June 12, 2025</time>
-	</li>
-  	<li>
-		<a href="/arc-shape-rounded/" >Arc shape with rounded edges</a>
-		<small>A modern way to create arc shapes with rounded edges using minimal code.</small>
-		<time datetime="2025-05-20">May 20, 2025</time>
-	</li>
-  	<li>
-		<a href="/svg-to-css/" >SVG to CSS Shape Converter</a>
-		<small>The easiest way to convert an SVG shape into a CSS one.</small>
-		<time datetime="2025-05-12">May 12, 2025</time>
+		<a href="/inline-if/" >How to correctly use if() in CSS</a>
+		<small>Learn how to easily fix an issue you will face when using if().</small>
+		<time datetime="2025-06-02">June 02, 2025</time>
 	</li>
 </ul>
 		</main>
