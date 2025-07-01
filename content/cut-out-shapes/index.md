@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Cut-out shapes using clip-path
-description: Invert any kind of polygon shapes following a simple steps
+description: Invert any kind of polygon shapes following simple steps
 date: 2024-06-19
 tags: posts
 ---
