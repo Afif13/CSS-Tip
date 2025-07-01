@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-06-24T00:00:00Z</updated>
+	<updated>2025-07-01T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Invert CSS Shapes using shape()</title>
+		<link href="https://css-tip.com/invert-shape/"/>
+		<updated>2025-07-01T00:00:00Z</updated>
+		<id>https://css-tip.com/invert-shape/</id>
+		<content type="html"><![CDATA[ <p>Do you want to invert a shape created using <code>clip-path: shape()</code>? With a simple code, you can have both the main shape and its cut-out version.</p>
+<p><picture><source type="image/avif" srcset="/img/X0BlK4Ody9-837.avif 837w"><source type="image/webp" srcset="/img/X0BlK4Ody9-837.webp 837w"><img alt="CSS-only Cut-out shapes using shape()" loading="lazy" decoding="async" src="/img/X0BlK4Ody9-837.png" width="837" height="277"></picture></p>
+ <p><a href="https://css-tip.com/invert-shape/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Dots loader using shape()</title>
