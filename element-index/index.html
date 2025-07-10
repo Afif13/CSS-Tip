@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>The future of hexagon shapes</title>
+		<title>Get the index of an element within its parent</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A new way to easily create hexagon shapes using corner-shape">
+		<meta name="description" content="A native CSS function to get the index of an element among its siblings within a parent element">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/hexagon/" >
+		<link rel=canonical href="https://css-tip.com/element-index/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="The future of hexagon shapes">
+		<meta property="og:title" content="Get the index of an element within its parent">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/hexagon/">
-		<meta property="og:description" content="A new way to easily create hexagon shapes using corner-shape">
-		<meta property="og:image" content="/og-images/de516ec0.png" >
+		<meta property="og:url" content="https://css-tip.com/element-index/">
+		<meta property="og:description" content="A native CSS function to get the index of an element among its siblings within a parent element">
+		<meta property="og:image" content="/og-images/4b45ceec.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,26 +46,32 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/safe-align/" title="Safe align your content">Previous CSS Tip</a></li><li class="next"><a href="/dots-loader/" title="Dots loader using shape()">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/invert-shape/" title="Invert CSS Shapes using shape()">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>The future of hexagon shapes</h1>
+<h1>Get the index of an element within its parent</h1>
 
-<time datetime="2025-06-12">June 12, 2025</time>
+<time datetime="2025-07-10">July 10, 2025</time>
 
-<p>A new and easy way to create hexagon shapes using <code>corner-shape</code>. As a bonus, you can add a border to it.</p>
-<p>It's the only method that works with borders!</p>
-<p><picture><source type="image/avif" srcset="/img/8ljNIW_RhN-858.avif 858w"><source type="image/webp" srcset="/img/8ljNIW_RhN-858.webp 858w"><img alt="CSS-only hexagon shapes using corner-shape" loading="lazy" decoding="async" src="/img/8ljNIW_RhN-858.png" width="858" height="332"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.hexagon</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50% / 25%<span class="token punctuation">;</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> <span class="token function">cos</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 8px solid purple<span class="token punctuation">;</span> <span class="token comment">/* the border will follow the shape! */</span><br><span class="token punctuation">}</span><br><span class="token comment">/* OR  */</span><br><span class="token selector">.hexagon</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 25% / 50%<span class="token punctuation">;</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1/<span class="token function">cos</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 8px solid purple<span class="token punctuation">;</span> <span class="token comment">/* the border will follow the shape! */</span><br><span class="token punctuation">}</span></code></pre>
-<p>⚠️ Very limited support (Chrome-only with experimental flag enabled) ⚠️</p>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="yyNjgzR" data-pen-title="Hexagon shapes (with border!)" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yyNjgzR" target="_blank" rel="noopener">
-  Hexagon shapes (with border!)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>With CSS, you can use the new <code>sibling-index()</code> function to get the position of any element relative to all its sibling elements. You can also rely on <code>sibling-count()</code> to get the number of siblings.</p>
+<p>The results are also available within pseudo-elements.</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  ...<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container div</span> <span class="token punctuation">{</span> <br>  <span class="token property">border</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span>*2px<span class="token punctuation">)</span> solid<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container div::before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token function">counter</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token string">"/"</span> <span class="token function">counter</span><span class="token punctuation">(</span>N<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">counter-reset</span><span class="token punctuation">:</span> N <span class="token function">sibling-count</span><span class="token punctuation">(</span><span class="token punctuation">)</span> i <span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">/* they refer to the div element */</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="pvjowwj" data-pen-title="sibling-index() / sibling-count()" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/pvjowwj" target="_blank" rel="noopener">
+  sibling-index() / sibling-count()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>The functions are a bit verbose, so we can create our custom functions and write less code.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@function</span> <span class="token function">--N</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token property">result</span><span class="token punctuation">:</span> <span class="token function">sibling-count</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@function</span> <span class="token function">--i</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token property">result</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - 1<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* we can change and start from 0 instead of 1 */</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.container div</span> <span class="token punctuation">{</span> <br>  <span class="token property">border</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">--i</span><span class="token punctuation">(</span><span class="token punctuation">)</span>*2px<span class="token punctuation">)</span> solid<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container div::before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token function">counter</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token string">"/"</span> <span class="token function">counter</span><span class="token punctuation">(</span>N<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">counter-reset</span><span class="token punctuation">:</span> N <span class="token function">--N</span><span class="token punctuation">(</span><span class="token punctuation">)</span> i <span class="token function">--i</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="EaVxmrK" data-pen-title="sibling-index() / sibling-count() + custom functions" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/EaVxmrK" target="_blank" rel="noopener">
+  sibling-index() / sibling-count() + custom functions</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>Until better support use this: <a href="/hexagon-shape/">A Modern way to create hexagon shapes</a></p>
+<p>⚠️ Limited support (Chrome only for now) ⚠️</p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -74,24 +80,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/element-index/" >Get the index of an element within its parent</a>
-		<small>A native CSS function to get the index of an element among its siblings within a parent element.</small>
-		<time datetime="2025-07-10">July 10, 2025</time>
+		<a href="/dots-loader/" >Dots loader using shape()</a>
+		<small>A classic 3 dots loader created using the new shape().</small>
+		<time datetime="2025-06-24">June 24, 2025</time>
 	</li>
   	<li>
-		<a href="/invert-shape/" >Invert CSS Shapes using shape()</a>
-		<small>A simple trick to get the cut-out version of any shape created using shape().</small>
-		<time datetime="2025-07-01">July 01, 2025</time>
-	</li>
-  	<li>
-		<a href="/inline-if/" >How to correctly use if() in CSS</a>
-		<small>Learn how to easily fix an issue you will face when using if().</small>
-		<time datetime="2025-06-02">June 02, 2025</time>
-	</li>
-  	<li>
-		<a href="/broken-image/" >How to style a broken image</a>
-		<small>Give a nice visual touch to images that fail to load.</small>
-		<time datetime="2025-05-22">May 22, 2025</time>
+		<a href="/hexagon/" >The future of hexagon shapes</a>
+		<small>A new way to easily create hexagon shapes using corner-shape.</small>
+		<time datetime="2025-06-12">June 12, 2025</time>
 	</li>
 </ul>
 		</main>

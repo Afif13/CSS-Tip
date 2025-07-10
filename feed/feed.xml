@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-07-01T00:00:00Z</updated>
+	<updated>2025-07-10T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Get the index of an element within its parent</title>
+		<link href="https://css-tip.com/element-index/"/>
+		<updated>2025-07-10T00:00:00Z</updated>
+		<id>https://css-tip.com/element-index/</id>
+		<content type="html"><![CDATA[ <p>With CSS, you can use the new <code>sibling-index()</code> function to get the position of any element relative to all its sibling elements. You can also rely on <code>sibling-count()</code> to get the number of siblings.</p>
+<p>The results are also available within pseudo-elements.</p>
+ <p><a href="https://css-tip.com/element-index/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Invert CSS Shapes using shape()</title>
