@@ -22,6 +22,7 @@ The results are also available within pseudo-elements.
 ```css
 .container div { 
   border: calc(sibling-index()*2px) solid;
+  opacity: calc(sibling-index()/sibling-count());
 }
 .container div::before {
   content: counter(i) "/" counter(N);
@@ -47,6 +48,7 @@ The functions are a bit verbose, so we can create our custom functions and write
 
 .container div { 
   border: calc(--i()*2px) solid;
+  opacity: calc(--i()/--N());
 }
 .container div::before {
   content: counter(i) "/" counter(N);
