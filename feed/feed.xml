@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-07-10T00:00:00Z</updated>
+	<updated>2025-07-14T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Dynamic nth-child() using sibling-index() and if()</title>
+		<link href="https://css-tip.com/nth-child/"/>
+		<updated>2025-07-14T00:00:00Z</updated>
+		<id>https://css-tip.com/nth-child/</id>
+		<content type="html"><![CDATA[ <p>We can get <a href="https://css-tip.com/element-index/">the index of an element using sibling-index()</a>, and we can express <a href="/inline-if/">inline conditions using if()</a>. With both features, we can implement <code>:nth-child(An + B)</code>.</p>
+<p>Instead of:</p>
+ <p><a href="https://css-tip.com/nth-child/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Get the index of an element within its parent</title>

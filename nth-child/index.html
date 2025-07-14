@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Invert CSS Shapes using shape()</title>
+		<title>Dynamic nth-child() using sibling-index() and if()</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A simple trick to get the cut-out version of any shape created using shape()">
+		<meta name="description" content="Use modern CSS to control the arguments of nth-child() and update them on the fly">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/invert-shape/" >
+		<link rel=canonical href="https://css-tip.com/nth-child/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Invert CSS Shapes using shape()">
+		<meta property="og:title" content="Dynamic nth-child() using sibling-index() and if()">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/invert-shape/">
-		<meta property="og:description" content="A simple trick to get the cut-out version of any shape created using shape()">
-		<meta property="og:image" content="/og-images/8c1e791c.png" >
+		<meta property="og:url" content="https://css-tip.com/nth-child/">
+		<meta property="og:description" content="Use modern CSS to control the arguments of nth-child() and update them on the fly">
+		<meta property="og:image" content="/og-images/af37a8a5.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -46,32 +46,42 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/dots-loader/" title="Dots loader using shape()">Previous CSS Tip</a></li><li class="next"><a href="/element-index/" title="Get the index of an element within its parent">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/element-index/" title="Get the index of an element within its parent">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Invert CSS Shapes using shape()</h1>
+<h1>Dynamic nth-child() using sibling-index() and if()</h1>
 
-<time datetime="2025-07-01">July 01, 2025</time>
+<time datetime="2025-07-14">July 14, 2025</time>
 
-<p>Do you want to invert a shape created using <code>clip-path: shape()</code>? With a simple code, you can have both the main shape and its cut-out version.</p>
-<p><picture><source type="image/avif" srcset="/img/X0BlK4Ody9-837.avif 837w"><source type="image/webp" srcset="/img/X0BlK4Ody9-837.webp 837w"><img alt="CSS-only Cut-out shapes using shape()" loading="lazy" decoding="async" src="/img/X0BlK4Ody9-837.png" width="837" height="277"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.shape</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* You add "evenodd" at the start and "var(--i,)" at the end */</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span>evenodd from .... <span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.invert</span> <span class="token punctuation">{</span> <span class="token comment">/* by adding the "invert" class, the shape is inverted! */</span><br>  <span class="token property">--i</span><span class="token punctuation">:</span><span class="token punctuation">,</span>move to 0 0<span class="token punctuation">,</span> hline to 100%<span class="token punctuation">,</span> vline to 100%<span class="token punctuation">,</span> hline to 0<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="ogXOmWa" data-pen-title="Inverting shapes using shape()" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ogXOmWa" target="_blank" rel="noopener">
-  Inverting shapes using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>We can get <a href="https://css-tip.com/element-index/" target="_blank" rel="noopener">the index of an element using sibling-index()</a>, and we can express <a href="/inline-if/">inline conditions using if()</a>. With both features, we can implement <code>:nth-child(An + B)</code>.</p>
+<p>Instead of:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container div</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container div:nth-child(An + B)</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>We can do:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --g</span> <span class="token punctuation">{</span><span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token punctuation">}</span><br><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">--A</span><span class="token punctuation">:</span> <span class="token punctuation">;</span><br>  <span class="token property">--B</span><span class="token punctuation">:</span> <span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container div</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--B<span class="token punctuation">)</span><span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--A<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sign</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span> + .0001<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span> - <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token comment">/* when --g is equal to 1, the element is selected by :nth-child(An + B) */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--g</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> blue<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>What's the point, you might ask? It allows us to update the value of <code>A</code> and <code>B</code> on the fly since now they are variables! Something you cannot do using the classic selector.</p>
+<p><picture><source type="image/avif" srcset="/img/dHsRQ3d2iR-1181.avif 1181w"><source type="image/webp" srcset="/img/dHsRQ3d2iR-1181.webp 1181w"><img alt="Overview of nth-child(An + B)" loading="lazy" decoding="async" src="/img/dHsRQ3d2iR-1181.png" width="1181" height="145"></picture></p>
+<p><code>n</code> needs to be a <strong>positive integer</strong> (zero included).</p>
+<ul>
+<li><code>sign(var(--n) + .0001)</code> is equal to <code>1</code> when <code>--n</code> is <strong>positive</strong> and <code>-1</code> otherwise (The <code>.0001</code> is used to include zero).</li>
+<li><code>var(--n) - round(down,var(--n))</code> is equal to <code>0</code> when <code>--n</code> is an <strong>integer</strong> and a value between <code>0</code> and <code>1</code> otherwise.</li>
+</ul>
+<p>When the sum is equal to <code>1</code>, the element matches <code>:nth-child(An + B)</code>.</p>
+<p>In the demo below, update the <code>:nth-child()</code> selector and the variables <code>--A</code> and <code>--B</code> with the same values to compare the matching.</p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="jEbObPN" data-pen-title="nth-child() using sibling-index() and if()" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/jEbObPN" target="_blank" rel="noopener">
+  nth-child() using sibling-index() and if()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<p>We can add an extra variable and control the space around the shape when inverted:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.shape</span> <span class="token punctuation">{</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span>evenodd from ... <span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span> content-box<span class="token punctuation">;</span> <span class="token comment">/* content-box at the end */</span><br><span class="token punctuation">}</span><br><span class="token selector">.invert</span> <span class="token punctuation">{</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span> <span class="token comment">/* this will control the space around the inverted shape */</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--i</span><span class="token punctuation">:</span> <span class="token punctuation">,</span>move to <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        hline to <span class="token function">calc</span><span class="token punctuation">(</span>100% + <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        vline to <span class="token function">calc</span><span class="token punctuation">(</span>100% + <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        hline to <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">box-sizing</span><span class="token punctuation">:</span> content-box<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="ZYGZwXJ" data-pen-title="Inverting shapes using shape()" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ZYGZwXJ" target="_blank" rel="noopener">
-  Inverting shapes using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>We can also use the function notation and create something easier to use:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@function</span> <span class="token function">--nth-child</span><span class="token punctuation">(</span><span class="token property">--A</span><span class="token punctuation">:</span>1<span class="token punctuation">,</span> <span class="token property">--B</span><span class="token punctuation">:</span>0<span class="token punctuation">,</span> --_g &lt;number><span class="token punctuation">:</span> 0<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--B<span class="token punctuation">)</span><span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--A<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_g</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sign</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span> + .0001<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span> - <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">result</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--_g</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><span class="token property">else</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><br><span class="token selector">.container div</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">--nth-child</span><span class="token punctuation">(</span>-2<span class="token punctuation">,</span>10<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* --g is equal to "1" when the element is selected and "0" otherwise */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--g</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> blue<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span>*50%<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>⚠️ Limited support (Chrome only for now) ⚠️</p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="PwPwayO" data-pen-title="nth-child() using sibling-index() and if() + function" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwPwayO" target="_blank" rel="noopener">
+  nth-child() using sibling-index() and if() + function</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>If you want to do the same with <code>clip-path: polygon()</code>, check this: <a href="/cut-out-shapes/">Cut-out shapes using clip-path</a></p>
-
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -79,19 +89,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/nth-child/" >Dynamic nth-child() using sibling-index() and if()</a>
-		<small>Use modern CSS to control the arguments of nth-child() and update them on the fly.</small>
-		<time datetime="2025-07-14">July 14, 2025</time>
+		<a href="/invert-shape/" >Invert CSS Shapes using shape()</a>
+		<small>A simple trick to get the cut-out version of any shape created using shape().</small>
+		<time datetime="2025-07-01">July 01, 2025</time>
 	</li>
   	<li>
-		<a href="/hexagon/" >The future of hexagon shapes</a>
-		<small>A new way to easily create hexagon shapes using corner-shape.</small>
-		<time datetime="2025-06-12">June 12, 2025</time>
-	</li>
-  	<li>
-		<a href="/safe-align/" >Safe align your content</a>
-		<small>Learn about the keyword &quot;safe&quot; and how to use it.</small>
-		<time datetime="2025-06-10">June 10, 2025</time>
+		<a href="/dots-loader/" >Dots loader using shape()</a>
+		<small>A classic 3 dots loader created using the new shape().</small>
+		<time datetime="2025-06-24">June 24, 2025</time>
 	</li>
 </ul>
 		</main>
