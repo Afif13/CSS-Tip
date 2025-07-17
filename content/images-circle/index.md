@@ -28,7 +28,7 @@ Using `offset` combined with [the new `sibling-index()` and `sibling-count()` fu
 ```
 
 
-Add/remove images in the below demo and see how they are perfectly placed regardless of their number.
+Add/remove images in the demo below, and see how they are perfectly placed regardless of their number.
 
 
 <p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="jEbbLZb" data-pen-title="Images around a circle" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
