@@ -108,18 +108,8 @@
 </ul>
 		</main>
 		<aside>
-			<div>
-				<a href="https://statamic.com/?utm_source=csstip&utm_medium=banner&utm_campaign=awareness" class="wall statamic" style="background-color: #faf8f7;color: #191a1b" rel="noopener" target="_blank">
-  <h3 class="wall__tagline">The answer to your frustrating CMS problems</h3>
-  <p class="wall__description">Statamic supports your design vision and empowers your markup and CSS without getting in the way.</p>
-  <div class="wall__footer">
-    <div class="wall__image"><img alt="statamic logo" src="/img/statamic-logo-lime.svg"></div>
-    <div class="wall__cta" style="background-color: #000; color: #D4FF4C;">Learn more</div>
-  </div>
-</a>
-			</div>
+			<div id="custom-wall" style="height: 230px;"></div>
 			<div style="height:400px;overflow: clip;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=cover" id="_carbonads_js"></script></div>
-			<div id="custom-wall"></div>
 			<a href="https://css-loaders.com/" target="_blank" rel="noopener">
 				<img src="/img/css-loader.jpg" alt="CSS Loaders" >
 			</a>
@@ -157,17 +147,18 @@
   _bsa.loadBatch();
   }
 })();
-/*function BSANativeCallback({ ads, key }) {
-  if (ads.length === 0) {
-  	document.querySelector("#custom-wall").innerHTML='<div class="sponso">\
+function BSANativeCallback({ ads, key }) {
+	let custom = document.querySelector("#custom-wall");
+  if (ads.length === 0 && custom.childElementCount === 0) {
+  	custom.innerHTML='<div class="sponso">\
 				<a href="/advertise/"><small>Place your ad here</small></a>\
 				<p>Reach a wide audience of web developers with a personalized and attractive ad.</p>\
 				<p>Don\'t miss the opportunity to promote your product starting from <strong>150$/month</strong>.</p>\
 				<a href="/advertise/">Advertise with CSS Tip</a>\
 			</div>';
-		document.querySelector("#custom-wall").style.height="";	
+		custom.style.height="";	
   }
-}*/
+}
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSNXZ63602"></script>
 <script>
