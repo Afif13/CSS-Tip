@@ -4,11 +4,27 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-07-17T00:00:00Z</updated>
+	<updated>2025-07-29T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Responsive infinite logo marquee</title>
+		<link href="https://css-tip.com/logo-marquee/"/>
+		<updated>2025-07-29T00:00:00Z</updated>
+		<id>https://css-tip.com/logo-marquee/</id>
+		<content type="html"><![CDATA[ <p>With <a href="https://css-tricks.com/better-css-shapes-using-shape-part-1-lines-and-arcs/">the powerful shape() function</a> and the new <a href="/element-index/">sibling-index()/sibling-count() functions</a>, we can create an infinite logo marquee using a few lines of code.</p>
+<ul>
+<li>Responsive (It doesn't depend on the container width)</li>
+<li>Works with any number of images</li>
+<li>Easy to control using CSS variables</li>
+<li>No magic numbers</li>
+</ul>
+<p><picture><source type="image/avif" srcset="/img/7RMGBAeIfn-831.avif 831w"><source type="image/webp" srcset="/img/7RMGBAeIfn-831.webp 831w"><img alt="A CSS-only arrow-like rectangle" loading="lazy" decoding="async" src="/img/7RMGBAeIfn-831.png" width="831" height="284"></picture></p>
+ <p><a href="https://css-tip.com/logo-marquee/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>How to place images around a circle</title>
