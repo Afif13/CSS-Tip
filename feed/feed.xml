@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-07-29T00:00:00Z</updated>
+	<updated>2025-08-07T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Sequential animations with N elements</title>
+		<link href="https://css-tip.com/sequential-animations/"/>
+		<updated>2025-08-07T00:00:00Z</updated>
+		<id>https://css-tip.com/sequential-animations/</id>
+		<content type="html"><![CDATA[ <p>Using modern CSS, you can create a sequential animation that involves an unknown number of items with a simple code. No need for complex keyframes, delays, or magic numbers. A clever combination of <a href="/element-index/">the <code>sibling-index()</code>/<code>sibling-count()</code> functions</a> and <code>linear()</code> will do the job!</p>
+<p><picture><source type="image/avif" srcset="/img/eTReJhp54w-663.avif 663w"><source type="image/webp" srcset="/img/eTReJhp54w-663.webp 663w"><img alt="CSS-only sequential animations" loading="lazy" decoding="async" src="/img/eTReJhp54w-663.png" width="663" height="135"></picture></p>
+ <p><a href="https://css-tip.com/sequential-animations/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Responsive infinite logo marquee</title>
