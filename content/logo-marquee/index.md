@@ -69,3 +69,5 @@ The only requirement is to have equal-width items:
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+Related: [Infinite Marquee Animation using Modern CSS](https://frontendmasters.com/blog/infinite-marquee-animation-using-modern-css/)
