@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Advertise with CSS Tip</title>
+		<title>Dynamic media/container queries using if()</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Promote your product with a personalised and attractive ad starting from 150$/month.">
+		<meta name="description" content="Use modern CSS to express media queries and container queries differently">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/advertise/" >
+		<link rel=canonical href="https://css-tip.com/dynamic-queries/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Advertise with CSS Tip">
+		<meta property="og:title" content="Dynamic media/container queries using if()">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/advertise/">
-		<meta property="og:description" content="Promote your product with a personalised and attractive ad starting from 150$/month.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/dynamic-queries/">
+		<meta property="og:description" content="Use modern CSS to express media queries and container queries differently">
+		<meta property="og:image" content="/og-images/f8f10f17.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -39,152 +39,62 @@
 					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
-					<li class="nav-item"><a href="/advertise/" aria-current="page">Advertise</a></li>
+					<li class="nav-item"><a href="/advertise/">Advertise</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml" target="_blank">RSS</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="skip">
-			<style>
-main button {
-  background: var(--text-color-link);
-  color: var(--background-color);
-  border: none;
-  padding: .3em 1.5em;
-  display: block;
-  margin: 1em auto;
-  font-size: 1.75em;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-main button:hover {
-  background: hsl(from var(--text-color-link) h s calc(l * 1.5));
-}
-ul.stats {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-ul.stats li {
-  flex: 1;
-  display: grid;
-  text-align: center;
-  font-weight: bold;
-  font-size: 3.5em;
-  line-height: 1.2;
-  padding: .6em .1em;
-  background: var(--text-color);
-  color: var(--background-color);
-  margin: 3px;
-}
-ul.stats li span {
-  font-size: .3em;
-}
-ul.types {
-  padding: 0;
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-ul.types li {
-  position: relative;
-  flex: 200px;
-  border: 1px solid;
-  border-radius: 10px;
-  text-align: center;
-  padding: 0 1em;
-}
-ul.types li h3 {
-  font-size: 2em;
-  margin-block: 20px 0;
-}
-ul.types li div {
-  color: var(--text-color);
-  font-weight: 500;
-}
-ul.types li p {
-  font-famoly: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
-  width: fit-content;
-  margin-inline: auto;
-  text-align: left;
-}
-ul.types li:before {
-  position: absolute;
-  inset: -.5lh 0 auto;
-  background: var(--text-color);
-  width: fit-content;
-  margin: auto;
-  color: var(--background-color);
-  font-size: 15px;
-  padding: 0 10px;
-}
-ul.types li:nth-child(1):before {
-  content: "Visible on load";
-}
-ul.types li:nth-child(2):before {
-  content: "Multiple spots";
-}
-ul.types li:nth-child(3):before {
-  content: "Responsive";
-}
-main div#contact {
-  width: fit-content;
-  margin: 20px auto;
-  font-size: 1.2em;
-  border: 2px dashed;
-  padding: 1em;
-}
-</style>
-
-<h1>Advertise with CSS Tip</h1>
-
-<p>Reach a wide audience of passionate web developers around the world!</p> 
-
-<ul class="stats">
-  <li><span>Up to</span>32,000 <span>Monthly page views*</span></li>
-  <li><span>Up to</span>14,000 <span>Monthly active users*</span></li>
+			
+<ul class="links-nextprev"><li class="prev"><a href="/sequential-animations/" title="Sequential animations with N elements">Previous CSS Tip</a></li>
 </ul>
 
-<p>Get a personalized and attractive ad seamlessly integrated into the website (I am a CSS expert after all). Say goodbye to the boring ads and explore a better way to advertise your product.</p>
 
-<h2>Ad placements</h2>
+<h1>Dynamic media/container queries using if()</h1>
 
-<picture><source type="image/avif" srcset="/img/peBYxMRZUS-554.avif 554w"><source type="image/webp" srcset="/img/peBYxMRZUS-554.webp 554w"><img alt="Overview of ad placement" loading="lazy" decoding="async" src="/img/peBYxMRZUS-554.png" width="554" height="490"></picture>
+<time datetime="2025-08-14">August 14, 2025</time>
 
-<ul class="types">
-  <li><h3>Top</h3><div>300$/month</div><p>width: 415px; <br> height: 240px;</p></li>
-  <li><h3>Side</h3><div>200$/month</div><p>width: 415px; <br> height: 200px;</p></li>
-  <li><h3>Bottom</h3><div>150$/month</div><p>width: 100%; <br> min-height: 100px;</p></li>
+<p>Similar to <a href="/nth-child/">the :nth-child() trick</a>, we can use <a href="/inline-if/">the if() condition</a> and some calculation to implement the logic of media queries.</p>
+<p>Instead of:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  background<span class="token punctuation">;</span> red<span class="token punctuation">;</span><br>  <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span>width &lt; 450px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>    <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>We can do:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --g</span> <span class="token punctuation">{</span><span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token punctuation">}</span><br><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span><span class="token function">sign</span><span class="token punctuation">(</span>100vw - 450px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/*  "screen wdith" &lt; 450px : --g = 0 <br>      "screen wdith" > 450px : --g = 1<br>  */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--g</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> red<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Why reinvent the wheel with a more complex code? With this trick, you can easily update the <code>450px</code> on the fly, as now it's part of a calculation. Something you cannot do with a classic media query!</p>
+<p>And since the variable <code>--g</code> follows a Boolean logic, we can use it to perform other calculations as well:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --g</span> <span class="token punctuation">{</span><span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token punctuation">}</span><br><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span><span class="token function">sign</span><span class="token punctuation">(</span>100vw - 450px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span>*10px<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/*  "screen wdith" &lt; 450px : padding = 0px <br>      "screen wdith" > 450px : padding = 10px<br>  */</span><br><span class="token punctuation">}</span></code></pre>
+<p>Resize the screen in the below demo and see how things adjust based on the screen size without a single media query:</p>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="XJmzQOb" data-pen-title="Dynamic media queries with modern CSS" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/XJmzQOb" target="_blank" rel="noopener">
+  Dynamic media queries with modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>If we replace the <code>100vw</code> with another value, we can get something different than media queries. If, for example, we use <code>100cqw</code>, we can simulate container queries.</p>
+<p>Here is the same demo, where this time the layout will adjust based on the width of the outer wrapper that you can resize:</p>
+<p class="codepen" data-height="480" data-default-tab="result" data-slug-hash="bNVYyrP" data-pen-title="Dynamic container queries with modern CSS" data-preview="true" data-user="t_afif" style="height: 480px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/bNVYyrP" target="_blank" rel="noopener">
+  Dynamic container queries with modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>⚠️ Limited support (Chrome only for now) ⚠️</p>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
+
+<ul class="postlist" >
+  	<li>
+		<a href="/logo-marquee/" >Responsive infinite logo marquee</a>
+		<small>Use modern CSS and a few lines of code to create an infinite scroll animation.</small>
+		<time datetime="2025-07-29">July 29, 2025</time>
+	</li>
+  	<li>
+		<a href="/images-circle/" >How to place images around a circle</a>
+		<small>A simple CSS code to correctly place a set of images (or any elements) around a circle.</small>
+		<time datetime="2025-07-17">July 17, 2025</time>
+	</li>
 </ul>
-
-<p>A preview? It's unnecessary because it will look like you want it to look. We will create together the perfect eye-catching ad. It won't be a simple clickable image but a semantic HTML code integrated into the website. You can update its content at any time with no additional fees.</p>
-
-<p>What are you waiting for? Start advertising with CSS Tip!</p>
-
-<button id="touch">Get in Touch</button>
-
-<h2>Do you want a special ad?</h2>
-
-<p>The <strong>reserved</strong> spot is for you! Up to 400px in height, you can promote as many products as you want there. You can even have interactive widgets (subscription form, images slider, etc). Contact me to discuss the pricing.</p>
-
-<br><br>
-
-<small>* It's an average based on the values provided by analytic tools of the previous months. Real numbers may vary.</small>
-
-
-<script>
-document.querySelector("#touch").addEventListener('click',function(e){
-  const div = document.createElement("div");
-  div.id="contact";
-  div.innerHTML="email me at <a href='mailt1:pr1@css-tip.c1m'>pr1@css-tip.c1m</a>".replaceAll("1","o");
-  e.target.replaceWith(div);
-  gtag('event', 'advertise');
-})
-</script>
-
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
