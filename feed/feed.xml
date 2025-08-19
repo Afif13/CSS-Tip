@@ -4,11 +4,21 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-08-14T00:00:00Z</updated>
+	<updated>2025-08-19T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
 	</author>
+	
+	<entry>
+		<title>Circular gallery of rounded images</title>
+		<link href="https://css-tip.com/circular-gallery/"/>
+		<updated>2025-08-19T00:00:00Z</updated>
+		<id>https://css-tip.com/circular-gallery/</id>
+		<content type="html"><![CDATA[ <p>In a previous post, we saw <a href="/images-circle/">how to place images around a circle</a>. We can use the same trick to create a circular gallery of images. Thanks to a combination of <code>:nth-child</code> and <a href="https://css-tip.com/element-index/"><code>sibling-index()</code></a>, we need fewer than 10 CSS declarations to correctly place up to 61 images.</p>
+<p><picture><source type="image/avif" srcset="/img/VAN1mVeaMw-1275.avif 1275w"><source type="image/webp" srcset="/img/VAN1mVeaMw-1275.webp 1275w"><img alt="CSS-only circular gallery of images" loading="lazy" decoding="async" src="/img/VAN1mVeaMw-1275.png" width="1275" height="615"></picture></p>
+ <p><a href="https://css-tip.com/circular-gallery/">Read more</a></p> ]]></content>
+	</entry>
 	
 	<entry>
 		<title>Dynamic media/container queries using if()</title>
