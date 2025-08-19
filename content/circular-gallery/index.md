@@ -40,8 +40,9 @@ In a previous post, we saw [how to place images around a circle](/images-circle/
 }
 ```
 
+⚠️ Limited support (Chrome only for now) ⚠️
 
-<p class="codepen" data-height="700" data-default-tab="result" data-slug-hash="XJmZoEO" data-pen-title="Circular gallery of images" data-preview="true" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="750" data-default-tab="result" data-slug-hash="XJmZoEO" data-pen-title="Circular gallery of images" data-preview="true" data-user="t_afif" style="height: 750px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/XJmZoEO">
   Circular gallery of images</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -49,7 +50,7 @@ In a previous post, we saw [how to place images around a circle](/images-circle/
 
 And here is an animated version
 
-<p class="codepen" data-height="700" data-default-tab="result" data-slug-hash="pvjaMMx" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="750" data-default-tab="result" data-slug-hash="pvjaMMx" data-pen-title="Untitled" data-preview="true" data-user="t_afif" style="height: 750px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/pvjaMMx">
   Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
