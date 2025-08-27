@@ -5,10 +5,9 @@ title: About CSS Tip
 
 <h1>About</h1>
 
-My name is **Temani Afif** and I made this website to share with you a few CSS Tips. No complex tutorial, No lengthy video, No boring streaming. Read a tip per day and become a CSS expert.
+My name is **Temani Afif** and I made this website to share with you a lot of cool CSS content and that's all. Enjoy it!
 
 Want more CSS fun? Check my other websites:
-* [CSS Challenges](https://css-challenges.com/)
 * [CSS Generators](https://css-generators.com/)
 * [CSS Articles](https://css-articles.com/)
 * [CSS Loaders](https://css-loaders.com/)
@@ -16,6 +15,7 @@ Want more CSS fun? Check my other websites:
 * [CSS Shape](https://css-shape.com/)
 * [CSS Arts](https://css-only.art/)
 * [CSS Games](https://css-games.com/)
+* [CSS Challenges](https://css-challenges.com/)
 
 If you like this website [You can support me](https://support.temani-afif.com/) (I know you will do before leaving this page because you are a great person!)
 
