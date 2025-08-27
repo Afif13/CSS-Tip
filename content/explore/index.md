@@ -4,7 +4,7 @@ title: A better way to explore CSS
 description: A deep dive exploration of CSS concepts. Your journey to master CSS starts here!
 eleventyNavigation:
   key: Explore
-  order: 2
+  order: 3
 ---
 
 <h1>A better way to explore CSS</h1>
