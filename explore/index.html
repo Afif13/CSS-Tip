@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Navigation menu with sliding items</title>
+		<title>A better way to explore CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A simple navigation menu with a cool sliding effect for the items">
+		<meta name="description" content="A deep dive exploration of CSS concepts. Your journey to master CSS starts here!">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/sliding-navigation-menu/" >
+		<link rel=canonical href="https://css-tip.com/explore/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Navigation menu with sliding items">
+		<meta property="og:title" content="A better way to explore CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/sliding-navigation-menu/">
-		<meta property="og:description" content="A simple navigation menu with a cool sliding effect for the items">
-		<meta property="og:image" content="/og-images/e35fffdf.png" >
-		<meta property="og:image:width" content="1200" >
-		<meta property="og:image:height" content="675" >
+		<meta property="og:url" content="https://css-tip.com/explore/">
+		<meta property="og:description" content="A deep dive exploration of CSS concepts. Your journey to master CSS starts here!">
+		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
+		<meta property="og:image:width" content="1600" >
+		<meta property="og:image:height" content="800" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -37,7 +37,7 @@
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/explore/">Explore</a></li>
+					<li class="nav-item"><a href="/explore/" aria-current="page">Explore</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
 					<li class="nav-item"><a href="/advertise/">Advertise</a></li>
@@ -46,59 +46,12 @@
 			</nav>
 		</header>
 		<main id="skip">
-			
-<ul class="links-nextprev"><li class="prev"><a href="/css-dashed-lines/" title="Dashed lines using CSS gradient">Previous CSS Tip</a></li><li class="next"><a href="/back-to-top/" title="CSS-only back to top button">Next CSS Tip</a></li>
-</ul>
+			<h1>A better way to explore CSS</h1>
+<p>Dive into the world of Cascading Style Sheets. Discover a better way to explore CSS through high-quality, comprehensive content. You will not only learn CSS, you will master it!</p>
+<br>
+<br>
+<p><strong style="font-size: 1.5em;">First exploration coming soon.</strong></p>
 
-
-<h1>Navigation menu with sliding items</h1>
-
-<time datetime="2022-07-22">July 22, 2022</time>
-
-<p>Create a simple navigation menu with a sliding effect</p>
-<ul>
-<li>Minimal HTML code</li>
-<li>No duplicated text</li>
-<li>Less than 20 CSS declarations</li>
-<li>Optimized with CSS variables</li>
-</ul>
-<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>menu<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/about<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>About<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>active<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/shop<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Shop<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/contact<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Contact<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span></code></pre>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">nav</span> <span class="token punctuation">{</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> #E5DDCB<span class="token punctuation">;</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> #524656<span class="token punctuation">;</span><br>  <br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ul</span> <span class="token punctuation">{</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> 0 0 0 auto<span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>  <span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ul li a</span> <span class="token punctuation">{</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 0 .8em<span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #0000<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span> 50%<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> 0<span class="token punctuation">)</span> <br>    0% <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span>100%<span class="token punctuation">)</span>/100% 200%<span class="token punctuation">;</span><br>  <span class="token property">text-shadow</span><span class="token punctuation">:</span><br>    0 <span class="token function">calc</span><span class="token punctuation">(</span>2em - <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span>2em<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    0 <span class="token function">var</span><span class="token punctuation">(</span>--_i<span class="token punctuation">,</span>-2em<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><br>  <span class="token property">font</span><span class="token punctuation">:</span> bold 30px/2em sans-serif<span class="token punctuation">;</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><br>  <span class="token property">outline-offset</span><span class="token punctuation">:</span> -5px<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .5s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ul li a:hover,<br>ul li.active a</span><span class="token punctuation">{</span><br>  <span class="token property">--_i</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ul li a:focus-visible</span><span class="token punctuation">{</span><br>  <span class="token property">outline</span><span class="token punctuation">:</span> 2px dashed <span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ul li.active a:focus-visible</span> <span class="token punctuation">{</span><br>  <span class="token property">outline-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="qBojNeJ" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/qBojNeJ" target="_blank" rel="noopener">
-  CSS only menu with sliding effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More detail: <a href="https://css-tricks.com/cool-hover-effects-that-use-css-text-shadow/" target="_blank" rel="noopener">css-tricks.com/cool-hover-effects-that-use-css-text-shadow</a></p>
-
-
-<div id="inline-custom"><hr style="margin-block:1rem"></div>
-
-<h2>More CSS Tips</h2>
-
-<ul class="postlist" >
-  	<li>
-		<a href="/css-dashed-border/" >Custom dashed border</a>
-		<small>Use gradient and CSS mask to create a dashed border.</small>
-		<time datetime="2022-08-10">August 10, 2022</time>
-	</li>
-  	<li>
-		<a href="/number-inside-box/" >Put a number inside boxes</a>
-		<small>A few trick to make your number look fancy.</small>
-		<time datetime="2022-08-02">August 02, 2022</time>
-	</li>
-  	<li>
-		<a href="/heart-shape-animation/" >Heart shape animation using outline</a>
-		<small>Turn your image into a heart with a cool animation.</small>
-		<time datetime="2022-07-04">July 04, 2022</time>
-	</li>
-  	<li>
-		<a href="/image-heart-shape/" >Turn your image into a heart</a>
-		<small>Create a CSS heart shape using any image.</small>
-		<time datetime="2022-07-01">July 01, 2022</time>
-	</li>
-</ul>
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>

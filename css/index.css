@@ -237,15 +237,9 @@ header {
 	gap: 1em .5em;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 	padding: 1em;
-	border-image:linear-gradient(to top,var(--color-gray-20) 1px,#0000 0) fill 0//0 100vw
-}
-@media (max-width:540px) {
-	header {
-		display: grid;
-		place-items: center;
-		place-content: center;
-	}
+	border-image: linear-gradient(to top,var(--color-gray-20) 1px,#0000 0) fill 0//0 100vw
 }
 .home-link {
 	font-size: 2em; 
@@ -265,8 +259,8 @@ nav {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	gap: 1.2em;
-	font-size: 1.1em;
+	gap: 1em;
+	font-size: 1.2em;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
