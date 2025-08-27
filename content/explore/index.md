@@ -1,7 +1,8 @@
 ---
 layout: layouts/base.njk
-title: A better way to explore CSS
-description: A deep dive exploration of CSS concepts. Your journey to master CSS starts here!
+title: A Better Way to Explore CSS
+description: A Deep Dive Exploration of CSS Concepts. Your Journey to master CSS starts here!
+image: https://css-tip.com/img/explore-css.jpg
 eleventyNavigation:
   key: Explore
   order: 3
