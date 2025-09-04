@@ -11,6 +11,19 @@
 	</author>
 	
 	<entry>
+		<title>The Fundamentals of CSS Alignment</title>
+		<link href="https://css-tip.com/explore/alignment/"/>
+		<updated>2025-09-04T00:00:00Z</updated>
+		<id>https://css-tip.com/explore/alignment/</id>
+		<content type="html"><![CDATA[ <h1>The Fundamentals of CSS Alignment</h1>
+<time datetime="2025-09-04">September 04, 2025</time>
+<p>While centering elements in CSS has become easy over time, there is still a lot of confusion around alignment in general. Let’s be honest, you always end up trying different combinations until it works, but you don’t really understand how it works, right?</p>
+<p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
+<p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
+ <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
 		<title>Circular gallery of rounded images</title>
 		<link href="https://css-tip.com/circular-gallery/"/>
 		<updated>2025-08-19T00:00:00Z</updated>
@@ -873,9 +886,7 @@ and from the bottom <select name="bottom">
 <li>Supports gradient coloration</li>
 <li>Powered by CSS mask</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/ruuEoicEmA-1094.avif 1094w"><source type="image/webp" srcset="/img/ruuEoicEmA-1094.webp 1094w"><img alt="CSS only wavy circles shape" loading="lazy" decoding="async" src="/img/ruuEoicEmA-1094.png" width="1094" height="367"></picture></p>
-<p>Related: <a href="https://css-tip.com/wavy-circle/">css-tip.com/wavy-circle</a></p>
- <p><a href="https://css-tip.com/wavy-circles/">Read more</a></p> ]]></content>
+<p><picture><source type="image/avif" srcset="/img/ruuEoic <p><a href="https://css-tip.com/wavy-circles/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1131,9 +1142,7 @@ and from the bottom <select name="bottom">
 <li>Optimized with CSS variables</li>
 <li>One-click to copy the code</li>
 </ul>
-<p>You can also surprise yourself with <a href="https://random.css-pattern.com">a random CSS Pattern!</a></p>
-<p><a href="https://css-pattern.com"><picture><source type="image/avif" srcset="/img/0OMYAMUTS7-1350.avif 1350w"><source type="image/webp" srcset="/img/0OMYAMUTS7-1350.webp 1350w"><img alt="CSS patterns made with CSS gradients" loading="lazy" decoding="async" src="/img/0OMYAMUTS7-1350.png" width="1350" height="546"></picture></a></p>
- <p><a href="https://css-tip.com/css-pattern/">Read more</a></p> ]]></content>
+<p>You can also surprise yourself with <a href="https://random.css-pattern.co <p><a href="https://css-tip.com/css-pattern/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1214,8 +1223,7 @@ and from the bottom <select name="bottom">
 <li>One click to copy the code</li>
 </ul>
 <p>The modern way to create CSS Shapes</p>
-<p><a href="https://css-shape.com"><picture><source type="image/avif" srcset="/img/2lulFMixSz-1600.avif 1600w"><source type="image/webp" srcset="/img/2lulFMixSz-1600.webp 1600w"><img alt="CSS Shapes The modern way" loading="lazy" decoding="async" src="/img/2lulFMixSz-1600.jpeg" width="1600" height="800"></picture></a></p>
- <p><a href="https://css-tip.com/css-shapes/">Read more</a></p> ]]></content>
+<p><a href="https://css-shape.com"><picture><source type="image/avif" srcset="/img/2lulFMixSz-1600.avif 1600w"><sou <p><a href="https://css-tip.com/css-shapes/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1423,9 +1431,7 @@ and from the bottom <select name="bottom">
 <li>Works with images</li>
 <li>Powered by CSS Mask</li>
 </ul>
-<p><picture><source type="image/avif" srcset="/img/PDiTyOSHYb-781.avif 781w"><source type="image/webp" srcset="/img/PDiTyOSHYb-781.webp 781w"><img alt="CSS-only flower shapes" loading="lazy" decoding="async" src="/img/PDiTyOSHYb-781.png" width="781" height="389"></picture></p>
-<p>More CSS Shapes: <a href="https://css-shape.com">css-shape.com</a></p>
- <p><a href="https://css-tip.com/flower-shape/">Read more</a></p> ]]></content>
+<p><picture><source type="image/avif" srcset="/img/PDiTyOSHYb-781.avif  <p><a href="https://css-tip.com/flower-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1480,9 +1486,7 @@ and from the bottom <select name="bottom">
 <li><code>clip-path</code> (with a 3-point polygon)</li>
 </ul>
 <p>That's it, and it works with any kind of elements including images.</p>
-<p><picture><source type="image/avif" srcset="/img/_IILhUo0EL-859.avif 859w"><source type="image/webp" srcset="/img/_IILhUo0EL-859.webp 859w"><img alt="A diagram showing to create CSS-only triangle shapes" loading="lazy" decoding="async" src="/img/_IILhUo0EL-859.png" width="859" height="502"></picture></p>
-<p>Get the CSS code from: <a href="https://css-generators.com/triangle-shapes/">css-generators.com/triangle-shapes</a></p>
- <p><a href="https://css-tip.com/triangle-shape/">Read more</a></p> ]]></content>
+<p><picture><source type="image/avif" srcset="/img/_IILhUo0EL-859.avif 859w"><source type="image/webp" srcset="/img/_IILhUo0EL-859.webp 859w"> <p><a href="https://css-tip.com/triangle-shape/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
