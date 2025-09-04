@@ -52,7 +52,7 @@ html {
     repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
     radial-gradient(var(--c) 66%,var(--c1) 68% 70%,var(--c) 72%) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
   background-attachment: fixed;
-  font-size: 18px;
+  font-size: 19px;
 }
 @media (prefers-color-scheme: dark) {
 	html {
@@ -61,7 +61,7 @@ html {
 	}
 }
 body {
-	max-width: 1400px;
+	max-width: 1300px;
 	margin: 0 auto;
 	min-height: 100vh;
 	display: grid;
@@ -118,6 +118,7 @@ h1 {
 p {
 	text-wrap: pretty;
 }
+
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
@@ -516,6 +517,10 @@ p.wall__description {
   border-radius: 5px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+code[class*=language-],pre[class*=language-] {
+	line-height: 1.4;
 }
 
 /*html {

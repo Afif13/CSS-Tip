@@ -23,6 +23,10 @@
 		{% ogImage "../_includes/og-image.njk" , { title: title } %}
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="675" />
+		{%- elif tags == "explore" %}
+		{% ogImage "../_includes/og-image-explore.njk" , { title: title } %}
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="675" />
 		{%- else %}
 		<meta property="og:image" content="{{ image or metadata.image }}">
 		<meta property="og:image:width" content="1600" />
@@ -38,6 +42,9 @@
 		  {% include "node_modules/prismjs/themes/prism-okaidia.css" %}
 		  {% include "public/css/prism-diff.css" %}
 		  {% include "public/css/index.css" %}
+		  {%- if tags == "explore" %}
+			  {% include "public/css/explore.css" %}
+		  {%- endif %}
 	  {% endset %}
 		<style>{{ css | cssmin | safe }}</style>
 	</head>

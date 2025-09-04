@@ -13,6 +13,16 @@ permalink: /feed/feed.xml
 	<author>
 		<name>{{ metadata.author.name }}</name>
 	</author>
+	{%- for post in collections.explore | reverse %}
+	{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
+	<entry>
+		<title>{{ post.data.title }}</title>
+		<link href="{{ absolutePostUrl }}"/>
+		<updated>{{ post.date | dateToRfc3339 }}</updated>
+		<id>{{ absolutePostUrl }}</id>
+		<content type="html"><![CDATA[ {{ post.templateContent | excerpt | safe }} <p><a href="{{ absolutePostUrl }}">Read more</a></p> ]]></content>
+	</entry>
+	{%- endfor %}
 	{%- for post in collections.posts | reverse %}
 	{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
 	<entry>

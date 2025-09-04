@@ -14,6 +14,17 @@ permalink: /feed/feed.json
 		"url": "{{ metadata.author.url }}"
 	},
 	"items": [
+		{%- for post in collections.explore | reverse %}
+		{%- set absolutePostUrl = post.url | htmlBaseUrl(metadata.url) %}
+		{
+			"id": "{{ absolutePostUrl }}",
+			"url": "{{ absolutePostUrl }}",
+			"title": "{{ post.data.title }}",
+			"content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | dump | safe }}{% else %}""{% endif %},
+			"date_published": "{{ post.date | dateToRfc3339 }}"
+		}
+		,
+		{%- endfor %}
 		{%- for post in collections.posts | reverse %}
 		{%- set absolutePostUrl = post.url | htmlBaseUrl(metadata.url) %}
 		{

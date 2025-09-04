@@ -119,12 +119,14 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter("excerpt", (post) => {
 	  //const content = post.replace(/(<([^>]+)>)/gi, "");
+	  if(post.indexOf("<details>")!=-1)
+		  return post.substr(0, post.indexOf("<details>"));
 	  if(post.indexOf("<pre ")!=-1)
 		  return post.substr(0, post.indexOf("<pre "));
 		else if(post.indexOf('<p class="codepen"')!=-1)
 		  return post.substr(0, post.indexOf('<p class="codepen"'));
 		else
-			return post;
+			return post.substr(0, 400);
 
 	});
 
