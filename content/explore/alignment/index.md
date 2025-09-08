@@ -3,12 +3,12 @@ layout: layouts/base.njk
 title: The Fundamentals of CSS Alignment
 description: "This deep dive covers everything you need to know about CSS alignment. It's time to stop doing trial and error and finally understand how everything works!"
 date: 2025-09-04
-update: 2025-09-04
+update: 2025-09-08
 tags: explore
 ---
 
 <h1>The Fundamentals of CSS Alignment</h1>
-<time datetime="2025-09-04">September 04, 2025</time>
+<time datetime="2025-09-04">September 04, 2025 <span>(Last updated on September 08, 2025)</span></time>
 
 While centering elements in CSS has become easy over time, there is still a lot of confusion around alignment in general. Let’s be honest, you always end up trying different combinations until it works, but you don’t really understand how it works, right?
 
@@ -793,6 +793,7 @@ Here is a demo where you can adjust the alignment properties as well as the heig
 
 If `height: auto` is specified `align-content` will do nothing since the container height will be the same as the “content” (no free space), and we don’t have a stretch behavior, so `normal` and `stretch` will behave the same as `start`.
 
+And since "content" is always one element inside a block container, `space-around` and `space-evenly` will behave the same as `center`! Yes, you can vertically center the content using `align-content: space-around` or `align-content: space-evenly`. Worth noting that the same applies to flexbox and grid if we have one flex line or one grid cell in the corresponding axis. 
 
 ### What about inline elements?
 
