@@ -523,6 +523,11 @@ code[class*=language-],pre[class*=language-] {
 	line-height: 1.4;
 }
 
+time span {
+	font-weight: 400;
+  margin-inline: 10px;
+}
+
 /*html {
 	view-transition-name: main;
 	background-color: var(--c1);

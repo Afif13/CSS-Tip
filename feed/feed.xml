@@ -16,7 +16,7 @@
 		<updated>2025-09-04T00:00:00Z</updated>
 		<id>https://css-tip.com/explore/alignment/</id>
 		<content type="html"><![CDATA[ <h1>The Fundamentals of CSS Alignment</h1>
-<time datetime="2025-09-04">September 04, 2025</time>
+<time datetime="2025-09-04">September 04, 2025 <span>(Last updated on September 08, 2025)</span></time>
 <p>While centering elements in CSS has become easy over time, there is still a lot of confusion around alignment in general. Let’s be honest, you always end up trying different combinations until it works, but you don’t really understand how it works, right?</p>
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
