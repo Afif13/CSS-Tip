@@ -3,12 +3,12 @@ layout: layouts/base.njk
 title: The Fundamentals of CSS Alignment
 description: "This deep dive covers everything you need to know about CSS alignment. It's time to stop doing trial and error and finally understand how everything works!"
 date: 2025-09-04
-update: 2025-09-08
+update: 2025-09-12
 tags: explore
 ---
 
 <h1>The Fundamentals of CSS Alignment</h1>
-<time datetime="2025-09-04">September 04, 2025 <span>(Last updated on September 08, 2025)</span></time>
+<time datetime="2025-09-12">September 04, 2025 <span>(Last updated on September 12, 2025)</span></time>
 
 While centering elements in CSS has become easy over time, there is still a lot of confusion around alignment in general. Let’s be honest, you always end up trying different combinations until it works, but you don’t really understand how it works, right?
 
@@ -641,7 +641,17 @@ False! We have one flex line, but we can align it using `align-content`. Whateve
   </div>
 </div>
 
+By understanding this mechanism, you unlock a secret way to center an element inside a flex container.
 
+```css
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+}
+```
+
+`place-content` alone centers horizontally because only `justify-content` is considered. `align-content` is ignored until you activate the wrapping.
 
 ### Row or Column?
 
@@ -704,7 +714,7 @@ Exactly! For example, `justify-content` is used to align the flex items horizont
   </div>
 </div>
 
-Do you see why flexbox is harder than grid? Three values of `justify-content` behave the same, `align-content` doesn’t work unless you activate the wrapping, we cannot control the height of the flex lines, and `flex-direction` will flip the whole layout.
+Do you see why flexbox is harder than grid? Three values of `justify-content` behave the same, `justify-items` is ignored, `align-content` doesn’t work unless you activate the wrapping, we cannot control the height of the flex lines, and `flex-direction` will flip the whole layout.
 
 
 <div class="sum">
@@ -794,6 +804,23 @@ Here is a demo where you can adjust the alignment properties as well as the heig
 If `height: auto` is specified `align-content` will do nothing since the container height will be the same as the “content” (no free space), and we don’t have a stretch behavior, so `normal` and `stretch` will behave the same as `start`.
 
 And since "content" is always one element inside a block container, `space-around` and `space-evenly` will behave the same as `center`! Yes, you can vertically center the content using `align-content: space-around` or `align-content: space-evenly`. Worth noting that the same applies to flexbox and grid if we have one flex line or one grid cell in the corresponding axis. 
+
+You have unlocked additional ways to center a single element inside a container!
+
+```css
+.center {
+  display: grid;
+  place-content: space-around | space-evenly;
+}
+```
+
+```css
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: space-around | space-evenly;
+}
+```
 
 ### What about inline elements?
 
