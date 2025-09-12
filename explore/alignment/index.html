@@ -47,7 +47,7 @@
 		</header>
 		<main id="skip">
 			<h1>The Fundamentals of CSS Alignment</h1>
-<time datetime="2025-09-04">September 04, 2025 <span>(Last updated on September 08, 2025)</span></time>
+<time datetime="2025-09-12">September 04, 2025 <span>(Last updated on September 12, 2025)</span></time>
 <p>While centering elements in CSS has become easy over time, there is still a lot of confusion around alignment in general. Let’s be honest, you always end up trying different combinations until it works, but you don’t really understand how it works, right?</p>
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
@@ -569,6 +569,9 @@
       </div>
   </div>
 </div>
+<p>By understanding this mechanism, you unlock a secret way to center an element inside a flex container.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.center</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span><br>  <span class="token property">place-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p><code>place-content</code> alone centers horizontally because only <code>justify-content</code> is considered. <code>align-content</code> is ignored until you activate the wrapping.</p>
 <h3 id="row-or-column" tabindex="-1">Row or Column? <a class="header-anchor" href="#row-or-column">#</a></h3>
 <p>It’s time to talk about <code>flex-direction</code>. As you know, we can either have a row direction (the default configuration) or a column direction. When we change to a column direction, everything is flipped.</p>
 <p><picture><source type="image/avif" srcset="/img/ic8h-LhrF5-983.avif 983w"><source type="image/webp" srcset="/img/ic8h-LhrF5-983.webp 983w"><img alt="row direction vs column direction" loading="lazy" decoding="async" src="/img/ic8h-LhrF5-983.png" width="983" height="513"></picture></p>
@@ -621,7 +624,7 @@
       </div>
   </div>
 </div>
-<p>Do you see why flexbox is harder than grid? Three values of <code>justify-content</code> behave the same, <code>align-content</code> doesn’t work unless you activate the wrapping, we cannot control the height of the flex lines, and <code>flex-direction</code> will flip the whole layout.</p>
+<p>Do you see why flexbox is harder than grid? Three values of <code>justify-content</code> behave the same, <code>justify-items</code> is ignored, <code>align-content</code> doesn’t work unless you activate the wrapping, we cannot control the height of the flex lines, and <code>flex-direction</code> will flip the whole layout.</p>
 <div class="sum">
 <ul>
 <li>We have the <strong>main</strong> and <strong>cross</strong> axes:
@@ -692,6 +695,9 @@
 </div>
 <p>If <code>height: auto</code> is specified <code>align-content</code> will do nothing since the container height will be the same as the “content” (no free space), and we don’t have a stretch behavior, so <code>normal</code> and <code>stretch</code> will behave the same as <code>start</code>.</p>
 <p>And since &quot;content&quot; is always one element inside a block container, <code>space-around</code> and <code>space-evenly</code> will behave the same as <code>center</code>! Yes, you can vertically center the content using <code>align-content: space-around</code> or <code>align-content: space-evenly</code>. Worth noting that the same applies to flexbox and grid if we have one flex line or one grid cell in the corresponding axis.</p>
+<p>You have unlocked additional ways to center a single element inside a container!</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.center</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">place-content</span><span class="token punctuation">:</span> space-around | space-evenly<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.center</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span><br>  <span class="token property">place-content</span><span class="token punctuation">:</span> space-around | space-evenly<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h3 id="what-about-inline-elements" tabindex="-1">What about inline elements? <a class="header-anchor" href="#what-about-inline-elements">#</a></h3>
 <p>When dealing with inline elements, we have two situations. The first situation occurs when a block container contains only inline elements (such as images, text, inputs, inline-block elements, etc.). In this case, since there are no block elements inside, we don’t have “item level” alignment horizontally. We only have “content level” alignment vertically.</p>
 <blockquote data-emo="🤔">So we cannot align inline elements horizontally?!</blockquote>
