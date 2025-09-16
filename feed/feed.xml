@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-08-19T00:00:00Z</updated>
+	<updated>2025-09-16T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,20 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>100 ways to center an element horizontally and vertically</title>
+		<link href="https://css-tip.com/center/"/>
+		<updated>2025-09-16T00:00:00Z</updated>
+		<id>https://css-tip.com/center/</id>
+		<content type="html"><![CDATA[ <p>Centering in CSS is pretty easy nowadays. We have numerous methods to do it, but how many exactly? I did the count, and I was able to reach 100 different ways!</p>
+<p><a href="https://css-generators.com/center/">css-generators.com/center/</a></p>
+<p>The list includes old and obsolete methods (that you should not use), but it was a fun exercise trying to enumerate all the possibilities.</p>
+<h2>Which method should I use?</h2>
+<p>I don't recommend choosing a single method to always use. Instead, consider the layout you are working with and select the appropriate code. It's crucial to understand what each code is doing because not all of them are the same. To help you with this, you can check <a href="https://css-tip.com/explore/alignment/">my exploration to understand the fundamentals of alignment in CSS</a>.</p>
+<p>That being said, here are my favorite methods for centering <strong>a single element horizontally and vertically</strong> for each type of layout.</p>
+ <p><a href="https://css-tip.com/center/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>

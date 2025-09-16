@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>100 ways to center an element horizontally and vertically</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="Explore all the possible ways to center a single element within a container">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/center/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="100 ways to center an element horizontally and vertically">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/center/">
+		<meta property="og:description" content="Explore all the possible ways to center a single element within a container">
+		<meta property="og:image" content="/og-images/45b3298d.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -36,7 +36,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/explore/">Explore</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
@@ -47,123 +47,49 @@
 		</header>
 		<main id="skip">
 			
+<ul class="links-nextprev"><li class="prev"><a href="/circular-gallery/" title="Circular gallery of rounded images">Previous CSS Tip</a></li>
+</ul>
 
-<h1>Learn CSS the easy way</h1>
-<p>Discover a new CSS Trick every day and enhance your web development skills. CSS Tip helps you stay up to date with the latest and modern web features. It takes a few minutes to unlock all the CSS secrets!</p>
-<p>Do you want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Read a random CSS Tip!</a></p>
-<hr>
 
+<h1>100 ways to center an element horizontally and vertically</h1>
+
+<time datetime="2025-09-16">September 16, 2025</time>
+
+<p>Centering in CSS is pretty easy nowadays. We have numerous methods to do it, but how many exactly? I did the count, and I was able to reach 100 different ways!</p>
+<p><a href="https://css-generators.com/center/" target="_blank" rel="noopener">css-generators.com/center/</a></p>
+<p>The list includes old and obsolete methods (that you should not use), but it was a fun exercise trying to enumerate all the possibilities.</p>
+<h2>Which method should I use?</h2>
+<p>I don't recommend choosing a single method to always use. Instead, consider the layout you are working with and select the appropriate code. It's crucial to understand what each code is doing because not all of them are the same. To help you with this, you can check <a href="https://css-tip.com/explore/alignment/" target="_blank" rel="noopener">my exploration to understand the fundamentals of alignment in CSS</a>.</p>
+<p>That being said, here are my favorite methods for centering <strong>a single element horizontally and vertically</strong> for each type of layout.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span> <br>  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span><br>  <span class="token property">align-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>  <span class="token property">justify-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span> <span class="token comment">/* the support is still not good for this one */</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">place-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span><br>  <span class="token property">place-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>One advantage of these methods is that they can also be used to center multiple items (under certain conditions). For this reason, I am considering only the container (and not the item) when defining the alignment properties.</p>
+<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="GgpVweO" data-pen-title="Centering multiple items" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/GgpVweO" target="_blank" rel="noopener">
+  Centering multiple items</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>The flex approach is interesting because it's the only one that places the items horizontally and switches to a vertical configuration when the container is narrowed.</p>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
 
 <ul class="postlist" >
-
-	<li>
-		<a href="/center/" >100 ways to center an element horizontally and vertically</a>
-		<small>Explore all the possible ways to center a single element within a container.</small>
-		<time datetime="2025-09-16">September 16, 2025</time>
-	</li>
-
-	<li>
-		<a href="/circular-gallery/" >Circular gallery of rounded images</a>
-		<small>A fancy gallery of images created with few lines code.</small>
-		<time datetime="2025-08-19">August 19, 2025</time>
-	</li>
-
-	<li>
+  	<li>
 		<a href="/dynamic-queries/" >Dynamic media/container queries using if()</a>
 		<small>Use modern CSS to express media queries and container queries differently.</small>
 		<time datetime="2025-08-14">August 14, 2025</time>
 	</li>
-
-	<li>
+  	<li>
 		<a href="/sequential-animations/" >Sequential animations with N elements</a>
 		<small>A simple CSS code to animate different elements sequentially.</small>
 		<time datetime="2025-08-07">August 07, 2025</time>
 	</li>
-
-	<li>
-		<a href="/logo-marquee/" >Responsive infinite logo marquee</a>
-		<small>Use modern CSS and a few lines of code to create an infinite scroll animation.</small>
-		<time datetime="2025-07-29">July 29, 2025</time>
-	</li>
-
-	<li>
-		<a href="/images-circle/" >How to place images around a circle</a>
-		<small>A simple CSS code to correctly place a set of images (or any elements) around a circle.</small>
-		<time datetime="2025-07-17">July 17, 2025</time>
-	</li>
-
-	<li>
-		<a href="/nth-child/" >Dynamic nth-child() using sibling-index() and if()</a>
-		<small>Use modern CSS to control the arguments of nth-child() and update them on the fly.</small>
-		<time datetime="2025-07-14">July 14, 2025</time>
-	</li>
-
-	<li>
-		<a href="/element-index/" >Get the index of an element within its parent</a>
-		<small>A native CSS function to get the index of an element among its siblings within a parent element.</small>
-		<time datetime="2025-07-10">July 10, 2025</time>
-	</li>
-
-	<li>
-		<a href="/invert-shape/" >Invert CSS Shapes using shape()</a>
-		<small>A simple trick to get the cut-out version of any shape created using shape().</small>
-		<time datetime="2025-07-01">July 01, 2025</time>
-	</li>
-
-	<li>
-		<a href="/dots-loader/" >Dots loader using shape()</a>
-		<small>A classic 3 dots loader created using the new shape().</small>
-		<time datetime="2025-06-24">June 24, 2025</time>
-	</li>
-
-	<li>
-		<a href="/hexagon/" >The future of hexagon shapes</a>
-		<small>A new way to easily create hexagon shapes using corner-shape.</small>
-		<time datetime="2025-06-12">June 12, 2025</time>
-	</li>
-
-	<li>
-		<a href="/safe-align/" >Safe align your content</a>
-		<small>Learn about the keyword &quot;safe&quot; and how to use it.</small>
-		<time datetime="2025-06-10">June 10, 2025</time>
-	</li>
-
-	<li>
-		<a href="/inline-if/" >How to correctly use if() in CSS</a>
-		<small>Learn how to easily fix an issue you will face when using if().</small>
-		<time datetime="2025-06-02">June 02, 2025</time>
-	</li>
-
-	<li>
-		<a href="/broken-image/" >How to style a broken image</a>
-		<small>Give a nice visual touch to images that fail to load.</small>
-		<time datetime="2025-05-22">May 22, 2025</time>
-	</li>
-
-	<li>
-		<a href="/arc-shape-rounded/" >Arc shape with rounded edges</a>
-		<small>A modern way to create arc shapes with rounded edges using minimal code.</small>
-		<time datetime="2025-05-20">May 20, 2025</time>
-	</li>
-
 </ul>
-
-
-
-
-<p>236 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
-<div id="inline-custom"><hr></div>
-
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
-
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
