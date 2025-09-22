@@ -113,7 +113,6 @@ h1 {
   margin: 0.25em 0 .5em;
   font-size: 2.5rem;
   text-wrap: pretty;
-  text-transform: capitalize;
 }
 p {
 	text-wrap: pretty;
@@ -307,7 +306,6 @@ nav {
 	font-weight: 700;
 	padding-right: .5em;
 	text-underline-position: from-font;
-	text-transform: capitalize;
 }
 .postlist a:not(:hover) {
 	text-decoration: none;
