@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Add a gradient overlay using border-image</title>
+		<title>Why :is(::before,::after) doesn&#39;t work?</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="One line of code to add a gradient overlay above your background">
+		<meta name="description" content="Learn why the :is() selector doesn&#39;t work with pseudo-elements">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/gradient-overlay-border-image/" >
+		<link rel=canonical href="https://css-tip.com/is-before-after/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Add a gradient overlay using border-image">
+		<meta property="og:title" content="Why :is(::before,::after) doesn&#39;t work?">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/gradient-overlay-border-image/">
-		<meta property="og:description" content="One line of code to add a gradient overlay above your background">
-		<meta property="og:image" content="/og-images/246ddf30.png" >
+		<meta property="og:url" content="https://css-tip.com/is-before-after/">
+		<meta property="og:description" content="Learn why the :is() selector doesn&#39;t work with pseudo-elements">
+		<meta property="og:image" content="/og-images/08aedde0.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,26 +47,68 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/image-3d-effect/" title="Transform a 2D image into a 3D one">Previous CSS Tip</a></li><li class="next"><a href="/rhombus-image/" title="A Rhombus shape with rounded corners">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/center/" title="100 ways to center an element horizontally and vertically">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Add a gradient overlay using border-image</h1>
+<h1>Why :is(::before,::after) doesn&#39;t work?</h1>
 
-<time datetime="2023-05-18">May 18, 2023</time>
+<time datetime="2025-09-22">September 22, 2025</time>
 
-<p>Do you want to add a gradient overlay above your background but you cannot edit the background property, add an extra element or use pseudo-element?</p>
-<p>You can do it with <code>border-image</code>!</p>
-<p>Only one line of code and you have your overlay 🤩</p>
-<p><picture><source type="image/avif" srcset="/img/JvmFbGjHUO-685.avif 685w"><source type="image/webp" srcset="/img/JvmFbGjHUO-685.webp 685w"><img alt="A gradient overaly above a background" loading="lazy" decoding="async" src="/img/JvmFbGjHUO-685.png" width="685" height="633"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> fill 0<br>    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>#0003<span class="token punctuation">,</span>#000<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* your gradient here */</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="vYbdVjb" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/vYbdVjb" target="_blank" rel="noopener">
-  Gradient Overlay with border-image</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>Related: <a href="https://www.smashingmagazine.com/2024/01/css-border-image-property/" target="_blank" rel="noopener">smashingmagazine.com/2024/01/css-border-image-property/</a></p>
+<p>The functional pseudo-class <code>:is()</code> is ideal for shortening selectors. Take the following example:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container button.large,<br>.container button.small</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* CSS */</span><br><span class="token punctuation">}</span></code></pre>
+<p>We can write it using <code>:is()</code> like below:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container button:is(.large,.small)</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* CSS */</span><br><span class="token punctuation">}</span></code></pre>
+<p>Following the same logic, you may be tempted to write the following selector:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container button:is(::before,::after)</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* CSS */</span><br><span class="token punctuation">}</span></code></pre>
+<p>You select both pseudo-elements of <code>button</code> with one rule. Unfortunately, it won't work because pseudo-elements aren't valid within <code>:is()</code>.</p>
+<h2>What's the Reason?</h2>
+<p>Since <code>:is()</code> is often presented as a way to shorten selectors, many people think that the browser will &quot;expand&quot; the selector before doing the evaluation.</p>
+<p>So The following:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">button:is(.large,.small)</span> <span class="token punctuation">{</span><br><br><span class="token punctuation">}</span></code></pre>
+<p>will first get transformed into:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">button.large,<br>button.small</span> <span class="token punctuation">{</span><br> <br><span class="token punctuation">}</span></code></pre>
+<p>Then we select the elements.</p>
+<p>While the logic appears to work for that particular case (and many others), it doesn't behave that way.</p>
+<p>The <code>:is()</code> part is a pseudo-class that adds a condition to the selection, just like other selectors (such as class selectors, ID selectors, etc.) do. The key is to know how to read the selector, and you will understand why pseudo-elements aren't allowed:</p>
+<ul>
+<li><code>*.small</code>: select any element having the class <code>.small</code>.</li>
+<li><code>.small</code>: The universal selector is implicit; we can remove it.</li>
+<li><code>.small::before</code>: Select the pseudo-element of &quot;any element having the class <code>.small</code>&quot;</li>
+<li><code>:is(.small)</code>: Select any element that matches the selectors inside <code>:is()</code>:
+<ul>
+<li>has the class <code>.small</code>.</li>
+</ul>
+</li>
+<li><code>:is(.small,.large)</code>: Select any element that matches the selectors inside <code>:is()</code>:
+<ul>
+<li>has the class <code>.small</code>. <strong>or</strong></li>
+<li>has the class <code>.large</code>.</li>
+</ul>
+</li>
+<li><code>button:is(.small,.large)</code>: Select any element that is a button <strong>and</strong> match the selectors inside <code>:is()</code>:
+<ul>
+<li>has the class <code>.small</code>. <strong>or</strong></li>
+<li>has the class <code>.large</code>.</li>
+</ul>
+</li>
+<li><code>button:is(::before,::after)</code>: Select any element that is a button <strong>and</strong> match the selectors inside <code>:is()</code>.</li>
+</ul>
+<p>Do you see the issue with the last selector? A button cannot match the selectors because a button cannot be a pseudo-element. The <code>:is()</code> pseudo-class is adding a condition to the selector. It's not selecting what is inside it. You cannot read it as <strong style="color:#cd333f">&quot;select <code>::before</code> and <code>::after</code> of the button element&quot;</strong>. You should read it as <strong style="color:#8A9B0F">&quot;select the button element that matches the selectors inside <code>:is()</code>&quot;</strong>. It won't work because a button cannot be a pseudo-element.</p>
+<h2>What about <code>:is(::before,::after){}</code> ?</h2>
+<p>Even if we don't have a selector before the <code>:is()</code>, the same logic apply because <code>:is(::before,::after)</code> is equivalent to <code>*:is(::before,::after)</code> which means &quot;select any element that match the selectors inside <code>:is()</code>&quot;. It won't work because an element cannot be a pseudo-element.</p>
+<p>You will probably find this a bit confusing and counter-intuitive, but never forget that pseudo-elements aren't allowed inside <code>:is()</code>. The same rule applies to the <code>:not()</code> and <code>:where()</code> pseudo-class.</p>
+<h2>What about <code>button:is(:active,:hover,:focus){}</code> ?</h2>
+<p>That selector is valid because it does make sense if we read it correctly:</p>
+<ul>
+<li>Select any element that is a button <strong>and</strong> match the selectors inside <code>:is()</code>:
+<ul>
+<li>has the focus. <strong>or</strong></li>
+<li>is hovered. <strong>or</strong></li>
+<li>is being activated.</li>
+</ul>
+</li>
+</ul>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -75,24 +117,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/color-reveal-hover-effect/" >Color your image with a sliding hover effect</a>
-		<small>Reveal the color of a black &amp; white image using a simple code.</small>
-		<time datetime="2023-06-06">June 06, 2023</time>
+		<a href="/circular-gallery/" >Circular gallery of rounded images</a>
+		<small>A fancy gallery of images created with few lines code.</small>
+		<time datetime="2025-08-19">August 19, 2025</time>
 	</li>
   	<li>
-		<a href="/3d-shine-effect/" >3D shine effect on hover</a>
-		<small>A fancy 3D effect with a shiny animation on hover.</small>
-		<time datetime="2023-06-01">June 01, 2023</time>
-	</li>
-  	<li>
-		<a href="/3d-parallax-image/" >3D parallax effect on images</a>
-		<small>A fancy 3D hover effect to your image with a simple code.</small>
-		<time datetime="2023-05-16">May 16, 2023</time>
-	</li>
-  	<li>
-		<a href="/folded-ribbon/" >A folded ribbon to the corner</a>
-		<small>Add a folded ribbon to the corner of your element with a simple code.</small>
-		<time datetime="2023-05-12">May 12, 2023</time>
+		<a href="/dynamic-queries/" >Dynamic media/container queries using if()</a>
+		<small>Use modern CSS to express media queries and container queries differently.</small>
+		<time datetime="2025-08-14">August 14, 2025</time>
 	</li>
 </ul>
 		</main>
