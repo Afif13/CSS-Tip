@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Circular gallery of rounded images
+title: Circular Gallery of Rounded Images
 description: A fancy gallery of images created with few lines code
 date: 2025-08-19
 tags: posts

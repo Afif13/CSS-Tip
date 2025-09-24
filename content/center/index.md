@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: 100 ways to center an element horizontally and vertically
+title: 100 Ways to Center an element Horizontally and Vertically
 description: Explore all the possible ways to center a single element within a container
 date: 2025-09-16
 tags: posts

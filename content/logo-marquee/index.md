@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Responsive infinite logo marquee
+title: Responsive Infinite Logo Marquee
 description: Use modern CSS and a few lines of code to create an infinite scroll animation 
 date: 2025-07-29
 tags: posts

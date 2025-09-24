@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Sequential animations with N elements
+title: Sequential Animations with N elements
 description: A simple CSS code to animate different elements sequentially
 date: 2025-08-07
 tags: posts
