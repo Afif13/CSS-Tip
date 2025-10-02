@@ -38,7 +38,7 @@ We can do:
 
 What's the point, you might ask? It allows us to update the value of `A` and `B` on the fly since now they are variables! Something you cannot do using the classic selector.
 
-{% image "./image.png", "Overview of nth-child(An + B)" %}
+{% image "./image.png", "Overview of :nth-child(An + B)" %}
 
 `n` needs to be a **positive integer** (zero included).
 
