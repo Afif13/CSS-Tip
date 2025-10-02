@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Shapes using corner-shape</title>
+		<title>Range Selection using Modern CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Recreate all the common CSS shapes using corner-shape and border-radius">
+		<meta name="description" content="A new way to select elements in a specific range using if() and sibling-index()">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/corner-shape/" >
+		<link rel=canonical href="https://css-tip.com/range-selection/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Shapes using corner-shape">
+		<meta property="og:title" content="Range Selection using Modern CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/corner-shape/">
-		<meta property="og:description" content="Recreate all the common CSS shapes using corner-shape and border-radius">
-		<meta property="og:image" content="/og-images/b89531ff.png" >
+		<meta property="og:url" content="https://css-tip.com/range-selection/">
+		<meta property="og:description" content="A new way to select elements in a specific range using if() and sibling-index()">
+		<meta property="og:image" content="/og-images/bed363cb.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,69 +47,37 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/is-before-after/" title="Why :is(::before,::after) doesn&#39;t work?">Previous CSS Tip</a></li><li class="next"><a href="/3d-box/" title="3D Box using Modern CSS">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/3d-box/" title="3D Box using Modern CSS">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>CSS Shapes using corner-shape</h1>
+<h1>Range Selection using Modern CSS</h1>
 
-<time datetime="2025-09-24">September 24, 2025</time>
+<time datetime="2025-10-02">October 02, 2025</time>
 
-<p>Ready for <a href="https://frontendmasters.com/blog/drawing-css-shapes-using-corner-shape/" target="_blank" rel="noopener">the new <code>corner-shape</code> property</a>? It allows you to manipulate the shape of the corners, and by simply adjusting the <code>border-radius</code>, you can create most of the common CSS shapes.</p>
-<p>You can easily add borders to some shapes as well!</p>
-<p><picture><source type="image/avif" srcset="/img/41EU6bMTR--884.avif 884w"><source type="image/webp" srcset="/img/41EU6bMTR--884.webp 884w"><img alt="CSS-only shapes (triangle, rhombus, hexagon, etc.)" loading="lazy" decoding="async" src="/img/41EU6bMTR--884.png" width="884" height="382"></picture></p>
+<p>Similar to <a href="/nth-child/">the dynamic <code>:nth-child()</code></a>, we can use <a href="/inline-if/">if()</a> and math functions to emulate a range selection.</p>
+<p>Instead of:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/* select any element in the range [X Y] */</span><br><span class="token selector">.container div:nth-child(n + X):nth-child(-n + Y)</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>We can do:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --g</span> <span class="token punctuation">{</span><span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;integer>"</span><span class="token punctuation">;</span><span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token punctuation">}</span><br><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">--X</span><span class="token punctuation">:</span> <span class="token punctuation">;</span><br>  <span class="token property">--Y</span><span class="token punctuation">:</span> <span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container div</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">sign</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--X<span class="token punctuation">)</span> + 1<span class="token punctuation">)</span>*<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--Y<span class="token punctuation">)</span> - <span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> + 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* when --g is equal to 1, the element is selected by :nth-child(n + X):nth-child(-n + Y) */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--g</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Why reinvent the wheel? With this method, you can update the values of X and Y on the fly, since they are now variables! Something you cannot do using a classic selector.</p>
+<p><picture><source type="image/avif" srcset="/img/3HMnLqfewP-936.avif 936w"><source type="image/webp" srcset="/img/3HMnLqfewP-936.webp 936w"><img alt="Overview of :nth-child(n + X):nth-child(-n + Y)" loading="lazy" decoding="async" src="/img/3HMnLqfewP-936.png" width="936" height="206"></picture></p>
+<p><code>n</code> needs to be a <strong>positive integer</strong> (zero included), so <code>(index - X)*(Y - index)</code> needs to be positive as well. The <code>sign()</code> function returns <code>1</code> when the result is positive and <code>-1</code> otherwise. We need to add <code>+ 1</code> to the formula to include zero: <code>(index - X + 1)*(Y - index + 1)</code>.</p>
+<p>In the demo below, update the <code>:nth-child()</code> selector and the variables <code>--X</code> and <code>--Y</code> with the same values to compare the selection.</p>
 <p>⚠️ Limited support (Chrome-only for now) ⚠️</p>
-<h2 id="triangles" tabindex="-1">Triangles <a class="header-anchor" href="#triangles">#</a></h2>
-<p>Isosceles triangles</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.triangle</span> <span class="token punctuation">{</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1/<span class="token function">cos</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%/100% 100% 0 0<span class="token punctuation">;</span> <span class="token comment">/* OR 50%/0 0 100% 100% */</span><br><span class="token punctuation">}</span></code></pre>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.triangle</span> <span class="token punctuation">{</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> <span class="token function">cos</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 0 100% 100% 0/50%<span class="token punctuation">;</span> <span class="token comment">/* OR 100% 0 0 100%/50% */</span><br><span class="token punctuation">}</span></code></pre>
-<p>Right triangles</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.triangle</span> <span class="token punctuation">{</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  border-[top|bottom]-[right|left]<span class="token property">-radius</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="yyNjmLw" data-pen-title="Triangle shapes using corner-shape" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yyNjmLw" target="_blank" rel="noopener">
-  Triangle shapes using corner-shape</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="PwZGyeP" data-pen-title="Range selection using modern CSS" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwZGyeP" target="_blank" rel="noopener">
+  Range selection using modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<h2 id="rhombus" tabindex="-1">Rhombus <a class="header-anchor" href="#rhombus">#</a></h2>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.rhombus</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br><span class="token punctuation">}</span> </code></pre>
-<h2 id="octagon" tabindex="-1">Octagon <a class="header-anchor" href="#octagon">#</a></h2>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.octagon</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100%/<span class="token punctuation">(</span>2 + <span class="token function">sqrt</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="PwqevXP" data-pen-title="Adding border to octagon and rhombus" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwqevXP" target="_blank" rel="noopener">
-  Adding border to octagon and rhombus</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<h2 id="hexagon" tabindex="-1">Hexagon <a class="header-anchor" href="#hexagon">#</a></h2>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.hexagon</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50% / 25%<span class="token punctuation">;</span> <span class="token comment">/* OR 25% / 50% */</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> <span class="token function">cos</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* OR 1/cos(30deg) */</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="yyNjgzR" data-pen-title="Hexagon shapes (with border!)" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/yyNjgzR" target="_blank" rel="noopener">
-  Hexagon shapes (with border!)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<h2 id="trapezoid-and-parallelogram" tabindex="-1">Trapezoid &amp; Parallelogram <a class="header-anchor" href="#trapezoid-and-parallelogram">#</a></h2>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.trapezoid</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 80px / 100% 0 100% 0<span class="token punctuation">;</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.parallelogram</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 80px / 100% 100% 0 0<span class="token punctuation">;</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="WbvJVdW" data-pen-title="Trapezoid &amp;amp; Parallelogram" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/WbvJVdW" target="_blank" rel="noopener">
-  Trapezoid &amp; Parallelogram</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<h2 id="arrow" tabindex="-1">Arrow <a class="header-anchor" href="#arrow">#</a></h2>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.arrow</span> <span class="token punctuation">{</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> notch bevel bevel notch<span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 60% 40% 40% 60%/25% 50% 50% 25%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="WbvyNMM" data-pen-title="Arrow shape" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/WbvyNMM" target="_blank" rel="noopener">
-  Arrow shape</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<h2 id="cube-and-3d-box" tabindex="-1">Cube &amp; 3D box <a class="header-anchor" href="#cube-and-3d-box">#</a></h2>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.cube</span> <span class="token punctuation">{</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span> <span class="token comment">/* control the depth */</span><br>  <br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> 0 <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">corner-shape</span><span class="token punctuation">:</span> bevel<span class="token punctuation">;</span><br>  <span class="token property">border-right</span><span class="token punctuation">:</span>  <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span> solid #0004<span class="token punctuation">;</span><br>  <span class="token property">border-bottom</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span> solid #0008<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #9CC4E4<span class="token punctuation">;</span> <br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="EaPVaMB" data-pen-title="3D box using corner-shape" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/EaPVaMB" target="_blank" rel="noopener">
-  3D box using corner-shape</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>We can also use the function notation and create something easier to use:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@function</span> <span class="token function">--range</span><span class="token punctuation">(</span><span class="token property">--X</span><span class="token punctuation">:</span>1<span class="token punctuation">,</span> <span class="token property">--Y</span><span class="token punctuation">:</span>1<span class="token punctuation">,</span> --_g &lt;integer><span class="token punctuation">:</span> 0<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token property">--_g</span><span class="token punctuation">:</span> <span class="token function">sign</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--X<span class="token punctuation">)</span> + 1<span class="token punctuation">)</span>*<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--Y<span class="token punctuation">)</span> - <span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> + 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">result</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><br><span class="token selector">.container div</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">--range</span><span class="token punctuation">(</span>3<span class="token punctuation">,</span>8<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--g</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="azdmQNr" data-pen-title="Range selection using modern CSS" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/azdmQNr" target="_blank" rel="noopener">
+  Range selection using modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>More CSS Shapes: <a href="https://css-shape.com/" target="_blank" rel="noopener">css-shape.com</a></p>
-
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -117,19 +85,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/range-selection/" >Range Selection using Modern CSS</a>
-		<small>A new way to select elements in a specific range using if() and sibling-index().</small>
-		<time datetime="2025-10-02">October 02, 2025</time>
+		<a href="/corner-shape/" >CSS Shapes using corner-shape</a>
+		<small>Recreate all the common CSS shapes using corner-shape and border-radius.</small>
+		<time datetime="2025-09-24">September 24, 2025</time>
 	</li>
   	<li>
-		<a href="/center/" >100 Ways to Center an element Horizontally and Vertically</a>
-		<small>Explore all the possible ways to center a single element within a container.</small>
-		<time datetime="2025-09-16">September 16, 2025</time>
-	</li>
-  	<li>
-		<a href="/circular-gallery/" >Circular Gallery of Rounded Images</a>
-		<small>A fancy gallery of images created with few lines code.</small>
-		<time datetime="2025-08-19">August 19, 2025</time>
+		<a href="/is-before-after/" >Why :is(::before,::after) doesn&#39;t work?</a>
+		<small>Learn why the :is() selector doesn&#39;t work with pseudo-elements.</small>
+		<time datetime="2025-09-22">September 22, 2025</time>
 	</li>
 </ul>
 		</main>
