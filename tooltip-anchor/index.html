@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>Dynamic Tooltip Position with Anchor Positioning</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="A tootlip that follows its anchor while adjusting the position of its tail">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/tooltip-anchor/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="Dynamic Tooltip Position with Anchor Positioning">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/tooltip-anchor/">
+		<meta property="og:description" content="A tootlip that follows its anchor while adjusting the position of its tail">
+		<meta property="og:image" content="/og-images/af6846c1.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -36,7 +36,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/explore/">Explore</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
@@ -47,123 +47,44 @@
 		</header>
 		<main id="skip">
 			
+<ul class="links-nextprev"><li class="prev"><a href="/range-selection/" title="Range Selection using Modern CSS">Previous CSS Tip</a></li>
+</ul>
 
-<h1>Learn CSS the easy way</h1>
-<p>Discover a new CSS Trick every day and enhance your web development skills. CSS Tip helps you stay up to date with the latest and modern web features. It takes a few minutes to unlock all the CSS secrets!</p>
-<p>Do you want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Read a random CSS Tip!</a></p>
-<hr>
 
+<h1>Dynamic Tooltip Position with Anchor Positioning</h1>
+
+<time datetime="2025-10-06">October 06, 2025</time>
+
+<p>With anchor positioning, we can anchor an element to another and also ensure it remains visible on the screen regardless of the anchor's position. Now, imagine the element you want to anchor is a tooltip. What about its tail? We can also adjust its position to always point to the element.</p>
+<p><picture><source type="image/avif" srcset="/img/CioldAqVRf-940.avif 940w"><source type="image/webp" srcset="/img/CioldAqVRf-940.webp 940w"><img alt="anchor element with its tooltip shape" loading="lazy" decoding="async" src="/img/CioldAqVRf-940.png" width="940" height="230"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">#anchor</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">anchor-name</span><span class="token punctuation">:</span> --anchor<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">#tooltip</span> <span class="token punctuation">{</span><br>  <span class="token property">--distance</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span> <span class="token comment">/* distance between anchor and tooltip  */</span><br>  <span class="token property">--size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span>   <span class="token comment">/* control tail size */</span><br>  <br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span> <br>  <span class="token property">position-anchor</span><span class="token punctuation">:</span> --anchor<span class="token punctuation">;</span><br>  <span class="token comment">/* place tooltip at top */</span><br>  <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">anchor</span><span class="token punctuation">(</span>top<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--distance<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">justify-self</span><span class="token punctuation">:</span> anchor-center<span class="token punctuation">;</span><br>  <span class="token comment">/* if it doesn't fit, fall back to bottom */</span><br>  <span class="token property">position-try-fallbacks</span><span class="token punctuation">:</span> --to-bottom<span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--distance<span class="token punctuation">)</span> 0 0<span class="token punctuation">;</span> <span class="token comment">/* the margin is inherited by the pseudo element, it does nothing here */</span><br>  <span class="token property">anchor-name</span><span class="token punctuation">:</span> --tooltip<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@position-try</span> --to-bottom</span> <span class="token punctuation">{</span><br>  <span class="token property">bottom</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br>  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">anchor</span><span class="token punctuation">(</span>bottom<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--distance<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> 0 0 <span class="token function">var</span><span class="token punctuation">(</span>--distance<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* we update the margin for the pseudo element */</span><br><span class="token punctuation">}</span><br><br><span class="token selector">#tooltip:before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span><span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><br>  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span><br>  <span class="token comment">/* vertical position from tootlip  */</span><br>  <span class="token property">top</span><span class="token punctuation">:</span>    <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">anchor</span><span class="token punctuation">(</span>--tooltip top   <span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--distance<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">anchor</span><span class="token punctuation">(</span>--tooltip bottom<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--distance<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* horizontal position from anchor */</span><br>  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">anchor</span><span class="token punctuation">(</span>--anchor center<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span> <span class="token comment">/* this will do the magic, it will hide either the top or the bottom of the shape */</span><br>  <span class="token comment">/* the arrow shape */</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token comment">/* .... */</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Here is an interactive demo where you can drag the anchor and see how the tooltip behaves:</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="RNrKmpY" data-pen-title="Follow me if you can! (drag the anchor)" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/RNrKmpY" target="_blank" rel="noopener">
+  Follow me if you can! (drag the anchor)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>Click the &quot;debug mode&quot; to understand the trick. Both arrows are always visible, but the margin will update the position to simulate the &quot;hide&quot; effect.</p>
+<p>In case you are wondering, the properties allowed inside <code>@position-try</code> are limited, which is why I need to rely on this hack until we have better support for <a href="https://drafts.csswg.org/css-anchor-position-2/#container-rule-anchored" target="_blank" rel="noopener"><code>anchored queries</code></a>.</p>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
 
 <ul class="postlist" >
-
-	<li>
-		<a href="/tooltip-anchor/" >Dynamic Tooltip Position with Anchor Positioning</a>
-		<small>A tootlip that follows its anchor while adjusting the position of its tail.</small>
-		<time datetime="2025-10-06">October 06, 2025</time>
-	</li>
-
-	<li>
-		<a href="/range-selection/" >Range Selection using Modern CSS</a>
-		<small>A new way to select elements in a specific range using if() and sibling-index().</small>
-		<time datetime="2025-10-02">October 02, 2025</time>
-	</li>
-
-	<li>
+  	<li>
 		<a href="/3d-box/" >3D Box using Modern CSS</a>
 		<small>Combining corner-shape and modern CSS features to create a 3D box.</small>
 		<time datetime="2025-09-27">September 27, 2025</time>
 	</li>
-
-	<li>
+  	<li>
 		<a href="/corner-shape/" >CSS Shapes using corner-shape</a>
 		<small>Recreate all the common CSS shapes using corner-shape and border-radius.</small>
 		<time datetime="2025-09-24">September 24, 2025</time>
 	</li>
-
-	<li>
-		<a href="/is-before-after/" >Why :is(::before,::after) doesn&#39;t work?</a>
-		<small>Learn why the :is() selector doesn&#39;t work with pseudo-elements.</small>
-		<time datetime="2025-09-22">September 22, 2025</time>
-	</li>
-
-	<li>
-		<a href="/center/" >100 Ways to Center an element Horizontally and Vertically</a>
-		<small>Explore all the possible ways to center a single element within a container.</small>
-		<time datetime="2025-09-16">September 16, 2025</time>
-	</li>
-
-	<li>
-		<a href="/circular-gallery/" >Circular Gallery of Rounded Images</a>
-		<small>A fancy gallery of images created with few lines code.</small>
-		<time datetime="2025-08-19">August 19, 2025</time>
-	</li>
-
-	<li>
-		<a href="/dynamic-queries/" >Dynamic media/container queries using if()</a>
-		<small>Use modern CSS to express media queries and container queries differently.</small>
-		<time datetime="2025-08-14">August 14, 2025</time>
-	</li>
-
-	<li>
-		<a href="/sequential-animations/" >Sequential Animations with N elements</a>
-		<small>A simple CSS code to animate different elements sequentially.</small>
-		<time datetime="2025-08-07">August 07, 2025</time>
-	</li>
-
-	<li>
-		<a href="/logo-marquee/" >Responsive Infinite Logo Marquee</a>
-		<small>Use modern CSS and a few lines of code to create an infinite scroll animation.</small>
-		<time datetime="2025-07-29">July 29, 2025</time>
-	</li>
-
-	<li>
-		<a href="/images-circle/" >How to place images around a circle</a>
-		<small>A simple CSS code to correctly place a set of images (or any elements) around a circle.</small>
-		<time datetime="2025-07-17">July 17, 2025</time>
-	</li>
-
-	<li>
-		<a href="/nth-child/" >Dynamic nth-child() using sibling-index() and if()</a>
-		<small>Use modern CSS to control the arguments of nth-child() and update them on the fly.</small>
-		<time datetime="2025-07-14">July 14, 2025</time>
-	</li>
-
-	<li>
-		<a href="/element-index/" >Get the index of an element within its parent</a>
-		<small>A native CSS function to get the index of an element among its siblings within a parent element.</small>
-		<time datetime="2025-07-10">July 10, 2025</time>
-	</li>
-
-	<li>
-		<a href="/invert-shape/" >Invert CSS Shapes using shape()</a>
-		<small>A simple trick to get the cut-out version of any shape created using shape().</small>
-		<time datetime="2025-07-01">July 01, 2025</time>
-	</li>
-
-	<li>
-		<a href="/dots-loader/" >Dots loader using shape()</a>
-		<small>A classic 3 dots loader created using the new shape().</small>
-		<time datetime="2025-06-24">June 24, 2025</time>
-	</li>
-
 </ul>
-
-
-
-
-<p>241 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
-<div id="inline-custom"><hr></div>
-
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
-
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
