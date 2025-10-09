@@ -6,7 +6,7 @@ date: 2025-10-06
 tags: posts
 ---
 
-With anchor positioning, we can anchor an element to another and also ensure it remains visible on the screen regardless of the anchor's position. Now, imagine the element you want to anchor is a tooltip. What about its tail? We can also adjust its position to always point to the element.
+With anchor positioning, we can anchor an element to another and also ensure it remains visible on the screen regardless of the anchor's position. Now, imagine the element you want to anchor is a tooltip. What about its tail? We can also adjust its position to always point to the anchor.
 
 {% image "./image.png", "anchor element with its tooltip shape" %}
 
