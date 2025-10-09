@@ -28,7 +28,7 @@
 		<link href="https://css-tip.com/tooltip-anchor/"/>
 		<updated>2025-10-06T00:00:00Z</updated>
 		<id>https://css-tip.com/tooltip-anchor/</id>
-		<content type="html"><![CDATA[ <p>With anchor positioning, we can anchor an element to another and also ensure it remains visible on the screen regardless of the anchor's position. Now, imagine the element you want to anchor is a tooltip. What about its tail? We can also adjust its position to always point to the element.</p>
+		<content type="html"><![CDATA[ <p>With anchor positioning, we can anchor an element to another and also ensure it remains visible on the screen regardless of the anchor's position. Now, imagine the element you want to anchor is a tooltip. What about its tail? We can also adjust its position to always point to the anchor.</p>
 <p><picture><source type="image/avif" srcset="/img/CioldAqVRf-940.avif 940w"><source type="image/webp" srcset="/img/CioldAqVRf-940.webp 940w"><img alt="anchor element with its tooltip shape" loading="lazy" decoding="async" src="/img/CioldAqVRf-940.png" width="940" height="230"></picture></p>
  <p><a href="https://css-tip.com/tooltip-anchor/">Read more</a></p> ]]></content>
 	</entry>
