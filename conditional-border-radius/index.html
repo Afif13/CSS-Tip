@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Range Selection using Modern CSS</title>
+		<title>Conditional Border Radius with Modern CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A new way to select elements in a specific range using if() and sibling-index()">
+		<meta name="description" content="A simple trick to control the border-radius based on the screen/container size">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/range-selection/" >
+		<link rel=canonical href="https://css-tip.com/conditional-border-radius/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Range Selection using Modern CSS">
+		<meta property="og:title" content="Conditional Border Radius with Modern CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/range-selection/">
-		<meta property="og:description" content="A new way to select elements in a specific range using if() and sibling-index()">
-		<meta property="og:image" content="/og-images/bed363cb.png" >
+		<meta property="og:url" content="https://css-tip.com/conditional-border-radius/">
+		<meta property="og:description" content="A simple trick to control the border-radius based on the screen/container size">
+		<meta property="og:image" content="/og-images/aa39ee67.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,37 +47,27 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/3d-box/" title="3D Box using Modern CSS">Previous CSS Tip</a></li><li class="next"><a href="/tooltip-anchor/" title="Dynamic Tooltip Position with Anchor Positioning">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/tooltip-anchor/" title="Dynamic Tooltip Position with Anchor Positioning">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Range Selection using Modern CSS</h1>
+<h1>Conditional Border Radius with Modern CSS</h1>
 
-<time datetime="2025-10-02">October 02, 2025</time>
+<time datetime="2025-10-10">October 10, 2025</time>
 
-<p>Similar to <a href="/nth-child/">the dynamic <code>:nth-child()</code></a>, we can use <a href="/inline-if/">if()</a> and math functions to emulate a range selection.</p>
-<p>Instead of:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/* select any element in the range [X Y] */</span><br><span class="token selector">.container div:nth-child(n + X):nth-child(-n + Y)</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>We can do:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --g</span> <span class="token punctuation">{</span><span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;integer>"</span><span class="token punctuation">;</span><span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token punctuation">}</span><br><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">--X</span><span class="token punctuation">:</span> <span class="token punctuation">;</span><br>  <span class="token property">--Y</span><span class="token punctuation">:</span> <span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container div</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">sign</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--X<span class="token punctuation">)</span> + 1<span class="token punctuation">)</span>*<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--Y<span class="token punctuation">)</span> - <span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> + 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* when --g is equal to 1, the element is selected by :nth-child(n + X):nth-child(-n + Y) */</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--g</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Why reinvent the wheel? With this method, you can update the values of X and Y on the fly, since they are now variables! Something you cannot do using a classic selector.</p>
-<p><picture><source type="image/avif" srcset="/img/3HMnLqfewP-936.avif 936w"><source type="image/webp" srcset="/img/3HMnLqfewP-936.webp 936w"><img alt="Overview of :nth-child(n + X):nth-child(-n + Y)" loading="lazy" decoding="async" src="/img/3HMnLqfewP-936.png" width="936" height="206"></picture></p>
-<p><code>n</code> needs to be a <strong>positive integer</strong> (zero included), so <code>(index - X)*(Y - index)</code> needs to be positive as well. The <code>sign()</code> function returns <code>1</code> when the result is positive and <code>-1</code> otherwise. We need to add <code>+ 1</code> to the formula to include zero: <code>(index - X + 1)*(Y - index + 1)</code>.</p>
-<p>In the demo below, update the <code>:nth-child()</code> selector and the variables <code>--X</code> and <code>--Y</code> with the same values to compare the selection.</p>
-<p>⚠️ Limited support (Chrome-only for now) ⚠️</p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="PwZGyeP" data-pen-title="Range selection using modern CSS" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwZGyeP" target="_blank" rel="noopener">
-  Range selection using modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>We can also use the function notation and create something easier to use:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@function</span> <span class="token function">--range</span><span class="token punctuation">(</span><span class="token property">--X</span><span class="token punctuation">:</span>1<span class="token punctuation">,</span> <span class="token property">--Y</span><span class="token punctuation">:</span>1<span class="token punctuation">,</span> --_g &lt;integer><span class="token punctuation">:</span> 0<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token property">--_g</span><span class="token punctuation">:</span> <span class="token function">sign</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--X<span class="token punctuation">)</span> + 1<span class="token punctuation">)</span>*<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--Y<span class="token punctuation">)</span> - <span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> + 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">result</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--_g<span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><br><span class="token selector">.container div</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> <span class="token function">--range</span><span class="token punctuation">(</span>3<span class="token punctuation">,</span>8<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--g</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="azdmQNr" data-pen-title="Range selection using modern CSS" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/azdmQNr" target="_blank" rel="noopener">
-  Range selection using modern CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Toggle the value of <code>border-radius</code> based on the container/screen size using a simple line of code.</p>
+<p><picture><source type="image/avif" srcset="/img/-1PLg1vC0Q-1060.avif 1060w"><source type="image/webp" srcset="/img/-1PLg1vC0Q-1060.webp 1060w"><img alt="Conditional Border Radius with CSS" loading="lazy" decoding="async" src="/img/-1PLg1vC0Q-1060.png" width="1060" height="273"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sign</span><span class="token punctuation">(</span>100cqi - 100%<span class="token punctuation">)</span>*2rem<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>The default value is equal to <code>2rem</code>. When the element is full width (its width equals the container width), the radius is set to <code>0</code>. <code>100cqi</code> will fallback to <code>100vw</code> (screen width) if no container is defined.</p>
+<p>Resize the screen or the container in the demo below to see the result:</p>
+<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="zxrwVPP" data-pen-title="Conditional Border Radius" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zxrwVPP" target="_blank" rel="noopener">
+  Conditional Border Radius</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>Related: <a href="https://ishadeed.com/article/conditional-border-radius/" target="_blank" rel="noopener">ishadeed.com/article/conditional-border-radius</a></p>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -85,19 +75,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/conditional-border-radius/" >Conditional Border Radius with Modern CSS</a>
-		<small>A simple trick to control the border-radius based on the screen/container size.</small>
-		<time datetime="2025-10-10">October 10, 2025</time>
+		<a href="/range-selection/" >Range Selection using Modern CSS</a>
+		<small>A new way to select elements in a specific range using if() and sibling-index().</small>
+		<time datetime="2025-10-02">October 02, 2025</time>
 	</li>
   	<li>
-		<a href="/corner-shape/" >CSS Shapes using corner-shape</a>
-		<small>Recreate all the common CSS shapes using corner-shape and border-radius.</small>
-		<time datetime="2025-09-24">September 24, 2025</time>
-	</li>
-  	<li>
-		<a href="/is-before-after/" >Why :is(::before,::after) doesn&#39;t work?</a>
-		<small>Learn why the :is() selector doesn&#39;t work with pseudo-elements.</small>
-		<time datetime="2025-09-22">September 22, 2025</time>
+		<a href="/3d-box/" >3D Box using Modern CSS</a>
+		<small>Combining corner-shape and modern CSS features to create a 3D box.</small>
+		<time datetime="2025-09-27">September 27, 2025</time>
 	</li>
 </ul>
 		</main>
