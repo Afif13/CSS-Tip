@@ -24,15 +24,9 @@ With anchor positioning, we can anchor an element to another and also ensure it 
   /* place tooltip at top */
   bottom: calc(anchor(top) + var(--distance));
   justify-self: anchor-center;
-  /* if it doesn't fit, fall back to bottom */
-  position-try-fallbacks: --to-bottom;
-  margin: var(--distance) 0 0; /* the margin is inherited by the pseudo element, it does nothing here */
+  margin-top: var(--distance); /* the margin is inherited by the pseudo element, it does nothing here */
+  position-try-fallbacks: flip-block; /* if it doesn't fit, fall back to bottom (this will flip the margin as well) */
   anchor-name: --tooltip;
-}
-@position-try --to-bottom {
-  bottom: auto;
-  top: calc(anchor(bottom) + var(--distance));
-  margin: 0 0 var(--distance); /* we update the margin for the pseudo element */
 }
 
 #tooltip:before {
