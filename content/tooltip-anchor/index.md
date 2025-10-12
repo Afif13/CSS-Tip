@@ -16,30 +16,30 @@ With anchor positioning, we can anchor an element to another and also ensure it 
   anchor-name: --anchor;
 }
 #tooltip {
-  --distance: 1em; /* distance between anchor and tooltip  */
-  --size: 1.2em;   /* control tail size */
+  --d: 1em;  /* distance between anchor and tooltip  */
+  --s: 1.2em; /* tail size */
   
   position: absolute; 
   position-anchor: --anchor;
   /* place tooltip at top */
-  bottom: calc(anchor(top) + var(--distance));
-  justify-self: anchor-center;
-  margin-top: var(--distance); /* the margin is inherited by the pseudo element, it does nothing here */
-  position-try-fallbacks: flip-block; /* if it doesn't fit, fall back to bottom (this will flip the margin as well) */
+  position-area: top;
+  bottom: var(--d);
+  margin-top: var(--d); /* the margin is inherited by the pseudo element, it does nothing here */
+  /* if it doesn't fit on the top, fall back to bottom (this will flip the margin as well) */
+  position-try-fallbacks: flip-block; 
   anchor-name: --tooltip;
 }
-
 #tooltip:before {
   content:"";
   position: fixed;
   z-index: -1;
-  width: var(--size);
+  width: var(--s);
   background: inherit;
   /* vertical position from tootlip  */
-  top:    calc(anchor(--tooltip top   ) - var(--distance));
-  bottom: calc(anchor(--tooltip bottom) - var(--distance));
+  top:    calc(anchor(--tooltip top   ) - var(--d));
+  bottom: calc(anchor(--tooltip bottom) - var(--d));
   /* horizontal position from anchor */
-  left: calc(anchor(--anchor center) - var(--size)/2);
+  left: calc(anchor(--anchor center) - var(--s)/2);
   margin: inherit; /* this will do the magic, it will hide either the top or the bottom of the shape */
   /* the arrow shape */
   clip-path: /* .... */;
@@ -57,5 +57,3 @@ Here is an interactive demo where you can drag the anchor and see how the toolti
 
 
 Click the "debug mode" to understand the trick. Both arrows are always visible, but the margin will update the position to simulate the "hide" effect. 
-
-In case you are wondering, the properties allowed inside `@position-try` are limited, which is why I need to rely on this hack until we have better support for [`anchored queries`](https://drafts.csswg.org/css-anchor-position-2/#container-rule-anchored).
