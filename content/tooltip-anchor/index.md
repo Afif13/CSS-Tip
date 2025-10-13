@@ -29,6 +29,7 @@ With anchor positioning, we can anchor an element to another and also ensure it 
   position-try-fallbacks: flip-block; 
   anchor-name: --tooltip;
 }
+/* the tail */
 #tooltip:before {
   content:"";
   position: fixed;
@@ -42,7 +43,7 @@ With anchor positioning, we can anchor an element to another and also ensure it 
   left: calc(anchor(--anchor center) - var(--s)/2);
   margin: inherit; /* this will do the magic, it will hide either the top or the bottom of the shape */
   /* the arrow shape */
-  clip-path: /* .... */;
+  clip-path: polygon(50% .2em,100% var(--d),100% calc(100% - var(--d)),50% calc(100% - .2em),0 calc(100% - var(--d)),0 var(--d));
 }
 ```
 
