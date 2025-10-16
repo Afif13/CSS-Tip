@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Dynamic Tooltip Position with Anchor Positioning II</title>
+		<title>Alignment in Anchor Positioning using position-area</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A tootlip that finds the best position to remain visible all the time">
+		<meta name="description" content="An interactive demo to understand how to control the alignment using the position-area property">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/tooltip-anchor-2/" >
+		<link rel=canonical href="https://css-tip.com/position-area/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Dynamic Tooltip Position with Anchor Positioning II">
+		<meta property="og:title" content="Alignment in Anchor Positioning using position-area">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/tooltip-anchor-2/">
-		<meta property="og:description" content="A tootlip that finds the best position to remain visible all the time">
-		<meta property="og:image" content="/og-images/1e248b9a.png" >
+		<meta property="og:url" content="https://css-tip.com/position-area/">
+		<meta property="og:description" content="An interactive demo to understand how to control the alignment using the position-area property">
+		<meta property="og:image" content="/og-images/72383bea.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,25 +47,319 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/conditional-border-radius/" title="Conditional Border Radius with Modern CSS">Previous CSS Tip</a></li><li class="next"><a href="/position-area/" title="Alignment in Anchor Positioning using position-area">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/tooltip-anchor-2/" title="Dynamic Tooltip Position with Anchor Positioning II">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Dynamic Tooltip Position with Anchor Positioning II</h1>
+<h1>Alignment in Anchor Positioning using position-area</h1>
 
-<time datetime="2025-10-13">October 13, 2025</time>
+<time datetime="2025-10-15">October 15, 2025</time>
 
-<p>In <a href="/tooltip-anchor/">the previous post</a>, we created a tooltip that flips between two positions to remain visible. It's either on the top or the bottom. We can adjust the code to do the same with four positions (top, bottom, left, and right). And whatever the position of the tooltip, the tail will always point to the anchor.</p>
-<p><picture><source type="image/avif" srcset="/img/8ZlJM560Y0-897.avif 897w"><source type="image/webp" srcset="/img/8ZlJM560Y0-897.webp 897w"><img alt="anchor element with its tooltip shape" loading="lazy" decoding="async" src="/img/8ZlJM560Y0-897.png" width="897" height="320"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">#anchor</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">anchor-name</span><span class="token punctuation">:</span> --anchor<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">#tooltip</span> <span class="token punctuation">{</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>  <span class="token comment">/* distance between anchor and tooltip */</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> .8em<span class="token punctuation">;</span> <span class="token comment">/* tail size */</span><br>  <br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span> <br>  <span class="token property">position-anchor</span><span class="token punctuation">:</span> --anchor<span class="token punctuation">;</span><br>  <span class="token comment">/* we place the tooltip at the top */</span><br>  <span class="token property">position-area</span><span class="token punctuation">:</span> top<span class="token punctuation">;</span><br>  <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token comment">/* If top is not available with flip to bottom, <br>     else if bottom is not available, we move to left, <br>     else if left is not available, we move to right  */</span><br>  <span class="token property">position-try-fallbacks</span><span class="token punctuation">:</span> flip-block<span class="token punctuation">,</span>--flip-left<span class="token punctuation">,</span>--flip-right<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@position-try</span> --flip-left</span> <span class="token punctuation">{</span><br>  <span class="token property">position-area</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span><br>  <span class="token property">right</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin-right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@position-try</span> --flip-right</span> <span class="token punctuation">{</span><br>  <span class="token property">position-area</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span><br>  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin-left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token comment">/* the tail */</span><br><span class="token selector">#tooltip:before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span><span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span><br>  <span class="token property">inset</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>-1*<span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span> <span class="token comment">/* the margin will do the magic and only show one part of the shape */</span><br>  <span class="token comment">/* the shape of the 4 arrows with one clip-path */</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span>50% .2em<span class="token punctuation">,</span><span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - .2em<span class="token punctuation">)</span> 50%<span class="token punctuation">,</span><span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>50% <span class="token function">calc</span><span class="token punctuation">(</span>100% - .2em<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% + <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> .2em 50%<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">)</span><br>  <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></code></pre>
-<p>Here is an interactive demo where you can drag the anchor and see how the tooltip behaves:</p>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="QwyMrvG" data-pen-title="Follow me if you can! (drag the anchor)" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/QwyMrvG" target="_blank" rel="noopener">
-  Follow me if you can! (drag the anchor)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>If you click on &quot;debug mode&quot; you can see the global shape created with the pseudo-element that contains the four arrows.</p>
+<p>The <code>position-area</code> property allows you to control the placement of an absolutely positioned element relative to its anchor box. It considers a 3x3 grid defined by the <strong>containing block</strong> of the absolutely positioned element and the <strong>edges</strong> of the anchor box.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.anchor</span> <span class="token punctuation">{</span><br>  <span class="token property">anchor-name</span><span class="token punctuation">:</span> --a<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.element</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">position-anchor</span><span class="token punctuation">:</span> --a<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p><picture><source type="image/avif" srcset="/img/GYA0z71b7j-1195.avif 1195w"><source type="image/webp" srcset="/img/GYA0z71b7j-1195.webp 1195w"><img alt="Overview of the position-area grid" loading="lazy" decoding="async" src="/img/GYA0z71b7j-1195.png" width="1195" height="480"></picture></p>
+<p>You can select an area that consists of one or more adjacent cells of the grid. That area becomes the <strong>new containing block</strong> of the absolutely positioned element where it's aligned.</p>
+<p>Here is an interactive demo where you can select an area from among all 36 possibilities and get its code. You can also drag the anchor element and see how the grid behaves.</p>
+<style>
+  .demo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-height: 600px;
+    margin-block: 2em;
+  }
+  .demo form {
+    width: 250px;
+    flex-grow: 1;
+    padding-right: 10px;
+    contain: size;
+    overflow: auto;
+    min-height: 220px;
+  }
+  .demo form p {
+    margin: .5em 0;
+  }
+  .demo .result {
+    flex-grow: 1;
+    width: 500px;
+    min-height: 500px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  .demo .container {
+    position: relative;
+    border: 3px dashed;
+  }
+  .demo .container .anchor {
+    position: absolute;
+    anchor-name: --a;
+    left: 50%;
+    top: 30%;
+    background: #ddd;
+    padding: .5rem;
+    user-select: none;
+    font-size: 3em;
+    cursor: move;
+  }
+  .demo .container .box {
+    position: absolute;
+    position-anchor: --a;
+    padding: .5em;
+    font-weight: bold;
+    place-self: stretch;
+    background: lightblue;
+    opacity: .8;
+    pointer-events: none;
+  }
+  .demo .container l:before {
+    content: "";
+    position: absolute;
+    inset-block: min(0px,anchor(--a start)) min(0px,anchor(--a end));
+    inset-inline: anchor(--a start) anchor(--a end);
+    border-inline: 2px dashed #f92672;
+    pointer-events: none;
+  }
+  .demo .container l:after {
+    content: "";
+    position: absolute;
+    inset-inline: min(0px,anchor(--a start)) min(0px,anchor(--a end));
+    inset-block: anchor(--a start) anchor(--a end);
+    border-block: 2px dashed #f92672;
+    pointer-events: none;
+  }
+  .demo pre[class*=language-] {
+    margin: .5em 0;
+    padding: .5em;
+  }
+  form p {
+    font-weight: bold;
+  }
+  .demo label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+  }
+  select {
+    font: inherit;
+  }
+  .demo input {
+    width: 20px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    margin: 0;
+  }
+  form label:after {
+    content: "";
+    width: 46px;
+    aspect-ratio: 1;
+    border: 1px solid;
+    --c:,conic-gradient(lightblue 0 0) no-repeat;
+    background: 
+     conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0) -1px -1px/calc((100% + 2px)/3) calc((100% + 2px)/3)
+     var(--b,);
+  }
+  form .one,
+  form .two {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+  }
+  :nth-child(1 of .one) label:nth-child(1):after {--b:var(--c) 0    0/16px 16px}
+  :nth-child(1 of .one) label:nth-child(2):after {--b:var(--c) 50%  0/16px 16px}
+  :nth-child(1 of .one) label:nth-child(3):after {--b:var(--c) 100% 0/16px 16px}
+  :nth-child(1 of .one) label:nth-child(4):after {--b:var(--c) 0 50% /16px 16px}
+  :nth-child(1 of .one) label:nth-child(5):after {--b:var(--c) 50%   /16px 16px}
+  :nth-child(1 of .one) label:nth-child(6):after {--b:var(--c) 100% 50%/16px 16px}
+  :nth-child(1 of .one) label:nth-child(7):after {--b:var(--c) 0 100%/16px 16px}
+  :nth-child(1 of .one) label:nth-child(8):after {--b:var(--c) 50% 100%/16px 16px}
+  :nth-child(1 of .one) label:nth-child(9):after {--b:var(--c) 100% 100%/16px 16px}
+
+  :nth-child(2 of .one) label:nth-child(1):after {--b:var(--c) 0    0/32px 16px}
+  :nth-child(2 of .one) label:nth-child(2):after {--b:var(--c) 0  50%/32px 16px}
+  :nth-child(2 of .one) label:nth-child(3):after {--b:var(--c) 0 100%/32px 16px}
+  :nth-child(2 of .one) label:nth-child(4):after {--b:var(--c) 100% 0/32px 16px}
+  :nth-child(2 of .one) label:nth-child(5):after {--b:var(--c) 100% 50%/32px 16px}
+  :nth-child(2 of .one) label:nth-child(6):after {--b:var(--c) 100% 100%/32px 16px}
+  :nth-child(2 of .one) label:nth-child(7):after {--b:var(--c) 0 0/16px 32px}
+  :nth-child(2 of .one) label:nth-child(8):after {--b:var(--c) 50% 0/16px 32px}
+  :nth-child(2 of .one) label:nth-child(9):after {--b:var(--c) 100% 0/16px 32px}
+  :nth-child(2 of .one) label:nth-child(10):after {--b:var(--c) 0 100%/16px 32px}
+  :nth-child(2 of .one) label:nth-child(11):after {--b:var(--c) 50% 100%/16px 32px}
+  :nth-child(2 of .one) label:nth-child(12):after {--b:var(--c) 100% 100%/16px 32px}
+
+  :nth-child(3 of .one) label:nth-child(1):after {--b:var(--c) 0 0/48px 16px}
+  :nth-child(3 of .one) label:nth-child(2):after {--b:var(--c) 50%/48px 16px}
+  :nth-child(3 of .one) label:nth-child(3):after {--b:var(--c) 0 100%/48px 16px}
+  :nth-child(3 of .one) label:nth-child(4):after {--b:var(--c) 0/16px 48px}
+  :nth-child(3 of .one) label:nth-child(5):after {--b:var(--c) 50%/16px 48px}
+  :nth-child(3 of .one) label:nth-child(6):after {--b:var(--c) 100%/16px 48px}
+
+  :nth-child(1 of .two) label:nth-child(1):after {--b:var(--c) 0 0/32px 32px}
+  :nth-child(1 of .two) label:nth-child(2):after {--b:var(--c) 100% 0/32px 32px}
+  :nth-child(1 of .two) label:nth-child(3):after {--b:var(--c) 0 100%/32px 32px}
+  :nth-child(1 of .two) label:nth-child(4):after {--b:var(--c) 100% 100%/32px 32px}
+
+  :nth-child(2 of .two) label:nth-child(1):after {--b:var(--c) 0 0/100% 32px}
+  :nth-child(2 of .two) label:nth-child(2):after {--b:var(--c) 100% 100%/100% 32px}
+  :nth-child(2 of .two) label:nth-child(3):after {--b:var(--c) 0/32px 100%}
+  :nth-child(2 of .two) label:nth-child(4):after {--b:var(--c) 100%/32px 100%}
+
+  :nth-child(4 of .one) label:nth-child(1):after {--b:var(--c) 0/100% 100%}
+</style>
+<div class=demo>
+  <form>
+    <p>1 Cell</p>
+    <div class="one">
+      <label><input type="radio" name="area" value="top left" checked></label>
+      <label><input type="radio" name="area" value="top center"></label>
+      <label><input type="radio" name="area" value="top right"></label>
+      <label><input type="radio" name="area" value="center left"></label>
+      <label><input type="radio" name="area" value="center"></label>
+      <label><input type="radio" name="area" value="center right"></label>
+      <label><input type="radio" name="area" value="bottom left"></label>
+      <label><input type="radio" name="area" value="bottom center"></label>
+      <label><input type="radio" name="area" value="bottom right"></label>
+    </div>
+    <p>2 Cells</p>
+    <div class="one">
+      <label><input type="radio" name="area" value="top span-left"></label>
+      <label><input type="radio" name="area" value="center span-left"></label>
+      <label><input type="radio" name="area" value="bottom span-left"></label>
+      <label><input type="radio" name="area" value="top span-right"></label>
+      <label><input type="radio" name="area" value="center span-right"></label>
+      <label><input type="radio" name="area" value="bottom span-right"></label>
+      <label><input type="radio" name="area" value="span-top left"></label>
+      <label><input type="radio" name="area" value="span-top center"></label>
+      <label><input type="radio" name="area" value="span-top right"></label>
+      <label><input type="radio" name="area" value="span-bottom left"></label>
+      <label><input type="radio" name="area" value="span-bottom center"></label>
+      <label><input type="radio" name="area" value="span-bottom right"></label>
+    </div>
+    <p>3 Cells</p>
+    <div class="one">
+      <label><input type="radio" name="area" value="top"></label>
+      <label><input type="radio" name="area" value="center span-all"></label>
+      <label><input type="radio" name="area" value="bottom"></label>
+      <label><input type="radio" name="area" value="left"></label>
+      <label><input type="radio" name="area" value="span-all center"></label>
+      <label><input type="radio" name="area" value="right"></label>
+    </div>
+    <p>4 Cells</p>
+    <div class="two">
+      <label><input type="radio" name="area" value="span-top span-left"></label>
+      <label><input type="radio" name="area" value="span-top span-right"></label>
+      <label><input type="radio" name="area" value="span-bottom span-left"></label>
+      <label><input type="radio" name="area" value="span-bottom span-right"></label>
+    </div>
+    <p>6 Cells</p>
+    <div class="two">
+      <label><input type="radio" name="area" value="span-top"></label>
+      <label><input type="radio" name="area" value="span-bottom"></label>
+      <label><input type="radio" name="area" value="span-left"></label>
+      <label><input type="radio" name="area" value="span-right"></label>
+    </div>
+    <p>9 Cells</p>
+    <div class="one">
+      <label><input type="radio" name="area" value="span-all"></label>
+    </div>
+  </form>
+  <div class="result">
+    <div class="container">
+      <div class="anchor">⚓️</div>
+      <div class="box" style="position-area: top left;place-self: stretch;">CSS Is Awesome</div>
+      <l></l>
+    </div>
+    <pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span>
+  <span class="token property">position-area</span><span class="token punctuation">:</span> <span class="selected-value">top left</span><span class="token punctuation">;</span>
+  <span class="token property">justify-self</span><span class="token punctuation">:</span> <select data-element=".box" data-property="justify-self"><option value="normal">normal</option><option value="stretch" selected>stretch</option><option value="start">start</option><option value="center">center</option><option value="end">end</option></select><span class="token punctuation">;</span>
+  <span class="token property">align-self</span><span class="token punctuation">:</span> <select data-element=".box" data-property="align-self"><option value="normal">normal</option><option value="stretch" selected>stretch</option><option value="start">start</option><option value="center">center</option><option value="end">end</option></select><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+    <label><input type="checkbox" name="logical"> Switch to logical values</label>
+  </div>
+</div>
+<script>
+const anchor = document.querySelector('.demo .anchor');
+const c = document.querySelector('.demo .container');
+let isDragging = false;
+let offsetX, offsetY;
+
+anchor.addEventListener('mousedown', (e) => {
+  isDragging = true; 
+  const rect = anchor.getBoundingClientRect();
+  offsetX = e.clientX - rect.left;
+  offsetY = e.clientY - rect.top;
+  
+  anchor.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  
+  const r = c.getBoundingClientRect();
+  anchor.style.left = (e.clientX - offsetX - r.left) + 'px';
+  anchor.style.top = (e.clientY - offsetY - r.top) + 'px';
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  anchor.style.cursor = 'move';
+});
+
+document.querySelector('form').addEventListener('input', function() {
+  let val = document.querySelector('[name="area"]:checked').value;
+  let log = document.querySelector('[name="logical"]').checked;
+
+  if(log) {
+    if(val == "top")
+      val = "block-start";
+    if(val == "bottom")
+      val = "block-end";
+    if(val == "left")
+      val = "inline-start";
+    if(val == "right")
+      val = "inline-end";
+
+    if(val == "span-top")
+      val = "span-y-start";
+    if(val == "span-bottom")
+      val = "span-y-end";
+    if(val == "span-left")
+      val = "span-x-start";
+    if(val == "span-right")
+      val = "span-x-end";
+    val = val.replace("top","start").replace("left","start").replace("bottom","end").replace("right","end");
+    if(val == "start start")
+      val = "start";
+    if(val == "end end")
+      val = "end";
+    if(val == "span-start span-start")
+      val = "span-start";
+    if(val == "span-end span-end")
+      val = "span-end";
+  }
+
+  document.querySelector('.demo .box').style.positionArea = val;
+  document.querySelector('.demo .selected-value').innerHTML = val;
+});
+
+document.querySelector('[name="logical"]').addEventListener('change', function() {
+  document.querySelector('form').dispatchEvent(new Event('input'));
+});
+
+let all_select = document.querySelectorAll(".demo select");
+
+for (let i=0;i<all_select.length;i++) {
+  all_select[i].addEventListener("change", function(e) {
+    e.target.closest(".demo").querySelector(e.target.dataset.element).style.setProperty(e.target.dataset.property,e.target.value)
+  })
+}
+
+</script>
+<p>I am using a stretch alignment to illustrate the different areas, but you can change it to place the element wherever you want within the selected area.</p>
+<p>The <code>normal</code> value is the default value and has an interesting behavior. It places the element as close as possible to the anchor, which is what you will want in 90% of cases, so you will rarely need to update the alignment.</p>
+<p>More details about alignment: <a href="/explore/alignment/">The Fundamentals of CSS Alignment</a></p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -74,14 +368,14 @@
 
 <ul class="postlist" >
   	<li>
+		<a href="/conditional-border-radius/" >Conditional Border Radius with Modern CSS</a>
+		<small>A simple trick to control the border-radius based on the screen/container size.</small>
+		<time datetime="2025-10-10">October 10, 2025</time>
+	</li>
+  	<li>
 		<a href="/tooltip-anchor/" >Dynamic Tooltip Position with Anchor Positioning</a>
 		<small>A tootlip that follows its anchor while adjusting the position of its tail.</small>
 		<time datetime="2025-10-06">October 06, 2025</time>
-	</li>
-  	<li>
-		<a href="/range-selection/" >Range Selection using Modern CSS</a>
-		<small>A new way to select elements in a specific range using if() and sibling-index().</small>
-		<time datetime="2025-10-02">October 02, 2025</time>
 	</li>
 </ul>
 		</main>
