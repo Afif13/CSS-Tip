@@ -26,7 +26,7 @@ With anchor positioning, we can anchor an element to another and also ensure it 
   bottom: var(--d);
   margin-top: var(--d); /* the margin is inherited by the pseudo element, it does nothing here */
   /* if it doesn't fit on the top, fall back to bottom (this will flip the margin as well) */
-  position-try-fallbacks: flip-block; 
+  position-try: flip-block; 
   anchor-name: --tooltip;
 }
 /* the tail */
