@@ -26,11 +26,10 @@ In [the previous post](/tooltip-anchor/), we created a tooltip that flips betwee
   bottom: var(--d);
   margin: var(--d);
   margin-bottom: 0;
-  position-try: flip-block,flip-start --size,flip-start flip-inline --size;
+  position-try: flip-block,--size flip-start,--size flip-start flip-inline;
 }
 @position-try --size {
   min-height: 12em; /* this is a min-width! */
-  min-width: 0;
 }
 #tooltip:before {
   content:"";
