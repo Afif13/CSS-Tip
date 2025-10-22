@@ -21,35 +21,17 @@ In [the previous post](/tooltip-anchor/), we created a tooltip that flips betwee
   
   position: absolute; 
   position-anchor: --anchor;
-  min-width: 10em;
-  /* we place the tooltip at the top */
   position-area: top;
   justify-self: unsafe anchor-center;
   bottom: var(--d);
   margin: var(--d);
   margin-bottom: 0;
-  /* If top is not available with flip to bottom, 
-     else if bottom is not available, we move to left, 
-     else if left is not available, we move to right  */
-  position-try: flip-block,--left,--right;
+  position-try: flip-block,flip-start --size,flip-start flip-inline --size;
 }
-@position-try --left {
-  position-area: left;
-  justify-self: normal;
-  align-self: unsafe anchor-center;
-  right: var(--d);
-  margin: var(--d);
-  margin-right: 0;
+@position-try --size {
+  min-height: 12em; /* this is a min-width! */
+  min-width: 0;
 }
-@position-try --right {
-  position-area: right;
-  justify-self: normal;
-  align-self: unsafe anchor-center;
-  left: var(--d);
-  margin: var(--d);
-  margin-left: 0;
-}
-/* the tail */
 #tooltip:before {
   content:"";
   position: absolute;
@@ -97,7 +79,6 @@ The code can be simplified to the below if you don't want a `min-width` restrict
   margin-bottom: 0;
   position-try: flip-block,flip-start,flip-start flip-inline;
 }
-
 #tooltip:before {
   content:"";
   position: absolute;
