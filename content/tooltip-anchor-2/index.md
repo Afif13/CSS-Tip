@@ -24,6 +24,7 @@ In [the previous post](/tooltip-anchor/), we created a tooltip that flips betwee
   min-width: 10em;
   /* we place the tooltip at the top */
   position-area: top;
+  justify-self: unsafe anchor-center;
   bottom: var(--d);
   margin: var(--d);
   margin-bottom: 0;
@@ -34,12 +35,16 @@ In [the previous post](/tooltip-anchor/), we created a tooltip that flips betwee
 }
 @position-try --left {
   position-area: left;
+  justify-self: normal;
+  align-self: unsafe anchor-center;
   right: var(--d);
   margin: var(--d);
   margin-right: 0;
 }
 @position-try --right {
   position-area: right;
+  justify-self: normal;
+  align-self: unsafe anchor-center;
   left: var(--d);
   margin: var(--d);
   margin-left: 0;
@@ -86,6 +91,7 @@ The code can be simplified to the below if you don't want a `min-width` restrict
   position: absolute; 
   position-anchor: --anchor;
   position-area: top;
+  justify-self: unsafe anchor-center;
   bottom: var(--d);
   margin: var(--d);
   margin-bottom: 0;

@@ -237,8 +237,8 @@ Here is an interactive demo where you can select an area from among all 36 possi
     </div>
     <pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span>
   <span class="token property">position-area</span><span class="token punctuation">:</span> <span class="selected-value">top left</span><span class="token punctuation">;</span>
-  <span class="token property">justify-self</span><span class="token punctuation">:</span> <select data-element=".box" data-property="justify-self"><option value="normal">normal</option><option value="stretch" selected>stretch</option><option value="start">start</option><option value="center">center</option><option value="end">end</option></select><span class="token punctuation">;</span>
-  <span class="token property">align-self</span><span class="token punctuation">:</span> <select data-element=".box" data-property="align-self"><option value="normal">normal</option><option value="stretch" selected>stretch</option><option value="start">start</option><option value="center">center</option><option value="end">end</option></select><span class="token punctuation">;</span>
+  <span class="token property">justify-self</span><span class="token punctuation">:</span> <select data-element=".box" data-property="justify-self"><option value="normal">normal</option><option value="anchor-center">anchor-center</option><option value="stretch" selected>stretch</option><option value="start">start</option><option value="center">center</option><option value="end">end</option></select><span class="token punctuation">;</span>
+  <span class="token property">align-self</span><span class="token punctuation">:</span> <select data-element=".box" data-property="align-self"><option value="normal">normal</option><option value="anchor-center">anchor-center</option><option value="stretch" selected>stretch</option><option value="start">start</option><option value="center">center</option><option value="end">end</option></select><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
     <label><input type="checkbox" name="logical"> Switch to logical values</label>
   </div>
@@ -326,5 +326,11 @@ for (let i=0;i<all_select.length;i++) {
 I am using a stretch alignment to illustrate the different areas, but you can change it to place the element wherever you want within the selected area. 
 
 The `normal` value is the default value and has an interesting behavior. It places the element as close as possible to the anchor, which is what you will want in 90% of cases, so you will rarely need to update the alignment.
+
+The `anchor-center` is a special value different from `center`. `center` cosniders the center of the selected area while `anchor-center` considers the center of the anchor in the relevant axis. 
+
+{% image "./image2.png", "Center vs anchor-center" %}
+
+`anchor-center` is a [safe alignment value](/safe-align/). If centering is not possible, the element will shift to remain within the selected area. 
 
 More details about alignment: [The Fundamentals of CSS Alignment](/explore/alignment/)
