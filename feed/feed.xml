@@ -1105,9 +1105,8 @@ and from the bottom <select name="bottom">
 		<link href="https://css-tip.com/screen-dimension/"/>
 		<updated>2024-07-16T00:00:00Z</updated>
 		<id>https://css-tip.com/screen-dimension/</id>
-		<content type="html"><![CDATA[ <p>Get the screen width and height as pixel values using a few lines of CSS.</p>
+		<content type="html"><![CDATA[ <p>Get the screen width and height as pixel values using a simple CSS code.</p>
 <ul>
-<li>Powered by <code>@property</code> &amp; trigonometric functions</li>
 <li>Unitless values so you can easily use them inside any formula</li>
 <li>Updates on screen resize (No need for JavaScript)</li>
 </ul>
