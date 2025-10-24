@@ -6,11 +6,32 @@ date: 2024-07-16
 tags: posts
 ---
 
-Get the screen width and height as pixel values using a few lines of CSS.
-* Powered by `@property` & trigonometric functions
+Get the screen width and height as pixel values using a simple CSS code.
 * Unitless values so you can easily use them inside any formula
 * Updates on screen resize (No need for JavaScript)
 
+```css
+:root {
+  --w: calc(100vw/1px); /* screen width  */
+  --h: calc(100vh/1px); /* screen height */
+  /*  The result is an integer without a unit! */
+}
+```
+
+Resize the demo below to see how the values update in real-time:
+
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="NPxMEqG" data-pen-title="Screen width/height (CSS-only)" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/NPxMEqG">
+  Screen width/height (CSS-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+
+You can also [get the width/height of any element using a different method](/element-dimension/)
+
+----
+
+Another method with better support:
 
 ```css
 @property --_w {
@@ -24,13 +45,12 @@ Get the screen width and height as pixel values using a few lines of CSS.
   initial-value: 100vh; 
 }
 :root {
-  --w: tan(atan2(var(--_w),1px)); /* screen width */
-  --h: tan(atan2(var(--_h),1px)); /* screen height*/
+  --w: tan(atan2(var(--_w),1px)); /* screen width  */
+  --h: tan(atan2(var(--_h),1px)); /* screen height */
   /* The result is an integer without unit  */
 }
 ```
 
-Resize the below demo to see how the values update in real-time:
 
 <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="ExBVLBW" data-pen-title="Screen width/Screen height (CSS-only)" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/ExBVLBW">
@@ -40,5 +60,3 @@ Resize the below demo to see how the values update in real-time:
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 More detail: [dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j](https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j)
-
-You can also [get the width/height of any element using a different method](/element-dimension/)

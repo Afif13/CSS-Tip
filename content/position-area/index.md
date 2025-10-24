@@ -327,7 +327,7 @@ I am using a stretch alignment to illustrate the different areas, but you can ch
 
 The `normal` value is the default value and has an interesting behavior. It places the element as close as possible to the anchor, which is what you will want in 90% of cases, so you will rarely need to update the alignment.
 
-The `anchor-center` is a special value different from `center`. `center` cosniders the center of the selected area while `anchor-center` considers the center of the anchor in the relevant axis. 
+The `anchor-center` is a special value different from `center`. `center` considers the center of the selected area, while `anchor-center` considers the center of the anchor in the relevant axis. 
 
 {% image "./image2.png", "Center vs anchor-center" %}
 
