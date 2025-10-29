@@ -21,40 +21,23 @@ Here is another idea of implementation (after the [first](/tooltip-anchor/) and 
   
   position: absolute;
   border-radius: var(--s);
-  min-width: 10em;
   position-anchor: --anchor;
   position-area: top left;
   margin: var(--d);
-  position-try: flip-inline,flip-block,flip-block flip-inline; 
-  anchor-name: --tooltip;
-  clip-path: inset(calc(-1*var(--d)));
+  position-try: flip-inline,flip-block,flip-block flip-inline;
+  clip-path: inset(0) margin-box;
 }
 
-#tooltip:before,
-#tooltip:after {
+#tooltip:before {
   content: "";
   position: fixed;
-  --_m: calc((sqrt(2) - 1)*var(--s));
-  width:  calc(anchor-size(--tooltip width)  + var(--d) - var(--_m));
-  height: calc(anchor-size(--tooltip height) + var(--d) - var(--_m));
-  z-index: -1;
+  position-area: center;
+  width:  calc(anchor-size(width) +  2*(var(--d) + var(--s)));
+  height: calc(anchor-size(height) + 2*(var(--d) + var(--s)));
   background: inherit;
+  z-index: -1;
   position-anchor: --anchor;
-  position-try: flip-block flip-inline;
-}
-#tooltip:before {
-  position-area: top left;
-  margin: calc(var(--_m) + var(--d)) 0 0 calc(var(--_m) + var(--d));
-  clip-path: polygon(
-    var(--d) calc(var(--s) + var(--d)),0 0,calc(var(--s) + var(--d)) var(--d),
-    calc(100% - var(--d)) calc(100% - var(--d) - var(--s)),100% 100%,calc(100% - var(--d) - var(--s)) calc(100% - var(--d)))
-}
-#tooltip:after {
-  position-area: top right;
-  margin: calc(var(--_m) + var(--d)) calc(var(--_m) + var(--d)) 0 0;
-  clip-path: polygon(
-    var(--d) calc(100% - var(--s) - var(--d)),0 100%,calc(var(--s) + var(--d)) calc(100% - var(--d)),
-    calc(100% - var(--d)) calc(var(--d) + var(--s)),100% 0,calc(100% - var(--d) - var(--s)) var(--d))
+  clip-path: polygon(0 0,0 100%,100% 100%,100% 0,0 0,var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s) - var(--d)) calc(var(--d) + var(--s)),100% var(--s),100% calc(100% - var(--s)), calc(100% - var(--s) - var(--d)) calc(100% - var(--s) - var(--d)),calc(100% - var(--s)) 100%,var(--s) 100%,calc(var(--s) + var(--d)) calc(100% - var(--s) - var(--d)),0 calc(100% - var(--s)), 0 var(--s),calc(var(--s) + var(--d)) calc(var(--s) + var(--d)),var(--s) 0);
 }
 ```
 
