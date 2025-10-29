@@ -17,14 +17,14 @@ Here is another idea of implementation (after the [first](/tooltip-anchor/) and 
 }
 #tooltip {
   --d: .5em; /* distance between anchor and tooltip */
-  --s: .8em; /* tail size */
+  --s: .8em; /* tail size & border radius */
   
-  position: absolute; 
+  position: absolute;
+  border-radius: var(--s);
+  min-width: 10em;
   position-anchor: --anchor;
   position-area: top left;
-  --_m: calc(var(--d) + (sqrt(2) - 1)*var(--s));
-  margin: var(--_m) 0 0 var(--_m);
-  inset: 0 var(--d) var(--d) 0;
+  margin: var(--d);
   position-try: flip-inline,flip-block,flip-block flip-inline; 
   anchor-name: --tooltip;
   clip-path: inset(calc(-1*var(--d)));
@@ -32,24 +32,26 @@ Here is another idea of implementation (after the [first](/tooltip-anchor/) and 
 
 #tooltip:before,
 #tooltip:after {
-  content:"";
+  content: "";
   position: fixed;
-  width: anchor-size(--tooltip width);
-  height: anchor-size(--tooltip height);
+  --_m: calc((sqrt(2) - 1)*var(--s));
+  width:  calc(anchor-size(--tooltip width)  + var(--d) - var(--_m));
+  height: calc(anchor-size(--tooltip height) + var(--d) - var(--_m));
   z-index: -1;
   background: inherit;
   position-anchor: --anchor;
-  margin: inherit;
-  position-try: flip-inline flip-block;
+  position-try: flip-block flip-inline;
 }
 #tooltip:before {
   position-area: top left;
+  margin: calc(var(--_m) + var(--d)) 0 0 calc(var(--_m) + var(--d));
   clip-path: polygon(
     var(--d) calc(var(--s) + var(--d)),0 0,calc(var(--s) + var(--d)) var(--d),
     calc(100% - var(--d)) calc(100% - var(--d) - var(--s)),100% 100%,calc(100% - var(--d) - var(--s)) calc(100% - var(--d)))
 }
 #tooltip:after {
   position-area: top right;
+  margin: calc(var(--_m) + var(--d)) calc(var(--_m) + var(--d)) 0 0;
   clip-path: polygon(
     var(--d) calc(100% - var(--s) - var(--d)),0 100%,calc(var(--s) + var(--d)) calc(100% - var(--d)),
     calc(100% - var(--d)) calc(var(--d) + var(--s)),100% 0,calc(100% - var(--d) - var(--s)) var(--d))
