@@ -17,7 +17,7 @@ Do you want to detect if an element is having an overflow or if it's scrollable?
 }
 .box { /* the concerned element */
   overflow: auto; /* or hidden */
-  scroll-timeline: --scroll;
+  scroll-timeline: --scroll y; /* OR --scroll x for horizontal overflow */
 }
 @keyframes --scroll {
   0%,to{--scroll: 1;}
@@ -38,13 +38,51 @@ Resize the `.box` element in the demo below and see the magic! (chrome only for 
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
+You can also combine the detection of both horizontal and vertical scrolling:
+
+```css
+:root {
+  timeline-scope: --scroll-x,--scroll-y;
+  animation: --scroll-x forwards,--scroll-y forwards;
+  animation-timeline: --scroll-x, --scroll-y;
+  container-name: --scroll;
+}
+.box { /* the concerned element */
+  overflow: auto; /* or hidden */
+  scroll-timeline: --scroll-x x,--scroll-y y;
+}
+@keyframes --scroll-x {
+  0%,to{--scroll-x: 1;}
+}
+@keyframes --scroll-y {
+  0%,to{--scroll-y: 1;}
+}
+@container --scroll style(--scroll-x: 1) {
+ /* The CSS when .box is overflowing horizontally */
+}
+@container --scroll style(--scroll-y: 1) {
+ /* The CSS when .box is overflowing vertically */
+}
+@container --scroll style(--scroll-x: 1) and (style(--scroll-y: 1)) {
+ /* The CSS when .box is overflowing horizontally AND vertically */
+}
+```
+
+<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="jEWeOzN" data-pen-title="Overflow detection using only CSS" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/jEWeOzN">
+  Overflow detection using only CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+---
+
 The use of style query is not mandatory and you can have a simpler version if you want to target the concerned element.
 
 ```css
 .box {
   overflow: auto; /* or hidden */
   animation: scrolling forwards;
-  animation-timeline: scroll(self);
+  animation-timeline: scroll(y self); /* OR scroll(x self) for horizontal overflow  */
 }
 @keyframes scrolling {
   0%,to{
@@ -61,7 +99,8 @@ Or a child element
 }
 .box .child {
   animation: scrolling forwards;
-  animation-timeline: scroll(); /* it will consider the ancestor having overflow: auto/hidden  */
+  /* it will consider the ancestor having overflow: auto/hidden  */
+  animation-timeline: scroll(y); /* or scroll(x) for horizontal scroll */ 
 }
 @keyframes scrolling {
   0%,to{
