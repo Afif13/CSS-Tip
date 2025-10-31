@@ -50,5 +50,5 @@ Here is an interactive demo where you can drag the anchor and see how the toolti
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-Click "debug mode" To see how both pseudo-elements are creating the tails.
+
 
