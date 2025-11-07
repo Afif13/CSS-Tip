@@ -8,6 +8,11 @@ tags: posts
 
 Create a custom range slider with a tooltip showing the selected value. There is no JS to update the values, it's pure CSS with minimal HTML!
 
+Powered by modern CSS features:
+* Scroll-Driven Animations
+* Anchor Positioning
+* `@property` & CSS variables
+
 {% image "./image.png", "CSS-only range slider with tooltip" %}
 
 ```html
@@ -17,12 +22,6 @@ Create a custom range slider with a tooltip showing the selected value. There is
   <output for="one" style="--min: 0;--max: 120"></output>
 </label>
 ```
-
-Powered by modern CSS features:
-* Scroll-Driven Animations
-* Anchor Positioning
-* `@property` & CSS variables
-
 
 The support for the tooltip feature is still limited (chrome-only for now) but the range slider works fine in all the browsers.
 
