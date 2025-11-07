@@ -55,7 +55,7 @@
 
 <time datetime="2025-11-07">November 07, 2025</time>
 
-<p>Replace the default focus ring with a stylish one that travels between the elements as you navigate with your keyboard. A funny experiment* using <a href="/position-area/">Anchor Positioning</a>.</p>
+<p>Replace the default focus ring with a stylish one that travels between the elements as you navigate with your keyboard. A funny experiment using <a href="/position-area/">Anchor Positioning</a>.</p>
 <pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html::after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><br>  <span class="token property">position-anchor</span><span class="token punctuation">:</span> --focus<span class="token punctuation">;</span><br>  <span class="token property">inset</span><span class="token punctuation">:</span> <span class="token function">anchor</span><span class="token punctuation">(</span>inside<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">outline</span><span class="token punctuation">:</span> 2px solid darkred<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .4s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">*:focus-visible</span> <span class="token punctuation">{</span><br>  <span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><br>  <span class="token property">anchor-name</span><span class="token punctuation">:</span> --focus<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <p>Use Tab to navigate the demo below:</p>
 <p class="codepen" data-height="800" data-default-tab="result" data-slug-hash="ByjgRgM" data-pen-title="Universal focus (use tab to navigate)" data-preview="true" data-user="t_afif" style="height: 800px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -64,7 +64,7 @@
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>* To use with caution or not to use at all.</p>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
