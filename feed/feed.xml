@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-10-20T00:00:00Z</updated>
+	<updated>2025-11-07T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,15 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>The Universal Focus Ring</title>
+		<link href="https://css-tip.com/universal-focus/"/>
+		<updated>2025-11-07T00:00:00Z</updated>
+		<id>https://css-tip.com/universal-focus/</id>
+		<content type="html"><![CDATA[ <p>Replace the default focus ring with a stylish one that travels between the elements as you navigate with your keyboard. A funny experiment* using <a href="/position-area/">Anchor Positioning</a>.</p>
+ <p><a href="https://css-tip.com/universal-focus/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1196,13 +1205,13 @@ and from the bottom <select name="bottom">
 		<updated>2024-06-11T00:00:00Z</updated>
 		<id>https://css-tip.com/range-slider-tooltip-2/</id>
 		<content type="html"><![CDATA[ <p>After <a href="/range-slider-tooltip/">the previous concept</a>, here is another idea of range slider. The tooltip will adjust its shape to stay within the boundaries of the slider. Even the radius will adjust when the tail get closer to the corners.</p>
-<p><picture><source type="image/avif" srcset="/img/B-TqBYV8ob-580.avif 580w"><source type="image/webp" srcset="/img/B-TqBYV8ob-580.webp 580w"><img alt="CSS-only range slider with tooltip" loading="lazy" decoding="async" src="/img/B-TqBYV8ob-580.png" width="580" height="276"></picture></p>
 <p>Powered by modern CSS features:</p>
 <ul>
 <li>Scroll-Driven animations</li>
 <li>Anchor Positioning</li>
 <li><code>@property</code> &amp; CSS variables</li>
 </ul>
+<p><picture><source type="image/avif" srcset="/img/B-TqBYV8ob-580.avif 580w"><source type="image/webp" srcset="/img/B-TqBYV8ob-580.webp 580w"><img alt="CSS-only range slider with tooltip" loading="lazy" decoding="async" src="/img/B-TqBYV8ob-580.png" width="580" height="276"></picture></p>
  <p><a href="https://css-tip.com/range-slider-tooltip-2/">Read more</a></p> ]]></content>
 	</entry>
 	
@@ -1221,6 +1230,12 @@ and from the bottom <select name="bottom">
 		<updated>2024-06-04T00:00:00Z</updated>
 		<id>https://css-tip.com/range-slider-tooltip/</id>
 		<content type="html"><![CDATA[ <p>Create a custom range slider with a tooltip showing the selected value. There is no JS to update the values, it's pure CSS with minimal HTML!</p>
+<p>Powered by modern CSS features:</p>
+<ul>
+<li>Scroll-Driven Animations</li>
+<li>Anchor Positioning</li>
+<li><code>@property</code> &amp; CSS variables</li>
+</ul>
 <p><picture><source type="image/avif" srcset="/img/aEqFiCZTu3-639.avif 639w"><source type="image/webp" srcset="/img/aEqFiCZTu3-639.webp 639w"><img alt="CSS-only range slider with tooltip" loading="lazy" decoding="async" src="/img/aEqFiCZTu3-639.png" width="639" height="338"></picture></p>
  <p><a href="https://css-tip.com/range-slider-tooltip/">Read more</a></p> ]]></content>
 	</entry>
