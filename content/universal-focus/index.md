@@ -6,7 +6,7 @@ date: 2025-11-07
 tags: posts
 ---
 
-Replace the default focus ring with a stylish one that travels between the elements as you navigate with your keyboard. A funny experiment* using [Anchor Positioning](/position-area/).
+Replace the default focus ring with a stylish one that travels between the elements as you navigate with your keyboard. A funny experiment using [Anchor Positioning](/position-area/).
 
 ```css
 html::after {
@@ -31,5 +31,3 @@ Use Tab to navigate the demo below:
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-
-<p>* To use with caution or not to use at all.</p>
