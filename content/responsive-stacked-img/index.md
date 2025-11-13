@@ -22,7 +22,7 @@ Using modern CSS and a few lines of code to create a responsive list of stacked 
 .container img {
   width: var(--s);
   border-radius: 50%;
-  --_m: calc((100cqw - sibling-count()*var(--s))/(sibling-count() - 1));
+  --_m: min((100cqw - sibling-count()*var(--s))/(sibling-count() - 1),var(--g));
   margin-right: var(--_m);
   mask: radial-gradient(50% 50% at var(--_r,calc(150% + var(--_m))),
     #0000 calc(100% - 1px + var(--g)),#000 calc(100% + var(--g)));
