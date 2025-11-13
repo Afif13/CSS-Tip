@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-11-07T00:00:00Z</updated>
+	<updated>2025-11-13T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,16 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Responsive List of Stacked/Overlapping Images</title>
+		<link href="https://css-tip.com/responsive-stacked-img/"/>
+		<updated>2025-11-13T00:00:00Z</updated>
+		<id>https://css-tip.com/responsive-stacked-img/</id>
+		<content type="html"><![CDATA[ <p>Using modern CSS and a few lines of code to create a responsive list of stacked images. The overlap between the images will adjust automatically based on the number of items and the available space. No hardcoded values, no magic numbers, and the gap is transparent!</p>
+<p><picture><source type="image/avif" srcset="/img/x9Wvyg6Oz6-1009.avif 1009w"><source type="image/webp" srcset="/img/x9Wvyg6Oz6-1009.webp 1009w"><img alt="CSS-only responsive stacked images" loading="lazy" decoding="async" src="/img/x9Wvyg6Oz6-1009.png" width="1009" height="324"></picture></p>
+ <p><a href="https://css-tip.com/responsive-stacked-img/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
