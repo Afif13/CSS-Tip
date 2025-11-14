@@ -46,5 +46,12 @@ Resize the demo below to see how the image behaves:
   Responsive Stacked/Overlapping images</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
 
+Another version with a hover effect to expand the images. Notice how the hover effect only works when there is an overlap.
+
+<p class="codepen" data-height="650" data-default-tab="result" data-slug-hash="VYavBwN" data-pen-title="Responsive Stacked/Overlapping images with hover" data-preview="true" data-user="t_afif" style="height: 650px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/VYavBwN">
+  Responsive Stacked/Overlapping images with hover</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
