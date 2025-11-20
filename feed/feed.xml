@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-11-18T00:00:00Z</updated>
+	<updated>2025-11-20T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,16 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Dynamic Tooltip Position with Anchor Positioning IV</title>
+		<link href="https://css-tip.com/tooltip-anchor-4/"/>
+		<updated>2025-11-20T00:00:00Z</updated>
+		<id>https://css-tip.com/tooltip-anchor-4/</id>
+		<content type="html"><![CDATA[ <p>Another demo using Anchor Positioning and Tooltips. This time, the tail will have a stretchy behavior when the tooltip gets closer to the edges.</p>
+<p><picture><source type="image/avif" srcset="/img/Yo_GFCvIDD-992.avif 992w"><source type="image/webp" srcset="/img/Yo_GFCvIDD-992.webp 992w"><img alt="CSS-only tooltip with stretchy arrow" loading="lazy" decoding="async" src="/img/Yo_GFCvIDD-992.png" width="992" height="202"></picture></p>
+ <p><a href="https://css-tip.com/tooltip-anchor-4/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
