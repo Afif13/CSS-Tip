@@ -29,7 +29,7 @@ Building on the idea from [the previous post](/responsive-stacked-img/), I creat
   --_r: min(50cqw - var(--s)/2,(var(--s) + var(--g))/(2*sin(.5turn/sibling-count())));
   --_i: calc(1turn*sibling-index()/sibling-count() + var(--_ii,0deg));
   --_j: calc(1turn*(sibling-index() + 1)/sibling-count() + var(--_jj,0deg));
-  --_a: max(2*asin((var(--s) + var(--g))/(2*var(--_r))) - 1turn/sibling-count(),0deg);
+  --_a: calc(2*asin((var(--s) + var(--g))/(2*var(--_r))) - 1turn/sibling-count());
   transform: rotate(calc(-1*var(--_i))) translate(var(--_r)) rotate(var(--_i));
   mask: radial-gradient(50% 50% at 
     calc(50% + var(--_r)*(cos(var(--_j)) - cos(var(--_i))))
@@ -38,8 +38,8 @@ Building on the idea from [the previous post](/responsive-stacked-img/), I creat
   transition: --_i .3s linear,--_j .3s linear;
 }
 .container.reverse img {
-  --_j: calc(1turn*(sibling-index() - 1)/sibling-count() + var(--_jj,0deg));
-  --_a: min(1turn/sibling-count() - 2*asin((var(--s) + var(--g))/(2*var(--_d))),0deg);
+  --_i: calc(1turn*sibling-index()/sibling-count() - var(--_ii,0deg));
+  --_j: calc(1turn*(sibling-index() - 1)/sibling-count() - var(--_jj,0deg));
 }
 .container:has(:hover) img {
   --_ii: var(--_a);
