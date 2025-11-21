@@ -26,14 +26,14 @@ Building on the idea from [the previous post](/responsive-stacked-img/), I creat
   width: var(--s);
   border-radius: 50%;
   cursor: pointer;
-  --_d: min(50cqw - var(--s)/2,(var(--s) + var(--g))/(2*sin(.5turn/sibling-count())));
+  --_r: min(50cqw - var(--s)/2,(var(--s) + var(--g))/(2*sin(.5turn/sibling-count())));
   --_i: calc(1turn*sibling-index()/sibling-count() + var(--_ii,0deg));
   --_j: calc(1turn*(sibling-index() + 1)/sibling-count() + var(--_jj,0deg));
-  --_a: max(2*asin((var(--s) + var(--g))/(2*var(--_d))) - 1turn/sibling-count(),0deg);
-  transform: rotate(calc(-1*var(--_i))) translate(var(--_d)) rotate(var(--_i));
+  --_a: max(2*asin((var(--s) + var(--g))/(2*var(--_r))) - 1turn/sibling-count(),0deg);
+  transform: rotate(calc(-1*var(--_i))) translate(var(--_r)) rotate(var(--_i));
   mask: radial-gradient(50% 50% at 
-    calc(50% + var(--_d)*(cos(var(--_j)) - cos(var(--_i))))
-    calc(50% + var(--_d)*(sin(var(--_i)) - sin(var(--_j)))),
+    calc(50% + var(--_r)*(cos(var(--_j)) - cos(var(--_i))))
+    calc(50% + var(--_r)*(sin(var(--_i)) - sin(var(--_j)))),
      #0000 calc(100% - 1px + var(--g)),#000 calc(100% + var(--g)));
   transition: --_i .3s linear,--_j .3s linear;
 }
