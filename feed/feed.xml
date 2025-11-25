@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-11-20T00:00:00Z</updated>
+	<updated>2025-11-25T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,16 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Direction-Aware Arrow Shape using corner-shape</title>
+		<link href="https://css-tip.com/arrow/"/>
+		<updated>2025-11-25T00:00:00Z</updated>
+		<id>https://css-tip.com/arrow/</id>
+		<content type="html"><![CDATA[ <p>We can use <a href="/corner-shape/">the new <code>corner-shape</code> to draw different CSS Shapes</a>. And since it relies on <code>border-radius</code>, we can use the logical properties to create a direction-aware arrow that adjusts based on both the direction and the writing mode.</p>
+<p><picture><source type="image/avif" srcset="/img/a9dtcAMtLx-777.avif 777w"><source type="image/webp" srcset="/img/a9dtcAMtLx-777.webp 777w"><img alt="CSS-only direction-aware arrow shape" loading="lazy" decoding="async" src="/img/a9dtcAMtLx-777.png" width="777" height="290"></picture></p>
+ <p><a href="https://css-tip.com/arrow/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
