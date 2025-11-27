@@ -29,7 +29,7 @@
 		<updated>2025-11-27T00:00:00Z</updated>
 		<id>https://css-tip.com/direction-aware-shapes/</id>
 		<content type="html"><![CDATA[ <p>Building on <a href="/arrow/">the previous idea</a>, here is a more generic piece of code to make any CSS shape direction-aware. It relies on a few lines of well-supported CSS code.</p>
-<p><picture><source type="image/avif" srcset="/img/OyscbU8u0L-1023.avif 1023w"><source type="image/webp" srcset="/img/OyscbU8u0L-1023.webp 1023w"><img alt="Direct-aware CSS-only shapes" loading="lazy" decoding="async" src="/img/OyscbU8u0L-1023.png" width="1023" height="217"></picture></p>
+<p><picture><source type="image/avif" srcset="/img/gYAHXQNuO8-1006.avif 1006w"><source type="image/webp" srcset="/img/gYAHXQNuO8-1006.webp 1006w"><img alt="Direct-aware CSS-only shapes" loading="lazy" decoding="async" src="/img/gYAHXQNuO8-1006.png" width="1006" height="197"></picture></p>
  <p><a href="https://css-tip.com/direction-aware-shapes/">Read more</a></p> ]]></content>
 	</entry>
 	
