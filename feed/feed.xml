@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-11-25T00:00:00Z</updated>
+	<updated>2025-11-27T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,16 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Direction-Aware CSS Shapes</title>
+		<link href="https://css-tip.com/direction-aware-shapes/"/>
+		<updated>2025-11-27T00:00:00Z</updated>
+		<id>https://css-tip.com/direction-aware-shapes/</id>
+		<content type="html"><![CDATA[ <p>Building on <a href="/arrow/">the previous idea</a>, here is a more generic piece of code to make any CSS shape direction-aware. It relies on a few lines of well-supported CSS code.</p>
+<p><picture><source type="image/avif" srcset="/img/OyscbU8u0L-1023.avif 1023w"><source type="image/webp" srcset="/img/OyscbU8u0L-1023.webp 1023w"><img alt="Direct-aware CSS-only shapes" loading="lazy" decoding="async" src="/img/OyscbU8u0L-1023.png" width="1023" height="217"></picture></p>
+ <p><a href="https://css-tip.com/direction-aware-shapes/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
