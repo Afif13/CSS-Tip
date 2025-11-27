@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Direction-Aware CSS Shapes
-description: A few lines of code to make any CSS shape adjust according to the direction of the text.
+description: A few lines of code to make any CSS shape adjust according to the direction of the text
 date: 2025-11-27
 tags: posts
 ---
@@ -23,7 +23,7 @@ Building on [the previous idea](/arrow/), here is a more generic piece of code t
   width: 100%;
   inset-block: 0;
   translate: 100%;
-  /* Build you shape using whatever you want
+  /* Build your shape using whatever you want
     clip-path: ...;
     mask: ...;
     background: url(...);
@@ -48,7 +48,7 @@ Here are a few examples of shapes, mostly taken from [css-shape.com](https://css
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-## How does it work?
+## How Does It Work?
 
 First, we create the shape using both pseudo-elements, which results in the same shape appearing twice.
 
@@ -68,10 +68,10 @@ First, we create the shape using both pseudo-elements, which results in the same
 
 Then, we place one pseudo-element with `inset-inline-end: 100%` and the other with `inset-inline-start: 100%`. Depending on the direction, they will get mapped to either `left: 100%` or `right: 100%`. We invert one of the shapes using `scale: -1 1`.
 
-{% image "./image1.png", "" %}
+{% image "./image1.png", "Overview of the shapes position" %}
 
 Both shapes are outside the element boundary, and they swap their position according to the direction. We translate both of them to the right using `translate: 100%` so that only one shape is inside the element boundary. 
 
-{% image "./image2.png", "" %}
+{% image "./image2.png", "Showing one css shape at once" %}
 
-You hide the overflow, and it's done!
+We hide the overflow, and it's done!
