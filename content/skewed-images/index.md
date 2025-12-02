@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Gallery of Skewed Images with Hover Effect
-description: Using modern CSS and corner-shape to add a fancy galley of images with a reveal hover effect
+description: Using modern CSS and corner-shape to add a fancy gallery of images with a reveal hover effect
 date: 2025-12-02
 tags: posts
 ---
@@ -40,7 +40,7 @@ Another classic component made easy with modern CSS and the new `corner-shape`. 
 }
 ```
 
-<p class="codepen" data-height="700" data-default-tab="result" data-slug-hash="NPNBVYq" data-pen-title="Gallery of skewed images (with hover effect)" data-preview="true" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="720" data-default-tab="result" data-slug-hash="NPNBVYq" data-pen-title="Gallery of skewed images (with hover effect)" data-preview="true" data-user="t_afif" style="height: 720px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
       <span>See the Pen <a href="https://codepen.io/t_afif/pen/NPNBVYq">
   Gallery of skewed images (with hover effect)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -48,7 +48,7 @@ Another classic component made easy with modern CSS and the new `corner-shape`. 
 
 Another implementation using `clip-path` with better, support but not direction-aware.
 
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="XJdBwxz" data-pen-title="Gallery of skewed images (with hover effect) II" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="420" data-default-tab="result" data-slug-hash="XJdBwxz" data-pen-title="Gallery of skewed images (with hover effect) II" data-preview="true" data-user="t_afif" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
       <span>See the Pen <a href="https://codepen.io/t_afif/pen/XJdBwxz">
   Gallery of skewed images (with hover effect) II</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
