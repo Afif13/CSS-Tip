@@ -28,8 +28,8 @@
 		<link href="https://css-tip.com/root-selectors/"/>
 		<updated>2025-12-04T00:00:00Z</updated>
 		<id>https://css-tip.com/root-selectors/</id>
-		<content type="html"><![CDATA[ <p>How would you select the <code>&lt;html&gt;</code> element? Using the classic and well-known <code>html {}</code> and <code>:root {}</code> selectors, right? What if I tell you there are other hidden selectors.</p>
-<p>I will start with <a href="/root-selector/">the shortest selector for the root element</a>, the nesting selector. A one-character selector:</p>
+		<content type="html"><![CDATA[ <p>How would you select the <code>&lt;html&gt;</code> element? Using the classic and well-known <code>html {}</code> and <code>:root {}</code>, right? What if I tell you there are other hidden selectors?</p>
+<p>Let's start with <a href="/root-selector/">the shortest selector</a>, the nesting selector. A one-character selector:</p>
  <p><a href="https://css-tip.com/root-selectors/">Read more</a></p> ]]></content>
 	</entry>
 	
