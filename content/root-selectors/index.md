@@ -1,14 +1,14 @@
 ---
 layout: layouts/post.njk
 title: The Hidden Selectors of The HTML Element
-description: Discover alternative selectors for the html element beyond the classic `:root{}` and `html{}`
+description: Discover alternative selectors for the html element beyond the classic :root{} and html{}
 date: 2025-12-04
 tags: posts
 ---
 
-How would you select the `<html>` element? Using the classic and well-known `html {}` and `:root {}` selectors, right? What if I tell you there are other hidden selectors.
+How would you select the `<html>` element? Using the classic and well-known `html {}` and `:root {}`, right? What if I tell you there are other hidden selectors?
 
-I will start with [the shortest selector for the root element](/root-selector/), the nesting selector. A one-character selector:
+Let's start with [the shortest selector](/root-selector/), the nesting selector. A one-character selector:
 
 
 ```css
