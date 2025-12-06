@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Direction-Aware CSS Shapes</title>
+		<title>Fizz Buzz using Modern CSS (no HTML)</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A few lines of code to make any CSS shape adjust according to the direction of the text">
+		<meta name="description" content="A fun experiment using modern CSS to create the classic Fizz Buzz">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/direction-aware-shapes/" >
+		<link rel=canonical href="https://css-tip.com/fizz-buzz/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Direction-Aware CSS Shapes">
+		<meta property="og:title" content="Fizz Buzz using Modern CSS (no HTML)">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/direction-aware-shapes/">
-		<meta property="og:description" content="A few lines of code to make any CSS shape adjust according to the direction of the text">
-		<meta property="og:image" content="/og-images/fdbb0128.png" >
+		<meta property="og:url" content="https://css-tip.com/fizz-buzz/">
+		<meta property="og:description" content="A fun experiment using modern CSS to create the classic Fizz Buzz">
+		<meta property="og:image" content="/og-images/99ac7b18.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,32 +47,24 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/arrow/" title="Direction-Aware Arrow Shape using corner-shape">Previous CSS Tip</a></li><li class="next"><a href="/skewed-images/" title="Gallery of Skewed Images with Hover Effect">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/root-selectors/" title="The Hidden Selectors of The HTML Element">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Direction-Aware CSS Shapes</h1>
+<h1>Fizz Buzz using Modern CSS (no HTML)</h1>
 
-<time datetime="2025-11-27">November 27, 2025</time>
+<time datetime="2025-12-06">December 06, 2025</time>
 
-<p>Building on <a href="/arrow/">the previous idea</a>, here is a more generic piece of code to make any CSS shape direction-aware. It relies on a few lines of well-supported CSS code.</p>
-<p><picture><source type="image/avif" srcset="/img/gYAHXQNuO8-1006.avif 1006w"><source type="image/webp" srcset="/img/gYAHXQNuO8-1006.webp 1006w"><img alt="Direct-aware CSS-only shapes" loading="lazy" decoding="async" src="/img/gYAHXQNuO8-1006.png" width="1006" height="197"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.shape</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.shape:before,<br>.shape:after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token property">inset-block</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">translate</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token comment">/* Build your shape using whatever you want<br>    clip-path: ...;<br>    mask: ...;<br>    background: url(...);<br>    content: "👉";<br>  */</span><br><span class="token punctuation">}</span><br><span class="token selector">.shape:before</span> <span class="token punctuation">{</span><br>  <span class="token property">inset-inline-end</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.shape:after</span> <span class="token punctuation">{</span><br>  <span class="token property">inset-inline-start</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token property">scale</span><span class="token punctuation">:</span> -1 1<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Here are a few examples of shapes, mostly taken from <a href="https://css-shape.com/" target="_blank" rel="noopener">css-shape.com</a>. Adjust the direction and see how they behave:</p>
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="xbVjbzY" data-pen-title="Direction-aware CSS shapes" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-      <span>See the Pen <a href="https://codepen.io/t_afif/pen/xbVjbzY" target="_blank" rel="noopener">
-  Direction-aware CSS shapes</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Is it possible to create a Fizz Buzz using HTML and CSS? Yes, but what about a pure CSS version, with no HTML at all? It's doable using modern features. We can even simulate a kind of slider that shows four entries at a time.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">--N</span><span class="token punctuation">:</span> 1000<span class="token punctuation">;</span> <span class="token comment">/* the maximum number */</span><br><span class="token punctuation">}</span><br><span class="token selector">:is(html,body):before,<br>:is(html,body):after</span> <span class="token punctuation">{</span><br>  <span class="token property">counter-reset</span><span class="token punctuation">:</span> n <span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> --n <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--N<span class="token punctuation">)</span>*1s<span class="token punctuation">)</span> linear both<span class="token punctuation">;</span><br>  <span class="token property">--x</span><span class="token punctuation">:</span> <span class="token function">sign</span><span class="token punctuation">(</span><span class="token function">mod</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">,</span>3<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* 0 if divisible by 3 (1 otherwise) */</span><br>  <span class="token property">--y</span><span class="token punctuation">:</span> <span class="token function">sign</span><span class="token punctuation">(</span><span class="token function">mod</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">,</span>5<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* 0 if divisible by 5 (1 otherwise) */</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><br>     <span class="token function">style</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token property">--x</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span> and <span class="token punctuation">(</span><span class="token property">--y</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token string">"FizzBuzz"</span><span class="token punctuation">;</span> <span class="token comment">/* divisible by 3 and 5 */</span><br>     <span class="token function">style</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token property">--x</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span> and <span class="token punctuation">(</span><span class="token property">--y</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token string">"Fizz"</span><span class="token punctuation">;</span> <span class="token comment">/* divisible by 3 and not 5 */</span><br>     <span class="token function">style</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token property">--x</span><span class="token punctuation">:</span> 1<span class="token punctuation">)</span> and <span class="token punctuation">(</span><span class="token property">--y</span><span class="token punctuation">:</span> 0<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token string">"Buzz"</span><span class="token punctuation">;</span> <span class="token comment">/* divisible by 5 and not 3 */</span><br>     <span class="token property">else</span><span class="token punctuation">:</span> <span class="token function">counter</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span> <br>    <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> --n</span> <span class="token punctuation">{</span><span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--N<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><br><span class="token selector">body:before</span> <span class="token punctuation">{</span><span class="token property">animation-delay</span><span class="token punctuation">:</span> -1s<span class="token punctuation">}</span><br><span class="token selector">body:after</span>  <span class="token punctuation">{</span><span class="token property">animation-delay</span><span class="token punctuation">:</span> -2s<span class="token punctuation">}</span><br><span class="token selector">html:after</span>  <span class="token punctuation">{</span><span class="token property">animation-delay</span><span class="token punctuation">:</span> -3s<span class="token punctuation">}</span></code></pre>
+<p>⚠️ A Chrome-only experiment for now ⚠️</p>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="zxqMRWr" data-pen-title="CSS-only Fizz Buzz (no HTML)" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/zxqMRWr" target="_blank" rel="noopener">
+  CSS-only Fizz Buzz (no HTML)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<h2 id="how-does-it-work" tabindex="-1">How Does It Work? <a class="header-anchor" href="#how-does-it-work">#</a></h2>
-<p>First, we create the shape using both pseudo-elements, which results in the same shape appearing twice.</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.shape</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.shape:before,<br>.shape:after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token property">inset-block</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>0 0<span class="token punctuation">,</span>100% 50%<span class="token punctuation">,</span>0 100%<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Then, we place one pseudo-element with <code>inset-inline-end: 100%</code> and the other with <code>inset-inline-start: 100%</code>. Depending on the direction, they will get mapped to either <code>left: 100%</code> or <code>right: 100%</code>. We invert one of the shapes using <code>scale: -1 1</code>.</p>
-<p><picture><source type="image/avif" srcset="/img/gSDHW4aaAM-1102.avif 1102w"><source type="image/webp" srcset="/img/gSDHW4aaAM-1102.webp 1102w"><img alt="Overview of the shapes position" loading="lazy" decoding="async" src="/img/gSDHW4aaAM-1102.png" width="1102" height="282"></picture></p>
-<p>Both shapes are outside the element boundary, and they swap their position according to the direction. We translate both of them to the right using <code>translate: 100%</code> so that only one shape is inside the element boundary.</p>
-<p><picture><source type="image/avif" srcset="/img/-s2_6b37zJ-1039.avif 1039w"><source type="image/webp" srcset="/img/-s2_6b37zJ-1039.webp 1039w"><img alt="Showing one css shape at once" loading="lazy" decoding="async" src="/img/-s2_6b37zJ-1039.png" width="1039" height="393"></picture></p>
-<p>We hide the overflow, and it's done!</p>
+<p>Inspired by <a href="https://susam.net/fizz-buzz-in-css.html" target="_blank" rel="noopener">&quot;Fizz Buzz&quot;</a></p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -81,24 +73,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/fizz-buzz/" >Fizz Buzz using Modern CSS (no HTML)</a>
-		<small>A fun experiment using modern CSS to create the classic Fizz Buzz.</small>
-		<time datetime="2025-12-06">December 06, 2025</time>
+		<a href="/skewed-images/" >Gallery of Skewed Images with Hover Effect</a>
+		<small>Using modern CSS and corner-shape to add a fancy gallery of images with a reveal hover effect.</small>
+		<time datetime="2025-12-02">December 02, 2025</time>
 	</li>
   	<li>
-		<a href="/root-selectors/" >The Hidden Selectors of The HTML Element</a>
-		<small>Discover alternative selectors for the html element beyond the classic :root{} and html{}.</small>
-		<time datetime="2025-12-04">December 04, 2025</time>
-	</li>
-  	<li>
-		<a href="/tooltip-anchor-4/" >Dynamic Tooltip Position with Anchor Positioning IV</a>
-		<small>A tooltip with a stretchy arrow that follows its anchor.</small>
-		<time datetime="2025-11-20">November 20, 2025</time>
-	</li>
-  	<li>
-		<a href="/responsive-stacked-img-2/" >Responsive Circular List of Stacked/Overlapping Images</a>
-		<small>Images placed around a circle with a slight overlap and a nice hover effect.</small>
-		<time datetime="2025-11-18">November 18, 2025</time>
+		<a href="/direction-aware-shapes/" >Direction-Aware CSS Shapes</a>
+		<small>A few lines of code to make any CSS shape adjust according to the direction of the text.</small>
+		<time datetime="2025-11-27">November 27, 2025</time>
 	</li>
 </ul>
 		</main>
