@@ -59,7 +59,7 @@ Building on the idea from [the previous post](/responsive-stacked-img/), I creat
 
 Resize the demo below to see how the image behaves. If there is sufficient space, the images will be placed as close as possible without overlap.
 
-<p class="codepen" data-height="700" data-default-tab="result" data-slug-hash="MYyobpb" data-pen-title="Responsive Circular List of images with hover effect" data-preview="true" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="480" data-default-tab="result" data-slug-hash="MYyobpb" data-pen-title="Responsive Circular List of images with hover effect" data-preview="true" data-user="t_afif" style="height: 480px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
       <span>See the Pen <a href="https://codepen.io/t_afif/pen/MYyobpb">
   Responsive Circular List of images with hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
