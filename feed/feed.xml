@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2025-12-16T00:00:00Z</updated>
+	<updated>2026-01-05T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,16 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Responsive Hexagon Grid without Media Queries</title>
+		<link href="https://css-tip.com/hexagon-grid/"/>
+		<updated>2026-01-05T00:00:00Z</updated>
+		<id>https://css-tip.com/hexagon-grid/</id>
+		<content type="html"><![CDATA[ <p>Using modern CSS to improve <a href="/responsive-hexagon-grid/">an old implementation of a responsive hexagon grid</a>. <code>coner-shape</code> to create <a href="/hexagon/">the hexagon shape</a> and <code>sibling-index()</code> combined with math functions to conditionally apply a margin to only the first element of every other row.</p>
+<p><picture><source type="image/avif" srcset="/img/qEM7Du86D9-1180.avif 1180w"><source type="image/webp" srcset="/img/qEM7Du86D9-1180.webp 1180w"><img alt="CSS-only responsive hexagon grid" loading="lazy" decoding="async" src="/img/qEM7Du86D9-1180.png" width="1180" height="386"></picture></p>
+ <p><a href="https://css-tip.com/hexagon-grid/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -326,7 +336,7 @@
 	</entry>
 	
 	<entry>
-		<title>The future of hexagon shapes</title>
+		<title>The Future of Hexagon Shapes</title>
 		<link href="https://css-tip.com/hexagon/"/>
 		<updated>2025-06-12T00:00:00Z</updated>
 		<id>https://css-tip.com/hexagon/</id>
