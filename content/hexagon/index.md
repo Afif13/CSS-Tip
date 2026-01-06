@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: The future of hexagon shapes
+title: The Future of Hexagon Shapes
 description: A new way to easily create hexagon shapes using corner-shape
 date: 2025-06-12
 tags: posts
@@ -28,8 +28,6 @@ It's the only method that works with borders!
   border: 8px solid purple; /* the border will follow the shape! */
 }
 ```
-
-⚠️ Very limited support (Chrome-only with experimental flag enabled) ⚠️
 
 <p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="yyNjgzR" data-pen-title="Hexagon shapes (with border!)" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/yyNjgzR">
