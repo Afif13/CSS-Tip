@@ -1,12 +1,12 @@
 ---
 layout: layouts/post.njk
 title: Connecting Circles With Anchor Positioning II
-description: Connect circles with arrows and show their distance using moder CSS.
+description: Connect circles with arrows and show their distance using modern CSS
 date: 2026-01-08
 tags: posts
 ---
 
-Improving [the previous implementation](/connected-circles/) to include the calculation of distance between both circles inside the arrow shape. 
+Improving [the previous implementation](/connected-circles/) to include the calculation of the distance between both circles inside the arrow shape. 
 
 {% image "./image.png", "CSS-only connected circles with distance" %}
 
