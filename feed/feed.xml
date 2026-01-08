@@ -28,7 +28,7 @@
 		<link href="https://css-tip.com/connected-circles-2/"/>
 		<updated>2026-01-08T00:00:00Z</updated>
 		<id>https://css-tip.com/connected-circles-2/</id>
-		<content type="html"><![CDATA[ <p>Improving <a href="/connected-circles/">the previous implementation</a> to include the calculation of distance between both circles inside the arrow shape.</p>
+		<content type="html"><![CDATA[ <p>Improving <a href="/connected-circles/">the previous implementation</a> to include the calculation of the distance between both circles inside the arrow shape.</p>
 <p><picture><source type="image/avif" srcset="/img/_JlORJgaKf-916.avif 916w"><source type="image/webp" srcset="/img/_JlORJgaKf-916.webp 916w"><img alt="CSS-only connected circles with distance" loading="lazy" decoding="async" src="/img/_JlORJgaKf-916.png" width="916" height="342"></picture></p>
 <p>Still the same code structure</p>
  <p><a href="https://css-tip.com/connected-circles-2/">Read more</a></p> ]]></content>
