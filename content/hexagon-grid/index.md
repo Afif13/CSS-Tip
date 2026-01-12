@@ -44,6 +44,15 @@ Chrome-only for now. Consider [my previous implementation](/responsive-hexagon-g
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
+Here is the other version of the hexagon:
+
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="vEKXbPv" data-pen-title="Responsive Grid of hexagon without media queries" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/vEKXbPv">
+  Responsive Grid of hexagon without media queries</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+
 We can extend the code to consider [more shapes, such as a rhombus and an octagon](/corner-shape/)
 
 ```css
@@ -63,11 +72,6 @@ We can extend the code to consider [more shapes, such as a rhombus and an octago
   --_m: round(down,(100cqw - (var(--s) - var(--g))/2)/(var(--s) + var(--g)));
   --_c: round(down,1 - mod((sibling-index() - 1 + var(--_m))/(var(--_n) + var(--_m)),1));
   margin-left: calc(var(--_c)*(var(--s) + var(--g))/2);
-}
-.hexagon > * {
-  aspect-ratio: cos(30deg);
-  border-radius: 50% / 25%;
-  margin-bottom: calc(var(--s)/(-4*cos(30deg)));
 }
 .rhombus > *  {
   aspect-ratio: 1;
