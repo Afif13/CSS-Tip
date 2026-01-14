@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Connecting Circles With Anchor Positioning</title>
+		<title>A Generator for Random Wavy Dividers</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Using modern CSS to create a dynamic link that connects two circles, whatever their position">
+		<meta name="description" content="Easily get the code of a fancy wavy divider using the shape() function">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/connected-circles/" >
+		<link rel=canonical href="https://css-tip.com/random-wavy-divider/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Connecting Circles With Anchor Positioning">
+		<meta property="og:title" content="A Generator for Random Wavy Dividers">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/connected-circles/">
-		<meta property="og:description" content="Using modern CSS to create a dynamic link that connects two circles, whatever their position">
-		<meta property="og:image" content="/og-images/1b553d06.png" >
+		<meta property="og:url" content="https://css-tip.com/random-wavy-divider/">
+		<meta property="og:description" content="Easily get the code of a fancy wavy divider using the shape() function">
+		<meta property="og:image" content="/og-images/21438d04.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,31 +47,21 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/fizz-buzz/" title="Fizz Buzz using Modern CSS (no HTML)">Previous CSS Tip</a></li><li class="next"><a href="/hexagon-grid/" title="Responsive Hexagon Grid without Media Queries">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/connected-circles-2/" title="Connecting Circles With Anchor Positioning II">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Connecting Circles With Anchor Positioning</h1>
+<h1>A Generator for Random Wavy Dividers</h1>
 
-<time datetime="2025-12-16">December 16, 2025</time>
+<time datetime="2026-01-14">January 14, 2026</time>
 
-<p>Let's suppose you have two circles randomly placed on the page, and you want to create a connection between them. Sounds like a JavaScript job, but CSS can also do it.</p>
-<p>A good overview of what can be possible using modern features such as Anchor Positioning, <code>attr()</code>, container queries, <code>shape()</code>, trigonometric functions, and more!</p>
-<p><picture><source type="image/avif" srcset="/img/I_fOuhuja_-942.avif 942w"><source type="image/webp" srcset="/img/I_fOuhuja_-942.webp 942w"><img alt="CSS-only connected circles" loading="lazy" decoding="async" src="/img/I_fOuhuja_-942.png" width="942" height="326"></picture></p>
-<p>With a simple HTML/CSS configuration, you have an arrow fully controlled using CSS. Not only is the position dynamic, but the shape adjusts according to the distance between the circles. And if they touch each other, the link disappears. Collision detection using pure CSS!</p>
-<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>--a<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>150px<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>--b<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>100px<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>arrow<span class="token punctuation">"</span></span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>--a<span class="token punctuation">"</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>--b<span class="token punctuation">"</span></span> <span class="token attr-name">size_x</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>150px<span class="token punctuation">"</span></span> <span class="token attr-name">size_y</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>100px<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  ...<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.arrow</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* arrow dimension */</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span><br>  <span class="token property">--a</span><span class="token punctuation">:</span> 40deg<span class="token punctuation">;</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span><br>  <span class="token comment">/**/</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/* gap between the arrow and circles */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> #556270<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Drag the circles in the demo below and see how the arrow behaves:</p>
-<p>⚠️ Chrome-only for now ⚠️</p>
-<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="PwNrNvP" data-pen-title="Connected Circles with Anchor Positioning" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-      <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwNrNvP" target="_blank" rel="noopener">
-  Connected Circles with Anchor Positioning</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>You can easily have as many circles as you want!</p>
-<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="dPMBMBE" data-pen-title="Connected Circles with Anchor Positioning" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-      <span>See the Pen <a href="https://codepen.io/t_afif/pen/dPMBMBE" target="_blank" rel="noopener">
-  Connected Circles with Anchor Positioning</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Generate a fancy wavy divider with one line of code using <code>clip-path: shape()</code>.</p>
+<p><picture><source type="image/avif" srcset="/img/OMWwIhT61t-1126.avif 1126w"><source type="image/webp" srcset="/img/OMWwIhT61t-1126.webp 1126w"><img alt="CSS-only random wavy divider" loading="lazy" decoding="async" src="/img/OMWwIhT61t-1126.png" width="1126" height="351"></picture></p>
+<p style="font-size: 1.5em;text-align: center;"><a href="https://css-generators.com/wavy-divider/" target="_blank" rel="noopener">css-generators.com/wavy-divider</a></p>
+<p>It's a responsive single-element implementation that works with images as well:</p>
+<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="EayNMgo" data-pen-title="Random Wavy dividers" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/EayNMgo" target="_blank" rel="noopener">
+  Random Wavy dividers</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
@@ -83,24 +73,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/random-wavy-divider/" >A Generator for Random Wavy Dividers</a>
-		<small>Easily get the code of a fancy wavy divider using the shape() function.</small>
-		<time datetime="2026-01-14">January 14, 2026</time>
+		<a href="/hexagon-grid/" >Responsive Hexagon Grid without Media Queries</a>
+		<small>A few lines of modern CSS to create a responsive grid of hexagon shapes (and more!).</small>
+		<time datetime="2026-01-05">January 05, 2026</time>
 	</li>
   	<li>
-		<a href="/connected-circles-2/" >Connecting Circles With Anchor Positioning II</a>
-		<small>Connect circles with arrows and show their distance using modern CSS.</small>
-		<time datetime="2026-01-08">January 08, 2026</time>
-	</li>
-  	<li>
-		<a href="/root-selectors/" >The Hidden Selectors of The HTML Element</a>
-		<small>Discover alternative selectors for the html element beyond the classic :root{} and html{}.</small>
-		<time datetime="2025-12-04">December 04, 2025</time>
-	</li>
-  	<li>
-		<a href="/skewed-images/" >Gallery of Skewed Images with Hover Effect</a>
-		<small>Using modern CSS and corner-shape to add a fancy gallery of images with a reveal hover effect.</small>
-		<time datetime="2025-12-02">December 02, 2025</time>
+		<a href="/connected-circles/" >Connecting Circles With Anchor Positioning</a>
+		<small>Using modern CSS to create a dynamic link that connects two circles, whatever their position.</small>
+		<time datetime="2025-12-16">December 16, 2025</time>
 	</li>
 </ul>
 		</main>

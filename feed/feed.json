@@ -19,6 +19,14 @@
 		}
 		,
 		{
+			"id": "https://css-tip.com/random-wavy-divider/",
+			"url": "https://css-tip.com/random-wavy-divider/",
+			"title": "A Generator for Random Wavy Dividers",
+			"content_html": "<p>Generate a fancy wavy divider with one line of code using <code>clip-path: shape()</code>.</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/OMWwIhT61t-1126.avif 1126w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/OMWwIhT61t-1126.webp 1126w\"><img alt=\"CSS-only random wavy divider\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/OMWwIhT61t-1126.png\" width=\"1126\" height=\"351\"></picture></p>\n<p style=\"font-size: 1.5em;text-align: center;\"><a href=\"https://css-generators.com/wavy-divider/\" target=\"_blank\">css-generators.com/wavy-divider</a></p>\n<p>It's a responsive single-element implementation that works with images as well:</p>\n<p class=\"codepen\" data-height=\"600\" data-default-tab=\"result\" data-slug-hash=\"EayNMgo\" data-pen-title=\"Random Wavy dividers\" data-preview=\"true\" data-user=\"t_afif\" style=\"height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n      <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/EayNMgo\">\n  Random Wavy dividers</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>\n",
+			"date_published": "2026-01-14T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/connected-circles-2/",
 			"url": "https://css-tip.com/connected-circles-2/",
 			"title": "Connecting Circles With Anchor Positioning II",
