@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: "Recreating the <filedset> component and its <legend>"
-description: Using a basic HTML and few lines of CSS to recreated the filedset component
+title: Recreating the <filedset> component and its <legend>
+description: Using basic HTML and a few lines of CSS to recreate the fieldset component
 date: 2026-01-21
 tags: posts
 ---
@@ -22,7 +22,7 @@ Using a minimal HTML code and modern CSS to recreate the [`<fieldset>` component
   --r: 20px; /* radius of the box */
   --p: 1em;  /* padding of the box */
   --b: 6px;  /* border thickness */
-  --g: 12px; /* gap between title and border */
+  --g: 12px; /* gap between the legend and border */
   --o: 10px; /* to offset the legend from the side */
   --c: #db3a34;
   
