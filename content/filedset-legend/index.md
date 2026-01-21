@@ -42,8 +42,7 @@ Using a minimal HTML code and modern CSS to recreate the [`<fieldset>` component
 .fieldset h3:before,
 .fieldset h3:after {
   content: "";
-  height: var(--b);
-  background: var(--c);
+  border-top: var(--b) solid var(--c);
   width: var(--o);
   margin-top: calc(.5lh - var(--b)/2)
 }
