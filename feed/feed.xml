@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-01-21T00:00:00Z</updated>
+	<updated>2026-01-27T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,16 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Responsive Pramidal Grid of Hexagon Shapes (and more!)</title>
+		<link href="https://css-tip.com/pyramidal-grid/"/>
+		<updated>2026-01-27T00:00:00Z</updated>
+		<id>https://css-tip.com/pyramidal-grid/</id>
+		<content type="html"><![CDATA[ <p>Following <a href="/hexagon-grid/">the previous post</a>, here is another type of responsive grid: a pyramidal grid of hexagon shapes! Another fancy layout powered by modern CSS, math functions, and without media queries.</p>
+<p><picture><source type="image/avif" srcset="/img/HBoqWnqetN-1007.avif 1007w"><source type="image/webp" srcset="/img/HBoqWnqetN-1007.webp 1007w"><img alt="CSS-only responsive pyramidal grid" loading="lazy" decoding="async" src="/img/HBoqWnqetN-1007.png" width="1007" height="462"></picture></p>
+ <p><a href="https://css-tip.com/pyramidal-grid/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
