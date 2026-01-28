@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Responsive Pramidal Grid of Hexagon Shapes (and more!)
-description: A responsive pyramid grid of various shapes without media queries
+title: Responsive Pyramidal Grid of Hexagon Shapes (and more!)
+description: A responsive pyramidal grid of various shapes without media queries
 date: 2026-01-27
 tags: posts
 ---
