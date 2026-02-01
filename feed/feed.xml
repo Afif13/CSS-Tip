@@ -1030,9 +1030,7 @@ and from the bottom <select name="bottom">
 		<link href="https://css-tip.com/length-to-integer/"/>
 		<updated>2024-09-19T00:00:00Z</updated>
 		<id>https://css-tip.com/length-to-integer/</id>
-		<content type="html"><![CDATA[ <p>Do you want to convert a length value to a unitless value?</p>
-<p>It's possible to remove the unit from any CSS value to get an integer!</p>
-<p>⚠️ A hacky experimentation to use with caution ⚠️</p>
+		<content type="html"><![CDATA[ <p>Do you want to convert a length value to a unitless value?  It's possible with a simple CSS trick.</p>
  <p><a href="https://css-tip.com/length-to-integer/">Read more</a></p> ]]></content>
 	</entry>
 	
