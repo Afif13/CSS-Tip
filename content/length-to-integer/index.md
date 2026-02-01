@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Remove the unit from any CSS value
-description: A simple CSS trick to transform a length value into an number without its unit
+description: A simple CSS trick to transform a length value into a number without its unit
 date: 2024-09-19
 tags: posts
 ---
@@ -40,7 +40,7 @@ body:before {
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-The same trick works with other type as well. Example with `angle`:
+The same trick works with other types as well. Example with `angle`:
 
 ```css
 /* register the value as an angle */
