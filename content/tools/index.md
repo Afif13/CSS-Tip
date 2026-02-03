@@ -145,6 +145,12 @@ A collection of CSS Tools to easily generate a modern & optimized code in no tim
     </a>
   </li>
   <li>
+    <a href="https://css-generators.com/wavy-divider/">
+      {% image "./wavy-divider.png", "CSS wavy divider" %}
+      <p>Generator for wavy dividers</p>
+    </a>
+  </li>
+  <li>
     <a href="https://css-generators.com/gradient-shadows/">
       {% image "./gradient-shadow.png", "CSS gradient shadow" %}
       <p>Generator for gradient shadows</p>
