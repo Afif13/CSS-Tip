@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>Elastic/Bouncy Hover Effect</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="A few lines of modern CSS to create a fancy elastic effect on hover">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/elastic-hover/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="Elastic/Bouncy Hover Effect">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/elastic-hover/">
+		<meta property="og:description" content="A few lines of modern CSS to create a fancy elastic effect on hover">
+		<meta property="og:image" content="/og-images/a914bfb1.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -36,7 +36,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/explore/">Explore</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
@@ -47,123 +47,44 @@
 		</header>
 		<main id="skip">
 			
+<ul class="links-nextprev"><li class="prev"><a href="/pyramidal-grid/" title="Responsive Pyramidal Grid of Hexagon Shapes (and more!)">Previous CSS Tip</a></li>
+</ul>
 
-<h1>Learn CSS The Easy Way</h1>
-<p>Discover a new CSS Trick every day and enhance your web development skills. CSS Tip helps you stay up to date with the latest and modern web features. It takes a few minutes to unlock all the CSS secrets!</p>
-<p>Do you want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Read a random CSS Tip!</a></p>
-<hr>
 
+<h1>Elastic/Bouncy Hover Effect</h1>
+
+<time datetime="2026-02-03">February 03, 2026</time>
+
+<p>Combining modern features such as <a href="https://css-tricks.com/better-css-shapes-using-shape-part-1-lines-and-arcs/" target="_blank" rel="noopener"><code>shape()</code></a>, <a href="/element-index/"><code>sibling-index()/sibling-count()</code></a>, <code>linear()</code>, etc., to create a funny elastic effect on hover. There is no text duplication, but you need a monospace font and a wrapper per letter.</p>
+<p><picture><source type="image/avif" srcset="/img/Y-qxbf_fy9-948.avif 948w"><source type="image/webp" srcset="/img/Y-qxbf_fy9-948.webp 948w"><img alt="CSS-only elastic/bouncy effect on hover" loading="lazy" decoding="async" src="/img/Y-qxbf_fy9-948.png" width="948" height="174"></picture></p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>A<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>b<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>o<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>u<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>t<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_s</span> <span class="token punctuation">{</span><br>  <span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><br>  <span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">inherits</span><span class="token punctuation">:</span> true<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ul li a</span> <span class="token punctuation">{</span><br>  <span class="token property">--h</span><span class="token punctuation">:</span> .12em<span class="token punctuation">;</span> <span class="token comment">/* control the elastic effect */</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> .15ch<span class="token punctuation">;</span> <span class="token comment">/* the gap between letters */</span><br>  <br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>  <span class="token property">gap</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">font</span><span class="token punctuation">:</span> bold 40px monospace<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> --_s 1.5s <span class="token function">linear</span><span class="token punctuation">(</span><span class="token comment">/* see the demo for the full code */</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ul li a:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">--_s</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> --_s .3s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">ul li a span</span> <span class="token punctuation">{</span><br>  <span class="token property">offset</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span>from .5ch<span class="token punctuation">,</span> <br>      curve to <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-count</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - 1<span class="token punctuation">)</span>*<span class="token punctuation">(</span>1ch + <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span> + .5ch<span class="token punctuation">)</span> 50%<br>            with 30% <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--_s<span class="token punctuation">)</span>*<span class="token function">sibling-count</span><span class="token punctuation">(</span><span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span><span class="token punctuation">)</span>/<br>                 70% <span class="token function">calc</span><span class="token punctuation">(</span>50% - <span class="token function">var</span><span class="token punctuation">(</span>--_s<span class="token punctuation">)</span>*<span class="token function">sibling-count</span><span class="token punctuation">(</span><span class="token punctuation">)</span>*<span class="token function">var</span><span class="token punctuation">(</span>--h<span class="token punctuation">)</span><span class="token punctuation">)</span><br>    <span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>99.9%*<span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - 1<span class="token punctuation">)</span>/<span class="token punctuation">(</span><span class="token function">sibling-count</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Chrome-only for now:</p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="xbOjoKR" data-pen-title="Elastic hover effect" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/xbOjoKR" target="_blank" rel="noopener">
+  Elastic hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>Before using this on a production website, read this: <a href="https://adrianroselli.com/2026/01/barriers-from-links-with-aria.html" target="_blank" rel="noopener">Barriers from Links with ARIA</a> (TLDR: don't do it)</p>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
 
 <ul class="postlist" >
-
-	<li>
-		<a href="/elastic-hover/" >Elastic/Bouncy Hover Effect</a>
-		<small>A few lines of modern CSS to create a fancy elastic effect on hover.</small>
-		<time datetime="2026-02-03">February 03, 2026</time>
-	</li>
-
-	<li>
-		<a href="/pyramidal-grid/" >Responsive Pyramidal Grid of Hexagon Shapes (and more!)</a>
-		<small>A responsive pyramidal grid of various shapes without media queries.</small>
-		<time datetime="2026-01-27">January 27, 2026</time>
-	</li>
-
-	<li>
+  	<li>
 		<a href="/filedset-legend/" >Recreating the &lt;filedset&gt; component and its &lt;legend&gt;</a>
 		<small>Using basic HTML and a few lines of CSS to recreate the fieldset component.</small>
 		<time datetime="2026-01-21">January 21, 2026</time>
 	</li>
-
-	<li>
+  	<li>
 		<a href="/random-wavy-divider/" >A Generator for Random Wavy Dividers</a>
 		<small>Easily get the code of a fancy wavy divider using the shape() function.</small>
 		<time datetime="2026-01-14">January 14, 2026</time>
 	</li>
-
-	<li>
-		<a href="/connected-circles-2/" >Connecting Circles With Anchor Positioning II</a>
-		<small>Connect circles with arrows and show their distance using modern CSS.</small>
-		<time datetime="2026-01-08">January 08, 2026</time>
-	</li>
-
-	<li>
-		<a href="/hexagon-grid/" >Responsive Hexagon Grid without Media Queries</a>
-		<small>A few lines of modern CSS to create a responsive grid of hexagon shapes (and more!).</small>
-		<time datetime="2026-01-05">January 05, 2026</time>
-	</li>
-
-	<li>
-		<a href="/connected-circles/" >Connecting Circles With Anchor Positioning</a>
-		<small>Using modern CSS to create a dynamic link that connects two circles, whatever their position.</small>
-		<time datetime="2025-12-16">December 16, 2025</time>
-	</li>
-
-	<li>
-		<a href="/fizz-buzz/" >Fizz Buzz using Modern CSS (no HTML)</a>
-		<small>A fun experiment using modern CSS to create the classic Fizz Buzz.</small>
-		<time datetime="2025-12-06">December 06, 2025</time>
-	</li>
-
-	<li>
-		<a href="/root-selectors/" >The Hidden Selectors of The HTML Element</a>
-		<small>Discover alternative selectors for the html element beyond the classic :root{} and html{}.</small>
-		<time datetime="2025-12-04">December 04, 2025</time>
-	</li>
-
-	<li>
-		<a href="/skewed-images/" >Gallery of Skewed Images with Hover Effect</a>
-		<small>Using modern CSS and corner-shape to add a fancy gallery of images with a reveal hover effect.</small>
-		<time datetime="2025-12-02">December 02, 2025</time>
-	</li>
-
-	<li>
-		<a href="/direction-aware-shapes/" >Direction-Aware CSS Shapes</a>
-		<small>A few lines of code to make any CSS shape adjust according to the direction of the text.</small>
-		<time datetime="2025-11-27">November 27, 2025</time>
-	</li>
-
-	<li>
-		<a href="/arrow/" >Direction-Aware Arrow Shape using corner-shape</a>
-		<small>Combining corner-shape and logical properties to create direction-aware shapes..</small>
-		<time datetime="2025-11-25">November 25, 2025</time>
-	</li>
-
-	<li>
-		<a href="/tooltip-anchor-4/" >Dynamic Tooltip Position with Anchor Positioning IV</a>
-		<small>A tooltip with a stretchy arrow that follows its anchor.</small>
-		<time datetime="2025-11-20">November 20, 2025</time>
-	</li>
-
-	<li>
-		<a href="/responsive-stacked-img-2/" >Responsive Circular List of Stacked/Overlapping Images</a>
-		<small>Images placed around a circle with a slight overlap and a nice hover effect.</small>
-		<time datetime="2025-11-18">November 18, 2025</time>
-	</li>
-
-	<li>
-		<a href="/responsive-stacked-img/" >Responsive List of Stacked/Overlapping Images</a>
-		<small>A few lines of modern CSS to create a horizontal list of responsive stacked images.</small>
-		<time datetime="2025-11-13">November 13, 2025</time>
-	</li>
-
 </ul>
-
-
-
-
-<p>261 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
-<div id="inline-custom"><hr></div>
-
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
-
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
