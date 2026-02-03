@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Elastic/Bouncy Hover Effect
+title: Elastic/Bouncy Text Effect
 description: A few lines of modern CSS to create a fancy elastic effect on hover
 date: 2026-02-03
 tags: posts
