@@ -53,6 +53,15 @@ Chrome-only for now:
   Elastic hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
+A direction-aware version:
+
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="xbOzxyp" data-pen-title="Direction-aware Elastic hover effect (Chrome only)" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/xbOzxyp">
+  Direction-aware Elastic hover effect (Chrome only)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
 
 Before using this on a production website, read this: [Barriers from Links with ARIA](https://adrianroselli.com/2026/01/barriers-from-links-with-aria.html) (TLDR: don't do it)
