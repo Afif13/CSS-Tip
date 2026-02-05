@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Recreating the &lt;filedset&gt; component and its &lt;legend&gt;</title>
+		<title>How to use the &quot;auto&quot; value with clamp()</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Using basic HTML and a few lines of CSS to recreate the fieldset component">
+		<meta name="description" content="A CSS trick to use clamp() with sizing values like auto, min-content, max-content, etc">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/filedset-legend/" >
+		<link rel=canonical href="https://css-tip.com/clamp-auto/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Recreating the &lt;filedset&gt; component and its &lt;legend&gt;">
+		<meta property="og:title" content="How to use the &quot;auto&quot; value with clamp()">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/filedset-legend/">
-		<meta property="og:description" content="Using basic HTML and a few lines of CSS to recreate the fieldset component">
-		<meta property="og:image" content="/og-images/609e4d27.png" >
+		<meta property="og:url" content="https://css-tip.com/clamp-auto/">
+		<meta property="og:description" content="A CSS trick to use clamp() with sizing values like auto, min-content, max-content, etc">
+		<meta property="og:image" content="/og-images/49296851.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,24 +47,29 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/random-wavy-divider/" title="A Generator for Random Wavy Dividers">Previous CSS Tip</a></li><li class="next"><a href="/pyramidal-grid/" title="Responsive Pyramidal Grid of Hexagon Shapes (and more!)">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/elastic-hover/" title="Elastic/Bouncy Text Effect">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Recreating the &lt;filedset&gt; component and its &lt;legend&gt;</h1>
+<h1>How to use the &quot;auto&quot; value with clamp()</h1>
 
-<time datetime="2026-01-21">January 21, 2026</time>
+<time datetime="2026-02-05">February 05, 2026</time>
 
-<p>Using a minimal HTML code and modern CSS to recreate the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset" target="_blank" rel="noopener"><code>&lt;fieldset&gt;</code> component</a>. A responsive implementation easy to control using CSS variables. It's also direction-aware with real transparency!</p>
-<p><picture><source type="image/avif" srcset="/img/LETKKgxAJ1-971.avif 971w"><source type="image/webp" srcset="/img/LETKKgxAJ1-971.webp 971w"><img alt="CSS-only filedset component" loading="lazy" decoding="async" src="/img/LETKKgxAJ1-971.png" width="971" height="315"></picture></p>
-<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fieldset<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>The Legend<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span><br>  <span class="token comment">&lt;!-- place your content here  --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.fieldset</span> <span class="token punctuation">{</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span> <span class="token comment">/* radius of the box */</span><br>  <span class="token property">--p</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>  <span class="token comment">/* padding of the box */</span><br>  <span class="token property">--b</span><span class="token punctuation">:</span> 6px<span class="token punctuation">;</span>  <span class="token comment">/* border thickness */</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span> <span class="token comment">/* gap between the legend and border */</span><br>  <span class="token property">--o</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/* to offset the legend from the side */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> #db3a34<span class="token punctuation">;</span><br>  <br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--p<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br>  <span class="token property">z-index</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flow-root<span class="token punctuation">;</span> <span class="token comment">/* to avoid margin collapsing */</span><br><span class="token punctuation">}</span><br><span class="token selector">.fieldset h3</span> <span class="token punctuation">{</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> <br>    <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span>/2 - .5lh - <span class="token function">var</span><span class="token punctuation">(</span>--p<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>    <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--p<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>    <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--p<span class="token punctuation">)</span> - .5lh - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>  <span class="token property">gap</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.fieldset h3:before,<br>.fieldset h3:after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">border-top</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> solid <span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--o<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>.5lh - <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><br><span class="token punctuation">}</span><br><span class="token selector">.fieldset h3:after</span> <span class="token punctuation">{</span><br>  <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.fieldset:before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span><span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span><br>  <span class="token property">inset</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--b<span class="token punctuation">)</span> solid <span class="token function">var</span><span class="token punctuation">(</span>--c<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>0 0<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> 0<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span> 50%<span class="token punctuation">,</span><span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> 50%<span class="token punctuation">,</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span><span class="token punctuation">)</span> 0<span class="token punctuation">,</span>100% 0<span class="token punctuation">,</span>100% 100%<span class="token punctuation">,</span>0 100%<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="EayXyby" data-pen-title="Recreating &amp;lt;fieldset&amp;gt; (and &amp;lt;legend&amp;gt;) using CSS" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-      <span>See the Pen <a href="https://codepen.io/t_afif/pen/EayXyby" target="_blank" rel="noopener">
-  Recreating &lt;fieldset&gt; (and &lt;legend&gt;) using CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>If you have tried the code below, you know it doesn't work:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">clamp</span><span class="token punctuation">(</span>200px<span class="token punctuation">,</span> auto<span class="token punctuation">,</span> 400px<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p><code>clamp()</code> accepts only calculations, and values such as <code>auto</code>, <code>min-content</code>, and <code>max-content</code> aren't allowed. They make the entire value invalid. But thanks to the new <code>calc-size()</code>, we can allow such values within <code>clamp()</code>.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc-size</span><span class="token punctuation">(</span>auto<span class="token punctuation">,</span><span class="token function">clamp</span><span class="token punctuation">(</span>200px<span class="token punctuation">,</span> size<span class="token punctuation">,</span> 400px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* same as clamp(200px, auto, 400px) */</span><br><span class="token punctuation">}</span></code></pre>
+<p>The first argument of <code>calc-size()</code> can be any calculation or a sizing keywords. The second argument is a calculation where <code>size</code> refers to the first argument.</p>
+<p>You can have endless combinations.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc-size</span><span class="token punctuation">(</span>max-content<span class="token punctuation">,</span><span class="token function">clamp</span><span class="token punctuation">(</span>size<span class="token punctuation">,</span> 70%<span class="token punctuation">,</span> 600px<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <br>  <span class="token comment">/* same as clamp(max-content,70%, 600px) */</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc-size</span><span class="token punctuation">(</span>max-content<span class="token punctuation">,</span><span class="token function">clamp</span><span class="token punctuation">(</span>300px<span class="token punctuation">,</span> 80%<span class="token punctuation">,</span> 2*size<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <br>  <span class="token comment">/* same as clamp(300px, 80%, 2*max-content) */</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc-size</span><span class="token punctuation">(</span>min-content<span class="token punctuation">,</span><span class="token function">clamp</span><span class="token punctuation">(</span>size + 50px<span class="token punctuation">,</span> 100% - 40px<span class="token punctuation">,</span> 700px<span class="token punctuation">)</span><span class="token punctuation">)</span> <br>  <span class="token comment">/* same as clamp(min-content + 50px, 100% - 40px, 700px) */</span><br><span class="token punctuation">}</span></code></pre>
+<p>⚠️ Limited support (Chrome-only for now)</p>
+<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="gbMzWZK" data-pen-title="clamp() with keyword values" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/gbMzWZK" target="_blank" rel="noopener">
+  clamp() with keyword values</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -72,24 +77,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/clamp-auto/" >How to use the &quot;auto&quot; value with clamp()</a>
-		<small>A CSS trick to use clamp() with sizing values like auto, min-content, max-content, etc.</small>
-		<time datetime="2026-02-05">February 05, 2026</time>
+		<a href="/pyramidal-grid/" >Responsive Pyramidal Grid of Hexagon Shapes (and more!)</a>
+		<small>A responsive pyramidal grid of various shapes without media queries.</small>
+		<time datetime="2026-01-27">January 27, 2026</time>
 	</li>
   	<li>
-		<a href="/elastic-hover/" >Elastic/Bouncy Text Effect</a>
-		<small>A few lines of modern CSS to create a fancy elastic effect on hover.</small>
-		<time datetime="2026-02-03">February 03, 2026</time>
-	</li>
-  	<li>
-		<a href="/connected-circles-2/" >Connecting Circles With Anchor Positioning II</a>
-		<small>Connect circles with arrows and show their distance using modern CSS.</small>
-		<time datetime="2026-01-08">January 08, 2026</time>
-	</li>
-  	<li>
-		<a href="/hexagon-grid/" >Responsive Hexagon Grid without Media Queries</a>
-		<small>A few lines of modern CSS to create a responsive grid of hexagon shapes (and more!).</small>
-		<time datetime="2026-01-05">January 05, 2026</time>
+		<a href="/filedset-legend/" >Recreating the &lt;filedset&gt; component and its &lt;legend&gt;</a>
+		<small>Using basic HTML and a few lines of CSS to recreate the fieldset component.</small>
+		<time datetime="2026-01-21">January 21, 2026</time>
 	</li>
 </ul>
 		</main>
