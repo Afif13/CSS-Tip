@@ -26,11 +26,9 @@ Combining modern features such as [`shape()`](https://css-tricks.com/better-css-
 }
 ul li a {
   --h: .12em; /* control the elastic effect */
-  --g: .15ch; /* the gap between letters */
   
   display: flex;
-  gap: var(--g);
-  font: bold 40px monospace;
+  font-family: monospace;
   transition: --_s 1.5s linear(/* see the demo for the full code */);
 }
 ul li a:hover {
@@ -38,8 +36,7 @@ ul li a:hover {
   transition: --_s .3s;
 }
 ul li a span {
-  offset: shape(from .5ch, 
-      curve to calc((sibling-count() - 1)*(1ch + var(--g)) + .5ch) 50%
+  offset: shape(from .5ch, curve to calc(100% - .5ch) 50%
             with 30% calc(50% - var(--_s)*sibling-count()*var(--h))/
                  70% calc(50% - var(--_s)*sibling-count()*var(--h))
     ) calc(99.9%*(sibling-index() - 1)/(sibling-count() - 1));
