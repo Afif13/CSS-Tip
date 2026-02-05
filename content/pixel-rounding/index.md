@@ -19,7 +19,7 @@ It will make sure the width of your element is always an integer! No more decima
 
 The behavior of `width:auto` with an upgrade. 
 
-No browser support yet but you can test it on the latest Chrome with the experimental flag enabled: 
+⚠️ Limited support (Chrome-only for now) 
 
 <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="rNgLyJz" data-pen-title="width: auto with pixel rounding" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/rNgLyJz">

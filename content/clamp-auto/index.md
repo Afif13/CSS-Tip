@@ -14,7 +14,9 @@ If you have tried the code below, you know it doesn't work:
 }
 ```
 
-`clamp()` accepts only calculations, and values such as `auto`, `min-content`, and `max-content` aren't allowed. They make the entire value invalid. But thanks to the new `calc-size()`, we can allow such values within `clamp()`.
+`clamp()` accepts only calculations, and values such as `auto`, `min-content`, and `max-content` aren't allowed. They make the entire value invalid. 
+
+With the new `calc-size()`, we can allow such values within `clamp()`.
 
 
 ```css
