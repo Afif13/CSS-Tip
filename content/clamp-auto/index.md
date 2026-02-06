@@ -37,14 +37,16 @@ You can have endless combinations.
   /* same as clamp(max-content,70%, 600px) */
   width: calc-size(max-content,clamp(300px, 80%, 2*size)); 
   /* same as clamp(300px, 80%, 2*max-content) */
-  width: calc-size(min-content,clamp(size + 50px, 100% - 40px, 700px)) 
+  width: calc-size(min-content,clamp(size + 50px, 100% - 40px, 700px));
   /* same as clamp(min-content + 50px, 100% - 40px, 700px) */
+  width: calc-size(max-content,clamp(size,80%, 2*size))
+  /* same as clamp(max-content, 80%, 2*max-content) */
 }
 ```
 
 ⚠️ Limited support (Chrome-only for now)
 
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="gbMzWZK" data-pen-title="clamp() with keyword values" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="gbMzWZK" data-pen-title="clamp() with keyword values" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
       <span>See the Pen <a href="https://codepen.io/t_afif/pen/gbMzWZK">
   clamp() with keyword values</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
