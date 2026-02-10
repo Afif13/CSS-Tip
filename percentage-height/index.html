@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>A Better Way to Express Percentage Height</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="A modern alternative to the classic percentage height that always work">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/percentage-height/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="A Better Way to Express Percentage Height">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/percentage-height/">
+		<meta property="og:description" content="A modern alternative to the classic percentage height that always work">
+		<meta property="og:image" content="/og-images/8a4a1fae.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -36,7 +36,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/explore/">Explore</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
@@ -47,123 +47,74 @@
 		</header>
 		<main id="skip">
 			
+<ul class="links-nextprev"><li class="prev"><a href="/clamp-auto/" title="How to use the &quot;auto&quot; value with clamp()">Previous CSS Tip</a></li>
+</ul>
 
-<h1>Learn CSS The Easy Way</h1>
-<p>Discover a new CSS Trick every day and enhance your web development skills. CSS Tip helps you stay up to date with the latest and modern web features. It takes a few minutes to unlock all the CSS secrets!</p>
-<p>Do you want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Read a random CSS Tip!</a></p>
-<hr>
 
+<h1>A Better Way to Express Percentage Height</h1>
+
+<time datetime="2026-02-10">February 10, 2026</time>
+
+<p>Percentage height is a common issue in CSS. Using <code>height: 100%</code> to fill the vertical space fails in most cases because the parent container doesn't have an explicit height. Even if the parent has a definite height, you may still face issues related to margin, box-sizing, etc.</p>
+<p>Instead of <code>height: 100%</code>, you can rely on the new <code>stretch</code> value that will do a better job!</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> stretch<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h2 id="how-does-it-work" tabindex="-1">How does it work? <a class="header-anchor" href="#how-does-it-work">#</a></h2>
+<p>As its name suggests, it will try to stretch the element to fill the parent container (more precisely the containing block).</p>
+<p>It works following two rules:</p>
+<ol>
+<li>If the element can be aligned using <code>align-self</code> (and <code>align-items</code>), the value produces the same result as a stretch alignment (<code>align-self: stretch</code>).</li>
+<li>If alignment doesn't apply, it works the same way as <code>height: 100%</code>, expect that margin is considered and the value of <code>box-sizing</code> doesn't matter. In other words, you won't get overflow issues due to margin, padding, or border.</li>
+</ol>
+<p>In the demo below, <code>height: 100%</code> will either fail or create an overflow, while <code>height: stretch</code> is perfect!</p>
+<p>⚠️ Limited Support (Chrome-only for now)</p>
+<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="pvbQQqO" data-pen-title="Height: 100% vs height: stretch" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/pvbQQqO" target="_blank" rel="noopener">
+  Height: 100% vs height: stretch</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>Additionally, using <code>height: stretch</code> gives the element a definite height, allowing for a cascading stretch.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">*</span> <span class="token punctuation">{</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> stretch<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="YPWRdzN" data-pen-title="cascading stretch" data-preview="true" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/YPWRdzN" target="_blank" rel="noopener">
+  cascading stretch</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p><code>stretch</code> may not work if self-alignment doesn't apply to the element AND the parent container (containing block) doesn't have an explicit height. Similar to <code>height: 100%</code>, it will fallback to <code>auto</code>. Those cases are rare, but don't forget about them.</p>
+<p>Here is an example involving inline-block elements.</p>
+<p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="zxBMyBx" data-pen-title="No stretching" data-preview="true" data-user="t_afif" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/zxBMyBx" target="_blank" rel="noopener">
+  No stretching</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<h2 id="what-about-a-percentage-different-from-100" tabindex="-1">What about a percentage different from 100%? <a class="header-anchor" href="#what-about-a-percentage-different-from-100">#</a></h2>
+<p><code>stretch</code> only covers the <code>100%</code> case, so if you want to, for example, consider <code>height: 80%</code>, you need to rely on the <code>calc-size()</code> function.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">calc-size</span><span class="token punctuation">(</span>stretch<span class="token punctuation">,</span> .8*size<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* same as height: calc(.8*stretch) */</span><br><span class="token punctuation">}</span></code></pre>
+<p>The <code>size</code> keyword in the calculation will refer to the <code>stretch</code> value to find the result, which is the same as &quot;80% of stretch&quot;.</p>
+<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="QwEJzGJ" data-pen-title="calc-size() with stretch" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/t_afif/pen/QwEJzGJ" target="_blank" rel="noopener">
+  calc-size() with stretch</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>Note that the same applies to <code>width: stretch</code>, expect that we consider the <code>justify-*</code> properties instead of the <code>align-*</code> ones in the first rule.</p>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
 
 <ul class="postlist" >
-
-	<li>
-		<a href="/percentage-height/" >A Better Way to Express Percentage Height</a>
-		<small>A modern alternative to the classic percentage height that always work.</small>
-		<time datetime="2026-02-10">February 10, 2026</time>
-	</li>
-
-	<li>
-		<a href="/clamp-auto/" >How to use the &quot;auto&quot; value with clamp()</a>
-		<small>A CSS trick to use clamp() with sizing values like auto, min-content, max-content, etc.</small>
-		<time datetime="2026-02-05">February 05, 2026</time>
-	</li>
-
-	<li>
+  	<li>
 		<a href="/elastic-hover/" >Elastic/Bouncy Text Effect</a>
 		<small>A few lines of modern CSS to create a fancy elastic effect on hover.</small>
 		<time datetime="2026-02-03">February 03, 2026</time>
 	</li>
-
-	<li>
+  	<li>
 		<a href="/pyramidal-grid/" >Responsive Pyramidal Grid of Hexagon Shapes (and more!)</a>
 		<small>A responsive pyramidal grid of various shapes without media queries.</small>
 		<time datetime="2026-01-27">January 27, 2026</time>
 	</li>
-
-	<li>
-		<a href="/filedset-legend/" >Recreating the &lt;filedset&gt; component and its &lt;legend&gt;</a>
-		<small>Using basic HTML and a few lines of CSS to recreate the fieldset component.</small>
-		<time datetime="2026-01-21">January 21, 2026</time>
-	</li>
-
-	<li>
-		<a href="/random-wavy-divider/" >A Generator for Random Wavy Dividers</a>
-		<small>Easily get the code of a fancy wavy divider using the shape() function.</small>
-		<time datetime="2026-01-14">January 14, 2026</time>
-	</li>
-
-	<li>
-		<a href="/connected-circles-2/" >Connecting Circles With Anchor Positioning II</a>
-		<small>Connect circles with arrows and show their distance using modern CSS.</small>
-		<time datetime="2026-01-08">January 08, 2026</time>
-	</li>
-
-	<li>
-		<a href="/hexagon-grid/" >Responsive Hexagon Grid without Media Queries</a>
-		<small>A few lines of modern CSS to create a responsive grid of hexagon shapes (and more!).</small>
-		<time datetime="2026-01-05">January 05, 2026</time>
-	</li>
-
-	<li>
-		<a href="/connected-circles/" >Connecting Circles With Anchor Positioning</a>
-		<small>Using modern CSS to create a dynamic link that connects two circles, whatever their position.</small>
-		<time datetime="2025-12-16">December 16, 2025</time>
-	</li>
-
-	<li>
-		<a href="/fizz-buzz/" >Fizz Buzz using Modern CSS (no HTML)</a>
-		<small>A fun experiment using modern CSS to create the classic Fizz Buzz.</small>
-		<time datetime="2025-12-06">December 06, 2025</time>
-	</li>
-
-	<li>
-		<a href="/root-selectors/" >The Hidden Selectors of The HTML Element</a>
-		<small>Discover alternative selectors for the html element beyond the classic :root{} and html{}.</small>
-		<time datetime="2025-12-04">December 04, 2025</time>
-	</li>
-
-	<li>
-		<a href="/skewed-images/" >Gallery of Skewed Images with Hover Effect</a>
-		<small>Using modern CSS and corner-shape to add a fancy gallery of images with a reveal hover effect.</small>
-		<time datetime="2025-12-02">December 02, 2025</time>
-	</li>
-
-	<li>
-		<a href="/direction-aware-shapes/" >Direction-Aware CSS Shapes</a>
-		<small>A few lines of code to make any CSS shape adjust according to the direction of the text.</small>
-		<time datetime="2025-11-27">November 27, 2025</time>
-	</li>
-
-	<li>
-		<a href="/arrow/" >Direction-Aware Arrow Shape using corner-shape</a>
-		<small>Combining corner-shape and logical properties to create direction-aware shapes..</small>
-		<time datetime="2025-11-25">November 25, 2025</time>
-	</li>
-
-	<li>
-		<a href="/tooltip-anchor-4/" >Dynamic Tooltip Position with Anchor Positioning IV</a>
-		<small>A tooltip with a stretchy arrow that follows its anchor.</small>
-		<time datetime="2025-11-20">November 20, 2025</time>
-	</li>
-
 </ul>
-
-
-
-
-<p>263 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
-<div id="inline-custom"><hr></div>
-
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
-
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
