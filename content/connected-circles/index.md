@@ -23,19 +23,6 @@ With a simple HTML/CSS configuration, you have an arrow fully controlled using C
 </div>
 ```
 
-```css
-.arrow {
-  /* arrow dimension */
-  --r: 25px;
-  --a: 40deg;
-  --d: 5px;
-  /**/
-  --g: 10px; /* gap between the arrow and circles */
-  --c: #556270;
-}
-```
-
-
 Drag the circles in the demo below and see how the arrow behaves:
 
 ⚠️ Chrome-only for now ⚠️
