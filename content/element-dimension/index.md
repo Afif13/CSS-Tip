@@ -24,16 +24,6 @@ Use modern CSS features to get the width and height of any element as CSS variab
   inherits: true;
   initial-value: 0; 
 }
-@property --w {
-  syntax: "<integer>";
-  inherits: true;
-  initial-value: 0; 
-}
-@property --h {
-  syntax: "<integer>";
-  inherits: true;
-  initial-value: 0; 
-}
 
 .size {
   overflow: auto;
