@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Why is Anchor Positioning not working?
-description: Learn the edge cases that prevent anchor positioning from working correctly.
+description: Learn the edge cases that prevent anchor positioning from working correctly
 date: 2026-02-19
 tags: posts
 ---
@@ -101,7 +101,7 @@ The same logic applies even if `.element` is not a direct child but a descendant
 </div>
  ```
 
-If any ancestor of `.element` up to `.anchor` creates a containing block for it, then the rule is false and `.anchor` cannot be referenced by `.element`.
+If any ancestor of `.element` up to `.anchor` creates a containing block for it, then the rule is false, and `.anchor` cannot be referenced by `.element`.
 
 ## Sibling Relation
 
@@ -144,7 +144,7 @@ If you make `.anchor` positioned, it stops working.
 
 `z-index` cannot solve this. Only the position value and document order are relevant in this context.
 
-Notice how I didn't specify `relative` or `sticky` as they don't invalidate the rule. Elements with relative or sticky positions are laid out before elements with absolute or fixed positions. The below works fine:
+Notice how I didn't specify `relative` or `sticky`, as they don't invalidate the rule. Elements with relative or sticky positions are laid out before elements with absolute or fixed positions. The below works fine:
 
 ```html
 <div containing block for both>
@@ -227,7 +227,7 @@ The rule is always false. An element cannot reference an anchor outside its cont
 
 [Click to see a demo](https://es-d-7889440420260220-59d18bf1b4c4dd532416992fbff85e3c.codepen.dev/random/4.html)
 
-**`.anchor` is inside the containing block of `.element` but its containing block is outside**
+**`.anchor` is inside the containing block of `.element`, but its containing block is outside**
 
 This is a rare case that happens if `.anchor` has a fixed position and `.element` has an absolute position. Similar to the previous example, the rule is also false.
 
@@ -250,7 +250,7 @@ Now, you should be able to figure out why your code is not working. A sum-up of 
 
 * `.anchor` is outside the containing block of `.element` or is the containing block of `.element`.
 * `.anchor` shares the same containing block as `.element`, is placed after `.element`, and has an absolute or fixed position.
-* The uppermost containing block between `.anchor` and the containing block of `.element`, is placed after `.element`, and has an absolute or fixed position
+* The uppermost containing block between `.anchor` and the containing block of `.element`, is placed after `.element`, and has an absolute or fixed position.
 
 
 <small>I certainly didn't cover all the cases, so I may update this post at any time to keep it current.</small>
