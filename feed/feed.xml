@@ -751,6 +751,7 @@ and from the bottom <select name="bottom">
 		<updated>2025-02-11T00:00:00Z</updated>
 		<id>https://css-tip.com/bouncy-input/</id>
 		<content type="html"><![CDATA[ <p>A fun CSS-only experimentation using modern features to create bouncy radio buttons. Powered by anchor positioning, <code>@property</code>, <code>:has()</code> selector, and more!</p>
+<p>Click for a cool effect!</p>
  <p><a href="https://css-tip.com/bouncy-input/">Read more</a></p> ]]></content>
 	</entry>
 	
