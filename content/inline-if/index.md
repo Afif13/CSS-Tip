@@ -64,7 +64,15 @@ The registration is not required if you have no calculation and you only want an
 }
 ```
 
-The same logic also applies to style queries as they utilize the same `style()` feature to define conditions.
+We can also use `=` instead of `:` in the first example and it works without the need to register the custom property:
 
+```css
+.box {
+  --n: 6; /* We define 6 */
+  
+  --f: calc(var(--n)/2); /* the result is 3 */
+  background: if(style(--f = 3): red; else: green); /* We get a red color */
+}
+```
 
-Related article: [The Hidden Trick of Style Queries and if()](/if-trick/)
+I am detaling this last example in the following post: [The Hidden Trick of Style Queries and if()](/if-trick/)

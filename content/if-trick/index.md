@@ -65,6 +65,16 @@ The following will work fine:
 }
 ```
 
+The following as well:
+
+```css
+.box {
+  --n: calc(6/2);
+
+  background: if(style(--n: var(--n)): red; else: green);
+}
+```
+
 Same as the following:
 
 ```css
@@ -74,6 +84,8 @@ Same as the following:
   background: if(style(--s: new): red; else: green);
 }
 ```
+
+----
 
 When using `style(--n = 3)` we are relying on the following syntax `style(<style-range-value> <mf-comparison> <style-range-value>)` (called a `<style-range>`). Then we do the following steps to evaluate the condition:
 
@@ -93,7 +105,28 @@ Let's apply this to our example by replacing `:` with `=`
 
 We do the substitution to get `style(calc(6/2) = 3)`. We do the parsing, and we can see both are `<integer>` (here we perform the calculation). They have the same type and are equal so the condition is true!
 
-Let's try the other example:
+The `=` notation give us more freedom on how to write the condition. All the below are valid:
+
+```css
+.box {
+  background: if(style(3 = --n): red; else: green);
+  background: if(style(var(--n) = 3): red; else: green);
+  background: if(style(3 = var(--n)): red; else: green);
+  background: if(style(calc(6/2) = var(--n)): red; else: green);
+}
+```
+
+You can reverse the order, use `var()`, include a calculation, etc. When using the `:` notation we must always start with the custom property and we cannot use it with `var()`. All the below are invalid:
+
+```css
+.box {
+  background: if(style(var(--n): 3): red; else: green);
+  background: if(style(3: --n): red; else: green);
+  background: if(style(3: var(--n)): red; else: green);
+}
+```
+
+Let's try the example using the `new` value with the `=` notation
 
 ```css
 .box {
@@ -105,7 +138,7 @@ Let's try the other example:
 
 The substitution gives `style(new = new)`. The parsing will .. fail! `new` is none of the listed types, so the condition is false.
 
-Here is a demo showing all the conditions together:
+Here is a demo showing all the conditions so can see the difference between both notation:
 
 <p class="codepen" data-height="400" data-pen-title="The hidden trick of if()" data-preview="true" data-default-tab="css,result" data-slug-hash="azZrBxN" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/azZrBxN">
@@ -122,11 +155,12 @@ And the same using style queries
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
+
 As a conclusion, here is what you need to remember:
 
-* The use of `style(--variable: value)` will perform an exact match of both computed values. This one is suitable for string-like matching (ex: `style(--stock: low)`)
+* The use of `style(--variable: value)` will perform an exact match of both computed values. This one is suitable for string-like matching (ex: `style(--stock: low)`).
 
-* `style(--variable = value)` will perform a numerical comparison between two values that should have the same type (from the types I listed previously).  This one is suitable for math stuff (ex: `style(--n = 5)`)
+* `style(--variable = value)` will perform a numerical comparison between two values that should have the same type (from the types I listed previously). This one is suitable for math stuff (ex: `style(--n = 5)`)
 
 
 The first method has another interesting behavior when combined with `@property`. Learn more about this case here: [How to correctly use if() in CSS](/inline-if/).
