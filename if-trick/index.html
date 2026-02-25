@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>The Hidden Trick of Style Queries and if()</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="Learn the secret behind the new conditions and how to use them correctly">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/if-trick/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="The Hidden Trick of Style Queries and if()">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/if-trick/">
+		<meta property="og:description" content="Learn the secret behind the new conditions and how to use them correctly">
+		<meta property="og:image" content="/og-images/98e1a259.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -36,7 +36,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/explore/">Explore</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
@@ -47,123 +47,80 @@
 		</header>
 		<main id="skip">
 			
+<ul class="links-nextprev"><li class="prev"><a href="/anchor-issues/" title="Why is Anchor Positioning not working?">Previous CSS Tip</a></li>
+</ul>
 
-<h1>Learn CSS The Easy Way</h1>
-<p>Discover a new CSS Trick every day and enhance your web development skills. CSS Tip helps you stay up to date with the latest and modern web features. It takes a few minutes to unlock all the CSS secrets!</p>
-<p>Do you want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Read a random CSS Tip!</a></p>
-<hr>
 
+<h1>The Hidden Trick of Style Queries and if()</h1>
+
+<time datetime="2026-02-25">February 25, 2026</time>
+
+<p>With modern CSS, we have two new ways to express conditions: inline <code>if()</code> and style queries. Their syntax is as follows:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/* inline if() */</span><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--n</span><span class="token punctuation">:</span> 3<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token comment">/* style queries */</span><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span><br>  <span class="token atrule"><span class="token rule">@container</span> <span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--n</span><span class="token punctuation">:</span> 3<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>    <span class="token property">border-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>  <br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>The common part between them is the <code>style()</code> part, which is defined to behave the same with both features. It contains the condition that evaluates to either true or false. Most of the online demos will show you the above version, but there is another valid syntax using <code>=</code></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/* inline if() */</span><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span>--n = 3<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token comment">/* style queries */</span><br><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span><br>  <span class="token atrule"><span class="token rule">@container</span> <span class="token function">style</span><span class="token punctuation">(</span>--n = 3<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>    <span class="token property">border-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>  <br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>You may intuitively think that both are equivalent, but they are not!</p>
+<p>When using <code>style(--n: 3)</code> we are relying on the following syntax <code>style(&lt;style-feature-name&gt;: &lt;style-feature-value&gt;)</code> (called <code>&lt;style-feature-plain&gt;</code>). In this case, the condition evaluates to true if the computed value of the given property matches the given value (which is also computed).</p>
+<p>Let's take the following example:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>6/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--n</span><span class="token punctuation">:</span> 3<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>What is the computed value of <code>--n</code>? 3? No, it's <code>calc(6/2)</code>. The browser doesn't perform the calculation in this context, hence the computed value is <code>calc(6/2)</code>. That value doesn't match <code>3</code> and the condition is false (we get a green color). I know, it's a bit strange, but you can see it as a string matching.</p>
+<p>The following will work fine:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>6/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>6/2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Same as the following:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> new<span class="token punctuation">;</span><br><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token property">--s</span><span class="token punctuation">:</span> new<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>When using <code>style(--n = 3)</code> we are relying on the following syntax <code>style(&lt;style-range-value&gt; &lt;mf-comparison&gt; &lt;style-range-value&gt;)</code> (called a <code>&lt;style-range&gt;</code>). Then we do the following steps to evaluate the condition:</p>
+<ol>
+<li>If <code>&lt;style-range-value&gt;</code> is a custom property, it needs to be substituted as if the custom property was wrapped inside a <code>var()</code>.</li>
+<li>Parse <code>&lt;style-range-value&gt;</code> to <code>&lt;number&gt;</code>, <code>&lt;percentage&gt;</code>, <code>&lt;length&gt;</code>, <code>&lt;angle&gt;</code>, <code>&lt;time&gt;</code>, <code>&lt;frequency&gt;</code> or <code>&lt;resolution&gt;</code>. If this cannot be done, evaluate to false.</li>
+<li>If each <code>&lt;style-range-value&gt;</code> from the range have the same type, compute each and evaluate the comparison.</li>
+</ol>
+<p>Let's apply this to our example by replacing <code>:</code> with <code>=</code></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>6/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span>--n = 3<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>We do the substitution to get <code>style(calc(6/2) = 3)</code>. We do the parsing, and we can see both are <code>&lt;integer&gt;</code> (here we perform the calculation). They have the same type and are equal so the condition is true!</p>
+<p>Let's try the other example:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> new<span class="token punctuation">;</span><br><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span>--s = new<span class="token punctuation">)</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">else</span><span class="token punctuation">:</span> green<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>The substitution gives <code>style(new = new)</code>. The parsing will .. fail! <code>new</code> is none of the listed types, so the condition is false.</p>
+<p>Here is a demo showing all the conditions together:</p>
+<p class="codepen" data-height="400" data-pen-title="The hidden trick of if()" data-preview="true" data-default-tab="css,result" data-slug-hash="azZrBxN" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/azZrBxN" target="_blank" rel="noopener">
+  The hidden trick of if()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>And the same using style queries</p>
+<p class="codepen" data-height="400" data-pen-title="The hidden trick of style queries()" data-preview="true" data-default-tab="css,result" data-slug-hash="RNGwvJm" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/RNGwvJm" target="_blank" rel="noopener">
+  The hidden trick of style queries()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>As a conclusion, here is what you need to remember:</p>
+<ul>
+<li>
+<p>The use of <code>style(--variable: value)</code> will perform an exact match of both computed values. This one is suitable for string-like matching (ex: <code>style(--stock: low)</code>)</p>
+</li>
+<li>
+<p><code>style(--variable = value)</code> will perform a numerical comparison between two values that should have the same type (from the types I listed previously).  This one is suitable for math stuff (ex: <code>style(--n = 5)</code>)</p>
+</li>
+</ul>
+<p>The first method has another interesting behavior when combined with <code>@property</code>. Learn more about this case here: <a href="/inline-if/">How to correctly use if() in CSS</a>.</p>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
 
 <ul class="postlist" >
-
-	<li>
-		<a href="/if-trick/" >The Hidden Trick of Style Queries and if()</a>
-		<small>Learn the secret behind the new conditions and how to use them correctly.</small>
-		<time datetime="2026-02-25">February 25, 2026</time>
-	</li>
-
-	<li>
-		<a href="/anchor-issues/" >Why is Anchor Positioning not working?</a>
-		<small>Learn the edge cases that prevent anchor positioning from working correctly.</small>
-		<time datetime="2026-02-19">February 19, 2026</time>
-	</li>
-
-	<li>
+  	<li>
 		<a href="/graph-theory/" >Graph Theory using Modern CSS</a>
 		<small>A CSS-only implementation of a shortest path algorithm.</small>
 		<time datetime="2026-02-16">February 16, 2026</time>
 	</li>
-
-	<li>
+  	<li>
 		<a href="/percentage-height/" >A Better Way to Express Percentage Height</a>
 		<small>A modern alternative to the classic percentage height that always work.</small>
 		<time datetime="2026-02-10">February 10, 2026</time>
 	</li>
-
-	<li>
-		<a href="/clamp-auto/" >How to use the &quot;auto&quot; value with clamp()</a>
-		<small>A CSS trick to use clamp() with sizing values like auto, min-content, max-content, etc.</small>
-		<time datetime="2026-02-05">February 05, 2026</time>
-	</li>
-
-	<li>
-		<a href="/elastic-hover/" >Elastic/Bouncy Text Effect</a>
-		<small>A few lines of modern CSS to create a fancy elastic effect on hover.</small>
-		<time datetime="2026-02-03">February 03, 2026</time>
-	</li>
-
-	<li>
-		<a href="/pyramidal-grid/" >Responsive Pyramidal Grid of Hexagon Shapes (and more!)</a>
-		<small>A responsive pyramidal grid of various shapes without media queries.</small>
-		<time datetime="2026-01-27">January 27, 2026</time>
-	</li>
-
-	<li>
-		<a href="/filedset-legend/" >Recreating the &lt;filedset&gt; component and its &lt;legend&gt;</a>
-		<small>Using basic HTML and a few lines of CSS to recreate the fieldset component.</small>
-		<time datetime="2026-01-21">January 21, 2026</time>
-	</li>
-
-	<li>
-		<a href="/random-wavy-divider/" >A Generator for Random Wavy Dividers</a>
-		<small>Easily get the code of a fancy wavy divider using the shape() function.</small>
-		<time datetime="2026-01-14">January 14, 2026</time>
-	</li>
-
-	<li>
-		<a href="/connected-circles-2/" >Connecting Circles With Anchor Positioning II</a>
-		<small>Connect circles with arrows and show their distance using modern CSS.</small>
-		<time datetime="2026-01-08">January 08, 2026</time>
-	</li>
-
-	<li>
-		<a href="/hexagon-grid/" >Responsive Hexagon Grid without Media Queries</a>
-		<small>A few lines of modern CSS to create a responsive grid of hexagon shapes (and more!).</small>
-		<time datetime="2026-01-05">January 05, 2026</time>
-	</li>
-
-	<li>
-		<a href="/connected-circles/" >Connecting Circles With Anchor Positioning</a>
-		<small>Using modern CSS to create a dynamic link that connects two circles, whatever their position.</small>
-		<time datetime="2025-12-16">December 16, 2025</time>
-	</li>
-
-	<li>
-		<a href="/fizz-buzz/" >Fizz Buzz using Modern CSS (no HTML)</a>
-		<small>A fun experiment using modern CSS to create the classic Fizz Buzz.</small>
-		<time datetime="2025-12-06">December 06, 2025</time>
-	</li>
-
-	<li>
-		<a href="/root-selectors/" >The Hidden Selectors of The HTML Element</a>
-		<small>Discover alternative selectors for the html element beyond the classic :root{} and html{}.</small>
-		<time datetime="2025-12-04">December 04, 2025</time>
-	</li>
-
-	<li>
-		<a href="/skewed-images/" >Gallery of Skewed Images with Hover Effect</a>
-		<small>Using modern CSS and corner-shape to add a fancy gallery of images with a reveal hover effect.</small>
-		<time datetime="2025-12-02">December 02, 2025</time>
-	</li>
-
 </ul>
-
-
-
-
-<p>266 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
-<div id="inline-custom"><hr></div>
-
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
-
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
