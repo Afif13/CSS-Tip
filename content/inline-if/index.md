@@ -64,7 +64,7 @@ The registration is not required if you have no calculation and you only want an
 }
 ```
 
-We can also use `=` instead of `:` in the first example and it works without the need to register the custom property:
+We can also use `=` instead of `:` in the first example, and it works without the need to register the custom property:
 
 ```css
 .box {
@@ -75,4 +75,4 @@ We can also use `=` instead of `:` in the first example and it works without the
 }
 ```
 
-I am detaling this last example in the following post: [The Hidden Trick of Style Queries and if()](/if-trick/)
+I am detailing this last example in the following post: [The Hidden Trick of Style Queries and if()](/if-trick/)

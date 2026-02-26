@@ -105,7 +105,7 @@ Let's apply this to our example by replacing `:` with `=`
 
 We do the substitution to get `style(calc(6/2) = 3)`. We do the parsing, and we can see both are `<integer>` (here we perform the calculation). They have the same type and are equal so the condition is true!
 
-The `=` notation give us more freedom on how to write the condition. All the below are valid:
+The `=` notation gives us more freedom in how to write the condition. All the below are valid:
 
 ```css
 .box {
@@ -116,7 +116,7 @@ The `=` notation give us more freedom on how to write the condition. All the bel
 }
 ```
 
-You can reverse the order, use `var()`, include a calculation, etc. When using the `:` notation we must always start with the custom property and we cannot use it with `var()`. All the below are invalid:
+You can reverse the order, use `var()`, include a calculation, etc. When using the `:` notation, we must always start with the custom property, and we cannot use it with `var()` (`var()` can only be used with the value). All the below are invalid:
 
 ```css
 .box {
@@ -138,7 +138,7 @@ Let's try the example using the `new` value with the `=` notation
 
 The substitution gives `style(new = new)`. The parsing will .. fail! `new` is none of the listed types, so the condition is false.
 
-Here is a demo showing all the conditions so can see the difference between both notation:
+Here is a demo showing all the conditions so you can see the difference between both notations:
 
 <p class="codepen" data-height="400" data-pen-title="The hidden trick of if()" data-preview="true" data-default-tab="css,result" data-slug-hash="azZrBxN" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/azZrBxN">
