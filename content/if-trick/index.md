@@ -18,7 +18,7 @@ With modern CSS, we have two new ways to express conditions: inline `if()` and s
 .box {
   background: green;
   @container style(--n: 3) {
-    border-color: red;  
+    background: red;  
   }
 }
 ```
@@ -34,7 +34,7 @@ The common part between them is the `style()` part, which is defined to behave t
 .box {
   background: green;
   @container style(--n = 3) {
-    border-color: red;  
+    background: red;  
   }
 }
 ```
@@ -113,6 +113,7 @@ The `=` notation gives us more freedom in how to write the condition. All the be
   background: if(style(var(--n) = 3): red; else: green);
   background: if(style(3 = var(--n)): red; else: green);
   background: if(style(calc(6/2) = var(--n)): red; else: green);
+  background: if(style(--n = var(--n)): red; else: green);
 }
 ```
 
