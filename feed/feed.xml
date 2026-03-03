@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-02-25T00:00:00Z</updated>
+	<updated>2026-03-03T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,18 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>A Generator for Fancy Frames</title>
+		<link href="https://css-tip.com/fancy-frame/"/>
+		<updated>2026-03-03T00:00:00Z</updated>
+		<id>https://css-tip.com/fancy-frame/</id>
+		<content type="html"><![CDATA[ <p>Generate a fancy frame with one line of code using <code>clip-path: shape()</code>. Simply adjust the setting and obtain a variety of cool frames (Squiggle, Wavy, Ragged, Torn, etc.)</p>
+<p><picture><source type="image/avif" srcset="/img/QLm6YpZr9W-992.avif 992w"><source type="image/webp" srcset="/img/QLm6YpZr9W-992.webp 992w"><img alt="CSS-only fancy frame" loading="lazy" decoding="async" src="/img/QLm6YpZr9W-992.png" width="992" height="324"></picture></p>
+<p style="font-size: 1.5em;text-align: center;"><a href="https://css-generators.com/fancy-frame/" target="_blank">css-generators.com/fancy-frame</a></p>
+<p>It's a responsive single-element implementation that works with images. It's also ready for <code>border-shape</code>.</p>
+ <p><a href="https://css-tip.com/fancy-frame/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>

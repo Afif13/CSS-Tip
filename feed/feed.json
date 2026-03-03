@@ -19,6 +19,14 @@
 		}
 		,
 		{
+			"id": "https://css-tip.com/fancy-frame/",
+			"url": "https://css-tip.com/fancy-frame/",
+			"title": "A Generator for Fancy Frames",
+			"content_html": "<p>Generate a fancy frame with one line of code using <code>clip-path: shape()</code>. Simply adjust the setting and obtain a variety of cool frames (Squiggle, Wavy, Ragged, Torn, etc.)</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/QLm6YpZr9W-992.avif 992w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/QLm6YpZr9W-992.webp 992w\"><img alt=\"CSS-only fancy frame\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/QLm6YpZr9W-992.png\" width=\"992\" height=\"324\"></picture></p>\n<p style=\"font-size: 1.5em;text-align: center;\"><a href=\"https://css-generators.com/fancy-frame/\" target=\"_blank\">css-generators.com/fancy-frame</a></p>\n<p>It's a responsive single-element implementation that works with images. It's also ready for <code>border-shape</code>.</p>\n<p class=\"codepen\" data-height=\"450\" data-pen-title=\"Fancy frames using shape()\" data-preview=\"true\" data-default-tab=\"result\" data-slug-hash=\"ogzbZWr\" data-user=\"t_afif\" style=\"height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/ogzbZWr\">\n  Fancy frames using shape()</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>\n",
+			"date_published": "2026-03-03T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/if-trick/",
 			"url": "https://css-tip.com/if-trick/",
 			"title": "The Hidden Trick of Style Queries and if()",

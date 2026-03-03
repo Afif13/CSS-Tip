@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Graph Theory using Modern CSS</title>
+		<title>A Generator for Fancy Frames</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A CSS-only implementation of a shortest path algorithm">
+		<meta name="description" content="Create a lot of cool frames with one generator (Squiggly, Ragged, Wiggly, Wavy, Torn, etc.)">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/graph-theory/" >
+		<link rel=canonical href="https://css-tip.com/fancy-frame/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Graph Theory using Modern CSS">
+		<meta property="og:title" content="A Generator for Fancy Frames">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/graph-theory/">
-		<meta property="og:description" content="A CSS-only implementation of a shortest path algorithm">
-		<meta property="og:image" content="/og-images/807fa05c.png" >
+		<meta property="og:url" content="https://css-tip.com/fancy-frame/">
+		<meta property="og:description" content="Create a lot of cool frames with one generator (Squiggly, Ragged, Wiggly, Wavy, Torn, etc.)">
+		<meta property="og:image" content="/og-images/3f3c9396.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,26 +47,24 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/percentage-height/" title="A Better Way to Express Percentage Height">Previous CSS Tip</a></li><li class="next"><a href="/anchor-issues/" title="Why is Anchor Positioning not working?">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/if-trick/" title="The Hidden Trick of Style Queries and if()">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Graph Theory using Modern CSS</h1>
+<h1>A Generator for Fancy Frames</h1>
 
-<time datetime="2026-02-16">February 16, 2026</time>
+<time datetime="2026-03-03">March 03, 2026</time>
 
-<p>Let's suppose you have a graph with a known number of nodes and you want to identify the shortest path between two nodes. It's possible using only CSS!</p>
-<p><picture><source type="image/avif" srcset="/img/jyoeo7vRwS-1172.avif 1172w"><source type="image/webp" srcset="/img/jyoeo7vRwS-1172.webp 1172w"><img alt="CSS only shortest path algorithm" loading="lazy" decoding="async" src="/img/jyoeo7vRwS-1172.png" width="1172" height="438"></picture></p>
-<p>Not only can we draw the graph (using my previous implementation of <a href="/connected-circles-2/">connecting two circles</a>), but we can also do various calculations to find the shortest path (using the technique of <a href="/element-dimension/">getting the width/height of any element</a>)</p>
-<p>Drag the different nodes in the demo below to see the magic in play!</p>
-<p>⚠️ Chrome-only for now ⚠️</p>
-<p class="codepen" data-height="700" data-default-tab="result" data-slug-hash="YPWMmOP" data-pen-title="Graph Theory (Chrome-only)" data-preview="true" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-      <span>See the Pen <a href="https://codepen.io/t_afif/pen/YPWMmOP" target="_blank" rel="noopener">
-  Graph Theory (Chrome-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Generate a fancy frame with one line of code using <code>clip-path: shape()</code>. Simply adjust the setting and obtain a variety of cool frames (Squiggle, Wavy, Ragged, Torn, etc.)</p>
+<p><picture><source type="image/avif" srcset="/img/QLm6YpZr9W-992.avif 992w"><source type="image/webp" srcset="/img/QLm6YpZr9W-992.webp 992w"><img alt="CSS-only fancy frame" loading="lazy" decoding="async" src="/img/QLm6YpZr9W-992.png" width="992" height="324"></picture></p>
+<p style="font-size: 1.5em;text-align: center;"><a href="https://css-generators.com/fancy-frame/" target="_blank" rel="noopener">css-generators.com/fancy-frame</a></p>
+<p>It's a responsive single-element implementation that works with images. It's also ready for <code>border-shape</code>.</p>
+<p class="codepen" data-height="450" data-pen-title="Fancy frames using shape()" data-preview="true" data-default-tab="result" data-slug-hash="ogzbZWr" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ogzbZWr" target="_blank" rel="noopener">
+  Fancy frames using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>Except for the drag feature, which relies on JS, everything else is controlled using CSS.</p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -75,24 +73,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/fancy-frame/" >A Generator for Fancy Frames</a>
-		<small>Create a lot of cool frames with one generator (Squiggly, Ragged, Wiggly, Wavy, Torn, etc.).</small>
-		<time datetime="2026-03-03">March 03, 2026</time>
+		<a href="/anchor-issues/" >Why is Anchor Positioning not working?</a>
+		<small>Learn the edge cases that prevent anchor positioning from working correctly.</small>
+		<time datetime="2026-02-19">February 19, 2026</time>
 	</li>
   	<li>
-		<a href="/if-trick/" >The Hidden Trick of Style Queries and if()</a>
-		<small>Learn the secret behind the new conditions and how to use them correctly.</small>
-		<time datetime="2026-02-25">February 25, 2026</time>
-	</li>
-  	<li>
-		<a href="/clamp-auto/" >How to use the &quot;auto&quot; value with clamp()</a>
-		<small>A CSS trick to use clamp() with sizing values like auto, min-content, max-content, etc.</small>
-		<time datetime="2026-02-05">February 05, 2026</time>
-	</li>
-  	<li>
-		<a href="/elastic-hover/" >Elastic/Bouncy Text Effect</a>
-		<small>A few lines of modern CSS to create a fancy elastic effect on hover.</small>
-		<time datetime="2026-02-03">February 03, 2026</time>
+		<a href="/graph-theory/" >Graph Theory using Modern CSS</a>
+		<small>A CSS-only implementation of a shortest path algorithm.</small>
+		<time datetime="2026-02-16">February 16, 2026</time>
 	</li>
 </ul>
 		</main>
