@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Tip: Learn CSS the easy way</title>
+		<title>A Squircle Shape using clip-path: shape()</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
+		<meta name="description" content="Using the shape() function to approximate the classic squircle shape">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/" >
+		<link rel=canonical href="https://css-tip.com/squircle/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Tip: Learn CSS the easy way">
+		<meta property="og:title" content="A Squircle Shape using clip-path: shape()">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/">
-		<meta property="og:description" content="The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.">
-		<meta property="og:image" content="https://css-tip.com/img/css-tip.jpg">
-		<meta property="og:image:width" content="1600" >
-		<meta property="og:image:height" content="800" >
+		<meta property="og:url" content="https://css-tip.com/squircle/">
+		<meta property="og:description" content="Using the shape() function to approximate the classic squircle shape">
+		<meta property="og:image" content="/og-images/67573443.png" >
+		<meta property="og:image:width" content="1200" >
+		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="CSS Tip: Learn CSS the easy way">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="CSS Tip: Learn CSS the easy way">
@@ -36,7 +36,7 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/tools/">Tools</a></li>
 					<li class="nav-item"><a href="/explore/">Explore</a></li>
 					<li class="nav-item"><a href="/archive/">Archive</a></li>
@@ -47,123 +47,44 @@
 		</header>
 		<main id="skip">
 			
+<ul class="links-nextprev"><li class="prev"><a href="/fancy-frame/" title="A Generator for Fancy Frames">Previous CSS Tip</a></li>
+</ul>
 
-<h1>Learn CSS The Easy Way</h1>
-<p>Discover a new CSS Trick every day and enhance your web development skills. CSS Tip helps you stay up to date with the latest and modern web features. It takes a few minutes to unlock all the CSS secrets!</p>
-<p>Do you want to surprise yourself? <a href="https://random.css-tip.com" target="_blank" rel="noopener">Read a random CSS Tip!</a></p>
-<hr>
 
+<h1>A Squircle Shape using clip-path: shape()</h1>
+
+<time datetime="2026-03-05">March 05, 2026</time>
+
+<p>Until better support for <code>corner-shape</code>, we can approximate a squircle shape using <code>clip-path: shape()</code>. A flexible implementation using CSS variable to easily control the radius.</p>
+<p><picture><source type="image/avif" srcset="/img/HP9Lt7CHXh-899.avif 899w"><source type="image/webp" srcset="/img/HP9Lt7CHXh-899.webp 899w"><img alt="CSS-only squircle shape" loading="lazy" decoding="async" src="/img/HP9Lt7CHXh-899.png" width="899" height="359"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.squircle</span> <span class="token punctuation">{</span><br>  <span class="token property">--r</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span> <span class="token comment">/* between 0% (square) and 50% (squircle) (You can also use pixel value) */</span><br>  <br>  <span class="token property">--_r</span><span class="token punctuation">:</span> <span class="token function">clamp</span><span class="token punctuation">(</span>0%<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--r<span class="token punctuation">)</span>/2<span class="token punctuation">,</span>25%<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_v</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span>*<span class="token punctuation">(</span>1 - <span class="token function">sqrt</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span>/4<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--_p</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><br>    from <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    curve to 50% 0 with <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span> 0<span class="token punctuation">,</span><br>    curve to <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span> with <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span><span class="token punctuation">)</span> 0<span class="token punctuation">,</span><br>    curve to <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span> with <span class="token function">calc</span><span class="token punctuation">(</span>100% - 2*<span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    curve to 100% 50% with 100% <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    curve to <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span><span class="token punctuation">)</span> with 100% <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    curve to <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> with <span class="token function">calc</span><span class="token punctuation">(</span>100% - 2*<span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 2*<span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    curve to 50% 100% with <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span><span class="token punctuation">)</span> 100%<span class="token punctuation">,</span><br>    curve to <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> with <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span> 100%<span class="token punctuation">,</span><br>    curve to <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span><span class="token punctuation">)</span> with <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 2*<span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    curve to 0 50% with 0 <span class="token function">calc</span><span class="token punctuation">(</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    curve to <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span> with 0 <span class="token function">var</span><span class="token punctuation">(</span>--_r<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    curve to <span class="token function">var</span><span class="token punctuation">(</span>--_v<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span> with <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>2*<span class="token function">var</span><span class="token punctuation">(</span>--_p<span class="token punctuation">)</span><span class="token punctuation">)</span><br>  <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>In the demo below, you can adjust the radius and compare the <code>shape()</code> implementation with the <code>corner-shape</code> one.</p>
+<p class="codepen" data-height="480" data-pen-title="Squircle (shape() vs corner-shape)" data-preview="true" data-default-tab="result" data-slug-hash="KwgVxRZ" data-user="t_afif" style="height: 480px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KwgVxRZ" target="_blank" rel="noopener">
+  Squircle (shape() vs corner-shape)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>You can also generate the code using my <a href="https://css-generators.com/fancy-frame/" target="_blank" rel="noopener">fancy frame generator</a> by reducing the granularity and making the frame size equal to <code>0</code>.</p>
+<p><picture><source type="image/avif" srcset="/img/_zV0iBcokn-1188.avif 1188w"><source type="image/webp" srcset="/img/_zV0iBcokn-1188.webp 1188w"><img alt="Generator for squircle shape" loading="lazy" decoding="async" src="/img/_zV0iBcokn-1188.png" width="1188" height="624"></picture></p>
+
+
+<div id="inline-custom"><hr style="margin-block:1rem"></div>
+
+<h2>More CSS Tips</h2>
 
 <ul class="postlist" >
-
-	<li>
-		<a href="/squircle/" >A Squircle Shape using clip-path: shape()</a>
-		<small>Using the shape() function to approximate the classic squircle shape.</small>
-		<time datetime="2026-03-05">March 05, 2026</time>
-	</li>
-
-	<li>
-		<a href="/fancy-frame/" >A Generator for Fancy Frames</a>
-		<small>Create a lot of cool frames with one generator (Squiggly, Ragged, Wiggly, Wavy, Torn, etc.).</small>
-		<time datetime="2026-03-03">March 03, 2026</time>
-	</li>
-
-	<li>
+  	<li>
 		<a href="/if-trick/" >The Hidden Trick of Style Queries and if()</a>
 		<small>Learn the secret behind the new conditions and how to use them correctly.</small>
 		<time datetime="2026-02-25">February 25, 2026</time>
 	</li>
-
-	<li>
+  	<li>
 		<a href="/anchor-issues/" >Why is Anchor Positioning not working?</a>
 		<small>Learn the edge cases that prevent anchor positioning from working correctly.</small>
 		<time datetime="2026-02-19">February 19, 2026</time>
 	</li>
-
-	<li>
-		<a href="/graph-theory/" >Graph Theory using Modern CSS</a>
-		<small>A CSS-only implementation of a shortest path algorithm.</small>
-		<time datetime="2026-02-16">February 16, 2026</time>
-	</li>
-
-	<li>
-		<a href="/percentage-height/" >A Better Way to Express Percentage Height</a>
-		<small>A modern alternative to the classic percentage height that always work.</small>
-		<time datetime="2026-02-10">February 10, 2026</time>
-	</li>
-
-	<li>
-		<a href="/clamp-auto/" >How to use the &quot;auto&quot; value with clamp()</a>
-		<small>A CSS trick to use clamp() with sizing values like auto, min-content, max-content, etc.</small>
-		<time datetime="2026-02-05">February 05, 2026</time>
-	</li>
-
-	<li>
-		<a href="/elastic-hover/" >Elastic/Bouncy Text Effect</a>
-		<small>A few lines of modern CSS to create a fancy elastic effect on hover.</small>
-		<time datetime="2026-02-03">February 03, 2026</time>
-	</li>
-
-	<li>
-		<a href="/pyramidal-grid/" >Responsive Pyramidal Grid of Hexagon Shapes (and more!)</a>
-		<small>A responsive pyramidal grid of various shapes without media queries.</small>
-		<time datetime="2026-01-27">January 27, 2026</time>
-	</li>
-
-	<li>
-		<a href="/filedset-legend/" >Recreating the &lt;filedset&gt; component and its &lt;legend&gt;</a>
-		<small>Using basic HTML and a few lines of CSS to recreate the fieldset component.</small>
-		<time datetime="2026-01-21">January 21, 2026</time>
-	</li>
-
-	<li>
-		<a href="/random-wavy-divider/" >A Generator for Random Wavy Dividers</a>
-		<small>Easily get the code of a fancy wavy divider using the shape() function.</small>
-		<time datetime="2026-01-14">January 14, 2026</time>
-	</li>
-
-	<li>
-		<a href="/connected-circles-2/" >Connecting Circles With Anchor Positioning II</a>
-		<small>Connect circles with arrows and show their distance using modern CSS.</small>
-		<time datetime="2026-01-08">January 08, 2026</time>
-	</li>
-
-	<li>
-		<a href="/hexagon-grid/" >Responsive Hexagon Grid without Media Queries</a>
-		<small>A few lines of modern CSS to create a responsive grid of hexagon shapes (and more!).</small>
-		<time datetime="2026-01-05">January 05, 2026</time>
-	</li>
-
-	<li>
-		<a href="/connected-circles/" >Connecting Circles With Anchor Positioning</a>
-		<small>Using modern CSS to create a dynamic link that connects two circles, whatever their position.</small>
-		<time datetime="2025-12-16">December 16, 2025</time>
-	</li>
-
-	<li>
-		<a href="/fizz-buzz/" >Fizz Buzz using Modern CSS (no HTML)</a>
-		<small>A fun experiment using modern CSS to create the classic Fizz Buzz.</small>
-		<time datetime="2025-12-06">December 06, 2025</time>
-	</li>
-
 </ul>
-
-
-
-
-<p>268 more CSS Tips can be found in <a href="/archive/">the archive</a>.</p>
-
-
-
-
-
-<div id="inline-custom"><hr></div>
-
-<p>This site is a member of <a href="https://cs.sjoy.lol/" target="_blank" rel="noopener">CS.Sjoy.lol</a> webring. Cool websites doing CSS stuff!</p>
-<p>Explore the Ring: <a href="https://webri.ng/webring/cssjoy/previous?via=https://css-tip.com" target="_blank" rel="noopener">Previous Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/random?via=https://css-tip.com" target="_blank" rel="noopener">Random Site</a> | 
-<a href="https://webri.ng/webring/cssjoy/next?via=https://css-tip.com" target="_blank" rel="noopener">Next Site</a></p>
-
 		</main>
 		<aside>
 			<div id="custom-wall" style="height: 230px;"></div>
