@@ -113,19 +113,20 @@ main div#contact {
 
 <h2>Ad placements</h2>
 
-{% image "./image.png", "Overview of ad placement" %}
-
 <ul class="types">
   <li><h3>Top</h3><div>250$/month</div><p>width: 415px; <br> height: 240px;</p></li>
   <li><h3>Side</h3><div>150$/month</div><p>width: 415px; <br> height: 200px;</p></li>
   <li><h3>Bottom</h3><div>100$/month</div><p>width: 100%; <br> min-height: 100px;</p></li>
 </ul>
 
+{% image "./image.png", "Overview of ad placement" %}
+
 <p>A preview? It's unnecessary because it will look like you want it to look. We will create together the perfect eye-catching ad. It won't be a simple clickable image but a semantic HTML code integrated into the website. You can update its content at any time with no additional fees.</p>
 
 <p>What are you waiting for? Start advertising with CSS Tip!</p>
 
-<button id="touch">Get in Touch</button>
+<iframe height="500" style="border:none; width:100%" src="https://pro.css-tip.com/">
+</iframe>
 
 <h2>Do you want a special ad?</h2>
 
@@ -134,14 +135,3 @@ main div#contact {
 <br><br>
 
 <small>* It's an average based on the values provided by analytic tools of the previous months. Real numbers may vary.</small>
-
-
-<script>
-document.querySelector("#touch").addEventListener('click',function(e){
-  const div = document.createElement("div");
-  div.id="contact";
-  div.innerHTML="email me at <a href='mailt1:pr1@css-tip.c1m'>pr1@css-tip.c1m</a>".replaceAll("1","o");
-  e.target.replaceWith(div);
-  gtag('event', 'advertise');
-})
-</script>
