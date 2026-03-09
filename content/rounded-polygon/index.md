@@ -73,4 +73,4 @@ $n: 7; /* number of sides*/
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-⚠️ Chrome-only for now ⚠️
+You can also get the code from my online generator: https://css-generators.com/polygon-shape/
