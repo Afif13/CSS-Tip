@@ -31,4 +31,4 @@ As a bonus we can animate the radius and also rotate the shape. Here is a demo w
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-You can also get the code from my online generator: https://css-generators.com/polygon-shape/
+You can also get the code from my online generator: [css-generators.com/polygon-shape](https://css-generators.com/polygon-shape/)
