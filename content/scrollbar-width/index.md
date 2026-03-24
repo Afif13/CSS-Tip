@@ -6,43 +6,32 @@ date: 2024-07-31
 tags: posts
 ---
 
-<small>You can find a better implementation here: [Get the scrollbar width using only CSS](/width-scrollbar/) </small>
-
 "What is the width of the scrollbar?" A question we can answer using a few lines of modern CSS! No need for JavaScript and you get the value as a CSS variable defined at `:root` level. 
 
 ```css
-@property --w {
-  syntax: "<integer>";
-  inherits: true;
-  initial-value: 0; 
-}
-@property --_x {
+@property --x {
   syntax: "<number>";
   inherits: true;
-  initial-value: 0; 
-}
-@property --_w {
-  syntax: '<length>';
-  inherits: true;
-  initial-value: 100vw; 
+  initial-value: 1;
 }
 html {
-  /* --w will contain the width in pixel of the scrollbar 
-     it's a unitless value (integer) */
-  --w: calc(tan(atan2(var(--_w),1px)) - 1/(1 - var(--_x)));
-  timeline-scope: --cx;
-  animation: x linear;
-  animation-timeline: --cx;
+  /* --w will contain a unitless value of the scrollbar width */
+  --w: calc(100cqw*var(--x)/1px);
+  timeline-scope: --x;
+  animation: --x linear;
+  animation-timeline: --x;
   animation-range: entry 100% exit 100%;
 }
 html:before {
-  content:"";
+  content: "";
   position: fixed;
   left: 0;
-  width: 1px;
-  view-timeline: --cx inline;
+  aspect-ratio: 1;
+  overflow: hidden;
+  scrollbar-gutter: stable;
+  view-timeline: --x inline;
 }
-@keyframes x {to{--_x:1}}
+@keyframes --x {to {--x:0}}
 ```
 
 Chrome-only for now
@@ -55,3 +44,5 @@ Chrome-only for now
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 More detail: [frontendmasters.com/blog/how-to-get-the-width-height-of-any-element-in-only-css](https://frontendmasters.com/blog/how-to-get-the-width-height-of-any-element-in-only-css/)
+
+Related: [https://codepen.io/propjockey/pen/ogzovYg](https://codepen.io/propjockey/pen/ogzovYg)
