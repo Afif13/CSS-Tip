@@ -19,6 +19,14 @@
 		}
 		,
 		{
+			"id": "https://css-tip.com/dino-game/",
+			"url": "https://css-tip.com/dino-game/",
+			"title": "CSS-only Chrome Dino Game",
+			"content_html": "<p>What is the best way to showcase the modern CSS features? It's by making CSS-only games.</p>\n<p>This time, it's the Chrome Dino game that you can play using your keyboard. Yes, you can jump and crouch with the arrow keys!</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/FomXnYKt2V-660.avif 660w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/FomXnYKt2V-660.webp 660w\"><img alt=\"CSS-only Chrome Dino game\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/FomXnYKt2V-660.png\" width=\"660\" height=\"200\"></picture></p>\n<p>100% CSS magic powered by Scroll-Driven animations, <code>@property</code>, container queries, etc.</p>\n<p>A Chrome-only demo. Sorry, but the dino didn't want to &quot;run&quot; in other browsers, and I respect its decision.</p>\n<p class=\"codepen\" data-height=\"600\" data-pen-title=\"CSS-only Chrome Dino Game (with keyboard!)\" data-preview=\"true\" data-default-tab=\"result\" data-slug-hash=\"xbEWzwP\" data-user=\"t_afif\" style=\"height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/xbEWzwP\">\n  CSS-only Chrome Dino Game (with keyboard!)</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<p>In case you missed it, I also created a mini CSS Mario World using the same techniques.</p>\n<p class=\"codepen\" data-height=\"680\" data-pen-title=\"CSS-only Mario World (with keyboard!)\" data-preview=\"true\" data-default-tab=\"result\" data-slug-hash=\"JoKYwXO\" data-user=\"t_afif\" style=\"height: 680px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/JoKYwXO\">\n  CSS-only Mario World (with keyboard!)</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>",
+			"date_published": "2026-03-31T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/counter-gotcha/",
 			"url": "https://css-tip.com/counter-gotcha/",
 			"title": "The Gotcha of using counter() with container",

@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A Squishy Button with a Hover/Click Effect</title>
+		<title>CSS-only Chrome Dino Game</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Using the shape() function to add a fancy shape to a button element">
+		<meta name="description" content="Recreating the famous Dino game by Google using pure CSS, and playable with the keyboard">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/squishy-button/" >
+		<link rel=canonical href="https://css-tip.com/dino-game/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A Squishy Button with a Hover/Click Effect">
+		<meta property="og:title" content="CSS-only Chrome Dino Game">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/squishy-button/">
-		<meta property="og:description" content="Using the shape() function to add a fancy shape to a button element">
-		<meta property="og:image" content="/og-images/a7e3b93e.png" >
+		<meta property="og:url" content="https://css-tip.com/dino-game/">
+		<meta property="og:description" content="Recreating the famous Dino game by Google using pure CSS, and playable with the keyboard">
+		<meta property="og:image" content="/og-images/f6d8207a.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,28 +47,31 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/squircle/" title="A Squircle Shape using clip-path: shape()">Previous CSS Tip</a></li><li class="next"><a href="/wobbling-animation/" title="Add a Wobbling Animation to your Images">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/counter-gotcha/" title="The Gotcha of using counter() with container">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>A Squishy Button with a Hover/Click Effect</h1>
+<h1>CSS-only Chrome Dino Game</h1>
 
-<time datetime="2026-03-12">March 12, 2026</time>
+<time datetime="2026-03-31">March 31, 2026</time>
 
-<p>Use the <code>shape()</code> function to create a fancy frame around a button element with a cool animation on hover and on click.</p>
-<p><picture><source type="image/avif" srcset="/img/1_r3yubTNc-777.avif 777w"><source type="image/webp" srcset="/img/1_r3yubTNc-777.webp 777w"><img alt="CSS-only squishy button" loading="lazy" decoding="async" src="/img/1_r3yubTNc-777.png" width="777" height="186"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">button</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #c1121f<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span><br>  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.8<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .3s ease-out<span class="token punctuation">;</span><br>  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">button:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> 1s <span class="token function">linear</span><span class="token punctuation">(</span><span class="token comment">/* from https://linear-easing-generator.netlify.app/ */</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">button:active</span> <span class="token punctuation">{</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .25s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">button span</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">button:active span</span> <span class="token punctuation">{</span><br>  <span class="token property">scale</span><span class="token punctuation">:</span> .85<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">button</span> <span class="token punctuation">{</span>  <br>  <span class="token comment">/* Shape #1 */</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* from https://css-generators.com/fancy-frame/ */</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><span class="token selector">button:hover</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* Shape #2 */</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* from https://css-generators.com/fancy-frame/ */</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">button:active</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* Shape #3 */</span><br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* from https://css-generators.com/fancy-frame/ */</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="400" data-pen-title="Squishy button using shape()" data-preview="true" data-default-tab="result" data-slug-hash="ZYpLGvX" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ZYpLGvX" target="_blank" rel="noopener">
-  Squishy button using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>What is the best way to showcase the modern CSS features? It's by making CSS-only games.</p>
+<p>This time, it's the Chrome Dino game that you can play using your keyboard. Yes, you can jump and crouch with the arrow keys!</p>
+<p><picture><source type="image/avif" srcset="/img/FomXnYKt2V-660.avif 660w"><source type="image/webp" srcset="/img/FomXnYKt2V-660.webp 660w"><img alt="CSS-only Chrome Dino game" loading="lazy" decoding="async" src="/img/FomXnYKt2V-660.png" width="660" height="200"></picture></p>
+<p>100% CSS magic powered by Scroll-Driven animations, <code>@property</code>, container queries, etc.</p>
+<p>A Chrome-only demo. Sorry, but the dino didn't want to &quot;run&quot; in other browsers, and I respect its decision.</p>
+<p class="codepen" data-height="600" data-pen-title="CSS-only Chrome Dino Game (with keyboard!)" data-preview="true" data-default-tab="result" data-slug-hash="xbEWzwP" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/xbEWzwP" target="_blank" rel="noopener">
+  CSS-only Chrome Dino Game (with keyboard!)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>In case you missed it, I also created a mini CSS Mario World using the same techniques.</p>
+<p class="codepen" data-height="680" data-pen-title="CSS-only Mario World (with keyboard!)" data-preview="true" data-default-tab="result" data-slug-hash="JoKYwXO" data-user="t_afif" style="height: 680px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/JoKYwXO" target="_blank" rel="noopener">
+  CSS-only Mario World (with keyboard!)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>You can use my online generator to the get <code>shape()</code> code: <a href="https://css-generators.com/fancy-frame/" target="_blank" rel="noopener">css-generators.com/fancy-frame</a>.</p>
-<p>First, identify the height of the element (in our case, it's <code>90px</code> (<code>1.8 x 50px</code>)). Then, take half of that value (<code>45px</code>). In the generator, fix the values of the granularities and the shape ID (keep the vertical granularity at the smallest value). Then, you generate the first shape by setting the size to <code>0</code> and the radius to <code>45</code>. For the second shape, increase the size slightly and decrease the radius by the same amount (e.g., <code>15</code> and <code>30</code>). Same thing for the third shape (e.g., <code>22</code> and <code>23</code>).</p>
-<p>The sum of the size and radius must always remain the same (<code>45px</code> in our case), and you should keep the same granularities. The shape ID can be different if you want another kind of animation.</p>
-<p><picture><source type="image/avif" srcset="/img/T5E6ARkXCC-1087.avif 1087w"><source type="image/webp" srcset="/img/T5E6ARkXCC-1087.webp 1087w"><img alt="Overview of the frame generator" loading="lazy" decoding="async" src="/img/T5E6ARkXCC-1087.png" width="1087" height="534"></picture></p>
-
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -76,24 +79,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/dino-game/" >CSS-only Chrome Dino Game</a>
-		<small>Recreating the famous Dino game by Google using pure CSS, and playable with the keyboard.</small>
-		<time datetime="2026-03-31">March 31, 2026</time>
+		<a href="/wobbling-animation/" >Add a Wobbling Animation to your Images</a>
+		<small>Create an infinite fancy animation using clip-path and shape().</small>
+		<time datetime="2026-03-18">March 18, 2026</time>
 	</li>
   	<li>
-		<a href="/counter-gotcha/" >The Gotcha of using counter() with container</a>
-		<small>counter() may behave strangely when combined with container. Learn about this small quirk.</small>
-		<time datetime="2026-03-25">March 25, 2026</time>
-	</li>
-  	<li>
-		<a href="/fancy-frame/" >A Generator for Fancy Frames</a>
-		<small>Create a lot of cool frames with one generator (Squiggly, Ragged, Wiggly, Wavy, Torn, etc.).</small>
-		<time datetime="2026-03-03">March 03, 2026</time>
-	</li>
-  	<li>
-		<a href="/if-trick/" >The Hidden Trick of Style Queries and if()</a>
-		<small>Learn the secret behind the new conditions and how to use them correctly.</small>
-		<time datetime="2026-02-25">February 25, 2026</time>
+		<a href="/squishy-button/" >A Squishy Button with a Hover/Click Effect</a>
+		<small>Using the shape() function to add a fancy shape to a button element.</small>
+		<time datetime="2026-03-12">March 12, 2026</time>
 	</li>
 </ul>
 		</main>
