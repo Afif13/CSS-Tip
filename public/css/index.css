@@ -518,7 +518,7 @@ time span {
   color: #fff;
   position: relative;
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 .vuejs > img {
   position: absolute;
