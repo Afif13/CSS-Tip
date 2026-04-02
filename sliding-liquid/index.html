@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Add a Wobbling Animation to your Images</title>
+		<title>Sliding &quot;Liquid Oozing&quot; Reveal Effect</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Create an infinite fancy animation using clip-path and shape()">
+		<meta name="description" content="A fancy reveal animation powered by clip-path: shape">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/wobbling-animation/" >
+		<link rel=canonical href="https://css-tip.com/sliding-liquid/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Add a Wobbling Animation to your Images">
+		<meta property="og:title" content="Sliding &quot;Liquid Oozing&quot; Reveal Effect">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/wobbling-animation/">
-		<meta property="og:description" content="Create an infinite fancy animation using clip-path and shape()">
-		<meta property="og:image" content="/og-images/c07cb04b.png" >
+		<meta property="og:url" content="https://css-tip.com/sliding-liquid/">
+		<meta property="og:description" content="A fancy reveal animation powered by clip-path: shape">
+		<meta property="og:image" content="/og-images/0d08db03.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,24 +47,26 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/squishy-button/" title="A Squishy Button with a Hover/Click Effect">Previous CSS Tip</a></li><li class="next"><a href="/counter-gotcha/" title="The Gotcha of using counter() with container">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/dino-game/" title="CSS-only Chrome Dino Game">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Add a Wobbling Animation to your Images</h1>
+<h1>Sliding &quot;Liquid Oozing&quot; Reveal Effect</h1>
 
-<time datetime="2026-03-18">March 18, 2026</time>
+<time datetime="2026-04-02">April 02, 2026</time>
 
-<p>Use <code>shape()</code> and my <a href="https://css-generators.com/fancy-frame/" target="_blank" rel="noopener">fancy frames generator</a> to create an infinite wobbling animation for images or any elements. It's a single-element implementation with simple code.</p>
-<p><picture><source type="image/avif" srcset="/img/WOcKIlGMc_-922.avif 922w"><source type="image/webp" srcset="/img/WOcKIlGMc_-922.webp 922w"><img alt="CSS-only woobling effect" loading="lazy" decoding="async" src="/img/WOcKIlGMc_-922.png" width="922" height="447"></picture></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> shape 4s linear infinite<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> shape</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%,to</span> <span class="token punctuation">{</span><span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* from the generator */</span><span class="token punctuation">)</span><span class="token punctuation">}</span><br>  <span class="token selector">33.3%</span> <span class="token punctuation">{</span><span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* from the generator */</span><span class="token punctuation">)</span><span class="token punctuation">}</span><br>  <span class="token selector">66.6%</span> <span class="token punctuation">{</span><span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* from the generator */</span><span class="token punctuation">)</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
-<p>All you have to do is fix the granularity, then generate three different shapes. The same granularity will ensure the same number of curves/points, allowing the browser to have a smooth transition between the shapes.</p>
-<p class="codepen" data-height="450" data-pen-title="Untitled" data-preview="true" data-default-tab="result" data-slug-hash="zxKzrKe" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zxKzrKe" target="_blank" rel="noopener">
-  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Create a fancy reveal animation with a &quot;liquid oozing&quot; effect using <code>shape()</code>. Code generated using <a href="https://css-generators.com/wavy-divider/" target="_blank" rel="noopener">my wavy divider generator</a></p>
+<p><picture><source type="image/avif" srcset="/img/eudr2bgGs8-1137.avif 1137w"><source type="image/webp" srcset="/img/eudr2bgGs8-1137.webp 1137w"><img alt="CSS-only Sliding liquid effect" loading="lazy" decoding="async" src="/img/eudr2bgGs8-1137.png" width="1137" height="320"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html:after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><br>  <span class="token property">inset</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #219ebc<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> reveal 6s 1.5s both<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> reveal</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%</span> <span class="token punctuation">{</span><br>    <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* code from the generator */</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><br>    <span class="token property">translate</span><span class="token punctuation">:</span> 0 110%<span class="token punctuation">;</span><br>    <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* code from the generator */</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="600" data-pen-title="Sliding reveal animation" data-preview="true" data-default-tab="result" data-slug-hash="OPRZBxY" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/OPRZBxY" target="_blank" rel="noopener">
+  Sliding reveal animation</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>First, select the top configuration, set the granularity, and generate a shape (the shape ID). Then, you adjust the size of the wave at <code>0%</code> then at <code>100%</code>  to get the code for both shapes.</p>
+<p><picture><source type="image/avif" srcset="/img/cOdvyunhRy-1013.avif 1013w"><source type="image/webp" srcset="/img/cOdvyunhRy-1013.webp 1013w"><img alt="Showing both shapes from the generator" loading="lazy" decoding="async" src="/img/cOdvyunhRy-1013.png" width="1013" height="296"></picture></p>
+<p>Having the same granularity and shape ID will allow the browser to have a smooth transition between both shapes and create that fancy effect.</p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -73,24 +75,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/sliding-liquid/" >Sliding &quot;Liquid Oozing&quot; Reveal Effect</a>
-		<small>A fancy reveal animation powered by clip-path: shape.</small>
-		<time datetime="2026-04-02">April 02, 2026</time>
+		<a href="/counter-gotcha/" >The Gotcha of using counter() with container</a>
+		<small>counter() may behave strangely when combined with container. Learn about this small quirk.</small>
+		<time datetime="2026-03-25">March 25, 2026</time>
 	</li>
   	<li>
-		<a href="/dino-game/" >CSS-only Chrome Dino Game</a>
-		<small>Recreating the famous Dino game by Google using pure CSS, and playable with the keyboard.</small>
-		<time datetime="2026-03-31">March 31, 2026</time>
-	</li>
-  	<li>
-		<a href="/squircle/" >A Squircle Shape using clip-path: shape()</a>
-		<small>Using the shape() function to approximate the classic squircle shape.</small>
-		<time datetime="2026-03-05">March 05, 2026</time>
-	</li>
-  	<li>
-		<a href="/fancy-frame/" >A Generator for Fancy Frames</a>
-		<small>Create a lot of cool frames with one generator (Squiggly, Ragged, Wiggly, Wavy, Torn, etc.).</small>
-		<time datetime="2026-03-03">March 03, 2026</time>
+		<a href="/wobbling-animation/" >Add a Wobbling Animation to your Images</a>
+		<small>Create an infinite fancy animation using clip-path and shape().</small>
+		<time datetime="2026-03-18">March 18, 2026</time>
 	</li>
 </ul>
 		</main>
