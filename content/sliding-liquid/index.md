@@ -1,12 +1,12 @@
 ---
 layout: layouts/post.njk
-title: 'Sliding "Liquid Oozing" Reveal Effect'
-description: "A fancy reveal animation powered by clip-path: shape"
+title: 'A Sliding "Liquid Oozing" Reveal Effect'
+description: "A fancy reveal animation powered by clip-path: shape()"
 date: 2026-04-02
 tags: posts
 ---
 
-Create a fancy reveal animation with a "liquid oozing" effect using `shape()`. Code generated using [my wavy divider generator](https://css-generators.com/wavy-divider/)
+Create a fancy reveal animation with a "liquid oozing" effect using the `shape()` function. Code generated using [my wavy divider generator](https://css-generators.com/wavy-divider/).
 
 {% image "./image.png", "CSS-only Sliding liquid effect" %}
 
@@ -37,7 +37,7 @@ html:after {
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 
-First, select the top configuration, set the granularity, and generate a shape (the shape ID). Then, you adjust the size of the wave at `0%` then at `100%`  to get the code for both shapes.
+First, select the top configuration, set the granularity, and generate a shape (the shape ID). Then, you adjust the size of the wave at `0%` and  at `100%`  to get the code for both shapes.
 
 {% image "./image1.png", "Showing both shapes from the generator" %}
 
