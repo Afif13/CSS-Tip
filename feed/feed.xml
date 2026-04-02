@@ -24,11 +24,11 @@
 	</entry>
 	
 	<entry>
-		<title>Sliding &quot;Liquid Oozing&quot; Reveal Effect</title>
+		<title>A Sliding &quot;Liquid Oozing&quot; Reveal Effect</title>
 		<link href="https://css-tip.com/sliding-liquid/"/>
 		<updated>2026-04-02T00:00:00Z</updated>
 		<id>https://css-tip.com/sliding-liquid/</id>
-		<content type="html"><![CDATA[ <p>Create a fancy reveal animation with a &quot;liquid oozing&quot; effect using <code>shape()</code>. Code generated using <a href="https://css-generators.com/wavy-divider/">my wavy divider generator</a></p>
+		<content type="html"><![CDATA[ <p>Create a fancy reveal animation with a &quot;liquid oozing&quot; effect using the <code>shape()</code> function. Code generated using <a href="https://css-generators.com/wavy-divider/">my wavy divider generator</a>.</p>
 <p><picture><source type="image/avif" srcset="/img/eudr2bgGs8-1137.avif 1137w"><source type="image/webp" srcset="/img/eudr2bgGs8-1137.webp 1137w"><img alt="CSS-only Sliding liquid effect" loading="lazy" decoding="async" src="/img/eudr2bgGs8-1137.png" width="1137" height="320"></picture></p>
  <p><a href="https://css-tip.com/sliding-liquid/">Read more</a></p> ]]></content>
 	</entry>

@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sliding &quot;Liquid Oozing&quot; Reveal Effect</title>
+		<title>A Sliding &quot;Liquid Oozing&quot; Reveal Effect</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A fancy reveal animation powered by clip-path: shape">
+		<meta name="description" content="A fancy reveal animation powered by clip-path: shape()">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -15,11 +15,11 @@
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Sliding &quot;Liquid Oozing&quot; Reveal Effect">
+		<meta property="og:title" content="A Sliding &quot;Liquid Oozing&quot; Reveal Effect">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://css-tip.com/sliding-liquid/">
-		<meta property="og:description" content="A fancy reveal animation powered by clip-path: shape">
-		<meta property="og:image" content="/og-images/0d08db03.png" >
+		<meta property="og:description" content="A fancy reveal animation powered by clip-path: shape()">
+		<meta property="og:image" content="/og-images/efff4f50.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -51,11 +51,11 @@
 </ul>
 
 
-<h1>Sliding &quot;Liquid Oozing&quot; Reveal Effect</h1>
+<h1>A Sliding &quot;Liquid Oozing&quot; Reveal Effect</h1>
 
 <time datetime="2026-04-02">April 02, 2026</time>
 
-<p>Create a fancy reveal animation with a &quot;liquid oozing&quot; effect using <code>shape()</code>. Code generated using <a href="https://css-generators.com/wavy-divider/" target="_blank" rel="noopener">my wavy divider generator</a></p>
+<p>Create a fancy reveal animation with a &quot;liquid oozing&quot; effect using the <code>shape()</code> function. Code generated using <a href="https://css-generators.com/wavy-divider/" target="_blank" rel="noopener">my wavy divider generator</a>.</p>
 <p><picture><source type="image/avif" srcset="/img/eudr2bgGs8-1137.avif 1137w"><source type="image/webp" srcset="/img/eudr2bgGs8-1137.webp 1137w"><img alt="CSS-only Sliding liquid effect" loading="lazy" decoding="async" src="/img/eudr2bgGs8-1137.png" width="1137" height="320"></picture></p>
 <pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">html:after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><br>  <span class="token property">inset</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #219ebc<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> reveal 6s 1.5s both<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> reveal</span> <span class="token punctuation">{</span><br>  <span class="token selector">0%</span> <span class="token punctuation">{</span><br>    <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* code from the generator */</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><br>    <span class="token property">translate</span><span class="token punctuation">:</span> 0 110%<span class="token punctuation">;</span><br>    <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span><span class="token comment">/* code from the generator */</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 <p class="codepen" data-height="600" data-pen-title="Sliding reveal animation" data-preview="true" data-default-tab="result" data-slug-hash="OPRZBxY" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -64,7 +64,7 @@
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>First, select the top configuration, set the granularity, and generate a shape (the shape ID). Then, you adjust the size of the wave at <code>0%</code> then at <code>100%</code>  to get the code for both shapes.</p>
+<p>First, select the top configuration, set the granularity, and generate a shape (the shape ID). Then, you adjust the size of the wave at <code>0%</code> and  at <code>100%</code>  to get the code for both shapes.</p>
 <p><picture><source type="image/avif" srcset="/img/cOdvyunhRy-1013.avif 1013w"><source type="image/webp" srcset="/img/cOdvyunhRy-1013.webp 1013w"><img alt="Showing both shapes from the generator" loading="lazy" decoding="async" src="/img/cOdvyunhRy-1013.png" width="1013" height="296"></picture></p>
 <p>Having the same granularity and shape ID will allow the browser to have a smooth transition between both shapes and create that fancy effect.</p>
 
