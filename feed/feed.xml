@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-04-08T00:00:00Z</updated>
+	<updated>2026-04-13T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,19 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Convert Complex SVG Shapes into CSS</title>
+		<link href="https://css-tip.com/svg-converter/"/>
+		<updated>2026-04-13T00:00:00Z</updated>
+		<id>https://css-tip.com/svg-converter/</id>
+		<content type="html"><![CDATA[ <p>I updated the SVG-to-CSS converter to support multiple path elements rather than just a single path. Now, you can easily convert complex SVG shapes into CSS.</p>
+<p style="font-size: 1.5em;text-align: center;"><a href="https://css-generators.com/svg-to-css/" target="_blank">css-generators.com/svg-to-css</a></p>
+<p>You will get a responsive code created using a single element and a single <code>shape()</code> function. You can also have the border-only version using <code>border-shape</code>.</p>
+<p><picture><source type="image/avif" srcset="/img/Y-i98rjp3u-1062.avif 1062w"><source type="image/webp" srcset="/img/Y-i98rjp3u-1062.webp 1062w"><img alt="CSS-only Nasa Logo using shape()" loading="lazy" decoding="async" src="/img/Y-i98rjp3u-1062.png" width="1062" height="256"></picture></p>
+<p>Example of a complex SVG shape:</p>
+ <p><a href="https://css-tip.com/svg-converter/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>

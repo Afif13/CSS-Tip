@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS Functions that work without arguments</title>
+		<title>Convert Complex SVG Shapes into CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Some functions in CSS don&#39;t require arguments and it can be helpful">
+		<meta name="description" content="An SVG-to-CSS converter to easily transform SVG shapes into CSS shapes">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/css-functions/" >
+		<link rel=canonical href="https://css-tip.com/svg-converter/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="CSS Functions that work without arguments">
+		<meta property="og:title" content="Convert Complex SVG Shapes into CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/css-functions/">
-		<meta property="og:description" content="Some functions in CSS don&#39;t require arguments and it can be helpful">
-		<meta property="og:image" content="/og-images/44fe042f.png" >
+		<meta property="og:url" content="https://css-tip.com/svg-converter/">
+		<meta property="og:description" content="An SVG-to-CSS converter to easily transform SVG shapes into CSS shapes">
+		<meta property="og:image" content="/og-images/4b14a2a5.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,32 +47,35 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/flower-shape/" title="Create a flower shape using CSS mask">Previous CSS Tip</a></li><li class="next"><a href="/align-content-center/" title="The gotcha of align-content with block elements">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/border-shape/" title="Let&#39;s Reshape the Web using border-shape!">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>CSS Functions that work without arguments</h1>
+<h1>Convert Complex SVG Shapes into CSS</h1>
 
-<time datetime="2024-02-28">February 28, 2024</time>
+<time datetime="2026-04-13">April 13, 2026</time>
 
-<p>Do you know that some CSS functions can be used without arguments?</p>
-<p>This is the case with <code>circle()</code> and <code>ellipse()</code> of <code>clip-path</code>. No need to provide any argument and they will, by default, round your element. <code>circle()</code> is a particular case of the <code>ellipse()</code> and is useful with square elements.</p>
-<p><picture><source type="image/avif" srcset="/img/CrKrPblYto-827.avif 827w"><source type="image/webp" srcset="/img/CrKrPblYto-827.webp 827w"><img alt="clip-path circle and ellipse" loading="lazy" decoding="async" src="/img/CrKrPblYto-827.png" width="827" height="534"></picture></p>
-<p>The browser will default <code>circle()</code> to <code>circle(closest-side at center)</code> and <code>ellipse()</code> to <code>ellipse(closest-side closest-side at center)</code></p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="wvZwapN" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/wvZwapN" target="_blank" rel="noopener">
-  clip-path: circle()/ellipse()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>I updated the SVG-to-CSS converter to support multiple path elements rather than just a single path. Now, you can easily convert complex SVG shapes into CSS.</p>
+<p style="font-size: 1.5em;text-align: center;"><a href="https://css-generators.com/svg-to-css/" target="_blank" rel="noopener">css-generators.com/svg-to-css</a></p>
+<p>You will get a responsive code created using a single element and a single <code>shape()</code> function. You can also have the border-only version using <code>border-shape</code>.</p>
+<p><picture><source type="image/avif" srcset="/img/Y-i98rjp3u-1062.avif 1062w"><source type="image/webp" srcset="/img/Y-i98rjp3u-1062.webp 1062w"><img alt="CSS-only Nasa Logo using shape()" loading="lazy" decoding="async" src="/img/Y-i98rjp3u-1062.png" width="1062" height="256"></picture></p>
+<p>Example of a complex SVG shape:</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M91.991,104.699c1.576,5.961,4.119,8.266,8.613,8.266c4.659,0,7.102-2.799,7.102-8.266V3.2h29.184v101.499 c0,14.307-1.856,20.506-9.11,27.762c-5.228,5.229-14.871,9.271-27.047,9.271c-9.837,0-19.25-3.256-25.253-9.27 c-5.263-5.273-8.154-10.689-12.672-27.764L44.9,37.033c-1.577-5.961-4.119-8.265-8.613-8.265c-4.66,0-7.103,2.798-7.103,8.265 v101.5H0v-101.5C0,22.727,1.857,16.527,9.111,9.271C14.337,4.044,23.981,0,36.158,0c9.837,0,19.25,3.257,25.253,9.27 c5.263,5.273,8.154,10.689,12.672,27.764L91.991,104.699z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M478.038,138.533L444.334,33.096c-0.372-1.164-0.723-2.152-1.263-2.811 c-0.926-1.127-2.207-1.719-3.931-1.719c-1.723,0-3.004,0.592-3.931,1.719c-0.539,0.658-0.891,1.646-1.262,2.811l-33.703,105.437 h-30.167l36.815-115.177c1.918-6,4.66-11.094,8.139-14.488C421.002,3.047,428.038,0,439.141,0s18.14,3.047,24.109,8.867 c3.479,3.395,6.221,8.488,8.14,14.488l36.814,115.177H478.038z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M328.878,138.533c19.12,0,28.446-4.062,35.814-11.389c8.153-8.105,12.053-16.973,12.053-30.213 c0-11.699-4.283-22.535-10.804-29.019c-8.526-8.479-19.116-11.151-36.384-11.151L305.37,56.76c-9.242,0-12.925-1.117-15.839-3.98 c-2.001-1.964-2.939-4.885-2.939-8.328c0-3.559,0.857-7.074,3.303-9.475c2.171-2.131,5.13-3.109,10.816-3.109h69.903V3.2H306.05 c-19.12,0-28.445,4.063-35.814,11.389c-8.152,8.105-12.053,16.972-12.053,30.212c0,11.701,4.283,22.536,10.804,29.019 c8.527,8.479,19.116,11.152,36.384,11.152l24.188,0.002c9.242,0,12.925,1.115,15.839,3.979c2.001,1.965,2.939,4.885,2.939,8.328 c0,3.559-0.857,7.074-3.302,9.475c-2.172,2.131-5.131,3.109-10.817,3.109h-72.094l-27.651-86.509 c-1.918-6-4.66-11.094-8.139-14.488C220.363,3.047,213.327,0,202.224,0s-18.14,3.047-24.108,8.867 c-3.48,3.395-6.221,8.488-8.139,14.488l-36.815,115.177h30.166l33.704-105.437c0.372-1.164,0.723-2.152,1.263-2.811 c0.926-1.127,2.208-1.719,3.931-1.719s3.004,0.592,3.931,1.719c0.54,0.658,0.891,1.646,1.262,2.811l33.704,105.437H328.878z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></code></pre>
+<p>It will get converted to:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.shape</span> <span class="token punctuation">{</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 3.586<span class="token punctuation">;</span><br>  <br>  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span>from 18.1% 73.87%<span class="token punctuation">,</span>curve by 1.69% 5.83% with 0.31% 4.21%/0.81% 5.83%<span class="token punctuation">,</span>curve by 1.4% -5.83% with 0.92% 0%/1.4% -1.97%<span class="token punctuation">,</span>vline to 2.26%<span class="token punctuation">,</span>hline by 5.74%<span class="token punctuation">,</span>vline by 71.61%<span class="token punctuation">,</span>curve by -1.79% 19.59% with 0% 10.09%/-0.37% 14.47%<span class="token punctuation">,</span>curve by -5.32% 6.54% with -1.03% 3.69%/-2.93% 6.54%<span class="token punctuation">,</span>curve by -4.97% -6.54% with -1.94% 0%/-3.79% -2.3%<span class="token punctuation">,</span>curve by -2.49% -19.59% with -1.04% -3.72%/-1.6% -7.54%<span class="token punctuation">,</span>line to 8.84% 26.13%<span class="token punctuation">,</span>curve by -1.69% -5.83% with -0.31% -4.21%/-0.81% -5.83%<span class="token punctuation">,</span>curve by -1.4% 5.83% with -0.92% 0%/-1.4% 1.97%<span class="token punctuation">,</span>vline by 71.61%<span class="token punctuation">,</span>hline to 0%<span class="token punctuation">,</span>vline by -71.61%<span class="token punctuation">,</span>curve to 1.79% 6.54% with 0% 16.04%/0.37% 11.66%<span class="token punctuation">,</span>curve to 7.11% 0% with 2.82% 2.85%/4.72% 0%<span class="token punctuation">,</span>curve by 4.97% 6.54% with 1.94% 0%/3.79% 2.3%<span class="token punctuation">,</span>curve by 2.49% 19.59% with 1.04% 3.72%/1.6% 7.54%<span class="token punctuation">,</span>line to 18.1% 73.87%<span class="token punctuation">,</span>close<span class="token punctuation">,</span>close<span class="token punctuation">,</span>move to 94.06% 97.74%<span class="token punctuation">,</span>line to 87.43% 23.35%<span class="token punctuation">,</span>curve by -0.25% -1.98% with -0.07% -0.82%/-0.14% -1.52%<span class="token punctuation">,</span>curve by -0.77% -1.21% with -0.18% -0.8%/-0.43% -1.21%<span class="token punctuation">,</span>curve by -0.77% 1.21% with -0.34% 0%/-0.59% 0.42%<span class="token punctuation">,</span>curve by -0.25% 1.98% with -0.11% 0.46%/-0.18% 1.16%<span class="token punctuation">,</span>line by -6.63% 74.39%<span class="token punctuation">,</span>hline by -5.94%<span class="token punctuation">,</span>line by 7.24% -81.26%<span class="token punctuation">,</span>curve by 1.6% -10.22% with 0.38% -4.23%/0.92% -7.83%<span class="token punctuation">,</span>curve to 86.41% 0% with 82.84% 2.15%/84.23% 0%<span class="token punctuation">,</span>smooth by 4.74% 6.26% with 3.57% 2.15%<span class="token punctuation">,</span>curve by 1.6% 10.22% with 0.68% 2.4%/1.22% 5.99%<span class="token punctuation">,</span>line by 7.24% 81.26%<span class="token punctuation">,</span>hline to 94.06%<span class="token punctuation">,</span>close<span class="token punctuation">,</span>close<span class="token punctuation">,</span>move to 64.71% 97.74%<span class="token punctuation">,</span>curve by 7.05% -8.04% with 3.76% 0%/5.6% -2.87%<span class="token punctuation">,</span>curve by 2.37% -21.32% with 1.6% -5.72%/2.37% -11.98%<span class="token punctuation">,</span>curve by -2.13% -20.47% with 0% -8.25%/-0.84% -15.9%<span class="token punctuation">,</span>curve by -7.16% -7.87% with -1.68% -5.98%/-3.76% -7.87%<span class="token punctuation">,</span>line to 60.09% 40.05%<span class="token punctuation">,</span>curve by -3.12% -2.81% with -1.82% 0%/-2.54% -0.79%<span class="token punctuation">,</span>curve by -0.58% -5.88% with -0.39% -1.39%/-0.58% -3.45%<span class="token punctuation">,</span>curve by 0.65% -6.69% with 0% -2.51%/0.17% -4.99%<span class="token punctuation">,</span>curve by 2.13% -2.19% with 0.43% -1.5%/1.01% -2.19%<span class="token punctuation">,</span>hline by 13.75%<span class="token punctuation">,</span>vline to 2.26%<span class="token punctuation">,</span>hline to 60.22%<span class="token punctuation">,</span>curve by -7.05% 8.04% with -3.76% 0%/-5.6% 2.87%<span class="token punctuation">,</span>curve by -2.37% 21.32% with -1.6% 5.72%/-2.37% 11.97%<span class="token punctuation">,</span>curve by 2.13% 20.47% with 0% 8.26%/0.84% 15.9%<span class="token punctuation">,</span>curve by 7.16% 7.87% with 1.68% 5.98%/3.76% 7.87%<span class="token punctuation">,</span>line by 4.76% 0%<span class="token punctuation">,</span>curve by 3.12% 2.81% with 1.82% 0%/2.54% 0.79%<span class="token punctuation">,</span>curve by 0.58% 5.88% with 0.39% 1.39%/0.58% 3.45%<span class="token punctuation">,</span>curve by -0.65% 6.69% with 0% 2.51%/-0.17% 4.99%<span class="token punctuation">,</span>curve by -2.13% 2.19% with -0.43% 1.5%/-1.01% 2.19%<span class="token punctuation">,</span>hline by -14.19%<span class="token punctuation">,</span>line by -5.44% -61.04%<span class="token punctuation">,</span>curve by -1.6% -10.22% with -0.38% -4.23%/-0.92% -7.83%<span class="token punctuation">,</span>curve to 39.79% 0% with 43.36% 2.15%/41.98% 0%<span class="token punctuation">,</span>smooth by -4.74% 6.26% with -3.57% 2.15%<span class="token punctuation">,</span>curve by -1.6% 10.22% with -0.68% 2.4%/-1.22% 5.99%<span class="token punctuation">,</span>line by -7.24% 81.26%<span class="token punctuation">,</span>hline by 5.94%<span class="token punctuation">,</span>line by 6.63% -74.39%<span class="token punctuation">,</span>curve by 0.25% -1.98% with 0.07% -0.82%/0.14% -1.52%<span class="token punctuation">,</span>curve by 0.77% -1.21% with 0.18% -0.8%/0.43% -1.21%<span class="token punctuation">,</span>smooth by 0.77% 1.21% with 0.59% 0.42%<span class="token punctuation">,</span>curve by 0.25% 1.98% with 0.11% 0.46%/0.18% 1.16%<span class="token punctuation">,</span>line by 6.63% 74.39%<span class="token punctuation">,</span>hline to 64.71%<span class="token punctuation">,</span>close<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* OR */</span><br>  <span class="token property">border-shape</span><span class="token punctuation">:</span> <span class="token comment">/* same shape() code */</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>The border-only version using <code>border-shape</code> is currently a Chrome-only feature.</p>
+<p class="codepen" data-height="450" data-pen-title="CSS-only Nasa Logo using shape()" data-preview="true" data-default-tab="result" data-slug-hash="qEaQJoB" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/qEaQJoB" target="_blank" rel="noopener">
+  CSS-only Nasa Logo using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<p>The filter functions can also be used without arguments. Most of them have no effect on the element except for <code>invert()</code>, <code>grayscale()</code>, and <code>sepia()</code></p>
-<p><picture><source type="image/avif" srcset="/img/IojtMus0tp-710.avif 710w"><source type="image/webp" srcset="/img/IojtMus0tp-710.webp 710w"><img alt="CSS filter function (sepia, grayscale and invert)" loading="lazy" decoding="async" src="/img/IojtMus0tp-710.png" width="710" height="444"></picture></p>
-<p>You can invert the colors of your image, turn it into black &amp; white, or make it sepia without the need to remember the values you have to provide to each function.</p>
-<p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="XWQrPmP" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/XWQrPmP" target="_blank" rel="noopener">
-  filter: invert()/grayscale()/sepia()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<h3 id="how-does-it-work" tabindex="-1">How does it work? <a class="header-anchor" href="#how-does-it-work">#</a></h3>
+<p>Multiple path elements can generally be merged into a single path element by simply concatenating the values of the <code>d</code> attribute.</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token comment">&lt;!-- this is the same  --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M91.991 ... z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M478.038 ... z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br><span class="token comment">&lt;!-- as this --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M91.991 ... zM478.038 ... z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></code></pre>
+<p>And since converting one <code>&lt;path&gt;</code> into one <code>shape()</code> is possible, we can also convert multiple <code>&lt;path&gt;</code> elements into a single <code>shape()</code>. This technique only works if the paths create separate portions of the SVG shape, share the same color, and no transform is applied to them. The <a href="https://css-generators.com/svg-to-css" target="_blank" rel="noopener">online converter</a> is not a &quot;magic&quot; tool that converts all the SVG shapes into CSS shapes. It can only convert one or many path elements into a single <code>shape()</code> value.</p>
+<p><code>shape()</code> is NOT a replacement for SVG. Even if I used many logos as an example, it doesn't mean you should consider CSS instead of SVG. They are proof of concept to illustrate the technique and test the tool. Don't replace all your SVGs with CSS!</p>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -80,24 +83,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/postage-stamp/" >Turn an image into a postage stamp</a>
-		<small>A few lines of code to create a cool postage stamp shape.</small>
-		<time datetime="2024-03-14">March 14, 2024</time>
+		<a href="/sliding-liquid/" >A Sliding &quot;Liquid Oozing&quot; Reveal Effect</a>
+		<small>A fancy reveal animation powered by clip-path: shape().</small>
+		<time datetime="2026-04-02">April 02, 2026</time>
 	</li>
   	<li>
-		<a href="/wavy-circle/" >A wavy circle with cool hover effect</a>
-		<small>Place your image inside a fancy wavy frame with a cool hover effect.</small>
-		<time datetime="2024-03-13">March 13, 2024</time>
-	</li>
-  	<li>
-		<a href="/nesting-selector/" >Be careful when using the nesting selector (&amp;)</a>
-		<small>The &quot;&amp;&quot; selector is not the same in CSS and Sass so use it carefully.</small>
-		<time datetime="2024-02-19">February 19, 2024</time>
-	</li>
-  	<li>
-		<a href="/heart-shape-hover-2/" >Heart shape with a sliding hover effect II</a>
-		<small>A lovely animation to your heart shape image.</small>
-		<time datetime="2024-02-15">February 15, 2024</time>
+		<a href="/dino-game/" >CSS-only Chrome Dino Game</a>
+		<small>Recreating the famous Dino game by Google using pure CSS, and playable with the keyboard.</small>
+		<time datetime="2026-03-31">March 31, 2026</time>
 	</li>
 </ul>
 		</main>
