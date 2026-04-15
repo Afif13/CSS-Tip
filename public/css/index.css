@@ -387,6 +387,7 @@ input[type=search] {
 }
 #custom-wall {
 	display: grid;
+	min-height: 260px;
 }
 .wall {
   height: 100%;
@@ -400,7 +401,7 @@ input[type=search] {
   border: 1px solid hsl(0, 0%, 92%);
   text-decoration: none;
   border-radius: 0.5em;
-  row-gap: 5px;
+  row-gap: 8px;
 }
 .wall__footer {
   display: flex;
@@ -412,20 +413,16 @@ input[type=search] {
 .wall__tagline {
   font-weight: 600;
 }
-h3.wall__tagline {
-	margin-block: .3em;
-  font-size: 1.25em;
+h4.wall__tagline {
+  font-size: 20px;
   text-transform: capitalize;
-}
-.wall__description {
-  font-size: 0.875em;
-  line-height: 1.35;
-  flex: 1;
+  margin: 0;
 }
 p.wall__description {
 	font-size: 1em;
 	line-height: 1.4;
-	margin-block: .5em 1.5em;
+	margin-block: 0;
+  flex: 1;
 }
 .wall__sponsor {
   font-size: 0.625em;

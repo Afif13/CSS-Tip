@@ -2,33 +2,26 @@
 	<div id="custom-wall">
 		{% set r = range(0, 2) | random %}
 		{%- if r == 0 %}
-		<div class="vuejs">
+		<div class="vuejs" style="display: none;">
 			<img src="/img/vuejs.svg" alt="Vue.js Logo">
 			<p>The Official Certification of competence for the <span>Vue.js framework.</span></p>
 			<div>
 				<img height="90" width="90" src="/img/evan.webp" alt="Even You">
 				<p><small>In partnership with:</small><br><strong>Evan You</strong><br>Creator of Vue.js</p>
 			</div>
-			<a href="https://certificates.dev/vuejs?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP">Get Vue.js Certified</a>				
+			<a rel="sponsored noopener nofollow" href="https://certificates.dev/vuejs?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP">Get Vue.js Certified</a>				
 		</div>
 		{%- else %}
-		<div class="nuxt">
+		<div class="nuxt" style="display: none;">
 			<img src="/img/nuxt.svg" alt="Nuxt Logo">
 			<p>The Official Certification of competence for the <span>Nuxt framework.</span></p>
 			<div>
 				<img height="90" width="90" src="/img/chopin.webp" alt="Sébastien Chopin">
 				<p><small>In partnership with:</small><br><strong>Sébastien Chopin</strong><br>Creator of Nuxt</p>
 			</div>
-			<a href="https://certificates.dev/nuxt?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP">Get Nuxt Certified</a>				
+			<a rel="sponsored noopener nofollow" href="https://certificates.dev/nuxt?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP">Get Nuxt Certified</a>				
 		</div>
 		{%- endif %}
-
-<!--<div class="sponso">
-<a href="/advertise/"><small>Place your ad here</small></a>
-<p>Reach a wide audience of web developers with a personalized and attractive ad.</p>
-<p>Don't miss the opportunity to promote your product starting from <strong>100$/month</strong>.</p>
-<a href="/advertise/">Advertise with CSS Tip</a>
-</div>-->
 </div>
 <div style="height:350px;overflow: clip;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=cover" id="_carbonads_js"></script></div>
 <a href="https://css-loaders.com/" target="_blank">
@@ -44,3 +37,38 @@
 	<img src="/img/kofi.png" alt="Buy Me a coffe" >
 </a>
 </aside>
+<script src="https://m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<script>
+(function() {
+  if (typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.initBatch('custom', 'CW7D653L', 'placement:css-tipcom', {
+    //_bsa.initBatch('custom', 'CVADC53U', 'placement:yoursitedomain', {
+      target: '#custom-wall',
+      template:
+`
+<a href="##statlink##" class="wall" style="background-color: ##backgroundColor##; color: ##textColor##" rel="sponsored noopener nofollow" target="_blank" title="##company## — ##tagline##">
+  <small class="wall__sponsor">Sponsored by ##company##</small>
+  <h4 class="wall__tagline">##companyTagline##</h4>
+  <p class="wall__description">##description##</p>
+  <div class="wall__footer">
+    <div class="wall__image"><img src="##logo##"></div>
+    <div class="wall__cta" style="background-color: ##ctaBackgroundColor##; color: ##ctaTextColor##;">##callToAction##</div>
+  </div>
+</a>
+`});
+  _bsa.initBatch('responsive', 'CW7DPK7N', 'placement:css-tipcom', { target: "#inline-custom" });
+  //_bsa.initBatch('responsive', 'CVADC53U', 'placement:yoursitedomain', { target: "#inline-custom" });
+  _bsa.loadBatch();
+  }
+})();
+function BSANativeCallback({ ads, key }) {	
+	if(key == "CW7D653L") {
+  		let custom = document.querySelector("#custom-wall");
+		if (ads.length === 0) {
+	  	  custom.querySelector("div").style.display="grid";
+		} else {
+	  	  custom.querySelector("[style*=none]").remove();
+		}
+	}
+}
+</script>
