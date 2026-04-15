@@ -56,14 +56,24 @@
   </div>
 </a>
 `});
-  _bsa.initBatch('responsive', 'CW7DPK7N', 'placement:css-tipcom', { target: "#inline-custom" });
-  //_bsa.initBatch('responsive', 'CVADC53U', 'placement:yoursitedomain', { target: "#inline-custom" });
+  _bsa.initBatch('custom', 'CW7DPK7N', 'placement:css-tipcom', { 
+  //_bsa.initBatch('custom', 'CVADC53U', 'placement:yoursitedomain', {
+  	target: "#inline-custom",
+  	template: `
+<a href="##statlink##" style="background-color: ##backgroundColor##; color: ##textColor##" rel="sponsored noopener nofollow" target="_blank" title="##company## — ##tagline##">
+  <img src="##logo##" alt="logo sponsor">
+  <div class="content">
+ 	 <h4 >##companyTagline##</h4>
+	 <p>##description##</p>
+  </div>
+  <div class="cta" style="background-color: ##ctaBackgroundColor##; color: ##ctaTextColor##;">##callToAction##</div>
+</a>`});
   _bsa.loadBatch();
   }
 })();
 function BSANativeCallback({ ads, key }) {	
 	if(key == "CW7D653L") {
-  		let custom = document.querySelector("#custom-wall");
+  	let custom = document.querySelector("#custom-wall");
 		if (ads.length === 0) {
 	  	  custom.querySelector("div").style.display="grid";
 		} else {

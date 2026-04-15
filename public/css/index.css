@@ -444,27 +444,59 @@ p.wall__description {
 
 #inline-custom {
 	display: block;
+	container-type: inline-size;
 }
-#inline-custom:has(#_responsive_) > hr {
+#inline-custom:has(a) > hr {
 	display: none;
 }
-#inline-custom ._responsive_ {
-    max-width: 100%;
+#inline-custom a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    text-decoration: none;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
 }
-#inline-custom ._responsive_ .native-banner {
-    padding: .25em 1em;
+#inline-custom img {
+    height: 45px;
+    width: 120px;
+    object-fit: contain;
+    margin: 0;
 }
-#inline-custom ._responsive_ .native-img {
-    width: 100px!important;
-    flex-basis: initial!important;
-    height: 40px!important;
+#inline-custom .content {
+    margin-inline: 10px auto;
+    border-image: conic-gradient(currentColor) 0 0 0 1/4px 1px/0 0 0 10px
 }
-#inline-custom ._responsive_ .native-company {
-    margin-bottom: 0!important;
-    font-weight: 400!important;
+#inline-custom .content * {
+    color:inherit;
+    margin: 0;
 }
-#inline-custom ._responsive_ .native-desc {
-    font-weight: 500!important;
+#inline-custom .content h4 {
+    font-weight: 400;
+    font-size: 15px;
+}
+#inline-custom .content p {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+#inline-custom .cta {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+@container (width < 700px) {
+    #inline-custom img {
+        display: none;
+    }
+    #inline-custom .content {
+        margin-inline: 0 auto;
+        border-image: none;
+    }
 }
 
 .sponso {
