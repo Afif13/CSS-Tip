@@ -3,12 +3,12 @@ layout: layouts/base.njk
 title: The Fundamentals of CSS Alignment
 description: "This deep dive covers everything you need to know about CSS alignment. It's time to stop doing trial and error and finally understand how everything works!"
 date: 2025-09-04
-update: 2025-09-12
+update: 2026-04-18
 tags: explore
 ---
 
 <h1>The Fundamentals of CSS Alignment</h1>
-<time datetime="2025-09-12">September 04, 2025 <span>(Last updated on September 12, 2025)</span></time>
+<time datetime="2026-04-17">September 04, 2025 <span>(Last updated on April 17, 2026)</span></time>
 
 While centering elements in CSS has become easy over time, there is still a lot of confusion around alignment in general. Let’s be honest, you always end up trying different combinations until it works, but you don’t really understand how it works, right?
 
@@ -1050,7 +1050,7 @@ That IMCB is the area where we align the element using `*-self` properties. Here
   </div>
 </div>
 
-Notice how the element is stretched within the IMCB until you update the alignment, which means the `normal` value is equivalent to `stretch` as well.
+Notice how the element is stretched within the IMCB until you update the alignment, which means the `normal` value is equivalent to `stretch`. And since the `*-items` properties aren't available in the context of absolutely-positioned elements, the value `auto` of the `*-self` properties also behaves the same as the `normal` value.
 
 
 <blockquote data-emo="🤔">What about elements with position: fixed?</blockquote>
