@@ -47,7 +47,7 @@
 		</header>
 		<main id="skip">
 			<h1>The Fundamentals of CSS Alignment</h1>
-<time datetime="2025-09-12">September 04, 2025 <span>(Last updated on September 12, 2025)</span></time>
+<time datetime="2026-04-17">September 04, 2025 <span>(Last updated on April 17, 2026)</span></time>
 <p>While centering elements in CSS has become easy over time, there is still a lot of confusion around alignment in general. Let’s be honest, you always end up trying different combinations until it works, but you don’t really understand how it works, right?</p>
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
@@ -861,7 +861,7 @@
       </div>
   </div>
 </div>
-<p>Notice how the element is stretched within the IMCB until you update the alignment, which means the <code>normal</code> value is equivalent to <code>stretch</code> as well.</p>
+<p>Notice how the element is stretched within the IMCB until you update the alignment, which means the <code>normal</code> value is equivalent to <code>stretch</code>. And since the <code>*-items</code> properties aren't available in the context of absolutely-positioned elements, the value <code>auto</code> of the <code>*-self</code> properties also behaves the same as the <code>normal</code> value.</p>
 <blockquote data-emo="🤔">What about elements with position: fixed?</blockquote>
 <p>They follow the same logic but have a different containing block. It’s the viewport, not the nearest ancestor with a position value other than <code>static</code>.</p>
 <blockquote data-emo="🤔">And what about centering using left: 50%; top:50%; translate: -50%  -50%</blockquote>
@@ -1079,14 +1079,14 @@
 		<aside>
 	<div id="custom-wall">
 		
-		<div class="nuxt" style="display: none;">
-			<img src="/img/nuxt.svg" alt="Nuxt Logo">
-			<p>The Official Certification of competence for the <span>Nuxt framework.</span></p>
+		<div class="vuejs" style="display: none;">
+			<img src="/img/vuejs.svg" alt="Vue.js Logo">
+			<p>The Official Certification of competence for the <span>Vue.js framework.</span></p>
 			<div>
-				<img height="90" width="90" src="/img/chopin.webp" alt="Sébastien Chopin">
-				<p><small>In partnership with:</small><br><strong>Sébastien Chopin</strong><br>Creator of Nuxt</p>
+				<img height="90" width="90" src="/img/evan.webp" alt="Even You">
+				<p><small>In partnership with:</small><br><strong>Evan You</strong><br>Creator of Vue.js</p>
 			</div>
-			<a rel="noopener" href="https://certificates.dev/nuxt?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP" target="_blank">Get Nuxt Certified</a>				
+			<a rel="noopener" href="https://certificates.dev/vuejs?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP" target="_blank">Get Vue.js Certified</a>				
 		</div>
 </div>
 <div style="height:350px;overflow: clip;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=cover" id="_carbonads_js"></script></div>
