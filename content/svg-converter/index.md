@@ -41,7 +41,6 @@ The border-only version using `border-shape` is currently a Chrome-only feature.
   CSS-only Nasa Logo using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 
 ### How does it work?
@@ -63,3 +62,12 @@ Multiple path elements can generally be merged into a single path element by sim
 And since converting one `<path>` into one `shape()` is possible, we can also convert multiple `<path>` elements into a single `shape()`. This technique only works if the paths create separate portions of the SVG shape, share the same color, and no transform is applied to them. The [online converter](https://css-generators.com/svg-to-css) is not a "magic" tool that converts all the SVG shapes into CSS shapes. It can only convert one or many path elements into a single `shape()` value.
 
 `shape()` is NOT a replacement for SVG. Even if I used many logos as an example, it doesn't mean you should consider CSS instead of SVG. They are proof of concept to illustrate the technique and test the tool. Don't replace all your SVGs with CSS!
+
+Let's end with a fun demo where I am drawing Chris Coyier using a single div and a single `shape()` value. I converted the images to SVG using [picsvg.com](https://picsvg.com/), then I used my converter to generate the CSS code. A nice way to test my tool, and it seems to work fine!
+
+<p class="codepen" data-height="400" data-pen-title="Shaping Chris Coyier with CSS" data-preview="true" data-default-tab="result" data-slug-hash="qEaLagJ" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/qEaLagJ">
+  Shaping Chris Coyier with CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
