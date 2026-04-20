@@ -69,13 +69,18 @@
   CSS-only Nasa Logo using shape()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
 <h3 id="how-does-it-work" tabindex="-1">How does it work? <a class="header-anchor" href="#how-does-it-work">#</a></h3>
 <p>Multiple path elements can generally be merged into a single path element by simply concatenating the values of the <code>d</code> attribute.</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token comment">&lt;!-- this is the same  --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M91.991 ... z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M478.038 ... z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br><span class="token comment">&lt;!-- as this --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M91.991 ... zM478.038 ... z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></code></pre>
 <p>And since converting one <code>&lt;path&gt;</code> into one <code>shape()</code> is possible, we can also convert multiple <code>&lt;path&gt;</code> elements into a single <code>shape()</code>. This technique only works if the paths create separate portions of the SVG shape, share the same color, and no transform is applied to them. The <a href="https://css-generators.com/svg-to-css" target="_blank" rel="noopener">online converter</a> is not a &quot;magic&quot; tool that converts all the SVG shapes into CSS shapes. It can only convert one or many path elements into a single <code>shape()</code> value.</p>
 <p><code>shape()</code> is NOT a replacement for SVG. Even if I used many logos as an example, it doesn't mean you should consider CSS instead of SVG. They are proof of concept to illustrate the technique and test the tool. Don't replace all your SVGs with CSS!</p>
-
+<p>Let's end with a fun demo where I am drawing Chris Coyier using a single div and a single <code>shape()</code> value. I converted the images to SVG using <a href="https://picsvg.com/" target="_blank" rel="noopener">picsvg.com</a>, then I used my converter to generate the CSS code. A nice way to test my tool, and it seems to work fine!</p>
+<p class="codepen" data-height="400" data-pen-title="Shaping Chris Coyier with CSS" data-preview="true" data-default-tab="result" data-slug-hash="qEaLagJ" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/qEaLagJ" target="_blank" rel="noopener">
+  Shaping Chris Coyier with CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -97,14 +102,14 @@
 		<aside>
 	<div id="custom-wall">
 		
-		<div class="nuxt" style="display: none;">
-			<img src="/img/nuxt.svg" alt="Nuxt Logo">
-			<p>The Official Certification of competence for the <span>Nuxt framework.</span></p>
+		<div class="vuejs" style="display: none;">
+			<img src="/img/vuejs.svg" alt="Vue.js Logo">
+			<p>The Official Certification of competence for the <span>Vue.js framework.</span></p>
 			<div>
-				<img height="90" width="90" src="/img/chopin.webp" alt="Sébastien Chopin">
-				<p><small>In partnership with:</small><br><strong>Sébastien Chopin</strong><br>Creator of Nuxt</p>
+				<img height="90" width="90" src="/img/evan.webp" alt="Even You">
+				<p><small>In partnership with:</small><br><strong>Evan You</strong><br>Creator of Vue.js</p>
 			</div>
-			<a rel="noopener" href="https://certificates.dev/nuxt?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP" target="_blank">Get Nuxt Certified</a>				
+			<a rel="noopener" href="https://certificates.dev/vuejs?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP" target="_blank">Get Vue.js Certified</a>				
 		</div>
 </div>
 <div style="height:350px;overflow: clip;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=cover" id="_carbonads_js"></script></div>
