@@ -6,7 +6,7 @@ date: 2026-04-20
 tags: posts
 ---
 
-Use [the new `border-shape` property](/border-shape/) and transform the classic underline into a hand-drawn lines! It works with a simple code, and you can easily generate the wavy shape using [my online generator](https://css-generators.com/wavy-divider/)
+Use [the new `border-shape` property](/border-shape/) and transform the classic underline into hand-drawn lines! It works with a simple code, and you can easily generate the wavy shape using [my online generator](https://css-generators.com/wavy-divider/)
 
 {% image "./image.png", "A CSS-only hand-drawn underline" %}
 
@@ -20,20 +20,20 @@ ul {
 ul:after {
   content: "";
   position: absolute;
-  position-anchor: --li;
+  position-anchor: --a;
   inset: anchor(outside) anchor(inside) 0;
   border-image: conic-gradient(#f2f2f2) 1/0 100vw/0 100vw; /* the color used here must match the background color */
   transition: .2s;
 }
 ul li a:is(:hover,[aria-current],:focus-visible) {
-  anchor-name: --li;
+  anchor-name: --a;
 }
 ul:has(a:is(:hover,:focus-visible)) a:not(:hover,:focus-visible) {
   anchor-name: none;
 }
 ```
 
-`border-shape` is chrome-only feature for now. You will get a straight underline as a fallback in the other browsers.
+`border-shape` is a Chrome-only feature for now. You will get a classic underline in the other browsers.
 
 <p class="codepen" data-height="400" data-pen-title="Hand-Drawn Underline using border-shape" data-preview="true" data-default-tab="result" data-slug-hash="emdoVae" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/emdoVae">
