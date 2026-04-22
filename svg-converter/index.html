@@ -75,7 +75,7 @@
 <p>And since converting one <code>&lt;path&gt;</code> into one <code>shape()</code> is possible, we can also convert multiple <code>&lt;path&gt;</code> elements into a single <code>shape()</code>. This technique only works if the paths create separate portions of the SVG shape, share the same color, and no transform is applied to them. The <a href="https://css-generators.com/svg-to-css" target="_blank" rel="noopener">online converter</a> is not a &quot;magic&quot; tool that converts all the SVG shapes into CSS shapes. It can only convert one or many path elements into a single <code>shape()</code> value.</p>
 <p><code>shape()</code> is NOT a replacement for SVG. Even if I used many logos as an example, it doesn't mean you should consider CSS instead of SVG. They are proof of concept to illustrate the technique and test the tool. Don't replace all your SVGs with CSS!</p>
 <p>Let's end with a fun demo where I am drawing Chris Coyier using a single div and a single <code>shape()</code> value. I converted the images to SVG using <a href="https://picsvg.com/" target="_blank" rel="noopener">picsvg.com</a>, then I used my converter to generate the CSS code. A nice way to test my tool, and it seems to work fine!</p>
-<p class="codepen" data-height="400" data-pen-title="Shaping Chris Coyier with CSS" data-preview="true" data-default-tab="result" data-slug-hash="qEaLagJ" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="500" data-pen-title="Shaping Chris Coyier with CSS" data-preview="true" data-default-tab="result" data-slug-hash="qEaLagJ" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/qEaLagJ" target="_blank" rel="noopener">
   Shaping Chris Coyier with CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
@@ -87,6 +87,11 @@
 <h2>More CSS Tips</h2>
 
 <ul class="postlist" >
+  	<li>
+		<a href="/sticky-header/" >The Sticky Header that Sticks!</a>
+		<small>Another fancy effect powered by scroll-driven animation and shape().</small>
+		<time datetime="2026-04-22">April 22, 2026</time>
+	</li>
   	<li>
 		<a href="/sliding-liquid/" >A Sliding &quot;Liquid Oozing&quot; Reveal Effect</a>
 		<small>A fancy reveal animation powered by clip-path: shape().</small>
