@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Add a 3D style to your text III
-description: Add a touch of 3D to your text with some gradients tricks
+description: Add a touch of 3D to your text with some gradient tricks
 date: 2023-12-22
 tags: posts
 ---

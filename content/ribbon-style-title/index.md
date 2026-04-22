@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: A Ribbon title to the edge of the screen
-description: A magic border-image trick to add a ribbon shape to your title that extends to the endge of the screen
+description: A magic border-image trick to add a ribbon shape to your title that extends to the edge of the screen
 date: 2023-05-08
 tags: posts
 ---

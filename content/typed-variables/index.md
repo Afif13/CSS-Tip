@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Typed CSS variables using @property
-description: Upgrade your CSS variables by registring them using the @property
+description: Upgrade your CSS variables by registering them using the @property
 date: 2024-07-17
 tags: posts
 ---

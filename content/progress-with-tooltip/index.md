@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Progress element with a tooltip
-description: Adding a tooltip to the native progress element showing the precentage of progress
+description: Adding a tooltip to the native progress element showing the percentage of progress
 date: 2024-09-10
 tags: posts
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: CSS-only folded ribbon
-description: Use clip-path to create fanct folded ribbon
+description: Use clip-path to create fancy folded ribbon
 date: 2022-02-07
 tags: posts
 ---

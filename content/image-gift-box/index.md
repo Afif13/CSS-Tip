@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Place your image inside a 3D gift box
-description: a cool 3D effect to create a image gift box
+description: A cool 3D effect to create an image gift box
 date: 2023-12-19
 tags: posts
 ---

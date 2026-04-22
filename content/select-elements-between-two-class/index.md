@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Select all elemens between two class names
+title: Select all elements between two class names
 description: A simple selector to select all the elements between two given classes
 date: 2023-05-02
 tags: posts

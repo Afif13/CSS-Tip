@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: A CSS-only fragmentation effect
-description: Add a fancy framentation effect to images using CSS mask
+description: Add a fancy fragmentation effect to images using CSS mask
 date: 2024-03-25
 tags: posts
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Responsive grid of Hexagon shapes
-description: Using a shape-outside trick to create a reponsive grid of hexagon shapes
+description: Using a shape-outside trick to create a responsive grid of hexagon shapes
 date: 2022-06-03
 tags: posts
 ---

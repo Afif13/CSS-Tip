@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: A CSS-only Speech Bubble
-description: Use CSS mask to create a speach bubble easy to adjust
+description: Use CSS mask to create a speech bubble easy to adjust
 date: 2022-08-18
 tags: posts
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Perfectly center an uppercase text
-description: One line of code and you can have a true centering for any uppercase text
+description: One line of code, and you can have true centering for any uppercase text
 date: 2025-02-24
 tags: posts
 ---

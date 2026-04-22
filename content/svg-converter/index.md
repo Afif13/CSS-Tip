@@ -65,7 +65,7 @@ And since converting one `<path>` into one `shape()` is possible, we can also co
 
 Let's end with a fun demo where I am drawing Chris Coyier using a single div and a single `shape()` value. I converted the images to SVG using [picsvg.com](https://picsvg.com/), then I used my converter to generate the CSS code. A nice way to test my tool, and it seems to work fine!
 
-<p class="codepen" data-height="400" data-pen-title="Shaping Chris Coyier with CSS" data-preview="true" data-default-tab="result" data-slug-hash="qEaLagJ" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="500" data-pen-title="Shaping Chris Coyier with CSS" data-preview="true" data-default-tab="result" data-slug-hash="qEaLagJ" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/qEaLagJ">
   Shaping Chris Coyier with CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

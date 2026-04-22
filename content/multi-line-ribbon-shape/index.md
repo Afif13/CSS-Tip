@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Responsive multi-line Ribbon Shape
-description: A few gradients trick to create a responsive ribbon shape
+description: A few gradient tricks to create a responsive ribbon shape
 date: 2023-11-02
 tags: posts
 ---

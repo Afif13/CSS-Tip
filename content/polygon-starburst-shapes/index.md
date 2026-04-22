@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "CSS shapes: Polygon & Starburst"
-description: Use online geneartors to create Polygon and Starburst shapes using clip-path
+description: Use online generators to create Polygon and Starburst shapes using clip-path
 date: 2023-03-08
 tags: posts
 ---

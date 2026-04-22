@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: A decorative line with rounded dashes
-description: A few lines of code to create a nice decoratinve line with rounded dashes
+description: A few lines of code to create a nice decorative line with rounded dashes
 date: 2024-08-15
 tags: posts
 ---

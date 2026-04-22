@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Put a number inside boxes
-description: A few trick to make your number look fancy
+description: A few tricks to make your number look fancy
 date: 2022-08-02
 tags: posts
 ---

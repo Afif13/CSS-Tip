@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Recreating the <filedset> component and its <legend>
+title: Recreating the <fieldset> component and its <legend>
 description: Using basic HTML and a few lines of CSS to recreate the fieldset component
 date: 2026-01-21
 tags: posts
@@ -8,7 +8,7 @@ tags: posts
 
 Using a minimal HTML code and modern CSS to recreate the [`<fieldset>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset). A responsive implementation easy to control using CSS variables. It's also direction-aware with real transparency!
 
-{% image "./image.png", "CSS-only filedset component" %}
+{% image "./image.png", "CSS-only fieldset component" %}
 
 ```html
 <div class="fieldset">

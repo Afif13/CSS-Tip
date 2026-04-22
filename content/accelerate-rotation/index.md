@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Accelerate a rotation on hover
-description: A simple CSS trick to speed up of your rotating element 
+description: A simple CSS trick to speed up your rotating element 
 date: 2024-03-19
 tags: posts
 ---

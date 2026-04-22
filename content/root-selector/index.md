@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: The shortest selector for the root element
-description: Only one charater is need to target the html element
+description: Only one character is needed to target the html element
 date: 2024-05-06
 tags: posts
 ---

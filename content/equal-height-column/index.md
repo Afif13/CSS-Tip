@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: One column to control the height of another 
-description: Make one column control the height of another one with a simple property
+description: Make one column control the height of another with a simple property
 date: 2021-11-05
 tags: posts
 ---

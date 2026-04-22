@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: A Modern way to create hexagon shapes
-description: Two lines of CSS code an no magic number for an hexagon shape
+description: Two lines of CSS code and no magic number for a hexagon shape
 date: 2024-01-11
 tags: posts
 ---

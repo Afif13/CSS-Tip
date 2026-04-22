@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: A single-element volume control component 
-description: Use modern CSS to tranform a native input element into a volume control component
+description: Use modern CSS to transform a native input element into a volume control component
 date: 2025-02-04
 tags: posts
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Responsive full-screen slanted coloration
-description: three CSS proeprties for a fancy full width responsive coloration
+description: Three CSS properties for a fancy full width responsive coloration
 date: 2024-02-07
 tags: posts
 ---

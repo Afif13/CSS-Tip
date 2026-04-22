@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Fancy circular hover effect
-description: a nice animation of rotation circles on hover
+description: A nice animation of rotating circles on hover
 date: 2023-09-01
 tags: posts
 ---

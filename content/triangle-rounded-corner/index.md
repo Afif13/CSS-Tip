@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Triangle shape with rounded corners
-description: A few lines of code to create a triangle with rounded corner using only CSS
+description: A few lines of code to create a triangle with rounded corners using only CSS
 date: 2024-01-19
 tags: posts
 ---

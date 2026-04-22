@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Custom range slider with tooltip
-description: Using modern CSS features to create a fancy range slider with tooltop
+description: Using modern CSS features to create a fancy range slider with tooltip
 date: 2024-06-04
 tags: posts
 ---
