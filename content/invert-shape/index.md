@@ -13,7 +13,7 @@ Do you want to invert a shape created using `clip-path: shape()`? With a simple 
 ```css
 .shape {
   /* You add "evenodd" at the start and "var(--i,)" at the end */
-  clip-path: shape(evenodd from .... var(--i,));
+  clip-path: shape(evenodd /* code of the shape */ var(--i,));
 }
 .invert { /* by adding the "invert" class, the shape is inverted! */
   --i:,move to 0 0, hline to 100%, vline to 100%, hline to 0;
@@ -30,7 +30,7 @@ We can add an extra variable and control the space around the shape when inverte
 
 ```css
 .shape {
-  clip-path: shape(evenodd from ... var(--i,)) content-box; /* content-box at the end */
+  clip-path: shape(evenodd /* code of the shape */ var(--i,)) content-box; /* content-box at the end */
 }
 .invert {
   --d: 20px; /* this will control the space around the inverted shape */
