@@ -22,7 +22,6 @@ Instead of:
 We can do:
 
 ```css
-@property --g {syntax: "<number>";inherits: false;initial-value: 0;}
 .container {
   --A: ;
   --B: ;
@@ -32,7 +31,7 @@ We can do:
   --g: calc(sign(var(--n) + .0001) + var(--n) - round(down,var(--n)));
 
   /* when --g is equal to 1, the element is selected by :nth-child(An + B) */
-  background: if(style(--g: 1): red; else: blue);
+  background: if(style(--g = 1): red; else: blue);
 }
 ```
 
@@ -59,16 +58,16 @@ In the demo below, update the `:nth-child()` selector and the variables `--A` an
 We can also use the function notation and create something easier to use:
 
 ```css
-@function --nth-child(--A:1, --B:0, --_g <number>: 0) {
+@function --nth-child(--A:1, --B:0) {
   --n: calc((sibling-index() - var(--B))/var(--A));
   --_g: calc(sign(var(--n) + .0001) + var(--n) - round(down,var(--n)));
-  result: if(style(--_g: 1): 1;else: 0); 
+  result: if(style(--_g = 1): 1;else: 0); 
 }
 
 .container div {
   --g: --nth-child(-2,10);
   /* --g is equal to "1" when the element is selected and "0" otherwise */
-  background: if(style(--g: 1): red; else: blue);
+  background: if(style(--g = 1): red; else: blue);
   border-radius: calc(var(--g)*50%);
 }
 ```
