@@ -35,7 +35,7 @@ Another demo featuring [tooltips](https://css-generators.com/tooltip-speech-bubb
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-Another version with a boncy effect using `linear()`
+Another version with a bouncy effect using `linear()`:
 
 
 <p class="codepen" data-height="700" data-pen-title="The Lazy Tooltip Follower (with a bouncy effect)" data-preview="true" data-default-tab="result" data-slug-hash="myOydgG" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
