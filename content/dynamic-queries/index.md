@@ -23,13 +23,12 @@ Instead of:
 We can do:
 
 ```css
-@property --g {syntax: "<number>";inherits: true;initial-value: 0;}
 .container {
   --g: max(0,sign(100vw - 450px));
   /*  "screen wdith" < 450px : --g = 0 
       "screen wdith" > 450px : --g = 1
   */
-  background: if(style(--g: 1): blue; else: red);
+  background: if(style(--g = 1): blue; else: red);
 }
 ```
 
@@ -38,7 +37,6 @@ Why reinvent the wheel with a more complex code? With this trick, you can easily
 And since the variable `--g` follows a Boolean logic, we can use it to perform other calculations as well:
 
 ```css
-@property --g {syntax: "<number>";inherits: true;initial-value: 0;}
 .container {
   --g: max(0,sign(100vw - 450px));
   
