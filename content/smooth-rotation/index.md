@@ -33,7 +33,7 @@ Use modern CSS to control the rotation of any element smoothly. Hover to rotate,
   --t: 1turn; /* control the modulo (the smallest angle after which you get back to the same visual) */
   --d: .8s;   /* the transition when you unhover */
 
-  rotate: calc(mod(var(--a),var(--t)/2)*var(--i) + clamp(var(--t)/-2*var(--i),(var(--t)/2 - mod(var(--a),var(--t)))*9999,0deg));
+  rotate: calc((mod(var(--a),var(--t)) - (1 + sign(mod(var(--a),var(--t)) - var(--t)/2))*var(--t)/2)*var(--i));
   transition: --i var(--d),--a 0s var(--d),--j var(--d);
 }
 .box:hover {
