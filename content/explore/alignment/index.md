@@ -751,7 +751,7 @@ Inside a **block container**, **block elements** are placed on top of each other
 
 ### Ready to align?
 
-Horizontally, the block elements are placed on top of each other. It means we can align them individually on the horizontal axis, so we have “item level” alignment, and we can use `justify-items` and `justify-self`. We don’t have “content level” alignment on the horizontal axis, so `justify-content` is ignored.
+The block elements are placed on top of each other. It means we can align them individually on the horizontal axis, so we have “item level” alignment, and we can use `justify-items` and `justify-self`. We don’t have “content level” alignment on the horizontal axis, so `justify-content` is ignored.
 
 Vertically, we cannot align each item individually since they are placed together on that axis. We don’t have “item level” alignment so `align-items` and `align-self` are ignored. It’s the same logic we had with flexbox, where the flex items are placed together on the same flex line.
 
