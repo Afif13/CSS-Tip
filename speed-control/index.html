@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A CSS-only clock showing the current time</title>
+		<title>Control the Speed of Infinite Animations</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use modern CSS (and some hacks) to show the current time using only CSS">
+		<meta name="description" content="A simple code to easily control the speed of any infinite animation">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/clock/" >
+		<link rel=canonical href="https://css-tip.com/speed-control/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="A CSS-only clock showing the current time">
+		<meta property="og:title" content="Control the Speed of Infinite Animations">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/clock/">
-		<meta property="og:description" content="Use modern CSS (and some hacks) to show the current time using only CSS">
-		<meta property="og:image" content="/og-images/87d2c44b.png" >
+		<meta property="og:url" content="https://css-tip.com/speed-control/">
+		<meta property="og:description" content="A simple code to easily control the speed of any infinite animation">
+		<meta property="og:image" content="/og-images/e8d1cedb.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,23 +47,39 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/smooth-rotation/" title="Smooth rotation with modern CSS">Previous CSS Tip</a></li><li class="next"><a href="/animation-without-keyframes/" title="Running animations without keyframes">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/lazy-tooltip/" title="The Lazy Tooltip Follower">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>A CSS-only clock showing the current time</h1>
+<h1>Control the Speed of Infinite Animations</h1>
 
-<time datetime="2025-01-07">January 07, 2025</time>
+<time datetime="2026-05-06">May 06, 2026</time>
 
-<p>What time is it? We can answer this question using only CSS! The demo below is a clock that shows you the current time (You can compare with your smartwatch, it's accurate!). It's a single-element implementation powered by modern CSS.</p>
-<p>A chrome-only experimentation for now:</p>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="LEPemRQ" data-pen-title="What time is it? (A CSS-only clock with the current time)" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/LEPemRQ" target="_blank" rel="noopener">
-  What time is it? (A CSS-only clock with the current time)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Here is a simple code that lets you adjust the speed of your infinite animation on hover (or with other interactions). It relies on <code>animation-composition: add</code> that allows you to run the same animation twice with an additive effect.</p>
+<p>By pausing/running the second animation, you can make the overall animation faster, slower, or move it in the opposite direction. You can easily control this using one CSS variable.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 5s<span class="token punctuation">;</span> <span class="token comment">/* animation duration */</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span>  <span class="token comment">/* speed factor <br>      [1  +infinite[ : move faster<br>      ]0  1[ : slow down <br>      0: stop<br>      ]-infinity  0[ : move in the opposite direction <br>  */</span><br>  <span class="token property">--_a</span><span class="token punctuation">:</span> animate linear infinite<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> <br>    <span class="token function">var</span><span class="token punctuation">(</span>--_a<span class="token punctuation">)</span> <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token function">var</span><span class="token punctuation">(</span>--_a<span class="token punctuation">)</span> <span class="token function">abs</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span>/<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> - 1<span class="token punctuation">)</span><span class="token punctuation">)</span> paused<br>    <span class="token function">if</span><span class="token punctuation">(</span><span class="token function">style</span><span class="token punctuation">(</span>--s &lt; 1<span class="token punctuation">)</span><span class="token punctuation">:</span>reverse<span class="token punctuation">;</span><span class="token property">else</span><span class="token punctuation">:</span> <span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">animation-composition</span><span class="token punctuation">:</span> add<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">animation-play-state</span><span class="token punctuation">:</span> running<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> animate</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token comment">/* whatever you want to animate */</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>Here is an example using an infinite rotation where each element has a different speed factor. Hover to see the result:</p>
+<p class="codepen" data-height="500" data-pen-title="Infinite Animation Speed Control" data-preview="true" data-default-tab="result" data-slug-hash="pvNvdVX" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/pvNvdVX" target="_blank" rel="noopener">
+  Infinite Animation Speed Control</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>The use of the inline condition <code>if()</code> is not well supported, so we can rely on the code below until better support is available:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><br>  <span class="token property">--d</span><span class="token punctuation">:</span> 5s<span class="token punctuation">;</span> <span class="token comment">/* animation duration */</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span>  <span class="token comment">/* speed factor */</span><br>  <br>  <span class="token property">animation</span><span class="token punctuation">:</span> <br>    init    linear infinite <span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span><span class="token punctuation">,</span><br>    control linear infinite <span class="token function">abs</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--d<span class="token punctuation">)</span>/<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> - 1<span class="token punctuation">)</span><span class="token punctuation">)</span> paused<span class="token punctuation">;</span><br>  <span class="token property">animation-composition</span><span class="token punctuation">:</span> add<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.box:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">animation-play-state</span><span class="token punctuation">:</span> running<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> init</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">rotate</span><span class="token punctuation">:</span> 1turn<span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> control</span> <span class="token punctuation">{</span><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">rotate</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">sign</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> - 1<span class="token punctuation">)</span>*1turn<span class="token punctuation">)</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>All you have to do is change <code>rotate</code> with the property you want to animate.</p>
+<p>Here is an example with an infinite marquee where I am animating the <code>offset-distance</code>:</p>
+<p class="codepen" data-height="550" data-pen-title="Infinite Marquee Speed Control" data-preview="true" data-default-tab="result" data-slug-hash="QwGjxPv" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/QwGjxPv" target="_blank" rel="noopener">
+  Infinite Marquee Speed Control</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>Another example with a glowing border effect where I am animating a CSS variable:</p>
+<p class="codepen" data-height="400" data-pen-title="Glowing border Animation with hover effect" data-preview="true" data-default-tab="result" data-slug-hash="RNoNJLW" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/RNoNJLW" target="_blank" rel="noopener">
+  Glowing border Animation with hover effect</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>Based on <a href="https://dev.to/janeori/getting-your-ip-address-with-css-and-other-32-bit-api-responses-without-javascript-402h" target="_blank" rel="noopener">a clever idea by Jane Ori</a></p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -72,38 +88,28 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/wiggly-borders/" >A wiggly box (wavy borders) using CSS Mask</a>
-		<small>Another cool CSS shape using CSS mask and a few lines of code.</small>
-		<time datetime="2025-01-23">January 23, 2025</time>
+		<a href="/sticky-header/" >The Sticky Header that Sticks!</a>
+		<small>Another fancy effect powered by scroll-driven animation and shape().</small>
+		<time datetime="2026-04-22">April 22, 2026</time>
 	</li>
   	<li>
-		<a href="/stop-animation/" >Smoothly stop an infinite rotation</a>
-		<small>Using modern CSS to stop an infinite rotation on hover.</small>
-		<time datetime="2025-01-14">January 14, 2025</time>
-	</li>
-  	<li>
-		<a href="/overflow-detection/" >Overflow/scrollbar detection using modern CSS</a>
-		<small>Using scroll-driven animations you can detect when an element is overflowing or has a scrollbar.</small>
-		<time datetime="2024-12-10">December 10, 2024</time>
-	</li>
-  	<li>
-		<a href="/center-block-element/" >A new way to center block elements using place-self</a>
-		<small>A modern way to center block elements using place-self instead of auto margin and max-width.</small>
-		<time datetime="2024-12-06">December 06, 2024</time>
+		<a href="/hand-drawn-underline/" >Hand-Drawn Underline using border-shape</a>
+		<small>Add a fancy underline to your menu items using modern CSS.</small>
+		<time datetime="2026-04-20">April 20, 2026</time>
 	</li>
 </ul>
 		</main>
 		<aside>
 	<div id="custom-wall">
 		
-		<div class="nuxt" style="display: none;">
-			<img src="/img/nuxt.svg" alt="Nuxt Logo">
-			<p>The Official Certification of competence for the <span>Nuxt framework.</span></p>
+		<div class="vuejs" style="display: none;">
+			<img src="/img/vuejs.svg" alt="Vue.js Logo">
+			<p>The Official Certification of competence for the <span>Vue.js framework.</span></p>
 			<div>
-				<img height="90" width="90" src="/img/chopin.webp" alt="Sébastien Chopin">
-				<p><small>In partnership with:</small><br><strong>Sébastien Chopin</strong><br>Creator of Nuxt</p>
+				<img height="90" width="90" src="/img/evan.webp" alt="Even You">
+				<p><small>In partnership with:</small><br><strong>Evan You</strong><br>Creator of Vue.js</p>
 			</div>
-			<a rel="noopener" href="https://certificates.dev/nuxt?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP" target="_blank">Get Nuxt Certified</a>				
+			<a rel="noopener" href="https://certificates.dev/vuejs?utm_source=CSSTIP&utm_medium=website&utm_campaign=affiliate&friend=CSSTIP" target="_blank">Get Vue.js Certified</a>				
 		</div>
 </div>
 <div style="height:350px;overflow: clip;"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7D653J&placement=css-tipcom&format=cover" id="_carbonads_js"></script></div>
