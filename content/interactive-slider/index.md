@@ -31,6 +31,7 @@ I am combining the technique of making [an infinite marquee animation](/logo-mar
   --n: 4;    /* number of visible images */
   
   display: flex;
+  overflow: hidden;
 }
 img {
   width: var(--w);
