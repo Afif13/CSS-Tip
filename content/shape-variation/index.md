@@ -43,9 +43,9 @@ To get the cutout version, add `inset(0)` to the previous code.
 
 ⚠️ It's Chrome-only for now ⚠️
 
-<p class="codepen" data-height="400" data-pen-title="Untitled" data-preview="true" data-default-tab="result" data-slug-hash="dPOvVRb" data-user="t_afif" data-token="9d1e758a486aa3bfbd9d30962c151871" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/dPOvVRb/9d1e758a486aa3bfbd9d30962c151871">
-  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+<p class="codepen" data-height="400" data-pen-title="Three shape variations using border-shape" data-preview="true" data-default-tab="result" data-slug-hash="dPOvVRb" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/dPOvVRb">
+  Three shape variations using border-shape</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
