@@ -28,9 +28,9 @@
 		<link href="https://css-tip.com/connected-circles-3/"/>
 		<updated>2026-05-26T00:00:00Z</updated>
 		<id>https://css-tip.com/connected-circles-3/</id>
-		<content type="html"><![CDATA[ <p>Reusing <a href="/connected-circles/">the previous implementation</a> to transform the arrow shape into a curved line. The line's curve adjusts based on the distance and positions of both circles.</p>
+		<content type="html"><![CDATA[ <p>Reusing <a href="/connected-circles/">the previous implementation</a> to transform the arrow shape into a curved line. The line's curve adjusts based on the distance and positions of the circles.</p>
 <p><picture><source type="image/avif" srcset="/img/N2LLmbW3pP-833.avif 833w"><source type="image/webp" srcset="/img/N2LLmbW3pP-833.webp 833w"><img alt="CSS-only connected circles with curved line" loading="lazy" decoding="async" src="/img/N2LLmbW3pP-833.png" width="833" height="362"></picture></p>
-<p>A CSS-only implementation powered by the future of CSS (Anchor Positioning, <code>shape()</code>, border-shape, <code>if()</code> and more).</p>
+<p>A CSS-only implementation powered by the future of CSS (Anchor Positioning, <code>shape()</code>, border-shape, <code>if()</code>, and more).</p>
 <p>The HTML code is still the same:</p>
  <p><a href="https://css-tip.com/connected-circles-3/">Read more</a></p> ]]></content>
 	</entry>
