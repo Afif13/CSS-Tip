@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-05-26T00:00:00Z</updated>
+	<updated>2026-05-28T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -24,13 +24,26 @@
 	</entry>
 	
 	<entry>
+		<title>Bending a Straight Line using Modern CSS</title>
+		<link href="https://css-tip.com/bending-line/"/>
+		<updated>2026-05-28T00:00:00Z</updated>
+		<id>https://css-tip.com/bending-line/</id>
+		<content type="html"><![CDATA[ <p>Updating <a href="/connected-circles-3/">the previous implementation</a> with another idea of connection. This time, it's a straight line that adjusts based on the distance between the two circles. It bends when they get closer and stretches (becomes thinner) when they get farther. Implementing physics using pure CSS!</p>
+<p>Another demo powered by modern CSS (Anchor Positioning, <code>border-shape</code>, <code>if()</code>, and more).</p>
+<p><picture><source type="image/avif" srcset="/img/bRPvoad9ov-722.avif 722w"><source type="image/webp" srcset="/img/bRPvoad9ov-722.webp 722w"><img alt="CSS-only connected circles with curved line" loading="lazy" decoding="async" src="/img/bRPvoad9ov-722.png" width="722" height="311"></picture></p>
+<p>Drag the circles and see the magic in play!</p>
+<p>⚠️ Chrome-only for now ⚠️</p>
+ <p><a href="https://css-tip.com/bending-line/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
 		<title>Connecting Circles With a Curved Line</title>
 		<link href="https://css-tip.com/connected-circles-3/"/>
 		<updated>2026-05-26T00:00:00Z</updated>
 		<id>https://css-tip.com/connected-circles-3/</id>
 		<content type="html"><![CDATA[ <p>Reusing <a href="/connected-circles/">the previous implementation</a> to transform the arrow shape into a curved line. The line's curve adjusts based on the distance and positions of the circles.</p>
 <p><picture><source type="image/avif" srcset="/img/N2LLmbW3pP-833.avif 833w"><source type="image/webp" srcset="/img/N2LLmbW3pP-833.webp 833w"><img alt="CSS-only connected circles with curved line" loading="lazy" decoding="async" src="/img/N2LLmbW3pP-833.png" width="833" height="362"></picture></p>
-<p>A CSS-only implementation powered by the future of CSS (Anchor Positioning, <code>shape()</code>, border-shape, <code>if()</code>, and more).</p>
+<p>A CSS-only implementation powered by the future of CSS (Anchor Positioning, <code>shape()</code>, <code>border-shape</code>, <code>if()</code>, and more).</p>
 <p>The HTML code is still the same:</p>
  <p><a href="https://css-tip.com/connected-circles-3/">Read more</a></p> ]]></content>
 	</entry>
