@@ -10,7 +10,7 @@ Reusing [the previous implementation](/connected-circles/) to transform the arro
 
 {% image "./image.png", "CSS-only connected circles with curved line" %}
 
-A CSS-only implementation powered by the future of CSS (Anchor Positioning, `shape()`, border-shape, `if()`, and more).
+A CSS-only implementation powered by the future of CSS (Anchor Positioning, `shape()`, `border-shape`, `if()`, and more).
 
 The HTML code is still the same:
 
