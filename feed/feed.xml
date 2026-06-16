@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-05-28T00:00:00Z</updated>
+	<updated>2026-06-16T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,28 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Dynamic Node Connection (CSS-only Diagram)</title>
+		<link href="https://css-tip.com/node-connection/"/>
+		<updated>2026-06-16T00:00:00Z</updated>
+		<id>https://css-tip.com/node-connection/</id>
+		<content type="html"><![CDATA[ <p>I shared various CSS tips showing how modern CSS can be used to create a dynamic connection between two elements. I connected <a href="/connected-circles-2/">two circles with an arrow</a>, a <a href="/connected-circles-3/">curved line</a>, a <a href="/bending-line/">straight line that bends</a>, etc.</p>
+<p><picture><source type="image/avif" srcset="/img/wNig2pkPY5-936.avif 936w"><source type="image/webp" srcset="/img/wNig2pkPY5-936.webp 936w"><img alt="various connections between two circles" loading="lazy" decoding="async" src="/img/wNig2pkPY5-936.png" width="936" height="276"></picture></p>
+<p>I even made a <a href="/graph-theory/">CSS-only graph with a shortest-path algorithm</a>.</p>
+<p><picture><source type="image/avif" srcset="/img/nZ4fTBSpPI-994.avif 994w"><source type="image/webp" srcset="/img/nZ4fTBSpPI-994.webp 994w"><img alt="CSS-only graph" loading="lazy" decoding="async" src="/img/nZ4fTBSpPI-994.png" width="994" height="488"></picture></p>
+<p>We can still do more and create a diagram like the one below. It's still a graph, but this time the nodes are square elements, and the connectors can have different shapes and positions based on the node's position!</p>
+<p><picture><source type="image/avif" srcset="/img/rf0HhqO_oz-1148.avif 1148w"><source type="image/webp" srcset="/img/rf0HhqO_oz-1148.webp 1148w"><img alt="CSS-only diagram with nodes and connectors" loading="lazy" decoding="async" src="/img/rf0HhqO_oz-1148.png" width="1148" height="561"></picture></p>
+<p>Here is a demo with two elements. Drag them around and see how the connection behaves. It will try to link the closest edges of both nodes, or their centers, if the distance between them gets smaller. Yes, there is a nice transition as well.</p>
+<p>⚠️ Chrome-only for now ⚠️</p>
+<p class="codepen" data-height="600" data-pen-title="Dynamic node connection (drag the elements)" data-preview="true" data-default-tab="result" data-slug-hash="emgBWGg" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/emgBWGg">
+  Dynamic node connection (drag the elements)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<p>A demo packed with modern CSS features such as Anchor Positioning, <code>border-shape</code>, <code>shape()</code>, container queries, <code>attr()</code>, <code>if()</code>, and more!</p>
+ <p><a href="https://css-tip.com/node-connection/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
