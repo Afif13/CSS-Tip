@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>The Lazy Tooltip Follower</title>
+		<title>Responsive Separator for Horizontal List</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A fun demo illustrating a tooltip that follows its anchor, but slowly">
+		<meta name="description" content="Modern CSS solves a very old design pattern with a few lines of code">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/lazy-tooltip/" >
+		<link rel=canonical href="https://css-tip.com/responsive-separator/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="The Lazy Tooltip Follower">
+		<meta property="og:title" content="Responsive Separator for Horizontal List">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/lazy-tooltip/">
-		<meta property="og:description" content="A fun demo illustrating a tooltip that follows its anchor, but slowly">
-		<meta property="og:image" content="/og-images/0b9fffd2.png" >
+		<meta property="og:url" content="https://css-tip.com/responsive-separator/">
+		<meta property="og:description" content="Modern CSS solves a very old design pattern with a few lines of code">
+		<meta property="og:image" content="/og-images/f9b36140.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,28 +47,28 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/sticky-header/" title="The Sticky Header that Sticks!">Previous CSS Tip</a></li><li class="next"><a href="/speed-control/" title="Control the Speed of Infinite Animations">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/wiggly-range-slider/" title="Wiggly/Wavy Input Range Slider">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>The Lazy Tooltip Follower</h1>
+<h1>Responsive Separator for Horizontal List</h1>
 
-<time datetime="2026-04-29">April 29, 2026</time>
+<time datetime="2026-06-26">June 26, 2026</time>
 
-<p>Another demo featuring <a href="https://css-generators.com/tooltip-speech-bubble/" target="_blank" rel="noopener">tooltips</a> and Anchor Positioning. This time, I am relying on the fact that you can apply a transition to the inset properties to create a &quot;lazy&quot; tooltip follower. A tooltip that follows the anchor when you drag it, but with a delay.</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">#anchor</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">anchor-name</span><span class="token punctuation">:</span> --anchor<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">#tooltip</span> <span class="token punctuation">{</span><br>  <span class="token property">--w</span><span class="token punctuation">:</span> 12em<span class="token punctuation">;</span> <span class="token comment">/* tooltip width */</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 4em<span class="token punctuation">;</span>  <span class="token comment">/* tail size */</span><br>  <br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token function">anchor</span><span class="token punctuation">(</span>outside --anchor<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">clamp</span><span class="token punctuation">(</span>0px<span class="token punctuation">,</span><span class="token function">anchor</span><span class="token punctuation">(</span>center --anchor<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span>/2<span class="token punctuation">,</span>100% - <span class="token function">var</span><span class="token punctuation">(</span>--w<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">;</span><br>  <span class="token property">anchor-name</span><span class="token punctuation">:</span> --tooltip<span class="token punctuation">;</span><br>  <span class="token property">position-try</span><span class="token punctuation">:</span> flip-block<span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .3s .5s<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="700" data-pen-title="The Lazy Tooltip Follower" data-preview="true" data-default-tab="result" data-slug-hash="QwGLJLo" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/QwGLJLo" target="_blank" rel="noopener">
-  The Lazy Tooltip Follower</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
-  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
-</p>
-<p>Another version with a bouncy effect using <code>linear()</code>:</p>
-<p class="codepen" data-height="700" data-pen-title="The Lazy Tooltip Follower (with a bouncy effect)" data-preview="true" data-default-tab="result" data-slug-hash="myOydgG" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/myOydgG" target="_blank" rel="noopener">
-  The Lazy Tooltip Follower (with a bouncy effect)</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Separating a horizontal list of items with a divider is a common design pattern. The tricky part is making sure we have separators only between adjacent items, never at the beginning or the end of the row/line.</p>
+<p><picture><source type="image/avif" srcset="/img/lTR6jZfDis-1079.avif 1079w"><source type="image/webp" srcset="/img/lTR6jZfDis-1079.webp 1079w"><img alt="CSS-only responsive list separator" loading="lazy" decoding="async" src="/img/lTR6jZfDis-1079.png" width="1079" height="265"></picture></p>
+<p>There are many hacky ways to solve this, but the new <a href="https://master.dev/blog/lets-play-with-gap-decorations/" target="_blank" rel="noopener">Gap Decoration feature</a> offers a simple, modern solution. No more hacks and only a few lines of code to get the shape of the divider you want.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.vertical-line</span> <span class="token punctuation">{</span><br>  <span class="token property">column-rule</span><span class="token punctuation">:</span> 3px solid #c1121f<span class="token punctuation">;</span> <span class="token comment">/* width = 3px */</span><br>  <span class="token property">rule-inset</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>.5lh - .75em/2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* height = .75em */</span><br><span class="token punctuation">}</span><br><span class="token selector">.horizontal-line</span> <span class="token punctuation">{</span><br>  <span class="token property">column-rule</span><span class="token punctuation">:</span> .75em solid #c1121f<span class="token punctuation">;</span> <span class="token comment">/* width = .75em */</span><br>  <span class="token property">rule-inset</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>.5lh - 4px/2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* height = 4px */</span><br><span class="token punctuation">}</span><br><span class="token selector">.square</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/* size */</span><br>  <span class="token property">column-rule</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> solid #c1121f<span class="token punctuation">;</span><br>  <span class="token property">rule-inset</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>.5lh - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.circle</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/* size */</span><br>  <span class="token property">column-rule</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> dotted #c1121f<span class="token punctuation">;</span><br>  <span class="token property">rule-inset</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>.5lh - <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span>/2<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Here is an interactive demo where you can adjust the alignment, resize the container, and see how the divider behaves.</p>
+<p>⚠️ Chromium-only for now ⚠️</p>
+<p class="codepen" data-height="600" data-pen-title="Responsive Separator for Horizontal List" data-preview="true" data-default-tab="result" data-slug-hash="wBgqwMJ" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/wBgqwMJ" target="_blank" rel="noopener">
+  Responsive Separator for Horizontal List</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>Until better support, check this: <a href="https://stackoverflow.com/q/37052659/8620333" target="_blank" rel="noopener">Responsive Separator for Horizontal List</a></p>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -76,24 +76,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/shape-variation/" >Three Shape Variations using border-shape</a>
-		<small>Use border-shape to create any shape, its border-only and cutout variations.</small>
-		<time datetime="2026-05-19">May 19, 2026</time>
+		<a href="/node-connection/" >Dynamic Node Connection (CSS-only Diagram)</a>
+		<small>Create a graph/diagram with different nodes and connections, all made with pure CSS.</small>
+		<time datetime="2026-06-16">June 16, 2026</time>
 	</li>
   	<li>
-		<a href="/interactive-slider/" >An Interactive Image Slider/Carousel</a>
-		<small>Using modern CSS to create a responsive image slider with speed control.</small>
-		<time datetime="2026-05-13">May 13, 2026</time>
-	</li>
-  	<li>
-		<a href="/hand-drawn-underline/" >Hand-Drawn Underline using border-shape</a>
-		<small>Add a fancy underline to your menu items using modern CSS.</small>
-		<time datetime="2026-04-20">April 20, 2026</time>
-	</li>
-  	<li>
-		<a href="/svg-converter/" >Convert Complex SVG Shapes into CSS</a>
-		<small>An SVG-to-CSS converter to easily transform SVG shapes into CSS shapes.</small>
-		<time datetime="2026-04-13">April 13, 2026</time>
+		<a href="/bending-line/" >Bending a Straight Line using Modern CSS</a>
+		<small>Using border-shape and anchor positioning to create a bending line between two circles.</small>
+		<time datetime="2026-05-28">May 28, 2026</time>
 	</li>
 </ul>
 		</main>

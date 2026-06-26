@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-06-23T00:00:00Z</updated>
+	<updated>2026-06-26T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,17 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Responsive Separator for Horizontal List</title>
+		<link href="https://css-tip.com/responsive-separator/"/>
+		<updated>2026-06-26T00:00:00Z</updated>
+		<id>https://css-tip.com/responsive-separator/</id>
+		<content type="html"><![CDATA[ <p>Separating a horizontal list of items with a divider is a common design pattern. The tricky part is making sure we have separators only between adjacent items, never at the beginning or the end of the row/line.</p>
+<p><picture><source type="image/avif" srcset="/img/lTR6jZfDis-1079.avif 1079w"><source type="image/webp" srcset="/img/lTR6jZfDis-1079.webp 1079w"><img alt="CSS-only responsive list separator" loading="lazy" decoding="async" src="/img/lTR6jZfDis-1079.png" width="1079" height="265"></picture></p>
+<p>There are many hacky ways to solve this, but the new <a href="https://master.dev/blog/lets-play-with-gap-decorations/">Gap Decoration feature</a> offers a simple, modern solution. No more hacks and only a few lines of code to get the shape of the divider you want.</p>
+ <p><a href="https://css-tip.com/responsive-separator/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
