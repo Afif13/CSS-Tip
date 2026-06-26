@@ -38,6 +38,7 @@ input[type="range"] {
   --l: 6px; /* line thickness */
   --c: #547980; /* main color */
   --p: shape(...); /* shape of the line  */
+}
 ```
 
 You can get the line's shape using my [wavy divider generator](https://css-generators.com/wavy-divider/). Pick the border-only configuration, select "top", and set the size to 100%. Then adjust the granularity and click generate! 
