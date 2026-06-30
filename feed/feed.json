@@ -19,6 +19,14 @@
 		}
 		,
 		{
+			"id": "https://css-tip.com/wiggly-range-slider-2/",
+			"url": "https://css-tip.com/wiggly-range-slider-2/",
+			"title": "Wiggly/Wavy Input Range Slider II",
+			"content_html": "<p>Improving <a href=\"https://css-tip.com/wiggly-range-slider/\">the wiggly/wavy range slider</a> with a fancy tooltip showing the input value. It's an ugly one that follows the thumb and bounces in all directions!</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/yxcvtq27hE-697.avif 697w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/yxcvtq27hE-697.webp 697w\"><img alt=\"CSS-only wavy/wiggly range slider with tooltip\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/yxcvtq27hE-697.png\" width=\"697\" height=\"330\"></picture></p>\n<p>⚠️ A Chrome-only experience ⚠️</p>\n<p class=\"codepen\" data-height=\"500\" data-pen-title=\"Wiggly/Wavy Range Slider with tooltip\" data-preview=\"true\" data-default-tab=\"result\" data-slug-hash=\"NPdagRM\" data-user=\"t_afif\" style=\"height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/t_afif/pen/NPdagRM\">\n  Wiggly/Wavy Range Slider with tooltip</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>\n<p>The tooltip is taken from <a href=\"https://css-tip.com/lazy-tooltip/\">the lazy tooltip follower</a>, and its shape is generated using my <a href=\"https://css-generators.com/fancy-frame/\">fancy frame generator</a>.</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/6Bog9Ud2jB-1402.avif 1402w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/6Bog9Ud2jB-1402.webp 1402w\"><img alt=\"Screenshot of my fancy frame generator\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/6Bog9Ud2jB-1402.png\" width=\"1402\" height=\"611\"></picture></p>\n",
+			"date_published": "2026-06-30T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/responsive-separator/",
 			"url": "https://css-tip.com/responsive-separator/",
 			"title": "Responsive Separator for Horizontal List",
