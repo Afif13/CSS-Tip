@@ -20,7 +20,6 @@ Instead of:
 We can do:
 
 ```css
-@property --g {syntax: "<integer>";inherits: true;initial-value: 0;}
 .container {
   --X: ;
   --Y: ;
@@ -28,7 +27,7 @@ We can do:
 .container div {
   --g: sign((sibling-index() - var(--X) + 1)*(var(--Y) - sibling-index() + 1));
   /* when --g is equal to 1, the element is selected by :nth-child(n + X):nth-child(-n + Y) */
-  background: if(style(--g: 1): red;);
+  background: if(style(--g = 1): red;);
 }
 ```
 
@@ -59,7 +58,7 @@ We can also use the function notation and create something easier to use:
 
 .container div {
   --g: --range(3,8);
-  background: if(style(--g: 1): red;);
+  background: if(style(--g = 1): red;);
 }
 ```
 
