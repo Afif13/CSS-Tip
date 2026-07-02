@@ -29,7 +29,7 @@ That value can also be combined with the `text` value to apply the gradient to t
 
 {% image "./image1.png", "CSS-only text and border gradient" %}
 
-⚠️ Support is still limited (missing Firefox) ⚠️
+⚠️ Support is still limited (Chrome-only starting from V150) ⚠️
 
 <p class="codepen" data-height="350" data-pen-title="Gradient text &amp;amp; border" data-preview="true" data-default-tab="result" data-slug-hash="xbgPEWL" data-user="t_afif" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/xbgPEWL">
