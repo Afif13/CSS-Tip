@@ -15,7 +15,7 @@ Save this code for the future! It's the easiest way to add a gradient coloration
   border: 10px solid #0000;
   background: 
     linear-gradient(#FF4E50,#40C0CB) 
-    border-box border-area;
+    border-box border-area; /* border-box can be omitted here */
 }
 ```
 
