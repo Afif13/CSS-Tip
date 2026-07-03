@@ -28,8 +28,11 @@ We can do:
 }
 .container div {
   --n: calc((sibling-index() - var(--B))/var(--A));
-  --g: calc(sign(var(--n) + .0001) + var(--n) - round(down,var(--n)));
-
+  --g: if(style(--A = 0):
+          calc(sign(sibling-index() - var(--B)) + 1);
+        else: 
+          calc(sign(var(--n) + 1) + mod(var(--n),1))
+       );
   /* when --g is equal to 1, the element is selected by :nth-child(An + B) */
   background: if(style(--g = 1): red; else: blue);
 }
@@ -41,10 +44,12 @@ What's the point, you might ask? It allows us to update the value of `A` and `B`
 
 `n` needs to be a **positive integer** (zero included).
 
-* `sign(var(--n) + .0001)` is equal to `1` when `--n` is **positive** and `-1` otherwise (The `.0001` is used to include zero).
-* `var(--n) - round(down,var(--n))` is equal to `0` when `--n` is an **integer** and a value between `0` and `1` otherwise.
+* `sign(var(--n) + 1)` is equal to `1` when `--n` is **positive** and `-1` otherwise (The `+ 1` is used to include zero).
+* `mod(var(--n),1)` is equal to `0` when `--n` is an **integer** and a value between `0` and `1` otherwise.
 
-When the sum is equal to `1`, the element matches `:nth-child(An + B)`.
+When the sum is equal to `1`, the element is selected by `:nth-child(An + B)`.
+
+We need to handle the special case where `--A` is equal to `0` alone. In that case, the index needs to be equal to `B`, which means `sign(sibling-index() - var(--B))` is equal to `0`. We add `1` to have the same result as the previous calculation when the element is selected by `:nth-child(An + B)`.
 
 In the demo below, update the `:nth-child()` selector and the variables `--A` and `--B` with the same values to compare the matching.
 
@@ -60,8 +65,12 @@ We can also use the function notation and create something easier to use:
 ```css
 @function --nth-child(--A:1, --B:0) {
   --n: calc((sibling-index() - var(--B))/var(--A));
-  --_g: calc(sign(var(--n) + .0001) + var(--n) - round(down,var(--n)));
-  result: if(style(--_g = 1): 1;else: 0); 
+  --g: if(style(--A = 0):
+          calc(sign(sibling-index() - var(--B)) + 1);
+        else: 
+          calc(sign(var(--n) + 1) + mod(var(--n),1))
+       );
+  result: if(style(--g = 1): 1;else: 0); 
 }
 
 .container div {

@@ -27,11 +27,6 @@ We can improve the code by introducing more variables to control the angle and t
 {% image "./image.png", "CSS-only 3D boxes" %}
 
 ```css
-@property --_i {
-  syntax: "<number>";
-  inherits: false;
-  initial-value: 0; 
-}
 .box {
   --d: 30px;  /* the depth */
   --a: 45deg; /* the angle */
@@ -46,16 +41,16 @@ We can improve the code by introducing more variables to control the angle and t
   border-color: #0002 #0004 #0008 #0004;
   background: #9CC4E4;
   border-width: if(
-     style(--_i: 0): 0 0 var(--x) var(--y);
-     style(--_i: 1): var(--x) 0 0 var(--y);
-     style(--_i: 2): var(--x) var(--y) 0 0;
-     style(--_i: 3): 0 var(--y) var(--x) 0;
+     style(--_i = 0): 0 0 var(--x) var(--y);
+     style(--_i = 1): var(--x) 0 0 var(--y);
+     style(--_i = 2): var(--x) var(--y) 0 0;
+     style(--_i = 3): 0 var(--y) var(--x) 0;
     );
   border-radius: if(
-     style(--_i: 0): var(--y) 0 calc(var(--p)*var(--y)) 0/calc(var(--p)*var(--x)) 0 var(--x) 0;
-     style(--_i: 1): 0 calc(var(--p)*var(--y)) 0 var(--y)/0 var(--x) 0 calc(var(--p)*var(--x));
-     style(--_i: 2): calc(var(--p)*var(--y)) 0 var(--y) 0/var(--x) 0 calc(var(--p)*var(--x)) 0;
-     style(--_i: 3): 0 var(--y) 0 calc(var(--p)*var(--y))/0 calc(var(--p)*var(--x)) 0 var(--x);
+     style(--_i = 0): var(--y) 0 calc(var(--p)*var(--y)) 0/calc(var(--p)*var(--x)) 0 var(--x) 0;
+     style(--_i = 1): 0 calc(var(--p)*var(--y)) 0 var(--y)/0 var(--x) 0 calc(var(--p)*var(--x));
+     style(--_i = 2): calc(var(--p)*var(--y)) 0 var(--y) 0/var(--x) 0 calc(var(--p)*var(--x)) 0;
+     style(--_i = 3): 0 var(--y) 0 calc(var(--p)*var(--y))/0 calc(var(--p)*var(--x)) 0 var(--x);
     );
 }
 ```
