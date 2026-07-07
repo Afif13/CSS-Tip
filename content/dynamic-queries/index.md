@@ -13,7 +13,7 @@ Instead of:
 
 ```css
 .container {
-  background; red;
+  background: red;
   @media (width < 450px) {
     background: blue;
   }
