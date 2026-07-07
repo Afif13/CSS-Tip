@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-07-02T00:00:00Z</updated>
+	<updated>2026-07-07T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,24 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Responsive CSS Grid Layout with Animation</title>
+		<link href="https://css-tip.com/animated-grid/"/>
+		<updated>2026-07-07T00:00:00Z</updated>
+		<id>https://css-tip.com/animated-grid/</id>
+		<content type="html"><![CDATA[ <p>Inspired by <a href="https://codepen.io/bramus/pen/ogBYjgm">the demo of Bramus</a>, I implemented an animated grid layout. On resize, the elements get a nice animation as they move to their new positions. You can even add or remove items, and everything will adjust smoothly as well.</p>
+<p>Try it!</p>
+<p>⚠️ (Chromium only for now) ⚠️</p>
+<p class="codepen" data-height="750" data-pen-title="Animated grid layout on resize" data-preview="true" data-default-tab="result" data-slug-hash="bNgamKV" data-user="t_afif" style="height: 750px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/bNgamKV">
+  Animated grid layout on resize</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>The main idea is to calculate the coordinates of each item within the grid, and instead of relying on the automatic placement, I place them using <code>translate</code>. When the layout is updated, all coordinates change, which in turn updates the translate values. We can apply a transition to the translate property to get a nice effect!</p>
+ <p><a href="https://css-tip.com/animated-grid/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>

@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Wiggly/Wavy Input Range Slider</title>
+		<title>Responsive CSS Grid Layout with Animation</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Say goodbye to the boring straight range slider and say hello to the fancy wiggly range slider">
+		<meta name="description" content="A responsive grid with a smooth animation when the layout is updated">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/wiggly-range-slider/" >
+		<link rel=canonical href="https://css-tip.com/animated-grid/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Wiggly/Wavy Input Range Slider">
+		<meta property="og:title" content="Responsive CSS Grid Layout with Animation">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/wiggly-range-slider/">
-		<meta property="og:description" content="Say goodbye to the boring straight range slider and say hello to the fancy wiggly range slider">
-		<meta property="og:image" content="/og-images/c42f5a70.png" >
+		<meta property="og:url" content="https://css-tip.com/animated-grid/">
+		<meta property="og:description" content="A responsive grid with a smooth animation when the layout is updated">
+		<meta property="og:image" content="/og-images/b557ed01.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,30 +47,25 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/node-connection/" title="Dynamic Node Connection (CSS-only Diagram)">Previous CSS Tip</a></li><li class="next"><a href="/responsive-separator/" title="Responsive Separator for Horizontal List">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/background-clip/" title="background-clip is getting an upgrade!">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Wiggly/Wavy Input Range Slider</h1>
+<h1>Responsive CSS Grid Layout with Animation</h1>
 
-<time datetime="2026-06-23">June 23, 2026</time>
+<time datetime="2026-07-07">July 07, 2026</time>
 
-<p>Straight range sliders are boring, right? Let's, instead, draw the lines by hand and get some wiggly/wavy range sliders!</p>
-<p><picture><source type="image/avif" srcset="/img/WMIk9ryoNM-738.avif 738w"><source type="image/webp" srcset="/img/WMIk9ryoNM-738.webp 738w"><img alt="CSS-only wavy/wiggly range slider" loading="lazy" decoding="async" src="/img/WMIk9ryoNM-738.png" width="738" height="261"></picture></p>
-<p>A fancy demo powered by <code>border-shape</code>, Scroll-Driven Animations, <code>@property</code>, and more!</p>
-<p>The HTML code is nothing but the native <code>&lt;input&gt;</code> element. No extra element and, of course, no JavaScript.</p>
-<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range<span class="token punctuation">"</span></span> <span class="token attr-name">step</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>.2<span class="token punctuation">"</span></span> <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>80<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range<span class="token punctuation">"</span></span> <span class="token attr-name">min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-10<span class="token punctuation">"</span></span> <span class="token attr-name">step</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>.1<span class="token punctuation">"</span></span> <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
-<p>⚠️ A Chrome-only experience ⚠️</p>
-<p class="codepen" data-height="450" data-pen-title="Wiggly/Wavy Range Slider" data-preview="true" data-default-tab="result" data-slug-hash="zxNwjKa" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/zxNwjKa" target="_blank" rel="noopener">
-  Wiggly/Wavy Range Slider</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Inspired by <a href="https://codepen.io/bramus/pen/ogBYjgm" target="_blank" rel="noopener">the demo of Bramus</a>, I implemented an animated grid layout. On resize, the elements get a nice animation as they move to their new positions. You can even add or remove items, and everything will adjust smoothly as well.</p>
+<p>Try it!</p>
+<p>⚠️ (Chromium only for now) ⚠️</p>
+<p class="codepen" data-height="750" data-pen-title="Animated grid layout on resize" data-preview="true" data-default-tab="result" data-slug-hash="bNgamKV" data-user="t_afif" style="height: 750px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/bNgamKV" target="_blank" rel="noopener">
+  Animated grid layout on resize</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
-<p>You can easily control everything by adjusting a few CSS variables:</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">input[type="range"]</span> <span class="token punctuation">{</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span> <span class="token comment">/* size/height of the slider */</span><br>  <span class="token property">--t</span><span class="token punctuation">:</span> 45px<span class="token punctuation">;</span> <span class="token comment">/* size of the thumb*/</span><br>  <span class="token property">--l</span><span class="token punctuation">:</span> 6px<span class="token punctuation">;</span> <span class="token comment">/* line thickness */</span><br>  <span class="token property">--c</span><span class="token punctuation">:</span> #547980<span class="token punctuation">;</span> <span class="token comment">/* main color */</span><br>  <span class="token property">--p</span><span class="token punctuation">:</span> <span class="token function">shape</span><span class="token punctuation">(</span>...<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* shape of the line  */</span><br><span class="token punctuation">}</span></code></pre>
-<p>You can get the line's shape using my <a href="https://css-generators.com/wavy-divider/" target="_blank" rel="noopener">wavy divider generator</a>. Pick the border-only configuration, select &quot;top&quot;, and set the size to 100%. Then adjust the granularity and click generate!</p>
-<p><picture><source type="image/avif" srcset="/img/eA-PeqzlfQ-1411.avif 1411w"><source type="image/webp" srcset="/img/eA-PeqzlfQ-1411.webp 1411w"><img alt="Screenshot of my wavy divider generator" loading="lazy" decoding="async" src="/img/eA-PeqzlfQ-1411.png" width="1411" height="413"></picture></p>
+<p>The main idea is to calculate the coordinates of each item within the grid, and instead of relying on the automatic placement, I place them using <code>translate</code>. When the layout is updated, all coordinates change, which in turn updates the translate values. We can apply a transition to the translate property to get a nice effect!</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">--g</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/* gap */</span><br>  <span class="token property">--s</span><span class="token punctuation">:</span> 130px<span class="token punctuation">;</span> <span class="token comment">/* image size */</span><br>  <br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container > *</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-area</span><span class="token punctuation">:</span> 1/1<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token comment">/* The number of columns */</span><br>  <span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span><span class="token punctuation">(</span>100cqw + <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span>/<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--s<span class="token punctuation">)</span> + <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* The coordinates */</span><br>  <span class="token property">--i</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span>down<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - 1<span class="token punctuation">)</span>/<span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">--j</span><span class="token punctuation">:</span> <span class="token function">mod</span><span class="token punctuation">(</span><span class="token function">sibling-index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - 1<span class="token punctuation">,</span><span class="token function">var</span><span class="token punctuation">(</span>--n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">translate</span><span class="token punctuation">:</span> <br>    <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--j<span class="token punctuation">)</span>*<span class="token punctuation">(</span>100% + <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <br>    <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--i<span class="token punctuation">)</span>*<span class="token punctuation">(</span>100% + <span class="token function">var</span><span class="token punctuation">(</span>--g<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> .4s<span class="token punctuation">,</span>scale .3s .4s<span class="token punctuation">,</span>opacity .3s .3s<span class="token punctuation">,</span>rotate .3s .3s<span class="token punctuation">;</span><br>  <span class="token comment">/* the entry effect when adding a new item */</span><br>  <span class="token atrule"><span class="token rule">@starting-style</span></span> <span class="token punctuation">{</span><br>    <span class="token property">scale</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>    <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>    <span class="token property">rotate</span><span class="token punctuation">:</span> -1turn<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -79,24 +74,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/background-clip/" >background-clip is getting an upgrade!</a>
-		<small>Learn about the new values of the background-clip property.</small>
-		<time datetime="2026-07-02">July 02, 2026</time>
-	</li>
-  	<li>
 		<a href="/wiggly-range-slider-2/" >Wiggly/Wavy Input Range Slider II</a>
 		<small>Adding a bouncy tooltip to the wiggly slider.</small>
 		<time datetime="2026-06-30">June 30, 2026</time>
 	</li>
   	<li>
-		<a href="/bending-line/" >Bending a Straight Line using Modern CSS</a>
-		<small>Using border-shape and anchor positioning to create a bending line between two circles.</small>
-		<time datetime="2026-05-28">May 28, 2026</time>
-	</li>
-  	<li>
-		<a href="/connected-circles-3/" >Connecting Circles With a Curved Line</a>
-		<small>Using border-shape and anchor positioning to create a connection between two circles.</small>
-		<time datetime="2026-05-26">May 26, 2026</time>
+		<a href="/responsive-separator/" >Responsive Separator for Horizontal List</a>
+		<small>Modern CSS solves a very old design pattern with a few lines of code.</small>
+		<time datetime="2026-06-26">June 26, 2026</time>
 	</li>
 </ul>
 		</main>
