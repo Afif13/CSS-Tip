@@ -12,18 +12,13 @@ tags: posts
 
 
 ```css
-@property --_f {
-  syntax: "<number>";
-  inherits: false;
-  initial-value: 0; 
-}
 .arc {
   --v: 35; /* [0 100] */
   --b: 40px; /* thickness */
   
   --_v: min(99.99,var(--v));
   --_f: round(down,var(--_v),50);
-  --_c: if(style(--_f: 0): small; else: large);
+  --_c: if(style(--_f = 0): small; else: large);
   aspect-ratio: 1;
   clip-path: shape(from top,
     arc to calc(50% + 50%*sin(var(--_v)*3.6deg)) 
