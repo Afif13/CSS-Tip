@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Animate to height/width auto (without hacks)</title>
+		<title>Breakout Background using Modern CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="A new CSS feature to easily animate to height/width auto with no complex code">
+		<meta name="description" content="Use border-shape or border-image to extend the background color to the edge of the screen">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/animate-height-auto/" >
+		<link rel=canonical href="https://css-tip.com/breakout-background/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Animate to height/width auto (without hacks)">
+		<meta property="og:title" content="Breakout Background using Modern CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/animate-height-auto/">
-		<meta property="og:description" content="A new CSS feature to easily animate to height/width auto with no complex code">
-		<meta property="og:image" content="/og-images/e2adfda8.png" >
+		<meta property="og:url" content="https://css-tip.com/breakout-background/">
+		<meta property="og:description" content="Use border-shape or border-image to extend the background color to the edge of the screen">
+		<meta property="og:image" content="/og-images/b70af9a1.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,24 +47,42 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/length-to-integer/" title="Remove the unit from any CSS value">Previous CSS Tip</a></li><li class="next"><a href="/initial-containing-block/" title="Default behavior of position absolute">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/rounded-shapes/" title="A New Way to Round the Corners of CSS Shapes">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Animate to height/width auto (without hacks)</h1>
+<h1>Breakout Background using Modern CSS</h1>
 
-<time datetime="2024-09-25">September 25, 2024</time>
+<time datetime="2027-08-05">August 05, 2027</time>
 
-<p>Only three lines of code and you have a smooth transition to <code>height: auto</code></p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">&amp;</span> <span class="token punctuation">{</span><br>  <span class="token property">interpolate-size</span><span class="token punctuation">:</span> allow-keywords<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">transition</span><span class="token punctuation">:</span> 1s<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">p:not(:hover)</span> <span class="token punctuation">{</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 5lh<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>The <code>interpolate-size: allow-keywords</code> is doing all the magic. Read <a href="https://developer.chrome.com/docs/css-ui/animate-to-height-auto" target="_blank" rel="noopener">Animate to height: auto; (and other intrinsic sizing keywords) in CSS</a> for more detail.</p>
-<p>Try the below using the lastest version of chrome:</p>
-<p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="BaXyWbd" data-pen-title="Animating to height: auto" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/BaXyWbd" target="_blank" rel="noopener">
-  Animating to height: auto</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Do you want to extend the background color of your element to the edge of the screen? A simple code using <code>border-shape</code> or <code>border-image</code>, and it's done!</p>
+<p><picture><source type="image/avif" srcset="/img/cGoWPXg2BT-1149.avif 1149w"><source type="image/webp" srcset="/img/cGoWPXg2BT-1149.webp 1149w"><img alt="CSS-only breakout background color" loading="lazy" decoding="async" src="/img/cGoWPXg2BT-1149.png" width="1149" height="403"></picture></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.breakout-background</span> <span class="token punctuation">{</span><br>  <span class="token property">border-shape</span><span class="token punctuation">:</span> <span class="token function">inset</span><span class="token punctuation">(</span>0 -100vw<span class="token punctuation">)</span> <span class="token function">circle</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border-color</span><span class="token punctuation">:</span> #faa307<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>⚠️ (Chromium only for now) ⚠️</p>
+<p class="codepen" data-height="650" data-pen-title="Breakout background using border-shape" data-preview="true" data-default-tab="result" data-slug-hash="OPWdzNO" data-user="t_afif" style="height: 650px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/OPWdzNO" target="_blank" rel="noopener">
+  Breakout background using border-shape</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<h3 id="how-does-it-work" tabindex="-1">How Does it Work? <a class="header-anchor" href="#how-does-it-work">#</a></h3>
+<p><code>border-shape</code> accepts two shape values (outer and inner); the border is rendered as the area between them. The outer shape is a rectangle that extends to the edge of the screen, and the inner shape is a zero-radius circle placed at the center. The idea is to make sure the inner shape is &quot;nothing&quot; to end with the outer shape fully filled.</p>
+<p>Here is a demo with a transition on hover to better understand what's going on.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.breakout-background</span> <span class="token punctuation">{</span><br>  <span class="token property">border-shape</span><span class="token punctuation">:</span> <span class="token function">inset</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span> <span class="token function">circle</span><span class="token punctuation">(</span>20%<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border-color</span><span class="token punctuation">:</span> #faa307<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.breakout-background:hover</span> <span class="token punctuation">{</span><br>  <span class="token property">border-shape</span><span class="token punctuation">:</span> <span class="token function">inset</span><span class="token punctuation">(</span>0 -100vw<span class="token punctuation">)</span> <span class="token function">circle</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border-color</span><span class="token punctuation">:</span> #faa307<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="550" data-pen-title="Hover to extend!" data-preview="true" data-default-tab="result" data-slug-hash="jEydYmQ" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/jEydYmQ" target="_blank" rel="noopener">
+  Hover to extend!</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>Until better support, you can rely on <a href="https://css-tip.com/overflowing-background/" target="_blank" rel="noopener"><code>border-image</code> and one line of code</a>:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.breakout-background</span> <span class="token punctuation">{</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <span class="token function">conic-gradient</span><span class="token punctuation">(</span>#faa307 0 0<span class="token punctuation">)</span> fill 0//0 100vw<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>A line of code that we can optimize using the new <code>image()</code> function (more detail: <a href="https://css-tip.com/one-color-gradient/" target="_blank" rel="noopener">How to correctly define a one-color gradient</a>)</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.breakout-background</span> <span class="token punctuation">{</span><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <span class="token function">image</span><span class="token punctuation">(</span>#faa307<span class="token punctuation">)</span> fill 0//0 100vw<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p class="codepen" data-height="650" data-pen-title="Breakout background using border-image" data-preview="true" data-default-tab="result" data-slug-hash="xbgMpZx" data-user="t_afif" style="height: 650px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/xbgMpZx" target="_blank" rel="noopener">
+  Breakout background using border-image</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -72,24 +90,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/puzzle-shape/" >Puzzle shapes using CSS mask</a>
-		<small>A few lines of code to craft different puzzle shapes.</small>
-		<time datetime="2024-10-09">October 09, 2024</time>
+		<a href="/ascii-art/" >Responsive ASCII Arts using text-fit</a>
+		<small>Thanks to a new CSS property, it&#39;s now easy to create responsive ASCII art.</small>
+		<time datetime="2026-07-21">July 21, 2026</time>
 	</li>
   	<li>
-		<a href="/filling-loader/" >The Filling CSS loaders Collection</a>
-		<small>20 CSS-only single element loaders.</small>
-		<time datetime="2024-10-04">October 04, 2024</time>
-	</li>
-  	<li>
-		<a href="/css-variables-range-slider/" >Update CSS variables using range slider</a>
-		<small>A CSS-only way to update CSS variables in real time using range slider.</small>
-		<time datetime="2024-09-16">September 16, 2024</time>
-	</li>
-  	<li>
-		<a href="/progress-with-tooltip/" >Progress element with a tooltip</a>
-		<small>Adding a tooltip to the native progress element showing the percentage of progress.</small>
-		<time datetime="2024-09-10">September 10, 2024</time>
+		<a href="/animated-grid/" >Responsive CSS Grid Layout with Animation</a>
+		<small>A responsive grid with a smooth animation when the layout is updated.</small>
+		<time datetime="2026-07-07">July 07, 2026</time>
 	</li>
 </ul>
 		</main>
