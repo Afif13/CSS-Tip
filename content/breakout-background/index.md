@@ -40,7 +40,6 @@ Here is a demo with a transition on hover to better understand what's going on.
 }
 .breakout-background:hover {
   border-shape: inset(0 -100vw) circle(0);
-  border-color: #faa307;
 }
 ```
 
