@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Breakout Background using Modern CSS
 description: Use border-shape or border-image to extend the background color to the edge of the screen
-date: 2027-08-05
+date: 2026-08-05
 tags: posts
 ---
 
