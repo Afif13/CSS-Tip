@@ -76,8 +76,6 @@ tags: posts
 
 Ready for the new `text-box` property? With it, you can easily remove extra space above and below your text. Adjust the setting to see the effect of the different values.
 
-⚠️ Support is limited (Chrome-only for now) ⚠️
-
 
 <form>
 From the top <select name="top">
