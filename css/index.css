@@ -117,7 +117,9 @@ h1 {
 p {
 	text-wrap: pretty;
 }
-
+.cp_embed_wrapper {
+    margin: 1em 0;
+}
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);

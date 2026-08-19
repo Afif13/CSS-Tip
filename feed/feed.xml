@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-08-17T00:00:00Z</updated>
+	<updated>2026-08-19T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,23 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Hover Proximity with Scroll-Driven Animations</title>
+		<link href="https://css-tip.com/hover-proximity/"/>
+		<updated>2026-08-19T00:00:00Z</updated>
+		<id>https://css-tip.com/hover-proximity/</id>
+		<content type="html"><![CDATA[ <p>Hover proximity? It's when you affect the hovered element and a few surrounding elements. A fancy effect made possible using modern CSS.</p>
+<p><picture><source type="image/avif" srcset="/img/chaTLXuaul-930.avif 930w"><source type="image/webp" srcset="/img/chaTLXuaul-930.webp 930w"><img alt="CSS-only hover proximity" loading="lazy" decoding="async" src="/img/chaTLXuaul-930.png" width="930" height="362"></picture></p>
+<p>⚠️ (Chromium-only for now) ⚠️</p>
+<p class="codepen" data-height="800" data-pen-title="Hover Proximity with scroll-driven animations" data-preview="true" data-default-tab="result" data-slug-hash="ZYLgGBM" data-user="t_afif" style="height: 800px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/ZYLgGBM">
+  Hover Proximity with scroll-driven animations</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<p>We first define a responsive grid structure and calculate <a href="/grid-information/">the coordinates of each element</a>:</p>
+ <p><a href="https://css-tip.com/hover-proximity/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
