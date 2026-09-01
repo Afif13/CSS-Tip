@@ -23,7 +23,7 @@ Here is an interactive demo where each item shows all the information it gets (n
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-All the values are integers so it was an easy task to use counters and show them:
+All the values are integers, so it was an easy task to use counters and show them:
 
 ```css
 .container > * {
