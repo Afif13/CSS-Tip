@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-08-19T00:00:00Z</updated>
+	<updated>2026-09-01T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,26 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Get Grid Information using pure CSS II</title>
+		<link href="https://css-tip.com/grid-information-2/"/>
+		<updated>2026-09-01T00:00:00Z</updated>
+		<id>https://css-tip.com/grid-information-2/</id>
+		<content type="html"><![CDATA[ <p>Extending <a href="/grid-information/">the previous implementation</a> to consider a responsive grid with a random configuration. Each item can span multiple rows/columns and get placed anywhere on the grid.</p>
+<p>Whatever the placement, we can retrieve the position of each item using pure CSS. A task made possible using Scroll-Driven animations!</p>
+<p><picture><source type="image/avif" srcset="/img/OrVpxLzaV3-887.avif 887w"><source type="image/webp" srcset="/img/OrVpxLzaV3-887.webp 887w"><img alt="Getting grid information using pure CSS" loading="lazy" decoding="async" src="/img/OrVpxLzaV3-887.png" width="887" height="354"></picture></p>
+<p>Here is an interactive demo where each item shows all the information it gets (number of columns, number of rows, position, index/number of items). Resize the demo and see how all the values adjust in real time.</p>
+<p>⚠️ (Chromium-only for now) ⚠️</p>
+<p class="codepen" data-height="700" data-pen-title="Grid information (chrome-only)" data-preview="true" data-default-tab="result" data-slug-hash="RNpWpaG" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/RNpWpaG">
+  Grid information (chrome-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>All the values are integers so it was an easy task to use counters and show them:</p>
+ <p><a href="https://css-tip.com/grid-information-2/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
