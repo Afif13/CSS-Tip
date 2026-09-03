@@ -930,7 +930,7 @@ blockquote p {
 		<updated>2025-03-25T00:00:00Z</updated>
 		<id>https://css-tip.com/custom-progress/</id>
 		<content type="html"><![CDATA[ <p>Using the new <code>attr()</code> function, we can customize a progress element based on the progression. We can, for example, have a different coloration for each range of values! A single-element implementation without JavaSript.</p>
-<p><picture><source type="image/avif" srcset="/img/JhnYUtNu9T-699.avif 699w"><source type="image/webp" srcset="/img/JhnYUtNu9T-699.webp 699w"><img alt="CSS-only Cut-out shapes using clip-path" loading="lazy" decoding="async" src="/img/JhnYUtNu9T-699.png" width="699" height="298"></picture></p>
+<p><picture><source type="image/avif" srcset="/img/JhnYUtNu9T-699.avif 699w"><source type="image/webp" srcset="/img/JhnYUtNu9T-699.webp 699w"><img alt="CSS-only custom progress element" loading="lazy" decoding="async" src="/img/JhnYUtNu9T-699.png" width="699" height="298"></picture></p>
  <p><a href="https://css-tip.com/custom-progress/">Read more</a></p> ]]></content>
 	</entry>
 	
