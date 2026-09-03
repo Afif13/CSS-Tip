@@ -68,4 +68,41 @@ progress[value]::-moz-progress-bar {
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
-For better support check the following method: [Progress bar with dynamic coloration](/progress-bar-dynamic-color/)
+Another idea using if():
+
+```css
+progress[value] {
+  --_v: attr(value type(<number>));
+  --_m: attr(max type(<number>),1);
+  --_i: calc(var(--_v)/var(--_m)); /* the progress in the range [0 1] */
+}
+
+progress[value]::-webkit-progress-value {
+  background:
+    linear-gradient(#fff5,#0000),
+    repeating-linear-gradient(135deg,#0004 0 15px,#0000 0 30px)
+    if(style(--_i < .25): #F04155;
+       style(--_i < .5 ): #F27435;
+       style(--_i < .75): #7AB317;
+       else: #0D6759;)
+}
+/* we use style queries for Firefox until better support for if() */
+progress[value]::-moz-progress-bar {
+  background:
+    linear-gradient(#fff5,#0000),
+    repeating-linear-gradient(135deg,#0004 0 15px,#0000 0 30px)
+    #0D6759;
+  @container style(--_i < .75) {background-color: #7AB317}
+  @container style(--_i < .5 ) {background-color: #F27435}
+  @container style(--_i < .25) {background-color: #F04155}
+}
+```
+
+<p class="codepen" data-height="450" data-pen-title="Progress bar with dynamic coloration" data-preview="true" data-default-tab="result" data-slug-hash="wBJMgpK" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/wBJMgpK">
+  Progress bar with dynamic coloration</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+Related: [Progress bar with dynamic coloration](/progress-bar-dynamic-color/)
