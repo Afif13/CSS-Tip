@@ -8,7 +8,7 @@ tags: posts
 
 Using the new `attr()` function, we can customize a progress element based on the progression. We can, for example, have a different coloration for each range of values! A single-element implementation without JavaSript.
 
-{% image "./image.png", "CSS-only Cut-out shapes using clip-path" %}
+{% image "./image.png", "CSS-only custom progress element" %}
 
 ```css
 progress[value] {
@@ -18,9 +18,9 @@ progress[value] {
   --_p: calc(100%*var(--val)/var(--max)); /* the percentage of progression */
   --_b: 
     /* if (p < 30%) "red" */
-    conic-gradient(red    0 0) 0/max(0%,30% - var(--_p)) 1%,
+    conic-gradient(red    0 0) 0/max(0%,30% - var(--_p)) 1px,
     /* else if (p < 60%) "orange" */
-    conic-gradient(orange 0 0) 0/max(0%,60% - var(--_p)) 1%,
+    conic-gradient(orange 0 0) 0/max(0%,60% - var(--_p)) 1px,
     /* else "green" */
     green;
 }
@@ -31,8 +31,6 @@ progress[value]::-moz-progress-bar {
   background: var(--_b);
 }
 ```
-
-The support is still limited (Chrome-only for now)
 
 <p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="OPJwbVJ" data-pen-title="Progress bar with dynamic coloration" data-preview="true" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/OPJwbVJ">
