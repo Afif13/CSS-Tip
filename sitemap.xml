@@ -1557,6 +1557,11 @@
 	</url>
 	
 	<url>
+		<loc>https://css-tip.com/node-connection-2/</loc>
+		<lastmod>2026-09-09</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://css-tip.com/about/</loc>
 		<lastmod>2026-09-09</lastmod>
 	</url>
@@ -1594,10 +1599,5 @@
 	<url>
 		<loc>https://css-tip.com/tools/</loc>
 		<lastmod>2026-09-09</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://css-tip.com/node-connection-2/</loc>
-		<lastmod>2027-09-09</lastmod>
 	</url>
 </urlset>
