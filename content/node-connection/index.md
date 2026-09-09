@@ -20,7 +20,7 @@ We can still do more and create a diagram like the one below. It's still a graph
 
 Here is a demo with two elements. Drag them around and see how the connection behaves. It will try to link the closest edges of both nodes, or their centers, if the distance between them gets smaller. Yes, there is a nice transition as well.
 
-⚠️ Chrome-only for now ⚠️
+⚠️ Chromium-only for now ⚠️
 
 <p class="codepen" data-height="600" data-pen-title="Dynamic node connection (drag the elements)" data-preview="true" data-default-tab="result" data-slug-hash="emgBWGg" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/emgBWGg">
