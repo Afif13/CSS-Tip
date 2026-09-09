@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Dynamic Node Connection (CSS-only Diagram) II
 description: More node connections using border-shape and modern CSS
-date: 2027-09-09
+date: 2026-09-09
 tags: posts
 ---
 
