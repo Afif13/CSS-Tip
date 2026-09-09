@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Float an element to the bottom corner</title>
+		<title>Dynamic Node Connection (CSS-only Diagram) II</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="Use shape-outside to place an element on the bottom corner">
+		<meta name="description" content="More node connections using border-shape and modern CSS">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/float-bottom-corner/" >
+		<link rel=canonical href="https://css-tip.com/node-connection-2/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="Float an element to the bottom corner">
+		<meta property="og:title" content="Dynamic Node Connection (CSS-only Diagram) II">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/float-bottom-corner/">
-		<meta property="og:description" content="Use shape-outside to place an element on the bottom corner">
-		<meta property="og:image" content="/og-images/a156efd9.png" >
+		<meta property="og:url" content="https://css-tip.com/node-connection-2/">
+		<meta property="og:description" content="More node connections using border-shape and modern CSS">
+		<meta property="og:image" content="/og-images/a41e59e8.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,30 +47,44 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/overflowing-underline-2/" title="Extend your underline to the edge of the screen II">Previous CSS Tip</a></li><li class="next"><a href="/horizontal-line-title/" title="Horizontal lines around your title">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/grid-information-2/" title="Get Grid Information using pure CSS II">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>Float an element to the bottom corner</h1>
+<h1>Dynamic Node Connection (CSS-only Diagram) II</h1>
 
-<time datetime="2022-06-22">June 22, 2022</time>
+<time datetime="2027-09-09">September 09, 2027</time>
 
-<p>Make an element float to the bottom corner of your text content</p>
-<ul>
-<li>Minimal HTML code</li>
-<li>No JavaScript</li>
-<li>No media query</li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/yjys4W7DiV-816.avif 816w"><source type="image/webp" srcset="/img/yjys4W7DiV-816.webp 816w"><img alt="An image float at the bottom corner of the text" loading="lazy" decoding="async" src="/img/yjys4W7DiV-816.png" width="816" height="312"></picture></p>
-<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>float<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    ....<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.wrapper</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.float</span> <span class="token punctuation">{</span><br>  <span class="token property">float</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span> <br>  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <br>  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><br>  <span class="token property">shape-outside</span><span class="token punctuation">:</span> <span class="token function">inset</span><span class="token punctuation">(</span><span class="token function">calc</span><span class="token punctuation">(</span>100% - 100px <span class="token comment">/*height */</span><span class="token punctuation">)</span> 0 0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">object-fit</span><span class="token punctuation">:</span> contain<span class="token punctuation">;</span><br>  <span class="token property">object-position</span><span class="token punctuation">:</span> bottom<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="mdXZrEG" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/mdXZrEG" target="_blank" rel="noopener">
-  Float element to bottom corner</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Extending <a href="/node-connection/">the previous implementation</a> to add more connection types. This time, the connectors will stick to the specified sides, regardless of the node's position. Another cool demo made possible with anchor positioning, <code>border-shape</code>, <code>shape()</code>, container queries, <code>if()</code>, and more!</p>
+<p><picture><source type="image/avif" srcset="/img/VuNhWMtcxG-1030.avif 1030w"><source type="image/webp" srcset="/img/VuNhWMtcxG-1030.webp 1030w"><img alt="CSS-only diagram" loading="lazy" decoding="async" src="/img/VuNhWMtcxG-1030.png" width="1030" height="562"></picture></p>
+<p>Drag the nodes in the demo below and see the magic in play!</p>
+<p>⚠️ Chromium-only for now ⚠️</p>
+<p class="codepen" data-height="700" data-pen-title="CSS-only diagram with dynamic connections II" data-preview="true" data-default-tab="result" data-slug-hash="MYpewWq" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/MYpewWq" target="_blank" rel="noopener">
+  CSS-only diagram with dynamic connections II</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>More detail: <a href="https://css-tricks.com/float-an-element-to-the-bottom-corner/" target="_blank" rel="noopener">css-tricks.com/float-an-element-to-the-bottom-corner</a></p>
+<p>I used three types of connections.</p>
+<p>A left-to-right connection:</p>
+<p class="codepen" data-height="600" data-pen-title="left-to-right connection" data-preview="true" data-default-tab="result" data-slug-hash="myWEJmm" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/myWEJmm" target="_blank" rel="noopener">
+  left-to-right connection</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>A left-to-left connection:</p>
+<p class="codepen" data-height="600" data-pen-title="Left-to-left connection" data-preview="true" data-default-tab="result" data-slug-hash="EaWyjXY" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/EaWyjXY" target="_blank" rel="noopener">
+  Left-to-left connection</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<p>A right-to-right connection:</p>
+<p class="codepen" data-height="600" data-pen-title="right-to-right connection" data-preview="true" data-default-tab="result" data-slug-hash="myWEJwm" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/t_afif/pen/myWEJwm" target="_blank" rel="noopener">
+  right-to-right connection</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>The possibilities are endless. Stay tuned for more CSS-only diagrams!</p>
 
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
@@ -79,24 +93,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/heart-shape-animation/" >Heart shape animation using outline</a>
-		<small>Turn your image into a heart with a cool animation.</small>
-		<time datetime="2022-07-04">July 04, 2022</time>
+		<a href="/hover-proximity/" >Hover Proximity with Scroll-Driven Animations</a>
+		<small>A fancy hover effect in a 2D responsive grid powered by modern CSS.</small>
+		<time datetime="2026-08-19">August 19, 2026</time>
 	</li>
   	<li>
-		<a href="/image-heart-shape/" >Turn your image into a heart</a>
-		<small>Create a CSS heart shape using any image.</small>
-		<time datetime="2022-07-01">July 01, 2022</time>
-	</li>
-  	<li>
-		<a href="/overflowing-underline/" >Extend your underline to the edge of the screen</a>
-		<small>Use a border-image trick to create an overflowing underline.</small>
-		<time datetime="2022-06-16">June 16, 2022</time>
-	</li>
-  	<li>
-		<a href="/css-custom-cursor/" >A CSS-only custom cursor</a>
-		<small>Combine CSS and SVG to create any kind of fancy cursor.</small>
-		<time datetime="2022-06-14">June 14, 2022</time>
+		<a href="/grid-information/" >Get Grid Information using pure CSS</a>
+		<small>With a few lines of code, you can get the number of columns, number of rows, and item coordinates.</small>
+		<time datetime="2026-08-17">August 17, 2026</time>
 	</li>
 </ul>
 		</main>
