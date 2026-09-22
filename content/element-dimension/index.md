@@ -28,8 +28,8 @@ Use modern CSS features to get the width and height of any element as CSS variab
 .size {
   overflow: auto;
   position: relative;
-  --w:calc(1/(1 - var(--_x))); /* element width */
-  --h:calc(1/(1 - var(--_y))); /* element height */
+  --w: round(1/(1 - var(--_x))); /* element width */
+  --h: round(1/(1 - var(--_y))); /* element height */
   timeline-scope: --cx,--cy;
   animation: x linear,y linear;
   animation-timeline: --cx,--cy;
