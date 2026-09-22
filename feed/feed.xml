@@ -31,7 +31,7 @@
 		<content type="html"><![CDATA[ <p>Creating <a href="https://css-shape.com/">CSS Shapes</a> is cool, but what about Random CSS Shapes? Thanks to the new <code>random()</code> function, we can generate unique shapes. A new shape appears on each page load. You never see the same shape twice.</p>
 <p>First off, blob shapes with a cool hover effect!</p>
 <p><picture><source type="image/avif" srcset="/img/aSGEf2294N-753.avif 753w"><source type="image/webp" srcset="/img/aSGEf2294N-753.webp 753w"><img alt="CSS-only blob shape" loading="lazy" decoding="async" src="/img/aSGEf2294N-753.png" width="753" height="330"></picture></p>
-<p>⚠️ Chromium-only for now ⚠️</p>
+<p>⚠️ Chrome-only with experimental flag enabled ⚠️</p>
 <p class="codepen" data-theme-id="39604" data-height="450" data-pen-title="Random Blob Shapes (with hover effect)" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="PwppEgV" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/editor/t_afif/pen/01a0c5d3-35c4-7d9e-96cc-151d956fcae5">
   Random Blob Shapes (with hover effect)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
