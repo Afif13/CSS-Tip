@@ -12,7 +12,7 @@ First off, blob shapes with a cool hover effect!
 
 {% image "./image.png", "CSS-only blob shape" %}
 
-⚠️ Chromium-only for now ⚠️
+⚠️ Chrome-only with experimental flag enabled ⚠️
 
 <p class="codepen" data-theme-id="39604" data-height="450" data-pen-title="Random Blob Shapes (with hover effect)" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="PwppEgV" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/editor/t_afif/pen/01a0c5d3-35c4-7d9e-96cc-151d956fcae5">
