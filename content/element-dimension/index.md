@@ -6,37 +6,24 @@ date: 2024-07-26
 tags: posts
 ---
 
-Use modern CSS features to get the width and height of any element as CSS variables.
-* Powered by Scroll-Driven animations and `@property`
-* Unitless values so you can easily use them inside any formula
-* You can apply the trick to multiple elements on the page
-* You can make the variables available everywhere on the page
-
+Use Scroll-Driven Animations and modern CSS features to get the width and height of any element without JavaScript. You get unitless pixel values as CSS variables that you can make available anywhere on the page.
 
 ```css
-@property --_x {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 0; 
-}
-@property --_y {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 0; 
-}
+@property --_x {syntax: "<number>";inherits: true;initial-value: 0;}
+@property --_y {syntax: "<number>";inherits: true;initial-value: 0;}
 
 .size {
   overflow: auto;
   position: relative;
-  --w: round(1/(1 - var(--_x))); /* element width */
-  --h: round(1/(1 - var(--_y))); /* element height */
+  --w: round(1/var(--_x)); /* element width */
+  --h: round(1/var(--_y)); /* element height */
   timeline-scope: --cx,--cy;
   animation: x linear,y linear;
   animation-timeline: --cx,--cy;
   animation-range: entry 100% exit 100%; 
 }
 .size:before {
-  content:"";
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -44,8 +31,8 @@ Use modern CSS features to get the width and height of any element as CSS variab
   aspect-ratio: 1;
   view-timeline: --cx inline,--cy block;
 }
-@keyframes x {to{--_x:1}}
-@keyframes y {to{--_y:1}}
+@keyframes x {0% {--_x:1}}
+@keyframes y {0% {--_y:1}}
 ```
 
 Resize the below demo to see how the values update in real-time:
