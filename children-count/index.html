@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>When to use the min() or max() function</title>
+		<title>Implementing children-count() using Modern CSS</title>
 		<link rel="icon" href="/img/fav.png" sizes="any">
-		<meta name="description" content="a quick trick to know when to use min() or max()">
+		<meta name="description" content="Using Scroll-Driven Animations to count the number of children">
 		<meta name="author" content="Temani Afif">
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-tip.com/min-max/" >
+		<link rel=canonical href="https://css-tip.com/children-count/" >
 		<link href="https://github.com/Afif13/" rel="me">
 		<link href="https://twitter.com/ChallengesCss" rel="me">
 		<meta name="fediverse:creator" content="@css@front-end.social" >
 		<meta property="og:locale" content="en_US" >
-		<meta property="og:title" content="When to use the min() or max() function">
+		<meta property="og:title" content="Implementing children-count() using Modern CSS">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-tip.com/min-max/">
-		<meta property="og:description" content="a quick trick to know when to use min() or max()">
-		<meta property="og:image" content="/og-images/ec8d02b8.png" >
+		<meta property="og:url" content="https://css-tip.com/children-count/">
+		<meta property="og:description" content="Using Scroll-Driven Animations to count the number of children">
+		<meta property="og:image" content="/og-images/96e7ee5d.png" >
 		<meta property="og:image:width" content="1200" >
 		<meta property="og:image:height" content="675" >
 		<meta name="twitter:card" content="summary_large_image">
@@ -47,37 +47,36 @@
 		</header>
 		<main id="skip">
 			
-<ul class="links-nextprev"><li class="prev"><a href="/infinite-borders/" title="An infinite number of borders around images">Previous CSS Tip</a></li><li class="next"><a href="/responsive-slanted-coloration/" title="Responsive full-screen slanted coloration">Next CSS Tip</a></li>
+<ul class="links-nextprev"><li class="prev"><a href="/random-blob/" title="Random Blob Shapes">Previous CSS Tip</a></li>
 </ul>
 
 
-<h1>When to use the min() or max() function</h1>
+<h1>Implementing children-count() using Modern CSS</h1>
 
-<time datetime="2024-02-06">February 06, 2024</time>
+<time datetime="2026-09-29">September 29, 2026</time>
 
-<p><code>min()</code> or <code>max()</code>? You always struggle to know which one to use and you end up trying both until one of them works.</p>
-<p>💡 Here is a figure to help you decide when to use them</p>
-<p>You start with <code>clamp()</code> then:</p>
-<ul>
-<li>when you remove max, you use <code>max()</code></li>
-<li>when you remove min, you use <code>min()</code></li>
-</ul>
-<p><picture><source type="image/avif" srcset="/img/uI7CCFn8mO-926.avif 926w"><source type="image/webp" srcset="/img/uI7CCFn8mO-926.webp 926w"><img alt="A 3D shine animation on image" loading="lazy" decoding="async" src="/img/uI7CCFn8mO-926.png" width="926" height="491"></picture></p>
-<p>If you want to set a <code>max-width</code> to your element then it's <code>min()</code></p>
-<p><code>width: clamp(min,100%,max)</code> ➞ <code>width: min(100%, max)</code></p>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="KKEeLpp" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKEeLpp" target="_blank" rel="noopener">
-  Untitled</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>We can get the number of siblings using <code>sibling-count()</code> but we cannot get the number of children yet. There is a proposal for a <a href="https://github.com/w3c/csswg-drafts/issues/11068" target="_blank" rel="noopener"><code>children-count()</code> function</a>, but until we get an official release, we can hack it using Scroll-Driven Animations.</p>
+<p>First, you add an extra element inside your container (That's one drawback of the method)</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token comment">&lt;!-- Your content --></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>n</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>n</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- the extra element --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>Then you make its width equal to the number of siblings multiplied by <code>1px</code></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.container > n</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-count</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - 1<span class="token punctuation">)</span>*1px<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token comment">/* -1 is used to exclude our extra element from the count */</span><br><span class="token punctuation">}</span></code></pre>
+<p>Finally, we apply a trick from a previous post (<a href="/element-dimension/">Get the width &amp; height of any element without JavaScript</a>) to get the width of that element and transfer it to the parent element.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token atrule"><span class="token rule">@property</span> --_n</span> <span class="token punctuation">{</span><span class="token property">syntax</span><span class="token punctuation">:</span> <span class="token string">"&lt;number>"</span><span class="token punctuation">;</span><span class="token property">inherits</span><span class="token punctuation">:</span> false<span class="token punctuation">;</span><span class="token property">initial-value</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token punctuation">}</span><br><br><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">timeline-scope</span><span class="token punctuation">:</span> --n<span class="token punctuation">;</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> --n linear both<span class="token punctuation">;</span><br>  <span class="token property">animation-timeline</span><span class="token punctuation">:</span> --n<span class="token punctuation">;</span><br>  <span class="token property">animation-range</span><span class="token punctuation">:</span> entry 100% exit<span class="token punctuation">;</span> <br>  <span class="token property">--n</span><span class="token punctuation">:</span> <span class="token function">round</span><span class="token punctuation">(</span>1/<span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--_n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* --n: children-count() */</span><br><span class="token punctuation">}</span><br><span class="token atrule"><span class="token rule">@keyframes</span> --n</span> <span class="token punctuation">{</span><span class="token selector">0%</span> <span class="token punctuation">{</span><span class="token property">--_n</span><span class="token punctuation">:</span> 1<span class="token punctuation">}</span><span class="token punctuation">}</span><br><br><span class="token selector">.container > n</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sibling-count</span><span class="token punctuation">(</span><span class="token punctuation">)</span> - 1<span class="token punctuation">)</span>*1px<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.container > n:before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span><br>  <span class="token property">view-timeline</span><span class="token punctuation">:</span> --n x<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>A useful trick to display the count of some hidden content</p>
+<p class="codepen" data-theme-id="39604" data-height="450" data-pen-title="children-count() using pure CSS" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="zxZzgZX" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/editor/t_afif/pen/01a0e974-4336-7659-8587-fa4863c1f22a" target="_blank" rel="noopener">
+  children-count() using pure CSS</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<p>If you want to set a min value for <code>font-size</code> then it's <code>max()</code></p>
-<p><code>font-size: clamp(min,5vw,max)</code> ➞ <code>font-size: max(min, 5vw)</code></p>
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="KKEeLzd" data-preview="true" data-user="t_afif" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/t_afif/pen/KKEeLzd" target="_blank" rel="noopener">
-  min font-size using max()</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
+<p>Or to have dynamic grid layouts (inspired by <a href="https://kizu.dev/tree-counting-and-random/#square-ish-layout" target="_blank" rel="noopener">kizu.dev/tree-counting-and-random/#square-ish-layout</a>)</p>
+<p class="codepen" data-theme-id="39604" data-height="550" data-pen-title="Square-ish layout" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="raywXoX" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/editor/t_afif/pen/01a0e9ae-af7f-713a-a828-ab688aebc94e" target="_blank" rel="noopener">
+  Square-ish layout</a> by Temani Afif (<a href="https://codepen.io/t_afif" target="_blank" rel="noopener">@t_afif</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<p>⚠️ A very hacky method to use with caution ⚠️</p>
+
 
 <div id="inline-custom"><hr style="margin-block:1rem"></div>
 
@@ -85,24 +84,14 @@
 
 <ul class="postlist" >
   	<li>
-		<a href="/heart-shape-hover/" >Heart shape with a sliding hover effect</a>
-		<small>A lovely animation to your heart shape image.</small>
-		<time datetime="2024-02-14">February 14, 2024</time>
+		<a href="/gradient-shapes/" >Complex border-only Shapes with Gradient Coloration</a>
+		<small>Using border-shape with border-area to easily create border-only shapes.</small>
+		<time datetime="2026-09-17">September 17, 2026</time>
 	</li>
   	<li>
-		<a href="/triangle-shape/" >Create a triangle shape with 2 CSS properties</a>
-		<small>Only two CSS properties to create a triangle shape.</small>
-		<time datetime="2024-02-11">February 11, 2024</time>
-	</li>
-  	<li>
-		<a href="/curved-ribbon/" >A curved ribbon shape with hover effect</a>
-		<small>A simple ribbon shape with a fancy hover effect.</small>
-		<time datetime="2024-01-29">January 29, 2024</time>
-	</li>
-  	<li>
-		<a href="/image-wavy-borders/" >A fancy frame with wavy borders (wavy box)</a>
-		<small>Place your image inside a wavy box using modern CSS.</small>
-		<time datetime="2024-01-23">January 23, 2024</time>
+		<a href="/node-connection-2/" >Dynamic Node Connection (CSS-only Diagram) II</a>
+		<small>More node connections using border-shape and modern CSS.</small>
+		<time datetime="2026-09-09">September 09, 2026</time>
 	</li>
 </ul>
 		</main>

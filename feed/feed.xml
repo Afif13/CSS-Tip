@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-09-22T00:00:00Z</updated>
+	<updated>2026-09-29T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,16 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Implementing children-count() using Modern CSS</title>
+		<link href="https://css-tip.com/children-count/"/>
+		<updated>2026-09-29T00:00:00Z</updated>
+		<id>https://css-tip.com/children-count/</id>
+		<content type="html"><![CDATA[ <p>We can get the number of siblings using <code>sibling-count()</code> but we cannot get the number of children yet. There is a proposal for a <a href="https://github.com/w3c/csswg-drafts/issues/11068"><code>children-count()</code> function</a>, but until we get an official release, we can hack it using Scroll-Driven Animations.</p>
+<p>First, you add an extra element inside your container (That's one drawback of the method)</p>
+ <p><a href="https://css-tip.com/children-count/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -1646,13 +1656,7 @@ and from the bottom <select name="bottom">
 		<link href="https://css-tip.com/element-dimension/"/>
 		<updated>2024-07-26T00:00:00Z</updated>
 		<id>https://css-tip.com/element-dimension/</id>
-		<content type="html"><![CDATA[ <p>Use modern CSS features to get the width and height of any element as CSS variables.</p>
-<ul>
-<li>Powered by Scroll-Driven animations and <code>@property</code></li>
-<li>Unitless values so you can easily use them inside any formula</li>
-<li>You can apply the trick to multiple elements on the page</li>
-<li>You can make the variables available everywhere on the page</li>
-</ul>
+		<content type="html"><![CDATA[ <p>Use Scroll-Driven Animations and modern CSS features to get the width and height of any element without JavaScript. You get unitless pixel values as CSS variables that you can make available anywhere on the page.</p>
  <p><a href="https://css-tip.com/element-dimension/">Read more</a></p> ]]></content>
 	</entry>
 	
