@@ -12,7 +12,7 @@ First off, blob shapes with a cool hover effect!
 
 {% image "./image.png", "CSS-only blob shape" %}
 
-⚠️ Chrome-only with experimental flag enabled ⚠️
+⚠️ Chromium-only for now ⚠️
 
 <p class="codepen" data-theme-id="39604" data-height="450" data-pen-title="Random Blob Shapes (with hover effect)" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="PwppEgV" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/editor/t_afif/pen/01a0c5d3-35c4-7d9e-96cc-151d956fcae5">
@@ -27,9 +27,6 @@ The code is a bit verbose, but one day we will have loops in CSS, and we can opt
 .blob {
   --n: 13;  /* if you change this, you need to add more points... we don't have loops in CSS */
   --d: 20%; /* control the depth, can be percentage */
-
-  width: 300px;
-  aspect-ratio: 1;
   
   --_r: element-scoped,0px,var(--d);
   --x0: (50% + (50% - random(--0 var(--_r)))*cos(0turn/var(--n)));
