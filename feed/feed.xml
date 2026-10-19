@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-10-07T00:00:00Z</updated>
+	<updated>2026-10-19T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,17 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>Input Range Slider with Custom Shapes</title>
+		<link href="https://css-tip.com/shaped-range-slider/"/>
+		<updated>2026-10-19T00:00:00Z</updated>
+		<id>https://css-tip.com/shaped-range-slider/</id>
+		<content type="html"><![CDATA[ <p>Building on a <a href="/wiggly-range-slider/">previous idea</a>, here is a more generic implementation of range sliders with custom shapes and tooltips. No JavaScript and a lot of cool CSS features (<code>border-shape</code>, <code>shape()</code>, Scroll-Driven Animations, <code>@property</code>, etc.)</p>
+<p><picture><source type="image/avif" srcset="/img/GEqQmmkyqk-958.avif 958w"><source type="image/webp" srcset="/img/GEqQmmkyqk-958.webp 958w"><img alt="CSS-only input range slider with custom shape" loading="lazy" decoding="async" src="/img/GEqQmmkyqk-958.png" width="958" height="318"></picture></p>
+<p>Minimal HTML:</p>
+ <p><a href="https://css-tip.com/shaped-range-slider/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
