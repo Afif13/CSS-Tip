@@ -76,9 +76,9 @@ A demo packed with modern CSS features such as Anchor Positioning, `border-shape
   border-shape: if(
     style((hypot(100cqw,100cqh) < 200px)): 
       var(--shape1);
-    style(((hypot(100cqw,100cqh) < 400px) or (100cqh < 200px)) and (100cqh < 100cqw)): 
+    style((100cqh < 150px) and (100cqh < 100cqw)): 
       var(--shape2);
-    style(((hypot(100cqw,100cqh) < 400px) or (100cqw < 250px)) and (100cqh > 100cqw)): 
+    style((100cqw < 200px) and (100cqh > 100cqw)): 
       var(--shape3);
     else: 
       var(--shape4))
