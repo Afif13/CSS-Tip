@@ -53,6 +53,8 @@ Do you want a cool hover effect? Using `random()` and modern features, you can e
 }
 ```
 
+⚠️ Chromium-only for now ⚠️
+
 <p class="codepen" data-theme-id="39604" data-height="450" data-pen-title="Confetti Shape explosion (hover to explode!)" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="Wbpggmy" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/editor/t_afif/pen/01a18192-1c8d-74f0-bee3-a7d27b201a43">
   Confetti Shape explosion (hover to explode!)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
