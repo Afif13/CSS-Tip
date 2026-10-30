@@ -28,13 +28,13 @@ After the [blob shapes](/random-blob/), here is another shape we can build using
   --y4: (100% - random(--4 var(--_r)));
   /* etc ... */
 
-  clip-path: shape(from 100% 100%,vline to 0,hline to 0,vline to 100%,
-    curve  to calc((var(--x1 ) + var(--x2 ))/2) calc((var(--y1 ) + var(--y2 ))/2) with calc(var(--x1)) calc(var(--y1)),
+  clip-path: shape(from 100% 0,hline to 0,vline to calc(100% - var(--d)/2),
+    curve  to calc((var(--x0 ) + var(--x1 ))/2) calc((var(--y0 ) + var(--y1 ))/2) with calc(var(--x0)) calc(var(--y0)),
+    smooth to calc((var(--x1 ) + var(--x2 ))/2) calc((var(--y1 ) + var(--y2 ))/2),
     smooth to calc((var(--x2 ) + var(--x3 ))/2) calc((var(--y2 ) + var(--y3 ))/2),
     smooth to calc((var(--x3 ) + var(--x4 ))/2) calc((var(--y3 ) + var(--y4 ))/2),
-    smooth to calc((var(--x4 ) + var(--x5 ))/2) calc((var(--y4 ) + var(--y5 ))/2),
     /* etc ... */
-    smooth to 100% 100%,
+    smooth to 100% calc(100% - var(--d)/2),
   );
 }
 ```
@@ -68,13 +68,13 @@ We can adjust the code to have the wave on the top:
   --y4: (random(--4 var(--_r)));
   /* etc ... */
 
-  clip-path: shape(from 100% 0,vline to 100%,hline to 0,vline to 0,
-    curve  to calc((var(--x1 ) + var(--x2 ))/2) calc((var(--y1 ) + var(--y2 ))/2) with calc(var(--x1)) calc(var(--y1)),
+  clip-path: shape(from 100% 100%,hline to 0,vline to calc(var(--d)/2),
+    curve  to calc((var(--x0 ) + var(--x1 ))/2) calc((var(--y0 ) + var(--y1 ))/2) with calc(var(--x0)) calc(var(--y0)),
+    smooth to calc((var(--x1 ) + var(--x2 ))/2) calc((var(--y1 ) + var(--y2 ))/2),
     smooth to calc((var(--x2 ) + var(--x3 ))/2) calc((var(--y2 ) + var(--y3 ))/2),
     smooth to calc((var(--x3 ) + var(--x4 ))/2) calc((var(--y3 ) + var(--y4 ))/2),
-    smooth to calc((var(--x4 ) + var(--x5 ))/2) calc((var(--y4 ) + var(--y5 ))/2),
     /* etc ... */
-    smooth to 100% 0,
+    smooth to 100% calc(var(--d)/2),
   );
 }
 ```

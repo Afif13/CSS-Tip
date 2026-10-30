@@ -43,7 +43,6 @@ img {
 }
 ```
 
-⚠️ Limited support (Chrome only for now) ⚠️
 
 <p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="QwjGqEJ" data-pen-title="Responsive infinite logo marquee" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/QwjGqEJ">

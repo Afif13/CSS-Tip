@@ -25,7 +25,6 @@ With a simple HTML/CSS configuration, you have an arrow fully controlled using C
 
 Drag the circles in the demo below and see how the arrow behaves:
 
-⚠️ Chrome-only for now ⚠️
 
 <p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="PwNrNvP" data-pen-title="Connected Circles with Anchor Positioning" data-preview="true" data-user="t_afif" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
       <span>See the Pen <a href="https://codepen.io/t_afif/pen/PwNrNvP">

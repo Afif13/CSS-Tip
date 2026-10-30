@@ -35,7 +35,6 @@ Using modern CSS, you can create a sequential animation that involves an unknown
 }
 ```
 
-⚠️ Limited support (Chrome only for now) ⚠️
 
 <p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="dPYRzKq" data-pen-title="Sequential Animations" data-preview="true" data-user="t_afif" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/dPYRzKq">
