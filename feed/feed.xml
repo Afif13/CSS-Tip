@@ -1267,7 +1267,6 @@ and from the bottom <select name="bottom">
 		<updated>2025-01-07T00:00:00Z</updated>
 		<id>https://css-tip.com/clock/</id>
 		<content type="html"><![CDATA[ <p>What time is it? We can answer this question using only CSS! The demo below is a clock that shows you the current time (You can compare with your smartwatch, it's accurate!). It's a single-element implementation powered by modern CSS.</p>
-<p>A chrome-only experimentation for now:</p>
  <p><a href="https://css-tip.com/clock/">Read more</a></p> ]]></content>
 	</entry>
 	
