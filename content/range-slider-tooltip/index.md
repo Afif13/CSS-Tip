@@ -23,8 +23,6 @@ Powered by modern CSS features:
 </label>
 ```
 
-The support for the tooltip feature is still limited (chrome-only for now) but the range slider works fine in all the browsers.
-
 <p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="JjqNEbZ" data-pen-title="CSS-only Custom range slider" data-preview="true" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/JjqNEbZ">
   CSS-only Custom range slider</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
