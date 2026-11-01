@@ -114,7 +114,6 @@
 <p>Whatever the placement, we can retrieve the position of each item using pure CSS. A task made possible using Scroll-Driven animations!</p>
 <p><picture><source type="image/avif" srcset="/img/OrVpxLzaV3-887.avif 887w"><source type="image/webp" srcset="/img/OrVpxLzaV3-887.webp 887w"><img alt="Getting grid information using pure CSS" loading="lazy" decoding="async" src="/img/OrVpxLzaV3-887.png" width="887" height="354"></picture></p>
 <p>Here is an interactive demo where each item shows all the information it gets (number of columns, number of rows, position, index/number of items). Resize the demo and see how all the values adjust in real time.</p>
-<p>⚠️ (Chromium-only for now) ⚠️</p>
 <p class="codepen" data-height="700" data-pen-title="Grid information (chrome-only)" data-preview="true" data-default-tab="result" data-slug-hash="RNpWpaG" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/RNpWpaG">
   Grid information (chrome-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
