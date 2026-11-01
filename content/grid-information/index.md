@@ -33,8 +33,6 @@ Thanks to modern CSS, it's now easy to retrieve various information from a respo
 
 Here is an interactive demo where each item shows all the information it gets. You can resize to notice the responsive behavior where all the values adjust in real time.
 
-⚠️ (Chromium-only for now) ⚠️
-
 <p class="codepen" data-height="700" data-pen-title="Grid information (chrome-only)" data-preview="true" data-default-tab="result" data-slug-hash="vEgqgob" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/vEgqgob">
   Grid information (chrome-only)</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)

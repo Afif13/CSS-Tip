@@ -14,7 +14,6 @@ Whatever the placement, we can retrieve the position of each item using pure CSS
 
 Here is an interactive demo where each item shows all the information it gets (number of columns, number of rows, position, index/number of items). Resize the demo and see how all the values adjust in real time.
 
-⚠️ (Chromium-only for now) ⚠️
 
 <p class="codepen" data-height="700" data-pen-title="Grid information (chrome-only)" data-preview="true" data-default-tab="result" data-slug-hash="RNpWpaG" data-user="t_afif" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/t_afif/pen/RNpWpaG">
