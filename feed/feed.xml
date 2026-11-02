@@ -4,7 +4,7 @@
 	<subtitle>The best place to keep up to date with the new CSS features. Daily CSS tips and tricks to become a better web developer.</subtitle>
 	<link href="https://css-tip.com/feed/feed.xml" rel="self"/>
 	<link href="https://css-tip.com/"/>
-	<updated>2026-10-28T00:00:00Z</updated>
+	<updated>2026-11-02T00:00:00Z</updated>
 	<id>https://css-tip.com/</id>
 	<author>
 		<name>Temani Afif</name>
@@ -21,6 +21,18 @@
 <p>Which property is for vertical alignment? <code>align-content</code> or <code>align-items</code>? Where should I add <code>display: flex</code>? Let’s add it everywhere! A height? Why do I need to define a height!? Maybe I should try with <code>display: grid</code>?</p>
 <p>It’s time to clear all the confusion! Through this exploration, you will understand the logic behind all the alignment properties and how they work in each layout. It’s not another article about centering, we are going beyond!</p>
  <p><a href="https://css-tip.com/explore/alignment/">Read more</a></p> ]]></content>
+	</entry>
+	
+	<entry>
+		<title>A Foldable Zig-Zag Connector Using Modern CSS</title>
+		<link href="https://css-tip.com/zig-zag-connector/"/>
+		<updated>2026-11-02T00:00:00Z</updated>
+		<id>https://css-tip.com/zig-zag-connector/</id>
+		<content type="html"><![CDATA[ <p>In <a href="/bending-line/">a previous post</a>, we created a fancy connector where a straight line bends (or stretches) based on the distance between the connected elements. This time, let's try a foldable zig-zag connector.</p>
+<p><picture><source type="image/avif" srcset="/img/vwEMhR-WZU-860.avif 860w"><source type="image/webp" srcset="/img/vwEMhR-WZU-860.webp 860w"><img alt="A CSS-only zig-zag connector" loading="lazy" decoding="async" src="/img/vwEMhR-WZU-860.png" width="860" height="286"></picture></p>
+<p>Drag the circles, but be careful; the connector isn't stretchy and can break. Don't pull the circles too far!</p>
+<p>⚠️ Chromium-only for now ⚠️</p>
+ <p><a href="https://css-tip.com/zig-zag-connector/">Read more</a></p> ]]></content>
 	</entry>
 	
 	<entry>
@@ -273,7 +285,7 @@
 <p>Another demo powered by modern CSS (Anchor Positioning, <code>border-shape</code>, <code>if()</code>, and more).</p>
 <p><picture><source type="image/avif" srcset="/img/bRPvoad9ov-722.avif 722w"><source type="image/webp" srcset="/img/bRPvoad9ov-722.webp 722w"><img alt="CSS-only connected circles with curved line" loading="lazy" decoding="async" src="/img/bRPvoad9ov-722.png" width="722" height="311"></picture></p>
 <p>Drag the circles and see the magic in play!</p>
-<p>⚠️ Chrome-only for now ⚠️</p>
+<p>⚠️ Chromium-only for now ⚠️</p>
  <p><a href="https://css-tip.com/bending-line/">Read more</a></p> ]]></content>
 	</entry>
 	
