@@ -19,6 +19,14 @@
 		}
 		,
 		{
+			"id": "https://css-tip.com/spring-connector/",
+			"url": "https://css-tip.com/spring-connector/",
+			"title": "A Spring Connector Using Anchor Positioning and border-shape",
+			"content_html": "<p>After the low-quality <a href=\"https://css-tip.com/zig-zag-connector/\">Zig-Zag connector</a>, here is a more robust one: a spring connector. Another fun demo powered by Anchor Positioning and <code>border-shape</code></p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/eEIp9Eb14A-1032.avif 1032w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/eEIp9Eb14A-1032.webp 1032w\"><img alt=\"A CSS-only spring connector\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/eEIp9Eb14A-1032.png\" width=\"1032\" height=\"370\"></picture></p>\n<p>Drag the circles and see how the shape behaves. Go wild with this one; it won't break!</p>\n<p>⚠️ Chromium-only for now ⚠️</p>\n<p class=\"codepen\" data-theme-id=\"39604\" data-height=\"650\" data-pen-title=\"Spring connector (drag the circles!)\" data-preview=\"true\" data-version=\"2\" data-default-tab=\"result\" data-slug-hash=\"MYpZOGw\" data-user=\"t_afif\" style=\"height: 650px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/editor/t_afif/pen/01a1b07a-ebf1-7925-bb05-58ff42316c20\">\n  Spring connector (drag the circles!)</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>\n",
+			"date_published": "2026-11-06T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/zig-zag-connector/",
 			"url": "https://css-tip.com/zig-zag-connector/",
 			"title": "A Foldable Zig-Zag Connector Using Modern CSS",
