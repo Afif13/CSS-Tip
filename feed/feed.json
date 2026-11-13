@@ -19,6 +19,14 @@
 		}
 		,
 		{
+			"id": "https://css-tip.com/confetti-button/",
+			"url": "https://css-tip.com/confetti-button/",
+			"title": "Confetti Buttons using random()",
+			"content_html": "<p>Building on <a href=\"https://css-tip.com/shape-confetti/\">the previous effect</a> to create confetti buttons. Full confetti or partial confetti? Pick your favorite!</p>\n<p><picture><source type=\"image/avif\" srcset=\"https://css-tip.com/img/O95p5mGAYZ-735.avif 735w\"><source type=\"image/webp\" srcset=\"https://css-tip.com/img/O95p5mGAYZ-735.webp 735w\"><img alt=\"CSS-only confetti buttons\" loading=\"lazy\" decoding=\"async\" src=\"https://css-tip.com/img/O95p5mGAYZ-735.png\" width=\"735\" height=\"207\"></picture></p>\n<p>⚠️ Chromium-only for now ⚠️</p>\n<p class=\"codepen\" data-theme-id=\"39604\" data-height=\"400\" data-pen-title=\"Confetti Buttons\" data-preview=\"true\" data-version=\"2\" data-default-tab=\"result\" data-slug-hash=\"PwpLaQZ\" data-user=\"t_afif\" style=\"height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/editor/t_afif/pen/01a1d449-03ce-7b53-94f8-2defa8b7a08f\">\n  Confetti Buttons</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<p>Another idea with animation</p>\n<p class=\"codepen\" data-theme-id=\"39604\" data-height=\"400\" data-pen-title=\"Confetti Button II\" data-preview=\"true\" data-version=\"2\" data-default-tab=\"result\" data-slug-hash=\"XJMGBbO\" data-user=\"t_afif\" style=\"height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;\">\n  <span>See the Pen <a href=\"https://codepen.io/editor/t_afif/pen/01a1d48a-777f-78b7-9304-9fec19b141ed\">\n  Confetti Button II</a> by Temani Afif (<a href=\"https://codepen.io/t_afif\">@t_afif</a>)\n  on <a href=\"https://codepen.io\">CodePen</a>.</span>\n</p>\n<script async=\"\" src=\"https://public.codepenassets.com/embed/index.js\"></script>\n",
+			"date_published": "2026-11-13T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://css-tip.com/spring-connector/",
 			"url": "https://css-tip.com/spring-connector/",
 			"title": "A Spring Connector Using Anchor Positioning and border-shape",
