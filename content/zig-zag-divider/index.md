@@ -18,21 +18,23 @@ Similar to the [wavy divider](/random-wavy-shapes/), here is another cool shape 
   --_r1: random(0px,var(--d)/2);
   --_r2: random(var(--d)/2,var(--d));
   
-  clip-path: polygon(100% calc(100% - var(--d)/2),100% 0,0 0,0 calc(100% - var(--d)/2),
-    calc(50%/var(--n) + 000%/var(--n))  calc(100% - var(--_r1)),
-    calc(50%/var(--n) + 100%/var(--n))  calc(100% - var(--_r2)),
-    calc(50%/var(--n) + 200%/var(--n))  calc(100% - var(--_r1)),
-    calc(50%/var(--n) + 300%/var(--n))  calc(100% - var(--_r2)),
-    calc(50%/var(--n) + 400%/var(--n))  calc(100% - var(--_r1)),
-    calc(50%/var(--n) + 500%/var(--n))  calc(100% - var(--_r2)),
-    calc(50%/var(--n) + 600%/var(--n))  calc(100% - var(--_r1)),
-    calc(50%/var(--n) + 700%/var(--n))  calc(100% - var(--_r2)),
-    calc(50%/var(--n) + 800%/var(--n))  calc(100% - var(--_r1)),
-    calc(50%/var(--n) + 900%/var(--n))  calc(100% - var(--_r2)),
-    calc(50%/var(--n) + 1000%/var(--n)) calc(100% - var(--_r1)),
-    calc(50%/var(--n) + 1100%/var(--n)) calc(100% - var(--_r2)),
-    calc(50%/var(--n) + 1200%/var(--n)) calc(100% - var(--_r1))
-    /* and so on .. */
+  clip-path: polygon(100% 0,0 0,
+    calc(000%/(var(--n) + 1))  calc(100% - var(--_r2)),
+    calc(100%/(var(--n) + 1))  calc(100% - var(--_r1)),
+    calc(200%/(var(--n) + 1))  calc(100% - var(--_r2)),
+    calc(300%/(var(--n) + 1))  calc(100% - var(--_r1)),
+    calc(400%/(var(--n) + 1))  calc(100% - var(--_r2)),
+    calc(500%/(var(--n) + 1))  calc(100% - var(--_r1)),
+    calc(600%/(var(--n) + 1))  calc(100% - var(--_r2)),
+    calc(700%/(var(--n) + 1))  calc(100% - var(--_r1)),
+    calc(800%/(var(--n) + 1))  calc(100% - var(--_r2)),
+    calc(900%/(var(--n) + 1))  calc(100% - var(--_r1)),
+    calc(1000%/(var(--n) + 1)) calc(100% - var(--_r2)),
+    calc(1100%/(var(--n) + 1)) calc(100% - var(--_r1)),
+    calc(1200%/(var(--n) + 1)) calc(100% - var(--_r2)),
+    calc(1300%/(var(--n) + 1)) calc(100% - var(--_r1)),
+    calc(1400%/(var(--n) + 1)) calc(100% - var(--_r2))
+    /* and so on */
   )
 }
 ```
@@ -53,20 +55,23 @@ We can adjust the code to have the zig-zag on the top:
   
   --_r1: random(0px,var(--d)/2);
   --_r2: random(var(--d)/2,var(--d));
-  clip-path: polygon(100% calc(var(--d)/2),100% 100%,0 100%,0 calc(var(--d)/2),
-    calc(50%/var(--n) + 000%/var(--n))  var(--_r1),
-    calc(50%/var(--n) + 100%/var(--n))  var(--_r2),
-    calc(50%/var(--n) + 200%/var(--n))  var(--_r1),
-    calc(50%/var(--n) + 300%/var(--n))  var(--_r2),
-    calc(50%/var(--n) + 400%/var(--n))  var(--_r1),
-    calc(50%/var(--n) + 500%/var(--n))  var(--_r2),
-    calc(50%/var(--n) + 600%/var(--n))  var(--_r1),
-    calc(50%/var(--n) + 700%/var(--n))  var(--_r2),
-    calc(50%/var(--n) + 800%/var(--n))  var(--_r1),
-    calc(50%/var(--n) + 900%/var(--n))  var(--_r2),
-    calc(50%/var(--n) + 1000%/var(--n)) var(--_r1),
-    calc(50%/var(--n) + 1100%/var(--n)) var(--_r2),
-    calc(50%/var(--n) + 1200%/var(--n)) var(--_r1)
+  clip-path: polygon(100% 100%,0 100%,
+    calc(000%/(var(--n) + 1))  var(--_r2),
+    calc(100%/(var(--n) + 1))  var(--_r1),
+    calc(200%/(var(--n) + 1))  var(--_r2),
+    calc(300%/(var(--n) + 1))  var(--_r1),
+    calc(400%/(var(--n) + 1))  var(--_r2),
+    calc(500%/(var(--n) + 1))  var(--_r1),
+    calc(600%/(var(--n) + 1))  var(--_r2),
+    calc(700%/(var(--n) + 1))  var(--_r1),
+    calc(800%/(var(--n) + 1))  var(--_r2),
+    calc(900%/(var(--n) + 1))  var(--_r1),
+    calc(1000%/(var(--n) + 1)) var(--_r2),
+    calc(1100%/(var(--n) + 1)) var(--_r1),
+    calc(1200%/(var(--n) + 1)) var(--_r2),
+    calc(1300%/(var(--n) + 1)) var(--_r1),
+    calc(1400%/(var(--n) + 1)) var(--_r2)
+    /* and so on */
   )
 }
 ```
