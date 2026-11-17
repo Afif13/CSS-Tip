@@ -151,6 +151,18 @@ A collection of CSS Tools to easily generate a modern & optimized code in no tim
     </a>
   </li>
   <li>
+    <a href="https://css-generators.com/zig-zag-divider/">
+      {% image "./zig-zag-divider.png", "CSS zig-zag divider" %}
+      <p>Generator for zig-zag dividers</p>
+    </a>
+  </li>
+  <li>
+    <a href="https://css-generators.com/fancy-frame/">
+      {% image "./fancy-frame.png", "CSS fancy frame" %}
+      <p>Generator for fancy frames</p>
+    </a>
+  </li>
+  <li>
     <a href="https://css-generators.com/gradient-shadows/">
       {% image "./gradient-shadow.png", "CSS gradient shadow" %}
       <p>Generator for gradient shadows</p>
