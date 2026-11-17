@@ -29,7 +29,6 @@ Similar to the [wavy divider](/random-wavy-shapes/), here is another cool shape 
     calc(700%/var(--n))  calc(100% - var(--_r1)),
     calc(800%/var(--n))  calc(100% - var(--_r2)),
     calc(900%/var(--n))  calc(100% - var(--_r1))
-    /* and so on */
   )
 }
 ```
@@ -61,7 +60,6 @@ We can adjust the code to have the zig-zag on the top:
     calc(700%/var(--n))  var(--_r1),
     calc(800%/var(--n))  var(--_r2),
     calc(900%/var(--n))  var(--_r1)
-    /* and so on */
   )
 }
 ```
@@ -75,7 +73,7 @@ We can adjust the code to have the zig-zag on the top:
 
 Or both top and bottom:
 
-<p class="codepen" data-theme-id="39604" data-height="500" data-pen-title="Random zig-zag divider" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="jEBgrxB" data-user="t_afif" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-theme-id="39604" data-height="550" data-pen-title="Random zig-zag divider" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="jEBgrxB" data-user="t_afif" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/editor/t_afif/pen/01a1e8b8-d634-7a95-96e8-198e21bb3d79">
   Random zig-zag divider</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
