@@ -39,8 +39,6 @@ After the [blob shapes](/random-blob/), here is another shape we can build using
 }
 ```
 
-⚠️ Chromium-only for now ⚠️
-
 <p class="codepen" data-theme-id="39604" data-height="450" data-pen-title="Top random wavy divider" data-preview="true" data-version="2" data-default-tab="result" data-slug-hash="PwpOrjy" data-user="t_afif" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/editor/t_afif/pen/01a115c0-9c57-7f47-9c30-09bd68b63725">
   Top random wavy divider</a> by Temani Afif (<a href="https://codepen.io/t_afif">@t_afif</a>)
